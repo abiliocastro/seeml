@@ -1,0 +1,203 @@
+[
+    {
+        "id": "14500",
+        "project": "REDBOX",
+        "summary": [
+            "csvjdbc harvester unit testing"
+        ],
+        "description": [
+            "use as opportunity to look at spock framework vs mockito/powermock and groovytest",
+            "spock offers a more readable setup using behavioural type comments for each test and a style test format",
+            "it can be used with spring testing",
+            "it does offer some convenience/powerful features for although some of power only useful for groovy because it is offered for groovy it provides potential for use as overall framework for both groovy and java",
+            "as it does not offer some of flexibility of powermock and there doesn't seem to be powermock package groovy may need to be incorporated with say powermock's whitebox for easy use of reflection where if possible use as means of introducing actual unit tests not integration use for mint server side of harvesting as basic integration tests to build on already present for client"
+        ],
+        "timespent": "9000",
+        "alpha": 99
+    },
+    {
+        "id": "24806",
+        "project": "REDBOX",
+        "summary": [
+            "analysis of where the editor should be"
+        ],
+        "description": [
+            "doco for tinymce downloaded version main docs api far more useful for configuration",
+            "for now choosing to put static version within usyd build that way can test against unchangeable and don't have to worry about potential problems with usyd firewall can test against later versions and then external javascript provider later"
+        ],
+        "timespent": "3900",
+        "alpha": 100
+    },
+    {
+        "id": "24804",
+        "project": "REDBOX",
+        "summary": [
+            "add tinymce to redbox form for use with description"
+        ],
+        "description": [
+            "there are others but this is also used by rda so would help if consistent with rda forms"
+        ],
+        "timespent": "14700",
+        "alpha": 100
+    },
+    {
+        "id": "23709",
+        "project": "REDBOX",
+        "summary": [
+            "consider ands demo site for testing higher quality levels and incorporating these as form validation rules"
+        ],
+        "description": [
+            "quality level is required schema elements and is already present",
+            "quality level is required and needs to be checked quality level is recommended perhaps could be added as extra validation option for rifcs on form unsure of what required at level"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "23707",
+        "project": "REDBOX",
+        "summary": [
+            "add identifier field for creators primary contact supervisors and collaborators"
+        ],
+        "description": [
+            "currently there is no way to add a related party if they already have an identifier and are not referenced in mint or nla and soon add an identifier field to the creators primary contact supervisors and collaborators fields",
+            "these fields should be hidden when the lookup functionality is used"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "23706",
+        "project": "REDBOX",
+        "summary": [
+            "record url as location urls"
+        ],
+        "description": [
+            "may not be suitable for all implementations especially if not public",
+            "understanding identifier not necessary just use portal path for record and a check whether this should be included"
+        ],
+        "timespent": "1860",
+        "alpha": 100
+    },
+    {
+        "id": "23002",
+        "project": "REDBOX",
+        "summary": [
+            "add licence to output"
+        ],
+        "description": [
+            "consider changes needed in form to allow selection of criteria for other can then use this information for generation rather than guessing",
+            "toggle rights type according to what is considered flip order so licence section sits above the rest"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "14333",
+        "project": "REDBOX",
+        "summary": [
+            "automating backups and restores"
+        ],
+        "description": [
+            "is work using duplicity and duply to make better use of file backups until sound architectural solution based on qcif policy in relying on depdendable tools rsynclib and gpg it produces a very configurable backup with a much smaller footprint",
+            "as it is unclear with arms whether a backup solution will be in place and that backups setup need to be quickly repeatable in case of problems on arms puppet deployment of this seems appropriate",
+            "for now it can be done with manual install of ssh and gpg keys"
+        ],
+        "timespent": "79560",
+        "alpha": 100
+    },
+    {
+        "id": "13943",
+        "project": "REDBOX",
+        "summary": [
+            "work on scripts to help with transforming configuration changes in institutional builds"
+        ],
+        "description": [
+            "in version work has been done to allow users split the into smaller more manageable files",
+            "ideally we should provide a script that can tell the difference between the standard config and what is in the current institution's so that these can be split out as overrides",
+            "for now the script should be standalone if needed add whatever needed from fascinator to classpath under given a current uri for config the script should merge the together with current values to be preserved the resulting config should also be a single xml but with all the json config inside note once using any json tool the order will getting around this because of nature of maps put the script under support folder in"
+        ],
+        "timespent": "117960",
+        "alpha": 100
+    },
+    {
+        "id": "24811",
+        "project": "REDBOX",
+        "summary": [
+            "test other functionality to ensure works as intended"
+        ],
+        "timespent": "7500"
+    },
+    {
+        "id": "24809",
+        "project": "REDBOX",
+        "summary": [
+            "uat testing and feedback"
+        ],
+        "timespent": "300"
+    },
+    {
+        "id": "24807",
+        "project": "REDBOX",
+        "summary": [
+            "test capture into different workflow stages and emails if applicable"
+        ],
+        "timespent": "300"
+    },
+    {
+        "id": "24805",
+        "project": "REDBOX",
+        "summary": [
+            "add new editor captured details into reloads"
+        ],
+        "timespent": "7500"
+    },
+    {
+        "id": "23900",
+        "project": "REDBOX",
+        "summary": [
+            "check quality level and level addressed in current redbox"
+        ],
+        "timespent": "300"
+    },
+    {
+        "id": "23705",
+        "project": "REDBOX",
+        "summary": [
+            "support multiple identifiers"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "23703",
+        "project": "REDBOX",
+        "summary": [
+            "add multiple description support"
+        ],
+        "timespent": "50760"
+    },
+    {
+        "id": "16708",
+        "project": "REDBOX",
+        "summary": [
+            "merge form config code from arms branch"
+        ],
+        "timespent": "122040"
+    },
+    {
+        "id": "15025",
+        "project": "REDBOX",
+        "summary": [
+            "fix builds in jenkins"
+        ],
+        "timespent": "5400"
+    },
+    {
+        "id": "14704",
+        "project": "REDBOX",
+        "summary": [
+            "new developer setup"
+        ],
+        "timespent": "21600"
+    }
+]

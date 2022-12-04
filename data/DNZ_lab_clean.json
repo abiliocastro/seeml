@@ -1,0 +1,132 @@
+[
+    {
+        "id": "10200",
+        "project": "CBSV",
+        "summary": [
+            "plugin component and bundle versions breaks filling user or group field in other plugins"
+        ],
+        "description": [
+            "we got problem in service desk and tempo plugins",
+            "we've fixed it disabled your plugin",
+            "conversation with atlassian attached",
+            "number of issue in atlassiansupport"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "11501",
+        "project": "SIF",
+        "summary": [
+            "internet explorer does not work after installing plugin"
+        ],
+        "description": [
+            "hi after installing the similar issues finder anyone using internet explorer was unable to access our jira system",
+            "we have tried compatibility mode on and off various document modes and emulation of to all of which are affected by the same issue",
+            "i have included a stack trace below",
+            "all other browsers work without errors",
+            "similar issues finder version jira version an error occurredhide please try refreshing the page or contact your administrator atlassian support if the problem continues",
+            "details unable to get property indexof of undefined or null reference resource line column environment windows nt net clr media center pc like gecko stack trace typeerror unable to get property indexof of undefined or null reference at main at anonymous function at j at o.firewith at ready at p"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10800",
+        "project": "SIF",
+        "summary": [
+            "evaluation"
+        ],
+        "description": [
+            "hello we are using the suggestimate plugin since several years",
+            "but we have some performance issues with this plugin and therefore want to evaluate your plugin similar issues finder",
+            "first of all we have some questions how does the plugin do the search does it use regular jira indices does it build own indices does it directly search in the database are there any known expected performance issues for large instances more than issues per instance or more than issues per project at which does the similar issues tab content gets loaded only when the users switch to the tab or each time the issue gets loaded when we would decide use the plugin there would be some feature requests we would have",
+            "would you be able to do this and in which timeframe would this be possible translation of the similar issues tab to german for german users to hnliche vorgnge insert a more link inside the similar issues tab to give user a change to get more than issues displayed",
+            "possible solutions enable paging for the search results run a issue navigator search and display this"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "10700",
+        "project": "RSC",
+        "summary": [
+            "unable to enable the plugin"
+        ],
+        "description": [
+            "i searched for a plugin to color the issues with respect to the status",
+            "i tried to use the resolution and status colors plugin for free to test the usage of it",
+            "i installed the plugin successfully and provided the license too",
+            "but i cant enable the plugin",
+            "please find the attachment for the error",
+            "kindly explain what to do for this error"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10403",
+        "project": "REM",
+        "summary": [
+            "view permission"
+        ],
+        "description": [
+            "i am using reminders pluging with an evaluation license",
+            "i get rendering error on the view screen reminders panel see attached screenshot when the current user is different then the owner of added reminders",
+            "is this a normal behavor if so is it possible to let any connected user see reminders and even add new one using shortcut link best regards"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "22100",
+        "project": "CBSV",
+        "summary": [
+            "order is reserved keyword and this is causing problems with older version of jira and mysql"
+        ],
+        "description": [
+            "in older version of activeobjects library reserved keywords are not properly escaped with this is not a problem with mysql or with new jira versions",
+            "the version attached to this issue fixes the problem but it since it does not migrate order column you will lose ordering of subcomponents inside the tree",
+            "children of parent component will be ordered randomly and you will need to them",
+            "we will fix this issue by performing a data migration within next week with a new version"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "11404",
+        "project": "CBSV",
+        "summary": [
+            "support custom version field in component versions plugin"
+        ],
+        "description": [
+            "hello we have been using the component versions plugin in our pilot project for a while and it fits most of our needs",
+            "the rest api also works very well for us",
+            "may i ask if you have any plans to add support for custom version fields version picker fields in jira we are also using custom version fields besides the affects and fix fields",
+            "for example the fw version field in the attached screenshot is a custom field and all project versions rather than versions associated w component usb are displayed",
+            "thanks"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "11002",
+        "project": "CBSV",
+        "summary": [
+            "ross hind version filtering is not available in issue creation from administrative screen"
+        ],
+        "description": [
+            "please see plugins of form for details"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "11105",
+        "project": "WLP",
+        "summary": [
+            "check jira compatiblity"
+        ],
+        "timespent": "3600"
+    }
+]

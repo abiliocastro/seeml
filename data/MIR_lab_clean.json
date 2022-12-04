@@ -1,0 +1,42 @@
+[
+    {
+        "id": "11503",
+        "project": "MIR",
+        "summary": [
+            "anonymize.py doesn't work for file from mirakel fix included"
+        ],
+        "description": [
+            "the script anonymize.py from anonymize my file",
+            "i had to include quotation marks around project and description",
+            "i added a line to anonymize tags but this only supports tasks with one single tag not multiple tags",
+            "i commented the line for annotations as it seems they now just include another json object with a description value"
+        ],
+        "timespent": "1200",
+        "alpha": 99
+    },
+    {
+        "id": "12201",
+        "project": "MIR",
+        "summary": [
+            "refactor listmirakel and speciallist"
+        ],
+        "description": [
+            "our current inheritance graph looks like this here but we should do it in a way like"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "11600",
+        "project": "MIR",
+        "summary": [
+            "buttons for cyclic dues and reminders are not visible"
+        ],
+        "description": [
+            "buttons for cyclic dues and reminders are not visible when russian localization is enabled",
+            "they look like hidden by a labels for due and reminder"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    }
+]

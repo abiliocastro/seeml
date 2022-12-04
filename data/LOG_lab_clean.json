@@ -1,0 +1,3340 @@
+[
+    {
+        "id": "26523",
+        "project": "HRI",
+        "summary": [
+            "the sandbox-manager app is deployed to and available at"
+        ],
+        "description": [
+            "contents of sandman.service"
+        ],
+        "timespent": "7200",
+        "alpha": 96
+    },
+    {
+        "id": "26509",
+        "project": "HRI",
+        "summary": [
+            "the account app is deployed to the cluster and available at"
+        ],
+        "description": [
+            "contents of account.service"
+        ],
+        "timespent": "36000",
+        "alpha": 96
+    },
+    {
+        "id": "11814",
+        "project": "JCL",
+        "summary": [
+            "an application is able to request the launch/encounter scope from the platform"
+        ],
+        "description": [
+            "this requires that the current encounter in the launch context is either specified/selected by the user somehow or there is a background mechanism for determining the current encounter when the patient is selected"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "11815",
+        "project": "JCL",
+        "summary": [
+            "an application is able to request the launch/location scope from the platform"
+        ],
+        "description": [
+            "this requires that the current encounter in the launch context is either specified/selected by the user somehow or there is a background mechanism for determining the current encounter when the patient is selected"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "12302",
+        "project": "JCL",
+        "summary": [
+            "why does codeflowauthorizer need a fhirsessioncontextholder"
+        ],
+        "description": [
+            "currently the sessionfactory creates a fhirsessioncontextholder and must be passed a codeflowauthorizer and somehow that codeflowauthorizer also needs to have a handle on the very same fhirsessioncontextholder that the sessionfactory uses",
+            "a cleaner solution might be to remove the fhirsessioncontextholder from the codeflowauthorizer and have the sessionfactory manage the context",
+            "this would mean eliminating the following line from codeflowauthorizer fhirsessioncontextholder.addauthorizationrequest(authrequest"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "25900",
+        "project": "HRI",
+        "summary": [
+            "standalone launch shows the patient picker even if the scope isn't provided"
+        ],
+        "description": [
+            "standalone launch shows the patient picker even if the scope isn't provided",
+            "a standalone launch which doesn't provide the scope should succeed without the patient picker being shown"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "22801",
+        "project": "HRI",
+        "summary": [
+            "hspc account user profile information mismatch"
+        ],
+        "description": [
+            "this is an indeterminate bug it only happens on occasion so it's difficult to diagnose and fix",
+            "when a user authenticates with firebase through the account app their profile data is synced to the database",
+            "for some reason this occasionally fails and there will be a mismatch between the firebase user directory and the firebase database records containing the user profile info",
+            "since the auth server retrieves user information from the database records this can cause problems when a user attempts to authenticate with using the auth server",
+            "to mitigate this i've been using the to identify such conditions and correct them"
+        ],
+        "timespent": "50400",
+        "alpha": 99
+    },
+    {
+        "id": "21301",
+        "project": "HRI",
+        "summary": [
+            "as the sandbox manager admin user i can communicate with the mitreid admin api"
+        ],
+        "description": [
+            "the sandbox uses username/password to authenticate with the admin api",
+            "since username/password is going away in favor of oauth we need to replace how this admin api is accessed"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "14679",
+        "project": "HRI",
+        "summary": [
+            "when the reference api server creates a sandbox fhir database schema an initial dataset is loaded into the sandbox fhir database",
+            "initially it is a copy of the existing database"
+        ],
+        "description": [
+            "think about generalizing this case to a data management tool that could be fed smart's data files and fix up the ids then load into the database"
+        ],
+        "timespent": "28800",
+        "alpha": 99
+    },
+    {
+        "id": "12602",
+        "project": "HRI",
+        "summary": [
+            "handling of redirect from api server is incorrect",
+            "work with josh for details"
+        ],
+        "description": [
+            "involves an http redirect from api server authz server and so it depends on browser cookies for authorization i'm not sure on this but testing the public server seems to confirm",
+            "this is a mistake since launching is an admin act or requires appropriate scopes",
+            "the auth server doesn't know about such things",
+            "diagrams are confusing on this point showing launchendpointorchestration vs",
+            "launchorchestrationendpoint"
+        ],
+        "timespent": "50400",
+        "alpha": 99
+    },
+    {
+        "id": "17706",
+        "project": "GALLERY",
+        "summary": [
+            "move all of the multi tenant stuff out of the artifact"
+        ],
+        "description": [
+            "a consumer of the should be able to easily follow the pattern of the webapp and create their own fhir webapp possibly by overlaying possibly this artifact would be overlay'd by a multi tenant artifact"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "31156",
+        "project": "SNDBX",
+        "summary": [
+            "google group unable to register a cds hooks service due to cors issue"
+        ],
+        "description": [
+            "i am trying to register a cds hooks service but when i do i receive a typeerror failed to fetch popup with the console indicating response to preflight request doesn't pass access control check no header is present on the requested resource",
+            "however i have setup cors on my side and when i perform a curl command to perform an options request on my url i receive the following ok allow get options head get options post accept content-location location origin authorization server i have also listed the sandbox server explicitly in the field instead of using a wildcard but to no avail",
+            "is there something that i am missing here"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "31114",
+        "project": "SNDBX",
+        "summary": [
+            "investigate terminology support in logica sandbox"
+        ],
+        "description": [
+            "find out what happened with the terminologies that we used to have why and when did they get dropped what is the level of support of terminologies in hapi today what would it take to restore the terminologies that we used to have what operations are supported by hapi with respect to terminologies what blog entries do we have about the terminologies in the sandbox and are they still applicable"
+        ],
+        "timespent": "36000",
+        "alpha": 100
+    },
+    {
+        "id": "30248",
+        "project": "SNDBX",
+        "summary": [
+            "staging environment for"
+        ],
+        "description": [
+            "upfront pricing"
+        ],
+        "timespent": "180000",
+        "alpha": 100
+    },
+    {
+        "id": "15103",
+        "project": "PDM",
+        "summary": [
+            "can't clone data in pdm"
+        ],
+        "description": [
+            "text input fields for values in patient data manager need to be validated and formatted before crud operations",
+            "all fields are just text input fields and can cause failure on crud operations with no feedback to the user",
+            "these fields need to be validated and feedback given to the user"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "13202",
+        "project": "PDM",
+        "summary": [
+            "a user of the patient data manager is able to search for observations by providing a single search value"
+        ],
+        "description": [
+            "a single search value is matched on several searchable properties of the observation"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "13405",
+        "project": "PDM",
+        "summary": [
+            "a user of the patient data manager is able to follow a resource reference to another resource"
+        ],
+        "description": [
+            "use cases any reference blood pressure measurement sys dy panel diagnostic report"
+        ],
+        "timespent": "345600",
+        "alpha": 100
+    },
+    {
+        "id": "23801",
+        "project": "JCL",
+        "summary": [
+            "high priority from daren a user of the java client library optionally receives a null flavor representation when querying by code"
+        ],
+        "description": [
+            "from darin wilcox and team",
+            "update ask bryon where this is at and talk about incorporating their work as a utility",
+            "possibly this should be added to the hapi client instead"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "12104",
+        "project": "JCL",
+        "summary": [
+            "research what the outstanding fhir resource serialization issues are"
+        ],
+        "description": [
+            "scot and herman have been discussing issues in the past"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "12111",
+        "project": "JCL",
+        "summary": [
+            "an hspc engineer can release the hspc java client library"
+        ],
+        "description": [
+            "document how to do a release and look at tools and jobs that can help with this"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "11402",
+        "project": "JCL",
+        "summary": [
+            "an application developer reads more modular documentation in the application developers section so that information is not duplicated in multiple places",
+            "see notes"
+        ],
+        "description": [
+            "for example in our confluence navigation section including some cleanup for developers app developers guide client app registration public client example javascript confidential client example jsp using spring mvc service example java using spring ioc ehr developers guide hspc reference implementation architectural overview download build and install the hspc reference implementation hspc authorization demo app tier vs tier technical specifications hspc development sandboxes hspc tier reference implementation hspc simple application tutorial hspc java client application example hpsc fhir documentation deprecated"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "12301",
+        "project": "JCL",
+        "summary": [
+            "expose the entire access token response to clients"
+        ],
+        "description": [
+            "it looks like when an accesstoken object is constructed only certain fields are copied into it patient id type expiration date scopes refresh this loses all of the other fields that may be present including encounter location resource intent these could be exposed directly through getters/setters on the accesstoken object or could all be stuffed into the spring additionalinformation map"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "12300",
+        "project": "JCL",
+        "summary": [
+            "unable to connect to sandbox when behind a proxy server"
+        ],
+        "description": [
+            "noman is able to connect to the conformance server on our sandbox using chrome but is unable to connect using our mvc demo app",
+            "i think we need to set up some kind of support for a proxy environment variables or something like that"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "26893",
+        "project": "HRI",
+        "summary": [
+            "api calling infinite number of times for observation resources when there are many resources tied to a patient"
+        ],
+        "description": [
+            "in the cardiac risk app launched from the gallery the server is not cutting off the pagination calls when there are no more observations",
+            "this happens when testing with a patient with a large amount of observation resources like id but not with a patient with fewer id"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "26861",
+        "project": "HRI",
+        "summary": [
+            "posting a bundle to the hspc will fail throwing an exception"
+        ],
+        "description": [
+            "example of a bundle that wil cause this resourcetype bundle id bundle-transaction meta lastupdated type transaction entry fullurl resource resourcetype patient text status generated div xmlns some active true name use official family chalmers given peter james gender male birthdate request method post url patient the exception seeing caused by cannot be cast to at method source at common frames omitted"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "26620",
+        "project": "HRI",
+        "summary": [
+            "update the hpsc launch configuration to pull ecs.config from support for docker authentication"
+        ],
+        "description": [
+            "each aws ecs cluster is fed instances from an auto scaling group",
+            "for the cluster the auto scaling group is in order to give these instances the ability to authenticate with our docker endpoints on we need to the ecs.config file with the proper credentials",
+            "this process is explained in the aws docs here and also here i believe this process includes deleting the current group and"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "26511",
+        "project": "HRI",
+        "summary": [
+            "the is deployed to with the profile active and available at"
+        ],
+        "description": [
+            "contents of"
+        ],
+        "timespent": "29040",
+        "alpha": 100
+    },
+    {
+        "id": "26510",
+        "project": "HRI",
+        "summary": [
+            "the is deployed to with the profile active and available at"
+        ],
+        "description": [
+            "contents of"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "26508",
+        "project": "HRI",
+        "summary": [
+            "the account api is deployed to the cluster and available at"
+        ],
+        "description": [
+            "contents of"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "25608",
+        "project": "HRI",
+        "summary": [
+            "display resource id when exploring resources in patient data manager"
+        ],
+        "description": [
+            "suggested by would be helpful to display the resource id in the patient data manager resource details view"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "25607",
+        "project": "HRI",
+        "summary": [
+            "display patient id when viewing patient details"
+        ],
+        "description": [
+            "suggested by would be helpful to display the patient id in the patient view patient details and the patient resource in patient data manager"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "25601",
+        "project": "HRI",
+        "summary": [
+            "we need indication that the is a scrollable element"
+        ],
+        "description": [
+            "currently both of these lists are in a dom element but that is not apparent",
+            "in the attached example it looks like there are invitations while in reality there are more",
+            "we either need a visual clue that part of the list is hidden and needs to be scrolled or change these elements to elements that don't require scrolling"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "24300",
+        "project": "HRI",
+        "summary": [
+            "bunch of issues with sandbox manager"
+        ],
+        "description": [
+            "fixed not able to switch from confidential client to a public client an app launch url isnt able to contain a because the sandbox is going to append a it should check for the existence of a and append a if a already exists when logging in the page flickers quite a bit to the auth server and back possibly could be a bit more polished app edit panel has two tabs but they dont look like tabs"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "24102",
+        "project": "HRI",
+        "summary": [
+            "the auth server is placing two in a the endpoint urls see desc"
+        ],
+        "description": [
+            "you can see this on the api conformance statement url authorize valueuri url token valueuri url register valueuri"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "21300",
+        "project": "HRI",
+        "summary": [
+            "as a sandbox user i can successfully launch a persona without generating a new auth session"
+        ],
+        "description": [
+            "the persona launch authorization flow needs to be after we switch to a social login",
+            "user's will likely be kept in the oic schema or maybe just in the sandbox and authenticated via api key or client secret rather than"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "19300",
+        "project": "HRI",
+        "summary": [
+            "a user of the bilirubin app is able to complete the standalone launch flow"
+        ],
+        "description": [
+            "add doctype html and meta content"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "18501",
+        "project": "HRI",
+        "summary": [
+            "improve our attribution records on the sandbox mgr when created last used etc"
+        ],
+        "description": [
+            "sandbox creation timestamp sandbox last login timestamp capture sandbox deletion creation timestamps launch scenario registered apps personas user is added to a sandbox"
+        ],
+        "timespent": "72000",
+        "alpha": 100
+    },
+    {
+        "id": "16302",
+        "project": "HRI",
+        "summary": [
+            "auth server not working with mysql"
+        ],
+        "description": [
+            "nikolai is reporting that on the latest ubuntu and latest mysql the auth server is failing with mysql errors"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "13413",
+        "project": "HRI",
+        "summary": [
+            "the practitioner appointment viewer is launched from a user context"
+        ],
+        "description": [
+            "a mock ehr application allows the user to log in and open the appointment viewer"
+        ],
+        "timespent": "100800",
+        "alpha": 100
+    },
+    {
+        "id": "13403",
+        "project": "HRI",
+        "summary": [
+            "deprecate sandbox"
+        ],
+        "description": [
+            "notification of deprecation developer group notice banner in fhir starter after a brief period remove from sandbox move the release up to the root so that it is no longer under"
+        ],
+        "timespent": "7260",
+        "alpha": 100
+    },
+    {
+        "id": "13102",
+        "project": "HRI",
+        "summary": [
+            "a user is able to create and manage an account for the hspc sandbox"
+        ],
+        "description": [
+            "includes link from fhir starter login screen pwm password management application deployment ldap server deployment and functional support"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "12102",
+        "project": "HRI",
+        "summary": [
+            "research ri hosting options for hspc sandbox"
+        ],
+        "description": [
+            "will ramnode work as a solution can an aws account be transferred how do corporations use aws accounts also consider for ci server",
+            "outcome should be a writeup proposal"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "11109",
+        "project": "HRI",
+        "summary": [
+            "a dev reads about the current status of data contained in the sandbox on confluence"
+        ],
+        "description": [
+            "put it here"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "11108",
+        "project": "HRI",
+        "summary": [
+            "a dev reads about the capabilities of the sandbox on confluence"
+        ],
+        "description": [
+            "include a matrix of all the resources supported queries etc",
+            "roadmap put it here"
+        ],
+        "timespent": "36000",
+        "alpha": 100
+    },
+    {
+        "id": "11107",
+        "project": "HRI",
+        "summary": [
+            "an hspc dev can submit questions about any of the hspc tech artifacts by sending an email to"
+        ],
+        "description": [
+            "create and configure the google groups for the hspc developers forum"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "10707",
+        "project": "HRI",
+        "summary": [
+            "consumer can access the hspc tier sandbox via the cloud"
+        ],
+        "description": [
+            "install the sandbox on the amazon cloud to be available for any hspc consumer"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "17705",
+        "project": "GALLERY",
+        "summary": [
+            "move the multi tenant stuff out of the artifact"
+        ],
+        "description": [
+            "create a separate artifact with all the multi tenant properties beans etc and also the database management beans",
+            "mysql should be simple and easy for someone to use and configure"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "15500",
+        "project": "GALLERY",
+        "summary": [
+            "create gallery logo and provide the sizes needed for site"
+        ],
+        "description": [
+            "large for splash screen large for retina splash screen small for header small for retina header"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "16626",
+        "project": "DEVS",
+        "summary": [
+            "a user of the documentation site learns about the different products/components that are documented on the front page"
+        ],
+        "description": [
+            "note this could a brief summary with a link to a more detailed description of the product or even just an icon with a title of the product below",
+            "sandbox icon sandbox title below"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "15501",
+        "project": "DEVS",
+        "summary": [
+            "create hspc developers logo and sizes needed for site"
+        ],
+        "description": [
+            "large for splash screen large for retina splash screen small for header small for retina header"
+        ],
+        "timespent": "50400",
+        "alpha": 100
+    },
+    {
+        "id": "15408",
+        "project": "DEVS",
+        "summary": [
+            "user of developers uses a common footer for all the pages in the site"
+        ],
+        "description": [
+            "compare google and cerner copywriter terms of use privacy policy digicert icon links to hspc"
+        ],
+        "timespent": "25200",
+        "alpha": 100
+    },
+    {
+        "id": "15407",
+        "project": "DEVS",
+        "summary": [
+            "user of developers uses the footer as a portal to useful links related to the consortium or the spec"
+        ],
+        "description": [
+            "hspc jira hspc developers fourm confluence fhir smart openid connect hspc main site and on and"
+        ],
+        "timespent": "19800",
+        "alpha": 100
+    },
+    {
+        "id": "15402",
+        "project": "DEVS",
+        "summary": [
+            "user of developers explores info about featured apps in the featured apps section of the site",
+            "can launch into one or go over to the app gallery"
+        ],
+        "description": [
+            "section picture and light description of app gallery with link to go to it now",
+            "section on left screen shot of an app",
+            "on right short description of app two short section on right screen shot of an app",
+            "on left short description of app two short section on left screen shot of an app",
+            "on right short description of app two short include general developers footer on the bottom"
+        ],
+        "timespent": "39600",
+        "alpha": 100
+    },
+    {
+        "id": "31155",
+        "project": "SNDBX",
+        "summary": [
+            "update the aws ses credentials"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "31043",
+        "project": "SNDBX",
+        "summary": [
+            "create migration script by looking at the difference in hapi and our schemas"
+        ],
+        "timespent": "100800"
+    },
+    {
+        "id": "26803",
+        "project": "PDM",
+        "summary": [
+            "a user of an sandbox uses patient data manager to view fhir resources for the selected patient"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "26757",
+        "project": "PDM",
+        "summary": [
+            "a user of the pdm creates a detectedissue for a patient"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "26647",
+        "project": "PDM",
+        "summary": [
+            "clean up the legacy pdm service on the legacy prod server"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "26646",
+        "project": "PDM",
+        "summary": [
+            "switch the dns entry to point to the new pdm"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "26645",
+        "project": "PDM",
+        "summary": [
+            "manually install pdm in the prod cluster"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "26644",
+        "project": "PDM",
+        "summary": [
+            "create pdm service in the prod cluster"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "26643",
+        "project": "PDM",
+        "summary": [
+            "deploy to test and verify optimize image memory"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "26642",
+        "project": "PDM",
+        "summary": [
+            "pdm to use a terminology server for all terminology lookups not the issuer fhir server"
+        ],
+        "timespent": "19800"
+    },
+    {
+        "id": "26641",
+        "project": "PDM",
+        "summary": [
+            "constrain the to issuing the terminology lookup with snappy response"
+        ],
+        "timespent": "19800"
+    },
+    {
+        "id": "26583",
+        "project": "PDM",
+        "summary": [
+            "the terminology server is not able to consistently search over a value set"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "26101",
+        "project": "PDM",
+        "summary": [
+            "patient data manager appears to show all medicationrequest and careteam resources for all patients instead of just the patient in context"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "25400",
+        "project": "PDM",
+        "summary": [
+            "a user of patient data manager is able to select coded values from a set that is provided by the hspc terminology server"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "19609",
+        "project": "PDM",
+        "summary": [
+            "a user of the patient data manager can establish references between resources"
+        ],
+        "timespent": "144000"
+    },
+    {
+        "id": "19605",
+        "project": "PDM",
+        "summary": [
+            "a user of the patient data manager is able to create careteam resource"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "19604",
+        "project": "PDM",
+        "summary": [
+            "a user of the patient data manager is able to create resources compliant with a given fhir version"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "13101",
+        "project": "PDM",
+        "summary": [
+            "a user of the patient data manager is able to page through a result set and look up codes and descriptions for coded values in a terminology server"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "13009",
+        "project": "PDM",
+        "summary": [
+            "a user of the patient data manager is able to modify an observation for the patient"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "13007",
+        "project": "PDM",
+        "summary": [
+            "a user of the patient data manager is able to add a new observation to the patient"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "13203",
+        "project": "PDM",
+        "summary": [
+            "a user of the patient data manager is able to view a patient's appointments"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "13005",
+        "project": "PDM",
+        "summary": [
+            "a user is able to launch the patient data manager and see the patient demographics"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "13008",
+        "project": "PDM",
+        "summary": [
+            "a user of the patient data manager is able to delete an observation from the patient"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "26869",
+        "project": "JCL",
+        "summary": [
+            "release the java client with logout functionality"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "26570",
+        "project": "JCL",
+        "summary": [
+            "a user of the hspc java client is able to log out and then log in with a different user account including the auth server session"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "26564",
+        "project": "JCL",
+        "summary": [
+            "a user of the quick start java spring standalone mvc for provider guide runs the guide and sees information from the signed in user"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "26524",
+        "project": "JCL",
+        "summary": [
+            "the java client library has an npe during the standalone launch flow because they have no launch parameter"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "22607",
+        "project": "JCL",
+        "summary": [
+            "hspc java client examples not working"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "22606",
+        "project": "JCL",
+        "summary": [
+            "a user of the java client library is able to issue queries that are restricted to the smart app's patient context"
+        ],
+        "timespent": "82800"
+    },
+    {
+        "id": "22603",
+        "project": "JCL",
+        "summary": [
+            "a user of the java client library is able to connect to the authentication server when behind a corporate proxy server"
+        ],
+        "timespent": "50400"
+    },
+    {
+        "id": "18302",
+        "project": "JCL",
+        "summary": [
+            "a user of the java client library is able to use the hapi and fhir versions"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "12706",
+        "project": "JCL",
+        "summary": [
+            "send authorization credentials in the header to api server when requesting a launch context"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "12606",
+        "project": "JCL",
+        "summary": [
+            "pull the java client out of the hspc reference impl repo"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "12106",
+        "project": "JCL",
+        "summary": [
+            "organize demo apps into a parent demo apps project and child projects for each demo"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "12105",
+        "project": "JCL",
+        "summary": [
+            "part an application developer is able to create a backend service sample app for java and spring ioc code and instructions"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "12402",
+        "project": "JCL",
+        "summary": [
+            "a consumer of the java client is able to receive a patient context similar to smart javascript lib"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "10683",
+        "project": "JCL",
+        "summary": [
+            "an application developer downloads and installs without building etc the hspc java client library using instructions on the hspc website"
+        ],
+        "timespent": "115200"
+    },
+    {
+        "id": "10600",
+        "project": "JCL",
+        "summary": [
+            "a application developer authorizes a standalone not launched from ehr confidential client application using the hspc java client library"
+        ],
+        "timespent": "36000"
+    },
+    {
+        "id": "11820",
+        "project": "JCL",
+        "summary": [
+            "a java clinical application consumer of the hspc sandbox requests clinical data using the hspc java client"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "12107",
+        "project": "JCL",
+        "summary": [
+            "part an application developer uses jwt to authenticate a backend service to the hsp sandbox which style asymmetric or symmetric smart needs to specify"
+        ],
+        "timespent": "46800"
+    },
+    {
+        "id": "12400",
+        "project": "JCL",
+        "summary": [
+            "part an application developer uses jwt to authenticate a backend service to the hsp sandbox which style asymmetric or symmetric smart needs to specify"
+        ],
+        "timespent": "64800"
+    },
+    {
+        "id": "12100",
+        "project": "JCL",
+        "summary": [
+            "an application developer is able to create a confidential client sample app for jsp with spring mvc code and instructions"
+        ],
+        "timespent": "144000"
+    },
+    {
+        "id": "11818",
+        "project": "JCL",
+        "summary": [
+            "a java clinical application consumer of the hspc sandbox authorizes using the hspc java client"
+        ],
+        "timespent": "144000"
+    },
+    {
+        "id": "12202",
+        "project": "JCL",
+        "summary": [
+            "part an application developer is able to create a backend service sample app for java and spring ioc code and instructions"
+        ],
+        "timespent": "129600"
+    },
+    {
+        "id": "12113",
+        "project": "JCL",
+        "summary": [
+            "an hspc engineer publishes the hspc java client library to a public maven repository"
+        ],
+        "timespent": "72000"
+    },
+    {
+        "id": "12207",
+        "project": "JCL",
+        "summary": [
+            "the bilirubin application is able to use the latest conformance statement and launch sequence from smart"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "12112",
+        "project": "JCL",
+        "summary": [
+            "a application developer authorizes a confidential client java application using the hspc java client library"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "11819",
+        "project": "JCL",
+        "summary": [
+            "a headless java clinical application consumer of the hspc sandbox authorizes using the hspc java client"
+        ],
+        "timespent": "144000"
+    },
+    {
+        "id": "12109",
+        "project": "JCL",
+        "summary": [
+            "the ci server is able to build the hpsc java client library after changes are made to the codebase"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "12206",
+        "project": "JCL",
+        "summary": [
+            "a consumer of the hspc sandbox is able to receive a conformance statement based on smart's latest standards rest server js client migration java client"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "12103",
+        "project": "JCL",
+        "summary": [
+            "a application developer is able to serialize and deserialize fhir resources"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "11816",
+        "project": "JCL",
+        "summary": [
+            "a application developer receives additional launch context parameters where appropriate intent resource"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "12205",
+        "project": "JCL",
+        "summary": [
+            "a consumer of the hspc sandbox server and java client changes is able to use the lastest smart launch sequence to authenticate"
+        ],
+        "timespent": "72000"
+    },
+    {
+        "id": "12108",
+        "project": "JCL",
+        "summary": [
+            "an application developer is able to continue using a session when an access token has expired"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "27268",
+        "project": "HRI",
+        "summary": [
+            "a user validates a resource instance using a profile with the validate operation support"
+        ],
+        "timespent": "36000"
+    },
+    {
+        "id": "26637",
+        "project": "HRI",
+        "summary": [
+            "part a user of the reference api uses the validate operation to validate a fhir resource according to an us core profile"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "26575",
+        "project": "HRI",
+        "summary": [
+            "reference auth does not seem to support cors at the token endpoint specifically for getting a refresh token"
+        ],
+        "timespent": "64800"
+    },
+    {
+        "id": "26574",
+        "project": "HRI",
+        "summary": [
+            "part a user of the reference api uses the validate operation to validate a fhir resource according to an fpar profile"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "26543",
+        "project": "HRI",
+        "summary": [
+            "the hapi library sends search results to the wrong connect default"
+        ],
+        "timespent": "79200"
+    },
+    {
+        "id": "26532",
+        "project": "HRI",
+        "summary": [
+            "a user of the reference api loads the fpar opa structure definitions"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "26528",
+        "project": "HRI",
+        "summary": [
+            "a user of the reference api loads the terminology to validate fpar profiles patched"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "26526",
+        "project": "HRI",
+        "summary": [
+            "strategy a reference api user is able to migrate their sandbox to a newer schema version"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "26525",
+        "project": "HRI",
+        "summary": [
+            "a user of the reference api is able to use the hapi cli to load the snomed terminology packages required by the fhir base profiles"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "26522",
+        "project": "HRI",
+        "summary": [
+            "the app is deployed to and available at"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "26521",
+        "project": "HRI",
+        "summary": [
+            "the patient data manager app is deployed to and available at"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "26520",
+        "project": "HRI",
+        "summary": [
+            "the growth chart app is deployed to and available at"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "26519",
+        "project": "HRI",
+        "summary": [
+            "the gallery app is deployed to and available at"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "26518",
+        "project": "HRI",
+        "summary": [
+            "the cardiac risk app is deployed to and available at"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "26517",
+        "project": "HRI",
+        "summary": [
+            "the app is deployed to and available at"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "26516",
+        "project": "HRI",
+        "summary": [
+            "the app is deployed to and available at"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "26514",
+        "project": "HRI",
+        "summary": [
+            "the bilirubin-cdshooks app is deployed to and available at"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "26512",
+        "project": "HRI",
+        "summary": [
+            "the appointments app is deployed to and available at"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "26507",
+        "project": "HRI",
+        "summary": [
+            "a user of the hapi can instantiate their sandbox with the starter data set"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "26505",
+        "project": "HRI",
+        "summary": [
+            "the hspc auth server is deployed to the cluster and available at"
+        ],
+        "timespent": "43200"
+    },
+    {
+        "id": "26502",
+        "project": "HRI",
+        "summary": [
+            "encrypt the hspc installer property files so the sensitive properties can be checked into source control"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "26500",
+        "project": "HRI",
+        "summary": [
+            "the sandbox manager api is deployed to the cluster and available at"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "26201",
+        "project": "HRI",
+        "summary": [
+            "create sensible default for and"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "26200",
+        "project": "HRI",
+        "summary": [
+            "the swift client receives a npe on the post to the authorize endpoint"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "26017",
+        "project": "HRI",
+        "summary": [
+            "a sandbox user sees a cds hooks integration tutorial in the hspc wiki"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "26016",
+        "project": "HRI",
+        "summary": [
+            "part when a user creates a sandbox with default data they see a launch scenario for bilirubin and cds hooks also make one for bilirubin risk chart"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "26015",
+        "project": "HRI",
+        "summary": [
+            "sandbox manager api is running as a service on aws container services using docker"
+        ],
+        "timespent": "118800"
+    },
+    {
+        "id": "26014",
+        "project": "HRI",
+        "summary": [
+            "the reference auth server is able to deploy to aws container services as a docker image"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "26013",
+        "project": "HRI",
+        "summary": [
+            "support the hspc sandbox"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "26012",
+        "project": "HRI",
+        "summary": [
+            "support the hspc sandbox"
+        ],
+        "timespent": "72000"
+    },
+    {
+        "id": "26011",
+        "project": "HRI",
+        "summary": [
+            "a user of the reference api is able to use the hapi cli to load the loinc terminology packages required by the fhir base profiles"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "26010",
+        "project": "HRI",
+        "summary": [
+            "a user of the reference api is able to use the hapi cli to load the fhir base profiles"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "26009",
+        "project": "HRI",
+        "summary": [
+            "a user of the reference api is able to create a sandbox that uses hapi"
+        ],
+        "timespent": "97200"
+    },
+    {
+        "id": "26008",
+        "project": "HRI",
+        "summary": [
+            "talk with kevin and zach about what session context a cds hooks sandbox user would like passed from the hspc sandbox to the hooks sandbox"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "26007",
+        "project": "HRI",
+        "summary": [
+            "look into loading terminology and profiles into an hspc server"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "25307",
+        "project": "HRI",
+        "summary": [
+            "the hspc sandbox is able to detect its snapshots instead of use the record"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "24902",
+        "project": "HRI",
+        "summary": [
+            "alternative ways to add smart support to an oauth server"
+        ],
+        "timespent": "144000"
+    },
+    {
+        "id": "24700",
+        "project": "HRI",
+        "summary": [
+            "figure out a backup solution for the gallery apps database"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "24101",
+        "project": "HRI",
+        "summary": [
+            "the api server should not leak out the sandbox schema version to consumers"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "21601",
+        "project": "HRI",
+        "summary": [
+            "part migrate api schemas hapi to the latest hapi code hapi"
+        ],
+        "timespent": "115200"
+    },
+    {
+        "id": "21400",
+        "project": "HRI",
+        "summary": [
+            "hspc tools pdm sandman etc support fhir"
+        ],
+        "timespent": "115200"
+    },
+    {
+        "id": "20802",
+        "project": "HRI",
+        "summary": [
+            "a reference api user is able to use a fhir sandbox"
+        ],
+        "timespent": "72000"
+    },
+    {
+        "id": "20713",
+        "project": "HRI",
+        "summary": [
+            "amy placeholder for hit conference work"
+        ],
+        "timespent": "115200"
+    },
+    {
+        "id": "20711",
+        "project": "HRI",
+        "summary": [
+            "a user of the hspc sandbox is able to use hapi with"
+        ],
+        "timespent": "144000"
+    },
+    {
+        "id": "20700",
+        "project": "HRI",
+        "summary": [
+            "a smart app is able to publish a metadata object that provides dynamic registration information"
+        ],
+        "timespent": "144000"
+    },
+    {
+        "id": "20400",
+        "project": "HRI",
+        "summary": [
+            "meet with cerner to discuss collaboration for profile query tool developer pathway"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "20200",
+        "project": "HRI",
+        "summary": [
+            "a user of the hspc gallery is able to see all listed apps in a working state"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "20100",
+        "project": "HRI",
+        "summary": [
+            "a user is able to create a persona from the select persona screen when building a launch scenario"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "19701",
+        "project": "HRI",
+        "summary": [
+            "rollout a user of pdm is able to see the care plan care team and goal resources for an sandbox"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "19700",
+        "project": "HRI",
+        "summary": [
+            "rollout a user of the hspc sandbox is able to see a public sandbox with default registered apps"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "19618",
+        "project": "HRI",
+        "summary": [
+            "a user of the hspc vagrant installer can create a vm with the full hspc stack part"
+        ],
+        "timespent": "230400"
+    },
+    {
+        "id": "19614",
+        "project": "HRI",
+        "summary": [
+            "an administrator of hspc aws account can manage dns mappings"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "19613",
+        "project": "HRI",
+        "summary": [
+            "a user of the hspc account can login using openid providers google plus and twitter"
+        ],
+        "timespent": "30600"
+    },
+    {
+        "id": "19607",
+        "project": "HRI",
+        "summary": [
+            "a user of the hspc vagrant installer can create a vm with the full hspc stack part"
+        ],
+        "timespent": "115200"
+    },
+    {
+        "id": "19501",
+        "project": "HRI",
+        "summary": [
+            "auth server is not properly validating the aud parameter on launch context creation"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "18908",
+        "project": "HRI",
+        "summary": [
+            "add a flag to enable or disable a sandboxes open endpoint"
+        ],
+        "timespent": "144000"
+    },
+    {
+        "id": "18408",
+        "project": "HRI",
+        "summary": [
+            "connectathon subscription support"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "18407",
+        "project": "HRI",
+        "summary": [
+            "enhance the api to support creating tenants for either or"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "18406",
+        "project": "HRI",
+        "summary": [
+            "create a fhir dump file based on the hapi implementation"
+        ],
+        "timespent": "43200"
+    },
+    {
+        "id": "18600",
+        "project": "HRI",
+        "summary": [
+            "figure out why the auth server is so slow"
+        ],
+        "timespent": "72000"
+    },
+    {
+        "id": "18300",
+        "project": "HRI",
+        "summary": [
+            "a user of the hspc reference api is able to use the fhir connectathon version"
+        ],
+        "timespent": "72000"
+    },
+    {
+        "id": "18204",
+        "project": "HRI",
+        "summary": [
+            "review the argonaut data query implementation guide version and prioritize features contained in it followed by a review meeting"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "16400",
+        "project": "HRI",
+        "summary": [
+            "connection the fhir database is failing after a day of being idol"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "15006",
+        "project": "HRI",
+        "summary": [
+            "reference auth server is not able to launch when using a local auth server"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "14664",
+        "project": "HRI",
+        "summary": [
+            "when the sandbox manager service calls the reference api service to create the sandbox fhir server the reference api service creates an endpoint for the sandbox fhir server ex"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "14678",
+        "project": "HRI",
+        "summary": [
+            "the reference auth server is importing two versions of spring that are preventing nikolai from starting the server"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "14677",
+        "project": "HRI",
+        "summary": [
+            "when a hspc user sends a fhir request to the sandbox reference api server endpoint ex the reference api service creates or gets an entity manager for the sandbox fhir database schema"
+        ],
+        "timespent": "144000"
+    },
+    {
+        "id": "14676",
+        "project": "HRI",
+        "summary": [
+            "when the sandbox manager service calls the reference api service to create the sandbox fhir server the reference api service creates a sandbox fhir database schema for the sandbox endpoint"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "14674",
+        "project": "HRI",
+        "summary": [
+            "when the sandbox manager ui calls the sandbox manager service to store the new sandbox info the sandbox manager service calls the reference api service to create the sandbox resource server"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "14673",
+        "project": "HRI",
+        "summary": [
+            "when the sandbox manager ui calls the sandbox manager service to store the new sandbox info the sandbox manager service updates the sandbox tables sandbox try to secure the services"
+        ],
+        "timespent": "129600"
+    },
+    {
+        "id": "14668",
+        "project": "HRI",
+        "summary": [
+            "apply technique from teresa's pull request for reference apps to sandbox manager"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "14667",
+        "project": "HRI",
+        "summary": [
+            "review teresa's pull request for reference apps",
+            "remove fhir starter"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "14660",
+        "project": "HRI",
+        "summary": [
+            "the hspc auth server should be able to be used with a different ldap schema ie ihc's schema"
+        ],
+        "timespent": "61200"
+    },
+    {
+        "id": "14107",
+        "project": "HRI",
+        "summary": [
+            "do a pass over the documentation before himms"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "14106",
+        "project": "HRI",
+        "summary": [
+            "merge all projects to main"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "14100",
+        "project": "HRI",
+        "summary": [
+            "a user of the appointment viewer application is able to see data from vista via ibm esb"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "14000",
+        "project": "HRI",
+        "summary": [
+            "hspc sandbox user should be able to change their email address"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "13932",
+        "project": "HRI",
+        "summary": [
+            "release artifacts with hspc labeling"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "13923",
+        "project": "HRI",
+        "summary": [
+            "a user of the hspc sandbox launches visualdx application"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "13920",
+        "project": "HRI",
+        "summary": [
+            "clean up repository readme's artifact naming for developers hspc sandbox rename all hsp to hspc on confluence"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "13832",
+        "project": "HRI",
+        "summary": [
+            "come up with a design for the hspc sandbox manager"
+        ],
+        "timespent": "144000"
+    },
+    {
+        "id": "13831",
+        "project": "HRI",
+        "summary": [
+            "come up with a design for the hspc sandbox manager"
+        ],
+        "timespent": "144000"
+    },
+    {
+        "id": "13829",
+        "project": "HRI",
+        "summary": [
+            "come up with a design for the hspc sandbox manager"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "13828",
+        "project": "HRI",
+        "summary": [
+            "a user of the hspc sandbox launches premier app"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "13827",
+        "project": "HRI",
+        "summary": [
+            "a user of the hspc sandbox launches vigilanz"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "13826",
+        "project": "HRI",
+        "summary": [
+            "a user of the hspc sandbox launches healthally"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "13825",
+        "project": "HRI",
+        "summary": [
+            "a user of the hspc sandbox launches polyglot's meducation timeview"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "13824",
+        "project": "HRI",
+        "summary": [
+            "a user of the hspc sandbox launches polyglot's meducation"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "13823",
+        "project": "HRI",
+        "summary": [
+            "a user of the hspc sandbox launches smart's duke pillbox"
+        ],
+        "timespent": "68400"
+    },
+    {
+        "id": "13822",
+        "project": "HRI",
+        "summary": [
+            "a user of the hspc sandbox launches smart's clindat"
+        ],
+        "timespent": "14700"
+    },
+    {
+        "id": "13600",
+        "project": "HRI",
+        "summary": [
+            "upgrade from hapi to gain fhir final release"
+        ],
+        "timespent": "144000"
+    },
+    {
+        "id": "13412",
+        "project": "HRI",
+        "summary": [
+            "the appointment viewer application shows the practitioner view for the practitioner identified in the profile claim"
+        ],
+        "timespent": "115200"
+    },
+    {
+        "id": "13411",
+        "project": "HRI",
+        "summary": [
+            "the appointment viewer validates the according to the oidc specification"
+        ],
+        "timespent": "72000"
+    },
+    {
+        "id": "13410",
+        "project": "HRI",
+        "summary": [
+            "the contains the profile claim for the user that is the url of the practitioner resource"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "13409",
+        "project": "HRI",
+        "summary": [
+            "the appointment viewer application receives the by requesting the openid and profile scopes"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "13407",
+        "project": "HRI",
+        "summary": [
+            "backfill practitioner records for all existing sandbox user accounts"
+        ],
+        "timespent": "32400"
+    },
+    {
+        "id": "13406",
+        "project": "HRI",
+        "summary": [
+            "a user of the sandbox is able to create a sandbox account that is associated with a practitioner doctor role managing organization resource"
+        ],
+        "timespent": "93600"
+    },
+    {
+        "id": "13402",
+        "project": "HRI",
+        "summary": [
+            "install version of cardiac risk into sandbox"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "13401",
+        "project": "HRI",
+        "summary": [
+            "install version of bp centiles into sandbox"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "13400",
+        "project": "HRI",
+        "summary": [
+            "install version of pediatric growth chart into sandbox"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "13301",
+        "project": "HRI",
+        "summary": [
+            "install the pediatric growth chart in our sandbox"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "13204",
+        "project": "HRI",
+        "summary": [
+            "a care coordinator practitioner is able to view the appointments a patient has at a single organization"
+        ],
+        "timespent": "172800"
+    },
+    {
+        "id": "13200",
+        "project": "HRI",
+        "summary": [
+            "a system creates a managing organization when a user creates a user account"
+        ],
+        "timespent": "68400"
+    },
+    {
+        "id": "13104",
+        "project": "HRI",
+        "summary": [
+            "a user is able to deploy the sandbox artifacts to a remote server in a simplified mannor"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "13004",
+        "project": "HRI",
+        "summary": [
+            "a user is only able to resources they have created"
+        ],
+        "timespent": "230400"
+    },
+    {
+        "id": "13003",
+        "project": "HRI",
+        "summary": [
+            "an authorized user is able to create a new patient record from the choose a patient screen"
+        ],
+        "timespent": "144000"
+    },
+    {
+        "id": "12903",
+        "project": "HRI",
+        "summary": [
+            "reference messaging routing timebox"
+        ],
+        "timespent": "79200"
+    },
+    {
+        "id": "12902",
+        "project": "HRI",
+        "summary": [
+            "subscription to drools rule factory timebox"
+        ],
+        "timespent": "140400"
+    },
+    {
+        "id": "12901",
+        "project": "HRI",
+        "summary": [
+            "a standalone public client app is able to receive a launch context"
+        ],
+        "timespent": "90000"
+    },
+    {
+        "id": "12900",
+        "project": "HRI",
+        "summary": [
+            "migrate the reference implementation sandbox to the hspc domain"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "12712",
+        "project": "HRI",
+        "summary": [
+            "choose design strategies for patient-specific scopes as part of a smart on fhir patient context"
+        ],
+        "timespent": "50400"
+    },
+    {
+        "id": "12711",
+        "project": "HRI",
+        "summary": [
+            "analyze intermountain for hspc eventing proposal"
+        ],
+        "timespent": "115200"
+    },
+    {
+        "id": "12710",
+        "project": "HRI",
+        "summary": [
+            "analyze subscription resource and workflow in preparation for hspc meetings"
+        ],
+        "timespent": "172800"
+    },
+    {
+        "id": "12707",
+        "project": "HRI",
+        "summary": [
+            "a client requests a launch context with authorization credentials and the api server verifies those credentials with the auth server"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "12607",
+        "project": "HRI",
+        "summary": [
+            "pull billirubin out of the apps project into its own source code repo"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "12605",
+        "project": "HRI",
+        "summary": [
+            "initial deployment of collaborative artifacts prior to merging"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "12604",
+        "project": "HRI",
+        "summary": [
+            "create a collaborative code repository for hspc smart reference impl and document"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "12601",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp reference auth server can request pairs in the launch context for extensibility"
+        ],
+        "timespent": "108000"
+    },
+    {
+        "id": "12600",
+        "project": "HRI",
+        "summary": [
+            "part an application launch context is made durable for a period of time"
+        ],
+        "timespent": "61200"
+    },
+    {
+        "id": "12208",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hspc sandbox reads the migration guild for to"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "12203",
+        "project": "HRI",
+        "summary": [
+            "scale down aws to medium instance for hspc sandbox hosting with linux based instance from existing"
+        ],
+        "timespent": "122400"
+    },
+    {
+        "id": "12101",
+        "project": "HRI",
+        "summary": [
+            "part a reader on the confluence site sees an of the phase tech spec",
+            "how the different standards fit together"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "12003",
+        "project": "HRI",
+        "summary": [
+            "enhance the presentation for intermountain on july to include more fhir coverage"
+        ],
+        "timespent": "115200"
+    },
+    {
+        "id": "12002",
+        "project": "HRI",
+        "summary": [
+            "a developer of the hspconsortium bitbucket repository is able to develop on the codebase on main"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "12001",
+        "project": "HRI",
+        "summary": [
+            "a reader on the confluence site is able to follow a tutorial for an hspc java client sample application"
+        ],
+        "timespent": "93600"
+    },
+    {
+        "id": "12000",
+        "project": "HRI",
+        "summary": [
+            "a reader on the confluence site reads documentation about the hspc java client"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "11808",
+        "project": "HRI",
+        "summary": [
+            "bitbucket repository links need to be updated to accommodate discontinuation of bitbucket cname support plus relevant documentation"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "11807",
+        "project": "HRI",
+        "summary": [
+            "sorting of fhir starter patient list is not working in hspc sandbox"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "11806",
+        "project": "HRI",
+        "summary": [
+            "paging of fhir starter patient list is not working in hspc sandbox"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "11805",
+        "project": "HRI",
+        "summary": [
+            "deploy hspc sandbox secured and open endpoints to the cloud server and document process"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "11804",
+        "project": "HRI",
+        "summary": [
+            "an administrator of the hspc sandbox loads patient data applicable to the bilirubin application"
+        ],
+        "timespent": "32400"
+    },
+    {
+        "id": "11803",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hspc sandbox launches the bilirubin application against a patient with representative data"
+        ],
+        "timespent": "32400"
+    },
+    {
+        "id": "11802",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hspc sandbox accesses the fhir starter mock ehr"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "11801",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hspc sandbox rest api accesses the secured service endpoint"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "11800",
+        "project": "HRI",
+        "summary": [
+            "refactor hsp project structures platform developer framework to incorporate hapi fhir framework integration"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "11413",
+        "project": "HRI",
+        "summary": [
+            "all app launches fail after changing the registered client id of any app in the authorization server"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "11412",
+        "project": "HRI",
+        "summary": [
+            "hspc sandbox authorization fails for new javascript client with smart domain name change"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "11411",
+        "project": "HRI",
+        "summary": [
+            "himss prep part"
+        ],
+        "timespent": "61200"
+    },
+    {
+        "id": "11410",
+        "project": "HRI",
+        "summary": [
+            "resource searches fail when the format parameter is provided"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "11409",
+        "project": "HRI",
+        "summary": [
+            "transaction processing needs to create new ids for resources and fix references within the transaction bundle and return a full result set"
+        ],
+        "timespent": "129600"
+    },
+    {
+        "id": "11406",
+        "project": "HRI",
+        "summary": [
+            "date searches involving gt and lt operators don't function properly"
+        ],
+        "timespent": "81000"
+    },
+    {
+        "id": "11405",
+        "project": "HRI",
+        "summary": [
+            "fhir bundles returned by the server open api reference http links when requested via https"
+        ],
+        "timespent": "43200"
+    },
+    {
+        "id": "11404",
+        "project": "HRI",
+        "summary": [
+            "hapi integration investigation spike"
+        ],
+        "timespent": "100860"
+    },
+    {
+        "id": "11403",
+        "project": "HRI",
+        "summary": [
+            "hapi integration investigation spike"
+        ],
+        "timespent": "82800"
+    },
+    {
+        "id": "11401",
+        "project": "HRI",
+        "summary": [
+            "an hspc application developer reads a tutorial on how to create a simple hspc application"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "11400",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hspc sandbox reads enhanced documentation about the sandbox"
+        ],
+        "timespent": "32400"
+    },
+    {
+        "id": "11303",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the smart sample data loader in provides the url of the targeted resource server when loading data"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "11302",
+        "project": "HRI",
+        "summary": [
+            "paging fhir search results paging to the end of the patient list and back in fhirstarter turns off next and previous buttons"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "11300",
+        "project": "HRI",
+        "summary": [
+            "transaction service needs to return a result set to the client containing the results of the transaction"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "11202",
+        "project": "HRI",
+        "summary": [
+            "clinical applications are cached for the selected patient when using the fhirserviceurl and patientid launch parameters"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "11201",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hspc platform development framework implements queryproviders by extending resource specific query providers provided by the framework"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "11200",
+        "project": "HRI",
+        "summary": [
+            "the filesystemqueryprovider is broken by query framework refactor"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "11106",
+        "project": "HRI",
+        "summary": [
+            "a reader on the confluence site sees the sandbox information separated in distict sections"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "11105",
+        "project": "HRI",
+        "summary": [
+            "a reader on the confluence site sees the architectural drawings of the sandbox"
+        ],
+        "timespent": "36000"
+    },
+    {
+        "id": "11104",
+        "project": "HRI",
+        "summary": [
+            "a reader on the confluence site sees the architectural drawings of the reference implementations"
+        ],
+        "timespent": "72000"
+    },
+    {
+        "id": "11102",
+        "project": "HRI",
+        "summary": [
+            "a reader on the confluence site sees an of the phase tech spec",
+            "how the different standards fit together"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "11100",
+        "project": "HRI",
+        "summary": [
+            "there are two documents describing the authorization spec",
+            "should be just"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "11011",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hspc reference implementation is able to authenticate using an ldap user account"
+        ],
+        "timespent": "151200"
+    },
+    {
+        "id": "11010",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api requests the profile scope during authorization"
+        ],
+        "timespent": "32400"
+    },
+    {
+        "id": "11009",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api requests the openid scope during authorization"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "11008",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api searches for practitioner resources by the name parameter"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "11007",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api cruds practitioner resources"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "11006",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp reference implementation executes a search with the count parameter"
+        ],
+        "timespent": "100800"
+    },
+    {
+        "id": "11005",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp reference implementation executes a search for observation resources sorted by date'"
+        ],
+        "timespent": "72000"
+    },
+    {
+        "id": "11004",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp reference implementation executes a fhir transaction operation"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "11003",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp reference implementation loads the smart on fhir sample patients data set"
+        ],
+        "timespent": "79200"
+    },
+    {
+        "id": "11002",
+        "project": "HRI",
+        "summary": [
+            "update mitreid connect version from to"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "11001",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp reference implementation installs the authorization server and runs mysql scripts to populate the database"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "11000",
+        "project": "HRI",
+        "summary": [
+            "client registration fails to persist scopes"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "10916",
+        "project": "HRI",
+        "summary": [
+            "searching against fhir resources needs to be generalized by search parameter type"
+        ],
+        "timespent": "115200"
+    },
+    {
+        "id": "10900",
+        "project": "HRI",
+        "summary": [
+            "mongodb query support is currently too fhir resource specific and needs to be generalized"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "10820",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api searches for alerts by subject using an absolute reference url"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "10819",
+        "project": "HRI",
+        "summary": [
+            "searches for adversereaction by date return incorrect results"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "10818",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api searches for adversereactions by date using all date operators"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "10817",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api searches for adversereactions by substance with or without the substance resource modifier"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "10816",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api searches for adversereactions by substance using an absolute or relative reference url"
+        ],
+        "timespent": "60"
+    },
+    {
+        "id": "10814",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api searches for adversereactions by subject with or without the patient resource modifier"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "10813",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api searches for adversereactions by subject using an absolute or relative reference url"
+        ],
+        "timespent": "60"
+    },
+    {
+        "id": "10812",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api searches for patients by gender using"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "10811",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api searches for patients by gender using"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "10810",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api searches for patients by gender using"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "10809",
+        "project": "HRI",
+        "summary": [
+            "patient name searches should be case insensitive"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "10808",
+        "project": "HRI",
+        "summary": [
+            "rewrite the tech spec section on fhir crud and queries to have just one general tutorial on crud operations and queries for fhir resources",
+            "delete all resource specific documentation",
+            "add link to version of fhir we implement"
+        ],
+        "timespent": "72000"
+    },
+    {
+        "id": "10807",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api searches for patients by gender using the text modifier"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "10806",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api searches for patients by birthdate using all date operators"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "10803",
+        "project": "HRI",
+        "summary": [
+            "refactor hsp api integration tests"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "10802",
+        "project": "HRI",
+        "summary": [
+            "refactor of hsp project package structure"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "10801",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp reference implementation reads about development resources on the hspc confluence site open and secure api urls client libraries oauth integration tutorials etc"
+        ],
+        "timespent": "136800"
+    },
+    {
+        "id": "10800",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp executes the latest observation named query"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "10715",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api searches for observations without server applied latest observation filtering"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "10714",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the tier sandbox interacts with an open version of the hsp services"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "10713",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the tier sandbox interacts with a secured version of the hspc services"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "10712",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the tier sandbox interacts with the cloud instance via https"
+        ],
+        "timespent": "129600"
+    },
+    {
+        "id": "10711",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api searches for patient resources by the birthdate attribute"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "10710",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api searches for adversereaction resources by date and substance attributes"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "10709",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api searches for encounter resources by date and status attributes"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "10708",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api searches for medicationprescription resources by datewritten and medication attributes"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "10706",
+        "project": "HRI",
+        "summary": [
+            "a consumer of hsp reference implementation queries the cloud instance for medicationstatement test data"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "10704",
+        "project": "HRI",
+        "summary": [
+            "search for medicationstatement resources by patient"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "10700",
+        "project": "HRI",
+        "summary": [
+            "support resource reference search by absolute url observation encounter adversereaction alert condition subject and encounter medicationprescription subject and encounter"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "10695",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api cruds and searches for familyhistory resources"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "10694",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api cruds and searches for medicationstatement resources"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "10687",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api reads about the search interaction in the hsp technical specification"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "10686",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api reads about the create interaction in the hsp technical specification"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "10685",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api reads about the supported fhir resources in the hsp technical specification"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "10682",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api reads about the delete interaction in the hsp technical specification"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "10681",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api reads about the update interaction in the hsp technical specification"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "10679",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api reads about the read interaction in the hsp technical specification"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "10678",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp reference implementation downloads builds and runs the reference implementation using instructions on the hspc website"
+        ],
+        "timespent": "64800"
+    },
+    {
+        "id": "10662",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api cruds and searches for diagnosticreport resources"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "10658",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api cruds and searches for location resources"
+        ],
+        "timespent": "23400"
+    },
+    {
+        "id": "10640",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api cruds and searches for procedure resources"
+        ],
+        "timespent": "41400"
+    },
+    {
+        "id": "10638",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp rest api cruds and searches for allergyintolerance resources"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "10605",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp restful api retrieves full information location modified date version etc related to api calls"
+        ],
+        "timespent": "101040"
+    },
+    {
+        "id": "10604",
+        "project": "HRI",
+        "summary": [
+            "a consumer of the hsp restful api fails to create a resource with a provided identifier using the update api method"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "10601",
+        "project": "HRI",
+        "summary": [
+            "the hsp reference implementation and integration framework are released to the public maven repository"
+        ],
+        "timespent": "72000"
+    },
+    {
+        "id": "10509",
+        "project": "HRI",
+        "summary": [
+            "search for medicationprescription resources by subjectid and encounterid"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "10507",
+        "project": "HRI",
+        "summary": [
+            "search for medication resources by code"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "10506",
+        "project": "HRI",
+        "summary": [
+            "search for encounter resources by subject"
+        ],
+        "timespent": "32400"
+    },
+    {
+        "id": "10505",
+        "project": "HRI",
+        "summary": [
+            "search for observation resources by subject name code date status"
+        ],
+        "timespent": "129600"
+    },
+    {
+        "id": "10504",
+        "project": "HRI",
+        "summary": [
+            "search for condition resources by subject encounter onset status code"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "10503",
+        "project": "HRI",
+        "summary": [
+            "search for alert resources by subjectid"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "10502",
+        "project": "HRI",
+        "summary": [
+            "search for adversereaction resources by subjectid"
+        ],
+        "timespent": "32400"
+    },
+    {
+        "id": "10501",
+        "project": "HRI",
+        "summary": [
+            "search for patient resources by name and gender"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "10500",
+        "project": "HRI",
+        "summary": [
+            "search for substance resources by code"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "10338",
+        "project": "HRI",
+        "summary": [
+            "crud operations for medication fhir resource"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "10335",
+        "project": "HRI",
+        "summary": [
+            "crud operations for medicationperscription fhir resource"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "10320",
+        "project": "HRI",
+        "summary": [
+            "crud operations for observation fhir resource"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "10317",
+        "project": "HRI",
+        "summary": [
+            "crud operations for substance fhir resource"
+        ],
+        "timespent": "36000"
+    },
+    {
+        "id": "10312",
+        "project": "HRI",
+        "summary": [
+            "delete operation for patient fhir resource"
+        ],
+        "timespent": "43200"
+    },
+    {
+        "id": "10311",
+        "project": "HRI",
+        "summary": [
+            "update operation for patient fhir resource"
+        ],
+        "timespent": "39600"
+    },
+    {
+        "id": "10310",
+        "project": "HRI",
+        "summary": [
+            "read operation for patient fhir resource"
+        ],
+        "timespent": "115200"
+    },
+    {
+        "id": "10308",
+        "project": "HRI",
+        "summary": [
+            "create operation for patient fhir resource"
+        ],
+        "timespent": "115200"
+    },
+    {
+        "id": "10303",
+        "project": "HRI",
+        "summary": [
+            "crud operations for encounter fhir resource"
+        ],
+        "timespent": "43200"
+    },
+    {
+        "id": "10302",
+        "project": "HRI",
+        "summary": [
+            "crud operations for condition fhir resource"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "10301",
+        "project": "HRI",
+        "summary": [
+            "crud operations for alert fhir resource"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "10300",
+        "project": "HRI",
+        "summary": [
+            "crud operations for adversereaction fhir resource"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "26868",
+        "project": "HAS",
+        "summary": [
+            "fhir connectathon jan"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "26867",
+        "project": "HAS",
+        "summary": [
+            "when logged out sending a logout request will return a loading screen"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "26565",
+        "project": "HAS",
+        "summary": [
+            "the account api crashes"
+        ],
+        "timespent": "9000"
+    },
+    {
+        "id": "26894",
+        "project": "GALLERY",
+        "summary": [
+            "a user of the gallery does not see an app that is not healthy"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "26814",
+        "project": "GALLERY",
+        "summary": [
+            "some of the hspc apps in the hspc gallery are using localhost as their launch point instead of the production address"
+        ],
+        "timespent": "79200"
+    },
+    {
+        "id": "17900",
+        "project": "GALLERY",
+        "summary": [
+            "a user of the hspc developers website is able to see a matrix for ehr vendor fhir support"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "17701",
+        "project": "GALLERY",
+        "summary": [
+            "security audit of all endpoints fix on a separate work item"
+        ],
+        "timespent": "100800"
+    },
+    {
+        "id": "17400",
+        "project": "GALLERY",
+        "summary": [
+            "many third party apps in the gallery no longer launch"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "17200",
+        "project": "GALLERY",
+        "summary": [
+            "the disabled form of the buttons should not look clickable"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "16300",
+        "project": "GALLERY",
+        "summary": [
+            "user of hspc gallery sees the secured bydigicert on the footer"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "15800",
+        "project": "GALLERY",
+        "summary": [
+            "update logo color's and fonts file for all three sites"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "15304",
+        "project": "GALLERY",
+        "summary": [
+            "a user of the app gallery is able to launch an app presented in the app gallery"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "15317",
+        "project": "GALLERY",
+        "summary": [
+            "a user of can browse apps presented in the app gallery"
+        ],
+        "timespent": "46800"
+    },
+    {
+        "id": "15410",
+        "project": "GALLERY",
+        "summary": [
+            "a user navigates to sees coming soon message hspc app gallery logo"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "14705",
+        "project": "GALLERY",
+        "summary": [
+            "a user that is not logged in is able to access the hspc app gallery at and view the apps that are available but cannot launch without logging in"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "26927",
+        "project": "DEVS",
+        "summary": [
+            "review the developers site for outdated information for example migrate from to"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "16700",
+        "project": "DEVS",
+        "summary": [
+            "optimize developers site for seo"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "16643",
+        "project": "DEVS",
+        "summary": [
+            "finish support page"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "16642",
+        "project": "DEVS",
+        "summary": [
+            "finish answering all the outstanding questions in the faq section and organize for easy navigation"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "16641",
+        "project": "DEVS",
+        "summary": [
+            "do a review of the accuracy of the existing tutorials log issues for problems"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "16640",
+        "project": "DEVS",
+        "summary": [
+            "update tutorials main page to have intro about what tutorials are and excerpts for each tutorial"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "16639",
+        "project": "DEVS",
+        "summary": [
+            "update samples main page to describe what a sample is and an excerpt for each sample"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "16636",
+        "project": "DEVS",
+        "summary": [
+            "create a reference guide for hspc sandbox"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "16635",
+        "project": "DEVS",
+        "summary": [
+            "create a reference guide for patient data manager"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "16634",
+        "project": "DEVS",
+        "summary": [
+            "create a reference guide for java client library"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "16633",
+        "project": "DEVS",
+        "summary": [
+            "reader of the reference main page sees an excerpt for each reference section"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "16631",
+        "project": "DEVS",
+        "summary": [
+            "improve concepts guide page"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "16627",
+        "project": "DEVS",
+        "summary": [
+            "user on the guides main page sees a list of the existing guides with a quick summary of each",
+            "they also see a general intro to guides"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "16625",
+        "project": "DEVS",
+        "summary": [
+            "a user of the documentation site learns about the different types of documentation that exist on the front page"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "16623",
+        "project": "DEVS",
+        "summary": [
+            "user on a mobile device has a good experience using the developers site"
+        ],
+        "timespent": "9000"
+    },
+    {
+        "id": "16621",
+        "project": "DEVS",
+        "summary": [
+            "user of developers website goes to the build section to learn about sandbox and client libraries"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "16501",
+        "project": "DEVS",
+        "summary": [
+            "create a number of code samples for the new documentation site"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "16500",
+        "project": "DEVS",
+        "summary": [
+            "user navigates to and sees the wix developers site"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "15315",
+        "project": "DEVS",
+        "summary": [
+            "a user of developers reads the welcome page to learn all about the hspc dev initiative spec and developers site"
+        ],
+        "timespent": "97200"
+    },
+    {
+        "id": "15313",
+        "project": "DEVS",
+        "summary": [
+            "a user navigates to sees coming soon message hspc developers logo"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "15401",
+        "project": "DEVS",
+        "summary": [
+            "when a user navigates to they are redirected to"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "15400",
+        "project": "DEVS",
+        "summary": [
+            "when a user navigates to they are redirected to"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "15405",
+        "project": "DEVS",
+        "summary": [
+            "user of developer clicks on build menu and is introduced to the sandbox",
+            "is able to go directly to the sandbox from that page"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "15404",
+        "project": "DEVS",
+        "summary": [
+            "user of developers clicks on the learn menu to learn more details about the spec the types of apps and how to find resources to do so",
+            "portal to docs tutorials useful sites etc"
+        ],
+        "timespent": "172800"
+    },
+    {
+        "id": "15403",
+        "project": "DEVS",
+        "summary": [
+            "user of developers is able to read the faqs about hspcs developers products sandbox libraries"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "15409",
+        "project": "DEVS",
+        "summary": [
+            "user of developers is presented with a common menu system for the entire site"
+        ],
+        "timespent": "205200"
+    }
+]

@@ -1,0 +1,1125 @@
+[
+    {
+        "id": "426156",
+        "project": "DM",
+        "summary": [
+            "attribute missing units"
+        ],
+        "description": [
+            "in the file the mteec_command_applytemperaturesetpoint setpoint attribute is missing the"
+        ],
+        "timespent": "28800",
+        "alpha": 97
+    },
+    {
+        "id": "19999",
+        "project": "DM",
+        "summary": [
+            "i'm getting copies of every comment to jira tickets i'm watching"
+        ],
+        "description": [
+            "in the last few days or so i've been getting copies of every comment posted to any ticket i'm watching",
+            "did jira change are my settings messed up it's not a big deal but it's rather annoying to have to wade through all the duplicates and avoid accidentally skipping messages i care about"
+        ],
+        "timespent": "900",
+        "alpha": 98
+    },
+    {
+        "id": "432446",
+        "project": "DM",
+        "summary": [
+            "correct sending of ok reply in mock_controller"
+        ],
+        "description": [
+            "the ok reply sent from the mock_controller lacks a space right before the timeout keyword"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "431874",
+        "project": "DM",
+        "summary": [
+            "make sure that the reply to the status command is in line with the proposed communications protocol"
+        ],
+        "description": [
+            "the current implementation of the mock controller doesn't exactly follow the proposed communications protocol",
+            "fix please"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "13757",
+        "project": "DM",
+        "summary": [
+            "fix incorrect eupspkg config for"
+        ],
+        "description": [
+            "the clang patch from version was correctly deleted",
+            "however the patch identity was still left in the eupspkg config's protocol",
+            "this will delete the last vestige of the formerly necessary clang patch"
+        ],
+        "timespent": "28800",
+        "alpha": 99
+    },
+    {
+        "id": "13381",
+        "project": "DM",
+        "summary": [
+            "buildbot email should state if the build used master only or included other branches"
+        ],
+        "description": [
+            "buildbot build status report currently doesn't state if the build was only for master or included other branches requested by the user"
+        ],
+        "timespent": "57600",
+        "alpha": 99
+    },
+    {
+        "id": "11490",
+        "project": "DM",
+        "summary": [
+            "setup dev test environment"
+        ],
+        "description": [
+            "setup whole qserv environment including installing data set and validate it by running some simple queries",
+            "suggest changes/improvements as appropriate"
+        ],
+        "timespent": "43200",
+        "alpha": 99
+    },
+    {
+        "id": "432452",
+        "project": "DM",
+        "summary": [
+            "consolidate assertcomponent and assertok functions into one assertreply function"
+        ],
+        "description": [
+            "since the structure of each reply received from the mock controller is similar it is possible to have one assert method for each kind of reply instead of dedicated ones"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "432237",
+        "project": "DM",
+        "summary": [
+            "produce and consume communication strings with yaml"
+        ],
+        "description": [
+            "we are still reviewing the use of yaml in stead of using plain separated strings for the communication between the upper and lower level components but i am going ahead and will start implementing yaml already since this is the way we will go",
+            "edit yaml has been accepted as the preferred communications protocol"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "431865",
+        "project": "DM",
+        "summary": [
+            "add additional salobj functions to the dome csc"
+        ],
+        "description": [
+            "now that salobj has been added to the project it is time to implement the azimuth motion control commands"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "431152",
+        "project": "DM",
+        "summary": [
+            "prepare for salobj"
+        ],
+        "description": [
+            "add salobj dependency to the project and implement a skeleton dcs csc"
+        ],
+        "timespent": "108000",
+        "alpha": 100
+    },
+    {
+        "id": "430527",
+        "project": "DM",
+        "summary": [
+            "implement replies to command details in mock controller"
+        ],
+        "description": [
+            "after having created the mock controller framework the commanding details need to be implemented which this story is for"
+        ],
+        "timespent": "115200",
+        "alpha": 100
+    },
+    {
+        "id": "430526",
+        "project": "DM",
+        "summary": [
+            "create mock controler framework for communications between upper and lower level dcs"
+        ],
+        "description": [
+            "for the communications between the upper level dcs and lower level a mock lower level controller will be created based on the code"
+        ],
+        "timespent": "115200",
+        "alpha": 100
+    },
+    {
+        "id": "430525",
+        "project": "DM",
+        "summary": [
+            "create xml files with proposed command protocol"
+        ],
+        "description": [
+            "for the commanding from the upper level dcs to the lower level components a proposal needs to be made for both the communications and the command protocols",
+            "the basis for the commands will be xml files that will be used by both the rubin observastory and eie",
+            "this story is for collecting the necessary commands and creating an xml file to share between both parties"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "429366",
+        "project": "DM",
+        "summary": [
+            "create hvac commands sal xml file"
+        ],
+        "description": [
+            "the intermediate sal xml file for the hvaq telemetry has been created and will be updated as soon as we receive the missing information from datcontrol",
+            "this story is for creating the commands xml file"
+        ],
+        "timespent": "115200",
+        "alpha": 100
+    },
+    {
+        "id": "429303",
+        "project": "DM",
+        "summary": [
+            "add basic idl type test"
+        ],
+        "description": [
+            "currently there is no test to verify that the idl type is present nor if it contains a valid value if it is"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "429225",
+        "project": "DM",
+        "summary": [
+            "add xml tests to verify a topic does not contain special characters"
+        ],
+        "description": [
+            "the xml topic and attribute names should only contain letters underscores and maybe numbers",
+            "create a test to validate this is true"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "428984",
+        "project": "DM",
+        "summary": [
+            "read dome software docs"
+        ],
+        "description": [
+            "read up on dome software design and specifications"
+        ],
+        "timespent": "115200",
+        "alpha": 100
+    },
+    {
+        "id": "428839",
+        "project": "DM",
+        "summary": [
+            "hvac xml to mqtt"
+        ],
+        "description": [
+            "create xml sal bindings for the mqtt telemetry subset"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "426561",
+        "project": "DM",
+        "summary": [
+            "file lcr to address removal of lsstc board language in lsr and oss flowdown to dmsr"
+        ],
+        "description": [
+            "refer to for the substance"
+        ],
+        "timespent": "32400",
+        "alpha": 100
+    },
+    {
+        "id": "425515",
+        "project": "DM",
+        "summary": [
+            "deploy xml on tucson test stand"
+        ],
+        "description": [
+            "ticket to track work for deployment on tucson test stand"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "425000",
+        "project": "DM",
+        "summary": [
+            "shadow rob for testing"
+        ],
+        "description": [
+            "learn to be robs replacement for as he leaves before it will be complete"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "424831",
+        "project": "DM",
+        "summary": [
+            "support testing the rotator at slac"
+        ],
+        "description": [
+            "this ticket is intended to capture my effort supporting testing of the rotator at slac"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "424784",
+        "project": "DM",
+        "summary": [
+            "advanced spatialanalyzer training"
+        ],
+        "description": [
+            "attend advanced spatialanalyzer training in los angeles",
+            "this is the application that controls the laser tracker and contains the spatial model of the components involved in the alignment process camera and separately the calibration alignment dome alignment screen"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "424759",
+        "project": "DM",
+        "summary": [
+            "make a few simple scripts that exercise the mt rotator and hexapod"
+        ],
+        "description": [
+            "make a few simple scripts that exercise the mt rotator by talking to the rotator csc",
+            "this is intended to help shake out the mt rotator at slac especially my new python csc"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "424732",
+        "project": "DM",
+        "summary": [
+            "revamp electrometer csc to use salobj"
+        ],
+        "description": [
+            "revamp the electrometer csc to use salobj csc needs a rewrite to comply with tssw python standards"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "424705",
+        "project": "DM",
+        "summary": [
+            "deploy watcher on tucson test stand and in the summit"
+        ],
+        "description": [
+            "deploy watcher on the tucson test stand and on the summit this task involves writing configuration for the watcher on the lab updating watcher configuration for the summit with all required rules build container for the watcher make compose file to deploy watcher on both locations update compose file for salkafka producer to add watcher on the list of cscs"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "424704",
+        "project": "DM",
+        "summary": [
+            "write auxiliary telescope operations documentation"
+        ],
+        "description": [
+            "write initial version of auxiliary telescope operations manual"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "424703",
+        "project": "DM",
+        "summary": [
+            "improvements on attcs class"
+        ],
+        "description": [
+            "implement some improvements to attcs class with lessons learned on recent auxiliary telescope activities"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "424665",
+        "project": "DM",
+        "summary": [
+            "test the updated middleware with bare rotator"
+        ],
+        "description": [
+            "test the software with the bare rotator in slac",
+            "the followings are my plan there to be familiar with the rotator behavior by some simple sal commands by the original sal version install the sal and update middleware code in the mangement pc",
+            "in this step i will need to stop the running middleware in sal and backup the data in nfsdemo directory",
+            "test the rotator hardware behavior by sal and do the record",
+            "if there is any document of rotator behavior recorded already in slac i will be happy to read",
+            "i also want to talk to the users of rotator to see there is any bug found or not",
+            "this should be recorded and fixed in the following update",
+            "discuss with the developer of ccs to see how the ccs works with the rotator",
+            "since i might be one of the client of ccs i am responsible of the active optics i do want to know how the ccs works"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "424557",
+        "project": "DM",
+        "summary": [
+            "write an mt rotator csc in python"
+        ],
+        "description": [
+            "write an mt rotator csc in python including a basic simulation mode",
+            "note that the simulator is the hard part",
+            "i plan to start with a very elementary model no slewing in this ticket then refine it in another ticket"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "424162",
+        "project": "DM",
+        "summary": [
+            "white light chiller lab testing"
+        ],
+        "description": [
+            "begin lab testing with chiller and white light source plus address issues we discover"
+        ],
+        "timespent": "201600",
+        "alpha": 100
+    },
+    {
+        "id": "413846",
+        "project": "DM",
+        "summary": [
+            "functional testing part"
+        ],
+        "description": [
+            "week of functional testing"
+        ],
+        "timespent": "115200",
+        "alpha": 100
+    },
+    {
+        "id": "394644",
+        "project": "DM",
+        "summary": [
+            "update environment csc to salobj and make is a configurable csc"
+        ],
+        "description": [
+            "environment csc weather station need to be upgraded to a configurable csc and to salobj"
+        ],
+        "timespent": "36000",
+        "alpha": 100
+    },
+    {
+        "id": "297330",
+        "project": "DM",
+        "summary": [
+            "make atspectrograph configurable"
+        ],
+        "description": [
+            "this task also includes adding the instport keyword as well as the wcs keywords that are specific to the instrument"
+        ],
+        "timespent": "36000",
+        "alpha": 100
+    },
+    {
+        "id": "291931",
+        "project": "DM",
+        "summary": [
+            "revise corrections to lsr and oss regarding flowdown of srd ellipticity correlation requirements"
+        ],
+        "description": [
+            "produce a revised version of the requirements proposal in to take into account concerns expressed at the voting stage by austin and bill g"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "269062",
+        "project": "DM",
+        "summary": [
+            "propose responses to lsp review charge questions"
+        ],
+        "description": [
+            "in conjunction with the lsp devise responses to the lsp review recommendations to see if there are additional important points or areas of concern that should be captured as lit tickets or raised to senior management and the lsp team"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "269057",
+        "project": "DM",
+        "summary": [
+            "evaluate lsp review committee's recommendations and map to lit tickets"
+        ],
+        "description": [
+            "review the recommendations in the lsp review report flatten the structure so that item can be mapped to lit ticket"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "256227",
+        "project": "DM",
+        "summary": [
+            "provide description for"
+        ],
+        "description": [
+            "level milestone has appeared in pmcs but has the very minimal description lsp based on discussions between and the following text from the linked confluence page is proposed this test demonstrates the successful integration of a federated authentication system and a basic authorization system with the three aspects of the lsst science platform portal notebook and api with the api aspect containing at least a tap service",
+            "it will be demonstrated on a kubernetes cluster provided by ncsa",
+            "it is not required for authorization to be applied at the database level it is sufficient for this milestone to apply at the tap level",
+            "data served will remain that from the original pdac work sdss stripe wise",
+            "in addition we propose the creation of a further milestone with the following short description this test demonstrates the ingest and service of an dataset in an instance of the lsst science platform at ncsa",
+            "the dataset is expected to be based on the hsc public data and should include both images and catalogs",
+            "the ingest should be performed through a version of the science data model standardization mechanism for generating concrete datasets compatible with the dpdd",
+            "catalogs should be available through tap and queryable from both the portal and notebook aspects",
+            "image metadata should be available through an obstap service and preferably also through an service but this is not mandatory for this milestone and images should be available from the urls provided by the metadata image cutouts should be available through a soda service",
+            "images should be queryable from both the portal and notebook aspects and there should be a relationship documented between and access to images",
+            "note that these milestones reflect functional capabilities of the lsp itself and represent steps on the way to the capabilities needed by lsst science users",
+            "other milestones capture issues associated with the usability of the lsp for commissioning activities",
+            "dates for these milestones will be determined in consultation with the lsp project manager please provide a more descriptive title suggests lsp with authtentication and tap and a brief description of the contents of this milestone",
+            "refer to for examples of the sort of descriptive text looking for",
+            "something following the general pattern of this test demonstrates the successful execution of a prototype alert generation science payload processing data from precursor surveys at a relatively small scale using compute resources at the lsst data facility at ncsa",
+            "or this milestone records successful transfer of an image equivalent to one raft from the daq at the summit to reliable storage in the lsst data facility at ncsa from where it will be made available for scientific evaluation through the lsst science platform"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "240124",
+        "project": "DM",
+        "summary": [
+            "hardware cluster acts node not accessible from"
+        ],
+        "description": [
+            "the atcs node on the hardware cluster was not responding to pings",
+            "i rebooted it and it came back but only the port was automatically active"
+        ],
+        "timespent": "420",
+        "alpha": 100
+    },
+    {
+        "id": "240114",
+        "project": "DM",
+        "summary": [
+            "configure hardware cluster machines for local yum repo"
+        ],
+        "description": [
+            "configure each of the private network machines on subnet to refer to the bastion yum repo",
+            "this involves adding the appropriate file to"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "39503",
+        "project": "DM",
+        "summary": [
+            "submit lsp test specification document to for approval"
+        ],
+        "description": [
+            "apply final polish and submit"
+        ],
+        "timespent": "32400",
+        "alpha": 100
+    },
+    {
+        "id": "39439",
+        "project": "DM",
+        "summary": [
+            "submit lsp design document to for approval"
+        ],
+        "description": [
+            "apply final polish and submit"
+        ],
+        "timespent": "55800",
+        "alpha": 100
+    },
+    {
+        "id": "37924",
+        "project": "DM",
+        "summary": [
+            "edit supertask requirements for order-independence"
+        ],
+        "description": [
+            "magicdraw enforces alphabetic order for requirements within a this makes it impossible to define the order of the requirements as they appear",
+            "the existing supertask requirements in were written without realizing this and contain references to previous requirements as above it is desirable for requirements to be meaningful in isolation in any event so this task is to clean up the language and avoid positional references"
+        ],
+        "timespent": "32400",
+        "alpha": 100
+    },
+    {
+        "id": "33196",
+        "project": "DM",
+        "summary": [
+            "refine refresh plan"
+        ],
+        "description": [
+            "refine initial plans based on review of initial plan",
+            "work with vendors to get necessary quotes"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "33195",
+        "project": "DM",
+        "summary": [
+            "initial planning for refresh"
+        ],
+        "description": [
+            "assess needs and arrive at proposal for increasing capacity and transitioning to supported infrastructure"
+        ],
+        "timespent": "72000",
+        "alpha": 100
+    },
+    {
+        "id": "33168",
+        "project": "DM",
+        "summary": [
+            "gather schemas"
+        ],
+        "description": [
+            "gather schemas for all databases within the consolidated database"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "33163",
+        "project": "DM",
+        "summary": [
+            "convert lsst hsc schema"
+        ],
+        "description": [
+            "convert prototype for selected"
+        ],
+        "timespent": "72000",
+        "alpha": 100
+    },
+    {
+        "id": "30014",
+        "project": "DM",
+        "summary": [
+            "complete typographic correction to"
+        ],
+        "description": [
+            "already created is for a typographic correction to get it to match section headings",
+            "the work on this ticket is to prepare the new docgen and submit it to the ccb"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "28415",
+        "project": "DM",
+        "summary": [
+            "create a unit test for geom class"
+        ],
+        "description": [
+            "the unit test is needed for geom class",
+            "this class is used for making images",
+            "therefore it is important to make sure it works as it should",
+            "analysis by lijun add unit test for its public method add end to end test for its seven cases so that all methods can be run",
+            "prepare different input and output data set to test different combinaitons"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "25833",
+        "project": "DM",
+        "summary": [
+            "create access policy for pdac"
+        ],
+        "description": [
+            "this is a prototype dac pdac and the access to it is limited",
+            "we need to draft a access policy"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "23951",
+        "project": "DM",
+        "summary": [
+            "level requirements flowdown"
+        ],
+        "description": [
+            "document the flowdown of level requirements from srd lsr oss and dmsr"
+        ],
+        "timespent": "95400",
+        "alpha": 100
+    },
+    {
+        "id": "23146",
+        "project": "DM",
+        "summary": [
+            "establish goals and create ea framework for update"
+        ],
+        "description": [
+            "deliverable together with identify the changes needed and develop initial content in ea"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "22846",
+        "project": "DM",
+        "summary": [
+            "analyze catalog-comparison cmdlinetasks"
+        ],
+        "description": [
+            "analyze the qa cmdlinetask collection being generated by sufficiently well to determine the interface requirements needed to represent them as supertasks",
+            "does not include actually designing that interface"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "22534",
+        "project": "DM",
+        "summary": [
+            "jira checklist plugin license error"
+        ],
+        "description": [
+            "an error from the checklist plugin is displayed when creating a new ticket"
+        ],
+        "timespent": "300",
+        "alpha": 100
+    },
+    {
+        "id": "22052",
+        "project": "DM",
+        "summary": [
+            "demonstrate web authentication using cilogon and globus"
+        ],
+        "description": [
+            "configure on with cilogon and globus"
+        ],
+        "timespent": "104400",
+        "alpha": 100
+    },
+    {
+        "id": "21916",
+        "project": "DM",
+        "summary": [
+            "iam process for managing data access"
+        ],
+        "description": [
+            "document a process for managing access to data products",
+            "on the wiki"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "21915",
+        "project": "DM",
+        "summary": [
+            "configure webdav with on"
+        ],
+        "description": [
+            "configure webdav for kerberos authentication and ldap authorization",
+            "create example subdirectories where ldap groups determine access using htaccess files lsst anyone in lsst group can to this directory ncsa anyone in can write anyone in lsst can read"
+        ],
+        "timespent": "36000",
+        "alpha": 100
+    },
+    {
+        "id": "21588",
+        "project": "DM",
+        "summary": [
+            "iam process for granting data access rights"
+        ],
+        "description": [
+            "document a process for granting of data access rights to lsst users according to the data access white paper on the wiki"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "21382",
+        "project": "DM",
+        "summary": [
+            "configure httpd with ssl and in iam test vm"
+        ],
+        "description": [
+            "get ssl certificate and configure httpd for authentication in iam test vm",
+            "document the setup"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "21379",
+        "project": "DM",
+        "summary": [
+            "set up test iam mariadb instance with kerberos"
+        ],
+        "description": [
+            "install mariadb in our test iam vm at ncsa and configure it for kerberos password authentication",
+            "i understand that kerberos ticket authentication is not yet supported by mariadb",
+            "document the process and include references to the ongoing work to add kerberos ticket support",
+            "create example tables that demonstrate access control for different logged in users"
+        ],
+        "timespent": "45000",
+        "alpha": 100
+    },
+    {
+        "id": "21377",
+        "project": "DM",
+        "summary": [
+            "configure sshd with and document"
+        ],
+        "description": [
+            "configure sshd in our test iam vm to use so the user gets a kerberos ticket when logging in as discussed in our design doc",
+            "document the configuration steps"
+        ],
+        "timespent": "36000",
+        "alpha": 100
+    },
+    {
+        "id": "20013",
+        "project": "DM",
+        "summary": [
+            "server side preparation for histogram plot"
+        ],
+        "description": [
+            "on the initialization server needs to return the following summary table for all numeric columns a",
+            "column name description unit b",
+            "min and max values c",
+            "number of points for a given column and binning options return the table of bins a",
+            "first column numinbin number of points in a bin b",
+            "second column binmin lower bound c",
+            "third column binmax upper bound added by lz here is the detailed requirement from tatiana the implementation of this ticket are two search processors similar to ipactablefromsource search both search processors should be located in package and produce an ipac table",
+            "getting table statistics input the input to the first search processor should be tableserverrequest treq with searchrequest parameter set",
+            "the searchrequest parameter will be a serialized json string which can represent a search request to any other search processor",
+            "this parameter determines how the input ipac table is obtained",
+            "the input ipac table is produced similarly to how ipactablefromsource produces the result with processor parameter set",
+            "to parse searchrequest parameter into pairs the parameters for the search request you can use json.simple library jsonobject searchrequestjson searchrequest if searchrequestjson null for object param searchrequestjson.keyset string name string value one of the parameters should be the id which tells which search processor to use to obtain input ipac table",
+            "output the output ipac table produced by the first search processor should contain columns columnname description unit or empty string min max numpoints the number of getting histogram data input the input to the second processor should be tableserverrequest treq with searchrequest parameter set exactly the same as searchrequest parameter in item plus binningoptions",
+            "the binningoptions parameter will be serialized json object with the following keys object properties algorithm fixedsizebins binsize column wavelength scale linear min max notes the algorithm is simple fixed size binning for now in future need to add variable size bins algorithm described here at the beginning you can assume that column is column name but it can be an expression based on several columns",
+            "scale can be linear or log min and max define filter on the points included into histogram calculation any of them or both can be absent",
+            "if both are absent no filter needs to be applied",
+            "output the output ipac table produced by the second search processor should contain columns numinbin binmin binmax in that order",
+            "the table should be sorted by binmin",
+            "the binmax of row i should be always less or equal to binmin of row if number of points in the bin is ok to skip this bin"
+        ],
+        "timespent": "360",
+        "alpha": 100
+    },
+    {
+        "id": "19345",
+        "project": "DM",
+        "summary": [
+            "clarify status of"
+        ],
+        "description": [
+            "work on per se appears not to have kept up with the status of the substance of the interface requirements as represented in for instance the action here is to see what change request actions may be appropriate for at this point"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "19192",
+        "project": "DM",
+        "summary": [
+            "read in the fits cube that herschel project produced"
+        ],
+        "description": [
+            "irsa needs to be able to read in the fits cube generated by herschel project",
+            "we need to support and guide the effort so the code is generic enough for data"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "14414",
+        "project": "DM",
+        "summary": [
+            "demo fails to exit with the correct status when warning would be correct"
+        ],
+        "description": [
+            "the output of results in an output file which is compared against a benchmarked file",
+            "currently the comparison allows a deviation from the benchmark based on the number of digits in the significands used in multiple precision arithmetic that number is currently set to an example using that setting is absolute error relative error additionally the current use returns a fatal error if the code itself fails to execute correctly a warning error if the any of the benchmarked quantities do not meet the comparison criteria success if the comparison meets all criteria",
+            "it is noted that the buildbot warning color indicator is not currently being displayed when the comparison fails",
+            "that is a coding error",
+            "this issue will ensure that causes the correct display color when appropriate",
+            "this ticket has been split into two parts",
+            "this is part is"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "14314",
+        "project": "DM",
+        "summary": [
+            "create change request for"
+        ],
+        "description": [
+            "create a change request to bring up to date and capture the summer work"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "13396",
+        "project": "DM",
+        "summary": [
+            "attempts to access which is no longer defined"
+        ],
+        "description": [
+            "attempts to access which is no longer defined",
+            "it is used in two packages raft and in a good reason why they should be periodically tested raft"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "13395",
+        "project": "DM",
+        "summary": [
+            "remove test of source table object"
+        ],
+        "description": [
+            "an ap unittest failure was not caught and reported when it first occurred",
+            "now that the unittest failures are correctly being caught the packages with such failures are now being tracked down and repaired",
+            "thies failure is one of them",
+            "regarding this failure perry said the one in ap might have been caused by a change jim and i made mos",
+            "ago",
+            "has it been a long time since the tests on ap was examined i think anything that i did recently could have caused this",
+            "i am going to suggest that we disable this assert since the test runs fine without the one assert on lines of i just commented out this assert and the test is otherwise ok"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "13372",
+        "project": "DM",
+        "summary": [
+            "add doxygen documentation on rebuilds"
+        ],
+        "description": [
+            "doxygen documentation should be rebuild on every full master build"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "13363",
+        "project": "DM",
+        "summary": [
+            "provide eups tag for build onbuilbot status email"
+        ],
+        "description": [
+            "provide the assigned to a build within the email response",
+            "currently it needs to be deduced from the bb stdio log"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "13110",
+        "project": "DM",
+        "summary": null,
+        "description": [
+            "has obsolete benchmark files circa release which fail to serve the purpose of validating for the user the correct functioning of a freshly built release stack",
+            "at the very least the benchmark files should be regenerated for each official release",
+            "tasks build the benchmark files for release debate a recommending the use of numdiff to check if the output is within realistic bounds",
+            "or b develop another procedure to better show how the current algorithms compare to the algorithms used at the benchmarked release",
+            "depending on result of the debate on for a provide appropriate numdiff command invocation in manual",
+            "for b implement the new procedure"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "12615",
+        "project": "DM",
+        "summary": [
+            "upgrade various external packages"
+        ],
+        "description": [
+            "i note that the lsst and hsc versions of external packages are slightly out of sync",
+            "i propose uprevving the lsst packages to match as hsc has tested these versions",
+            "cfitsio hsc cfitsio sims current doxygen hsc eigen current eigen hsc fftw current fftw hsc gsl current gsl hsc current hsc mysqlclient current mysqlclient hsc pyfits sims current pyfits hsc scons sims current scons hsc sqlite current sqlite hsc wcslib current xpa hsc"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "12589",
+        "project": "DM",
+        "summary": [
+            "buildbot ci needs to save manifest file of failed build for later user debug"
+        ],
+        "description": [
+            "the manifest file created during a build instance is transient and removed as soon as the next build commences",
+            "due to that volatility it's important to save the manifest to some location so that the developer responsible for debug and repair can easily setup the failing environment",
+            "the location of the manifest file will be provided to the in the failure notification"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "12551",
+        "project": "DM",
+        "summary": [
+            "megacam ccd defects are not handled properly in"
+        ],
+        "description": [
+            "megacam ccd defects files should be selected according to a keyword present in the image fits header currently they are selected according to a independently of the selection mechanism there are also some questions on the validity of the current defects files",
+            "defects footprints can be generated from the original elixir defects files",
+            "according to pierre astier for filters i and z the defects footprints should be enlarged by pixel in the y direction"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "12069",
+        "project": "DM",
+        "summary": [
+            "a stack rebuild should be automatically initiated whenever git repository master branch has been updated"
+        ],
+        "description": [
+            "when the master branch of any lsst stack source repository has been updated buildbot should initiate a stack rebuild of the master branch"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "12068",
+        "project": "DM",
+        "summary": [
+            "allow builds initiated from the buildbot web form and which allow input of the to be used during the build"
+        ],
+        "description": [
+            "users will be allowed to initiate builds from the buildbot web form",
+            "they will initially use an htpasswd it is anticipated the authentication method will eventually be transitioned into ldap but not during this pass",
+            "the users will be able to specify a prioritized list of git refs specifying the branches to be scanned when acquiring a package from a git repository",
+            "may also want to allow the user to tag the build with some so acquiring the build manifest setting up the identical stack for debug are simple operations"
+        ],
+        "timespent": "201600",
+        "alpha": 100
+    },
+    {
+        "id": "12067",
+        "project": "DM",
+        "summary": [
+            "send email when a buildbot run fails"
+        ],
+        "description": [
+            "when an operation initiated on the buildslave fails either send email to or equivalent developer list if it was an failure or to the buildbot nanny if it was an error when setting up the build process"
+        ],
+        "timespent": "201600",
+        "alpha": 100
+    },
+    {
+        "id": "12049",
+        "project": "DM",
+        "summary": [
+            "setting up build slaves"
+        ],
+        "description": [
+            "configure buildbot slave on initially the owner will be"
+        ],
+        "timespent": "1440000",
+        "alpha": 100
+    },
+    {
+        "id": "11308",
+        "project": "DM",
+        "summary": [
+            "make css facade configurable"
+        ],
+        "description": [
+            "currently store has hardcoded connection to zookeeper",
+            "make it configurable",
+            "also allow to use store"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "11274",
+        "project": "DM",
+        "summary": [
+            "update installation instructions"
+        ],
+        "description": [
+            "update confluence instructions on how to install the stack",
+            "the instructions are at"
+        ],
+        "timespent": "97320",
+        "alpha": 100
+    },
+    {
+        "id": "426038",
+        "project": "DM",
+        "summary": [
+            "deploy sal in tucson test stand"
+        ],
+        "timespent": "90"
+    },
+    {
+        "id": "19338",
+        "project": "DM",
+        "summary": [
+            "review and edit import of level icd milestones into dlp"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "14310",
+        "project": "DM",
+        "summary": [
+            "review of docgen"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "14131",
+        "project": "DM",
+        "summary": [
+            "complete data entry of revised draft into ea"
+        ],
+        "timespent": "43200"
+    },
+    {
+        "id": "11555",
+        "project": "DM",
+        "summary": [
+            "investigate new xrdssi interface"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "11487",
+        "project": "DM",
+        "summary": [
+            "review existing css design prototype"
+        ],
+        "timespent": "14400"
+    }
+]

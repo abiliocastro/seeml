@@ -1,0 +1,67 @@
+[
+    {
+        "id": "71989",
+        "project": "JMWE",
+        "summary": [
+            "should create the issue link during issue creation not after"
+        ],
+        "description": [
+            "right now the creates the link between the new and the current issues after the new issue is created",
+            "instead it should create the issue link during the creation of the issue by passing it to the issueservice",
+            "this way the create transition of the issue being created will see the issue link in validators"
+        ],
+        "timespent": "4500",
+        "alpha": 100
+    },
+    {
+        "id": "71981",
+        "project": "JMCF",
+        "summary": [
+            "duration searcher doesn't take duration format into account in jql searches"
+        ],
+        "description": [
+            "when specifying a duration as a duration string in jql to search based on a duration field calculated duration or time in status the duration string is always interpreted as a time tracking duration instead of the configured duration format for the field",
+            "thus will always be hours even if the duration format is duration in which case should be hours",
+            "the solution is unfortunately to migrate the duration format option from a configuration option to a search template type",
+            "there is no other way",
+            "upon upgrading an upgrade task will do its best to convert from the duration format option to the corresponding search template but it will not work well if the duration format was inconsistent between field config schemes for a field"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "71974",
+        "project": "JMCF",
+        "summary": [
+            "workdaysbetween global function"
+        ],
+        "description": [
+            "returns the number of work days excluding saturdays and sundays between two dates"
+        ],
+        "timespent": "660",
+        "alpha": 100
+    },
+    {
+        "id": "71972",
+        "project": "JMCF",
+        "summary": [
+            "secondsbetween global function"
+        ],
+        "description": [
+            "the secondsbetween(date from date to global function returns the number of seconds between two date objects",
+            "returns null if one of the two parameters is the secondsbetween(date from date to string roundto global function does the same thing but rounds the number of seconds to the nearest minute hour day or week",
+            "you can also specify max to round to the largest unit reached by the duration",
+            "for example if the duration is hours and minutes it will be rounded to hours and thus seconds useful for calculated duration fields"
+        ],
+        "timespent": "300",
+        "alpha": 100
+    },
+    {
+        "id": "71973",
+        "project": "JMCF",
+        "summary": [
+            "make duration fields statistics-compatible"
+        ],
+        "timespent": "2580"
+    }
+]

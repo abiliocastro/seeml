@@ -1,0 +1,306 @@
+[
+    {
+        "id": "11605",
+        "project": "DATAFARI",
+        "summary": [
+            "hierarchical facet pagination"
+        ],
+        "description": [
+            "the pagination doesn't work with the hierarchical facet"
+        ],
+        "timespent": "57600",
+        "alpha": 98
+    },
+    {
+        "id": "11401",
+        "project": "DATAFARI",
+        "summary": [
+            "hierarchical facets"
+        ],
+        "description": [
+            "some people are interested by having hierarchical facets like this the solr tokenizer solr.pathhierarchytokenizerfactory seems to do the trick but we have to develop a new widget for display"
+        ],
+        "timespent": "144000",
+        "alpha": 99
+    },
+    {
+        "id": "17772",
+        "project": "DATAFARI",
+        "summary": [
+            "accents not taken into account in the source form field of simplified crawlers"
+        ],
+        "description": [
+            "currently in the source form field within the simplified connectors admin ui when using accents those are not properly displayed within the facets afterwards"
+        ],
+        "timespent": "300",
+        "alpha": 100
+    },
+    {
+        "id": "17720",
+        "project": "DATAFARI",
+        "summary": [
+            "migrate to"
+        ],
+        "description": [
+            "datafari webapp is currently using which is deprecated and prevents all the internal tomcat logs to be correctly formatted",
+            "therefore the elk stack does not exploit those logs which are quite important for debug purposes"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "17658",
+        "project": "DATAFARI",
+        "summary": [
+            "datafari does not handle some languages"
+        ],
+        "description": [
+            "with some languages using non common characters eg russian the query that is sent to solr is broken",
+            "this happens because datafari is using language dependent names for facet queries and the searchproxy servlet somehow fails to correctly handle the specific chars",
+            "it results in partial parameters sent to solr and so a request failure"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "17655",
+        "project": "DATAFARI",
+        "summary": [
+            "missing parenthesis for the cli of exact match in advanced search"
+        ],
+        "description": [
+            "currently the exact match for the generic search field in the advanced search mode generates a query for the exact search in both the exactcontent and exacttitle fields",
+            "still it confuses the query analyser if you add a new search field for instance language",
+            "you then get the following query or and which solr translates as or and whereas the correct interpretation should be or and"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "17651",
+        "project": "DATAFARI",
+        "summary": [
+            "improve the active directory config ui"
+        ],
+        "description": [
+            "currently the active directiry configuration ui does not allow to specify several ou and this is problematic for user management",
+            "need to improve the ui to enable this feature"
+        ],
+        "timespent": "230400",
+        "alpha": 100
+    },
+    {
+        "id": "17629",
+        "project": "DATAFARI",
+        "summary": [
+            "timeout on queries"
+        ],
+        "description": [
+            "currently there is no timeout on the queries performed through the search ui",
+            "it would be better to set a configurable timeout and handle it in the search ui to hide the waiting gif and show a message"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "17200",
+        "project": "DATAFARI",
+        "summary": [
+            "alerts manage secured smtp servers"
+        ],
+        "description": [
+            "currently the alerts are able to connect to standard smtp servers",
+            "since secure smtp servers are becoming the norm we need to update the functionnality"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "16400",
+        "project": "DATAFARI",
+        "summary": [
+            "manage exif metadata extracted by tika"
+        ],
+        "description": [
+            "currently the exif of images are not indexed",
+            "it would be good to look at the exif data extracted by tika and store these in appropriate solr fields",
+            "this issue is not about creating facets or searching in these fields just to index them for later use"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "16301",
+        "project": "DATAFARI",
+        "summary": [
+            "the snippet mechanism is not working fine"
+        ],
+        "description": [
+            "due to the current mechanism with a generic the highlighting is not working ok as the stemmer is not correct"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "16100",
+        "project": "DATAFARI",
+        "summary": [
+            "migrate the usage statistics dashboard towards elk"
+        ],
+        "description": [
+            "currently the usage statistics dashboard leverages a dedicated solr core and only works partially sessions reconstruction has been since elk it is possible to create custom dashboards",
+            "since datafari fetches the usage statistics data into elk it is thus possible to drop the statistics solr core and create an elk dashboard that does what the usage statistics dashboard was supposed to do"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "15901",
+        "project": "DATAFARI",
+        "summary": [
+            "default url config for elk"
+        ],
+        "description": [
+            "currently at the install phase the default path for the url of elk is localhost",
+            "it would be better to use by default the ip address defined during the install phase for the datafari webapp"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "15400",
+        "project": "DATAFARI",
+        "summary": [
+            "doc title not aligned"
+        ],
+        "description": [
+            "on the result view if the title of a document is spread on two lines the second line is not aligned ith the first one",
+            "this bug has been fixed on a customer version of datafari"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "15301",
+        "project": "DATAFARI",
+        "summary": [
+            "improve active directory security authentication"
+        ],
+        "description": [
+            "datafari is currently using the simple authentication mechanism which is not safe at all and forbidden in most of the well configured active directory domains",
+            "need to add the following list of authentication mechanism gssapi simple the behavior of the java code will be to try to use the first mechanism if it fails it will try with the second one etc",
+            "the good practice would be to completely remove the simple authentication mechanism but it can result in problems with some active directory domains that are not correctly configured"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "15300",
+        "project": "DATAFARI",
+        "summary": [
+            "hard path"
+        ],
+        "description": [
+            "there is still directory in hard coded paths of datafari",
+            "this results for exemple in active directory activation failure due to filenotfound exception",
+            "need to at least replace all by solrcloud or find a better way to avoid hard coded paths for the solr directory"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "14900",
+        "project": "DATAFARI",
+        "summary": [
+            "add capacity to not modify last access time in file connector"
+        ],
+        "description": [
+            "currently we use a non modified version of jcifs",
+            "but it does not allow to reset the last access time of files and this may have an impact on some archiving systems",
+            "this ticket is about using a modified jcifs and to propose at least via a config file the possibility to enable or disable the last access time modification feature"
+        ],
+        "timespent": "345600",
+        "alpha": 100
+    },
+    {
+        "id": "14500",
+        "project": "DATAFARI",
+        "summary": [
+            "search view feature temporarily desactivated"
+        ],
+        "description": [
+            "the search view feature of the global feature query elevator is deactivated in the datafari version",
+            "the new architecture adopted in datafari makes the feature not working without specific work",
+            "we hope to develop it for datafari at least with the existing mechanism adapted for solrcloud or by developing a new solr plugin to do it"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "14403",
+        "project": "DATAFARI",
+        "summary": [
+            "automatise the load of elk dashboard"
+        ],
+        "description": [
+            "currently the loading phase of elk dashboards is done manually",
+            "there is an automated way by inserfioning visualisations and dashboards within the kibana index of elasticsearch"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "14401",
+        "project": "DATAFARI",
+        "summary": [
+            "exploit logs with kibana"
+        ],
+        "description": [
+            "the goal is to push the logs to elasticsearch thanks to logstash and exploit them with kibana through visualizations and dashboards"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "14400",
+        "project": "DATAFARI",
+        "summary": [
+            "format logs"
+        ],
+        "description": [
+            "to be able to easily exploit the logs when some clients have problems we need to define and implement a new format"
+        ],
+        "timespent": "115200",
+        "alpha": 100
+    },
+    {
+        "id": "11803",
+        "project": "DATAFARI",
+        "summary": [
+            "exception in alarm admin backend code ui elements are undefined"
+        ],
+        "description": [
+            "in datafari admin ui search engine admin alarm admin we get the following exception error while building the json answer in the doget of the alerts administration servlets make sure the fields are filled correctly and that datafari.properties have the correct encoding error java.lang.illegalargumentexception invalid format is malformed seems to come from a bad config in datafari.properties understand why we store the alarms in datafari.properties file",
+            "it be done",
+            "some ui labels show up as undefined sometimes understand why and fix it problem affects master and maven branches"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "17608",
+        "project": "DATAFARI",
+        "summary": [
+            "upgrade to solr"
+        ],
+        "timespent": "288000"
+    },
+    {
+        "id": "17607",
+        "project": "DATAFARI",
+        "summary": [
+            "upgrade to mcf"
+        ],
+        "timespent": "288000"
+    }
+]

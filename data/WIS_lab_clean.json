@@ -1,0 +1,1748 @@
+[
+    {
+        "id": "11418",
+        "project": "GANTT",
+        "summary": [
+            "cumulative issue progress is calculated wrong"
+        ],
+        "description": [
+            "when calculating cumulative progress for we shouldn't take into account it's own progress if issue hasn't estimated"
+        ],
+        "timespent": "3600",
+        "alpha": 97
+    },
+    {
+        "id": "15203",
+        "project": "MAPS",
+        "summary": [
+            "move jwt shared secret key to table"
+        ],
+        "description": [
+            "it seems that shared secret isn't generated per instance but per each plugin therefore it's not currently possible to have two plugin's running on our backend"
+        ],
+        "timespent": "10800",
+        "alpha": 98
+    },
+    {
+        "id": "17605",
+        "project": "GANTT",
+        "summary": [
+            "due date exceeded warning fired to early"
+        ],
+        "description": [
+            "when the due date is set to next day after calculated task's end date the exclamation mark informing that due date will be exceeded is rendered on the chart",
+            "i shouldn't be as the task will be finished just on time"
+        ],
+        "timespent": "3600",
+        "alpha": 98
+    },
+    {
+        "id": "14103",
+        "project": "GANTT",
+        "summary": [
+            "check the license for exported chart"
+        ],
+        "description": [
+            "exported charts shouldn't be visible when the license is missing or inactive"
+        ],
+        "timespent": "3600",
+        "alpha": 98
+    },
+    {
+        "id": "12000",
+        "project": "GANTT",
+        "summary": [
+            "chart date range calculation ignores due dates"
+        ],
+        "description": [
+            "by default chart's end date is set to the calculated latest issue's end date days but the algorithm ignores the due dates that can be set far above these dates"
+        ],
+        "timespent": "3600",
+        "alpha": 98
+    },
+    {
+        "id": "11002",
+        "project": "GANTT",
+        "summary": [
+            "store all user's choices on chart's ui"
+        ],
+        "description": [
+            "all ui buttons states toggles and selected/unseleted projests schould be kept in user's settings and restored on every page"
+        ],
+        "timespent": "10800",
+        "alpha": 98
+    },
+    {
+        "id": "10801",
+        "project": "GANTT",
+        "summary": [
+            "adjust chart's end date"
+        ],
+        "description": [
+            "it's currently fixed to the end of year",
+            "should be calculated based on last issue end date"
+        ],
+        "timespent": "3600",
+        "alpha": 98
+    },
+    {
+        "id": "10500",
+        "project": "GANTT",
+        "summary": [
+            "set the default chart's start date based on issue's creation dates"
+        ],
+        "description": [
+            "calculate the chart's start date which should be equal to the most earlier issue's creation date from all issues currently visible"
+        ],
+        "timespent": "7200",
+        "alpha": 98
+    },
+    {
+        "id": "10302",
+        "project": "GANTT",
+        "summary": [
+            "create user's context on plugin installation"
+        ],
+        "description": [
+            "we need to keep user's application context in database"
+        ],
+        "timespent": "10800",
+        "alpha": 98
+    },
+    {
+        "id": "10102",
+        "project": "GANTT",
+        "summary": [
+            "fix rendering issues with more blockers"
+        ],
+        "description": [
+            "when issue has more than one blocker it's not getting rendered properly"
+        ],
+        "timespent": "14400",
+        "alpha": 98
+    },
+    {
+        "id": "15400",
+        "project": "MAPS",
+        "summary": [
+            "enable js error logging"
+        ],
+        "description": [
+            "we need to track all js client's errors using the similar mechanism that is now in place for gantt cloud"
+        ],
+        "timespent": "10800",
+        "alpha": 99
+    },
+    {
+        "id": "20500",
+        "project": "GANTT",
+        "summary": [
+            "don't render sprints and versions if there is no issues assigned to them"
+        ],
+        "description": [
+            "that's how it worked before and it might be confusing now when we just render everything even though most of the issues has been filtered out"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "20300",
+        "project": "GANTT",
+        "summary": [
+            "allow user to link gantt charts with jira issue filters"
+        ],
+        "description": [
+            "as a user instead of defining all filters manually on gantt charts page i'd like to link my chart with existing jira issue filter"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "14601",
+        "project": "GANTT",
+        "summary": [
+            "authenticete as current user while talking to jira api"
+        ],
+        "description": [
+            "we need to investigate whether it's possible not to use system user while talking to jira backend and use current user instead",
+            "therefore all user's permissions and access rights would apply"
+        ],
+        "timespent": "144000",
+        "alpha": 99
+    },
+    {
+        "id": "14500",
+        "project": "GANTT",
+        "summary": [
+            "cannot read property gettime of undefined"
+        ],
+        "description": [
+            "typeerror cannot read property gettime of undefined typeerror undefined is not an object evaluating newdate.gettime"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "14405",
+        "project": "GANTT",
+        "summary": [
+            "issue dialog no longer works on exported charts"
+        ],
+        "description": [
+            "uncaught referenceerror ap is not defined this is due to links types we now trying to fetch from backend",
+            "we shouldn't be doing this on exported chart page"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "11900",
+        "project": "GANTT",
+        "summary": [
+            "add warning icon to the issue bar when due date is violated"
+        ],
+        "description": [
+            "it would be nice if a violation of the due date would show in the chart itself",
+            "that way user don't have to check the issue dialog and there is less chance you miss that"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "11704",
+        "project": "GANTT",
+        "summary": [
+            "box shadow too intense for some issues"
+        ],
+        "description": [
+            "i'm not quite sure why but sometimes the box shadow for hovered issues is too intense instead of it usually happens for linked issues with slack time periods in between"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "11505",
+        "project": "GANTT",
+        "summary": [
+            "link the plugin's start date with jira"
+        ],
+        "description": [
+            "as an admin i'd like to have the choice whether i wan't to store an issue's start dates internally within the gantt ondemand plugin only or use another field from jira instead",
+            "it should be possible to pick an existing field or create a new custom field for that purpose"
+        ],
+        "timespent": "21600",
+        "alpha": 99
+    },
+    {
+        "id": "11500",
+        "project": "GANTT",
+        "summary": [
+            "allow filtering by sprint"
+        ],
+        "description": [
+            "when jira agile(greenhopper is enabled we should allow filtering issues by the sprint"
+        ],
+        "timespent": "10800",
+        "alpha": 99
+    },
+    {
+        "id": "11431",
+        "project": "GANTT",
+        "summary": [
+            "store filters settings separate from the user to make them shareable"
+        ],
+        "description": [
+            "filters should be stored separate from the user object with it's own id name visibility settings etc",
+            "this way we could make them accessible for different users from the same jira instance"
+        ],
+        "timespent": "32400",
+        "alpha": 99
+    },
+    {
+        "id": "11214",
+        "project": "GANTT",
+        "summary": [
+            "update chart's date range when filters are active"
+        ],
+        "description": [
+            "issues filtered out and invisible on chart are still taken into account when calculating chart's date range",
+            "this should be changed chart area should cover the visible tasks only"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "11202",
+        "project": "GANTT",
+        "summary": [
+            "create connect issue collector"
+        ],
+        "description": [
+            "allow users to report issues via standard jira issue collector",
+            "replace direct link to support system by the collector's form"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "11106",
+        "project": "GANTT",
+        "summary": [
+            "circular dependency recognition doesn't always work"
+        ],
+        "description": [
+            "uncaught rangeerror maximum call stack size exceeded too much recursion i can reproduce by linking to story from task that depends on story's subtasks"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "11104",
+        "project": "GANTT",
+        "summary": [
+            "some linking arrows are missing when filtering is active"
+        ],
+        "description": [
+            "links between filtered but not hidden and not filtered issues are missing",
+            "see an example with status:competed filter active"
+        ],
+        "timespent": "10800",
+        "alpha": 99
+    },
+    {
+        "id": "11023",
+        "project": "GANTT",
+        "summary": [
+            "linking cause rendering failure"
+        ],
+        "description": [
+            "we use project.getissue method to find parents linked issues etc",
+            "therefore in case of any issue connected with other issue from different project an epic rendering fails",
+            "as gantt chart rendering isn't supported yet anyway we should just prevent error from happening"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "11012",
+        "project": "GANTT",
+        "summary": [
+            "show version's time constraints on chart"
+        ],
+        "description": [
+            "once we get the version filtering done it will be nice to have the version start and release dates visible on chart area as vertical bars with height equal to all project's issues height combined"
+        ],
+        "timespent": "21600",
+        "alpha": 99
+    },
+    {
+        "id": "11009",
+        "project": "GANTT",
+        "summary": [
+            "display year along with month for past or future years"
+        ],
+        "description": [
+            "it's ok for current year to show only month names",
+            "however when chart area covers more years it's easy to get confused",
+            "therefore the past or future years should be displayed along with month names"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "10900",
+        "project": "GANTT",
+        "summary": [
+            "link not visible for users"
+        ],
+        "description": [
+            "only admins can actually see the plugin link in project menu as it's invisible for others need to find better section name with web fragment finder"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "10802",
+        "project": "GANTT",
+        "summary": [
+            "create config dialog"
+        ],
+        "description": [
+            "create dialog which will allow changing plugin's configuration working hours per day"
+        ],
+        "timespent": "10800",
+        "alpha": 99
+    },
+    {
+        "id": "10701",
+        "project": "GANTT",
+        "summary": [
+            "parent task and subtask start date calculations"
+        ],
+        "description": [
+            "if has no fixed start date it should be automaticaly set to parent's one",
+            "if parent story issue has no fixed start date it should be adjusted to earliest start date"
+        ],
+        "timespent": "10800",
+        "alpha": 99
+    },
+    {
+        "id": "10304",
+        "project": "GANTT",
+        "summary": [
+            "compatibility check"
+        ],
+        "description": [
+            "make sure the plugin works fine on different platforms/browsers mac os x safari firefox chrome windows firefox chrome mobile iphone safari android tablet samsung galaxy"
+        ],
+        "timespent": "21600",
+        "alpha": 99
+    },
+    {
+        "id": "23705",
+        "project": "SLACK",
+        "summary": [
+            "add a button in the notifications to post a comment"
+        ],
+        "description": [
+            "this has been suggested by one of our customers",
+            "official bitbucket and confluence integrations have this button",
+            "please see zendesk support tab for further comments and attachments"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "17106",
+        "project": "SLACK",
+        "summary": [
+            "implement filtering logic"
+        ],
+        "description": [
+            "it should be triggered for every channellink whenever issue notification is received from jira"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "15901",
+        "project": "SLACK",
+        "summary": [
+            "detecting revoked auth tokens"
+        ],
+        "description": [
+            "in case slack api access token is no longer active and we get error response during any frontend calls or account_inactive we should remove such token on our side as well so the user will no longer appear on the connected users list on slack connector setup page",
+            "we should also check if revoked token has been used as default token and remove it as well",
+            "in such case the confugure procedure needs to be"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "15702",
+        "project": "SLACK",
+        "summary": [
+            "implement logic for choosing the right channel and token for notifications"
+        ],
+        "description": [
+            "when for given issue custom channel is defined use that channel for any notifications with token of the users who added the link when no issue link is present check if there is default channel set for the project and use that channel and token of the link creator when there is no issue and project link defined use global channel for communication when possible"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "15701",
+        "project": "SLACK",
+        "summary": [
+            "project configuration page"
+        ],
+        "description": [
+            "this page will be accessible for project admins under project administration page",
+            "it should have the following features ability to define default channel where all notifications from given project should be sent to with checkbox to this feature list of all issues from this project with custom channels defined channellinks with ability to remove such link"
+        ],
+        "timespent": "32400",
+        "alpha": 100
+    },
+    {
+        "id": "22901",
+        "project": "GANTT",
+        "summary": [
+            "custom due date field has no effect"
+        ],
+        "description": [
+            "choosing custom due date field has no effect on the chart",
+            "it has been reported by the customer and confirmed on dev"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "21801",
+        "project": "GANTT",
+        "summary": [
+            "reserved jql words causing errors when used as keys by project filter"
+        ],
+        "description": [
+            "we should either use project keys always in quotes fastest way or do so only for these who are actually reserved words more"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "21500",
+        "project": "GANTT",
+        "summary": [
+            "hitting enter key in advanced filtering mode cause error"
+        ],
+        "description": [
+            "we get jwt authentication failed error which is confusing instead apply button should be triggered"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "21200",
+        "project": "GANTT",
+        "summary": [
+            "assignee filter does not work for some user names"
+        ],
+        "description": [
+            "need more investigation but i suspect it might not work properly for names having more than one separate parts"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "21101",
+        "project": "GANTT",
+        "summary": [
+            "show no estimate warning when using end date"
+        ],
+        "description": [
+            "when this mode is selected use due dates as end dates skip duration calculation we be warning users about missing time estimates"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "21100",
+        "project": "GANTT",
+        "summary": [
+            "start date setting does not work for weeks and months scale"
+        ],
+        "description": [
+            "it works for days scale though"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "20301",
+        "project": "GANTT",
+        "summary": [
+            "allow users to switch between and gantt cloud version"
+        ],
+        "description": [
+            "all new instances should be on version by default all existing instances should remain on but notification should be provided about migration possible migration should be reversible at any moment via settings"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "19501",
+        "project": "GANTT",
+        "summary": [
+            "dependencies rendered incorrectly when custom link type selected"
+        ],
+        "description": [
+            "when selecting link type other than by dependencies are rendered incorrectly that is some by links are still present on the charts while the others new custom one are missing"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "19200",
+        "project": "GANTT",
+        "summary": [
+            "create a filter for current project for new instances"
+        ],
+        "description": [
+            "we should limit the amount of data that gantt cloud is trying to get from jira on first install before the user get the chance to create their own filters or hide some projects in settings",
+            "this is causing problems on large instances with lots of projects/issues the idea is to create an example filter for each new installation new user access that will limit the amount of data to current project only jql"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "19100",
+        "project": "GANTT",
+        "summary": [
+            "a value with id xxxx does not exist for the field project"
+        ],
+        "description": [
+            "the following jql error is returned whenever someone has the project on the list of hidden projects in gantt cloud settings that has already been archived in jira",
+            "when generating jql that exclude hidden projects we should check first whether they still exists on the list of available projects fetched from jira api"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "15710",
+        "project": "GANTT",
+        "summary": [
+            "issue sumary wraps to new line for some browsers"
+        ],
+        "description": [
+            "in some cases the issue summary on left sidebar wraps to new line and disappears due to the fixed row height there",
+            "it is likely happens under some browsers chrome with changed font scale size",
+            "this should be fixed"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "15500",
+        "project": "GANTT",
+        "summary": [
+            "change working hours range from to hours"
+        ],
+        "description": [
+            "there is no way currently in settings dialog to set the working hours to more than we should change that to allow full hours coverage"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "14700",
+        "project": "GANTT",
+        "summary": [
+            "uncaught typeerror cannot read property format of undefined"
+        ],
+        "description": [
+            "uncaught typeerror cannot read property format of undefined possible scenarion to reproduce start dates kept in jira custom field trying to remove start date for the issue"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "14602",
+        "project": "GANTT",
+        "summary": [
+            "whenever i run the i eventually get an"
+        ],
+        "description": [
+            "whenever i run the i eventually get an error message uncaught rangeerror invalid string length is now unusable it previously worked slowly",
+            "if not fixed we will uninstall and cancel subscription",
+            "please investigate and advise"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "14300",
+        "project": "GANTT",
+        "summary": [
+            "hide empty projects in left header"
+        ],
+        "description": [
+            "when there is no issues to render for given project for example due to active filters project name should be removed from the left header"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "14104",
+        "project": "GANTT",
+        "summary": [
+            "add weeks and months timescale for charts"
+        ],
+        "description": [
+            "for projects that lasts for long time it will be more convenient for viewers to change the timescale from current to and"
+        ],
+        "timespent": "302400",
+        "alpha": 100
+    },
+    {
+        "id": "14001",
+        "project": "GANTT",
+        "summary": [
+            "html export for gantt goes to internal"
+        ],
+        "description": [
+            "html export for gantt goes to internal server error reporter matteo"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "13800",
+        "project": "GANTT",
+        "summary": [
+            "empty jql string causing infinite update loop"
+        ],
+        "description": [
+            "not sure yet how to reproduce that",
+            "the problem has been notified for active filters that have empty jql string",
+            "once such filter is set chart module keeps requesting backend for updated data but does not update current jql properly",
+            "need to be fixed asap"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "13600",
+        "project": "GANTT",
+        "summary": [
+            "some issues with start dates set in coming december are rendered in the past february"
+        ],
+        "description": [
+            "the problem has been indentified for but also reported by the user via atlassian answers site"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "13101",
+        "project": "GANTT",
+        "summary": [
+            "add visual distinction between parent tasks and subtasks"
+        ],
+        "description": [
+            "make parent task names on the left sidebar to be formatted as bold and indented if they are a child task"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "13000",
+        "project": "GANTT",
+        "summary": [
+            "uncheck all projects on first run"
+        ],
+        "description": [
+            "when user is running the plugin for the first time no projects should be selected by default",
+            "that will improve performance and first experience on the instances when there is a lot of projects/issues and rendering process takes to long"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "12601",
+        "project": "GANTT",
+        "summary": [
+            "the gantt chart is no longer working",
+            "an error"
+        ],
+        "description": [
+            "the gantt chart is no longer working",
+            "an error occured whilte contacting with jira api"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "12200",
+        "project": "GANTT",
+        "summary": [
+            "i tried to select the versions i want to filter"
+        ],
+        "description": [
+            "i tried to select the versions i want to filter my gantt chart with and i ended up at with the error page"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "11901",
+        "project": "GANTT",
+        "summary": [
+            "all subtasks should be rendered right after their parent if no other dependencies are present"
+        ],
+        "description": [
+            "at the moment when the subtask is added and the default sorting order is creation date ascending new subtasks can be splitted by another issues that doesn't belong to the and rendered at the very bottom might be worth implementing in connection to"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "11801",
+        "project": "GANTT",
+        "summary": [
+            "defining custom days"
+        ],
+        "description": [
+            "users should be able to configure their own days such as national holidays such days should be treated in the same way as weekends when chart is being rendered"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "11800",
+        "project": "GANTT",
+        "summary": [
+            "add sprints to the issue dialog"
+        ],
+        "description": [
+            "whenever issue is a part of the sprint we should show that info on the issue dialog in the same manner as components and versions"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "11705",
+        "project": "GANTT",
+        "summary": [
+            "allow filtering by label"
+        ],
+        "description": [
+            "add yet another filter label"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "11703",
+        "project": "GANTT",
+        "summary": [
+            "add ability to choose from available filters"
+        ],
+        "description": [
+            "once filters setting will be stored on own the user should be able to pick one and make it active the choice should be made from all own filters and those shared by others"
+        ],
+        "timespent": "226800",
+        "alpha": 100
+    },
+    {
+        "id": "11702",
+        "project": "GANTT",
+        "summary": [
+            "ability to change by link type id"
+        ],
+        "description": [
+            "it appears that on some jira instances issue link types have different and therefore creating dependencies for gantt purposes work",
+            "we should either allow user to setup correct link id in the configuration some sort of advanced options or detect that id or maybe just skip the id and use the name instead"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "11506",
+        "project": "GANTT",
+        "summary": [
+            "issue dialog not visible when tasks spanned for longer time periods"
+        ],
+        "description": [
+            "when clicking on wide tasks issue dialog sometimes can be opened outside of visible area which might be confusing for the users",
+            "ideally it should be opened always near the mouse pointer"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "11504",
+        "project": "GANTT",
+        "summary": [
+            "for due date as planned task's end date"
+        ],
+        "description": [
+            "as an admin like to have an option for skipping the task duration calculations based on estimates and just simply use due date as planned task end date",
+            "that choice could be changed at any time via configuration",
+            "when will be implemented due date here should be replaced by chosen date"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "11501",
+        "project": "GANTT",
+        "summary": [
+            "show sprint's time constraints on chart"
+        ],
+        "description": [
+            "similar to we should also render agile sprints"
+        ],
+        "timespent": "32400",
+        "alpha": 100
+    },
+    {
+        "id": "11433",
+        "project": "GANTT",
+        "summary": [
+            "active filters inactive until refresh on page open"
+        ],
+        "description": [
+            "when opening gantt charts page some filters restored until refresh button is clicked",
+            "i believe filters that are working fine are project component and version the old"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "11432",
+        "project": "GANTT",
+        "summary": [
+            "cumulative progress higher than"
+        ],
+        "description": [
+            "see mobileworks project issues"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "11430",
+        "project": "GANTT",
+        "summary": [
+            "export rendered chart to pdf"
+        ],
+        "description": [
+            "there should be an option for exporting the rendered chart for selected filter into downloadable pdf file"
+        ],
+        "timespent": "54000",
+        "alpha": 100
+    },
+    {
+        "id": "11428",
+        "project": "GANTT",
+        "summary": [
+            "nesting doesn't always work"
+        ],
+        "description": [
+            "there is a case reported when stories properly nested for the epics",
+            "after a quick check the is indeed a null value for all issues from this instance",
+            "we need to investigate it further to check whether it is a bug on the processing side or some other jira edge case scenario",
+            "assistance from the customer will be required",
+            "see"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "11426",
+        "project": "GANTT",
+        "summary": [
+            "time zone affects start and due dates"
+        ],
+        "description": [
+            "there are several reports by now about these dates being shifted by one day which is likely due to the different time zone settings on the client's machine",
+            "need to investigate and fix it el pronto"
+        ],
+        "timespent": "75600",
+        "alpha": 100
+    },
+    {
+        "id": "11425",
+        "project": "GANTT",
+        "summary": [
+            "update chart on start date change without backend interaction"
+        ],
+        "description": [
+            "when start date is changed we can just update affected issue and rendering process without waiting for backend response",
+            "this will improve overall chart responsiveness"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "11423",
+        "project": "GANTT",
+        "summary": [
+            "make component version filter to work for more than one project"
+        ],
+        "description": [
+            "component and version filter can now work in the same way as status and type that is they should be populated during issue without a need to separate call"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "11421",
+        "project": "GANTT",
+        "summary": [
+            "allow to remove existing links"
+        ],
+        "description": [
+            "this should be an easy one as it require any extra frontend just remove icon next to each link",
+            "handle permission errors etc"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "11419",
+        "project": "GANTT",
+        "summary": [
+            "allow filtering by issue type"
+        ],
+        "description": [
+            "add another filter type"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "11304",
+        "project": "GANTT",
+        "summary": [
+            "allow filtering issues by assignee"
+        ],
+        "description": [
+            "add another filter assignee the tricky part will be to fill in the values during issue processing"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "11303",
+        "project": "GANTT",
+        "summary": [
+            "allow defining custom jql filters in configuration"
+        ],
+        "description": [
+            "any user should have the ability to define it's own jql query to be performed when fetching issues from jira api",
+            "that way a filtering would be possible regardless of frontend filtering along with changing the order etc",
+            "this jql query string should be stored on per user basis same as ui state and not per instance"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "11301",
+        "project": "GANTT",
+        "summary": [
+            "no issue object present when creating observableissue"
+        ],
+        "description": [
+            "uncaught typeerror cannot read property id of null"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "11215",
+        "project": "GANTT",
+        "summary": [
+            "timecalculator undefined under some circumstances"
+        ],
+        "description": [
+            "uncaught typeerror cannot call method calculateissueenddate of undefined"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "11210",
+        "project": "GANTT",
+        "summary": [
+            "link new documentation from plugin's website"
+        ],
+        "description": [
+            "should be redirected to confluence pages"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "11208",
+        "project": "GANTT",
+        "summary": [
+            "prepare documentation skeleton in confluence"
+        ],
+        "description": [
+            "make a stubs for all create toc etc"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "11207",
+        "project": "GANTT",
+        "summary": [
+            "create new screenshots"
+        ],
+        "description": [
+            "current screenshots on marketplace are no longer up to date",
+            "create new ones and replace them"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "11206",
+        "project": "GANTT",
+        "summary": [
+            "create demonstration video"
+        ],
+        "description": [
+            "make a short movie presenting plugin capabilities post it on youtube and add link to marketplace assets"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "11204",
+        "project": "GANTT",
+        "summary": [
+            "store settings per user not the instance"
+        ],
+        "description": [
+            "as plugin is now accessible for all users with browse projects permission settings related to ui state toggles and filters should be kept for each user individually",
+            "this will require refactoring on backend side only"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "11201",
+        "project": "GANTT",
+        "summary": [
+            "report backend jira api errors back to the user"
+        ],
+        "description": [
+            "in most cases we know exactly what happen when call to jira rest api fails",
+            "however the only information shown on the frontend to the user is something like internal server error we should catch communication errors on backend and send some more usable information back to frontend chart module"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "11200",
+        "project": "GANTT",
+        "summary": [
+            "remove projects from jql query string"
+        ],
+        "description": [
+            "there is an issue with jira rest api so the list of projects fetched from resource always accessible and making a call to with these ids in jql string triggers an error like this errormessages a value with id xxxx does not exist for the field errors we use jql to limit the number of projects being fetched from jira by removing archived projects therefore we need a mechanism to remove such broken projests from jql either by making another check for accessible projects see api docs for possible options or when error occurs run another search call with all these reported ids removed"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "11107",
+        "project": "GANTT",
+        "summary": [
+            "use real transitions in status filter"
+        ],
+        "description": [
+            "when there's only one project selected we should allow filteringy by real statuses determined by assigned workflows insted of generic ones not for more projects we should either fallback to generic ones or merge all statuses from selected projects together consider performace first"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "11103",
+        "project": "GANTT",
+        "summary": [
+            "allow filtering by status"
+        ],
+        "description": [
+            "we got components and versions now we need to filter by status open issues that have any progress recorded and closed in progress issues with some progress not done closed issues with hasresolution true"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "11102",
+        "project": "GANTT",
+        "summary": [
+            "use post method for action"
+        ],
+        "description": [
+            "after implementing filters the amount of data sending back to backend is growing fast",
+            "therefore we should be doing this with post method instead of get"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "11101",
+        "project": "GANTT",
+        "summary": [
+            "limit the number of projects fetched from jira archive option"
+        ],
+        "description": [
+            "despite all improvements regarding and still a high possibility that for some instances with many issues and projects we will run out of resources on backend to process them all",
+            "also having many issues to render will hit the rendering performance too",
+            "therefore we need a way to limit the number of projects that are fetched from jira anyway",
+            "user should be able to decide which project is interested in and mark others as archived this option should be accessible from settings dialog at anytime however if system will discover that number of issues is too high lets say archiving old projects will become compulsory on the first run"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "11100",
+        "project": "GANTT",
+        "summary": [
+            "gantt chart hangs on loading"
+        ],
+        "description": [
+            "click on projects and gantt chart and the screen hangs",
+            "there is nothing populated in the project"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "11031",
+        "project": "GANTT",
+        "summary": [
+            "better recognition of closed tasks"
+        ],
+        "description": [
+            "at the moment we assume tasks as done when they have resolution field set or when status.id is set to some given value",
+            "apparently not enough",
+            "there are many different workflows around so we have to do more than that",
+            "there should be a way to get all workflows and then let users to choose in configuration panel which statuses should be considered as etc"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "11029",
+        "project": "GANTT",
+        "summary": [
+            "migrate xml descriptor file into json"
+        ],
+        "description": [
+            "see"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "11028",
+        "project": "GANTT",
+        "summary": [
+            "replace oauth with jwt"
+        ],
+        "description": [
+            "see"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "11024",
+        "project": "GANTT",
+        "summary": [
+            "duplicate link handled correctly"
+        ],
+        "description": [
+            "some isuess links duplicates duplicate by but more likely others too are treated as by and used to render dependencies on the chart",
+            "this has to be fixed"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "11022",
+        "project": "GANTT",
+        "summary": [
+            "mark completed issues on epic's dialog"
+        ],
+        "description": [
+            "on issues in epic list completed tasks should be marked the same way as on normal jira issue page green check"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "11020",
+        "project": "GANTT",
+        "summary": [
+            "change title from epic subtasks to issues in epic"
+        ],
+        "description": [
+            "as is now sorted title on issue dialog should be changed accordingly"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "11019",
+        "project": "GANTT",
+        "summary": [
+            "possible frontend bug at processissues method"
+        ],
+        "description": [
+            "investigate the problem reported by instance no",
+            "uncaught typeerror cannot read property length of undefined anonymous function bz ca bz"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "11018",
+        "project": "GANTT",
+        "summary": [
+            "subtasks rendering isn't always working"
+        ],
+        "description": [
+            "need to investigate see rendered o chart as an example two subtasks are"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "11017",
+        "project": "GANTT",
+        "summary": [
+            "rendering epics isn't working"
+        ],
+        "description": [
+            "we have to add rendering epics in the same way we do it now for stories",
+            "therefore json data need to be tweaked accordingly on the backed",
+            "it has to be done with respect of likely at the same time when decoded data is minified to save the space"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "11015",
+        "project": "GANTT",
+        "summary": [
+            "setting task's start dates with"
+        ],
+        "description": [
+            "every task should be draggable to make start date arrangement more convenient"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "11014",
+        "project": "GANTT",
+        "summary": [
+            "out of memory error when fetching many issues"
+        ],
+        "description": [
+            "it hapened twice so far in one case for instance with over issues",
+            "we should limit the data that are being fetched from jira api or limit the object size after json decoding",
+            "will involve some testing first"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "11011",
+        "project": "GANTT",
+        "summary": [
+            "chart sharing"
+        ],
+        "description": [
+            "it would be nice to have the ability to share the rendered chart with outside world via hashed link",
+            "one should be able to choose the filter used for rendering see and the result would be visible for the viewer via external link without any edit interaction allowed"
+        ],
+        "timespent": "151200",
+        "alpha": 100
+    },
+    {
+        "id": "11010",
+        "project": "GANTT",
+        "summary": [
+            "show issue's due date on chart"
+        ],
+        "description": [
+            "render as vertical bar red when task is overdue"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "11008",
+        "project": "GANTT",
+        "summary": [
+            "fetch issues from jira api in batches"
+        ],
+        "description": [
+            "if more issues that maxresults param can allow to fetch in one go we should perform another calls to the jira api once all issues are fetched",
+            "the limit is now hardcoded to but after implementing this feature it should be lowered to something around"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "11007",
+        "project": "GANTT",
+        "summary": [
+            "long names handling in left header"
+        ],
+        "description": [
+            "long project names should not overlap the assignee header",
+            "also too long or names rendered in left header should be cut and have added"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "11006",
+        "project": "GANTT",
+        "summary": [
+            "incorrect progress for completed tasks"
+        ],
+        "description": [
+            "when issue is resolved with estimate lower than original we should show progress as and time left should be empty"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "11005",
+        "project": "GANTT",
+        "summary": [
+            "allow filtering by version"
+        ],
+        "description": [
+            "when only one project selected user should have the ability to filter rendered tasks by version",
+            "similar to only root tasks in chain can be filtered out or these without dependencies",
+            "all filter choices need to be remembered with respect of"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "11004",
+        "project": "GANTT",
+        "summary": [
+            "allow filtering by component"
+        ],
+        "description": [
+            "when only one project selected user should have the ability to filter rendered tasks by component",
+            "only root tasks in chain can be filtered out or these without dependencies",
+            "if task belongs to some dependency chain that filtered out such task should be rendered diffrently greyed all filter choices need to be remembered with respect of"
+        ],
+        "timespent": "32400",
+        "alpha": 100
+    },
+    {
+        "id": "11003",
+        "project": "GANTT",
+        "summary": [
+            "show task's assigned person in left header"
+        ],
+        "description": [
+            "create separate column in left header and display assigned person name assignee there next to the name"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "11001",
+        "project": "GANTT",
+        "summary": [
+            "uncaught typeerror cannot read property avatarurls of null"
+        ],
+        "description": [
+            "clicking on the issue that has either assignee or reporter unassigned cause the js error"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "11000",
+        "project": "GANTT",
+        "summary": [
+            "data missing from instance table"
+        ],
+        "description": [
+            "i did noticed a few times that data strored in and columns had gone for almost all rows looks like some update command ran without proper where clause i think of any scenario that triggers that right now",
+            "need further investigation"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "10700",
+        "project": "GANTT",
+        "summary": [
+            "allow removing fixed start dates for issues"
+        ],
+        "description": [
+            "once the fixed start date is set for issue one should have the ability to remove it and rely back on automatic calculations"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10607",
+        "project": "GANTT",
+        "summary": [
+            "circular references detection"
+        ],
+        "description": [
+            "in case of circulary linked issues detect such dependency loops and inform the user that rendering gantt chart may not be accurate",
+            "at the moment such cases just make js to crash too many stack"
+        ],
+        "timespent": "32400",
+        "alpha": 100
+    },
+    {
+        "id": "10606",
+        "project": "GANTT",
+        "summary": [
+            "go live"
+        ],
+        "description": [
+            "tell the world about this awesome well maybe not the whole world in the first place just atlassian"
+        ],
+        "timespent": "75600",
+        "alpha": 100
+    },
+    {
+        "id": "10605",
+        "project": "GANTT",
+        "summary": [
+            "create documentation manuals etc"
+        ],
+        "description": [
+            "to create a live listing on the atlassian marketplace need to be properly described all features explained etc"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "10604",
+        "project": "GANTT",
+        "summary": [
+            "add licensing support"
+        ],
+        "description": [
+            "before we can go live atlassian licensing model mst be supported",
+            "application need to handle the lic parameter in the requests and react accordingly"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10601",
+        "project": "GANTT",
+        "summary": [
+            "allow setting start dates for issues"
+        ],
+        "description": [
+            "one should have the ability to define the start date not only for projects but also for individual issues as well",
+            "that will give the chance for better organizing the schedule view as blocks blocked by linking not always apply"
+        ],
+        "timespent": "32400",
+        "alpha": 100
+    },
+    {
+        "id": "10400",
+        "project": "GANTT",
+        "summary": [
+            "create backend model to instance plugin and user objects"
+        ],
+        "description": [
+            "create model dao and service backend classes representing instance jira installation plugin and user",
+            "all necessary data should be stored in database on plugin installation"
+        ],
+        "timespent": "32400",
+        "alpha": 100
+    },
+    {
+        "id": "10303",
+        "project": "GANTT",
+        "summary": [
+            "firefox fix left header rendering"
+        ],
+        "description": [
+            "under firefox max os x there are some issues with rendering left header",
+            "it starts too high and the buttons are overlaping",
+            "also icons on the there buttons are missplaced"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "10300",
+        "project": "GANTT",
+        "summary": [
+            "fill in the issue dialog with all necessary data"
+        ],
+        "description": [
+            "there should be progress time estimates original left assignee priority status type due date linked issues"
+        ],
+        "timespent": "32400",
+        "alpha": 100
+    },
+    {
+        "id": "10207",
+        "project": "GANTT",
+        "summary": [
+            "handle communication errors"
+        ],
+        "description": [
+            "display error message when getting data from jira instance fails"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10205",
+        "project": "GANTT",
+        "summary": [
+            "slack time support"
+        ],
+        "description": [
+            "for issues render a slack time line"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "10204",
+        "project": "GANTT",
+        "summary": [
+            "fix rendering of issues"
+        ],
+        "description": [
+            "when issue has parents from different branches it is rendered incorrectly on the first branch insted of that with the longest time scheduled"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "10203",
+        "project": "GANTT",
+        "summary": [
+            "support rendering issues without time estimates"
+        ],
+        "description": [
+            "issue that has no time estimates present should be still visible on the chart for example as diamond box with fixed width and color"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "10202",
+        "project": "GANTT",
+        "summary": [
+            "distinguish issues"
+        ],
+        "description": [
+            "for example issue box and left column text and use font or do something"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10201",
+        "project": "GANTT",
+        "summary": [
+            "allow selecting projects"
+        ],
+        "description": [
+            "user need to be able to select the project for rendering"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "10200",
+        "project": "GANTT",
+        "summary": [
+            "get project list from jira"
+        ],
+        "description": [
+            "get list of projects from jira ondemand instance in order to select an active one"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10101",
+        "project": "GANTT",
+        "summary": [
+            "mark the issue's progress on the chart"
+        ],
+        "description": [
+            "one should be able to see the progress of the issue on the chart scaled in hours hour day width where n is number of working hours per day"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10002",
+        "project": "GANTT",
+        "summary": [
+            "evaluate webhooks feature"
+        ],
+        "description": [
+            "create and test webhook handler"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "10001",
+        "project": "GANTT",
+        "summary": [
+            "setup hosting environment"
+        ],
+        "description": [
+            "register domain setup virtual host for application on the server"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10000",
+        "project": "GANTT",
+        "summary": [
+            "establish connection with jira ondemand instance"
+        ],
+        "description": [
+            "use atlassian connect helloworld example to connect plugin into live jira ondemand instance"
+        ],
+        "timespent": "50400",
+        "alpha": 100
+    },
+    {
+        "id": "15106",
+        "project": "MAPS",
+        "summary": [
+            "update marketplace listing"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "11302",
+        "project": "GANTT",
+        "summary": [
+            "isn't working under ff"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "11209",
+        "project": "GANTT",
+        "summary": [
+            "write documentation"
+        ],
+        "timespent": "68400"
+    },
+    {
+        "id": "11025",
+        "project": "GANTT",
+        "summary": [
+            "add hide button or link to issue dialog"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "10600",
+        "project": "GANTT",
+        "summary": [
+            "move gantt charts link to projects menu"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "11409",
+        "project": "EP",
+        "summary": [
+            "critical bug"
+        ],
+        "timespent": "10800"
+    }
+]

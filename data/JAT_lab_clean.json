@@ -1,0 +1,621 @@
+[
+    {
+        "id": "13808",
+        "project": "SPEC",
+        "summary": [
+            "simplify dashboard main.cpp"
+        ],
+        "description": [
+            "to reduce the amount of code of main.cpp"
+        ],
+        "timespent": "360",
+        "alpha": 97
+    },
+    {
+        "id": "13286",
+        "project": "SPEC",
+        "summary": [
+            "dashboard can not display correct when clicked the icon second time after launched"
+        ],
+        "description": [
+            "since dashboard using role dashboard and using qtaglextras",
+            "these is a problem happend",
+            "dashboard will launched and display first time when you click button in launcher menu",
+            "when you switch to another application and try to switch back into dashboard it will not display",
+            "because qtaglextras using role to check if dashboard icon is clicked",
+            "but the homescreen-service using application name",
+            "solution qtaglextras using role and name both to check if this application is clicked",
+            "homescreen-service sending role and name with event tapshortcut",
+            "for example application_name dashboard application_role dashboard these is a problem that homescreen-service know application role so right now using a static table to get application role to avoid this issus",
+            "and in future we want to add a new api named registermyapplication(role that application can using the api to tell homescreen-service role of application"
+        ],
+        "timespent": "43200",
+        "alpha": 99
+    },
+    {
+        "id": "13069",
+        "project": "SPEC",
+        "summary": [
+            "kci dev server setup"
+        ],
+        "description": [
+            "a developer needs to access to a dedicated server as a sandbox",
+            "that way all tests won't affect the current kci server",
+            "install os setup containers servers configuration a db dump of the current kci data is provided in the attachments"
+        ],
+        "timespent": "115200",
+        "alpha": 99
+    },
+    {
+        "id": "12922",
+        "project": "SPEC",
+        "summary": [
+            "binder doesn't handle time updates"
+        ],
+        "description": [
+            "when time changes after ntp update the binder may close session even when not really expired",
+            "this is because the computation of the expiration doesn't take care of the time change"
+        ],
+        "timespent": "21960",
+        "alpha": 99
+    },
+    {
+        "id": "12819",
+        "project": "SPEC",
+        "summary": [
+            "script in python"
+        ],
+        "description": [
+            "script used tolist installable installed agl sdks is currently wrriten in nodejs",
+            "in order to remove this dependency with nodejs because it is the only script in that requires nodejs this script must be rewritten into python",
+            "refer to readme.md more details about script usage"
+        ],
+        "timespent": "18000",
+        "alpha": 99
+    },
+    {
+        "id": "12581",
+        "project": "SPEC",
+        "summary": [
+            "fix smacklabel in systemd"
+        ],
+        "description": [
+            "systemd of pyro is a version that can't set smack labels of application due to a bug"
+        ],
+        "timespent": "86400",
+        "alpha": 99
+    },
+    {
+        "id": "11719",
+        "project": "SPEC",
+        "summary": [
+            "add automotive software to layer"
+        ],
+        "description": [
+            "hi i want to use genivi commonapi in i created some recipes of commonapi",
+            "and i intend to commint these recipes to i'm not sure it's correct",
+            "please give me some advice of where put these recipes",
+            "please give me some advice thank you very much",
+            "the attachment is the recipes i made",
+            "list of automotive software"
+        ],
+        "timespent": "576000",
+        "alpha": 99
+    },
+    {
+        "id": "15037",
+        "project": "SPEC",
+        "summary": [
+            "wayland bug back port fix fake address already in use error"
+        ],
+        "description": [
+            "in wayland there is a bug as bellow the bug may effects fail so better to back port the modify to agl",
+            "in the current workflow socket file will be deleted if it already exists",
+            "however if the socket file is a symbolic link and the file that it refers to exist we will got address already in use because bind thinks the socket file exists and create it",
+            "now use lstat to determine whether the socket file exists",
+            "modify address"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "15017",
+        "project": "SPEC",
+        "summary": [
+            "build fail on"
+        ],
+        "description": [
+            "build failed on after adding eglfs kms gbm compile option to qtbase",
+            "cat enable eglfs for qt based application opengl eglfs kms gbm d and the compile log is attachment"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "14896",
+        "project": "SPEC",
+        "summary": [
+            "refactor to make some common pieces"
+        ],
+        "description": [
+            "the contents of duplicate a lot of refactor some of the common pieces font wayland networking packages into one or more new packagegroups that could be reused to avoid duplication"
+        ],
+        "timespent": "115200",
+        "alpha": 100
+    },
+    {
+        "id": "14467",
+        "project": "SPEC",
+        "summary": [
+            "add a shrink version"
+        ],
+        "description": [
+            "hi could you give some advices thanks",
+            "purpose base on make a shrink version for low performance board can run keep homescreen hvac dashboard and setting(vehicle correlation remove other apps and some services",
+            "other apps can be customized by oem and method add a file to folder in order not to affect the original recipe file include all recipe files that we need"
+        ],
+        "timespent": "576000",
+        "alpha": 100
+    },
+    {
+        "id": "14305",
+        "project": "SPEC",
+        "summary": [
+            "missing audio playback over bluetooth"
+        ],
+        "description": [
+            "playing audio over bluetooth on produces no sound on headphones connected to hdmi audio port",
+            "pressing the bluetooth icon in the media player and switching to local audio files produces sound immediately",
+            "bluetooth logs do not indicate any error",
+            "service logs indicate errors for halbluealsaregisterall and mixerattachverb noformat journalctl u logs begin at tue utc end at tue utc",
+            "may starting agl high level interface for may bluetooth kernel module detected may detecting hci may found hci controller device may hci controller device state up running pscan may hci device up and running after seconds may address powered true discoverable false discoverabletimeout pairable true pairabletimeout discovering false uuids may bluetooth-manager ready after seconds may now may begin of config may ldpaths may usr libexec agl lib smixer lib may name may rootdir var local lib afm applications may workdir home may monitoring true may port may token hello may roothttp may unix run user apis ws unicens may binding may var local lib afm applications lib may apitimeout may cntxtimeout may uploaddir may rootbase opa may rootapi api may alias may monitoring usr lib afb monitoring may end of config may info running with pid may info api monitor added may info binding looks like an afb binding may info api added may info api loading config may notice api new audio role radio may notice api new audio role multimedia may notice api new audio role emergency may notice api new audio role navigation may info scanning for bindings may info binding looks like an afb binding may info api alsacore added may info scanning for bindings"
+        ],
+        "timespent": "180",
+        "alpha": 100
+    },
+    {
+        "id": "13549",
+        "project": "SPEC",
+        "summary": [
+            "phone app contacts not updating from connected pbap device"
+        ],
+        "description": [
+            "after connecting a pbap capable device in settings phone app no longer displays the contacts from the phone",
+            "this was reported on the mailing list for flouder and i also confirmed the issue on"
+        ],
+        "timespent": "36000",
+        "alpha": 100
+    },
+    {
+        "id": "13264",
+        "project": "SPEC",
+        "summary": [
+            "clipped sound with softmixer"
+        ],
+        "description": [
+            "we have noticed that the sound output can be clipped on the board",
+            "this only happens with the card the output on an usb sound card is always fine",
+            "the issue might be related to process resource limitations with systemd since launching the process on cmdline makes the problem not happen",
+            "furthermore removing that line from the service file makes the sound fine"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "12987",
+        "project": "SPEC",
+        "summary": [
+            "build and publish xds released packages"
+        ],
+        "description": [
+            "there are steps add jobs in jenkins of to build xds packages and then published only tagged released version of resulting zip archives for example on note that for now xds packages are published on iot.bzh github for example below are the list of commands to build and package just replace by or to build accordingly and note that these commands and more are documented in xds chapter of agl doc website here and at least when agl doc website will be regenerated because i just pushed changes in that are not yet visible in online doc",
+            "install dependencies tools install various tools build go to directory where you want for example cd note the directory structure above is important we can work out the jenkins job together so you know where to poke at if you need changes to the build",
+            "let me know when jenkins jobs will be setup and hesitate to contact me if you encounter any problem"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "12979",
+        "project": "SPEC",
+        "summary": [
+            "feature lead to compile errors"
+        ],
+        "description": [
+            "the file has an unexpected character that make build failing"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "12929",
+        "project": "SPEC",
+        "summary": [
+            "newly created surface is not associated with any layer"
+        ],
+        "description": [
+            "nothing is displayed after boot",
+            "i join the journal produced with and some outputs of layermanagercontrol"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "12919",
+        "project": "SPEC",
+        "summary": [
+            "layer visibility is sometimes wrong"
+        ],
+        "description": [
+            "this discussion started on the mailing list mitsunari requested that i create an issue",
+            "been trying to run the demo on an with etnaviv",
+            "after updating libdrm gstreamer mesa meson and wayland to the versions in oe rocko or master to and finally agl to master it mostly works",
+            "one problem i see is that the layer visibilities seem to work consistently on some boots the ui is invisible and only layermanagercontrol set surface visibility makes it show up",
+            "even on good boots if i then start an app which works fine i switch back to the home screen",
+            "running layermanagercontrol set layer visibility makes it visible again",
+            "as requested byemre ucan i collected some status output this is for the problem on startup the difference is surface created by pid original size destination region source region opacity visibility frame counter on layer in the good case i then clicked on the music icon which worked correctly then i clicked on the home icon but the music player stayed visible"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "12822",
+        "project": "SPEC",
+        "summary": [
+            "find for which machine a sdk has been built avoiding duplicated sdk"
+        ],
+        "description": [
+            "detects server using a database from publicly available sdk from agl website but some got the same path and nothing to distinguish them once installed",
+            "typically if you installed one using tools from a manually downloaded sdk let's say for then you'll have duplicated detection for dragonboard and a new entry will be created this was a bug which raise to sdk detected and each one use the same path",
+            "errors will be reported to remove them all since there is path to rules them all the second and third false detected sdk can't remove files",
+            "those one has been already removed"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "12785",
+        "project": "SPEC",
+        "summary": [
+            "downloads own copy of lua needs to use yocto version"
+        ],
+        "description": [
+            "nack",
+            "this is a you need to use the version provided by yocto",
+            "do you need lua on the host or on the target for host try for target until this is resolved please remove it from the packagegroup to unbreak ppls builds",
+            "cc"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "12777",
+        "project": "SPEC",
+        "summary": [
+            "error message need to be improved"
+        ],
+        "description": [
+            "tai nice to tell us that you fails to close stream but can we get the offending source name kind of required error api could not unsubscribe to stream specific state change event"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "12687",
+        "project": "SPEC",
+        "summary": [
+            "fix issue using space in path with"
+        ],
+        "description": [
+            "using space in project path cause problem in build",
+            "path to export.map using as link flag will leads to link failed built target linking c shared module cc error no such file or directory error and potentially other proble"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "12661",
+        "project": "SPEC",
+        "summary": [
+            "mediaplayer binding fix issues with crashing and possible hangs"
+        ],
+        "description": [
+            "add fixes for possible and know crashes for album art metadatarequest within event"
+        ],
+        "timespent": "115200",
+        "alpha": 100
+    },
+    {
+        "id": "12643",
+        "project": "SPEC",
+        "summary": [
+            "grid system part tabs"
+        ],
+        "description": [
+            "the goal of this is to allow to have tabs system who will contain a differents views of grids data"
+        ],
+        "timespent": "172800",
+        "alpha": 100
+    },
+    {
+        "id": "12641",
+        "project": "SPEC",
+        "summary": [
+            "grid system grid builder sql integration"
+        ],
+        "description": [
+            "the goal of this is to reverse the mechanism already in place for build the settingsmandatory by the grid system",
+            "the first implementation start to config files for retrieve all necessary start to parsed query then check by configuration files is more flexible customs columns save system query grid reusability"
+        ],
+        "timespent": "288000",
+        "alpha": 100
+    },
+    {
+        "id": "12639",
+        "project": "SPEC",
+        "summary": [
+            "grid system part queries manager part a"
+        ],
+        "description": [
+            "the goal of this is toallow the possibility of the user to save a grid configurations for use in another query or for make a dashboard like he want save system will be in the client"
+        ],
+        "timespent": "288000",
+        "alpha": 100
+    },
+    {
+        "id": "12613",
+        "project": "SPEC",
+        "summary": [
+            "grid system part mods order by"
+        ],
+        "description": [
+            "the goal of this is to make a widget who can manipulate sort of columns"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "12612",
+        "project": "SPEC",
+        "summary": [
+            "grid system part mods select"
+        ],
+        "description": [
+            "the goal of this is to make a customizable columns selector as a widget"
+        ],
+        "timespent": "230400",
+        "alpha": 100
+    },
+    {
+        "id": "12611",
+        "project": "SPEC",
+        "summary": [
+            "grid system part"
+        ],
+        "description": [
+            "the goal of this is to create with many libraries an application who allow the users to view the data under grid shape basic system direct filter sort per one column pagination"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "12610",
+        "project": "SPEC",
+        "summary": [
+            "deploy tool environment dev"
+        ],
+        "description": [
+            "the goal of this is to create a mini application who will deploy all necessaries for the master application ui"
+        ],
+        "timespent": "230400",
+        "alpha": 100
+    },
+    {
+        "id": "12609",
+        "project": "SPEC",
+        "summary": [
+            "study"
+        ],
+        "description": [
+            "result"
+        ],
+        "timespent": "288000",
+        "alpha": 100
+    },
+    {
+        "id": "12189",
+        "project": "SPEC",
+        "summary": [
+            "review tizen release for security improvements"
+        ],
+        "description": [
+            "tizen which whom agl share most of the security model has released a new version having a look at the correction and improvement done in particular in the security fw would be valuable",
+            "release notes the code"
+        ],
+        "timespent": "288000",
+        "alpha": 100
+    },
+    {
+        "id": "11820",
+        "project": "SPEC",
+        "summary": [
+            "homescreen is not able to launch applications"
+        ],
+        "description": [
+            "quoting app install seem to work reports the applications installed icons appear on the homescreen automatically when clicked on any icon the icons disappear top menu bar still there no application can be started by homescreen returning to the homescreen brings back all icons same behavior after multiple reboots"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "11759",
+        "project": "SPEC",
+        "summary": [
+            "apps intermittently fail to launch"
+        ],
+        "description": [
+            "across various boots of the same qemu image i find that a random app may fail to launch",
+            "the symptom is a blank application surface after clicking on the icon",
+            "the log shows the following in this case mar daemon.err error start error user unit inactive mar launch mar pid mar qml app cannot be launched once this happens natural to click on the icon again after switching back to the homescreen",
+            "this will result in a launch mar launchapp name mar jsonlaunch id mode local mar statestring runid pids state running id mar pid mar launchapp pid mar makemevisible mar showapplayer mar pid mar no layer to show for mar screen render order layers other applications seem to launch fine the first time and then the wm has no problem finding their layer to show",
+            "it seems that if an app fails to launch the first time like that then when it does launch the second time it seem to have a layer associated with it for the wm to handle",
+            "the other thing is that there is indeed a hvac process running so other than no visible app layer the app is running on the system",
+            "note that hvac is just an example here",
+            "by reboot and clicking different apps made this happen to settings and phone as well",
+            "sometimes the first app i attempt to launch and sometimes the or isolate a pattern to reproduces it except attempting to launch several apps"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "11529",
+        "project": "SPEC",
+        "summary": [
+            "build issue for renesas pro"
+        ],
+        "description": [
+            "i follow the this url to build a image for renesas these is a build error like this message",
+            "undefined reference to i thought it miss wayland kms and libgbm for image",
+            "so i added these code to libgbm but run bitbake can not fixed it",
+            "so i run bitbake libgbm then run bitbake fixed",
+            "does this problem due to my environment or these is a problem with kickstart"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "11523",
+        "project": "SPEC",
+        "summary": [
+            "need some advice about amb"
+        ],
+        "description": [
+            "hi mr moeller i noticed these is a merge for chinook to deleted message actually we is doing some work with amb now in toyota",
+            "i also noticed these is a new layer which include amb recepie but without any patches and without library",
+            "what we done is need some patches and library",
+            "can we use the layer and do some modify"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "11507",
+        "project": "SPEC",
+        "summary": [
+            "check or"
+        ],
+        "description": [
+            "error no recipes available for"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "11460",
+        "project": "SPEC",
+        "summary": [
+            "pulseaudio crash when it plays audio to lineout"
+        ],
+        "description": [
+            "steps connect speaker to lineout of porter exectute following command paplay or aplay default sound card is pulseaudio went to infinite loop and was killed/restarted by systemd automatically",
+            "below log was displayed",
+            "connection failure connection terminated stream error connection terminated immediately again",
+            "playback successfully done without crash",
+            "observation when sink is in suspended from pulseaudio point of view it seems to try to resume device and fails retry again and again",
+            "this causes infinite loop in pulseaudio",
+            "after its restarting sink becomes idle and change to suspend within approx",
+            "sec",
+            "during idle state pulseaudio can successfully start playback to lineout",
+            "as another observation this issue has never happen with bb based kernel",
+            "and also it has never been observed without pulseaudio like direct access to alsa device",
+            "aplay therefore this issue seems to be occurred by combination with pulseaudio and asoc driver",
+            "i had doubt that this issue was caused by the update of asoc driver",
+            "hint quite similar issue was reported in debian community",
+            "workaround using usb dac by changing kernel config due to default off in renesas kernel and assign this sink to of pulseaudio",
+            "change kernel config connect check sound card is detected by pulseaudio pactl list sinks assign detected sink to default pactl sink name"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "11408",
+        "project": "SPEC",
+        "summary": [
+            "failed to load client buffer integration"
+        ],
+        "description": [
+            "i have done compile all of blowfish package but there is a unknown issue for me when i run agl demo as below",
+            "cd i imports scaled.qml failed to load client buffer integration how can i run demo application without this error another weston applications runs well with for example i think mali gpu driver has no problem maybe there are some configuration problem about could you please help me"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "11316",
+        "project": "SPEC",
+        "summary": [
+            "agl framework doesn't start on krogoth"
+        ],
+        "description": [
+            "since recent version of systemd at least version of krogoth build the keyword of executable units is depracated in favour of the keyword that requires at least a kernel consequently the framework start"
+        ],
+        "timespent": "115200",
+        "alpha": 100
+    },
+    {
+        "id": "12619",
+        "project": "SPEC",
+        "summary": [
+            "learning"
+        ],
+        "timespent": "518400"
+    },
+    {
+        "id": "12618",
+        "project": "SPEC",
+        "summary": [
+            "grid system part extra integration of alasql sql syntax in javascript client side"
+        ],
+        "timespent": "259200"
+    },
+    {
+        "id": "12617",
+        "project": "SPEC",
+        "summary": [
+            "grid system part mods sql editor"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "12616",
+        "project": "SPEC",
+        "summary": [
+            "grid system part mods join"
+        ],
+        "timespent": "374400"
+    },
+    {
+        "id": "12615",
+        "project": "SPEC",
+        "summary": [
+            "grid system part mods groupy by"
+        ],
+        "timespent": "115200"
+    },
+    {
+        "id": "12614",
+        "project": "SPEC",
+        "summary": [
+            "grid system part mods where"
+        ],
+        "timespent": "230400"
+    },
+    {
+        "id": "11508",
+        "project": "SPEC",
+        "summary": [
+            "check"
+        ],
+        "timespent": "144000"
+    }
+]

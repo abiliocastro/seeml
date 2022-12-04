@@ -1,0 +1,2088 @@
+[
+    {
+        "id": "51190",
+        "project": "TRIFFHIR",
+        "summary": [
+            "add supported profiles to capability statement editing screen"
+        ],
+        "description": [
+            "add support for the capabilitystatement.rest.resource.supportedprofile property to the edit screen"
+        ],
+        "timespent": "7200",
+        "alpha": 97
+    },
+    {
+        "id": "51217",
+        "project": "TRIFFHIR",
+        "summary": [
+            "multiple publish boxes on published implementation guide's main page"
+        ],
+        "description": [
+            "two publish boxes on index.html see screenshot"
+        ],
+        "timespent": "5400",
+        "alpha": 98
+    },
+    {
+        "id": "51026",
+        "project": "TRIFFHIR",
+        "summary": [
+            "add sh and bat files when exporting with the ig publisher jar file"
+        ],
+        "description": [
+            "add shell scripts to the html export to make it easy to invoke the ig publisher jar when the ig publisher jar file is included in the export",
+            "java jar ig ig.json the shell scripts should be publisher.bat and publisher.sh located at the root directory of the zip running publisher.bat in windows should start the ig publisher process",
+            "publisher.sh is intended for linux environments"
+        ],
+        "timespent": "1800",
+        "alpha": 98
+    },
+    {
+        "id": "33026",
+        "project": "TRIF",
+        "summary": [
+            "deprecate binding to code explicitly create shall not constraints where nullflavor is prohibited generate separate conformance statements for element/attribute presence and value set binding"
+        ],
+        "description": [
+            "see the recommendations in the following dstu comment which was approved by sdwg and will be added to the committees best practices document",
+            "let's discuss",
+            "i think we can do this with enhancements to the panel that updates the datatypes and require some kind of extra step maybe switching to engineering role to do binding on code etc",
+            "directly keep analysts working at the data type"
+        ],
+        "timespent": "60",
+        "alpha": 98
+    },
+    {
+        "id": "51431",
+        "project": "TRIFFHIR",
+        "summary": [
+            "ignorewarnings.txt format changes"
+        ],
+        "description": [
+            "trifolia is now spitting out an empty ignorewarnings.txt file which is however grahame changed the format of the file on mar",
+            "the file even if there are no messages needs to start with this suppressed messages the whole syntax is documented near the bottom of this page until this is fixed all trifolia igs will spit out an error when publishing",
+            "the ignorewarnings.txt file needs to include supressed messages in it"
+        ],
+        "timespent": "1860",
+        "alpha": 99
+    },
+    {
+        "id": "51390",
+        "project": "TRIFFHIR",
+        "summary": [
+            "cannot import xlsx file to trifolia"
+        ],
+        "description": [
+            "i'm trying to import an excel spreadsheet xlsx file format to trifolia but the import button is unclickable"
+        ],
+        "timespent": "11700",
+        "alpha": 99
+    },
+    {
+        "id": "51285",
+        "project": "TRIFFHIR",
+        "summary": [
+            "tof not preserving xhtml lang tag"
+        ],
+        "description": [
+            "getting the following warning from the ig publisher composition warning resource has a language but the xhtml does not have a language tag so i added the following a lang attribute to the div element of the resource as follows div lang xmlns care plan document for amy by community health and div that got rid of the error when i ran the build locally or in the ci build",
+            "i then imported the resource back into tof",
+            "however when i viewed the raw tag the lang attribute had been removed",
+            "this is likely an issue with the fhir.js modules serialization logic",
+            "suggest setting up a unit test in the fhir.js module that uses lang on the div element in both json and xml and ensure that they serialize correctly"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "51269",
+        "project": "TRIFFHIR",
+        "summary": [
+            "publish defaults still wrong"
+        ],
+        "description": [
+            "defaults for publish should be as follows per previous discussions use latest ig publisher yes include fhir ig publisher.jar no output format xml use terminology server yes download no confirmed that include fhir ig publisher.jar default is yes and output format is json",
+            "suggestion would be nice if these publish defaults could be remembered/tied to user preference instead of"
+        ],
+        "timespent": "60",
+        "alpha": 99
+    },
+    {
+        "id": "51259",
+        "project": "TRIFFHIR",
+        "summary": [
+            "use the new official fhir template"
+        ],
+        "description": [
+            "when tof creates an export to be used with the fhir ig publisher it uses the old has produced a new official framework/template that should be used for igs going forward",
+            "it is not officially published yet but is said to be complete enough to try it out and see how it goes",
+            "in testing ive found that its far enough along that we can use it for tof",
+            "the changes to tof are primarily the structure of the directory that gets exported for an ig using the html export format",
+            "the html publishing package export format is also used by tof during the publish process",
+            "the following changes have been made to the export structure there is no more ig.json file it is not an ig.ini file",
+            "the ig.ini file is very simple and specifies defaults for almost everything with the exception of the implementationguide.version field which is used as the version property of the ig.ini file",
+            "if there is no implementationguide.version specified the ig.inis version property is defauled to the ig field in the ig.ini file should be set to the implementationguide.id field and the extension of the file name for the ig field should match what the export format is selected either xml or json",
+            "there is no more framework directory in the export",
+            "the pages of the implementation guide are exported in the input/pagecontent directory",
+            "the actual resources associated with the ig are exported in the input/resources directory",
+            "you can find additional documentation about the structure of the export in the engineering onenote notebook new template these changes to the html publisher export format should also work with the fhir ig publisher which can be tested by running the publish functionality on a previously working ig",
+            "i tested it on the implementation guide on the fhir server",
+            "additionally some functionality has been added to tof to allow the user to customize the navigation menus that each page of the implementation guide shows up on",
+            "for example you can edit a page in the ig and specify a custom navigation menu",
+            "when the ig is published the results should show a navigation menu item with that page selected",
+            "help documentation in the narrative pages page describes how this works"
+        ],
+        "timespent": "28800",
+        "alpha": 99
+    },
+    {
+        "id": "51151",
+        "project": "TRIFFHIR",
+        "summary": [
+            "allow searching by id on the browse profiles screen"
+        ],
+        "description": [
+            "search profiles/extensions allow search of id is the first field you see in the listing of profiles yet you can't search on it",
+            "add an id search field that is available at all times regardless of whether show more or show less fields is keep in mind that the resource.id field is the id search param according to"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "51120",
+        "project": "TRIFFHIR",
+        "summary": [
+            "an ig page that has a filename including or characters crashes the publish process"
+        ],
+        "description": [
+            "when i attempt to publish ig id this error code shows statuscode message internal server error there are also these validation errors that i am not certain how to resolve or find what page they are on severity resource details error profile element implementationguide.definition.resource minimum required but only found information unknown extension warning a resource should have narrative for robust management value should not start or finish with whitespace"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "51076",
+        "project": "TRIFFHIR",
+        "summary": [
+            "align profile editing grid with fhir specification's layout"
+        ],
+        "description": [
+            "in the grid view it would be good to have a quick way of knowing that a type is profiled as oposed to ghe generic type",
+            "and being able to see the profile possibly with a flyover would be nice too",
+            "change the binding column name to description constraints move card",
+            "column before type change properties column name to flags list the following in the description constraints column value set and code system bindings each type profile or targetprofile with targetprofile taking precedence over profile make sure that the value set bindings are displayed correctly depending on the version of fhir that is in context",
+            "for example has elementdefinition.binding.valueset x while has the ui should display binding.valuesetreference when in and should display binding.valueset when in"
+        ],
+        "timespent": "111600",
+        "alpha": 99
+    },
+    {
+        "id": "51075",
+        "project": "TRIFFHIR",
+        "summary": [
+            "limit users ability to constrain and maxlength"
+        ],
+        "description": [
+            "it's possible to specify a maxlength for elements that don't have a simple type or minvalue and maxvalue for elements that have a type that's not allowed to have a min or max",
+            "min x and max x can only be entered when the max cardinality is greater than one or maxlength can only be entered when the elementdefinition.type is a primitive type with the exception of boolean instant time date datetime decimal integer string uri code id oid unsignedint positiveint markdown url canonical"
+        ],
+        "timespent": "108900",
+        "alpha": 99
+    },
+    {
+        "id": "51071",
+        "project": "TRIFFHIR",
+        "summary": [
+            "validate the user's entry of min and max cardinalities"
+        ],
+        "description": [
+            "i can set the min and max of a element to which will prompt a warning and a validation error the user should be able to set the cardinality of an element to an invalid value but a warning in the form the ui and a validation error appears in the validation tab if the user",
+            "selects a min cardinality less than the base element's min cardinality",
+            "selects a max cardinality greater than the base element's max cardinality"
+        ],
+        "timespent": "10800",
+        "alpha": 99
+    },
+    {
+        "id": "51062",
+        "project": "TRIFFHIR",
+        "summary": [
+            "improvements to file structure flexibility"
+        ],
+        "description": [
+            "associate paths directly to implementationguide.definition.resource and implementationguide.package.resource for via an extension",
+            "implementationguide example notes about the examples the changes from existing behavior are in implementationguide.package.resource.extension and the extension.url is different between and the extensions value is string valuestring the default value of the path for a resource in the ig should be set when the user selects/specifies the resources reference",
+            "for example when the user clicks the hand icon for a resource and selects an existing resource from the server the default value for the github path extension should be if the user specifies the resource reference by hand typing the resource reference into the fields instead of clicking the hand icon to select a resource on the server then the github path cannot be automatically set and the system will have to rely on the user specifying what the github path to the resource should be",
+            "allow the user to edit the github path with a text field in resource row",
+            "to make this extra column fit on the screen modifications may need to be made to the other components used in the row the resource reference component for example you may decide to hide the display for the resource reference entirely",
+            "that would require adding an extra input field to the resource-reference component to indicate hidedisplay that could be set for just this"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "51058",
+        "project": "TRIFFHIR",
+        "summary": [
+            "enabling a new item shouldn't collapse the menu"
+        ],
+        "description": [
+            "when you click on the edit item for a item when working on a profile it collapses the edit window which is both counter-intuitive and annoying"
+        ],
+        "timespent": "3660",
+        "alpha": 99
+    },
+    {
+        "id": "50795",
+        "project": "TRIFFHIR",
+        "summary": [
+            "description field appears blank until clicked"
+        ],
+        "description": [
+            "while editing a profile if the description is populated it doesn't show up until you click on the field",
+            "looks like it is blank"
+        ],
+        "timespent": "90000",
+        "alpha": 99
+    },
+    {
+        "id": "50649",
+        "project": "TRIFFHIR",
+        "summary": [
+            "make use of the new official fhir templates/frameworks"
+        ],
+        "description": [
+            "lloyd has indicated that the new template/framework can be used",
+            "the framework folder will no longer be necessary unless there are customizations for the ini file is all that will be needed to use the new template"
+        ],
+        "timespent": "60",
+        "alpha": 99
+    },
+    {
+        "id": "50931",
+        "project": "TRIF",
+        "summary": [
+            "combine views"
+        ],
+        "description": [
+            "i'd really like to see these views merged into one view",
+            "the workflow for these parts of the ig never really materialized the way we thought it would and now having to switch between the is a frustrating",
+            "also when we copy templates which is tons it is impossible to see if there are descriptions/labels that you might want to edit or delete without actually changing the view and looking to see if there is something there",
+            "this makes it super easy to miss stuff and leave text that shouldn't be in your new template",
+            "same goes for custom schematron"
+        ],
+        "timespent": "120",
+        "alpha": 99
+    },
+    {
+        "id": "51447",
+        "project": "TRIFFHIR",
+        "summary": [
+            "support specifying jurisdiction in ig editing"
+        ],
+        "description": [
+            "i could not find jurisdiction on any tab for the implentationguide resource",
+            "the only way to add it seems to be by modifying the xml or json and posting it",
+            "when you add this also help out the user since the ig publisher now generates this warning implementationguide.jurisdiction warning the resource should declare jurisdiction to match the package id jurisdiction thus if the package id contains then jurisdiction should be autopopulated with a codeableconcept where the system is and the code is us"
+        ],
+        "timespent": "7260",
+        "alpha": 100
+    },
+    {
+        "id": "51443",
+        "project": "TRIFFHIR",
+        "summary": [
+            "structuredefinition.jurisdiction must match package id"
+        ],
+        "description": [
+            "the ig publisher is now reporting this error the resource must declare jurisdiction to match the package id jurisdiction with an appropriate value based on the package",
+            "for example is in the us realm thus jurisdiction should be as follows jurisdiction coding code us display system"
+        ],
+        "timespent": "300",
+        "alpha": 100
+    },
+    {
+        "id": "51436",
+        "project": "TRIFFHIR",
+        "summary": [
+            "adding crashes ig publisher"
+        ],
+        "description": [
+            "import into an ig",
+            "run publish",
+            "note that it crashes with a null pointer exception",
+            "remove it an note that publish works",
+            "also this seems to be related to having the contained documentreference resource in the implementationguide resource",
+            "if i remove or comment out the contained resource and run the publisher locally it works",
+            "so the fix might just be to remove the contained resource on export"
+        ],
+        "timespent": "1860",
+        "alpha": 100
+    },
+    {
+        "id": "51425",
+        "project": "TRIFFHIR",
+        "summary": [
+            "support customized templates"
+        ],
+        "description": [
+            "when exporting and publishing allow the user to specify a custom template to use for their implementation guide in the form of a url",
+            "when the user specifies a url to a zip file the export process should download and extract the zip file to the custom-template directory in the html export and should change the ig.ini file to have template custom-template if the user specifies an invalid url or a url that is not a zip file the export should not change the custom-template directory is not created and the ig.ini file is not while the url must represent a zip using existing functionality the user can specify the url to a zip of an entire github repository",
+            "for example go to a github repository in the browser click clone or download on download zip and select copy link location paste the into the template url field during the resulting should have all the files for that github repository extracted in the custom-template directory a good blog on how templates work with the fhir ig publisher can be found here this information should be included in the help documentation"
+        ],
+        "timespent": "5460",
+        "alpha": 100
+    },
+    {
+        "id": "51423",
+        "project": "TRIFFHIR",
+        "summary": [
+            "publish process get server error"
+        ],
+        "description": [
+            "users have been getting an internal server error when attempting to publish igs from dev"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "51422",
+        "project": "TRIFFHIR",
+        "summary": [
+            "validation error after saving structure definition"
+        ],
+        "description": [
+            "when creating a profile and saving i get the error internal error during validation cannot read property hasownproperty of undefined",
+            "this error has appeared in many profiles across many igs"
+        ],
+        "timespent": "7260",
+        "alpha": 100
+    },
+    {
+        "id": "51397",
+        "project": "TRIFFHIR",
+        "summary": [
+            "move results tab for import to be inline each import tab"
+        ],
+        "description": [
+            "on import remove preview of bundle add buttons for download transaction bundle xml json next to import button in footer",
+            "show the results of the import below the import options for each import tab"
+        ],
+        "timespent": "5100",
+        "alpha": 100
+    },
+    {
+        "id": "51389",
+        "project": "TRIFFHIR",
+        "summary": [
+            "markdown editor available media not displaying to insert within profile narrative"
+        ],
+        "description": [
+            "from within a profile narrative description insert image button results in a poorly formatted popup which automatically reformats itself after seconds",
+            "expected media is not appearing before or after the auto reformat available to be inserted from the server",
+            "expected behavior is edit ig pages markdown edit"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "51378",
+        "project": "TRIFFHIR",
+        "summary": [
+            "allow editing flags and cardinality from element table"
+        ],
+        "description": [
+            "add for flags",
+            "when opened allows for is summary must support is modifier add editable text fields for cardinality low and high",
+            "add in element definition panel for is summary currently missing and be"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "51376",
+        "project": "TRIFFHIR",
+        "summary": [
+            "support elementdefinition-profile-element extension in type settings within editor"
+        ],
+        "description": [
+            "see grahame has created test cases for section profiles",
+            "we should try to implement this in tof as it would make composition profiles much easier and also grahame's approach is useful beyond section i think it can apply to just about any make sure fhir.js supports profile notation add text field representing extension in future allow user to select from all possible elements in specified profile add documentation on how to do this when and why"
+        ],
+        "timespent": "3660",
+        "alpha": 100
+    },
+    {
+        "id": "51372",
+        "project": "TRIFFHIR",
+        "summary": [
+            "generating snapshots when saving and loading"
+        ],
+        "description": [
+            "hi we are testing you app and it looks and works great",
+            "there is one thing we find how to create snapshot in structuredefinition resource",
+            "can you help me and tell me how to prepare such resource without it we can not save structure in hapi fhir and validate with best regards andrzej matejko when saving a structuredefinition call the fhir structuredefinition/$snapshot operation to generate a snapshot for the profile prior to saving",
+            "snapshots that fail to generate must not stop the save operation from finishing",
+            "in this case the profile would be saved without the snapshot",
+            "when loading the base definition for the edit profile screen use the structuredefinition/$snapshot operation to generate the snapshot of the base definition",
+            "if the snapshot fails in some way it should not stop the user from editing the profile",
+            "instead it should return the snapshot for the core profile being profiled ex observation to test load various profiles in the profile editor with varying base definition values",
+            "the editor should always load regardless of whether the base definition can actually be found on the server",
+            "make changes to profiles using the profile editor and save the profile",
+            "when saving check the raw tab to make sure that a snapshot has been generated for it",
+            "it will not have a snapshot if the base definition or something related to the base definition cannot be found",
+            "in this case the profile editor should report this on the validation tab"
+        ],
+        "timespent": "3660",
+        "alpha": 100
+    },
+    {
+        "id": "51367",
+        "project": "TRIFFHIR",
+        "summary": [
+            "remove introduction header so only description remains"
+        ],
+        "description": [
+            "as introduction is duplicative with description it should be removed to avoid confusion"
+        ],
+        "timespent": "1860",
+        "alpha": 100
+    },
+    {
+        "id": "51366",
+        "project": "TRIFFHIR",
+        "summary": [
+            "allow user to select template and version from publish screen"
+        ],
+        "description": [
+            "original request the pdex ig currently passes validation tests but fails to publish and displays the following errors error implementationguide/davinci-pdex failed to call access method org.springframework.transaction.unexpectedrollbackexception transaction silently rolled back because it has been marked as error structuredefinition/pdex-medicationdispense failed to call access method org.springframework.transaction.unexpectedrollbackexception transaction silently rolled back because it has been marked as i have tried reverting to an earlier version that did compile but it does not restore the overview narrative page and still fails to publish",
+            "publisher output fhir ig publisher version git built hours old detected java version from on available parameters ig dir path run time thursday february pm gmt package cache load template from publishing content failed if a script is provided then targets must be defined use to get command line help stack dump for debugging if a script is provided then targets must be defined ig publisher finished with code copy output to deployment path",
+            "on the publish screen there user should have a for template the should be filled with values fhir template cda template the template should define to fhir template depending on the template selected perform a get to retrieve the related to that template next to the template the user should have an option for version whose values vary depending on the template selected",
+            "use the file to determine what versions to display in the version when the user clicks publish the template and version should be passed forward to the htmlexporter class so that the htmlexporter class knows what template and version the user selected",
+            "in htmlexporter.getcontrol it should use the template and version selected by the user for the template property",
+            "the property should be set to for example"
+        ],
+        "timespent": "38700",
+        "alpha": 100
+    },
+    {
+        "id": "51363",
+        "project": "TRIFFHIR",
+        "summary": [
+            "import of bundle example strips out elements from the imported file"
+        ],
+        "description": [
+            "import of bundle example strips out elements from the imported file",
+            "this then causes slices not to match in the bundle profile with fhir server structuredefinitions also appear to be losing any that is set",
+            "import a sd with that set and then look at raw to test"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "51358",
+        "project": "TRIFFHIR",
+        "summary": [
+            "add svg format as image file option"
+        ],
+        "description": [
+            "when importing images you cannot currently import svg files",
+            "this should be allowed"
+        ],
+        "timespent": "6600",
+        "alpha": 100
+    },
+    {
+        "id": "51344",
+        "project": "TRIFFHIR",
+        "summary": [
+            "import text option generates errors for xml"
+        ],
+        "description": [
+            "import text option generates errors for xml",
+            "steps to reproduce open an ig go to import select text tab choose xml a valid xml file into the window note that it always fails repeat with import files",
+            "note that the same xml succeeds"
+        ],
+        "timespent": "36060",
+        "alpha": 100
+    },
+    {
+        "id": "51343",
+        "project": "TRIFFHIR",
+        "summary": [
+            "add the ability to reorder contacts in the ig editor"
+        ],
+        "description": [
+            "open a project",
+            "edit implementationguide",
+            "go to the other tab",
+            "note that there is no way to reorder contacts other than completely deleting the and recreating them",
+            "also note that if you go to the raw tab export the ig resource edit the to reorder the contacts to reorder them and then use import to bring in the updated ig resource it does not work either which is very troubling"
+        ],
+        "timespent": "30000",
+        "alpha": 100
+    },
+    {
+        "id": "51332",
+        "project": "TRIFFHIR",
+        "summary": [
+            "user id practitioner.id not names appear in permissions when creating new resources code system and value sets"
+        ],
+        "description": [
+            "when creating a new code system and value set dev the default user permissions appear to be user id practitioner.id under the who column",
+            "see screenshot",
+            "examples of this appear under genderidentity value set and code system within ig this issue may only appear with newly created resources valuesets and code systems as when viewing a historical resource>permissions the user name not id appears as expected",
+            "the issue may also be related to the context of the resource relative to the ig the user is currently trying to view it through",
+            "for internally newly created resources the gender identity vs and cs listed above permissions displays practitioner.id however within this same ig dave deroode ig the displays user permissions of practitioner.name finally note that many profiles that had been continained within this ig have disappeared stopped being found/displayed under profiles yet they are still listed within editing this ig and still exist on the server confirmed via postman get for"
+        ],
+        "timespent": "65700",
+        "alpha": 100
+    },
+    {
+        "id": "51326",
+        "project": "TRIFFHIR",
+        "summary": [
+            "support ig parameters for new template"
+        ],
+        "description": [
+            "for this is represented by for this will need to be represented by a set of extensions",
+            "when exporting an implementation guide the implementationguide resource should be transformed into an implementationguide because the fhir ig publisher is only going to be able to support implementationguide resources"
+        ],
+        "timespent": "17100",
+        "alpha": 100
+    },
+    {
+        "id": "51324",
+        "project": "TRIFFHIR",
+        "summary": [
+            "fix slow responding text fields"
+        ],
+        "description": [
+            "the problem for example is that when entering text into a field such as the name field on the edit implementation guide screen the entry would be delayed sometimes very seriously between when the user pressed a key and when the character showed up in the field",
+            "after investigation it seems that the markdown editor is the cause of some fields responding slowly to i swapped out some logic in the markdown editor component with some logic that i found online and saw marked improvements in the of input",
+            "very little should have changed in the ui save for the performance of the application when entering information in text fields",
+            "however a reasonable amount of testing should be performed on screens that use the markdown editor to ensure that existing functionality has not been broken",
+            "for example on the edit implementation guide screen edit the description field in the narrative tab and look for no broken functionality performance improvements compared to production additionally check that the images on the edit implementation guide screen can still be inserted",
+            "for example edit an ig with resources in it edit a page in the ig and make sure that when you click the insert image from list button that it works"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "51320",
+        "project": "TRIFFHIR",
+        "summary": [
+            "remove characters from file name of pages when exporting"
+        ],
+        "description": [
+            "when publishing most implementation guides from both the tof dev server or prod hapi environments the publisher displays ig publisher finished with code copy output to deployment the full publisher status log output this is caused by the ig publisher not liking a special character that is showing up in the file name of a page",
+            "update the export logic to remove any characters so that the ig publisher doesnt error"
+        ],
+        "timespent": "3660",
+        "alpha": 100
+    },
+    {
+        "id": "51315",
+        "project": "TRIFFHIR",
+        "summary": [
+            "edit ig add the filtering buttons that are on the quick tab for the resources example all etc",
+            "to the resources tab"
+        ],
+        "description": [
+            "edit ig add the filtering buttons that are on the quick tab for the resources example all etc",
+            "to the resources tab filtering by resource type anda search bar exactly as resources appears on the quick view tab"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "51311",
+        "project": "TRIFFHIR",
+        "summary": [
+            "add intro and notes fields to profile editing screen and enhance export"
+        ],
+        "description": [
+            "new template missing profile intro and note functionality this would create and files in the pagecontent folder",
+            "see thread create extensions for intro and notes",
+            "add markdown fields for intro and notes to the narrative tab on profile editor",
+            "when exporting if intro notes is specified create and"
+        ],
+        "timespent": "7260",
+        "alpha": 100
+    },
+    {
+        "id": "51302",
+        "project": "TRIFFHIR",
+        "summary": [
+            "when the selected fhir server is down show an error message"
+        ],
+        "description": [
+            "after youve logged into tof if the fhir server cant be reached by the tof server then it returns a on the practitioner/me route",
+            "this causes the ui to prompt the user to enter a new user profile thinking that the user hasnt created a user profile yet",
+            "instead when the fhir server cannot be contacted the tof server should respond with a error to indicate to the ui to display an error rather than prompting the user to enter a new user profile",
+            "it is misleading to ask the user to enter a new user profile when in fact the issue is related to network connectivity problems",
+            "to reproduce this issue you will need to modify the tof server config to point to a fhir server that doesnt exist or is offline"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "51300",
+        "project": "TRIFFHIR",
+        "summary": [
+            "support group resources in implementation guide"
+        ],
+        "description": [
+            "new template feature add in the grouping of profiles functionality when editing an implementation guide add a under narrative/pages for groups where the user is able to create a set of groups that can be used by resources in the implementation guide",
+            "when editing the details of a resource within the implementation guide edit screen allow the user to select one of the groups above that should be associated with the resource",
+            "this functionality is not available in an implementation guide it is only available in"
+        ],
+        "timespent": "9000",
+        "alpha": 100
+    },
+    {
+        "id": "51298",
+        "project": "TRIFFHIR",
+        "summary": [
+            "copy permissions from ig to child resources"
+        ],
+        "description": [
+            "allow the user to copy permissions from the ig to the resources within the ig",
+            "this will make it easy for users to make permissions on the resources within the ig align with the permissions of the ig"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "51296",
+        "project": "TRIFFHIR",
+        "summary": [
+            "add page title to links in the generated markdown pages"
+        ],
+        "description": [
+            "in the generated markdown pages please add the title of the previous and next pages beside the links",
+            "for example previous introduction next use cases also see attached screen shot"
+        ],
+        "timespent": "5460",
+        "alpha": 100
+    },
+    {
+        "id": "51289",
+        "project": "TRIFFHIR",
+        "summary": [
+            "add bundle truetype extension"
+        ],
+        "description": [
+            "since hapi still does not allow storing bundle resources where suggest adding an extension for storing the true type of a bundle resource example that on export would replace this would allow of igs with searchset example bundles such as the sequoia ig"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "51281",
+        "project": "TRIFFHIR",
+        "summary": [
+            "ability to export a transaction bundle"
+        ],
+        "description": [
+            "the primary use case for exporting a bundle is to it into another copy of tof",
+            "but right now we only export a searchset bundle which is not useful for this purpose",
+            "add the following options to the export bundle screen remove tof extensions bundle type search set transaction when remove tof extensions is yes the bundle returned by the export should not contain any extensions",
+            "the bundle.type returned should always match what the user selected for bundle type"
+        ],
+        "timespent": "7260",
+        "alpha": 100
+    },
+    {
+        "id": "51278",
+        "project": "TRIFFHIR",
+        "summary": [
+            "changing the implementation guide id results in an error"
+        ],
+        "description": [
+            "change the id of an ig on the main page for the implementationguide resource",
+            "try to run publish",
+            "note that you get a server error",
+            "this is likely because the id of the old ig is still in memory",
+            "close the project and reopen and note that it now works",
+            "please see attached screen shot and developer trace",
+            "developer tools trace error uncaught in promise t headers normalizednames lazyupdate null status statustext ok url ok false name httperrorresponse message http failure response for ok error statuscode message internal server error at object.oninvoketask"
+        ],
+        "timespent": "4800",
+        "alpha": 100
+    },
+    {
+        "id": "51277",
+        "project": "TRIFFHIR",
+        "summary": [
+            "ig publisher remove download text when download no"
+        ],
+        "description": [
+            "when a user runs the ig publisher with download no the following text appears when done executing the fhir ig publisher",
+            "you may view the ig here",
+            "you will be prompted to download the package in a moment",
+            "the last sentence you will be prompted to download the package in a moment",
+            "should be removed in this case because nothing will download when download no"
+        ],
+        "timespent": "22500",
+        "alpha": 100
+    },
+    {
+        "id": "51273",
+        "project": "TRIFFHIR",
+        "summary": [
+            "create audit records for changes to resources"
+        ],
+        "description": [
+            "when the user makes a change to a resource an auditevent record should be recorded to indicate who made the change",
+            "i suggest creating a helper to make the creation of the auditevent record easier",
+            "for example createauditevent(configservice configservice httpservice http fhirserverbase string usi usersecurityinfo resource which first creates an auditevent resource based on the usersecurityinfo and resource provided then stores the auditevent resource in the fhir server using httpservice and the fhirserverbase properties",
+            "this helper should probably go in i suggest the configservice being passed in this helper method because we will need to determine if the fhir server is an or an server because the auditevents model is different between the two versions and will need to be populated differently depending on which version of a fhir server we are working with",
+            "for both and the user id as provided by the authentication provider for the currently user",
+            "this can also be extracted from the users practitioner in the practitioner.identifier field",
+            "true auditevent.entity.securitylabel a copy of the resources meta.security values if there are any which there most likely for a reference to the practitioner associated with the current user ex a reference to the resource being modified ex for a reference to the practitioner associated with the current user ex a reference to the resource being modified ex auditevent entries should be created whenever a resource is created updated or deleted as well as when resources are imported",
+            "see the following basefhircontroller.basecreate basefhircontroller.baseupdate basefhircontroller.basedelete fhircontroller.processbatchentry fhircontroller.proxy near line to test qa should make sure that if they edit a resource in the ui such as an implementationguide produce an auditevent entry by querying the fhir api directly",
+            "ex"
+        ],
+        "timespent": "110700",
+        "alpha": 100
+    },
+    {
+        "id": "51271",
+        "project": "TRIFFHIR",
+        "summary": [
+            "remember default output format for export"
+        ],
+        "description": [
+            "when exporting an ig publisher package the tool should remember what i last selected xml or json and that again",
+            "i use xml almost exclusively so having it default to json each time means another click or worse the wrong format gets downloaded and i have to start over"
+        ],
+        "timespent": "120",
+        "alpha": 100
+    },
+    {
+        "id": "51268",
+        "project": "TRIFFHIR",
+        "summary": [
+            "bad line in rendered profiles"
+        ],
+        "description": [
+            "title layout default active formal views of profile content that line title layout default active should not be there"
+        ],
+        "timespent": "120",
+        "alpha": 100
+    },
+    {
+        "id": "51266",
+        "project": "TRIFFHIR",
+        "summary": [
+            "import text not adding file to project"
+        ],
+        "description": [
+            "i am currently in a project",
+            "i tried to import a resource as a text string",
+            "it successfully imported the file into hapi but did not add it to the ig",
+            "improve error messaging done errors occurred is not useful",
+            "should provide as much information to user as possible"
+        ],
+        "timespent": "300",
+        "alpha": 100
+    },
+    {
+        "id": "51265",
+        "project": "TRIFFHIR",
+        "summary": [
+            "no cancel button when creating a new value set"
+        ],
+        "description": [
+            "in dev open a project select valuesets",
+            "click the button",
+            "note that there is no cancel button in the case that you really don't want to create a new value set clicked by accident or realized you are not ready to create the value set add a cancel button next to save at bottom"
+        ],
+        "timespent": "120",
+        "alpha": 100
+    },
+    {
+        "id": "51255",
+        "project": "TRIFFHIR",
+        "summary": [
+            "binding is not an intuitive name for there",
+            "perhaps values similarly narrative should be something like descriptive"
+        ],
+        "description": [
+            "consider labeling binding as values and narrative as descriptive in next tof"
+        ],
+        "timespent": "180",
+        "alpha": 100
+    },
+    {
+        "id": "51247",
+        "project": "TRIFFHIR",
+        "summary": [
+            "support specifying identifiers on codesystem"
+        ],
+        "description": [
+            "erik nielsen added a comment it would be most useful if identifier could be added to codesystem similar to the way it can be defined on valueset"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "51239",
+        "project": "TRIFFHIR",
+        "summary": [
+            "queuing for implementation guide publishing"
+        ],
+        "description": [
+            "when the user presses the publish button on the publish screen tof starts a java process called the fhir ig publisher the fip is a fairly resource-intensive process",
+            "it can take up to of memory and up to ten minutes to run for some implementation guides",
+            "because tof is a application there can be multiple users running the fig at the same time",
+            "this has caused problems in some environments when too many figs are running at the same time it takes up all the computing power of the server running it and the server slows to a hault sometimes completely unresponsive requiring a reboot",
+            "to solve this problem a queuing system must be established so that only a limited number of figs are running at the same time and the system resources on the server dont get overwhelmed",
+            "the number of figs that run in parallel should be configurable",
+            "when the htmlexporter.publish is called it should determine how many other publish processes are being executed at the same time",
+            "this can be done with a variable to keep track of all the publish processes currently running",
+            "when a publish process is completed it should remove itself from the and the next publish process in the should start",
+            "if a user presses publish and they have to wait in line of the queue the system should indicate to the user your publish request has been queued",
+            "xxx publish processes are ahead of you",
+            "when a new publish process starts but the user is still waiting in the queue the user should be informed of the update publish processes are ahead of you",
+            "because the and server already have a socket connection queue information can be provided in real time",
+            "the user should not be able to start a publish process leave the screen come back and start another publish process once the user has queue a publish process they should not be able to create another publish process until it is done",
+            "the user should be able to cancel the publish request if it has not already started and they are waiting in the"
+        ],
+        "timespent": "64800",
+        "alpha": 100
+    },
+    {
+        "id": "51238",
+        "project": "TRIFFHIR",
+        "summary": [
+            "media images should not be included in implementationguide resource when exported"
+        ],
+        "description": [
+            "when a user attaches an image to the ig it adds it as a media resource reference on the implementationguide resource",
+            "the resource reference should be removed when exporting the ig as an html package or during the publish otherwise the fhir ig publisher expects the media resource to exist in the resources directory of the file structure"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "51234",
+        "project": "TRIFFHIR",
+        "summary": [
+            "element profiling improvements"
+        ],
+        "description": [
+            "slicing elements are not appearing"
+        ],
+        "timespent": "129660",
+        "alpha": 100
+    },
+    {
+        "id": "51225",
+        "project": "TRIFFHIR",
+        "summary": [
+            "change editor to only display constraints in the current profile's differential regardless of base profile"
+        ],
+        "description": [
+            "when creating new profile within ig that are based on corresponding profiles also the slices to do render as expected",
+            "see screenshots of what the base profile slice should appear as and the other how the new bcbsa profile slice is actually this issue persisted across all bcbsa profiles based on profiles explanaitonofbenefits base inpatient outpatient pharmacy also the slice names intermittently appear incorrectly as identical names the a previous slice",
+            "logic needs to be changed to make base profiless constraints propogate up to the current profile",
+            "in the meantime the editor should be displayed to only show the constraints of the current profile rather than a merge of the base profile and the current profile"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "51222",
+        "project": "TRIFFHIR",
+        "summary": [
+            "getting latest ig publisher doesn't work due to process changes"
+        ],
+        "description": [
+            "used to be updated whenever the fhir ig publisher was updated",
+            "however that is no longer the case",
+            "as a result tof is looking at version.info information that is older than the latest ig publisher on the fhir website",
+            "instead of using version.info to determine if tof has the latest version of the ig publisher it should perform a head request on the ig publisher jar file and use the date of the response headers"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "51214",
+        "project": "TRIFFHIR",
+        "summary": [
+            "error when listing other resources only shows first images"
+        ],
+        "description": [
+            "i am unable to successfully add images to or ig's",
+            "any suggestions or help would be greatly appreciated",
+            "screenshots attached for reference",
+            "this issue relates to the problems with browse other resources when performing a search on other resources an error is returned",
+            "when trying to add images to a page and the images exist as media on the implementation guide the images do not show up in the list of images available to insert into the igs pages",
+            "this is due to an error message that you see just like under browse other resources but the error is not shown to the user"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "51212",
+        "project": "TRIFFHIR",
+        "summary": [
+            "cant expand a brand new slice"
+        ],
+        "description": [
+            "after creating a new slice the new slice cannot be expanded"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "51207",
+        "project": "TRIFFHIR",
+        "summary": [
+            "update references when changing the id of a resource"
+        ],
+        "description": [
+            "with the new design the current change id function will pretty much never succeed as everything listed is referenced by at least the ig itself thus will get a error during the delete process",
+            "need to rethink and redesign this completely which will probably entail finding likely references searching ig structuredefintion and valueset will likely address of issues for files and for those i think we just disable change id for now and renaming them or at least unlinking them for now",
+            "if this is too complicated then i think we just remove the feature for now because having a button that just returns errors is not useful",
+            "when changing the id of a resource the current process is to get the latest version of the resource ex get put the version of the resource to the new id ex put structuredefinition/mynewid delete the original resource ex delete this needs to be modified so that references to the resource are updated prior to deleting the old version",
+            "unfortunately there is not currently a way in a fhir server to find all references to a resource",
+            "so we have to perform search queries for each possible reference",
+            "we have done something similar to this when deleting resources where it looks for any implementation guides that reference the resource and removes the references from the implementation guides",
+            "we should do something similar for this and look for any implementation guides that reference the resource in either the resource or global search parameters and update remove those references prior to deleting the old resource",
+            "new sequence get the latest version of the resource ex get put the version of the resource to the new id ex put structuredefinition/mynewid get each resource that references starting with implementationguide resources that references it for each implementation guide that references it update the reference to point to structuredefinition/mynewid and persist the updated implementationguide using put delete the original resource ex delete you can look at removereferencestoresource for an example of the logic that should be used to remove the references from the implementation guide",
+            "of course instead of removing the references in the implementation guide it is actually a matter of updating the references to point to the new note in the event that other resources reference the resource whose id is being changed the fhir server will return an error saying it cant delete the resource because it is referenced by xxx other resources",
+            "in this event the error message that the fhir server returns to the tof server should be displayed to the user"
+        ],
+        "timespent": "104460",
+        "alpha": 100
+    },
+    {
+        "id": "51206",
+        "project": "TRIFFHIR",
+        "summary": [
+            "add button to delete ig from edit screen"
+        ],
+        "description": [
+            "hi i know how to delete an ig in the prod version but i cannot find the place to do that in the dev version",
+            "could you show me how to delete an ig in the dev version thank you cheng the edit implementation guide screen should have a button to delete the ig being edited",
+            "for other resources this was on the browse screen",
+            "however there is no browse screen for implementation guides so it needs to be placed on the edit screen instead",
+            "when the user clicks the delete button the user should be prompted to confirm that they want to delete the ig",
+            "when the user confirms the deletion it should delete the ig using when it is done deleting it should close the project and direct the user to the home screen via configservice.basesessionurl and should present the user with a message indicating that the implementation guide has been deleted"
+        ],
+        "timespent": "55200",
+        "alpha": 100
+    },
+    {
+        "id": "51196",
+        "project": "TRIFFHIR",
+        "summary": [
+            "servicerequest/servicedefinition for capabilitystatement rest resource type"
+        ],
+        "description": [
+            "need to bind servicerequest to a servicerequest profile",
+            "when editing capabilitystatement rest resource the type dropdown includes a servicedefinition resource which is not a fhir resource",
+            "it should be a servicerequest resource"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "51187",
+        "project": "TRIFFHIR",
+        "summary": [
+            "automatically delete ig references when deleting resources"
+        ],
+        "description": [
+            "when deleting a resource it should automatically find any references to the resources in igs and remove the references from the ig",
+            "searching for resources that reference a resource are dependent on search parameters",
+            "initially only igs global resource will be searched",
+            "later this functionality can be extended to include other references",
+            "we may consider using graphdefinition searches or maybe graphql to make this search process more efficient",
+            "but those concepts have pretty limited implementation support in until then individual searches for referencing resources will be performed starting with searching the igs global and resource parameters",
+            "for example when a request to delete reaches the server will perform the following two searches where structuredefinition/test is the resource that is being deleted",
+            "if implementation guides are found that reference the resource being deleted they are updated to remove the reference basically making the reference field empty and the changes to the implementation guide is persisted on the fhir server",
+            "this should allow the resource to be deleted assuming that the resource is only referenced by an implementation guide and that its not referenced by other resources such as an"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "51179",
+        "project": "TRIFFHIR",
+        "summary": [
+            "sd element examples aren't correct"
+        ],
+        "description": [
+            "structuredefinition.element.example doesn't work as soon as you add an example check the example checkbox on the binding tab you get a validation error unexpected the current implementation of examples on elements assumes that the structure is example x however the value of the example is distinguished inside elementdefinition.example at elementdefinition.example.value when the element definition panel has examples it should show each of the examples labels and it should show fields corresponding to the type selected for the example",
+            "the examples should be based on the types that the element can have",
+            "for example if the element can have a reference and a uri there should be two examples for those types",
+            "if the user creates examples and then later changes the allowed types they should be able to refresh the examples"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "51178",
+        "project": "TRIFFHIR",
+        "summary": [
+            "when importing resources imported are automatically associated with the implementation guide selected"
+        ],
+        "description": [
+            "when importing resources imported are automatically associated with the implementation guide selected"
+        ],
+        "timespent": "120",
+        "alpha": 100
+    },
+    {
+        "id": "51166",
+        "project": "TRIFFHIR",
+        "summary": [
+            "add notification exclamation point when a resource contains no permissions"
+        ],
+        "description": [
+            "when a user removes all permissions from a resource structure definition the save option is disabled as expected",
+            "however there is no indication why the save is disabled",
+            "please see attached screen shot",
+            "add a red exclamation point next to the permissions tab that indicates there is a problem with the permissions as suggested add a red exclamation to the permissions tab when no permissions are specified",
+            "additionally modify the validation logic that shows up in the validation tab to show an error when there are no permissions but enablesecurity is configured to true the validation tab should report that permissions must be specified on the resource before saving"
+        ],
+        "timespent": "21660",
+        "alpha": 100
+    },
+    {
+        "id": "51163",
+        "project": "TRIFFHIR",
+        "summary": [
+            "update referenced practitioner resources"
+        ],
+        "description": [
+            "when a user is added to a group their practitioner is referenced within the group using a resourcereference",
+            "resourcereference contains both reference practitioner/xxx and also display",
+            "so the group looks like this resourcetype group member reference display admin lantana the display is a generated based on the name in the practitioner resource at the time that you are added to the resource",
+            "so to fix this we would have to search for any references to a users practitioner when a user updates the practitioner with a new name and then update those references to include a new display"
+        ],
+        "timespent": "120",
+        "alpha": 100
+    },
+    {
+        "id": "51161",
+        "project": "TRIFFHIR",
+        "summary": [
+            "element mappings reference profile mappings"
+        ],
+        "description": [
+            "when editing an elements mappings the identity of the mapping should reference a mapping for the profile",
+            "the profile mappings act as a grouping mechanism for element mappings",
+            "for example you might have a profile mapping called cda where element mappings reference the cda profile mapping to indicate that the xpath associated with the elements mappings uses the cda a box should be displayed when editing element mappings for the identity column that references mappings defined for the profile in the tab",
+            "when this profile contains mappings in the tab it should automatically remove mappings for elements defined in the profile",
+            "the user should be prompted if it is going to remove any element mappings though",
+            "the user should not be allowed to edit mappings for an element if no mappings are defined for the profile"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "51160",
+        "project": "TRIFFHIR",
+        "summary": [
+            "cannot set value set binding on profile's element"
+        ],
+        "description": [
+            "this defect occurs when editing a profile for an implementation guide",
+            "under elements select a constrained element select the binding tab",
+            "select binding use the hand icon to select a value set that exists on the server",
+            "the value set is not selected and an error is reported in the javascript console error uncaught in promise typeerror cannot set property valueset of object which has only a getter"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "51154",
+        "project": "TRIFFHIR",
+        "summary": [
+            "select project/implementationguide context"
+        ],
+        "description": [
+            "the implementation guide menu is very useful restricting the page to just the structuredefinition resources used in a particular ig",
+            "however once you click on a profile make edits and return to that page it forgets the ig you were filtering on",
+            "it would be very useful to have that selection stick until you clear it since most users will be working on a single ig at a time",
+            "currently i have to reset that filter every time i go back to that page which is a real pain",
+            "this is a major change and may need to be broken up into multiple we may need to consider schedule for when to start this change because it is very large and once started it should not be stopped",
+            "after a user opens they should always be working within the context of an implementation guide",
+            "the implementation guide selected if any yet should be shown in the top navigation bar of the screen at all times",
+            "when the user selects browse profiles they are shown only profiles that are associated with the implementation guide selected",
+            "subsequently when the user selects browse value sets the user is shown only value sets that are associated with the implementation guide selected",
+            "the file menu will contain open project and new project menu items that respectively allow the user to select an existing implementation guide or create a new implementation guide",
+            "the browse implementation guides screen will be replaced with browse implementation guide singular instead of when selecting browse implementation guide the user will be brought to the edit implementation guide screen for the ig that the user selected as their contextual project",
+            "all other screens should respect the context of the implementation guide",
+            "for example publish and export should no longer allow the user to select an implementation guide because the implementation guide is already selected within the context of the users session prior to entering the publish and export screens",
+            "when the users imports a resource the resource is automatically associated with the implementation guide in context",
+            "when the user adds a reference from one resource to another the user will be able to indicate that the context should be ignored allowing the user to search for all resources on the server regardless of the implementation guide theyre associated with",
+            "key things to test user cant access menus without selecting a project from file open project browse implementation guides is now browse implementation guide when searching/browsing resources only resources that are associated with the selected implementation guide are shown",
+            "when adding a reference to a resource user can override the context to search across all resources on the server",
+            "however permissions should still be respected",
+            "ensure that the profile editor works as expected",
+            "test against several different profiles that constrain several different types",
+            "create a new implementation guide project ability to view and edit the in context separate menu item for viewing an ig from editing"
+        ],
+        "timespent": "46800",
+        "alpha": 100
+    },
+    {
+        "id": "51152",
+        "project": "TRIFFHIR",
+        "summary": [
+            "create in the root of the ig publisher package"
+        ],
+        "description": [
+            "consider adding a page to the file associated with an ig",
+            "it should be able to pull as much current version info as possible from existing fields",
+            "it should also preserve historical info",
+            "we can have a design discussion on this",
+            "not essential for this ballot round though as have already done manually",
+            "in the other tab of the edit implementation guide screen create a new panel that represents allow the user to import an existing file",
+            "the user should only be able to import json files and not other types of files",
+            "if the user have a to they can add a brand new one",
+            "the title and package id should be set to the title and package id of the implementation guide if one is when exporting if a file is specified in the implementation guide it should be exported at the of the html export as"
+        ],
+        "timespent": "10860",
+        "alpha": 100
+    },
+    {
+        "id": "51148",
+        "project": "TRIFFHIR",
+        "summary": [
+            "ability to search elements for content when editing a structure definition"
+        ],
+        "description": [
+            "have a search box on this page so you have to click around trying to find stuff this would be especially useful for finding ig publisher errors like url value does not resolve like to just be able to search for and have it show me the that use this",
+            "otherwise i have to go to raw and search and figure out where it add a search field to the top of the elements tab content when the user presses the search button or clicks enter it should search each of the elements in the profiles differential for matching text",
+            "i suggest doing this by performing a filter on each element and searching the json of the element for the text entered by the user",
+            "for example this will return the first element that matches the search text then you would need to find the elementtreemodel that is associated with that element and you could set this.selectedelement foundelementtreemodel"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "51147",
+        "project": "TRIFFHIR",
+        "summary": [
+            "structuredefinition.context issues"
+        ],
+        "description": [
+            "this field has a required binding to this value set only has codes",
+            "these should be shown in a drop down menu in tof",
+            "also there is an invariant that we are not checking for extentions if the structure defines an extension then the structure must have context information type extension or derivation specialization or context.exists finally since this is basically required for extensions context should be on the quick tab",
+            "add fields to the new profile screen the component for context that allows the user to specify because structuredefinition.context is repeatable it will need to be a with a table where each row in the table represents one of the structuredefinition.context repetitions",
+            "here is an example of how to achieve that this example will need to be adapter for the context field instead of the contextinvariant field",
+            "the table must have two columns for the two properties available within structuredefinition.context type expression type should be a with the following fhirpath fhir path element extension expression should be a text input field",
+            "when the user is creating a new profile using the and specifies a type of extension at least one context entry is required",
+            "show a message below the context card that indicates a context is required when defining an extension",
+            "additionally the user should not be able to press the save button until there is a context",
+            "the same html that is used for the can be copied to the structure-definition.component screen",
+            "it should be placed under the title field as there is quite a bit of screen realestate available below title",
+            "the same requirements should be imposed as previously if the type is extension a context is required",
+            "this screens code exists in the component you may be able to just this line and get most of the functionality in place"
+        ],
+        "timespent": "21720",
+        "alpha": 100
+    },
+    {
+        "id": "51145",
+        "project": "TRIFFHIR",
+        "summary": [
+            "separate functionality for other resources into two screens"
+        ],
+        "description": [
+            "most resources have a save button at the bottom",
+            "but for other resources if you try to edit permissions save is instead an icon at the top which is very confusing",
+            "please make the entire ui consistent",
+            "the layout of the other resources screen needs to be consistent with the other screens",
+            "instead of having a single screen that allows the user to open multiple other resources the browse other resources screen should be for searching and a new screen should be created to individual other resources",
+            "the new screen might have just a few tabs xml json permissions the new screen would follow similar as other editing screens where a save button is present in the footer of the screen",
+            "a new route will need to be created to handle individual other resources the browse screen for other resources delete the resource change the resources id while the new screen will allow the user to view the of the other resource and change the permissions for the resource",
+            "consider play with creating a that takes up the entire space of the tab contents which allows the user to edit the json or xml of the resource",
+            "there may be some complexities in serializing/deserializing the xml for the resource since it is resource-intense operation to serialize xml may need to get creative with the xml serialization/deserialization occurs for the tab if we allow the user to edit the xml",
+            "when save is pressed the entire resource should be sent back to the server via the fhir proxy pressing revert like other screens should reload the resource from the servers fhir proxy the controller deserialization may need to occur again here maybe in the initialization logic"
+        ],
+        "timespent": "194700",
+        "alpha": 100
+    },
+    {
+        "id": "51143",
+        "project": "TRIFFHIR",
+        "summary": [
+            "wrong default fhir version"
+        ],
+        "description": [
+            "i logged into dev and the dev hapi server and created a new fhir ig",
+            "the fhir version property was to this is wrong",
+            "if going against an server fhirversion should be in otherwords only autopopulate with actual released versions of fhir was the continuous build version number at some point before was released and frankly should not be used in production",
+            "having igs autopopulate to such a version could cause huge problems",
+            "the published versions of fhir can be found here the current version for is and the current version for is when the user is creating a new implementation guide the fhir version field should default to the appropriate version one of the two mentioned previously for the fhir server they have selected",
+            "for example if they are using an server it should default the fhir version field to if they are using an fhir server it should default the fhir version field to this can probably entirely be handled in the and models for the fhir spec"
+        ],
+        "timespent": "148500",
+        "alpha": 100
+    },
+    {
+        "id": "51137",
+        "project": "TRIFFHIR",
+        "summary": [
+            "change the element definition panel's alias property to repeat allow multiple"
+        ],
+        "description": [
+            "structuredefinition element definition narrative alias putting a value any value even a single character in the alias field causes a validation error property is not an array this is supposed to be a string value and you can have multiple aliases ui allow for this unless you are supposed to use some kind of array format like putting alias in the field parses out to the xml as follows alias value a alias value l alias value i alias value a alias value s have tried surrounding by quotes etc but still parses out character by character",
+            "the alias field in the element definition panel is ignoring the fact that elementdefinition.alias allows multiple strings",
+            "modifications need to be made to the screen to allow the user to a list of aliases rather than binding the component to the elementdefinition.alias property on its own",
+            "i suggest repeating a text field for each element in the array of elementdefinition.alias and placing a icon after all of the text fields to add new ones and an x icon next to each of the text fields to allow the user to remove aliases",
+            "there is some weird stuff about the ngfor index and trackby this is because arrays of strings are difficult for angular to work with in the html template",
+            "read more about the issue here"
+        ],
+        "timespent": "36000",
+        "alpha": 100
+    },
+    {
+        "id": "51131",
+        "project": "TRIFFHIR",
+        "summary": [
+            "value sets editor add vs name to the form"
+        ],
+        "description": [
+            "when a user has clicked edit from the value set browser the value sets editor appears but the name of the value set only appears in a field on the general tab but if the user navigates to other tabs the name is not visible",
+            "suggest adding the name of the value set to the header of the page perhaps immediately after value set please see attached screen shot",
+            "value set editor add name to"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "51128",
+        "project": "TRIFFHIR",
+        "summary": [
+            "add default sort to the various browse resources forms"
+        ],
+        "description": [
+            "the browse resources forms implementation guides structure definitions(profiles value sets code systems etc",
+            "do not appear to have a default sort list",
+            "suggest by default sort the output by resource name or id when the user initially opens the form"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "51125",
+        "project": "TRIFFHIR",
+        "summary": [
+            "errors during export to github"
+        ],
+        "description": [
+            "attempted to export to github but the ui indicates not logged into github",
+            "even though successful login was completed when prompted error typeerror cannot read property entry of undefined the github export using ig and get the below error typeerror cannot read property startswith of null at e.invoketask additional improvements include user can now see all files in the github repo as well as the files in the ig project and can indicate what actions should be performed on each file",
+            "user can also filter the table list of files based on the action being performed on the file only see files that are going to be added to the github showing a loading list of repositories message in place of the repository until it is done loading",
+            "fixed a bug where the list of repositories load after a user first logs into github to test the changes of this ticket create a new github repository in your own personal github account select an appropriate ig to export go to export and select github you should be automatically logged in or prompted to login to github after logging in the user should be shown the list of repositories they have permissions to select the repository you created in your personal github account you should be shown all files in the ig and in the repository and prompted with what actions to perform on each of the files select at least one file to various combinations for multiple tests select export the export should indicate it succeeded",
+            "view the github repository and ensure that the changes are reflected"
+        ],
+        "timespent": "14460",
+        "alpha": 100
+    },
+    {
+        "id": "51105",
+        "project": "TRIFFHIR",
+        "summary": [
+            "add guided to implementation guide editing screen"
+        ],
+        "description": [
+            "clicking the information option should initiate the guided the instructions should navigate the user to the required fields on the form and provide detailed instructions on each field that will allow the user to edit implementation guides"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "51102",
+        "project": "TRIFFHIR",
+        "summary": [
+            "add guided to publish screen"
+        ],
+        "description": [
+            "clicking the information option should initiate the guided the instructions should navigate the user to the required fields on the form and provide detailed instructions on each field that will allow the user to publish an implementation guide"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "51100",
+        "project": "TRIFFHIR",
+        "summary": [
+            "add guided to import screen"
+        ],
+        "description": [
+            "clicking the information option should initiate the guided the instructions should navigate the user to the required fields on the form and provide detailed instructions on each field that should guide the user on how to import artifacts"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "51081",
+        "project": "TRIFFHIR",
+        "summary": [
+            "automatically associate new resources to ig in context"
+        ],
+        "description": [
+            "when creating resources the permissions of the ig should be automatically added to the resource",
+            "a checkbox should be present when importing and create/updating resources that says apply permissions of context implementation guide to resources",
+            "when checked the permissions of the context ig should be automatically added to the resource"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "51080",
+        "project": "TRIFFHIR",
+        "summary": [
+            "add an administrative role that overrides all permissions"
+        ],
+        "description": [
+            "this role should be defined in oauth",
+            "when the user is associated with the role their permission should give them access to do anything and everything",
+            "in future additional screens may appear when the user is associated with an administrative role"
+        ],
+        "timespent": "36000",
+        "alpha": 100
+    },
+    {
+        "id": "51077",
+        "project": "TRIFFHIR",
+        "summary": [
+            "include selected fhir server in the browser's url"
+        ],
+        "description": [
+            "for example this would allow links to be sent to other users and not have to worry about which server they have defaulted when opening the link"
+        ],
+        "timespent": "9000",
+        "alpha": 100
+    },
+    {
+        "id": "51065",
+        "project": "TRIFFHIR",
+        "summary": [
+            "import fails in dev without meaningful message to user"
+        ],
+        "description": [
+            "the attached fails an error occurred while importing the object to import as text in dev but it works when i use postman and do a post to via the hapi api",
+            "when the user attempts to import a text resource this results in tof making a to resourcetype depending on whether or not the resource represented in the text box has an id",
+            "if the resource has a id then it sends the request as a put otherwise it sends it as a post",
+            "in the attached example the hapi fhir server does not like the format of the id property",
+            "the error that the user receives does not show what the hapi server doesnt like about the resource and it should"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "51074",
+        "project": "TRIFFHIR",
+        "summary": [
+            "limit the types available to the user for in the element definition's binding min value x max value x and"
+        ],
+        "description": [
+            "the user interface allows selecting polymorphic elements that are supposed to be tied to the type for the element that differ from that type",
+            "for elements the type should be fixed",
+            "for elements that are themselves polymorphic the list should be constrained to whatever types have been constrained to be allowed",
+            "the types available for the user to select for is limited to the types described in the if the base elementdefinition constrains one of those properties the user will only be able to select one of those types that are constrained in the base profile respectively"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "51073",
+        "project": "TRIFFHIR",
+        "summary": [
+            "targetprofile doesn't allow selection of just a plain resource"
+        ],
+        "description": [
+            "when selecting the targetprofile for a slice the list of possible profiles was constrained to custom profiles available in the repository",
+            "the urls for standard resources were not available",
+            "modify the component to have an additional input property called allowcoreprofiles that is defaulted to true",
+            "when true the ui should always show urls for the core profiles in fhir ex this may be difficult to achieve because these core profiles are not going to be returned by the server and what is returned by the server may change depending on what search criteria the user enters",
+            "if the user enters observation in the search criteria as a name for example i would add to the beginning of the search results shown to the user prior to the search results that the server returned"
+        ],
+        "timespent": "108000",
+        "alpha": 100
+    },
+    {
+        "id": "51072",
+        "project": "TRIFFHIR",
+        "summary": [
+            "user interface allows profiling fields that shouldn't be profiled"
+        ],
+        "description": [
+            "when authoring a profile it be possible to edit or override representation ismodifier or issummary exception is that ismodifier should be settable for also ordermeaning meaningwhenmissing neither are allowed when profiling though the latter is permitted when defining remove the summary and order meaning fields from the edit profile screens disable the modifier and meaning when missing fields unless the structuredefinition.type is extension"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "51070",
+        "project": "TRIFFHIR",
+        "summary": [
+            "add support for paging in the other resources screen"
+        ],
+        "description": [
+            "when performing a search in the other resources screen the search results are limited to by default",
+            "if there are more than resources in the fhir server that match the criteria the user can never see them in the other resources screen",
+            "add paging similar to browse screens so that the user can navigate across multiple pages of search results"
+        ],
+        "timespent": "72000",
+        "alpha": 100
+    },
+    {
+        "id": "51064",
+        "project": "TRIFFHIR",
+        "summary": [
+            "allow user to cancel changes to an ig's edit pages form"
+        ],
+        "description": [
+            "when the user is editing a page in the edit implementation guide screen the user should be able to cancel their changes to the page",
+            "when the user cancels their changes no changes should be made to the page in the implementation guide",
+            "the x icon for the popup window should be the same as pressing the cancel button"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "51061",
+        "project": "TRIFFHIR",
+        "summary": [
+            "allow into data types"
+        ],
+        "description": [
+            "there doesn't appear to be a mechanism to assert constraints about the elements within complex or simple data types",
+            "this is a critical capability it's essential to be able to make assertions about elements inside of data types without having to create separate profiles the tof profile editor currently only allows expanding/collapsing elements of type backboneelement",
+            "for example in a composition profile the user would only be able to expand the following properties attester relatesto event section this limits the user to only being able to constrain elements and elements within types of backboneelements while there are many other types of elements that can and should be constrainable",
+            "the profile editor should allow the user to expand native datatype such as period quantity reference etc",
+            "qa instructions when this ticket is tested qa should spend some extensive time comparing what is shown in the elements tab of the profile editor to the base specification",
+            "for example if editing a composition profile open the composition specification in a separate window a compare what elements are shown",
+            "the editor should now show a very complete list of elements and they should all be in the correct order is i would anticipate at least two hours being spent on just testing this one ticket",
+            "the changes in this ticket have required some pretty major to the profile editor",
+            "so we should be extra thorough in testing the profile editor"
+        ],
+        "timespent": "36600",
+        "alpha": 100
+    },
+    {
+        "id": "51040",
+        "project": "TRIFFHIR",
+        "summary": [
+            "change icon for adding resources to an implementation guide"
+        ],
+        "description": [
+            "found cdex once i looked at however when i go to resources and click on the and select task it lets me search for existing profiles but appear to let me create a new one",
+            "the user interface is a bit unintuitive",
+            "when you look at the list of profiles and click on that intuitively seems like it should let you add",
+            "need to take a look at the edit implementation guide resources screen from a users perspective",
+            "perhaps the icon for this should instead be a to indicate that you select an existing resource use icons from make sure free is selected as the category on the left navigation",
+            "some ideas prefers the first one recommend trying out a few different icons taking screenshots sharing with and seeing what they prefer from and perspective"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "51034",
+        "project": "TRIFFHIR",
+        "summary": [
+            "publishing ui"
+        ],
+        "description": [
+            "when publishing an ig the publish button bottom left should be grayed out while the publishing is the last line of the progress text should show some way of the publishing process has not one way to do this would be constantly showing a following the last word of the last line of the publishing status"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "51033",
+        "project": "TRIFFHIR",
+        "summary": [
+            "editing pages module disappears when dragging a clicked mouse from inside to outside of module"
+        ],
+        "description": [
+            "when editing a page within an ig highlighting text within the module from within the and dragging the outside of the edit module the entire edit pages module disappears",
+            "latest updates to text is retained but the module should not disappear when dragging a highlighted cursor outside of the area",
+            "example go through the code and find any references to modalservice.open or modal.open or maybe even open and make sure that they use the option backdrop alternatively consider using this method"
+        ],
+        "timespent": "3660",
+        "alpha": 100
+    },
+    {
+        "id": "51027",
+        "project": "TRIFFHIR",
+        "summary": [
+            "use typeahead for ig selection on browse and edit profile screens"
+        ],
+        "description": [
+            "original request create a new profile in the lcg server",
+            "from the implementationguides menu note that sequoiaprojecthealthcaredirectoryimplementationguider4 is not available in the list",
+            "the profile editing screen currently has a to select an implementation guide to associate the profile to",
+            "the however is only showing the first implementation guides on the server",
+            "in environments where there are more than implementation guides the user may not be able to select the implementation guide that they want",
+            "change the to be a selection on the browse profiles screen and the edit profile screen"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "50997",
+        "project": "TRIFFHIR",
+        "summary": [
+            "image support in implementationguide"
+        ],
+        "description": [
+            "allow the user to import images from the import screen",
+            "when the user selects an image to import it should be converted to a media resource and saved to the fhir server",
+            "the requirements for media between and are different so this should be taken into consideration when the import process constructs the media resource",
+            "the name of the image should be stored as an identifier so that the export process knows what filename to save the image as",
+            "images should be able to be associated with the implementationguide via the implementationguides resources list",
+            "the markdown editor in the igs page editor should allow the user to select from a list of images associated with the ig to quickly insert the image in md syntax into the content they are editing",
+            "when exporting the ig to an ig publisher package each image associated with the ig should be saved to the folder",
+            "the use should be able to create an image reference to the filename of the image in the page content and when the ig publish executes it should render the image in the html output",
+            "html example md example image content types"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "50974",
+        "project": "TRIFFHIR",
+        "summary": [
+            "load screen for fhir version specified by fhirversion property"
+        ],
+        "description": [
+            "right now the ig editors are based on the fhir server that you are connected to if using the server use the editor etc",
+            "and that should be the default but consider allowing the fhirversion property of a given resource to override that",
+            "for example if i have a structuredefinition profile on the server that has a fhirversion property of bring up the editor page for that profile"
+        ],
+        "timespent": "300",
+        "alpha": 100
+    },
+    {
+        "id": "50955",
+        "project": "TRIFFHIR",
+        "summary": [
+            "create export format for tech edit document"
+        ],
+        "description": [
+            "allow user to export a word document from tof for an implementation guide which includes all raw markdown content from the resources descriptions the implementation guides pages and basically any narrative content that would get exported in the normal html ig publisher process",
+            "this would allow tech editors to review the content as a whole and changes as needed for review with a larger group",
+            "consider using to generate the docx from the node.js server",
+            "the logic for this has been stubbed out in the word document generated should include implementationguide title or name add a warning paragraph highlighted somehow if no title is specified description purpose publisher copyright contacts for each profile structuredefinition title or name add a warning paragraph highlighted somehow if no title is specified url description purpose copyright for each differential element path min max must support bindings value set fixed pattern etc",
+            "short description label aliases for each valueset title or name add a warning paragraph highlighted somehow if no title is specified url identifiers in a table if more than one description a table for where each row has include.system for each codesystem repeat similarly from valueset if possible try to put the elements for each profile in a table theres a lot of info though which might make the table look poorly",
+            "do the best you can to format it nicely",
+            "the export screen needs to have an option to export an ms word document",
+            "when the user selects that a description of what is being exported should be shown",
+            "when the user clicks the export button it should call the endpoint",
+            "when the operation is done executing the user should be prompted to download the ig.docx file"
+        ],
+        "timespent": "108060",
+        "alpha": 100
+    },
+    {
+        "id": "50800",
+        "project": "TRIFFHIR",
+        "summary": [
+            "export and publish improvements"
+        ],
+        "description": [
+            "functionality for running the ig publisher should be in the publish tab",
+            "functionality for exporting various artifacts github html package bundle etc",
+            "should be part of the export tab",
+            "when viewing the export screen each export format should reside in a separate rather than a instead of html the export screen should show ig publisher package"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "50794",
+        "project": "TRIFFHIR",
+        "summary": [
+            "clarify move functionality for pages with tooltips and help documentation"
+        ],
+        "description": [
+            "original request after creating pages both the up and down arrows noting they should move the pages are not working",
+            "also can't figure out how to create two pages at the same level two pages that are both children of the same parent page each newly created page appears that it must be the only child",
+            "updated create more-meaningful tooltips on the move page functionality",
+            "create some help documentation in the file that describes the functionality",
+            "download if you dont already have it sync this library with your computer using onedrive edit the file in the syncd library",
+            "save the changes dont worry about generating the into the has a paid license to that he will use to generate the help files into the code repository for where watermarks/advertisements arent present"
+        ],
+        "timespent": "25500",
+        "alpha": 100
+    },
+    {
+        "id": "50791",
+        "project": "TRIFFHIR",
+        "summary": [
+            "cache terminology services during export"
+        ],
+        "description": [
+            "should be able to cache terminology services throughout session when running multiple exports with large number of terminologies that need to be validated caching terminology services will save lots of see"
+        ],
+        "timespent": "300",
+        "alpha": 100
+    },
+    {
+        "id": "50705",
+        "project": "TRIFFHIR",
+        "summary": [
+            "allow creating stub of new structuredefinition when editing a structuredefinition"
+        ],
+        "description": [
+            "when editing a structuredefinition any resource reference selection field for structuredefinition resource types should allow the user to create a new structuredefinition so that the reference can be populated and later modified",
+            "only capture the fields specified in the new structure definition screen during this",
+            "consider creating a component for those fields and the logic between the new screen and the new modal window"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "50692",
+        "project": "TRIFFHIR",
+        "summary": [
+            "implement permissions management"
+        ],
+        "description": [
+            "practitioner for user a practitioner for user b group test user a user b implementationguide test security read group a security write group a security read security write login in as user a find all groups that contain user a get valueset groups any member of the group can add any other user to the group unless there is a managingentity if there is a managingentity value then only that managing entity can manage the group members a user cannot add themselves to another group a user can create a new group where they are the only member when editing a permissions a resource should always have at least one permission user can see all groups and add any group regardless of whether they are in the group user can see all users and add any individual user practitioner importing remove existing meta replace with api most resource type searches will add in to the underlying fhir api search request to limit the results sent to the user to only things they can groups are an exception to this where no query should be added because all users can see all groups when editing a group business logic should be applied to restrict membership modifications practitioners are also an exception to this where no query should be added",
+            "editing a practitioner should only be allowed for the associated user"
+        ],
+        "timespent": "183600",
+        "alpha": 100
+    },
+    {
+        "id": "51312",
+        "project": "TRIF",
+        "summary": [
+            "schematron may validation"
+        ],
+        "description": [
+            "schematron should validate/enforce may constraint values that require a specific value when they are present",
+            "for example in the national health care surveys ig when may contain zero or one nullflavor ni no information codesystem schematron should validate that either of conditions are true nullflavor attribute is not present nullfavor attribute is present and has a value of ni consider logic or in summary when nullflavor is not present this is allowed by the may constraint therefore should not trigger a schematron validation error however when nullflavor is present it is required to have a value of ni all other values of nullflavor should result in throw a schematron validation error",
+            "weve decided that the changes described above are unnecessary",
+            "instead were going to modify the element editor to include extra popups to direct the user toward proper usage"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "51233",
+        "project": "TRIF",
+        "summary": [
+            "update trifolia cda schema with latest sdtc extensions"
+        ],
+        "description": [
+            "brian reinhold recently created new extensions for cda",
+            "they are described here where the column defined by is structured form definition document",
+            "brian has asked that twbs schemas be updated so that he can use the twb template editor with his changes",
+            "since this is a change to the schema which is critical to the functionality of the template editor for cda templates please make sure to test a random sampling of at least other templates to check for anomalies",
+            "the following types include a new element that is defined for the form definition document extensions encounter observation observationmedia organizer procedure regionofinterest in addition to ensuring that existing templates arent adversely affected i suggest testing at least two of the types above by creating new templates for them and seeing that shows up in the elements list that you can expand it and see the children in it etc",
+            "attached to this ticket is the schema that includes the updates for the new elements for your review"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "51083",
+        "project": "TRIF",
+        "summary": [
+            "templateid oid checking"
+        ],
+        "description": [
+            "when creating a new template trifolia checks to make sure the templateid+extension is unique",
+            "it check to make sure the oid is unique and clearly it have to however it is best practice that two templates that are not versions of each other should not have the same oid for the templateid",
+            "add a check when you create a new template to see if there are any existing templates with the same oid and if there are display and informational or warning message such as this oid is already in use in these templates template etc",
+            "are you sure you want to use it"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "51069",
+        "project": "TRIF",
+        "summary": [
+            "can't export a cda ig apta companion guide for"
+        ],
+        "description": [
+            "this xml file does not appear to have any style information associated with it",
+            "the document tree is shown below",
+            "error has error"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "50930",
+        "project": "TRIF",
+        "summary": [
+            "add relationships tab to template editor page"
+        ],
+        "description": [
+            "add relationships tab to edit page so that one can see the relationships of a template while editing it"
+        ],
+        "timespent": "120",
+        "alpha": 100
+    },
+    {
+        "id": "50540",
+        "project": "TRIF",
+        "summary": [
+            "remove historically versioned narrative generation logic"
+        ],
+        "description": [
+            "document the historical changes to the narrative generation engine in the help documentation remove all previous versions of the formattedconstraint class simplify the execution of formattedconstraint so that it is called directly rather than through formattedconstraintfactory"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "31205",
+        "project": "TRIF",
+        "summary": [
+            "export options please add cancel button"
+        ],
+        "description": [
+            "when a user selects export from the main menu then selects templates to ms",
+            "word then decides they don't to export to word then there is no quick way for the user to get back to the ig listing",
+            "could you please add a cancel option to the export screens"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "31753",
+        "project": "TRIF",
+        "summary": [
+            "improve workflow of implementation guides"
+        ],
+        "description": [
+            "currently the status of templates within an implementation guide always match the status of the implementation guide unless the status is set by the user to deprecated or retired this works well and will not be changed because the status of a template is directly correlated with the state of the implementation guide you would never have a template in draft status while the implementation guide is published",
+            "an additional status will be added to the templates and implementation guides to support a pending state where the implementation guide and its templates should not be modified while the sdo makes its final decision to accept or reject the publication",
+            "changes replace the current ballot status with pending the status cannot be directly selected for a template",
+            "the status is available as a workflow transition on the view implementation guide screen",
+            "when an implementation guide is transitioned to the pending status the templates that are not retired or deprecated are updated to have a matching status of pending templates cannot be created for implementation guides that are in pending or published status",
+            "when the implementation guide for a template is in pending state it is locked for editing similar to how published implementation guides lock its"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "32228",
+        "project": "TRIF",
+        "summary": [
+            "performance improvements to schematron generation"
+        ],
+        "description": [
+            "schematron generation really slowed down a lot after our big release a few months ago",
+            "might be a long shot but it would be great if it could be speeded up"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "32581",
+        "project": "TRIF",
+        "summary": [
+            "access manager the only people you can add as access managers seem to be people who have been given edit permission to the ig"
+        ],
+        "description": [
+            "access manager the only people you can add as access managers seem to be people who have been given edit permission to the ig so basically if all the internal analysts have edit permissions on the ig none of them show up in the access manager select list",
+            "i had to add myself separately to the edit permission group to get myself to show us as a selection for the access manager"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "36429",
+        "project": "TRIF",
+        "summary": [
+            "remove the concept of organization on templates and igs"
+        ],
+        "description": [
+            "there should be a way for an administrator to change the owning organization for a template or ig without having to call sean"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "34625",
+        "project": "TRIF",
+        "summary": [
+            "default values for constraints"
+        ],
+        "description": [
+            "add in fields to represent a default value for code constraints",
+            "for example confidentiality should be allowed to have a default value of normal"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "34612",
+        "project": "TRIF",
+        "summary": [
+            "published implementation guide permission improvements"
+        ],
+        "description": [
+            "the access manager field on an ig should be required",
+            "when a new ig is created the access manager should default to the user creating the ig",
+            "the access manager should always have permissions to the ig the access manager cannot be removed from permissions",
+            "when publishing an implementation guide prompt the user do you want to remove all edit permissions if the user responds with yes or ok then all edit permissions should be removed from the ig except for the access manager"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "33193",
+        "project": "TRIF",
+        "summary": [
+            "warn user when saving change to a template of downstream effects"
+        ],
+        "description": [
+            "when a user saves changes for a template the template editor should determine if there are other templates that may be affected by the changes",
+            "if other templates are affected a dialog is displayed that prompts the user to review the list of templates that may be affected and confirm that the changes should be saved",
+            "display the name identifier implementation guide and author of each template that may be affected by the changes"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "33170",
+        "project": "TRIF",
+        "summary": [
+            "search result consistency"
+        ],
+        "description": [
+            "templates should show arrow to see description"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "32828",
+        "project": "TRIF",
+        "summary": [
+            "add comments to generated samples describing template relationships"
+        ],
+        "description": [
+            "from brian reinhold brianreinhold@lampreynetworks.com there are many cases where one uses a template to an entry or section to describe what a given element shall contain when we fill in the constraints fields",
+            "for example in an organizer i have several components and each contain an observation that references a template",
+            "in the resulting generated example it would be really helpful if you could add a comment similar to the primitives that would say something like it would make it easier to put together the pieces as well as to be able to review what you have"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "31454",
+        "project": "TRIF",
+        "summary": [
+            "provide public url for displaying value set definition"
+        ],
+        "description": [
+            "this public url could be embedded within ms word exports",
+            "the page would not contain any links or menus for trifolia it would be purely a page for the purposes of a single valueset",
+            "url could be something like"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "31453",
+        "project": "TRIF",
+        "summary": [
+            "upon versioning allow automatic update of template references"
+        ],
+        "description": [
+            "when versioning a template provide an option to update references to and by this template",
+            "automatically add a note to the notes field indicating this template has been automatically versioned"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "31210",
+        "project": "TRIF",
+        "summary": [
+            "show ig display name on browse ig screen"
+        ],
+        "description": [
+            "on the browse ig screen show a comment bubble next to the name of the ig if it has a display name",
+            "when clicking the comment bubble the display name should be shown"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "31155",
+        "project": "TRIF",
+        "summary": [
+            "oid management for implementation guides"
+        ],
+        "description": [
+            "right now we keep oids in spreadsheets usually one for each with a tab for and templates and value sets",
+            "ig captures root oid each template type within an ig captures template editor automatically generates oid based on template type selected template editor has button to regenerate oid"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "31100",
+        "project": "TRIF",
+        "summary": [
+            "merge publish settings into template editor"
+        ],
+        "description": [
+            "remove publish settings screen put publish settings funtionality in two new tabs on template editor template sample and constraint samples two new tabs always available regardless of editing mode",
+            "suggest that the process for adding and editing publish settings be moved to the edit modal operation area and things made a little more obvious",
+            "not obvious at all that a magic word header in the text of a constraint means that upon editing it the result is where an example file text is stored"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "31077",
+        "project": "TRIF",
+        "summary": [
+            "support request dialog box blocks ui"
+        ],
+        "description": [
+            "when bring up a support ticket like this one the dialog box appears on top of the ui obscuring the detail on the i'm trying to report against",
+            "the dialog box is immovable",
+            "it would be beneficial if the support request dialog box could be either minimized or movable so that if a user wanted to obtain details such as an error message or template oid from the trifolia workbench form they were working on they would be able to"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "31131",
+        "project": "TRIF",
+        "summary": [
+            "export to word inconsistent formatting between conformance verbs in primitives and regular constraints"
+        ],
+        "description": [
+            "when using the markup text in a child primitive the formatting size is bookman oldstyle font size as opposed to the normal size of for bolded words",
+            "this makes the word sizes slightly inconsistent on export",
+            "for an example see the bolded text in social history observation draft observation templateid open conf vs others"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "31118",
+        "project": "TRIF",
+        "summary": [
+            "option to export change log as excel file"
+        ],
+        "description": [
+            "when exporting an ms word document an option is available to the user to select the change log to be exported as a separate excel file",
+            "when doing so an excel file is produced that has two sheets",
+            "each template containing changes is created as a sheet within the workbook that first shows columns for the template changes and then shows the constraint changes",
+            "the excel workbook and the msword document would then be packaged as a zip file to download"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "31067",
+        "project": "TRIF",
+        "summary": [
+            "automatically populate templateid conformance statement"
+        ],
+        "description": [
+            "creating a new template automatically creates a templateid element and attribute",
+            "what to do when the template doesnt have a templateid element in the schema like in the case of person name templates in changing a templates identifier notifies the user asking if they want to update the templates identifier constraint",
+            "what to do when the user adds in additional templateid elements currently cant distinguish between the template identifier constraint and the others",
+            "what to do when the user manually changes the constraint for the template identifier"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "30963",
+        "project": "TRIF",
+        "summary": [
+            "trifolia login user session timing out"
+        ],
+        "description": [
+            "when a user is logged into trifolia then has a period of inactivity then returns to trifolia the message only logged in users have permission to perform this operation please see attached screen shot",
+            "testing in the dev environment indicates that the timeout appears after appx",
+            "minutes or more of inactivity",
+            "the user is then forced to logout and then log back into trifolia in order to resume actions in trifolia"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "51445",
+        "project": "TRIFFHIR",
+        "summary": [
+            "capabilitystatement.format button does not work"
+        ],
+        "timespent": "960"
+    },
+    {
+        "id": "51252",
+        "project": "TRIFFHIR",
+        "summary": [
+            "basic admin functionality to list users active users broadcast a message"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "51191",
+        "project": "TRIFFHIR",
+        "summary": [
+            "add button for capability statement rest tabs work"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "51113",
+        "project": "TRIFFHIR",
+        "summary": [
+            "add guided to the other resources screen"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "51101",
+        "project": "TRIFFHIR",
+        "summary": [
+            "add guided to export screen"
+        ],
+        "timespent": "36900"
+    },
+    {
+        "id": "50776",
+        "project": "TRIFFHIR",
+        "summary": [
+            "fix unit tests"
+        ],
+        "timespent": "43200"
+    },
+    {
+        "id": "50684",
+        "project": "TRIFFHIR",
+        "summary": [
+            "support searching and creating questionnaireresponse resources"
+        ],
+        "timespent": "60"
+    },
+    {
+        "id": "47210",
+        "project": "TRIF",
+        "summary": [
+            "support multiple identifiers for code systems"
+        ],
+        "timespent": "60"
+    }
+]

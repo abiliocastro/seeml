@@ -1,0 +1,1479 @@
+[
+    {
+        "id": "33216",
+        "project": "PTWE",
+        "summary": [
+            "support anchors in exported documents"
+        ],
+        "description": [
+            "when exporting to pdf and word the links pointing to pages that are in the xport set are redirected to the target document",
+            "that's good and expected",
+            "the same should apply to links that point to anchors either implicit to headings or explicit to anchors set with the anchor currently these links are left to still point to confluence which is confusing for users"
+        ],
+        "timespent": "28800",
+        "alpha": 98
+    },
+    {
+        "id": "53945",
+        "project": "JC",
+        "summary": [
+            "ios mail app does not show attachments multipart/related and mixed handling"
+        ],
+        "description": [
+            "ios mail app is unable show attachments from multipart/related"
+        ],
+        "timespent": "54000",
+        "alpha": 98
+    },
+    {
+        "id": "35727",
+        "project": "PTWE",
+        "summary": [
+            "predefined values in headers/footers"
+        ],
+        "description": [
+            "user should be able to select from predefined headers/footers like title author etc"
+        ],
+        "timespent": "100800",
+        "alpha": 99
+    },
+    {
+        "id": "56284",
+        "project": "JETIC",
+        "summary": [
+            "correctly parse inline and attachment parts sent from jetic gmail outlook apple"
+        ],
+        "description": [
+            "check how to handle multipart/alternate parts may it be a valid attachment if no then do not add it to the issue"
+        ],
+        "timespent": "30600",
+        "alpha": 99
+    },
+    {
+        "id": "53460",
+        "project": "PTWE",
+        "summary": [
+            "multiple custom font option"
+        ],
+        "description": [
+            "make available multiple custom font selection in the export settings"
+        ],
+        "timespent": "36000",
+        "alpha": 100
+    },
+    {
+        "id": "53097",
+        "project": "PTWE",
+        "summary": [
+            "the generated pdf file is very big when macro is used"
+        ],
+        "description": [
+            "in case of the content contains div element with border the size of the export grows drastically"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "52655",
+        "project": "PTWE",
+        "summary": [
+            "headers generate incorrect levels/numbering in table of contents"
+        ],
+        "description": [
+            "in case of or higher headers the toc broken if there is more headers in the page",
+            "the expected toc export title the generated toc export title"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "50013",
+        "project": "PTWE",
+        "summary": [
+            "support data center's read only mode"
+        ],
+        "description": [
+            "support mode in confluence"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "44906",
+        "project": "PTWE",
+        "summary": [
+            "generate toc entries only for confluence headers"
+        ],
+        "description": [
+            "a few macros add tags that leads to incorrect entries in the toc"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "44702",
+        "project": "PTWE",
+        "summary": [
+            "configurable title for table of contents"
+        ],
+        "description": [
+            "the title of table of contents page is hard coded",
+            "it should be customizable so it fits into documents on other languages then english"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "43902",
+        "project": "PTWE",
+        "summary": [
+            "font break for wide tables"
+        ],
+        "description": [
+            "a table is cut if wider then the page",
+            "it should be resized to fit the page"
+        ],
+        "timespent": "75600",
+        "alpha": 100
+    },
+    {
+        "id": "43207",
+        "project": "PTWE",
+        "summary": [
+            "header image not exported"
+        ],
+        "description": [
+            "if i want to put an image in the header and insert img element in the header it is not shown"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "42524",
+        "project": "PTWE",
+        "summary": [
+            "table columns are too narrow"
+        ],
+        "description": [
+            "columns are too narrow and words are broken",
+            "issue attached test page"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "41301",
+        "project": "PTWE",
+        "summary": [
+            "info macro not formatted"
+        ],
+        "description": [
+            "info tip warning message macros are not formatted on versions prior to aui was upgraded in see"
+        ],
+        "timespent": "25200",
+        "alpha": 100
+    },
+    {
+        "id": "41201",
+        "project": "PTWE",
+        "summary": [
+            "image size ignored"
+        ],
+        "description": [
+            "if image is center aligned it is not resized to fit on the page and shown in its original size test page"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "41105",
+        "project": "PTWE",
+        "summary": [
+            "html entity is in the header causes the export to fail"
+        ],
+        "description": [
+            "if there is an entity in the header then export fails reproduction put any html entity eg",
+            "into the header"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "41004",
+        "project": "PTWE",
+        "summary": [
+            "separate menu item for export pdf export word"
+        ],
+        "description": [
+            "this way the output format can be selected more easily from the page drop down menu",
+            "we should remove the format selector from the dialog",
+            "there should be a global interface to disable specific formats"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "40813",
+        "project": "PTWE",
+        "summary": [
+            "page numbers are missing and links are not clickable in toc"
+        ],
+        "description": [
+            "page numbers are missing and links are not clickable"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "40624",
+        "project": "PTWE",
+        "summary": [
+            "docx heading generation"
+        ],
+        "description": [
+            "by default converts hx elements to text with bold formatting",
+            "they should be heading elements",
+            "this would make possible to use the automatic toc generation"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "40206",
+        "project": "PTWE",
+        "summary": [
+            "page break macro"
+        ],
+        "description": [
+            "need a macro to insert a page break during export in a confluence page"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "40120",
+        "project": "PTWE",
+        "summary": [
+            "images are not exported"
+        ],
+        "description": [
+            "copy pasted images are not included in the export"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "40003",
+        "project": "PTWE",
+        "summary": [
+            "docx jaxb issue in confluence"
+        ],
+        "description": [
+            "there was a change in xml api in confuence this change and the way uses classloaders causes that it is not working in these versions",
+            "there are different classloaders in confluence bundleclassloader and previous version componentclassloader"
+        ],
+        "timespent": "176400",
+        "alpha": 100
+    },
+    {
+        "id": "39927",
+        "project": "PTWE",
+        "summary": [
+            "docx characters are not displayed"
+        ],
+        "description": [
+            "characters like etc are not displayed"
+        ],
+        "timespent": "55800",
+        "alpha": 100
+    },
+    {
+        "id": "39703",
+        "project": "PTWE",
+        "summary": [
+            "blank page generated"
+        ],
+        "description": [
+            "blank page is generated at the end of the document"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "38619",
+        "project": "PTWE",
+        "summary": [
+            "page bottom macro"
+        ],
+        "description": [
+            "macro body must be placed at the bottom of the page like the on coverpage currently"
+        ],
+        "timespent": "19800",
+        "alpha": 100
+    },
+    {
+        "id": "38228",
+        "project": "PTWE",
+        "summary": [
+            "export dialogs fails when there are many child pages"
+        ],
+        "description": [
+            "if there are more than child pages opening the export dialog fails with an exception"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "37905",
+        "project": "PTWE",
+        "summary": [
+            "list space level profiles"
+        ],
+        "description": [
+            "kln fln a space adminon bell alfl lesz export profile stylesheet"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "37512",
+        "project": "PTWE",
+        "summary": [
+            "customize profile"
+        ],
+        "description": [
+            "during export the user can customize the selected configuration for the time of the export",
+            "when selecting the config and clicking the customize button a formatting dialog will show up where the user can customize the formatting using the selected configuration as a base",
+            "by clicking submit a new custom item will be selected in the configuration select item and the customized formatting will be used for the export",
+            "the last custom profile will be saved automatically and it will overwrite the previous custom profile if exists"
+        ],
+        "timespent": "23400",
+        "alpha": 100
+    },
+    {
+        "id": "37501",
+        "project": "PTWE",
+        "summary": [
+            "export profile management"
+        ],
+        "description": [
+            "move all configuration related functionality into global and later space admin area",
+            "the user will be able to choose from these configurations and optionally may customize them"
+        ],
+        "timespent": "99000",
+        "alpha": 100
+    },
+    {
+        "id": "37112",
+        "project": "PTWE",
+        "summary": [
+            "process custom field macro"
+        ],
+        "description": [
+            "replace custom field expressions to velocity expressions"
+        ],
+        "timespent": "34200",
+        "alpha": 100
+    },
+    {
+        "id": "37111",
+        "project": "PTWE",
+        "summary": [
+            "select template"
+        ],
+        "description": [
+            "if coverpage checked enable template selector and store template for export"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "35725",
+        "project": "PTWE",
+        "summary": [
+            "define header and footer"
+        ],
+        "description": [
+            "possibility to define headers and footers"
+        ],
+        "timespent": "136800",
+        "alpha": 100
+    },
+    {
+        "id": "34208",
+        "project": "PTWE",
+        "summary": [
+            "better table column width calculation"
+        ],
+        "description": [
+            "when column width is calculated take into account header texts and use a different approach to calculate minimum width"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "33509",
+        "project": "PTWE",
+        "summary": [
+            "add dedicated css class to page title and body"
+        ],
+        "description": [
+            "wrap page title and page content with dedicated css classes so they can specified more easily by custom css stylesheets"
+        ],
+        "timespent": "12600",
+        "alpha": 100
+    },
+    {
+        "id": "32301",
+        "project": "PTWE",
+        "summary": [
+            "better table column width calculation"
+        ],
+        "description": [
+            "the columns are too narrow in some cases",
+            "see the attached pdf for example",
+            "change column width calculation if there is a width set for the column use that if there is no width set for the column calculate the column width based on the number of characters"
+        ],
+        "timespent": "55800",
+        "alpha": 100
+    },
+    {
+        "id": "26401",
+        "project": "PTWE",
+        "summary": [
+            "users wish for html/attachments zip export"
+        ],
+        "description": [
+            "similar to the space export html users would wish they had similar but more comfortable options to export pages and attachments in form of a zip",
+            "scenario pages have meta informations about attached pdfs ppts",
+            "users need an offline version of a subset of the space information when being on the road sales let me know if you would be open to go that path with the plugin to have a conversation about the details"
+        ],
+        "timespent": "19800",
+        "alpha": 100
+    },
+    {
+        "id": "26002",
+        "project": "PTWE",
+        "summary": [
+            "add page break between confluence pages"
+        ],
+        "description": [
+            "as it currently stands when content is exported to word or pdf multiple pages are exported to one continuous document",
+            "i would like to see a page break added between each confluence page"
+        ],
+        "timespent": "41400",
+        "alpha": 100
+    },
+    {
+        "id": "26001",
+        "project": "PTWE",
+        "summary": [
+            "draw.io images not in export"
+        ],
+        "description": [
+            "while draw.io images are embedded in confluence native pdf export they do not appear in content exporter exports",
+            "no visible placeholder in pdf an empty image link in doc exports",
+            "that makes content exporter essential useless for a lot of our use cases"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "24604",
+        "project": "PTWE",
+        "summary": [
+            "macro links in a new window does not work"
+        ],
+        "description": [
+            "this does correspond to the macro links in a new window and it does not display them correctly in the pdf export",
+            "license"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "23523",
+        "project": "PTWE",
+        "summary": [
+            "current page with child pages option"
+        ],
+        "description": [
+            "extend the options in the select content select list with current page with child pages"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "23418",
+        "project": "PTWE",
+        "summary": [
+            "page break support"
+        ],
+        "description": [
+            "support page breaks in export document using macros"
+        ],
+        "timespent": "12600",
+        "alpha": 100
+    },
+    {
+        "id": "23337",
+        "project": "PTWE",
+        "summary": [
+            "toc table of contents generation"
+        ],
+        "description": [
+            "add table of contents support",
+            "probably first version will not support page numbering"
+        ],
+        "timespent": "54000",
+        "alpha": 100
+    },
+    {
+        "id": "57496",
+        "project": "JETIC",
+        "summary": [
+            "wrongly encoded accented characters"
+        ],
+        "description": [
+            "in rare cases html messages are sent out using content transfer encoding even if they contain accented characters"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "57403",
+        "project": "JETIC",
+        "summary": [
+            "configurable client id and client secret in jeti cloud"
+        ],
+        "description": [
+            "allow client configuration from the admin interface"
+        ],
+        "timespent": "88200",
+        "alpha": 100
+    },
+    {
+        "id": "57209",
+        "project": "JETIC",
+        "summary": [
+            "release"
+        ],
+        "description": [
+            "html encoding lersa a velocity kapcsn"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "57170",
+        "project": "JETIC",
+        "summary": [
+            "jsd comments longer than are not accepted by jira in rare cases"
+        ],
+        "description": [
+            "when a comment's length is greater than characters email this issue truncates the length to however in some cases depending on the content jsd rest api still rejects the message",
+            "the workaround is to truncate at characters instead of until it turns out how jsd calculates the length"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "56818",
+        "project": "JETIC",
+        "summary": [
+            "hidden characters in filenames causes rejection when adding to jira"
+        ],
+        "description": [
+            "when an forward message as eml message is attached and the subject is long outlook may break it",
+            "the eml filename is generated from the subject and it may contain line breaks that is rejected by jsd"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "56520",
+        "project": "JETIC",
+        "summary": [
+            "fallback to default reporter when issue not found or no permission"
+        ],
+        "description": [
+            "in some cases the add comment mail handler action does not fall back to default reporter"
+        ],
+        "timespent": "55800",
+        "alpha": 100
+    },
+    {
+        "id": "56476",
+        "project": "JETIC",
+        "summary": [
+            "execute transition fetching on behalf of the current user when executing transitions"
+        ],
+        "description": [
+            "when default reporter is set then mail handler should fall back and try to execute as default reporter"
+        ],
+        "timespent": "16200",
+        "alpha": 100
+    },
+    {
+        "id": "56314",
+        "project": "JETIC",
+        "summary": [
+            "customer gets created but notification/post function generated email is not received by the new customer"
+        ],
+        "description": [
+            "customer gets created during issue creation but the newly created customer does not receive event notification email and workflow emails to new customers"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "56274",
+        "project": "JETIC",
+        "summary": [
+            "ignore duplicated attachments by content"
+        ],
+        "description": [
+            "mail handlers should be able to ignore attachments by comparing content",
+            "this should be configurable in create issue and add comment actions"
+        ],
+        "timespent": "45000",
+        "alpha": 100
+    },
+    {
+        "id": "56129",
+        "project": "JETIC",
+        "summary": [
+            "wait for attachments in create event notifications"
+        ],
+        "description": [
+            "when a mail handler creates an issue the issue created event is generated immediately but at that point the attachments are not available",
+            "a seconds delay would help to avoid in case of create events"
+        ],
+        "timespent": "25200",
+        "alpha": 100
+    },
+    {
+        "id": "55784",
+        "project": "JETIC",
+        "summary": [
+            "add support for and email format in manual email input fields"
+        ],
+        "description": [
+            "an email adress",
+            "accidentally include a blank space at the end of the adress",
+            "click preview och send",
+            "jeti will show an error message which does not explain what is wrong",
+            "suggestion a jeti should trim the blank and send email or b jeti should show error message explaining that the adress is incorrect",
+            "please see video file"
+        ],
+        "timespent": "12600",
+        "alpha": 100
+    },
+    {
+        "id": "54485",
+        "project": "JETIC",
+        "summary": [
+            "cannot add or edit mail handler more than request types in jira"
+        ],
+        "description": [
+            "when opening a mail handler for editing or creating a new one an error dialog pops up this is because more than request types are in the service desk",
+            "wa delete request types if possible"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "53983",
+        "project": "JETIC",
+        "summary": [
+            "filter attachments by regexp for filename"
+        ],
+        "description": [
+            "add a new mode for attachment adding mode skip if filename matches the filter should be a regular expression"
+        ],
+        "timespent": "25200",
+        "alpha": 100
+    },
+    {
+        "id": "52445",
+        "project": "JETIC",
+        "summary": [
+            "process issue commented event if comment was added by email this issue"
+        ],
+        "description": [
+            "comments added by email this issue are marked",
+            "when an issue commented event is received and the comment is added by email this issue the event is not processed",
+            "email notifications should be applied if the comment came from a mail handler otherwise if it was a manual comment added by a manual email sending then notification schemes should be suppressed",
+            "there should be a checkbox that is able to suppress notifications if comment was added by a mail handler"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "57534",
+        "project": "JETI",
+        "summary": [
+            "permissions and condition for sending emails manually"
+        ],
+        "description": [
+            "if project roles and groups are combined in the permissions and a user is only member of one of them the email button is not displayed",
+            "project roles and groups must be combined with or"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "57323",
+        "project": "JETI",
+        "summary": [
+            "create and document oauth test environment for gmail"
+        ],
+        "description": [
+            "documentation to set up test connection with gmail establish test accounts for testing and development"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "57321",
+        "project": "JETI",
+        "summary": [
+            "email address based user resolution should be case-insensitive"
+        ],
+        "description": [
+            "when emails are processed sender and recipient email addresses are used to search for users and customers",
+            "this search should be case insensitive to be able to overcome differencies of the cases in the email and in the user directory"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "56930",
+        "project": "JETI",
+        "summary": [
+            "embedded images not displayed in outgoing manual emails"
+        ],
+        "description": [
+            "after updating to jeti when sending an outgoing manual email containing embedded images if a comment is added from the outgoing email it results in the below error unable to render embedded object file"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "56922",
+        "project": "JETI",
+        "summary": [
+            "preview templates from the editor"
+        ],
+        "description": [
+            "in teh template editor admins can specify an issue key manually entered subject and body text",
+            "email format html text this may be set automatically depending on which body is being edited",
+            "these values must be entered before the first preview only",
+            "the preview may be activated via a keyboard shortcut",
+            "the previe result is displayed in the preview dialog"
+        ],
+        "timespent": "86100",
+        "alpha": 100
+    },
+    {
+        "id": "56909",
+        "project": "JETI",
+        "summary": [
+            "new ticket you don't have permission to invite customers to this service desk"
+        ],
+        "description": [
+            "ng mail handler sometimes generates this error in the incoming mail log"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "56782",
+        "project": "JETI",
+        "summary": [
+            "recipient email addresses are not saved correctly"
+        ],
+        "description": [
+            "incoming email set field action does not save all recipients to text custom field"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "56754",
+        "project": "JETI",
+        "summary": [
+            "public comments that are added by the defautl reporter should not stop slas"
+        ],
+        "description": [
+            "if public comments are added by the default reporter events may stop slas first response these comments should not affect the slas",
+            "add comment action to be modified if public comment and default reporter create comment using the jira api and make it public"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "56740",
+        "project": "JETI",
+        "summary": [
+            "verify customer creation with service desk customer email verification"
+        ],
+        "description": [
+            "service desk released customer account verification may affect the customer accounts created via email what happens if the account is not verified"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "56699",
+        "project": "JETI",
+        "summary": [
+            "create issue action in handler's issue found section"
+        ],
+        "description": [
+            "this combined with the conditions can create new issues even if an existing issue is found for the email",
+            "additiona attribute link type that links the new issue to the existing one"
+        ],
+        "timespent": "32400",
+        "alpha": 100
+    },
+    {
+        "id": "56693",
+        "project": "JETI",
+        "summary": [
+            "if comment is added by default reporter add a the email address of the original sender to the comment"
+        ],
+        "description": [
+            "if the comment is added by the default reporter the original email senders name and email address should be added to the comment"
+        ],
+        "timespent": "2700",
+        "alpha": 100
+    },
+    {
+        "id": "56634",
+        "project": "JETI",
+        "summary": [
+            "nextgen mailhandler email address whitelisting/blacklisting filter"
+        ],
+        "description": [
+            "the filter prevents emails from being processed if sender email address either matches the global blacklist or matches a list of regexes entered in the action like recipient address ui fields in the action dialog radio select list block emails matching the global blacklist block emails matching the regexes below accept emails matching the regexes below text area regexek per line"
+        ],
+        "timespent": "36000",
+        "alpha": 100
+    },
+    {
+        "id": "56629",
+        "project": "JETI",
+        "summary": [
+            "new top level menu structure"
+        ],
+        "description": [
+            "top level menu visible to administrators only is to be restructured so that the new administration entities may be accessed quicker"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "56626",
+        "project": "JETI",
+        "summary": [
+            "url changes when saved in template editor"
+        ],
+        "description": [
+            "if links are inserted into the template editor links are changed upon saving the template",
+            "the problem arises only if the url is generated from velocity macro"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "56512",
+        "project": "JETI",
+        "summary": [
+            "labels set by field rules and nextgen mail handlers are always lower case"
+        ],
+        "description": [
+            "labels set by field rules or by the nextgen handler from emails are always transformed to lower case incoming email contains label in the issue is set as label"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "56341",
+        "project": "JETI",
+        "summary": [
+            "improve recipient validation"
+        ],
+        "description": [
+            "when entering an email address or user name as recipient we should validate if the email address of the user exists"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "56042",
+        "project": "JETI",
+        "summary": [
+            "create mail handler in firefox does not save the entity"
+        ],
+        "description": [
+            "on firefox in the create new mail handler screen save does not do anything entity is not saved"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "55732",
+        "project": "JETI",
+        "summary": [
+            "add email attribute based filter action"
+        ],
+        "description": [
+            "add option to send a bounce email using an email template like in field rules"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "55606",
+        "project": "JETI",
+        "summary": [
+            "add bouncing capability to the new email filter actions"
+        ],
+        "description": [
+            "email attribute and recipient based filter actions should have bouncing capabilities",
+            "bounce once is important"
+        ],
+        "timespent": "16200",
+        "alpha": 100
+    },
+    {
+        "id": "55556",
+        "project": "JETI",
+        "summary": [
+            "allow saving senders for existing issues"
+        ],
+        "description": [
+            "senders cannot be saved to existing issues if the sender is customer if customers are allowed to comment the issue otherwise the default reporter comments or a new issue is created agent collaborator ui fields in savesendersandreciients dialog sender tab sd customer permission user picker fields including request participant note/description this only takes effect if the request is not shared with the customer",
+            "if the request is shared the customer is already on request sd agent user picker fields watchers like in recipients user w permissions user picker fields watchers like in recipients existing fields keep them as is user permission unknown to jira test repro details in test add update issue with save senders and recipients set fields in save senders and recipients both senders and recipients should be saved in according fields note issue is updated and the sender is saved as reporter which is the default setting note the tips box is not relevant new sender saving categories sd customer sd agent use w permission the improvements of this action affects the process"
+        ],
+        "timespent": "59400",
+        "alpha": 100
+    },
+    {
+        "id": "53761",
+        "project": "JETI",
+        "summary": [
+            "tables are rendered into templates without borders"
+        ],
+        "description": [
+            "columns rows and values are properly rendered but without cell borders"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "53175",
+        "project": "JETI",
+        "summary": [
+            "add entity properties to issues and comments"
+        ],
+        "description": [
+            "add entity properties to issues and comments created from email",
+            "this has the potential we can filter out external senders from receiving notifications on their own email like my changes do not notify me a notification filter is possible upon the channel issue or comment was created from the ui or from email"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "52884",
+        "project": "JETI",
+        "summary": [
+            "comment gets added to the manual email body in invalid format"
+        ],
+        "description": [
+            "issue comment is added to the manual email body in wiki markup format instead of html when using the add to mail body function"
+        ],
+        "timespent": "25200",
+        "alpha": 100
+    },
+    {
+        "id": "50469",
+        "project": "JETI",
+        "summary": [
+            "allow the configuration from which email fields sender to cc the handler can create new customers and can save them in request participant"
+        ],
+        "description": [
+            "currently the service desk strategy creates new customers if public signup is enabled from the sender to and cc fields of an email",
+            "allow the configuration from which of them customers should be created or added as request participant",
+            "optionally regex filtering on email addresses"
+        ],
+        "timespent": "9000",
+        "alpha": 100
+    },
+    {
+        "id": "50321",
+        "project": "JETI",
+        "summary": [
+            "allow saving recipients from to or cc in save recipients action"
+        ],
+        "description": [
+            "currently only customers are added as request participants agents should be added as well"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "49016",
+        "project": "JETI",
+        "summary": [
+            "external email senders receive comment notification on their own email"
+        ],
+        "description": [
+            "comment or create notification should not be sent back to external senders upon their email"
+        ],
+        "timespent": "12600",
+        "alpha": 100
+    },
+    {
+        "id": "47300",
+        "project": "JETI",
+        "summary": [
+            "refactor outgoing emails to the new email format"
+        ],
+        "description": [
+            "integrate new email builder solution to compose mimemessages following email standards",
+            "current implementation causes problems on ios mail app"
+        ],
+        "timespent": "72000",
+        "alpha": 100
+    },
+    {
+        "id": "57188",
+        "project": "JC",
+        "summary": [
+            "kzs kdok temelse a jeti"
+        ],
+        "description": [
+            "callback kezels state kezelse url generls access token cache hinyz lejr lejrt tokenek frisstse mr nem rvnyes tokenek cachebl eltvoltsa refresh token provider adatbzisbl az uuid alapjn refresh token beolvassa ehhez tartoz platformfggetlen interface"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "39848",
+        "project": "PTWE",
+        "summary": [
+            "docx warning info macro support"
+        ],
+        "timespent": "133200"
+    },
+    {
+        "id": "39846",
+        "project": "PTWE",
+        "summary": [
+            "docx support"
+        ],
+        "timespent": "144000"
+    },
+    {
+        "id": "39845",
+        "project": "PTWE",
+        "summary": [
+            "docx support"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "39602",
+        "project": "PTWE",
+        "summary": [
+            "spreadsheet macro support"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "39124",
+        "project": "PTWE",
+        "summary": [
+            "bugfixes"
+        ],
+        "timespent": "68400"
+    },
+    {
+        "id": "38926",
+        "project": "PTWE",
+        "summary": [
+            "review"
+        ],
+        "timespent": "9000"
+    },
+    {
+        "id": "38925",
+        "project": "PTWE",
+        "summary": [
+            "documentation"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "38900",
+        "project": "PTWE",
+        "summary": [
+            "bugfixes"
+        ],
+        "timespent": "70200"
+    },
+    {
+        "id": "38618",
+        "project": "PTWE",
+        "summary": [
+            "include coverpage and backpage in export"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "38617",
+        "project": "PTWE",
+        "summary": [
+            "select coverpage and backpage in profile"
+        ],
+        "timespent": "77400"
+    },
+    {
+        "id": "38615",
+        "project": "PTWE",
+        "summary": [
+            "create space for global templates"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "38614",
+        "project": "PTWE",
+        "summary": [
+            "reestimate"
+        ],
+        "timespent": "5400"
+    },
+    {
+        "id": "37904",
+        "project": "PTWE",
+        "summary": [
+            "create new profile"
+        ],
+        "timespent": "5400"
+    },
+    {
+        "id": "37511",
+        "project": "PTWE",
+        "summary": [
+            "select global profile for export"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "37510",
+        "project": "PTWE",
+        "summary": [
+            "edit export profile"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "37509",
+        "project": "PTWE",
+        "summary": [
+            "create new global profile"
+        ],
+        "timespent": "108000"
+    },
+    {
+        "id": "37508",
+        "project": "PTWE",
+        "summary": [
+            "list global profiles"
+        ],
+        "timespent": "16200"
+    },
+    {
+        "id": "37113",
+        "project": "PTWE",
+        "summary": [
+            "template admin"
+        ],
+        "timespent": "91800"
+    },
+    {
+        "id": "37110",
+        "project": "PTWE",
+        "summary": [
+            "custom field macro"
+        ],
+        "timespent": "34200"
+    },
+    {
+        "id": "33005",
+        "project": "PTWE",
+        "summary": [
+            "empty page is generated after content"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "32418",
+        "project": "PTWE",
+        "summary": [
+            "add support for image effects"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "32416",
+        "project": "PTWE",
+        "summary": [
+            "check behaviour in confluence"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "32304",
+        "project": "PTWE",
+        "summary": [
+            "customizable page size and margins"
+        ],
+        "timespent": "90000"
+    },
+    {
+        "id": "32006",
+        "project": "PTWE",
+        "summary": [
+            "jira issue macro not working"
+        ],
+        "timespent": "90000"
+    },
+    {
+        "id": "23513",
+        "project": "PTWE",
+        "summary": [
+            "headers footers support"
+        ],
+        "timespent": "61200"
+    },
+    {
+        "id": "23511",
+        "project": "PTWE",
+        "summary": [
+            "support for custom fonts"
+        ],
+        "timespent": "43200"
+    },
+    {
+        "id": "23510",
+        "project": "PTWE",
+        "summary": [
+            "add support for customizable cover page and back page"
+        ],
+        "timespent": "36000"
+    },
+    {
+        "id": "49510",
+        "project": "ODOO",
+        "summary": [
+            "rest vgpontot csinlni"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "57316",
+        "project": "JETIC",
+        "summary": [
+            "kzs kdok temelse a jeti"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "57208",
+        "project": "JETIC",
+        "summary": [
+            "release"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "57071",
+        "project": "JETIC",
+        "summary": [
+            "release"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "57060",
+        "project": "JETIC",
+        "summary": [
+            "examine deleting addresses from recipients does not remove them in rare cases"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "56736",
+        "project": "JETIC",
+        "summary": [
+            "produce correct email structure"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "56633",
+        "project": "JETIC",
+        "summary": [
+            "embedded images of incoming emails are not displayed in email audit log"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "54222",
+        "project": "JETIC",
+        "summary": [
+            "modify add sender to request participants to enable parsing the incoming mail"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "51340",
+        "project": "JETIC",
+        "summary": [
+            "removal of project and filter endpoints from rest api"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "57506",
+        "project": "JETI",
+        "summary": [
+            "fordtsok frisstse kdban ellenrzse a"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "57418",
+        "project": "JETI",
+        "summary": [
+            "jetis xss testing"
+        ],
+        "timespent": "16200"
+    },
+    {
+        "id": "57417",
+        "project": "JETI",
+        "summary": [
+            "feature testing"
+        ],
+        "timespent": "72300"
+    },
+    {
+        "id": "57138",
+        "project": "JETI",
+        "summary": [
+            "use sd api to determine if sd is open for public signup"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "57062",
+        "project": "JETI",
+        "summary": [
+            "release testing"
+        ],
+        "timespent": "40500"
+    },
+    {
+        "id": "57059",
+        "project": "JETI",
+        "summary": [
+            "nextgen handler actions cannot be edited"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "57050",
+        "project": "JETI",
+        "summary": [
+            "ui translations improvements"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "57033",
+        "project": "JETI",
+        "summary": [
+            "release"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "56951",
+        "project": "JETI",
+        "summary": [
+            "remove componentaccessor occurrences from the nextgen mail handler"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "56838",
+        "project": "JETI",
+        "summary": [
+            "release"
+        ],
+        "timespent": "5400"
+    },
+    {
+        "id": "56835",
+        "project": "JETI",
+        "summary": [
+            "attachment and embedded image handling in multuipart alternative emails"
+        ],
+        "timespent": "50400"
+    },
+    {
+        "id": "56800",
+        "project": "JETI",
+        "summary": [
+            "xss vulnerability in administration screens"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "56695",
+        "project": "JETI",
+        "summary": [
+            "exclusion attribute in anonymization"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "53130",
+        "project": "JETI",
+        "summary": [
+            "customer notification emails contain links to attachments in jira instead of the customer portal"
+        ],
+        "timespent": "23400"
+    },
+    {
+        "id": "48039",
+        "project": "JETI",
+        "summary": [
+            "customer notifications not sent correctly on request created"
+        ],
+        "timespent": "15000"
+    },
+    {
+        "id": "57583",
+        "project": "JC",
+        "summary": [
+            "configurable client id and secret"
+        ],
+        "timespent": "21600"
+    }
+]

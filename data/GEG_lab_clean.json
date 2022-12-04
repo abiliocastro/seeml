@@ -1,0 +1,4635 @@
+[
+    {
+        "id": "25603",
+        "project": "TCN",
+        "summary": [
+            "documentation images don't show anymore"
+        ],
+        "description": [
+            "most of the images in the online documentation don't show anymore"
+        ],
+        "timespent": "3600",
+        "alpha": 98
+    },
+    {
+        "id": "24600",
+        "project": "TCN",
+        "summary": [
+            "import users from csv"
+        ],
+        "description": [
+            "in future it's possible to have a feature for importing user with a csv"
+        ],
+        "timespent": "14400",
+        "alpha": 98
+    },
+    {
+        "id": "23602",
+        "project": "TCN",
+        "summary": [
+            "change language header tag based on language selection"
+        ],
+        "description": [
+            "the html header language tag should change according to the application's or user's language selection"
+        ],
+        "timespent": "1200",
+        "alpha": 98
+    },
+    {
+        "id": "27776",
+        "project": "TCN",
+        "summary": [
+            "show group names on calendar edit page"
+        ],
+        "description": [
+            "would it be possible to add the user's group after their name to the edit calendar screen it would help our hr department if the group is on there for example edit month for laura dingle launceston"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "27665",
+        "project": "TCN",
+        "summary": [
+            "version compare is not working"
+        ],
+        "description": [
+            "hello george the version compare is currently not working so tcn is not pointing me of new versions to download and install",
+            "it might be that you have to maintain the file as far as i could see there is set an old version isn't it"
+        ],
+        "timespent": "600",
+        "alpha": 99
+    },
+    {
+        "id": "27614",
+        "project": "TCN",
+        "summary": [
+            "wrong reference in register controller"
+        ],
+        "description": [
+            "hi i found a bug in the registration process but i don't know where to submit this",
+            "the bug is in the line must be"
+        ],
+        "timespent": "600",
+        "alpha": 99
+    },
+    {
+        "id": "27597",
+        "project": "TCN",
+        "summary": [
+            "invalid data error when clicking in calendar"
+        ],
+        "description": [
+            "the following error is thrown when clicking in the second month of the calendar to reproduce switch to view in the calendar and try to edit the calendar of the second month",
+            "the top month is fine it's the one underneath which throws the error"
+        ],
+        "timespent": "5400",
+        "alpha": 99
+    },
+    {
+        "id": "27594",
+        "project": "TCN",
+        "summary": [
+            "personal vs global allowance"
+        ],
+        "description": [
+            "i am trying to alter this user's allowance to instead of as they are on a contract and therefore do not have any however whenever i change it says it's saved successfully but the allowance reverts back to days",
+            "this is the same with all absence types it appears"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "27586",
+        "project": "TCN",
+        "summary": [
+            "multiple month in calendar view"
+        ],
+        "description": [
+            "i also collected some feedback regarding the multiple-months on one screen",
+            "i'll be honest it's a huge issue for mainly when they are doing the rotas and the week crosses into another month you have to keep flicking between months instead of just being able to see the one",
+            "i wondered whether you could do some bespoke work on it for us to allow this feature i understand it will affect the"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "27585",
+        "project": "TCN",
+        "summary": [
+            "recurring absence date range"
+        ],
+        "description": [
+            "we've had a suggestion of being able to select a date range in the recurring absence screen",
+            "for example instead of it just applying to the calendar month by default you could mark everyone's day off as a sunday for the whole year",
+            "that would save a huge amount of time and be a really useful feature"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "27545",
+        "project": "TCN",
+        "summary": [
+            "holiday create problem"
+        ],
+        "description": [
+            "hello george i'm testing tcn for a while to switch with the new year to it",
+            "today i did the upgrade to verson with this version it is impossible to create new holidays even if the system annouced success create absence type the holiday was created",
+            "i tested it with your demo too and there also it's impossible",
+            "there is no problem with screen refreshing",
+            "a look into the database shows that no new entries are created"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "27502",
+        "project": "TCN",
+        "summary": [
+            "holiday option no absences allowed"
+        ],
+        "description": [
+            "hello in tcn i would like to manage my team's guard days",
+            "the guard days are recorded in absence types so when a colaborator wants to place an absence on a day of guard the day of guard is removed",
+            "there is not an option that allows you to block the day and prevent it from putting an absence",
+            "best regard nicolas garnier"
+        ],
+        "timespent": "5400",
+        "alpha": 99
+    },
+    {
+        "id": "26901",
+        "project": "TCN",
+        "summary": [
+            "reset button should clear filters"
+        ],
+        "description": [
+            "the monthly view doesn't change back to the current month if the user was looking at a upcoming or past month leaves the monthly view and comes back"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "26600",
+        "project": "TCN",
+        "summary": [
+            "upgrade the application to allow more than one task each day"
+        ],
+        "description": [
+            "to fit my users new requirement i would like to know if it's possible to modify the application to allow reporting more than one task per day"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "26500",
+        "project": "TCN",
+        "summary": [
+            "duplicate id in sample.sql"
+        ],
+        "description": [
+            "there is a bug in sample.sql with a duplicate id ro the table",
+            "this bug causes problems when intially installing tcneo"
+        ],
+        "timespent": "600",
+        "alpha": 99
+    },
+    {
+        "id": "25800",
+        "project": "TCN",
+        "summary": [
+            "reset password"
+        ],
+        "description": [
+            "it's possible to implement an home page function for user password resetting",
+            "thanks massimo"
+        ],
+        "timespent": "23400",
+        "alpha": 99
+    },
+    {
+        "id": "25300",
+        "project": "TCN",
+        "summary": [
+            "repeat header count problem"
+        ],
+        "description": [
+            "i've setted repeat header count to but the header is repeated only after the first row and then after see if it's possible a great solution is not to repeat the header but fix it on the top"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "24601",
+        "project": "TCN",
+        "summary": [
+            "confidential daynotes"
+        ],
+        "description": [
+            "if an absence is confidential the note on this absence it's good if is also confidential"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "24402",
+        "project": "TCN",
+        "summary": [
+            "wrong mail address"
+        ],
+        "description": [
+            "the email can't be send because i think it's used the userid and not the email field",
+            "this is the log of my smtp server jan recipients=massimozunino the recipient address massimozunino is not a valid address",
+            "gsmtp address massimozunino not accepted by the server"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "24400",
+        "project": "TCN",
+        "summary": [
+            "count as present flag don't affect summary"
+        ],
+        "description": [
+            "if an absence is marked to be showed as present in the summary line it's showed as an absence"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "24301",
+        "project": "TCN",
+        "summary": [
+            "import user from csv and absence approval"
+        ],
+        "description": [
+            "in future it's possible to have a feature for importing user with a csv also it's possible to have absence confirmation request outsite the daynote and if a absence is confidential also the daynote confidential and a report for a manager with all the request with the possibility to select the items to approve"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "24300",
+        "project": "TCN",
+        "summary": [
+            "allow dot and in usernames"
+        ],
+        "description": [
+            "it's possible to change the sanitize function in order to accept dots inside the username thanks massimo"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "24003",
+        "project": "TCN",
+        "summary": [
+            "missing dividing lines in table monthly"
+        ],
+        "description": [
+            "in the monthly view there are some dividing lines missing",
+            "i can't reproduce the error on every client but it's alsways possible on the same client",
+            "used brwoser firefox esr on win with plugins ublock origin"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "24002",
+        "project": "TCN",
+        "summary": [
+            "second admin user can't exit maintenance mode"
+        ],
+        "description": [
+            "we have two admins in our user list",
+            "but only the first admin can use teampass in maintenance mode",
+            "the other admin can't switch from the index page to something else"
+        ],
+        "timespent": "1200",
+        "alpha": 99
+    },
+    {
+        "id": "24000",
+        "project": "TCN",
+        "summary": [
+            "import from tcpro does not import hidden users"
+        ],
+        "description": [
+            "i'm trying to upgrade to teamcal neo from a teamcal pro latest version",
+            "the import script tells that the import is succesfull however no users nor user data are visible",
+            "i can give you acces to a dev installation if needed"
+        ],
+        "timespent": "5400",
+        "alpha": 99
+    },
+    {
+        "id": "23700",
+        "project": "TCN",
+        "summary": [
+            "can't exit maintenance mode"
+        ],
+        "description": [
+            "can't exit the maintenance mode becouse login as admin is also not possible in maintenance mode",
+            "workaround disable maintenance mode via database"
+        ],
+        "timespent": "1200",
+        "alpha": 99
+    },
+    {
+        "id": "23604",
+        "project": "TCN",
+        "summary": [
+            "update to chart.js"
+        ],
+        "description": [
+            "chart.js offers more and easier handling of diagrams",
+            "will help reduce code and makes future diagram features possible",
+            "also supports horizontal bar charts now"
+        ],
+        "timespent": "10800",
+        "alpha": 99
+    },
+    {
+        "id": "23203",
+        "project": "TCN",
+        "summary": [
+            "normal user can see confidential absence"
+        ],
+        "description": [
+            "normal user can see confidential absence from other user",
+            "both users are no manager or admin",
+            "please check",
+            "it's not confirm with privacy policy in germany",
+            "a normal employee should not see somthing like sick or pragnent"
+        ],
+        "timespent": "5400",
+        "alpha": 99
+    },
+    {
+        "id": "23100",
+        "project": "TCN",
+        "summary": [
+            "bootstrap modal dialogs don't work"
+        ],
+        "description": [
+            "i delete user group daynotes absence types or other things",
+            "i see an error in log not only my system is effected same problem in the online demo on your website",
+            "firefox internetexplorer grant all privileges on to tcneo php version system linux teamcal smp debian build date oct server api apache handler virtual directory support disabled configuration file php.ini path loaded configuration file scan this dir for additional ini files parsed php api php extension zend build php extension build debug build no thread safety disabled zend signal handling disabled zend memory manager enabled zend multibyte support provided by mbstring support enabled dtrace support enabled registered php streams https ftps compress.zlib php file glob data http ftp phar zip registered stream socket transports tcp udp unix udg ssl tls registered stream filters zlib",
+            "string.toupper string.tolower convert",
+            "consumed dechunk mcrypt",
+            "mdecrypt",
+            "zend logo this program makes use of the zend scripting language engine zend engine copyright c zend technologies with zend opcache copyright c by zend technologies apache version debian apache api version server administrator webmaster@localhost max requests per child keep alive on max per connection timeouts connection virtual server yes server root loaded modules core prefork mod_negotiation directive local value master value engine xbithack apache environment variable value windows nt gzip deflate http_connection path server_signature debian server at port server_software debian http no value webmaster@localhost script_filename gateway_interface server_protocol get index.php http headers information directive local value master value bcmath.scale support enabled stream wrapper support stream filter support version calendar support enabled core php version directive local value master value on off no value on no value browscap no value default_charset default_mimetype disable_classes no value disable_functions off no value off on no value error_reporting off on highlight.comment highlight.default highlight.html highlight.keyword highlight.string on off no value internal_encoding no value on no value mail.log no value output_buffering output_encoding no value precision off report_memleaks on gp no value t i serialize_precision off smtp localhost off no value user.ini variables_order gpcs off on zend.multibyte off no value ctype functions enabled date support enabled olson timezone database version timezone database internal default timezone directive local value master value date.timezone no value dba support enabled libdb header version berkeley db september libdb library version berkeley db september supported handlers cdb inifile flatfile qdbm directive local value master value flatfile dom enabled api version libxml version html support enabled xpath support enabled xpointer support enabled schema support enabled relaxng support enabled ereg regex library bundled library enabled exif support enabled exif version id supported exif version supported filetypes directive local value master value exif.deco"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "22700",
+        "project": "TCN",
+        "summary": [
+            "error uploading files"
+        ],
+        "description": [
+            "when try to attach a document to be shared is displayed this error fatal error cannot access private property in controller attachments.php on line"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "22410",
+        "project": "TCN",
+        "summary": [
+            "proper html titles"
+        ],
+        "description": [
+            "each page/controller in teamcal neo shows the same html page title teamcal neo it would be an improvement to add the controller title to it teamcal neo calendar edit"
+        ],
+        "timespent": "2700",
+        "alpha": 99
+    },
+    {
+        "id": "21403",
+        "project": "TCN",
+        "summary": [
+            "html display error after update"
+        ],
+        "description": [
+            "i now installed the files from the version copied all to the server overwrite and run the installation.php again",
+            "during the installation.php i used my old data not the sample data",
+            "when i know click on login the site did not look like it see attachment it will stay when log in as user and switch back to the normal view when logged in as administrator please say if you need any html source from this site",
+            "thanks"
+        ],
+        "timespent": "10800",
+        "alpha": 99
+    },
+    {
+        "id": "21312",
+        "project": "TCN",
+        "summary": [
+            "cannot change admin password"
+        ],
+        "description": [
+            "my setup is clean install updated files from i've set the password strength to low and tried to change password",
+            "screen says success but when i try to login again it only works with default password",
+            "george please request link to see my page if you don't have it same as earlier"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "21301",
+        "project": "TCN",
+        "summary": [
+            "strict php standards"
+        ],
+        "description": [
+            "in some environments php's error reporting is set to this setting cause warning messages about code parts that do use a function call as a reference instead of an explicit variable",
+            "this is not an error per se the code still works but it is not compliant to strict coding conventions",
+            "one solution would be to switch off strict error reporting in php",
+            "however some users do not have access to their provider's php settings",
+            "please change tcn code to strict coding conventions",
+            "this was reported originially by tpalsson in the lewe.com forum"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "20701",
+        "project": "TCN",
+        "summary": [
+            "show of attachments"
+        ],
+        "description": [
+            "great work george but the documents when are already uploaded can't be checked or modified their rights visibility",
+            "only can be deleted but is not possible as admin which documents are shared by etc",
+            "if you see a list of documents uploaded you don't know who was the one with was shared"
+        ],
+        "timespent": "10800",
+        "alpha": 99
+    },
+    {
+        "id": "20700",
+        "project": "TCN",
+        "summary": [
+            "error after uploading file"
+        ],
+        "description": [
+            "after assign and upload the document the attached error is displayed but the visibility/range of document is right if you check after upload"
+        ],
+        "timespent": "1200",
+        "alpha": 99
+    },
+    {
+        "id": "27716",
+        "project": "JAM",
+        "summary": [
+            "html fixes"
+        ],
+        "description": [
+            "didn't check the html code created for a while",
+            "needs fixing typos and other adjustments"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "24100",
+        "project": "JAM",
+        "summary": [
+            "project not found"
+        ],
+        "description": [
+            "i updated the list of projects see sceenshot nevertheless there is the project modules listed see screenshot that doesn't exit"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "20501",
+        "project": "JAM",
+        "summary": [
+            "update time stamp even if project doesn't have any components"
+        ],
+        "description": [
+            "view components time stamp shows unknown if the reload button has been clicked but the project doesn't have any components",
+            "therefore it cannot not distinguished on the component view if the components never have been loaded or if the project just doesn't have any",
+            "i suggest to have the time stamp updated whenever the reload button was clicked the connection to the host was successful and regardless whether some content is send back or not"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "20302",
+        "project": "JAM",
+        "summary": [
+            "submenus don't open in mobile view"
+        ],
+        "description": [
+            "the submenus don't open in mobile view jira projects",
+            "menu entries with must not link to a page",
+            "a click should open the parent antry must there if it is supposed to link to a page"
+        ],
+        "timespent": "2700",
+        "alpha": 99
+    },
+    {
+        "id": "19302",
+        "project": "JAM",
+        "summary": [
+            "move the lsy jam instance to lsyairlinesolutions.com"
+        ],
+        "description": [
+            "since this jam instance is for lsy only it is the better place to be hosted on lsyhosting.com"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "19201",
+        "project": "JAM",
+        "summary": [
+            "password field was filled on updating the host information"
+        ],
+        "description": [
+            "on updating the profile with the host information i was requested to specify the password even though i didn't wanted to change the password"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "27831",
+        "project": "TCN",
+        "summary": [
+            "restrict remainder page"
+        ],
+        "description": [
+            "the remainder shows all users",
+            "the most common use case though is that regular users should not see that information about other users",
+            "the page should be restricted current user can always see his own group managers can also see thoseof their group members admin can see all"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "27830",
+        "project": "TCN",
+        "summary": [
+            "confidential daynotes not visible to daynote user"
+        ],
+        "description": [
+            "confidential daynotes are supposed to be visible by the admin trusted roles and the user that the daynote belongs to",
+            "the latter does not work",
+            "the user itself cannot see his own daynote if he is not in a trsuted role"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27829",
+        "project": "TCN",
+        "summary": [
+            "maximum amount per week limits seem to limit per month instead of weeks"
+        ],
+        "description": [
+            "i'm sorry but i seem to run in a lot of problems lately",
+            "i reported a bug a few weeks ago where the weekly allowance was not taken into account when saving the calendar",
+            "this was fixed in tcn it seems like now the weekly allowance is in fact a monthly allowance",
+            "for example we use tcm to organize our shift roster in the hospital",
+            "every doctor is allowed up to free days x in the screenshot a week regardless of weekends an such",
+            "it seems that since the update to tcn rejects the request if one takes more than free days a month even if the monthly allowance is set to and the weekly allowance is set to see i confirmed the problem by setting the weekly allowance to the system then allows free days a month"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "27827",
+        "project": "TCN",
+        "summary": [
+            "abscence factor and count as present not taken into account when checking for restrictions"
+        ],
+        "description": [
+            "hi george when an absence type is set to factor and counts as present it is not accepted if the absence restrictions are violated even if it count as an absence",
+            "for expample if a group has members and there is a maximum of absences in that group one can not take a home office day if there already are absent team members on that day",
+            "even if home office does not count as an absence and has a factor of regards adrien"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27825",
+        "project": "TCN",
+        "summary": [
+            "weekly allowance is not taken into account"
+        ],
+        "description": [
+            "hi george",
+            "thanks for the great tool you built for all of us we have a weekly allowance of for absence x when users save the input only the already saved instances of x are taken into account",
+            "users can still take a whole week of x without it getting declined",
+            "you can see in screenshot that the system declines the absence x because the maximum ammount of is exceeded when xs already where accepted beforehand",
+            "thank you for your help"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "27824",
+        "project": "TCN",
+        "summary": [
+            "user absences limit doesn't take global absences limit"
+        ],
+        "description": [
+            "hi george if i maintain an absence limit for a specific absencetype it beats the absence limit which is maintained in the absencetype",
+            "so far so good",
+            "if i set the user absence limit back to use the global absence limit again the user can't use this absence type",
+            "the systems says that the user is below the limit of the absence type",
+            "i think the error lays in the class in method getallowance or in the line of version if there is a personal limit even the allowance is checked",
+            "if i remove the database record for the specific user and absencetype everything is working fine",
+            "can you fix this issue that using the global and not the personal limit regards patrick"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27790",
+        "project": "TCN",
+        "summary": [
+            "user absence summary sub type count"
+        ],
+        "description": [
+            "hello george i am making trials on teamcal neo i defined an absence called ore permesso giving it so i defined some absences related to it in the combo each one with its own factor",
+            "finally i placed those absences in calendar within one month for a specific user",
+            "when watching at summary absence for that same user ore permesso show related absences sum but shows instead each related absence listed with its own sum",
+            "is this a expected behavior thanks alex"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "27769",
+        "project": "TCN",
+        "summary": [
+            "uploader can unshare an attachment with himself"
+        ],
+        "description": [
+            "when a user uploads an attachment and edits the users the file is shared with and unselects himself he has no access to his own upload anymore",
+            "as a user i expect that i never lose access to my own attachments"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27734",
+        "project": "TCN",
+        "summary": [
+            "system log make it more useful"
+        ],
+        "description": [
+            "hi george we were wondering whether some filtering could be added into the system log",
+            "a scenario we have a member of staff who believes they requested an absence at some point earlier in the year",
+            "there is no way that i can see that you can search for all events of a particular user",
+            "i tried to filter current year and then was going to go through the list to search for his name and perhaps drop it into excel to filter out anything other than his events",
+            "but that work either as it shows results then splits the page see screen shot an option to pick a date range and user to see all history would be great",
+            "alternatively remove the page breaks and maybe have an option to export to excel or csv just a thought could be useful when going back questioning a actions"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "27733",
+        "project": "TCN",
+        "summary": [
+            "permission for group calendar edit"
+        ],
+        "description": [
+            "hi george i have following problem with the permissions for calendar group editing",
+            "my situation i want to give a user the right to edit the calendar of all users for some special groups",
+            "if i give him the manager role than he can edit all groups he is member of",
+            "too much",
+            "if i select the manger role for this user then this user is able to edit all the user calendars of own groups he is member of and he is manager of",
+            "so in this case the special group permission manager is unnecessary or redundant because if he is member of a group he also can edit all calenders as he is a manger",
+            "and in my case as a mananer this user can edit to much calendar groups",
+            "so this is not what i want",
+            "if i select for this normal user additionally the group permission manager of for a special group than this user is not able to edit the calendars of this special group",
+            "is this a problem or do i forget something in my mind a user with the role manager can edit all user calendars of own groups",
+            "in this case i maybe need an option for all his own groups but as an exception not for this or for a normal user with the role user i need the right for this user to be a manager of selected groups",
+            "afterwards he has the right to edit all calenders of this special group",
+            "but if i select this option this work for the user in real maybe i have a problem of understanding and need for some help or explanations",
+            "thx many greetings jrg"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "27721",
+        "project": "TCN",
+        "summary": [
+            "unable to create personal daynote"
+        ],
+        "description": [
+            "neither regular users nor the admin can create personal daynotes any more",
+            "the default permission scheme allows daynote edit for users tab general and i did not find any other option for enabling day notes in the personal calender",
+            "as a regular user and as an admin i see the icons for the personal daynotes any more see i just updated from to setting daynotes in the regional calendar admin manager works fine",
+            "daynotes in regional calender do work fine"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27719",
+        "project": "TCN",
+        "summary": [
+            "data privacy policy gdpr"
+        ],
+        "description": [
+            "the gdpr requires applications processing personal data to provide a data privacy policy"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "27718",
+        "project": "TCN",
+        "summary": [
+            "update to font awesome"
+        ],
+        "description": [
+            "font awesome has released a major update from to it contains a lot more icons and would increase framework cpabilities and absence type icon options"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "27712",
+        "project": "TCN",
+        "summary": [
+            "back to calendar edit from daynote edit"
+        ],
+        "description": [
+            "original request by mail when you are adding a daynote",
+            "when you save it you can only go back to the main calendar",
+            "if there was an edit calendar or edit month button as well as the show calendar this would allow you to add many different notes on a month instead of having to the month"
+        ],
+        "timespent": "2700",
+        "alpha": 100
+    },
+    {
+        "id": "27708",
+        "project": "TCN",
+        "summary": [
+            "deleting an absence type hides"
+        ],
+        "description": [
+            "deleting an absence type does not delete the configured for it",
+            "the absence type is still available for selection in the calendar but they do not show in the absence type list anymore"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27707",
+        "project": "TCN",
+        "summary": [
+            "unable to restore user from archive table"
+        ],
+        "description": [
+            "we have a user jacob mcnamee which we are trying to restore from archive to live",
+            "i mark his name and press restore and get the following error restore selected one or more of the selected users already exist as active users",
+            "this could be the same user or one with the same username",
+            "please delete these active users first",
+            "he's not already in there though so this looks like a bug"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "27697",
+        "project": "TCN",
+        "summary": [
+            "archive and delete user from profile"
+        ],
+        "description": [
+            "it would be really useful if we could delete and archive users from their profile",
+            "this is because we make changes to their account first then archive them",
+            "it would just save us making the changes saving then loading the user list then finding the user ticking the box and archiving them"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "27684",
+        "project": "TCN",
+        "summary": [
+            "system log seems to only show entries"
+        ],
+        "description": [
+            "despite what period i select and press refresh only lines are shown in the log"
+        ],
+        "timespent": "2700",
+        "alpha": 100
+    },
+    {
+        "id": "27679",
+        "project": "TCN",
+        "summary": [
+            "show guest memberships"
+        ],
+        "description": [
+            "new feature group guest membership show the calendar of this user in the selected groups even he is not a member",
+            "the user is not a member of the group and he see all groups switch off calendar view all option but the absences are still important to see along with those of the selected group",
+            "read only mode addl",
+            "information currently guest memberships are not shown to regular users if option calendar view all is off",
+            "this does not seem to make sense since a guest is still member of the group",
+            "the request is to show guest members even if calendar view all is switched off"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "27675",
+        "project": "TCN",
+        "summary": [
+            "jquery cdn links to https"
+        ],
+        "description": [
+            "dear george we have an issue that the top header does not work whereas everything works with http",
+            "our client has an older version of teamcal and theirs works",
+            "i send you the code where as wouter points out below the problem is that in v it is looking for http for javascript whereas in the other implementation it is not",
+            "is this something hard coded in or something that i need to configure best regards alex"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27674",
+        "project": "TCN",
+        "summary": [
+            "delete multiple daynotes"
+        ],
+        "description": [
+            "is it possible to delete daynotes for a whole week is it planned to add this feature it would be a huge positive thing because now for example if someone requests a day vacation",
+            "the manager has to delete daynotes by deleting every single daynote",
+            "if you calculate this up to employees who he is responsable would it be a huge amount to add this feature it would be super because with that feature i think your software is perfect",
+            "it contains everything you need and is easy to use",
+            "i hope you can add this feature to delete multiple daynotes"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27672",
+        "project": "TCN",
+        "summary": [
+            "mark other region holidays"
+        ],
+        "description": [
+            "since our company is an international business and there are no common holidays even in germany we need a way to show users whether another user's place of work is currently on a holiday",
+            "holidays and other regional events can be currently configured and displayed in the calendar",
+            "with several different regions it would be practical if one could assign this region to a group or a user so that everyone sees in the monthly view the holidays relevant for that person in each case"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "27667",
+        "project": "TCN",
+        "summary": [
+            "allow anonymous smtp connection"
+        ],
+        "description": [
+            "in some cases an anonymous smtp connection is useful",
+            "please add that option to tcn"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27641",
+        "project": "TCN",
+        "summary": [
+            "reset of password throws a php error message"
+        ],
+        "description": [
+            "i tried to reset a password for a standard user and got the following error message fatal error uncaught error call to undefined method in stack trace include main thrown in on line best regards tobias"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "27639",
+        "project": "TCN",
+        "summary": [
+            "link to region calendar from global daynote"
+        ],
+        "description": [
+            "editing the global day notes of the regional calendar is quite exhausting since after editing the show calendar button jumps back to the standard calendar instead to the edit mode of the regional calendar where the user is coming from"
+        ],
+        "timespent": "2700",
+        "alpha": 100
+    },
+    {
+        "id": "27638",
+        "project": "TCN",
+        "summary": [
+            "user notification option none"
+        ],
+        "description": [
+            "hi george it would be helpful if the list of user notifications within the user profile would contain an entry none if a user accidentially clicks on a group he revert this",
+            "the only option is to cancel edit and open the user profile dialog again loosing all other changed options"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27635",
+        "project": "TCN",
+        "summary": [
+            "empty prefix in installation script"
+        ],
+        "description": [
+            "when the table prefix is left empty during installation the script still add tecneo as prefix to all tables"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27633",
+        "project": "TCN",
+        "summary": [
+            "one approval email per month"
+        ],
+        "description": [
+            "at the moment an email is created to the manager for every day that requires authorisation hence if someone takes days off in a month emails are sent to the manager",
+            "it would be much nicer if the manager had an option to receive a single email saying that days needed to be approved",
+            "note we have configured the leave request to be entered by the user and the manager changes this is a leave approved absence with a different colour so it is easy to spot which days need to be approved"
+        ],
+        "timespent": "4200",
+        "alpha": 100
+    },
+    {
+        "id": "27622",
+        "project": "TCN",
+        "summary": [
+            "hide groups which users don't have permission to see"
+        ],
+        "description": [
+            "most standard users only have access to their own group",
+            "however they are able to see the full list of groups in the dropdown",
+            "when they click it displays the group but with no calendar entries it's just blank see screen shot it would be much neater and tidier if the dropdown only displayed the groups which they were part of and hid the rest image below shows the dropdown with all the entries yet if you click onto a group in which they're not a member of it shows the group but the calendar is blank"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27618",
+        "project": "TCN",
+        "summary": [
+            "allow any role to edit absences"
+        ],
+        "description": [
+            "hi george i have just downloaded this and tested it in version it works fine it just seems a tad long winded",
+            "i guess in my mind this is a permission and having it in the calendar options seems the wrong place",
+            "also not ideal in my situation for the following reason our director monitors absences he has a user type director even with this switch enabled director cannot change the absences",
+            "i would have thought that as this is a permissions issue it would have made more sense to add them to the role permissions where you can allow to edit absences and then check your required user type eg manager director administrator",
+            "note as you already know this user in question was always able to edit absences of his own group because a his own therefore the ability to set permissions makes more sense as you could allow them to either only edit their own or other groups absences",
+            "the reason that i want to set my director as type administrator is because it opens up a whole bunch of options on the system that would confuse him"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "27615",
+        "project": "TCN",
+        "summary": [
+            "absence group assignments don't work in calendar edit"
+        ],
+        "description": [
+            "even though an asbence type is not assigned to a certain group users of that group can still see the absence type when editing their calendars"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27610",
+        "project": "TCN",
+        "summary": [
+            "administrator unable to set absence types in groups other than their own"
+        ],
+        "description": [
+            "we have several administrator type user accounts who cannot access the absence types for users in calendars other than their own group",
+            "the permissions are set so administrators can do anything and have full access but they can only access the absence types for other users in their same group",
+            "i think the administrator role should being a manager of the default administrator account is able to access all users and all absence types",
+            "full details to follow in an email"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "27609",
+        "project": "TCN",
+        "summary": [
+            "default view specify groups"
+        ],
+        "description": [
+            "this may be something missing but in tcp you could specify a default group filter when creating a new user",
+            "i have just created a new manager when they logged in they could see group by default which is of no interest to them",
+            "they are only interested in their own group",
+            "is there a default group filter for a user"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "27607",
+        "project": "TCN",
+        "summary": [
+            "show multiple months"
+        ],
+        "description": [
+            "as a user i would like to view more than just or months on the calendar page to avoid paging and reloading"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "27606",
+        "project": "TCN",
+        "summary": [
+            "allow special characters in user custom fields"
+        ],
+        "description": [
+            "as an administrator i would like to enter special characters in user custom fields"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27602",
+        "project": "TCN",
+        "summary": [
+            "reloading index page when already logged in does not display calendar"
+        ],
+        "description": [
+            "hi george this is only a little niggle but if you log into tcn then close the browser or navigate away then return to the app although you stay logged in it takes you back to the welcome page even though i have calendar selected as the default view",
+            "i have attached a screen shot after returning to the url",
+            "you can see logged in",
+            "it would be nice if it showed the calendar as the default page here instead of the welcome page",
+            "the toggle does work because immediately after you log in you get the calendar",
+            "only if you navigate away and come back",
+            "just a suggestion"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27601",
+        "project": "TCN",
+        "summary": [
+            "datepicker drop down boxes"
+        ],
+        "description": [
+            "hello george there are an issue in the data select dialogs",
+            "may be they need initialized to show the rigt values in the relevant fields see screen kind regards ingo"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27598",
+        "project": "TCN",
+        "summary": [
+            "calendar font zise"
+        ],
+        "description": [
+            "it would be nice to have a little more control of the font size in the month calendar view",
+            "maybe this could be provided as a configuration option"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "27592",
+        "project": "TCN",
+        "summary": [
+            "page help"
+        ],
+        "description": [
+            "as a user i would like to call the documentation page of the controller i am currently working on",
+            "this could be achieved by a help icon in the right corner of the controller title that links to the corresponding help page",
+            "as an administrator i would like to have the option to switch this feature off to avoid internet traffic"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "27590",
+        "project": "TCN",
+        "summary": [
+            "edit calendar button"
+        ],
+        "description": [
+            "had users call me up now complaining about how when they edit their calendar they have to first find the day on the calendar then click the edit personal calendar option",
+            "that window then takes the back to a completely different month presumably one previously looked at so they have to then navigate again",
+            "almost a bit of a waste of time really",
+            "it would be useful if when clicking edit personal calendar that it opened the month that was on screen",
+            "a better option in my mind would be to take the edit personal calendar option away and make it more obvious that they can click the row next to their name in the calendar",
+            "as not many people have realised you can do this",
+            "for example this is user sandy adams nothing there to show they can tap in any day next to her name perhaps an icon like a spanner to appear in every day next to her name to show they can tap there or something similar in tc pro it was obvious they could click the spanner",
+            "or if they are a standard user make it clickable anywhere in the calendar to open the edit screen again this needs to be clearly instructed though so no"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "27589",
+        "project": "TCN",
+        "summary": [
+            "user remainder page bug"
+        ],
+        "description": [
+            "i have set managers to days of approved holiday as you can see below",
+            "however the new user absence summary page only shows still see below"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27588",
+        "project": "TCN",
+        "summary": [
+            "monitor absence"
+        ],
+        "description": [
+            "as a user i would like to define a primary absence",
+            "for this absence the taken/remainder should be shown right next to the name in the calendar",
+            "that will save time by not having to load the remainder page to see those values"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "27587",
+        "project": "TCN",
+        "summary": [
+            "user profile tabs by permission"
+        ],
+        "description": [
+            "i love the way you can hide the account tab based on permissions",
+            "it would be great if you could choose which tabs were shown based on permissions",
+            "for example i would only want a standard user to have access to personal contact and password"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "27584",
+        "project": "TCN",
+        "summary": [
+            "notifications for all groups"
+        ],
+        "description": [
+            "allow notifications for own groups only allow notifications for all groups if the second is set the group list box will show all groups to choose from"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "27583",
+        "project": "TCN",
+        "summary": [
+            "add a return to calendar option to calendar edit"
+        ],
+        "description": [
+            "no obvious way to return to the main calendar after making a change",
+            "could i suggest a return to calendar button at the top nice and prominent"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "27582",
+        "project": "TCN",
+        "summary": [
+            "user profile edit permission"
+        ],
+        "description": [
+            "tc pro allowed managers to click the user names of the staff and edit the details names etc",
+            "there is currently no permission option to allow them to do this"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27581",
+        "project": "TCN",
+        "summary": [
+            "remainder page"
+        ],
+        "description": [
+            "tcpro offered a reaminder section in the calendar table showing the taken and remaining absences for each user",
+            "that is a very useful feature",
+            "can such a feature be added to tcneo as well"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "27579",
+        "project": "TCN",
+        "summary": [
+            "remainder column"
+        ],
+        "description": [
+            "this is most likely something not done but i find the toggle to enable the remainder column",
+            "i have asked approved holiday to be included in the remainder column as in tc pro but the column show"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "27577",
+        "project": "TCN",
+        "summary": [
+            "incorrect email notifications"
+        ],
+        "description": [
+            "hi george i think this is my settings incorrect",
+            "i have users getting email notifications for calendar edits from users who are not in their notifications group",
+            "for example user steveford who is part of his account is set to only get notifications for his group however he has literally just this moment received a whole bunch of email alerts for other locations it appears to be here are a couple of examples he has received quite a few of these over the last few minutes i set his user account earlier this morning to only get the notifications from please advise as urgently as you can thank you barney"
+        ],
+        "timespent": "2700",
+        "alpha": 100
+    },
+    {
+        "id": "27576",
+        "project": "TCN",
+        "summary": [
+            "min present and max absent per group"
+        ],
+        "description": [
+            "in tcpro two properties could be set minimum members present maximum members absent this was a very useful feature",
+            "could it be implemented in tcneo as well"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "27575",
+        "project": "TCN",
+        "summary": [
+            "declination scope not working"
+        ],
+        "description": [
+            "in tc pro if a declination period was set this only applied to standard users",
+            "however we have noticed that managers cannot put absences in during a declination period either",
+            "managers should be able to override this so the declination period does not apply to them"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "27574",
+        "project": "TCN",
+        "summary": [
+            "region button shows when disabled"
+        ],
+        "description": [
+            "the region button has been disabled from the calendar options settings however when you edit a calendar the button appears"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "27573",
+        "project": "TCN",
+        "summary": [
+            "user calendar email notifications"
+        ],
+        "description": [
+            "user calendar event email notifications are not sent out",
+            "there is actually a listbox missing with groups for which the user wants to get notifications bug is in user calendar notification"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "27572",
+        "project": "TCN",
+        "summary": [
+            "period and recurring absence types"
+        ],
+        "description": [
+            "i notice that a standard user is able to click the period button in the calendar and the list shows all absence types including absences"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27571",
+        "project": "TCN",
+        "summary": [
+            "back button on daynote screen"
+        ],
+        "description": [
+            "i feel like a back button of some description would be useful after creating day notes",
+            "there is no quick way to return to the previous page",
+            "you can either press the browser back button twice then be forced to the page or you have to choose the calendar option from the main top menu"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "27559",
+        "project": "TCN",
+        "summary": [
+            "bulk activate users"
+        ],
+        "description": [
+            "when importing users from teamcal pro they are set to hidden locked and for security reasons",
+            "this makes sense for checking the imported data first",
+            "in case of a lot of imported users it would help a lot to provide a feature in the user list",
+            "should unhide unhold unlock unverify the selected users"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "27557",
+        "project": "TCN",
+        "summary": [
+            "tcp import of custom fields"
+        ],
+        "description": [
+            "import issue the custom fields werent bought across we used two user created date and paid sick leave and neither did the position",
+            "there may be others but these are the only two we used"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "27554",
+        "project": "TCN",
+        "summary": [
+            "current year only for roles"
+        ],
+        "description": [
+            "show current year only i love this feature however could this be role based managers and above should be able to see previous and future dates but it seems to apply to all users which isnt so useful"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "27553",
+        "project": "TCN",
+        "summary": [
+            "individual absence allowance"
+        ],
+        "description": [
+            "unable to change absence allowance in edit user screen this is a huge problem for us as although our groups have days holiday entitlement managers have therefore we need to be able to overwrite it for certain users but i cant see a way to do this"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "27551",
+        "project": "TCN",
+        "summary": [
+            "past day color not showing"
+        ],
+        "description": [
+            "ive set this in the options but it doesnt seem to work",
+            "it stays white"
+        ],
+        "timespent": "2700",
+        "alpha": 100
+    },
+    {
+        "id": "27537",
+        "project": "TCN",
+        "summary": [
+            "show active permission scheme"
+        ],
+        "description": [
+            "as an administrator i would like the active permission scheme to be displayed when opening the permission schemes page"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27534",
+        "project": "TCN",
+        "summary": [
+            "performance decrease"
+        ],
+        "description": [
+            "after updating to the current version the performance of index",
+            "php action=calendarview has deteriorated considerably",
+            "this page now takes about to seconds to load",
+            "cpu server load cpu usage cpu load ram mysql server version debian server mpm prefork server built sep screenshot of one request",
+            "request starts when idle goes down"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "27525",
+        "project": "TCN",
+        "summary": [
+            "password encryption"
+        ],
+        "description": [
+            "when logging in it is possible to attach any character string to the correct password but the password is still assumed to be correct",
+            "this means that if i use the password i can also login with the password for me it means that the hash algorithm allows a conclusion on the length of the correct password or that it is not a hash algorithm but encryption",
+            "if it is an encryption of the original password it would be possible to steal the password from the database in case of a compromise",
+            "furthermore i see here an simplification for attacks because they no longer have to guess the exact length but just the basic password",
+            "i see an urgent need for action here"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "27520",
+        "project": "TCN",
+        "summary": [
+            "loss of absences"
+        ],
+        "description": [
+            "hello we currently run tcneo for teams",
+            "each team has managers and the rest are normal users for holiday we use absence types holiday wishes are open to all users announce when they like to go on holiday and holiday open only to managers must approve holiday wishes by changing the absence type to holiday a problem occurs if a normal user changes one month in which approved holiday is present",
+            "since the normal user does not have access to that absence type it seems that tcneo does not save this absence type when saving changes of that month",
+            "result approved holiday disappears",
+            "i hope it is nearly clear what i try to say",
+            "do we misuse something that is not as aspected what would you do instead or may is that a bug thanx for any help",
+            "regards ralf"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "27518",
+        "project": "TCN",
+        "summary": [
+            "dash und underscore in username"
+        ],
+        "description": [
+            "it is not possible to create users with a hyphen in their user name however if i directly edit the database it works",
+            "please use a more sensible rule for user names which is compatible with basic os rules",
+            "taken from a websphere document as a rough guideline under normal circumstances a valid user id and password can contain the following characters lowercase characters uppercase characters numbers exclamation point open parenthesis close parenthesis dash this character is not supported as the first character in the user id or password period this character is not supported as the first character in the user id or password underscore this is the only supported special character in ibm i grave accent tilde commercial at hash mark or pound sign single and double quotation marks although these two characters are supported using both in a single user id is not supported",
+            "ensure that you are not using both the characters in a single user id",
+            "and here is google take on the topic when choosing usernames and passwords for users and groups you add to your google cloud account consider the following usernames can contain letters numbers dashes underscores apostrophes and periods usernames contain an ampersand equal sign brackets plus sign comma or more than one period in a row",
+            "usernames can begin or end with non-alphanumeric characters except periods with a maximum of characters",
+            "passwords can contain any combination of printable ascii characters and must contain a minimum of characters",
+            "passwords begin or end with a whitespace character",
+            "first and last names support characters with a maximum of characters",
+            "periods are not ignored as they are in a gmail.com account",
+            "if you create a user account called username this user will not be able to receive messages addressed to user.name or any other combination of periods",
+            "to let a user receive mail with these variations create an email alias for them"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "27517",
+        "project": "TCN",
+        "summary": [
+            "delete region not clearing filters"
+        ],
+        "description": [
+            "if you set a region other than default in month view when viewing a calendar and then delete the calendar belonging to that region and go to view calendar month an error is displayed",
+            "only way i found so far is to add to the url which then switches the region previously selected in the view back to default",
+            "i believe this should happen automatically as soon a region is no longer available anymore",
+            "i think seen similar issues with other pages too when something is deleted or no longer present i sometimes get an error",
+            "this one is the most persistent bug as it is not easy to escape it all other error pages have resolved themselves"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "27504",
+        "project": "TCN",
+        "summary": [
+            "holiday coloring priority"
+        ],
+        "description": [
+            "i'd like to still see the weekends in their colour even if there is a school holiday",
+            "even though a holiday is present please preserve the colour of the weekend",
+            "only public holidays should override the colour of weekends or holidays that do not count as a business day as a more general at least that would be my preferred view",
+            "keep up the great work loving your calendar so far"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "27503",
+        "project": "TCN",
+        "summary": [
+            "business day count with holidays"
+        ],
+        "description": [
+            "in the month summary the calculated business days are wrong if there is a school holiday",
+            "in the case of a school holiday even though marked as count as business day deducted from the total business days of that month",
+            "either provide a additional check box for regional calendars to count or not count these days as business days or use the existing tick box to count them as a business day",
+            "keep up the great work loving your calendar so far"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27501",
+        "project": "TCN",
+        "summary": [
+            "smtp error message error"
+        ],
+        "description": [
+            "when using smtp mail a mail sent error is supposed to be displayed",
+            "instead an error message is displayed fatal error call to undefined function showerror in on line"
+        ],
+        "timespent": "2700",
+        "alpha": 100
+    },
+    {
+        "id": "27200",
+        "project": "TCN",
+        "summary": [
+            "move absence to another user"
+        ],
+        "description": [
+            "it would be nice to have a function to take the responsibility for duty or other changeable entry of absence from another person",
+            "for example person would have duty on a monday and person want to do this instead of person so he just pushes a button to change should not be possible for vacation notes"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "27001",
+        "project": "TCN",
+        "summary": [
+            "keep calendar filters separate"
+        ],
+        "description": [
+            "based on comment by in linked issue from my point of view date is no a filter which needs to be saved",
+            "the user is always in the same team or city so saving team and region is convenient but the date is changing every day",
+            "because of that i think saving the date filter is not convenient for a user",
+            "saving the calendar filters is a tricky matter because as the above comment shows use cases differ",
+            "what is convenient for one is annoying for another",
+            "reviewing the current filter save logic i think it can be optimized to more address individual choices",
+            "today the current display is saved as a user's filter choice independent from whether he selected a specific setting or not",
+            "meaning even tcn defaults are saved as the filter of choice which it actually saving only the individual choices and not the defaults would be better",
+            "so in frank's case if a user only selects and indivual region and group the month should not be saved because no individual choice was if the same user views the calendar again in the following month the month should default to the current one while the individual region and group should be kept"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "27000",
+        "project": "TCN",
+        "summary": [
+            "allow and in password"
+        ],
+        "description": [
+            "it would be nice to have and for my password"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "26902",
+        "project": "TCN",
+        "summary": [
+            "dot allowed in password"
+        ],
+        "description": [
+            "the dot is currently not allowed as a character in the password for teampass users",
+            "could you make it possible to use the dot in passwords"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "26900",
+        "project": "TCN",
+        "summary": [
+            "overlapping tooltips"
+        ],
+        "description": [
+            "two comments daynote and absence titel are overlapping in the monthly view if the day note is more than lines",
+            "the absence titel is not readable"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "26700",
+        "project": "TCN",
+        "summary": [
+            "more than month in view like in teamcal pro"
+        ],
+        "description": [
+            "it is probably done on purpose for responsiveness reasons",
+            "however i do miss the possibility to see more than one month view at a time which was possible in teamcal this said neo is faster than pro which was the reason to switch"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "26300",
+        "project": "TCN",
+        "summary": [
+            "make daynote region mandatory"
+        ],
+        "description": [
+            "the daynote are not saved or maybe not displayed in calendar"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "26200",
+        "project": "TCN",
+        "summary": [
+            "a verification could not be found",
+            "are you sure it was registered"
+        ],
+        "description": [
+            "after registration of a user the user clicked on the link in the registration email but the account is still not verified",
+            "user get following error message error user registration a verification could not be found",
+            "are you sure it was registered"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "26101",
+        "project": "TCN",
+        "summary": [
+            "single group filter shows multiple groups"
+        ],
+        "description": [
+            "when using the monthly view there are users displayed twice because they are assigned to multiple groups",
+            "it would be nice if there were an option to disable this and only show users of the selected group without showing them again in"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "26100",
+        "project": "TCN",
+        "summary": [
+            "group absences"
+        ],
+        "description": [
+            "it would be nice for managers if they could select multiple team members and change their status for a day at once",
+            "for example if all team members are absent at one day for the same reason"
+        ],
+        "timespent": "30600",
+        "alpha": 100
+    },
+    {
+        "id": "26000",
+        "project": "TCN",
+        "summary": [
+            "breadcrumbs redirect back to previous page"
+        ],
+        "description": [
+            "request a way to get back to the view you came from after making a change eg adding an absence for a day or creating a day note",
+            "eg viewing one month click on grid add a week of on call hit save",
+            "the only option now is back to main groups then navigate back to single month",
+            "this is burdensome when changing many things for a month eg filling out on call for eg same situation as above but requires a single daynote as well as the week of on call",
+            "it would be good if absence selection interface returned you to previous view of calendar and daynote interface returned you to previous view of absence selection or provided a breadcrumb to click to do so"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "25900",
+        "project": "TCN",
+        "summary": [
+            "daynotes for multiple regions"
+        ],
+        "description": [
+            "the daynotes in monthly view are only in default region",
+            "in my own regions the daynote is not shown to the user"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "25700",
+        "project": "TCN",
+        "summary": [
+            "can not delete absence type since not visible in admin list however visible as a row for users"
+        ],
+        "description": [
+            "observation there are two rows of absence type available for users to select from day off and half day off observation these two absence types are not visible in the admin view of the absence types goal delete these two absence types thank you for your support",
+            "i loved pro but neo is so much faster",
+            "however i miss the view of more than one month but that is fine"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "25602",
+        "project": "TCN",
+        "summary": [
+            "disable tabs for admin profile"
+        ],
+        "description": [
+            "it should not be possible to change admin acocunt options on lock on hold if this is available an admin can lock himself out by accident and only a direct database manipulation can fix that",
+            "the absences tab is also not relevant for admin the admin user is not included in the calendar display",
+            "disable the account and absences tab if user profile is admin"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "25600",
+        "project": "TCN",
+        "summary": [
+            "sticky views"
+        ],
+        "description": [
+            "hi the calendar seems to be either aggressively caching or using some kind of method to remember views and months",
+            "many people have reported/questioned this to me and i have encountered it quite a bit",
+            "hard to explain but the calendar will often not default to current month we are using a lot of generic urls now eg to drop into the calendar as access is very often from bookmarks",
+            "sometimes a group is added eg this mostly works okay but sometimes gets very stubborn about the date",
+            "the calendar will often show a specific group view i requested",
+            "this can occur unless i specify a group",
+            "eg via view calendar month will give me some group i looked at recently requested and even want a single group view",
+            "i assume this is leftover from the last person that looked but it do especially when not logged in suggestions i have disabled all the apache side caching and i find anything in the teamcal neo settings to suggest this is configurable",
+            "best tiff"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "25501",
+        "project": "TCN",
+        "summary": [
+            "mobile display times out"
+        ],
+        "description": [
+            "problem when mobile display support is on the calendar view times out with larger amounts of users",
+            "reason currently tcn prepares every possible table layout needed for all the common device screen widths and then sends all of them to the clients browser",
+            "when the screen size changes the user turns the device the correct layout is already there and will adjust automatically",
+            "so several table layouts are prepared even though one is needed at a time",
+            "with a large amount of users that might quickly end up into long processing time thus it may time out",
+            "another downside is the large amount of data that has to be sent to the client",
+            "challenge tcn is a script running on the web server",
+            "it does not know what screen width the client is using",
+            "when the screen changes on client side there are two ways to serve that event all necessary html data was already prepared and sent to the client and the display adjusts right away",
+            "tcn needs to be told that the screen size has changed so it can prepare the apppropriate table layout for it and send it back to the client",
+            "assumption preparing all possible table layouts at once is convenient on client's side but also assumes that a lot of screen width changes occur there",
+            "i believe that is not the case",
+            "usually the client works with one layout only",
+            "it can be considered fairly rare that a screen width change happens",
+            "approach let the user decide what screen width he needs",
+            "offer a selection dialog for the user",
+            "that information is sent back to tcn so it can return the appropriate table layout",
+            "this is less convenient on client's side but surely quicker and more appropriate to the common use case that the screen width rarely changes during a session",
+            "save the last screen width selection in the user profile"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "25500",
+        "project": "TCN",
+        "summary": [
+            "tcp import messages"
+        ],
+        "description": [
+            "the tcp import script does not return enough information if a certain import step fails"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "25400",
+        "project": "TCN",
+        "summary": [
+            "http error"
+        ],
+        "description": [
+            "just moved over from teamcal pro to teamcal neo started importing the users and adding information in when i noticed that i get an http error when trying to do changes",
+            "is currently unable to handle this it happens when i try to edit a contact reset a password or any major functions",
+            "am i missing something on the same server as the previous and everything was setup the same as before",
+            "i cannot send emails which is my main issue to get the system working",
+            "amine"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "25203",
+        "project": "TCN",
+        "summary": [
+            "cannot create daynote"
+        ],
+        "description": [
+            "upgraded from to post upgrade daynotes cannot be created they report success but do not seem to have been saved"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "25000",
+        "project": "TCN",
+        "summary": [
+            "daynote aren't saved"
+        ],
+        "description": [
+            "the daynote are not saved",
+            "the daynote creation page message say yes"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "24700",
+        "project": "TCN",
+        "summary": [
+            "hide confidential from administrators"
+        ],
+        "description": [
+            "in most companies the administrator is a simple employee",
+            "for this reason confidential absences should also be made unrecognizable",
+            "at least he can not get it by accident",
+            "of course an admin can always access the database but here is really wanton"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "24607",
+        "project": "TCN",
+        "summary": [
+            "search reset does not work"
+        ],
+        "description": [
+            "in calendar view after a search the reset button does not reset"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "24606",
+        "project": "TCN",
+        "summary": [
+            "presence statistics does not show"
+        ],
+        "description": [
+            "the presence statics page loads but the diagram does not show"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "24605",
+        "project": "TCN",
+        "summary": [
+            "calendar view as home page"
+        ],
+        "description": [
+            "at the moment you can choose welcome page or message page to land on for default home page",
+            "is it possible to add an option to land on the default calendar view alternatively is it possible to default the calendar to current so it is not necessary to supply these in the url this requirement makes it difficult to link from elsewhere",
+            "eg link from site directory best tiff"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "24604",
+        "project": "TCN",
+        "summary": [
+            "show group description in"
+        ],
+        "description": [
+            "in the main calendar view all by group and the individual group calendar view only the team name is displayed and not the longer description i think this used to be description before is this by design or a bug rgds tiff"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "24603",
+        "project": "TCN",
+        "summary": [
+            "update to cookie consent"
+        ],
+        "description": [
+            "teamcal neo uses the cookieconsent service by silktide a new release has been published",
+            "update tcn accordingly",
+            "note",
+            "the cookie consent feature needs to be enabled in tcn via framework configuraiton system"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "24501",
+        "project": "TCN",
+        "summary": [
+            "email subject does not show configured application name"
+        ],
+        "description": [
+            "i have configured teamcal neo to be named team calender in automatically generated mails like for new user verification this name is correctly reflected in the message body at multiple locations",
+            "however the mail subject does still show teamcal neo which might be confusing for some users as they are not aware of such an application"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "24500",
+        "project": "TCN",
+        "summary": [
+            "user account verification fails"
+        ],
+        "description": [
+            "after registering a new user account the address verification email is correctly sent",
+            "however when clicking on the contained verification link the application shows an error instead of activating the account see"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "24403",
+        "project": "TCN",
+        "summary": [
+            "allow blank in firstname and lastname"
+        ],
+        "description": [
+            "allowing blank space in firstname and lastname"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "24401",
+        "project": "TCN",
+        "summary": [
+            "access not allowed"
+        ],
+        "description": [
+            "many menus return access not allowed when logged in as admin any idea wher to start troubleshooting if i login as admin i can access some parts of application but not all database maintenance works fine while system log and php inofo return access not allowed and i have to login"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "24205",
+        "project": "TCN",
+        "summary": [
+            "three column footer"
+        ],
+        "description": [
+            "the footer has four columns",
+            "when entering a longer company name for the top left column a line break occurs which does not look that nice",
+            "i suggest to combine the second and third column into one",
+            "they only contain links to pages",
+            "they could just be in one column",
+            "that would make each one of the three a little wider"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "24204",
+        "project": "TCN",
+        "summary": [
+            "caching issues behind proxy"
+        ],
+        "description": [
+            "when running tcn through a proxy there seems to be a caching issue",
+            "cached information does not seem to expire even though it was changed in tcn",
+            "the caching instructions in the htaccess file coming with tcn might be causing that"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "24203",
+        "project": "TCN",
+        "summary": [
+            "code maintenance constants"
+        ],
+        "description": [
+            "many variables of the conf array are used globally and never changed",
+            "those should rather be constants for performance and security reasons"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "24202",
+        "project": "TCN",
+        "summary": [
+            "version compare"
+        ],
+        "description": [
+            "a version compare between the running version and the newest one would be nice",
+            "this information could be placed on the about page next to the version number",
+            "versioning is done as follows",
+            "example major version minor version patch version an information button should be shown if either the major version has changed or a newer version is available"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "24201",
+        "project": "TCN",
+        "summary": [
+            "month and year in select absence period are not readable"
+        ],
+        "description": [
+            "the month and year in the datepicker are not readable by someone with bad eyes",
+            "ps add screenshot because of jira error jira could not attach the file as there was a missing token",
+            "please try attaching the file again"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "24105",
+        "project": "TCN",
+        "summary": [
+            "jump to specific"
+        ],
+        "description": [
+            "hi it should be possible to jump to a date without changing the url manually",
+            "currently it is only possible by jumping month by month with the arrow buttons",
+            "thanks in advance",
+            "best regards tino schneider"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "24104",
+        "project": "TCN",
+        "summary": [
+            "remember calendar filters"
+        ],
+        "description": [
+            "hello please extend teamcal neo for the following feature",
+            "it should be possible to save the selected filter as default for the current user",
+            "for example i would like to set a filter for my team and region but it switch back after reload page",
+            "thanks in advance",
+            "best regards tino schneider"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "24001",
+        "project": "TCN",
+        "summary": [
+            "do we get a bill on the company name"
+        ],
+        "description": [
+            "hi we are interested in your product but we need a bill with our company name and address",
+            "is it possible thanks in advance",
+            "best regards tino schneider"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "23900",
+        "project": "TCN",
+        "summary": [
+            "ldap password length"
+        ],
+        "description": [
+            "hallo georg ein nutzer von mir hat ein passwort mit einer lnge von zeichen",
+            "unser ldap ist an das system angebunden",
+            "bei anderen applikationen funktioniert dies aus",
+            "bei teamcal neo nicht",
+            "gibt es in dem feld eine lngenbeschrnkung gru ben one of my users has a password with characters",
+            "we are using ldap authentication",
+            "while this password works fine in other applications it does not in teamcal neo",
+            "is there any length restriction active"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "23800",
+        "project": "TCN",
+        "summary": [
+            "region transfer error"
+        ],
+        "description": [
+            "hi george sorry for the late to much work when i tried to copy a region to a only readyble region there is an error warning invalid argument supplied for foreach in on line"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "23704",
+        "project": "TCN",
+        "summary": [
+            "ical import causes white page"
+        ],
+        "description": [
+            "i try to import the holidays from and get a white page",
+            "when i refresh the site the import is not successfully done",
+            "no error is in the log file of"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "23703",
+        "project": "TCN",
+        "summary": [
+            "create region button not working"
+        ],
+        "description": [
+            "nothing happens while pressing the create region button"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "23702",
+        "project": "TCN",
+        "summary": [
+            "make show selected month"
+        ],
+        "description": [
+            "in the calendarview month you can start a one click edit of the month for a person",
+            "but the edit view jumps back to the current month and does not keep the selected one",
+            "i do not know whether this is a bug or not so i selected improvement"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "23701",
+        "project": "TCN",
+        "summary": [
+            "daynote color is not changing"
+        ],
+        "description": [
+            "the daynote color in the corner of a day is not changing to anything but blue",
+            "the popup balloon changes color as expected"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "23601",
+        "project": "TCN",
+        "summary": [
+            "synchronize button sequence on list pages"
+        ],
+        "description": [
+            "the sequence of the edit and delete buttons on list pages should be consistent",
+            "delete button most left"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "23600",
+        "project": "TCN",
+        "summary": [
+            "add placeholder option to text form elements"
+        ],
+        "description": [
+            "change form function to accept placeholders for text fields"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "23501",
+        "project": "TCN",
+        "summary": [
+            "mysql compatibility"
+        ],
+        "description": [
+            "i am using teamcal neo with php and mysql it works fine in general but some user record operations do not seem to make it to the database create new user password change last login date"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "23500",
+        "project": "TCN",
+        "summary": [
+            "absences incorrectly shown as confidential"
+        ],
+        "description": [
+            "my own ansence is not shown with the type",
+            "but i see the ansence of other users by type"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "23401",
+        "project": "TCN",
+        "summary": [
+            "declination overview tab"
+        ],
+        "description": [
+            "on the declination page it would be nice if the first tab showed a overview of all declination rules indicating their status inactive active scheduled and expired"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "23301",
+        "project": "TCN",
+        "summary": [
+            "hide user in calendar"
+        ],
+        "description": [
+            "hi tcpro had the ability to hide user in calendar which was very useful for us",
+            "the user remained in the relevant database tables and user groups but was not visible on the screen",
+            "this allowed us to continue to calculate stats for the user for the past",
+            "eg no longer on call but still calculated for group shifts in last six this seems to have been replaced by the archive functionality which breaks all the links between user and group",
+            "is it possible to have the do not show stealth mode back a different purpose than archiving",
+            "best tiff"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "23300",
+        "project": "TCN",
+        "summary": [
+            "cannot log in"
+        ],
+        "description": [
+            "i am trying to test the new version so i can confirm issues closed but after installation no problems all menus on index page just direct to thanks tiff"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "23202",
+        "project": "TCN",
+        "summary": [
+            "provide current year only option"
+        ],
+        "description": [
+            "we run our calendar specifically for a single year in our case jan dec",
+            "it would be a really nice feature if you could set a custom view for users so that they can only see the specified",
+            "for example we don't want them to be able to look back to the previous year or look forward into the next year until we allow them",
+            "in tc pro they can pick dec and choose months",
+            "that will then show them december of the current year and then months into next year which we don't want them to be able to do",
+            "what we'd like to achieve is them logging in and seeing months for their group from january through to december or whatever custom period is"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "23201",
+        "project": "TCN",
+        "summary": [
+            "custom warnings for declinations"
+        ],
+        "description": [
+            "the ability to change error messages for declinations would be nice which is stored in the database instead of being as every time we upgrade the software those changes are overwritten"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "23200",
+        "project": "TCN",
+        "summary": [
+            "automatic enabling/disabling of declination rules"
+        ],
+        "description": [
+            "as an organisation we open our calendar for staff to start requesting absences for the new year in november",
+            "we set a date eg monday nov and the absences can be requested from this period if a conflict ie people request the same then we authorise it on a first come first serve basis",
+            "the downside is we have to manually open the calendar at on sunday evening",
+            "which means waiting up until then remembering to do it and also relying on doing it properly to open it we simply remove the declination period this would be set to decline all requests from by removing this declination period they can then start to request absences",
+            "what would be great is a feature in the declination management that says something like remove this declination automatically or something similar",
+            "that way we could set up all absence requests to be declined from january but this declination would automatically be removed on sunday november at or whatever at which point it would no longer decline their request"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "23003",
+        "project": "TCN",
+        "summary": [
+            "remove google font kaushian"
+        ],
+        "description": [
+            "the google font kaushian is only used in the banner",
+            "the banner can be activated or not however the google font is always loaded which needs an internet connection and causes traffic",
+            "there is no need for an external font",
+            "remove it",
+            "remove loading from header remove font style from banner style"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "23002",
+        "project": "TCN",
+        "summary": [
+            "update to"
+        ],
+        "description": [
+            "the jquery replacement for select boxes"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "23001",
+        "project": "TCN",
+        "summary": [
+            "update to magnific popup"
+        ],
+        "description": [
+            "magnific popup is a responsive lightbox dialog script"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "22900",
+        "project": "TCN",
+        "summary": [
+            "update to jquery and bootstrap"
+        ],
+        "description": [
+            "updaing bootsrap also requires updating the bootswatch themes"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "22704",
+        "project": "TCN",
+        "summary": [
+            "fatal error on login lock"
+        ],
+        "description": [
+            "hi george when a user fail to many logins the system will lock the user for grace period of time",
+            "here happens a fatal error because the method setstatus available in see screenshot",
+            "regards patrick"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "22703",
+        "project": "TCN",
+        "summary": [
+            "utf vs"
+        ],
+        "description": [
+            "hi as spanish guy we have in our language simbols as and teamcal pro seems not to support",
+            "what changes i have to do to display correct codes"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "22702",
+        "project": "TCN",
+        "summary": [
+            "uploading files with multiple dots fails"
+        ],
+        "description": [
+            "hi george when i uploading an file with multiple dots in the filename the upload fails",
+            "i have found the error in useredit.php in line split the filename in pieces to determine the file extension",
+            "please can you fix this issue instead of explode you can use to find the last dot in the filename",
+            "regards patrick"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "22701",
+        "project": "TCN",
+        "summary": [
+            "ignores https"
+        ],
+        "description": [
+            "hi george the url behind the teamcal logo points always to a instead of an when surfing with https",
+            "please can you fix that regards patrick"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "22605",
+        "project": "TCN",
+        "summary": [
+            "guest membership show in groups"
+        ],
+        "description": [
+            "hi in tcpro we were able to assign users to a single group but have them appear as part of a larger metagroup which was convenient for management",
+            "is this ability still possible under the new structures and if so can we please have it again best t"
+        ],
+        "timespent": "10200",
+        "alpha": 100
+    },
+    {
+        "id": "22604",
+        "project": "TCN",
+        "summary": [
+            "hide region button"
+        ],
+        "description": [
+            "hi is it possible to make the reference to button for region go away if not being used best t"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "22603",
+        "project": "TCN",
+        "summary": [
+            "single group view does not stick"
+        ],
+        "description": [
+            "hi if you choose the single group view and then hit for the next month all groups are displayed again",
+            "best t"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "22602",
+        "project": "TCN",
+        "summary": [
+            "single group multiple month"
+        ],
+        "description": [
+            "hi for the purposes of rota planning it is often necessary to look at several months at once",
+            "can this be made possible in tcneo would need the view cleanup as a best t"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "22601",
+        "project": "TCN",
+        "summary": [
+            "no direct link to single group view"
+        ],
+        "description": [
+            "hi tcpro allowed a link directly to a single group view",
+            "can this be done in tcneo best t"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "22600",
+        "project": "TCN",
+        "summary": [
+            "view single group"
+        ],
+        "description": [
+            "hi when selecting a single group to view on the calendar view page you still get all the headers from the other groups",
+            "best t"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "22500",
+        "project": "TCN",
+        "summary": [
+            "unable to raise licence request"
+        ],
+        "description": [
+            "i am trying to follow the instructions as per the example but teamcal neo licences is not available to me as a project",
+            "how to proceed best tiff"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "22409",
+        "project": "TCN",
+        "summary": [
+            "repeat header"
+        ],
+        "description": [
+            "hi the calendar parameter number of users per page is ignored",
+            "when i set the value to the month calender shows all users and ignoring this value",
+            "regards patrick"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "22408",
+        "project": "TCN",
+        "summary": [
+            "login not possible if webserver running on port"
+        ],
+        "description": [
+            "hi if the webserver runs on a different port than or than the login possible",
+            "the reason is the setcookie command during the login",
+            "the cookie is written to the host included the port this is wrong and php fetch the cookie after the login",
+            "replace with to solve the problem",
+            "regards patrick"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "22407",
+        "project": "TCN",
+        "summary": [
+            "calendar paging"
+        ],
+        "description": [
+            "hi the calendar parameter number of users per page is ignored",
+            "when i set the value to the month calender shows all users and ignoring this value",
+            "regards patrick"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "22404",
+        "project": "TCN",
+        "summary": [
+            "make absence type icon optional"
+        ],
+        "description": [
+            "hi george ok i understand",
+            "however our strong preference is to have a plain letter and not the pictogram style font icon is there a way to do that thanks tiff"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "22402",
+        "project": "TCN",
+        "summary": [
+            "make tooltip absence count optional"
+        ],
+        "description": [
+            "in the calendar view if you hover over an absence a tooltip comes up showing what sort it is",
+            "this is fine but there is also what appears to be a count eg on call for that user for the month",
+            "is there a way to turn that off thanks"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "22401",
+        "project": "TCN",
+        "summary": [
+            "absence type with no icon does not show symbol"
+        ],
+        "description": [
+            "on importing a bunch of absence types from a teamcal pro database they all came up with a icon",
+            "none of them had icons in the old database",
+            "it seems there is no way to choose no icon via the ui even though there is a setting for which symbol to use if you want an icon",
+            "i created a new absence type as a test and they start life with no icon so i went and compared in the database and updated to set my old absence types to no in the icon field as the new type this seemed to unset the icon ok",
+            "however in the calendar view neither the old nor the new absence types display the designated symbol"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "22400",
+        "project": "TCN",
+        "summary": [
+            "all by group display"
+        ],
+        "description": [
+            "when i select admin calendar options settings default group filter all by group it does not make any difference to the calendar display which still shows all users ungrouped",
+            "is there somewhere else i should set this too"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "22300",
+        "project": "TCN",
+        "summary": [
+            "problems importing from tcpro"
+        ],
+        "description": [
+            "hi i am trying to import from tcpro to a new tcneo database using the database import tool",
+            "this is as part of an overall upgrade for an intranet site",
+            "the connectivity test works fine",
+            "i choose replace all which by the way does not select sometimes i choose to replace daynotes sometimes not it seem to affect the outcome",
+            "i get the following errors the import seems to partially work if i look at the calendar it has imported the users absence types and groups",
+            "it does not import any of the links between those things eg group membership user calendars",
+            "except the daynotes which ironically do come over ok if selected",
+            "the sample users are removed but the sample groups still exist",
+            "there also seems to be a null user i am using a dev xampp stack on windows apache mariadb php if i try the same operation on my old dev stack easyphp which has php apache mysql i get the same result",
+            "looking forward to any suggestions thanks tiff"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "22200",
+        "project": "TCN",
+        "summary": [
+            "truncation of single email addresses"
+        ],
+        "description": [
+            "when selecting single users in message edit the email address is truncated at the end",
+            "this results in not sending the mail"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "21904",
+        "project": "TCN",
+        "summary": [
+            "unable to create users"
+        ],
+        "description": [
+            "hi i've recently installed you tc neo program on a new server for testing before roll out",
+            "it looks really good and liking the new look and features",
+            "i am however having an issue creating users it refused to actually create the user",
+            "the logs think it has created the user but no joy unfortuantely",
+            "this is installed on server iis with php can you advise on where i may be going wrong regards darren"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "21705",
+        "project": "TCN",
+        "summary": [
+            "view only regions"
+        ],
+        "description": [
+            "i have another idea a user can make wishes for abscense types for one month prospective for the next weeks for example a manager can then determine i think it would be a nice then close the month to a definitely no more changes are possible only by the manager"
+        ],
+        "timespent": "11700",
+        "alpha": 100
+    },
+    {
+        "id": "21702",
+        "project": "TCN",
+        "summary": [
+            "option to switch off robot indexing"
+        ],
+        "description": [
+            "search engine robots will currently index and follow links of an internet tcn instance",
+            "this might not be desired",
+            "offer an option to instruct robots not to index and follow the site"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "21601",
+        "project": "TCN",
+        "summary": [
+            "show total taken per month per absence type"
+        ],
+        "description": [
+            "sorry its me again what about display the numer of specific types maybe to choose which right after each row of the users",
+            "example the manager would like to see the total of days at home of one user because other should have the same number of one summary of work at the weekend nighshift or so i think this could be a nice feature"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "21504",
+        "project": "TCN",
+        "summary": [
+            "first day of week not reflected in week number display"
+        ],
+        "description": [
+            "setting the first day of week to sunday in the calendar option does not reflect in the week number display drawing a vertical bar before sunday and putting the week number into the sunday cell"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "21503",
+        "project": "TCN",
+        "summary": [
+            "removing group members"
+        ],
+        "description": [
+            "its me again i cannot change group members in the admin interface when selected the members of one group marked blue in can uncheck members but after update the changes were not same members marked blue in the checkbox",
+            "pw"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "21502",
+        "project": "TCN",
+        "summary": [
+            "user administration only with password"
+        ],
+        "description": [
+            "when i have to change some user profile as admin i get an error when not adding the password",
+            "an admin should change a user profile without password"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "21501",
+        "project": "TCN",
+        "summary": [
+            "absence types"
+        ],
+        "description": [
+            "you see i am now testing the runnig system problem when i have an absence type marked with checking this box defines that this absence type is only available to directors and managers",
+            "normal users still can change this type"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "21500",
+        "project": "TCN",
+        "summary": [
+            "allowance periods"
+        ],
+        "description": [
+            "good morning george may be it is possible to add a new allowance type for absence types the calendar will count these types per year and show them in the statitsic as well",
+            "there might be types work at home day which are per month maybe per week",
+            "it would be great if the admin can choose if for example a user can make three wishes for work at home per but not more"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "21402",
+        "project": "TCN",
+        "summary": [
+            "easier and more flexible social icons"
+        ],
+        "description": [
+            "currently tcn support five hard coded social link icons in the footer namely facebook google linkedin twitter and xing",
+            "user might have different targets they want to promote bitbucket github tumblr etc",
+            "find an easier more flexible way to add social links"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "21401",
+        "project": "TCN",
+        "summary": [
+            "update to fontawesome"
+        ],
+        "description": [
+            "tcn currently uses fa update to"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "21400",
+        "project": "TCN",
+        "summary": [
+            "language error at login"
+        ],
+        "description": [
+            "i just installed the tc neo",
+            "no problems when accessing the project with the admin account installation with sample after a few configurations i deleted the sample users and made new ones",
+            "then tried to login with one new user and the following error occours warning failed to open stream no such file or directory in on line fatal error failed opening required in on line when retuning to the login page and login as admin again there is no error"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "21308",
+        "project": "TCN",
+        "summary": [
+            "bug in german language file for profile password"
+        ],
+        "description": [
+            "the user profile dialog throws an error due to a bug in the german language file"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "21307",
+        "project": "TCN",
+        "summary": [
+            "user custom fields"
+        ],
+        "description": [
+            "user profile custom fields are prepared in the framework configuration where thay can be given titles",
+            "however the custom fields are not accessible on the user profile page"
+        ],
+        "timespent": "2400",
+        "alpha": 100
+    },
+    {
+        "id": "21306",
+        "project": "TCN",
+        "summary": [
+            "social network icons in the footer"
+        ],
+        "description": [
+            "the footer is a good place to display social networking icons",
+            "this feature each link should be configurable in the framework",
+            "the most popular networks should be offered facebook google plus linkedin twitter xing"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "21303",
+        "project": "TCN",
+        "summary": [
+            "international letters is not allowed in lastname or first name"
+        ],
+        "description": [
+            "international letters is not allowed in lastname or first name",
+            "at least not swedish letters ex"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "21205",
+        "project": "TCN",
+        "summary": [
+            "add voting link to help menu and about page"
+        ],
+        "description": [
+            "let others know about tcn",
+            "the voting feature on lewe.com is a convenient way to cast a add a link to the voting page in the help menu and on the about page"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "21204",
+        "project": "TCN",
+        "summary": [
+            "language error on registration page"
+        ],
+        "description": [
+            "when launching the register page a language error is displayed",
+            "the password strength description is not displayed"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "21203",
+        "project": "TCN",
+        "summary": [
+            "link to the user manual from the help menu"
+        ],
+        "description": [
+            "the user manual is very helpful",
+            "it should be linked to from the help menu"
+        ],
+        "timespent": "300",
+        "alpha": 100
+    },
+    {
+        "id": "21202",
+        "project": "TCN",
+        "summary": [
+            "add tooltip to alert message close icon"
+        ],
+        "description": [
+            "just a little thing",
+            "the alert messages show a close button in the upper right corner",
+            "it would a little improvement to add a tooltip to them saying what they do"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "21201",
+        "project": "TCN",
+        "summary": [
+            "add a quick start guide to the manual"
+        ],
+        "description": [
+            "the documentaton is great but very functional",
+            "regular users the impatient ones would probably appreciate a quick start guide covering things like how to view the events of my team how to add a new event"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "21200",
+        "project": "TCN",
+        "summary": [
+            "absence filter to only show the selected absence type"
+        ],
+        "description": [
+            "view calendar month i filteres all day the filtering works and it shows only the users who have a day off somewhere in their calendar for the given month",
+            "but all other absences are also shown",
+            "i however expected that only the day off event type will be displayed",
+            "maybe the other absence can just be indicated by a gray color of the cell and a tool tip"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "21100",
+        "project": "TCN",
+        "summary": [
+            "absence approval mails not sent"
+        ],
+        "description": [
+            "after marking an absence type with approval required it is still accepted for regular users",
+            "no message is shown that an approval is required and no mails are sent to the managers"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "20900",
+        "project": "TCN",
+        "summary": [
+            "personal notes for date range"
+        ],
+        "description": [
+            "as we can do with the absences taking a absence type through a date range to avoid to make individuals inputs to a recurrent absence will be great to make the same with notes",
+            "by exemple you have a congress on a whole week and you want to put on your personal notes for this week star wars fan meeting but to write or use on every day",
+            "as we can do with absences will be a good improvement the posibility of copy notes from date x to date y",
+            "what do you think"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "20800",
+        "project": "TCN",
+        "summary": [
+            "calendar months visibility"
+        ],
+        "description": [
+            "although i select see three six or twelve month on calendar display even displays only one current month"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "20606",
+        "project": "TCN",
+        "summary": [
+            "create tcn release notes from jira version release notes"
+        ],
+        "description": [
+            "release notes can be created from jira",
+            "do that and make available on about page"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "20603",
+        "project": "TCN",
+        "summary": [
+            "release notes"
+        ],
+        "description": [
+            "date bugfixes fixes to the installation script fixed missing avatar file check fixed bootstrap submenu behaviour changes new features file upload managed/visibility by release candidate date bugfixes some links on the about page did not work anymore changes new features license and documentation added cookie consent by silktide date bugfixes database cleanup had a bug changes new features daynote import date bugfixes user verify code had to be cleared when the user is unverfied by admin installation script check corrected changing the avatar reloads the page to show it default registration role is user profile avatar file was named after logged in user not after profile user changes unique field for password fields on useredit page new features user activation email user notification settings new language entry daynote feature database cleanup feature date bugfixes changes new features logout date bugfixes changes new features securimage confirmation on registration page date bugfixes view calendar by absence type does not show any entry changes new features date bugfixes logout cookie handling user manual link now put into help menu minor bugfixes changes code maintenance footer links made language compatible less controller colors primary for display danger for edit update to jquery and jquery ui update font awesome to new features beta release date bugfixes transparent background was not shown in absence type list fixed buttons of monthedit phpinfo page error file upload page error unique indexes in database changes new features added month short names for year calendar database reset teamcal pro update script on group edit page add role color ro role list allowances are now based on one field carryover allowance tab on user edit page date bugfixes showusericons and showavatars now apply to calendar display fixed buttons of year calendar view fixed view calendar permissions fixed edit calendar permissions indexes and info in sample.sql changes removed searchuser option from calendar display",
+            "always present now",
+            "moved showavatars and showroleicons from framework to application configuration permission reset will apply default scheme settings new features absence summary page installation script summary section direct link from calendar view to calendar edit direct link from profile view to profile edit date bugfixes absence statistics presence statistics changes separated framework from application helpers separated framework from application language removed menu builder",
+            "all done in the view now",
+            "new coding standards registration email templates new features verify controller file upload homepage text now editable with ckeditor link to database administration absence type statistics remainder statistics footer copyright auto year sample database sql file empty database sql file date john lennon killed years ago bugfixes fixed user selected theme settings fixed year controller permission check changes forum and tracker added to about page speed optimizations added navbar invers option updated to font awesome updated ckeditor to moved statistic settings to calendar options controller new features date bugfixes controller permissions bootstrap/jquery modal patch colorpicker modal patch changes config paramater statsscale new features presence statistics date bugfixes changes config files split new features absence statistics date bugfixes period input in calendar recurring input in calendar changes code optimizations new features transparent absence background declination check added chart.js addon plus horizontalbar plugin basic statistics page absence approval function date bugfixes changes complete rebuilt of models",
+            "now named class.php replaced class instance check with global php autoloader",
+            "introduced controller array",
+            "introduced controller-based and permissions",
+            "rebuilt database streamlined code global modal dialog restructured menu removed status bar announcements now called messages mobile support now optional unlimited roles role based permissions introduced iconshock user icons switch to fontawesome icons instead of glyphicons merged config files into two added releaseinfo to about page separation between application configuration and calendar configuration sample sql file new features date bugfixes changes new features edit calendar phase date bugfixes changes new features year calendar public alpha date bugfixes changes new features year calendar date bugfixes changes new features responsive month table ii date bugfixes changes new features responsiv"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "20602",
+        "project": "TCN",
+        "summary": [
+            "rename file upload to attachments"
+        ],
+        "description": [
+            "in relation to file uploads are now available to users if the admin allows it",
+            "a more common name for it is attachments rename controller menu items etc",
+            "accordingly",
+            "also move item to the edit menu because it is not a sole admin feature anymore"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "19900",
+        "project": "TCN",
+        "summary": [
+            "file upload managed/visibility by"
+        ],
+        "description": [
+            "documents uploaded should be managed by exemple a group manager wants to share a absence policy to his own group but not to be shared to any others",
+            "or a user wants to upload a file to be viewed only by his manager and him"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "19501",
+        "project": "TCN",
+        "summary": [
+            "daynote import from teamcal pro"
+        ],
+        "description": [
+            "the tcp import script does not include the daynotes yet"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "19500",
+        "project": "TCN",
+        "summary": [
+            "database cleanup feature"
+        ],
+        "description": [
+            "a cleanup feature offering deletion of daynotes month templates and user templates of the past would be a welcom feature"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "19400",
+        "project": "TCN",
+        "summary": [
+            "daynote feature"
+        ],
+        "description": [
+            "the daynote feature is very useful and popular",
+            "should also be in tcn"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "19207",
+        "project": "TCN",
+        "summary": [
+            "user notifications"
+        ],
+        "description": [
+            "user can already subscribe to user group and role event notifications based on the framework",
+            "calendar events need to be added"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "19002",
+        "project": "TCN",
+        "summary": [
+            "securimage confirmation on registration page"
+        ],
+        "description": [
+            "registration should be secured by a securimage confirmation"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "19000",
+        "project": "TCN",
+        "summary": [
+            "view calendar by absence type does not show any entry"
+        ],
+        "description": [
+            "the filter button absence type in the calendar view should filter by absence type",
+            "selecting an absence type shows no rows even though they should"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "18912",
+        "project": "TCN",
+        "summary": [
+            "unique indixes in database"
+        ],
+        "description": [
+            "unique indexes are missing in several table thus allowing duplicate entries where it should not be"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "18901",
+        "project": "TCN",
+        "summary": [
+            "file upload page error"
+        ],
+        "description": [
+            "file upload page throws error"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18900",
+        "project": "TCN",
+        "summary": [
+            "phpinfo page error"
+        ],
+        "description": [
+            "php info menu throws error"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "18802",
+        "project": "TCN",
+        "summary": [
+            "add role color icon to role list"
+        ],
+        "description": [
+            "it would be nice to see the role color in the role list by a colored user icon"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "18801",
+        "project": "TCN",
+        "summary": [
+            "show memberlist tab on the group edit page"
+        ],
+        "description": [
+            "show the members of the group on the group edit page",
+            "an extra tab would do"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "18800",
+        "project": "TCN",
+        "summary": [
+            "allowance tab on user edit page"
+        ],
+        "description": [
+            "allowance ber absence type needs to be configurable for each user",
+            "the table already exists",
+            "a tab is needed on the user edit page",
+            "the tab should also contain a button to link to the absum page of the user",
+            "idea currently allowances are set for lastyear and curryear",
+            "maybe one record per should be used",
+            "in that case the teamcal pro import needs to be adjusted as well"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "18700",
+        "project": "TCN",
+        "summary": [
+            "database reset"
+        ],
+        "description": [
+            "importing an sql file overwriting the database reset would load the sample or empty database seems to be useful",
+            "preferably as a tab on the databae administration page"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "18002",
+        "project": "TCN",
+        "summary": [
+            "direct link from profile view to profile edit"
+        ],
+        "description": [
+            "when viewing a user profile and the logged in user is permitted to edit that profile an edit button shall be available to go there directly"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18001",
+        "project": "TCN",
+        "summary": [
+            "direct link from calendar view to calendar edit"
+        ],
+        "description": [
+            "teamcal pro showed an icon next to the username that was linked to the calendar edit of the corresponding user",
+            "in teamcal neo i would like to keep the name field as empty as possible to support a better responsive ux",
+            "must think of something"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18000",
+        "project": "TCN",
+        "summary": [
+            "summary section"
+        ],
+        "description": [
+            "add the summary section at the bottom of the calendar"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "17806",
+        "project": "TCN",
+        "summary": [
+            "database administration"
+        ],
+        "description": [
+            "it seems useful to provide this feature as in tcp"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "17805",
+        "project": "TCN",
+        "summary": [
+            "teamcal pro update script"
+        ],
+        "description": [
+            "create an update script from teamcal pro teamcal neo analyze first",
+            "tcn is redone from scratch and might not support such update"
+        ],
+        "timespent": "108000",
+        "alpha": 100
+    },
+    {
+        "id": "17804",
+        "project": "TCN",
+        "summary": [
+            "installation script"
+        ],
+        "description": [
+            "create an installation script for new installations"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "17803",
+        "project": "TCN",
+        "summary": [
+            "remainder statistics"
+        ],
+        "description": [
+            "create remainder statistics page global report per user report"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "17802",
+        "project": "TCN",
+        "summary": [
+            "absence type statistics"
+        ],
+        "description": [
+            "create absence type statistics page"
+        ],
+        "timespent": "39600",
+        "alpha": 100
+    },
+    {
+        "id": "17801",
+        "project": "TCN",
+        "summary": [
+            "presence statistics"
+        ],
+        "description": [
+            "create presence statistics page"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "17800",
+        "project": "TCN",
+        "summary": [
+            "absence statistics"
+        ],
+        "description": [
+            "create absence statistics page"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "17703",
+        "project": "TCN",
+        "summary": [
+            "statistics"
+        ],
+        "description": [
+            "the statistics needs to be implemented",
+            "module option chart.js parent issue absences statistics presence statistics absence type statistics remainder statistics"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "17702",
+        "project": "TCN",
+        "summary": [
+            "absence summary page"
+        ],
+        "description": [
+            "the summary section in the view calendar page needs to be implemented",
+            "the section can be switched in the calendar config"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "14802",
+        "project": "TCN",
+        "summary": [
+            "approval function"
+        ],
+        "description": [
+            "the requested absences need to be checked against all configured constraints",
+            "this should be done in a dedicated function into which the username and the requested absences are passed",
+            "return should be the accepted and declined absences in order to react to thos further"
+        ],
+        "timespent": "46800",
+        "alpha": 100
+    },
+    {
+        "id": "14705",
+        "project": "TCN",
+        "summary": [
+            "sort configuration options alphabetically"
+        ],
+        "description": [
+            "even tho organized in tabs the administrative options are many",
+            "it would help browsing them if they were sorted alphabetically based on core language"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "14704",
+        "project": "TCN",
+        "summary": [
+            "make show alerts configurable"
+        ],
+        "description": [
+            "teamcal neo produces success warning and danger messages after performing actions",
+            "these messages are shown below the menu when the script returns",
+            "these message boxes can be closed but maybe annnoying",
+            "an improvement would be to make the display of these messages configurable in the administration"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "14103",
+        "project": "TCN",
+        "summary": [
+            "recurring input in edit calendar"
+        ],
+        "description": [
+            "add option to enter recurring input in editcal"
+        ],
+        "timespent": "17100",
+        "alpha": 100
+    },
+    {
+        "id": "14102",
+        "project": "TCN",
+        "summary": [
+            "period input in edit calendar"
+        ],
+        "description": [
+            "add option to enter a period input in editcalendar"
+        ],
+        "timespent": "17100",
+        "alpha": 100
+    },
+    {
+        "id": "27833",
+        "project": "JAM",
+        "summary": [
+            "not all groups are fetched from jira"
+        ],
+        "description": [
+            "the jira groups view lists groups but there are groups in trackspace actually"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "27759",
+        "project": "JAM",
+        "summary": [
+            "no last load date for empty groups"
+        ],
+        "description": [
+            "view jira groups if the members of a group are loaded the members button on the right column gets green and a tooltip displays the date of the last load",
+            "this doesn't work for an empty group although loaded the button stays black and the tooltip says last load from jira never which is wrong if you check the page jira group members for that group"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "27756",
+        "project": "JAM",
+        "summary": [
+            "jira groups instant member load"
+        ],
+        "description": [
+            "as there are many jira groups in the system it is tedious to go through them one by one to update the group members",
+            "thus i like to request a bulk update similar to the one we have already to update the project details jira projects get projects details where you can select the projects to be updated",
+            "i suggest to call the button get group members if clicked the user gets the list of all groups and can select one or several groups multi select all by checking the mark select all"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27737",
+        "project": "JAM",
+        "summary": [
+            "confluence spaces sorting incorrect"
+        ],
+        "description": [
+            "confluence spaces open the view confluence spaces and click the column name to have the list of spaces sorted by name",
+            "first entry reads madarasi bela confluence"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27736",
+        "project": "JAM",
+        "summary": [
+            "jira group members"
+        ],
+        "description": [
+            "view jira groups add a button per group that opens a page with all group members",
+            "allow to have active inactive users listed filtered",
+            "rest api"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "27730",
+        "project": "JAM",
+        "summary": [
+            "confluence rest console"
+        ],
+        "description": [
+            "provide a page where basic rest calls can be sent to a confluence host and display the response as plain text"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "27729",
+        "project": "JAM",
+        "summary": [
+            "jira rest console"
+        ],
+        "description": [
+            "provide a page where basic rest calls can be sent to a jira host and display the response as plain text"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "27728",
+        "project": "JAM",
+        "summary": [
+            "blank page if project key doesn't exist"
+        ],
+        "description": [
+            "if i enter a project key that exist in the search field of the project view and click search key i get a blank page"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27724",
+        "project": "JAM",
+        "summary": [
+            "add confluence space view"
+        ],
+        "description": [
+            "similar to the jira projects view add a confluence spaces view with columns name key id categoy expanding metadata.labels and displaying name type global personal status current archived action actors just for preparation leave the button with no action you need the confluence rest api extension to get this data rest api dokumentation"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "27723",
+        "project": "JAM",
+        "summary": [
+            "add project type to project list"
+        ],
+        "description": [
+            "please add the trackspace project type software business as a separate column to the project view"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "27717",
+        "project": "JAM",
+        "summary": [
+            "update to font awesome"
+        ],
+        "description": [
+            "the new release of font awesome now has a jira and conflucence icon",
+            "reason enough to"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "27715",
+        "project": "JAM",
+        "summary": [
+            "new view jira project categories"
+        ],
+        "description": [
+            "add a new view under view jira projects called project categories that lists the project categories with the number of projects in each category",
+            "if a category is clicked open the view jira projects with filter for that category"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "27714",
+        "project": "JAM",
+        "summary": [
+            "duplicate fields"
+        ],
+        "description": [
+            "on the jira fields page it would be helpful to show a tab with duplicate fields in name and type",
+            "these fields are candidates to merge"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "27713",
+        "project": "JAM",
+        "summary": [
+            "get project details"
+        ],
+        "description": [
+            "affected jira project view clicking the get project leads button allows the user to retrieve actors of the selected projects optionally",
+            "same should be possible with components issuetypes and versions user filters the list of projects then he clicks a button with which he can retrieve either actors components issuetypes or versions or any combination for the filtered list of projects"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "27705",
+        "project": "JAM",
+        "summary": [
+            "project view total records not calculated correctly"
+        ],
+        "description": [
+            "if i open the project view and filter for some projects the number of records in the upper right corner right of the date always show the number of found records but the number of total available records in some cases",
+            "for example enter lif and click search key number of total records shows in the column category click ondemand lgbs production to filter the project number of total records still shows x enter ondemand lgbs production and click search category number of total records shows"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "27704",
+        "project": "JAM",
+        "summary": [
+            "add controller help"
+        ],
+        "description": [
+            "each controller page is documented",
+            "add a help icon to each page panel header that links to it"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "27703",
+        "project": "JAM",
+        "summary": [
+            "add roles to jira monitor"
+        ],
+        "description": [
+            "add roles to jira monitor"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "27702",
+        "project": "JAM",
+        "summary": [
+            "add permission schemes to jira monitor"
+        ],
+        "description": [
+            "add permission schemes to jira monitor"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27701",
+        "project": "JAM",
+        "summary": [
+            "add priorities to jira monitor"
+        ],
+        "description": [
+            "add jira priorities to the jira monitor"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "27700",
+        "project": "JAM",
+        "summary": [
+            "ugrade jam documentation"
+        ],
+        "description": [
+            "the jam documentation layout is somewhat outdated",
+            "give it an"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "27699",
+        "project": "JAM",
+        "summary": [
+            "permission schemes"
+        ],
+        "description": [
+            "add page for permission schemes"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "27695",
+        "project": "JAM",
+        "summary": [
+            "empty project lead search"
+        ],
+        "description": [
+            "it was possible to search for projects with empty project leads previously by leaving the search field empty and just clicking the search project lead button",
+            "it work any longer no filter is applied at all i just get the complete list of projects"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "27681",
+        "project": "JAM",
+        "summary": [
+            "add view for link types"
+        ],
+        "description": [
+            "please add a view that shows the available issue linking types",
+            "export to csv should be possible from there"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "27678",
+        "project": "JAM",
+        "summary": [
+            "jira monitor documentation"
+        ],
+        "description": [
+            "the jira monitor feature is missing documentation"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27673",
+        "project": "JAM",
+        "summary": [
+            "project lead search"
+        ],
+        "description": [
+            "allow the user to search and filter projects in the project view for project lead adding a button search project lead"
+        ],
+        "timespent": "12600",
+        "alpha": 100
+    },
+    {
+        "id": "27671",
+        "project": "JAM",
+        "summary": [
+            "allow the user to specify a default view to be displyed after login"
+        ],
+        "description": [
+            "allow the user to specify a default view in his profile to be displayed after login",
+            "use case the view that i mostly use is the project view",
+            "so whenever i log in i go to view projects jira projects",
+            "it would be very comfortable for me to specify this view as the default view or home view in my profile so that it is displayed automatically after i logged in"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27670",
+        "project": "JAM",
+        "summary": [
+            "show time zone of the time"
+        ],
+        "description": [
+            "in most views the time stamp of the last download is shown in the upper right corner",
+            "however it's unclear what time is shown utc or local or something therefore add the time zone as a label in front of the field"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27669",
+        "project": "JAM",
+        "summary": [
+            "load all actors"
+        ],
+        "description": [
+            "allow loading actors of selected projects from the jira projects view",
+            "this is similar to and where the project leads of selected projects can be loaded but for the actors now"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "27626",
+        "project": "JAM",
+        "summary": [
+            "jira fields view no csv export"
+        ],
+        "description": [
+            "when i open the jira fields view and click csv then no file is offered for download"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "27613",
+        "project": "JAM",
+        "summary": [
+            "get project leads allow to select projects"
+        ],
+        "description": [
+            "go to the jira projects view",
+            "click get project allow the projects for update to be selected place a check mark in the list of projects jam select update only the checked projects"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "27542",
+        "project": "JAM",
+        "summary": [
+            "host info is not always stored completely"
+        ],
+        "description": [
+            "sometimes jira host information is not entirely stored",
+            "some fields are empty in the database version or build number"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27541",
+        "project": "JAM",
+        "summary": [
+            "only update active monitors"
+        ],
+        "description": [
+            "currently all monitor values are updated regardless whether are on the screen or not",
+            "only update those on the screen"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27540",
+        "project": "JAM",
+        "summary": [
+            "notification schemes rest call only jira"
+        ],
+        "description": [
+            "the rest api call for notification schemes is not available in jira versions less than check jira version of current host before calling it show warning"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27539",
+        "project": "JAM",
+        "summary": [
+            "store monitor counts per jirahost"
+        ],
+        "description": [
+            "monitor counts are currently stored per host per user",
+            "if two users use the same host the counts are stored twice",
+            "the hots can be identified by the host url"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "27527",
+        "project": "JAM",
+        "summary": [
+            "monitor page"
+        ],
+        "description": [
+            "jam should offer a monitor page for large screen displays",
+            "that page could show several key values number of users number of groups number of issues number of projects the page should offer a refresh option with a configurable refresh interval"
+        ],
+        "timespent": "64800",
+        "alpha": 100
+    },
+    {
+        "id": "27521",
+        "project": "JAM",
+        "summary": [
+            "allow to export result as csv"
+        ],
+        "description": [
+            "use case i need to forward an user all projects of a specific category or where the names contains a specific string",
+            "to do so i would open the jira projects page filter for the given category resp",
+            "name export the result as csv maybe opening it in excel and hiding some columns and paste it then into an email or comment of an issue etc",
+            "use case i need to send an user a list of available fields that contain a specific string planned so that he can made up his mind and select one"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "27516",
+        "project": "JAM",
+        "summary": [
+            "load all project leads"
+        ],
+        "description": [
+            "a lot of the project leads are empty in the jira project list",
+            "updating it means to click on every single project there are around projects listed at the moment and to update the actors a tedious job",
+            "thus please offer a way to update all project leads at once"
+        ],
+        "timespent": "75000",
+        "alpha": 100
+    },
+    {
+        "id": "27515",
+        "project": "JAM",
+        "summary": [
+            "improve error message in case captcha is needed"
+        ],
+        "description": [
+            "if the login or test to log in to trackspace fails because entering of captcha is needed the error message gives the user no clue",
+            "catch this error and display a corresponding error message for the user",
+            "http return codes authorization failed forbidden captcha might be necessary"
+        ],
+        "timespent": "2700",
+        "alpha": 100
+    },
+    {
+        "id": "27100",
+        "project": "JAM",
+        "summary": [
+            "workflow links with special chars"
+        ],
+        "description": [
+            "jira workflows list workflow agile simplified workflow set watchers when clicking this entry i get a jira error message"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "25101",
+        "project": "JAM",
+        "summary": [
+            "reload projects process"
+        ],
+        "description": [
+            "jam like jira maintains different tables for projects actors components issuetypes and versions",
+            "currently when the project list is reloaded the actors components issue types and versions tables are not cleared",
+            "so if they had been read before the data is outdated then",
+            "it might be still correct or not",
+            "however the project lead in the project record will be cleared",
+            "that leads to the situation that the project lead column is empty while the actors button is still green from the last actor reload",
+            "a new actor reload is necessary to get the project lead",
+            "the project lead is specific information and requires a separate rest request",
+            "putting that into the loop of the project reload will time out double as much rest question should the actors components issue types and versions also be cleared when the project list is reloaded in my opinon this makes sense because all that information is definitely outdated and might not be correct anymore"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "25100",
+        "project": "JAM",
+        "summary": [
+            "project list offer search per column"
+        ],
+        "description": [
+            "the search on the project list searches in all fields",
+            "sometimes this returns too many results because the search string shows up in too many strings project category and project please add a search per column as the table plus macro in docspace so that the search can be restricted to a column different strings can be searched in different columns at the same time",
+            "i suggest to offer this in addition and not to remove the current search feature sometimes this is"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "24900",
+        "project": "JAM",
+        "summary": [
+            "status statistics need to be adjusted to new categories"
+        ],
+        "description": [
+            "status statistics need to be adjusted to new categories"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "24800",
+        "project": "JAM",
+        "summary": [
+            "tool tip with timestamp of last update"
+        ],
+        "description": [
+            "a green colored button on the project list shows that data was loaded actors of a project",
+            "more helpful would be if a little tool tip could show the timestamp of the last update so i don't have to open all the pages with a green button to check the timestamp of the last update"
+        ],
+        "timespent": "2700",
+        "alpha": 100
+    },
+    {
+        "id": "24102",
+        "project": "JAM",
+        "summary": [
+            "add column project lead to the project list"
+        ],
+        "description": [
+            "to make the list of projects more similar to the one available in jira please add the column project lead to the list of projects",
+            "this is useful if a list of projects with their contact person has to be created by coping it"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "22104",
+        "project": "JAM",
+        "summary": [
+            "list notification schemes"
+        ],
+        "description": [
+            "read and list notification schemes"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "22100",
+        "project": "JAM",
+        "summary": [
+            "search should be default action upon enter"
+        ],
+        "description": [
+            "the different tables like issue types custom fileds etc shows a listing of the information that can be filtered",
+            "if i enter a search string and press the keyboard enter i expect that the same functionality is being executed as if i would click the search button",
+            "this is currently not the case"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "21704",
+        "project": "JAM",
+        "summary": [
+            "indicator for projects that don't use roles"
+        ],
+        "description": [
+            "the results as given by are only valid for projects that use the role permission scheme",
+            "would be good if there is way to indicate if a project uses the roles or not"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "21602",
+        "project": "JAM",
+        "summary": [
+            "easier and more flexible social icons"
+        ],
+        "description": [
+            "social links should not be the links hsould be identified by url and displayed in the footer accorindlgy color"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "21309",
+        "project": "JAM",
+        "summary": [
+            "user custom fields"
+        ],
+        "description": [
+            "user profile custom fields are prepared in the framework configuration where thay can be given titles",
+            "however the custom fields are not accessible on the user profile page"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "21305",
+        "project": "JAM",
+        "summary": [
+            "social network icons in the footer"
+        ],
+        "description": [
+            "the footer is a good place to display social networking icons",
+            "this feature should be configurable in the framework",
+            "the most popular networks should be offered facebook google plus linkedin twitter xing"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "21304",
+        "project": "JAM",
+        "summary": [
+            "allow international special characters as alpha valid"
+        ],
+        "description": [
+            "special characters like umlauts etc",
+            "are currently rejected for alpha inputs",
+            "allow those characters as valid"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "21302",
+        "project": "JAM",
+        "summary": [
+            "provide a back to project list button on the project"
+        ],
+        "description": [
+            "from the components page versions page and actors page it takes three clicks to get back to the project list",
+            "put a back to project list button on those pages"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "20801",
+        "project": "JAM",
+        "summary": [
+            "list roles"
+        ],
+        "description": [
+            "add roles page listing all jira roles",
+            "links to view usage default members edit"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "20601",
+        "project": "JAM",
+        "summary": [
+            "jam dashboard invalid filter"
+        ],
+        "description": [
+            "the gadget created vs resolved chart throws an error see"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "20600",
+        "project": "JAM",
+        "summary": [
+            "application error during logout"
+        ],
+        "description": [
+            "got an error during logout see"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "20503",
+        "project": "JAM",
+        "summary": [
+            "create jam release notes from jira version release notes"
+        ],
+        "description": [
+            "jira offers html creation of version related release notes",
+            "use that output for the relase notes on the jam about page"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "20502",
+        "project": "JAM",
+        "summary": [
+            "provide description of groups"
+        ],
+        "description": [
+            "view groups provide the description of the groups too separate column"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "20500",
+        "project": "JAM",
+        "summary": [
+            "time stamp of last reload is not updated"
+        ],
+        "description": [
+            "opened the view jira groups clicked reload button but the time stamp showing the time of the last reload is not updated see screenshot"
+        ],
+        "timespent": "2700",
+        "alpha": 100
+    },
+    {
+        "id": "20401",
+        "project": "JAM",
+        "summary": [
+            "lost access to views"
+        ],
+        "description": [
+            "all views are gone from the view menu"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "20304",
+        "project": "JAM",
+        "summary": [
+            "add possibility to set the maximum number of groups to read"
+        ],
+        "description": [
+            "the rest call to read groups expects the maxresult paramater defining the number of groups to be read",
+            "instead of it provide the option to set this value vie the jam configuration page"
+        ],
+        "timespent": "2700",
+        "alpha": 100
+    },
+    {
+        "id": "20303",
+        "project": "JAM",
+        "summary": [
+            "list priorities"
+        ],
+        "description": [
+            "provide a page listing the jira priorities"
+        ],
+        "timespent": "12600",
+        "alpha": 100
+    },
+    {
+        "id": "20301",
+        "project": "JAM",
+        "summary": [
+            "list groups"
+        ],
+        "description": [
+            "create a view that lists all available groups"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "20300",
+        "project": "JAM",
+        "summary": [
+            "color components/versions buttons on project page"
+        ],
+        "description": [
+            "it would be great to indicate whether components or versions for a project have already been loaded into jam",
+            "that can be done on the projects list page by coloring the buttons colored button info has been loaded into jam default button info has not been loaded yet colored list box entry on components/versions page info has been loaded into jam"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "20201",
+        "project": "JAM",
+        "summary": [
+            "host selection via list"
+        ],
+        "description": [
+            "on the jira view pages provide the host selection via a list instead of an extra dialog tab",
+            "it is quicker and more convenient"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "20200",
+        "project": "JAM",
+        "summary": [
+            "list projects using a given issue type"
+        ],
+        "description": [
+            "create a new view that lists the projects where a given issue type is used",
+            "link the projects to the corresponding overview page of the project in trackspace",
+            "use case user is asking for a specific issue type or we propose one",
+            "find some projects to demonstrate the issue type or get familiar with it by yourself or find related projects",
+            "get an overview in how many projects an issue type is used and if it might become a standard issue type"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "20101",
+        "project": "JAM",
+        "summary": [
+            "jira getuser returns several results"
+        ],
+        "description": [
+            "the getuser method should only return one user identiied by username",
+            "it currently returns several if the username submitted is part of several usernames"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "20100",
+        "project": "JAM",
+        "summary": [
+            "add project lead to project list"
+        ],
+        "description": [
+            "it is helpful to see the project lead of each project",
+            "this information can also be used to check whether the jam user's host account is the project lead of a given project and then allow certain jam features for that project"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "20004",
+        "project": "JAM",
+        "summary": [
+            "read components per project"
+        ],
+        "description": [
+            "read components per project and display"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "20003",
+        "project": "JAM",
+        "summary": [
+            "list workflows"
+        ],
+        "description": [
+            "add a view that lists the names of the workflows",
+            "would be nice if a graphical representation of a workflow could pop up too when hovering the mouse over some specific icon or clicking on"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "20002",
+        "project": "JAM",
+        "summary": [
+            "create issues in the tracker from within jam"
+        ],
+        "description": [
+            "add a possibility to create an issue in the lewe issue tracker from within jam",
+            "use case user is using jam and discovers an error or has an idea for an now instead of looking up the web address of the issue tracker in his bookmarks if he bookmarked this link at all add the link to the issue track to jam in the help menu",
+            "so user can go to help menu click the entry and a new tab window opens with the entry page of the issue tracker"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "19804",
+        "project": "JAM",
+        "summary": [
+            "read versions per project"
+        ],
+        "description": [
+            "read versions per project and display"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "19803",
+        "project": "JAM",
+        "summary": [
+            "add permissions to view"
+        ],
+        "description": [
+            "add permission handling to views so that accounts or groups can be granted access to view execute the view and see the content or not if access is not"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "19801",
+        "project": "JAM",
+        "summary": [
+            "list users and groups assigned to project roles"
+        ],
+        "description": [
+            "replace the following report by a view in jam",
+            "corresponding python code excerpt"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "19800",
+        "project": "JAM",
+        "summary": [
+            "prepare governors access"
+        ],
+        "description": [
+            "we're still maintaining this page with the list of current projects so that the governors have a list of all trackspace projects",
+            "the list and maintaining it would be superfluous if the governors would have access to jam"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "19602",
+        "project": "JAM",
+        "summary": [
+            "avatar not displayed after login"
+        ],
+        "description": [
+            "an avatar is displayed prior to the login see this avatar is not longer displayed after the login see i haven't defined any avatar but as a default is shown prior to the login i suggest that the app continues to display the default avatar after the login",
+            "the avatar helps to identify the purpose of this menu entry in the men bar easily"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "19601",
+        "project": "JAM",
+        "summary": [
+            "jira users page"
+        ],
+        "description": [
+            "add a page with jira users",
+            "first ideas show all users maybe paging show active/inactive link username to edit in jira link display name to account info in jira"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "19600",
+        "project": "JAM",
+        "summary": [
+            "show page titles in html title"
+        ],
+        "description": [
+            "the browser tab title html title shows only jam all the time",
+            "a page suffix would be nice"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "19502",
+        "project": "JAM",
+        "summary": [
+            "get server info for jira hosts"
+        ],
+        "description": [
+            "it would be good to retrieve baseurl version and build for each jira host upon request extra button on jira hosts"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "19402",
+        "project": "JAM",
+        "summary": [
+            "allow protocol selection for jira host"
+        ],
+        "description": [
+            "the protocol http or https should be configurable for each jira host"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "19401",
+        "project": "JAM",
+        "summary": [
+            "jira projects page"
+        ],
+        "description": [
+            "add a jira project page",
+            "link name to jira project overview page link key to jira project config summary"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "19305",
+        "project": "JAM",
+        "summary": [
+            "use div based table on jira pages for responsiveness"
+        ],
+        "description": [
+            "the regular html tables used on the jira page are not responsive",
+            "use div based tables instead"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "19304",
+        "project": "JAM",
+        "summary": [
+            "allow multiple host configurations per user"
+        ],
+        "description": [
+            "currently the user can configure one jira host in his profile",
+            "since jam allows access to many hosts it would make sense that a user can configure several hosts for his profile as well",
+            "a drop down list on the jira pages could be used to easily switch between hosts"
+        ],
+        "timespent": "54000",
+        "alpha": 100
+    },
+    {
+        "id": "19303",
+        "project": "JAM",
+        "summary": [
+            "add configure link to each field on jira fields page"
+        ],
+        "description": [
+            "currently the jira field name links to the field edit page in jira",
+            "it would increase comfortability if a link the field config page in jira would also be available in the field list"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "19301",
+        "project": "JAM",
+        "summary": [
+            "verficy code not cleared with admin activation"
+        ],
+        "description": [
+            "the admin can activate by an action button",
+            "the script unchecks account parameters correctly but does not delete the verify code from the user's option table",
+            "login does not work if the verifycode still exists"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "19300",
+        "project": "JAM",
+        "summary": [
+            "show host name in page header"
+        ],
+        "description": [
+            "it would be helpful to see the jira host of the current report in the page header jira fields"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "19206",
+        "project": "JAM",
+        "summary": [
+            "user notification settings"
+        ],
+        "description": [
+            "leaf offers the option to send out notifications when changes are made to user accounts groups or roles",
+            "the user profile option to switch these notification types on or off is still missing"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "19205",
+        "project": "JAM",
+        "summary": [
+            "add german language for jam"
+        ],
+        "description": [
+            "the leaf framework comes with a german language file",
+            "jam pages are not translated yet"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "19204",
+        "project": "JAM",
+        "summary": [
+            "warning message if no jira host has been setup yet"
+        ],
+        "description": [
+            "when viewing a jira feature page and no jira host has been setup yet in the user profile the page is just empty with no hint or message why",
+            "a warning message about this situation would help"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "19203",
+        "project": "JAM",
+        "summary": [
+            "jira field list"
+        ],
+        "description": [
+            "it would be nice to filter for a name as well as the type"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "19202",
+        "project": "JAM",
+        "summary": [
+            "access to confluence"
+        ],
+        "description": [
+            "at the moment jam can only access jira",
+            "therefore also the naming however it would be nice to access confluence as well as in most cases they are being used in combination",
+            "if the access is possible i would like to have a functionality to get the page id of a confluence page which does not render any more so that i can make use of the edit link to fix the page",
+            "if you want to go forward with confluence access this specific requirement needs to be moved to a new issue"
+        ],
+        "timespent": "39600",
+        "alpha": 100
+    },
+    {
+        "id": "19200",
+        "project": "JAM",
+        "summary": [
+            "send a confirmation mail once the user account is verified by the admin"
+        ],
+        "description": [
+            "at the moment the user does not get any information if an account has been verified",
+            "an automatic mail notification would be good"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "27578",
+        "project": "TCN",
+        "summary": [
+            "error on archiving"
+        ],
+        "timespent": "1200"
+    },
+    {
+        "id": "23101",
+        "project": "TCN",
+        "summary": [
+            "add bootswatch theme superhero"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "23000",
+        "project": "TCN",
+        "summary": [
+            "update to ckeditor"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "22800",
+        "project": "TCN",
+        "summary": [
+            "update to fontawesome"
+        ],
+        "timespent": "2700"
+    }
+]

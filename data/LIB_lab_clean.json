@@ -1,0 +1,27 @@
+[
+    {
+        "id": "12800",
+        "project": "LP",
+        "summary": [
+            "revert enable auto scaling on high dpi devices"
+        ],
+        "description": [
+            "including commit causes floating point exception immediately at gcs startup",
+            "in gcs main.cpp if see qputenv else see qputenv auto endif the binary that has the fpe runs correctly on my laptop has same os and can simply copy build directory to it and run it"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "10072",
+        "project": "LP",
+        "summary": [
+            "external mags on"
+        ],
+        "description": [
+            "allow the use of inexpensive available gps mag hardware via main or flexi or sonar port"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    }
+]

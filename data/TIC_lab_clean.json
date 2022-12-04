@@ -1,0 +1,1629 @@
+[
+    {
+        "id": "11926",
+        "project": "PUP",
+        "summary": [
+            "finish adding test coverage for database operations"
+        ],
+        "description": [
+            "finish writing tests so that there's complete coverage for the operations i'm doing with the database of pull requests"
+        ],
+        "timespent": "28800",
+        "alpha": 98
+    },
+    {
+        "id": "18490",
+        "project": "PDB",
+        "summary": [
+            "puppetdb-anonymize seems broken"
+        ],
+        "description": [
+            "when i run lein run anonymize profile full infile file outfile file.anon on a puppetdb-export from i get this happens on both the branch at commit and master at"
+        ],
+        "timespent": "86400",
+        "alpha": 98
+    },
+    {
+        "id": "18013",
+        "project": "PDB",
+        "summary": [
+            "change catalog storage to use id's"
+        ],
+        "description": [
+            "for we want to do comparisons and do selective instead but to achieve this without changing the catalog column for the catalog_resources table each and every time we need to switch to an internal value ie",
+            "a serial instead as that won't be as volatile",
+            "this ticket tracks the work change migration to use id's change queries to use id's"
+        ],
+        "timespent": "144000",
+        "alpha": 98
+    },
+    {
+        "id": "17183",
+        "project": "PDB",
+        "summary": [
+            "gzip responses"
+        ],
+        "description": [
+            "puppetdb should gzip responses before sending them out",
+            "currently it doesn't seem to"
+        ],
+        "timespent": "28800",
+        "alpha": 98
+    },
+    {
+        "id": "86843",
+        "project": "PUP",
+        "summary": [
+            "custom facts not loaded when using puppet resource command"
+        ],
+        "description": [
+            "seeing an issue where when running puppet resource it does not load custom facts puppet apply works this is a masterless installation no certs setup so i believe this to be a pluginsync issue",
+            "code module install puppetlabs-firewall notice preparing to install into notice downloading from notice installing do not interrupt puppetlabs-firewall ls cat test.pp notify iptables_version strace efile f apply test.pp grep iptables_version pid stat pid open lstat pid stat strace efile f resource firewall grep iptables_version resource firewall error could not autoload undefined method value for error could not autoload undefined method value for error could not run could not autoload undefined method value for resource firewall trace debug runtime environment debug facter searching for custom fact iptables_version debug facter fact facterversion has resolved to debug facter skipping external facts for no such file or directory no external facts were found",
+            "debug facter loading all custom facts",
+            "debug facter custom fact iptables_version was not found",
+            "error could not autoload undefined method value for block in top required genthing genclass provide top required load block in loadall each loadall newtype top required load type main block in run execute main error could not autoload undefined method value for block in top required genthing genclass provide top required load block in loadall each loadall newtype top required load type main block in run execute main error could not run could not autoload undefined method value for block in top required genthing genclass provide top required load block in loadall each loadall newtype"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "85789",
+        "project": "PUP",
+        "summary": [
+            "puppet gem dependencies are out of date"
+        ],
+        "description": [
+            "installing puppet as a gem won't install hiera even though that is the combination we'll be shipping in also if you try to run puppet from source bundler will refuse to use hiera"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "35510",
+        "project": "PUP",
+        "summary": [
+            "doesn't return whether it acquired the lock or not"
+        ],
+        "description": [
+            "the method documentation says return depending on whether we get the lock",
+            "but that's not actually what happens",
+            "instead it returns whatever the yielded block returns",
+            "as a result there's no way to know if the lock was successfully acquired"
+        ],
+        "timespent": "300",
+        "alpha": 99
+    },
+    {
+        "id": "12668",
+        "project": "PUP",
+        "summary": [
+            "a hiera.yaml should be ignored in confdir"
+        ],
+        "description": [
+            "the default bootstrap of the bindings looks at hiera.yaml in confdir",
+            "if this is a yaml it should silently be ignored",
+            "currently there is no logic in place for this it should be in the"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "12254",
+        "project": "PUP",
+        "summary": [
+            "in arrays and hashes false gets transformed into a string"
+        ],
+        "description": [
+            "when accessing hash and array members true gets preserved as a real bool but false becomes a string for some reason",
+            "thisarray true false results in error is not a boolean",
+            "it looks to be a string at on node magpie.lan"
+        ],
+        "timespent": "900",
+        "alpha": 99
+    },
+    {
+        "id": "12047",
+        "project": "PUP",
+        "summary": [
+            "fix specs which are passing without testing anything"
+        ],
+        "description": [
+            "kylo noticed that the specs around certificate_authority generate weren't testing anything",
+            "this is due to a never expectation being set on a stub which will not fail because the stub succeeds these need specs need to be fixed so that they test something and in general should be reviewed and refactored as needed"
+        ],
+        "timespent": "36000",
+        "alpha": 99
+    },
+    {
+        "id": "11949",
+        "project": "PUP",
+        "summary": [
+            "use injector in explicit lookups"
+        ],
+        "description": [
+            "the intended functions and their signatures name lambda produce(producer lambda where type is an optional type in string form and lambda is a one parameter lambda that gets the result value looked up or undef if not lookup_producer calls injector to get a producer and producer takes what lookup_producer returns",
+            "the lambdas help user write a if missing hook astair x unless x undef x else gene kelley"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "10977",
+        "project": "PUP",
+        "summary": [
+            "deprecate yaml over the network"
+        ],
+        "description": [
+            "deprecate using yaml over the network in puppet",
+            "this may require the implementation of pson support in some places where it doesn't currently exist"
+        ],
+        "timespent": "10800",
+        "alpha": 99
+    },
+    {
+        "id": "10949",
+        "project": "PUP",
+        "summary": [
+            "puppet cert generate clashes with autosigning"
+        ],
+        "description": [
+            "when using puppet cert generate puppet first generates a certificate request and then signs it during the generation step the save method of the certificaterequest class is called which triggers autosigning to summarize certificate generation should take auto signing into account",
+            "it appears autosigning doesn't consult the parameter",
+            "we should probably log an info or debug message whenever a cert is autosigned so this behavior is easier to detect in the future",
+            "note the code host also appears twice in the generate method of ssl/certificate hopefully this is an accidental duplicate"
+        ],
+        "timespent": "115200",
+        "alpha": 99
+    },
+    {
+        "id": "18492",
+        "project": "PDB",
+        "summary": [
+            "pr fix cli with no argument handling kbarber"
+        ],
+        "description": [
+            "fix cli with no argument handling author ken barber company puppetlabs inc",
+            "github id kbarber pull request discussion pull request file diff pull request description seems the cli.tools library had a bug and was returning completely different data causing our command line tools with no arguments to return ugly exceptions",
+            "this patch fixes this and adds acceptance tests to ensure we don't regress",
+            "ken barber"
+        ],
+        "timespent": "28800",
+        "alpha": 99
+    },
+    {
+        "id": "89396",
+        "project": "MODULES",
+        "summary": [
+            "module doesn't touch puppet.conf settings outside an ini section"
+        ],
+        "description": [
+            "if you put a setting at the top of the puppet.conf file before the main section or any other ini sections puppet will act like it was set in the main section",
+            "and if you set it again in the main section it won't take the first instance will win",
+            "but that's kind of beside the point here",
+            "since the module uses generic ini implementation instead of using puppet's settings system directly it doesn't know about this",
+            "it blows away a bunch of settings in the main agent and master sections but it doesn't do anything about main settings outside the main section allowing bad values to slip through on upgrade",
+            "if lets you manage stuff outside a section we could just do that"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "27309",
+        "project": "MCOP",
+        "summary": [
+            "tests are not robust"
+        ],
+        "description": [
+            "the puppet agent is written to dynamically compile code based on puppet.version and this leads to occasional explosions if rspec loads the spec files out of asciibetical order",
+            "or if we try and randomize the evaluation of the rspec examples it's probably best to refactor the code so that all codepaths can be loaded and that which method to call is determined at runtime",
+            "this may also improve the testability as the behaviour can be controlled by mocking puppet.features etc"
+        ],
+        "timespent": "144000",
+        "alpha": 99
+    },
+    {
+        "id": "12690",
+        "project": "FACT",
+        "summary": [
+            "potential local privilege escalation issue with facts.d folder windows for executable facts"
+        ],
+        "description": [
+            "the wix installer currently creates facts.d and doesn't set the permissions appropriately",
+            "the installer should maybe not create the folder if we don't create the folder a user could create it after install and put malware in there to be executed",
+            "facter only checks for the existence of the folder not who owns it",
+            "the installer should only allow write permission to the folder to administrators and system if the folder"
+        ],
+        "timespent": "34200",
+        "alpha": 99
+    },
+    {
+        "id": "11939",
+        "project": "FACT",
+        "summary": [
+            "facter fails to run on windows"
+        ],
+        "description": [
+            "when running on systems returns a compatible string which fails when calling file.join"
+        ],
+        "timespent": "57600",
+        "alpha": 99
+    },
+    {
+        "id": "136400",
+        "project": "BKR",
+        "summary": [
+            "follow testing in doc to setup beaker"
+        ],
+        "description": [
+            "follow the instructions of the testing in minutes doc once you've completed all of the runs there then this issue is ready to be closed"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "53569",
+        "project": "SERVER",
+        "summary": [
+            "turn on endpoint"
+        ],
+        "description": [
+            "dashboard requires the endpoint which means we need it for pe turn it back on maybe with a comment in the code about removing it in the near future"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "25137",
+        "project": "RAZOR",
+        "summary": [
+            "tasks and"
+        ],
+        "description": [
+            "greetings love razor now to the when i am creating tasks i have attempted to utilize the i have a task named xen",
+            "i then have yaml files xen for the versioned tasks and i added the base xen looking at the tasks under the api everything looks as it should",
+            "when i actually implement it by provisioning a server",
+            "the found in the base xen.yaml supersedes what ever is in the versioned tasks yaml files",
+            "documentation says that whatever is in the yaml that references the base is the used value supersedes xen but either i seem to be doing something wring or its not working as intended"
+        ],
+        "timespent": "64800",
+        "alpha": 100
+    },
+    {
+        "id": "14532",
+        "project": "RAZOR",
+        "summary": [
+            "update razor puppet modules"
+        ],
+        "description": [
+            "the existing razor puppet modules make no sense with the new razor they need to be rewritten the module should be set up for a few variations in deployment db variation install db in existing external pgsql run behind proxy which does ssl termination httpd nginx torquebox variations install from into user's jboss deployment"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "86440",
+        "project": "PUP",
+        "summary": [
+            "global parser future with environment.conf parser current gives an error"
+        ],
+        "description": [
+            "update collect expressions in a manifest will result in an attempt to use code that has not been loaded when the parser setting is future and an environment sets parser to current",
+            "the problem does not occur if the master prior to evaluating a collexpr in a environment has evaluated something in an environment where this can be reproduced with this manifest having main setting and production environment original set parser future in puppet.conf set parser current in environment.conf for production service pe-puppetserver restart run puppet agent t get the following error the issue does not occur by simply enabling future parser or by using current parser but only in this specific configuration",
+            "i think"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "83513",
+        "project": "PUP",
+        "summary": [
+            "square braces in title confuse puppet parser"
+        ],
+        "description": [
+            "if we have two resources where the titles begin with an identical string enclosed in square braces the puppet parser throws an error that duplicate resources have been declared it works fine without the square braces however an example of a unit test failure is in puppetlabs-inifile when run against puppet update workaround the problem can manifest itself in different ways even if not getting the error duplicate resource the catalog will record the name wrong and it may not be able to later find it if something else depends on that resource",
+            "the underlying problem is a bug in the parsing of a combined as the first right bracket is believed to be the end of the string notify ends up as notify foo instead of the expected notify foo bar in the reported case both resource end up with the same title as the part after the first right bracket is lost",
+            "other cases may be that the notify is just not as a workaround until the fix is released for notify instances it is possible to use a different title and instead set the message"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "82075",
+        "project": "PUP",
+        "summary": [
+            "cannot create a define named something that starts with class"
+        ],
+        "description": [
+            "word around exists this can be worked around by giving the reference as a string instead of as a type"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "81609",
+        "project": "PUP",
+        "summary": [
+            "filebucket fails when environment is specified"
+        ],
+        "description": [
+            "since the days the filebucket client in the form of has interfaces with the indirector by constructing urls in the following fashion the indirector breaks this down into its fields in all of this is quite unecessary because the indirection implicitly follows from the indirected class the environment is not significant for filebucket interactions as an aside the api does not construct urls like this anymore either the environment is a parameter and not a part of the uri path",
+            "this is not important here though because these urls never hit the wire",
+            "they are only for the benefit of the class",
+            "a consequence of this construct is that new indirector uses with urls in keys will be misinterpreted by the request class",
+            "it would be beneficial to transform these internally used urls into a form that confers only the necessary information to the indirector does not clash with other possible urls summary although this sounds like a network change not",
+            "it only changes how the client internally manages the filebucket request but affect how the client sends the request on the wire",
+            "it also change file manifests filebucket resources etc"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "80697",
+        "project": "PUP",
+        "summary": [
+            "augeas onlyif does not work when using arrays to match against"
+        ],
+        "description": [
+            "according to the type reference you should be able to use the onlyif metaparameter of the augeas type to check if the results from an augeas path equal an array",
+            "the augeas type does not return values however so it can never match the values in your array",
+            "instead it returns an array of augeas paths"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "46900",
+        "project": "PUP",
+        "summary": [
+            "doc exploration"
+        ],
+        "description": [
+            "look into the currently existing puppet doc tool and finish up what needs to be done to start development on the current prototype"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "46523",
+        "project": "PUP",
+        "summary": [
+            "add acceptance test for pmt build command changes for"
+        ],
+        "description": [
+            "add acceptance test for pmt build command changes for"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "46000",
+        "project": "PUP",
+        "summary": [
+            "puppet parser validate shouldn't puke on exported resources"
+        ],
+        "description": [
+            "this kinda makes puppet parser validate really non user friendly"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "43511",
+        "project": "PUP",
+        "summary": [
+            "implementation of is potentially confusing"
+        ],
+        "description": [
+            "it seems to me that and are more confusing than useful and i would argue that they simply exist",
+            "right now with parser future these operators implicitly create a new variable that may shadow one from an outer scope appending/removing the rhs to the outer scope variable if it exists",
+            "if the variable has already been defined in the current scope the operation fails",
+            "in practice this works like a kind of temporary mutation or else just regular assignment or else causes a failure",
+            "the alternative using with is more intuitive less ambiguous and sacrifices little if anything in terms of expressiveness",
+            "i apologize in advance if something major that missing here but like to reopen the discussion on whether better to just remove these operators from the language"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "36783",
+        "project": "PUP",
+        "summary": [
+            "puppet apply fails to write the graph if puppet agent has never run"
+        ],
+        "description": [
+            "via this is a general puppet platform issue",
+            "it can occur on any platform when all of the following are true the directory exist the graph setting is true the agent has never run before executing puppet apply will fail to write the catalog",
+            "on windows pe only we set graph to true on nix pe only we set graph to true on windows the problem is that the code that writes the graph executes before the code that creates the necessary directories"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "14517",
+        "project": "PUP",
+        "summary": [
+            "clone can't bundle install on harbard solaris spec box attached to"
+        ],
+        "description": [
+            "whats up harbard the foss team has been auditing their jobs and making them all run the same commands pre bundle install bundle exec rake spec pre but that breaks on harbard with pre facter solaris xe bundle install fetching gem metadata from source index from resolving sudo no tty present and no askpass program specified sudo pam_authenticate conversation failure cannot load gem at in solaris an error occurred while installing rake and bundler cannot continue",
+            "make sure that gem install rake v succeeds before bundling",
+            "build step execute shell marked build as failure pre while just running pre rake spec pre works just we want them to use the same script everywhere and so we need to be able to let them run the same script everywhere unfortunately i don't know why bundler on solaris doesn't work like other"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "13162",
+        "project": "PUP",
+        "summary": [
+            "puppet agent cannot read facts.d on windows"
+        ],
+        "description": [
+            "links to needed for"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "13145",
+        "project": "PUP",
+        "summary": [
+            "yaml report processing error when running agent against later master"
+        ],
+        "description": [
+            "running the latest puppet agent on or ubuntu against the build results in error could not send report error on server could not intern from yaml private method gsub called for thu aug this happens even when only store reports are enabled",
+            "the error only goes away when i disable reporting entirely",
+            "this is a regression no older agents should be able to run against newer servers at all times"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "13134",
+        "project": "PUP",
+        "summary": [
+            "reboot on refresh"
+        ],
+        "description": [
+            "reboot as refresh only",
+            "this would implement similar behavior to what is in exec",
+            "reboot message this will only reboot when refreshed will be the default"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "13130",
+        "project": "PUP",
+        "summary": [
+            "reboot basics"
+        ],
+        "description": [
+            "basic reboot type and provider",
+            "example reboot now message this will stop everything and reboot that causes the rest of the run to immediately stop there is no graceful shutdown and no report submitted",
+            "the system will reboot"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "12416",
+        "project": "PUP",
+        "summary": [
+            "add version to the"
+        ],
+        "description": [
+            "there is no version support in the we said we were going to have that"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "12294",
+        "project": "PUP",
+        "summary": [
+            "configure binder via settings"
+        ],
+        "description": [
+            "the loads a from confdir or creates a default configuration if the yaml file does not exist",
+            "this makes it hard to test and experiment with settings",
+            "the binderconfig should lookup two different settings which overrides the internal config if present and which could either be a filename or contain the actual configuration"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "12240",
+        "project": "PUP",
+        "summary": [
+            "remove code that was to support ruby"
+        ],
+        "description": [
+            "since we dropped support for there has been a lot of code left in the codebase that was for support of ruby that isn't needed",
+            "it must be killed"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "12219",
+        "project": "PUP",
+        "summary": [
+            "production implementation of compiler support for manifest ordering"
+        ],
+        "description": [
+            "need to add information on what order things are added to the catalog",
+            "in spike implementation it worked best to put this in simplegraph"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "12046",
+        "project": "PUP",
+        "summary": [
+            "acceptance test fix for test"
+        ],
+        "description": [
+            "tracking the acceptance test fix for which is more important as it is blocking jenkins"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "12025",
+        "project": "PUP",
+        "summary": [
+            "smoke test packages"
+        ],
+        "description": [
+            "steps install repo config install via package manager yum install test make sure install goes cleanly puppet version reports and not puppet apply works for something basic platforms fedora debian ubuntu centos windows mac"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "12014",
+        "project": "PUP",
+        "summary": [
+            "puppet search raises an error when a module has no manifests dir"
+        ],
+        "description": [
+            "puppet search error could not call search on no such file or directory"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "11991",
+        "project": "PUP",
+        "summary": [
+            "give detailed information about source of problems"
+        ],
+        "description": [
+            "problems throughout the binding system needs to get detailed information file line etc",
+            "when problems are reported",
+            "without this all problems will be reported with details about the location of the lookup that triggered the problem or from within the runtime when things are"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "11980",
+        "project": "PUP",
+        "summary": [
+            "add capability to bind a multibind as a contribution in another multibind"
+        ],
+        "description": [
+            "this is required to be able to construct a complex structure having control over the composition at each level",
+            "currently a contribution is its own binding it should be a wrapper around another binding",
+            "alternatively make all bindings capable of being a multibind contribution"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "11968",
+        "project": "PUP",
+        "summary": [
+            "review and improve yardoc for data in modules implementation"
+        ],
+        "description": [
+            "yardoc has been written but it has not been quality controlled"
+        ],
+        "timespent": "32400",
+        "alpha": 100
+    },
+    {
+        "id": "11961",
+        "project": "PUP",
+        "summary": [
+            "update to reflect the differences between impl and proposal"
+        ],
+        "description": [
+            "the implementation has diverged from the proposal in several ways"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "11959",
+        "project": "PUP",
+        "summary": [
+            "create user facing documentation"
+        ],
+        "description": [
+            "doc is here"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "11952",
+        "project": "PUP",
+        "summary": [
+            "generate and use uuid for catalog generation and retrieval"
+        ],
+        "description": [
+            "in describes generating using a uuid to help puppetdb and therefore burgundy link between the catalog and report",
+            "this is a generalized capability that we roadmapped and need in the puppet ecosystem so we should work on a generalized implementation rather than having two different things"
+        ],
+        "timespent": "82800",
+        "alpha": 100
+    },
+    {
+        "id": "11950",
+        "project": "PUP",
+        "summary": [
+            "arrange all bindings into injector"
+        ],
+        "description": [
+            "this task corresponds to step in this diagram"
+        ],
+        "timespent": "61200",
+        "alpha": 100
+    },
+    {
+        "id": "11880",
+        "project": "PUP",
+        "summary": [
+            "set the puppet foss packaging jenkins job to puppet acceptance master"
+        ],
+        "description": [
+            "currently hooked to update as necessary to work with latest puppet acceptance",
+            "change provisioning to rely on puppet acceptance rather than backline"
+        ],
+        "timespent": "82800",
+        "alpha": 100
+    },
+    {
+        "id": "11655",
+        "project": "PUP",
+        "summary": [
+            "file monitoring treats absent files as always changed"
+        ],
+        "description": [
+            "the implementation of tracks a file by monitoring the file ctime",
+            "if a file is nonexistent and cannot have a ctime every time the file is checked for changes ctime will be set to the current time",
+            "since this value is constantly changing the file will always be marked as changed",
+            "expected behavior if a file is initially absent and is still absent when rechecked it should be unchanged",
+            "actual behavior a file that is absent will be marked as always changed",
+            "note as of commit the loadedfile has been refactored and renamed watchedfile but this behavior is still present",
+            "this is a copy of"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "11641",
+        "project": "PUP",
+        "summary": [
+            "document"
+        ],
+        "description": [
+            "this should document the wire format with yard and json schema if include tests of the serialization that check the schema"
+        ],
+        "timespent": "50400",
+        "alpha": 100
+    },
+    {
+        "id": "11635",
+        "project": "PUP",
+        "summary": [
+            "document"
+        ],
+        "description": [
+            "this should document the wire format with yard and json schema if include tests of the serialization that check the schema"
+        ],
+        "timespent": "39600",
+        "alpha": 100
+    },
+    {
+        "id": "11633",
+        "project": "PUP",
+        "summary": [
+            "document"
+        ],
+        "description": [
+            "this should document the wire format with yard and json schema",
+            "include tests of the serialization that check the schema"
+        ],
+        "timespent": "93600",
+        "alpha": 100
+    },
+    {
+        "id": "11632",
+        "project": "PUP",
+        "summary": [
+            "document"
+        ],
+        "description": [
+            "this should document the wire format with yard and json schema",
+            "include tests of the serialization that check the schema"
+        ],
+        "timespent": "39600",
+        "alpha": 100
+    },
+    {
+        "id": "11541",
+        "project": "PUP",
+        "summary": [
+            "smoke test packages"
+        ],
+        "description": [
+            "platforms debian squeeze wheezy centos ubuntu lucid precise fedora windows packages puppet puppetmaster puppetmaster-passenger areas init scripts start stop status verify logging verify pid file locking do an agent run puppet version man puppet facter"
+        ],
+        "timespent": "32400",
+        "alpha": 100
+    },
+    {
+        "id": "11420",
+        "project": "PUP",
+        "summary": [
+            "send reports in pson format"
+        ],
+        "description": [
+            "need to implement for"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "11309",
+        "project": "PUP",
+        "summary": [
+            "spike implementation for manifest ordering"
+        ],
+        "description": [
+            "second subtask should be to do a quick implementation on the best proposed solution and see whether it works for the use cases we have in mind"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "11306",
+        "project": "PUP",
+        "summary": [
+            "write proposals for how manifest ordering should work"
+        ],
+        "description": [
+            "first subtask should be to write up how this ought to work"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "11304",
+        "project": "PUP",
+        "summary": [
+            "agree on vmware user stories"
+        ],
+        "description": [
+            "jeff will be working with the vmware core team in palo alto to come to a final agreement on the user stories to be implemented for the vcloud director integration",
+            "the demo of this integration is slated for vmworld the week of august and the shipping date is slated for of"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "11303",
+        "project": "PUP",
+        "summary": [
+            "runinterval setting broken on windows with ruby"
+        ],
+        "description": [
+            "see"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "11301",
+        "project": "PUP",
+        "summary": [
+            "update rgen to"
+        ],
+        "description": [
+            "rgen released which contains a bugfix for the on empty array issue",
+            "what else is there to do except updating the gemspec"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "11238",
+        "project": "PUP",
+        "summary": [
+            "load all hiera module data"
+        ],
+        "description": [
+            "the second level of loading bindings scans modules and combines their bindings contributions",
+            "the backends in use must be compatible",
+            "this diagram probably helps as an overview of the bigger picture where this task are the steps and in the diagram"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "11237",
+        "project": "PUP",
+        "summary": [
+            "load extension bindings from environment and modules"
+        ],
+        "description": [
+            "the first step in setting up the binder is to scan the environment and its modules to allow ruby extensions to contribute bindings",
+            "this corresponds to steps and in this diagram"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "11236",
+        "project": "PUP",
+        "summary": [
+            "use binder in implicit injection of parameters"
+        ],
+        "description": [
+            "enhance the current hiera based lookup injection of class parameters using the binder",
+            "if a hiera lookup does not produce anything inject using binder"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "11229",
+        "project": "PUP",
+        "summary": [
+            "implement bindings validator"
+        ],
+        "description": [
+            "a bindings validator checks the validity of a bindings model contributed from hiera data in modules backends or from other"
+        ],
+        "timespent": "68400",
+        "alpha": 100
+    },
+    {
+        "id": "11228",
+        "project": "PUP",
+        "summary": [
+            "implement binder"
+        ],
+        "description": [
+            "the binder combines bindings into an effective set of bindings"
+        ],
+        "timespent": "151200",
+        "alpha": 100
+    },
+    {
+        "id": "11226",
+        "project": "PUP",
+        "summary": [
+            "create bindings model"
+        ],
+        "description": [
+            "create a bindings model based on specification in that is enough to handle data in modules"
+        ],
+        "timespent": "64800",
+        "alpha": 100
+    },
+    {
+        "id": "11225",
+        "project": "PUP",
+        "summary": [
+            "create a type model"
+        ],
+        "description": [
+            "the type model describes the puppet types",
+            "it is needed in order to enable typed bindings",
+            "typed bindings are in turned needed for binding extensions to puppet",
+            "this task includes writing a type calculator that can answer questions about assignability and common class as well as infer type given a ruby instance"
+        ],
+        "timespent": "115200",
+        "alpha": 100
+    },
+    {
+        "id": "11218",
+        "project": "PUP",
+        "summary": [
+            "puppet daemon may sleep for years after receiving on bit systems"
+        ],
+        "description": [
+            "quote due to a bug in ruby and earlier an interrupted select call may be restarted with an invalid value near ruby always tries to restart interrupted select calls unlike the normal behavior of the system call",
+            "this is fixed in since the puppet scheduler uses select to sleep sending a signal to trigger a run usually with mcollective can trigger this bug",
+            "this is the same issue as but requires a different fix as we cannot patch ruby"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "11131",
+        "project": "PUP",
+        "summary": [
+            "ability to manage puppet levels"
+        ],
+        "description": [
+            "see issue"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "10958",
+        "project": "PUP",
+        "summary": [
+            "design for hiera data in modules"
+        ],
+        "description": [
+            "design data in modules approach summary and"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10952",
+        "project": "PUP",
+        "summary": [
+            "create a jenkins job that spins up instances in backline"
+        ],
+        "description": [
+            "in order to test against packages we need a jenkins job that will spin up instances in backline as a step",
+            "the use case is this job should use a pre step independent of systest.rb to spin up the instances",
+            "the instances need to come up in a pool of sorts and the dns names will be fed into later steps in order to configure the package repository install the packages then execute the acceptance tests"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10951",
+        "project": "PUP",
+        "summary": [
+            "duplicate file resource validation weirdness with multiple slashes in paths"
+        ],
+        "description": [
+            "puppet is not predictable when multiple slashes are at the front of a file path",
+            "specifically the file resource does not discriminate between foo and treats them as two different resources"
+        ],
+        "timespent": "18060",
+        "alpha": 100
+    },
+    {
+        "id": "10529",
+        "project": "PUP",
+        "summary": [
+            "cloud provisioner foss install scripts were not updated to reflect puppet dependency"
+        ],
+        "description": [
+            "recently the apt repository layout was changed in puppet foss requiring a different configuration from users",
+            "the open source aws cloud provisioner and flowing from that the vmware cloud provisioner scripts to install puppet were not updated to match so are currently broken",
+            "the failure on debian is that it reports refusing to install the package but this is likely rooted in missing the dependency gem for the new parser pre some packages could not be installed",
+            "this may mean that you have requested an impossible situation or if you are using the unstable distribution that some required packages have not yet been created or been moved out of incoming",
+            "the following information may help to resolve the situation the following packages have unmet dependencies puppet depends but it is not going to be installed e unable to correct problems you have held broken packages",
+            "pre this is on a clean untouched by puppet ubuntu vm"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "48417",
+        "project": "PDOC",
+        "summary": [
+            "add spec tests for puppet strings"
+        ],
+        "description": [
+            "since the puppet strings feature was originally a prototype it currently does not have any tests written",
+            "some spec tests need to be added to ensure that the project is sustainable"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "49612",
+        "project": "PDB",
+        "summary": [
+            "equality operator inconsistency in across resources and facts"
+        ],
+        "description": [
+            "the api documentation says that equality queries must be predicated on matching types",
+            "it appears that this is true for resource queries tested on the exported field as indicated in the docs but not for facts",
+            "in the case of facts there is even a unit test ensuring that mixed types work",
+            "this ticket is to determine correct behavior"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18995",
+        "project": "PDB",
+        "summary": [
+            "pr add exports puppet face acidprime"
+        ],
+        "description": [
+            "add exports puppet face author zack smith company puppetlabs github id acidprime pull request discussion pull request file diff pull request description prior to this commit i was asked by kbarber to pr a link to a face i wrote for querying puppet exports from the command line",
+            "i attempted to match the standard markdown examples that were already there",
+            "let me know if i need add a trello card or target a different branch"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18788",
+        "project": "PDB",
+        "summary": [
+            "pr added option to disable http to allow exclusive https operation"
+        ],
+        "description": [
+            "added option to disable http to allow exclusive https operation author min pae company github id pull request discussion pull request file diff pull request description allowing exclusive http operation but having no option for exclusive https operation doesn't seem to make sense",
+            "added an option to disable http operation and a check to ensure both and cannot both be true which would be pretty silly if they were both"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18730",
+        "project": "PDB",
+        "summary": [
+            "pr disclose the protocol for cli help kbarber"
+        ],
+        "description": [
+            "disclose the protocol for cli help author ken barber company puppetlabs inc",
+            "github id kbarber pull request discussion pull request file diff pull request description we didn't explicitly say http only and it confused chris spence so much that we feared for our lives",
+            "ken barber"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18017",
+        "project": "PDB",
+        "summary": [
+            "there should be a index on the exported column in catalog_resources"
+        ],
+        "description": [
+            "all collection queries have in the query so a index on the exported column speeds them up a lot",
+            "ive tested it and the performance boost on collection queries is huge",
+            "the index is also pretty small as it is a boolean column",
+            "create index on"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "106195",
+        "project": "MODULES",
+        "summary": [
+            "support sslproxycheckpeercn and sslproxycheckpeername in vhost"
+        ],
+        "description": [
+            "it would be good to support as documented here to set vhost values"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "98956",
+        "project": "MODULES",
+        "summary": [
+            "use in mysqldump.sh to avoid warnings"
+        ],
+        "description": [
+            "hi since mysql the mysql commands raise a warning if the password is in the commadline in plaintext warning using a password on the command line interface can be insecure",
+            "the backup cron will always send a mail with multpe warning",
+            "to avoid this please use the environment variable the enviroment variable is already avalible since mysql another way is to create a local my.cnf file with the backup credentials"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "64476",
+        "project": "MODULES",
+        "summary": [
+            "should have an enable attribute enable at boot for init"
+        ],
+        "description": [
+            "the should have the ability to enable at boot time when using init",
+            "it should actually be able to intelligently default that value based on and ensure running but it should probably be exposed as an attribute so that people can control that",
+            "at this point app server is down after reboot until puppet runs and determines that its down to start it"
+        ],
+        "timespent": "28860",
+        "alpha": 100
+    },
+    {
+        "id": "20287",
+        "project": "MCO",
+        "summary": [
+            "pr fix small typos raphink"
+        ],
+        "description": [
+            "fix small typos author raphal pinson company camptocamp sa github id raphink pull request discussion pull request file diff pull request description"
+        ],
+        "timespent": "300",
+        "alpha": 100
+    },
+    {
+        "id": "11222",
+        "project": "HI",
+        "summary": [
+            "implement backend api for json and yaml"
+        ],
+        "description": [
+            "the backend api needs to be changed in a way where a backend returns a bindings model as opposed just performing a lookup",
+            "pre the method produces and gets a hash containing facts",
+            "this task is about implementing this for the json and yaml hiera backends"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "11221",
+        "project": "HI",
+        "summary": [
+            "add categorization/category to hierarchy specification"
+        ],
+        "description": [
+            "make the hierarchy specification include categorization and categories as defined by this should be done by allow the hierarchy key to refer to a hash in the hieraconf.yaml pre hierarchy os osfamily pre where the precedence is highest at the top of the list",
+            "the os in the example is the categoryzation the first array entry is the category value to use and the second array entry is the hiera path"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "11209",
+        "project": "HI",
+        "summary": [
+            "enhance hiera to support data in modules"
+        ],
+        "description": [
+            "enhance hiera to suport data in modules",
+            "modules should have the ability to contribute hiera data bindings modules should have the ability to use different backends validation of contributions is required may otherwise step on each other update the api to be declarative"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "89163",
+        "project": "FACT",
+        "summary": [
+            "windows timezone fact uses strftime instead of wcsftime"
+        ],
+        "description": [
+            "when windows is configured to use a timezone that has a localized name like mitteleuropische sommerzeit facter reports the timezone as mitteleuropische sommerzeit in its output",
+            "when the facts are sent to a puppet master the master reports an invalid sequence for the string",
+            "i believe this is a result of using strftime instead of the correct wcsftime and then converting the result into also the return value of wcsftime should be used to size the string"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "86909",
+        "project": "FACT",
+        "summary": [
+            "com initialization prior to ruby com initialization"
+        ],
+        "description": [
+            "ole com initialized prior to ruby causing issue with later com calls",
+            "sqlserver instances fact sqlserver ole calls"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "86345",
+        "project": "FACT",
+        "summary": [
+            "operatingsystem major release not resolved in osx"
+        ],
+        "description": [
+            "facter currently does not properly parse release string to resolve operatingsystemmajrelease or minor release"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "81136",
+        "project": "FACT",
+        "summary": [
+            "repeated resolution of a facter fact causes never gc'd object references"
+        ],
+        "description": [
+            "in i did some investigation of a memory leak we were seeing in puppet server",
+            "it turned out to be an issue where a fact was being resolved repeatedly in the same ruby process and each time it was resolved there was a new object reference added that could not be looking at the facter source code i suspect that this might be a bug",
+            "if you have a custom fact defined in a ruby file and you load that file repeatedly in the same ruby process you will effectively end up executing facter.add repeatedly for the same fact",
+            "it looks like there are some safeguards that try to detect this situation and not objects in memory that already exist also when the fact is resolved we seem to be trying to guard against creating new resolution objects if they have already been created however the normal path through facter.add calls define_resolution with a resolution_name of nil this means that we will always create a new resolution object on each run and hold a reference to it here this means that if you ever get into a scenario where a custom fact is being loaded repeatedly on the server which probably indicates another issue but nonetheless you may trigger a memory leak and an eventual oom"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "14020",
+        "project": "FACT",
+        "summary": [
+            "warn but do not fail if find gce facts without json lib"
+        ],
+        "description": [
+            "patch is in needs review and merge"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "12069",
+        "project": "FACT",
+        "summary": [
+            "implement external facts support on windows"
+        ],
+        "description": [
+            "the windows installer should also no longer create the facts.d directory for stomp server and port as these are set by the pe modules",
+            "we also need to account for updating older clients"
+        ],
+        "timespent": "46800",
+        "alpha": 100
+    },
+    {
+        "id": "11941",
+        "project": "FACT",
+        "summary": [
+            "redo interface and ipaddress facts to use indexes rather than localized names"
+        ],
+        "description": [
+            "there are several related bugs here see redmine links"
+        ],
+        "timespent": "342060",
+        "alpha": 100
+    },
+    {
+        "id": "11936",
+        "project": "FACT",
+        "summary": [
+            "facter appears to lose the facterlib factpath path under certain conditions on aix"
+        ],
+        "description": [
+            "it appears that under a certain scenario when using custom facts facter on aix loses facterlib factpath during puppet runs",
+            "the setting factpath is somehow not being honored",
+            "redmine issue"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "11733",
+        "project": "FACT",
+        "summary": [
+            "facter windows hardware model reporting intel above with the cpu level"
+        ],
+        "description": [
+            "fix to the hardwaremodel fact seems to have changed the value of the architecture fact as well",
+            "the wmi for the cpus on this system a vmware virtual machine running bit windows returns an address width of an architecture of and a level of based on the changed logic in hardwaremodel.rb this gives it a hardwaremodel of which seems but its what the os is reporting so well go with it",
+            "however this misses the regex in architecture.rb so it falls back to architecture being set to the value of hardwaremodel instead of being properly set to rob's comment from further down so from what ive gathered this hardware model should be reporting if the level is above this is what the kernel guys are doing so i think we should go with that",
+            "that will make this report properly"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "11333",
+        "project": "FACT",
+        "summary": [
+            "retarget facter tickets marked as fixed in but released in"
+        ],
+        "description": [
+            "for example"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18594",
+        "project": "DOCUMENT",
+        "summary": [
+            "date on puppet cert documentation very old"
+        ],
+        "description": [
+            "the web page shows copyright c puppet lab",
+            "ideally that should show and soon not sure if the intent it to show that is was last updated in but even so",
+            "puppet help cert shows the same date so if the documentation is not linked that would need to be updated too"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "16348",
+        "project": "RAZOR",
+        "summary": [
+            "finish esx installer"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "13344",
+        "project": "PUP",
+        "summary": [
+            "ensure all of the targeted bugs are in merged pending release status"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "12693",
+        "project": "PUP",
+        "summary": [
+            "merge existing data in modules into the main puppet repo"
+        ],
+        "timespent": "108000"
+    },
+    {
+        "id": "12473",
+        "project": "PUP",
+        "summary": [
+            "demo code for iis apps wells fargo pitch"
+        ],
+        "timespent": "45060"
+    },
+    {
+        "id": "12289",
+        "project": "PUP",
+        "summary": [
+            "parse and apply type specifications when looking up values"
+        ],
+        "timespent": "30600"
+    },
+    {
+        "id": "12274",
+        "project": "PUP",
+        "summary": [
+            "schedule resources no longer showing as skipped"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "12242",
+        "project": "PUP",
+        "summary": [
+            "fix problems with args and returns in lambda"
+        ],
+        "timespent": "5400"
+    },
+    {
+        "id": "12026",
+        "project": "PUP",
+        "summary": [
+            "meeting"
+        ],
+        "timespent": "900"
+    },
+    {
+        "id": "12020",
+        "project": "PUP",
+        "summary": [
+            "is there a commit for every bug targeted at the release"
+        ],
+        "timespent": "600"
+    },
+    {
+        "id": "12019",
+        "project": "PUP",
+        "summary": [
+            "is there a bug targeting at the release for every commit"
+        ],
+        "timespent": "600"
+    },
+    {
+        "id": "12018",
+        "project": "PUP",
+        "summary": [
+            "are tests passing"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "11957",
+        "project": "PUP",
+        "summary": [
+            "track class containment in reports"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "11953",
+        "project": "PUP",
+        "summary": [
+            "produce corpus of manifests and expected execution order"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "11649",
+        "project": "PUP",
+        "summary": [
+            "break down into issues"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "11623",
+        "project": "PUP",
+        "summary": [
+            "break down into tasks"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "11542",
+        "project": "PUP",
+        "summary": [
+            "meeting"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "11421",
+        "project": "PUP",
+        "summary": [
+            "do not transmit file requests with an ignore field in yaml"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "11373",
+        "project": "PUP",
+        "summary": [
+            "deprecate yaml network format"
+        ],
+        "timespent": "900"
+    },
+    {
+        "id": "11371",
+        "project": "PUP",
+        "summary": [
+            "have delete rest actions send response based on accept header of request"
+        ],
+        "timespent": "9000"
+    },
+    {
+        "id": "11370",
+        "project": "PUP",
+        "summary": [
+            "have save rest actions send response based on accept header of request"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "11368",
+        "project": "PUP",
+        "summary": [
+            "remove supported code from formats"
+        ],
+        "timespent": "5400"
+    },
+    {
+        "id": "11367",
+        "project": "PUP",
+        "summary": [
+            "deprecate network format"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "11366",
+        "project": "PUP",
+        "summary": [
+            "send facts to master in pson format"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "11338",
+        "project": "PUP",
+        "summary": [
+            "powershell exec provider"
+        ],
+        "timespent": "144000"
+    },
+    {
+        "id": "11308",
+        "project": "PUP",
+        "summary": [
+            "start rc"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "11153",
+        "project": "PUP",
+        "summary": [
+            "create an msi that contains demoable niceable functionality"
+        ],
+        "timespent": "900"
+    },
+    {
+        "id": "10982",
+        "project": "PUP",
+        "summary": [
+            "migrate trello cards to jira"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "10965",
+        "project": "PUP",
+        "summary": [
+            "set up app for metrics project"
+        ],
+        "timespent": "144000"
+    },
+    {
+        "id": "10956",
+        "project": "PUP",
+        "summary": [
+            "port pe tests that are translations of to foss"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "10954",
+        "project": "PUP",
+        "summary": [
+            "move tests which don't use to the package testing suite"
+        ],
+        "timespent": "68400"
+    },
+    {
+        "id": "10945",
+        "project": "PUP",
+        "summary": [
+            "debug failing spec on windows"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "11940",
+        "project": "FACT",
+        "summary": [
+            "interface facts broken on"
+        ],
+        "timespent": "60"
+    },
+    {
+        "id": "11521",
+        "project": "FACT",
+        "summary": [
+            "meeting"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "11520",
+        "project": "FACT",
+        "summary": [
+            "smoke test packages"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "11307",
+        "project": "FACT",
+        "summary": [
+            "start rc"
+        ],
+        "timespent": "10800"
+    }
+]

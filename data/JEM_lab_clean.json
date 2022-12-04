@@ -1,0 +1,6129 @@
+[
+    {
+        "id": "63834",
+        "project": "OHM",
+        "summary": [
+            "add css styling for orange status color"
+        ],
+        "description": [
+            "the orange color needs to match the current red and yellow tones",
+            "try generate coolors.co"
+        ],
+        "timespent": "43200",
+        "alpha": 98
+    },
+    {
+        "id": "55629",
+        "project": "OHM",
+        "summary": [
+            "remove statsd from the codebase"
+        ],
+        "description": [
+            "it's not well implemented and not used",
+            "it's safer to remove it and look at implementing something better in future",
+            "check that any statsd references are removed from all documentation"
+        ],
+        "timespent": "7200",
+        "alpha": 98
+    },
+    {
+        "id": "50079",
+        "project": "OHM",
+        "summary": [
+            "gap analysis of ihe profile atna for latest versions of openhim and hearth"
+        ],
+        "description": [
+            "ihe profile atna the task is to research the latest specification for atna and then compare this to the latest versions of openhim and hearth to evaluate whether or not the latest version of the atna profile is supported and if not to define in detail what work will need to be done in order to fully support it and pass the connectathon tests so that the work can be estimated accurately",
+            "ref pre-connectathon tests"
+        ],
+        "timespent": "129600",
+        "alpha": 98
+    },
+    {
+        "id": "50078",
+        "project": "OHM",
+        "summary": [
+            "gap analysis of ihe profile pdqm patient demographics query for mobile for openhim and hearth"
+        ],
+        "description": [
+            "ihe profile pdqm the task is to research the latest specification for pdqm and then compare this to the latest versions of openhim and hearth to evaluate whether or not the profile is currently supported and if not to define in detail what work will need to be done in order to fully support the profile and pass the connectathon tests so that the work can be estimated accurately",
+            "ref pre-connectathon tests"
+        ],
+        "timespent": "28800",
+        "alpha": 98
+    },
+    {
+        "id": "50076",
+        "project": "OHM",
+        "summary": [
+            "gap analysis of ihe profile pixm patient identifier cross-reference for mobile pixm for openhim and hearth"
+        ],
+        "description": [
+            "ihe profile pixm the task is to research the latest specification for pixm and then compare this to the latest versions of openhim and hearth to evaluate whether or not the profile is currently supported and if not to define in detail what work will need to be done in order to fully support the profile and pass the connectathon tests so that the work can be estimated accurately",
+            "ref pre-connectathon tests"
+        ],
+        "timespent": "18000",
+        "alpha": 98
+    },
+    {
+        "id": "62631",
+        "project": "OHM",
+        "summary": [
+            "create function that does the validation"
+        ],
+        "description": [
+            "create function that does the validation and updates the koa context",
+            "have a property ctx.validinput which gets checked before the mapping happens",
+            "on failure the status should be updated with a status of"
+        ],
+        "timespent": "21600",
+        "alpha": 99
+    },
+    {
+        "id": "62630",
+        "project": "OHM",
+        "summary": [
+            "create function for creating joi validation schema"
+        ],
+        "description": [
+            "this function fetches the input_validation json file and it then creates a joi schema"
+        ],
+        "timespent": "43200",
+        "alpha": 99
+    },
+    {
+        "id": "62609",
+        "project": "OHM",
+        "summary": [
+            "create a directory for endpoints",
+            "this are the endpoints where messages come in for mapping"
+        ],
+        "description": [
+            "meta.json story create a directory for endpoints",
+            "this are the endpoints where messages come in for mapping eg",
+            "endpoints patient fhir meta.json output.json optional observation fhir meta.json output.json optional custom patient meta.json output.json optional on app startup scan the endpoints directory for directories to fetch the meta.json file meta.json build endpoint for meta.json define the allowed methods",
+            "read transformation for now only"
+        ],
+        "timespent": "10800",
+        "alpha": 99
+    },
+    {
+        "id": "60370",
+        "project": "OHM",
+        "summary": [
+            "new bootstrap mediator with business logic"
+        ],
+        "description": [
+            "some business logic message adaptation orchestration etc make https request sierra leone password doesn't change the mediator should cover message adaptation create dockerfile as well"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "59751",
+        "project": "OHM",
+        "summary": [
+            "change the transaction schema"
+        ],
+        "description": [
+            "the body property should be replaced with bodyid property on the transaction schema",
+            "we can the temp schema that was created for the request/response body",
+            "this was only a temp schema for when this ticket is being implemented"
+        ],
+        "timespent": "9000",
+        "alpha": 99
+    },
+    {
+        "id": "59662",
+        "project": "OHM",
+        "summary": [
+            "change the transaction schema"
+        ],
+        "description": [
+            "the body property should be replaced with bodyid property on the transaction schema",
+            "we can the temp schema that was created for the request/response body",
+            "this was only a temp schema for when this ticket is being implemented"
+        ],
+        "timespent": "12600",
+        "alpha": 99
+    },
+    {
+        "id": "57103",
+        "project": "OHM",
+        "summary": null,
+        "description": [
+            "bump the versions in package.json and anywhere else that's tag a release",
+            "add release notes on github",
+            "make sure that the release builds on docker hub",
+            "build centos package and add to the release on github"
+        ],
+        "timespent": "99000",
+        "alpha": 99
+    },
+    {
+        "id": "57047",
+        "project": "OHM",
+        "summary": [
+            "users cannot view bodies when requesting multiple transactions through the api"
+        ],
+        "description": [
+            "the medscheme failures report needs to retrieve request and response message bodies",
+            "the report needs to run as a user and make api calls transactions?filterrepresentation=full to openhim core to retrieve data",
+            "on the api call for gettransactions the filter representation is overridden for users to default a value that causes request and response bodies to not be returned by the call",
+            "see it should be smarter in allowing certain properties based on whether or not the user has txviewfullacl for the transaction's channel"
+        ],
+        "timespent": "77400",
+        "alpha": 99
+    },
+    {
+        "id": "56910",
+        "project": "OHM",
+        "summary": [
+            "clean up the text about minimum versions and add a table in the readme"
+        ],
+        "description": [
+            "must include minimum versions of node.js and mongodb",
+            "should also update the engines field in"
+        ],
+        "timespent": "43200",
+        "alpha": 99
+    },
+    {
+        "id": "56868",
+        "project": "OHM",
+        "summary": [
+            "openhim raodmap"
+        ],
+        "description": [
+            "add the roadmap to openhim.org so that the funders can see it",
+            "currently it is only available on confluence which is internal"
+        ],
+        "timespent": "25200",
+        "alpha": 99
+    },
+    {
+        "id": "56136",
+        "project": "OHM",
+        "summary": [
+            "support request and response streaming for the primary route"
+        ],
+        "description": [
+            "temporarily drop support for gzip and deflate handling secondary routes request matching on message content url rewriting functionality from messagestore.js will need to be merged into"
+        ],
+        "timespent": "190800",
+        "alpha": 99
+    },
+    {
+        "id": "54281",
+        "project": "OHM",
+        "summary": [
+            "channel filter does not filter transactions for non admin users"
+        ],
+        "description": [
+            "emmanuel's user on the medscheme production instance does not filter the transactions for the allegra channel"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "49714",
+        "project": "OHM",
+        "summary": [
+            "investigate which ihe profiles used by openhie require raw tcp"
+        ],
+        "description": [
+            "in order to evaluate whether or not the tcp support should be removed or switched off in the openhim we need to determine if doing so would prevent tje ability to support the following profiles xds.b cda csd odd pix pdq mhd pixm pdqm macm"
+        ],
+        "timespent": "28800",
+        "alpha": 99
+    },
+    {
+        "id": "48242",
+        "project": "OHM",
+        "summary": [
+            "side bar options covered by copyright info bar when zoomed in"
+        ],
+        "description": [
+            "when the whole console side bar can't fit on the screen and user scrolled down to the bottom of the page the copyright info bar pops up and covers the last few options"
+        ],
+        "timespent": "10800",
+        "alpha": 99
+    },
+    {
+        "id": "37727",
+        "project": "OHM",
+        "summary": [
+            "weekly transaction reports are incorrect"
+        ],
+        "description": [
+            "the totals in the weekly reports aren't correct",
+            "for an example see the weekly momconnect reports"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "35905",
+        "project": "OHM",
+        "summary": [
+            "openhim core winston-mongodb package bug"
+        ],
+        "description": [
+            "on startup of the openhim a bug is logged winston-mongodb initialization error mongoerror index not found with name mongoerror message index not found with name nindexeswas ok errmsg index not found with name"
+        ],
+        "timespent": "5400",
+        "alpha": 99
+    },
+    {
+        "id": "20335",
+        "project": "OHM",
+        "summary": [
+            "enable etc to be imported and exported as a json file"
+        ],
+        "description": [
+            "create functionality for importing/exporting should have option to select specific exports checkboxes"
+        ],
+        "timespent": "68400",
+        "alpha": 99
+    },
+    {
+        "id": "64974",
+        "project": "OHM",
+        "summary": [
+            "mcsd mediator deploy scripts"
+        ],
+        "description": [
+            "use health worker force package label copy paste of the core package",
+            "nice platform to test our core packages in real systems"
+        ],
+        "timespent": "72000",
+        "alpha": 100
+    },
+    {
+        "id": "64670",
+        "project": "OHM",
+        "summary": [
+            "update config importer approach"
+        ],
+        "description": [
+            "we need to make changes to the approach we initially took for importing data into the component services",
+            "instead of having a single nodejs app that handles various config imports we will be updating this so that a import script only deals with one concern",
+            "within the docker compose service setup we can update the command to run to specify which script to execute and when",
+            "this could also be represented as individual config container dealing with a specific concern",
+            "both approaches should work fine",
+            "one is just more verbose than the other"
+        ],
+        "timespent": "52200",
+        "alpha": 100
+    },
+    {
+        "id": "64656",
+        "project": "OHM",
+        "summary": [
+            "lock down services"
+        ],
+        "description": [
+            "we need to tighten up the services we are creating to ensure only access to relevant services are allowed",
+            "mysql mongodb and hapi fhir should only be accessible from within the network",
+            "we need to write some additional compose script to override these settings and make the services open for development testing",
+            "how this can be achieved can be seen here"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "64973",
+        "project": "OHM",
+        "summary": [
+            "and scripts"
+        ],
+        "description": [
+            "include a cleaner a of the deployments update the configmap scripts to use the declarative object config"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "64859",
+        "project": "OHM",
+        "summary": [
+            "minikube deployment steps documentation"
+        ],
+        "description": [
+            "document the steps needed to be able to apply these deploy scripts to a local minikube instance"
+        ],
+        "timespent": "52200",
+        "alpha": 100
+    },
+    {
+        "id": "64858",
+        "project": "OHM",
+        "summary": [
+            "config yaml scripts"
+        ],
+        "description": [
+            "convert the current into kubernetes yaml files",
+            "this can be done by using something like drop these yaml files into a directory called config"
+        ],
+        "timespent": "61200",
+        "alpha": 100
+    },
+    {
+        "id": "64857",
+        "project": "OHM",
+        "summary": [
+            "dev yaml scripts"
+        ],
+        "description": [
+            "convert the current into kubernetes yaml files",
+            "this can be done by using something like drop these yaml files into a directory called dev"
+        ],
+        "timespent": "183600",
+        "alpha": 100
+    },
+    {
+        "id": "64855",
+        "project": "OHM",
+        "summary": [
+            "kubernetes deploy scripts"
+        ],
+        "description": [
+            "for instanthie we need to create a deployment for a kubernetes architecture",
+            "this is the same as what we have done for the scripts but just specific for kubernetes",
+            "the kubernetes scripts will consist of folders main contains all the mail yaml scripts for spinning up the vanilla core package dev contains the development environment override settings config contains the config files for importing the relevant package config"
+        ],
+        "timespent": "205200",
+        "alpha": 100
+    },
+    {
+        "id": "63940",
+        "project": "OHM",
+        "summary": [
+            "release new core"
+        ],
+        "description": [
+            "tag a new release of the openhim core with all the new changes included",
+            "this includes the built versions of the openhim"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "63664",
+        "project": "OHM",
+        "summary": [
+            "error on incorrect email credentials is undefined"
+        ],
+        "description": [
+            "i think the handling here is the issue the error is logged here"
+        ],
+        "timespent": "23400",
+        "alpha": 100
+    },
+    {
+        "id": "63537",
+        "project": "OHM",
+        "summary": [
+            "api transactions"
+        ],
+        "description": [
+            "for the creation of transactions we will need to appraoch this section a bit differently as this isnt going via the api but instead on its own server running on different ports the auth details that needs to be supplied if configured in the channel to have clients creds supplied is also different as this is only basic auth"
+        ],
+        "timespent": "36000",
+        "alpha": 100
+    },
+    {
+        "id": "62986",
+        "project": "OHM",
+        "summary": [
+            "analyse and update read the docs"
+        ],
+        "description": [
+            "the read the docs content is controlled from the docs directory on the openhim core master branch",
+            "update getting started page update configuring and setting up openhim to be more streamlined and consistent"
+        ],
+        "timespent": "61200",
+        "alpha": 100
+    },
+    {
+        "id": "63385",
+        "project": "OHM",
+        "summary": [
+            "fix handling of route bodies"
+        ],
+        "description": [
+            "non primary routes are failing when the mediator is an openhim mediator"
+        ],
+        "timespent": "75600",
+        "alpha": 100
+    },
+    {
+        "id": "63343",
+        "project": "OHM",
+        "summary": [
+            "create new infrastructure repository based off of the trace infrastrusture repo"
+        ],
+        "description": [
+            "remove redcap role",
+            "allow the ansible scripts to easily cater for two openhim core versions and perhaps we can add to help secure the server change passwords and create a keepass file controlling it",
+            "chat to abdul about creating two subdomain on"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "63337",
+        "project": "OHM",
+        "summary": [
+            "console status colour improvement"
+        ],
+        "description": [
+            "some changes have been implemented here"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "63334",
+        "project": "OHM",
+        "summary": [
+            "openhim test instance on digital ocean"
+        ],
+        "description": [
+            "we have an instance sitting on aws we need to migrate everything from peter's private aws to jembi paid do account this was at the hie conference this will be a public instance anyone can access",
+            "if budget permits we might be able to setup two openhim instances",
+            "one openhim instance based on and the other on alpha version"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "63224",
+        "project": "OHM",
+        "summary": [
+            "channel store request body not being applied"
+        ],
+        "description": [
+            "when setting a channel to not store a request body this does not actually happen",
+            "the request body is still being saved and visible on the frontend",
+            "the transaction however is set to not be able to rerun due to this flag but the body is still saved which it shouldnt be"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "63154",
+        "project": "OHM",
+        "summary": [
+            "fix responding when channel responsebody is falsy"
+        ],
+        "description": [
+            "at the moment responding to the client only occurs when the channels responsebody property is set to true",
+            "only the storing of the upstreams response body should not be done when the channels responsebody is falsy",
+            "the client does not get a response when this property is falsy and this causes tests to fail"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "62880",
+        "project": "OHM",
+        "summary": [
+            "allow service to start without having the constant.json file"
+        ],
+        "description": [
+            "currently the app doesnt allow to be started without having this json file even if its not being used for injecting any constants",
+            "this file should be seen as optional"
+        ],
+        "timespent": "79200",
+        "alpha": 100
+    },
+    {
+        "id": "62742",
+        "project": "OHM",
+        "summary": [
+            "split out openhim registration from index.js"
+        ],
+        "description": [
+            "code decouple from openhim"
+        ],
+        "timespent": "45000",
+        "alpha": 100
+    },
+    {
+        "id": "62656",
+        "project": "OHM",
+        "summary": [
+            "create handler factory"
+        ],
+        "description": [
+            "the handlers will be created for each mapping",
+            "it will take in the and files"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "62651",
+        "project": "OHM",
+        "summary": [
+            "bahmni mapping"
+        ],
+        "description": [
+            "for an initial pass set up a minimal mapping configuration to support an mvp",
+            "if theres time available expand the configuration to include all the fields in the bahmni schema"
+        ],
+        "timespent": "81000",
+        "alpha": 100
+    },
+    {
+        "id": "62632",
+        "project": "OHM",
+        "summary": [
+            "wrap the functions in a middleware function"
+        ],
+        "description": [
+            "wrap all the functions into a middleware function and add it to the app"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "62610",
+        "project": "OHM",
+        "summary": [
+            "create schema file"
+        ],
+        "description": [
+            "define the structure for the input content"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "62608",
+        "project": "OHM",
+        "summary": [
+            "swap out express for koa to allow for middleware"
+        ],
+        "description": [
+            "swap out express for koa to allow for middleware validation of content mapping of content story"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "62142",
+        "project": "OHM",
+        "summary": [
+            "finalize"
+        ],
+        "description": [
+            "tag and release console on github build centos rpm build docker image"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "61969",
+        "project": "OHM",
+        "summary": [
+            "polling channels not working on version"
+        ],
+        "description": [
+            "i was testing all the latest npm releases of and found that all versions has issues with polling channels i found version working fine",
+            "so i have decided to stick with until when the polling channel is working with versions"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "61021",
+        "project": "OHM",
+        "summary": [
+            "url rewritting"
+        ],
+        "description": [
+            "we have temporarily dropped some support while working on the routing refactor that needs to come back into the codebase",
+            "we can make use of a npm module that will handle the for us because we are working with streams now we might need to make some updates to how the rewrite middle function to cater for the functionality"
+        ],
+        "timespent": "124200",
+        "alpha": 100
+    },
+    {
+        "id": "61018",
+        "project": "OHM",
+        "summary": [
+            "restore the logic"
+        ],
+        "description": [
+            "we have temporarily dropped some support while working on the routing refactor that needs to come back into the codebase",
+            "the logic needs to be enabled again as it was previous",
+            "the code was commented out",
+            "lines to uncomment in line lines in previous functionaility"
+        ],
+        "timespent": "25200",
+        "alpha": 100
+    },
+    {
+        "id": "60983",
+        "project": "OHM",
+        "summary": [
+            "mapping mediator technical analysis"
+        ],
+        "description": [
+            "based on the white paper we need to unpack the mapping mediator",
+            "draft requirements user stories acceptance criteria per story"
+        ],
+        "timespent": "165600",
+        "alpha": 100
+    },
+    {
+        "id": "60965",
+        "project": "OHM",
+        "summary": [
+            "fix the setting of the response status when a mediator fails"
+        ],
+        "description": [
+            "when the openhim routes to an openhim mediator and a failure occurs on the mediator the response status should be set to internal server its currently being set to"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "60713",
+        "project": "OHM",
+        "summary": [
+            "complete the entire routing refactor"
+        ],
+        "description": [
+            "fix all errors adding missing tests and test cases rename all variables apply dry where applicable"
+        ],
+        "timespent": "220500",
+        "alpha": 100
+    },
+    {
+        "id": "60505",
+        "project": "OHM",
+        "summary": [
+            "update transaction"
+        ],
+        "description": [
+            "store the route request response etc in mongo",
+            "this is an update to the transactions route property",
+            "the bodies are stored in gridfs and the transaction will be updated with the route response bodyid ref",
+            "this is done in the messagestore function storenonprimaryresponse which will need to be modified"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "60503",
+        "project": "OHM",
+        "summary": [
+            "store response in gridfs"
+        ],
+        "description": [
+            "stream the response body of the primary route into gridfs"
+        ],
+        "timespent": "27000",
+        "alpha": 100
+    },
+    {
+        "id": "60502",
+        "project": "OHM",
+        "summary": [
+            "send the secondary request upstream"
+        ],
+        "description": [
+            "stream the request body upstream",
+            "this is done in the buildnonprimarysendrequestpromise function",
+            "it uses the sendhttprequest function which is also used for the primary route",
+            "the same functionality can be used to send the request",
+            "it will have to be modified as some of the features are for the primary route only",
+            "transaction status stays processing until all secondary routes complete save secondary routes as they complete wrap setfinalstatus in logic to check that all routes incl primary are completed before calculation final transaction status setfinalstatus after primary route and again after all secondary routes completed destroy all secondary routes if the primary fails"
+        ],
+        "timespent": "225000",
+        "alpha": 100
+    },
+    {
+        "id": "60500",
+        "project": "OHM",
+        "summary": [
+            "duplicate basic bootstrap mediator add basic business logic"
+        ],
+        "description": [
+            "business logic of this mediator will be to connect to the sierra leone demo instance and download the facility list in xml",
+            "the facility name and number will then be extracted and converted into a json object which will be returned to the client"
+        ],
+        "timespent": "52200",
+        "alpha": 100
+    },
+    {
+        "id": "60498",
+        "project": "OHM",
+        "summary": [
+            "create public github bootstrap mediator repo"
+        ],
+        "description": [
+            "create basic bootstrap mediator",
+            "ensure mediator can connect to the openhim and send through a heartbeat"
+        ],
+        "timespent": "66600",
+        "alpha": 100
+    },
+    {
+        "id": "60369",
+        "project": "OHM",
+        "summary": [
+            "new bootstrap mediator getting started mediator scaffolding no business logic"
+        ],
+        "description": [
+            "working with the latest lts versions of nodejs basic mediator plus comments you can use koa or"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "60061",
+        "project": "OHM",
+        "summary": [
+            "sendrequest middleware extract incoming stream into gridfs"
+        ],
+        "description": [
+            "with the new proposed middleware solution we will be creating a middleware which will deal with the sending of requests out this ticket will deal with receiving the incoming request as a stream and piping this stream into gridfs to store the payload",
+            "as soon as a fileid is generated for this payload we can continue to save this transaction into mongo",
+            "the saving of the transaction to mongodb is dealt with in a different ticket"
+        ],
+        "timespent": "73800",
+        "alpha": 100
+    },
+    {
+        "id": "59976",
+        "project": "OHM",
+        "summary": [
+            "remove route payloads"
+        ],
+        "description": [
+            "we need to add some logic to remove any that has been stored for routes",
+            "when a transaction is updated with new body payloads the old files need to be deleted as they will never be used again",
+            "when a transaction is deleted the old files need to be deleted as they will never be used again"
+        ],
+        "timespent": "73800",
+        "alpha": 100
+    },
+    {
+        "id": "59765",
+        "project": "OHM",
+        "summary": [
+            "remove body payloads stored in gridfs"
+        ],
+        "description": [
+            "we need to add some logic to remove any that has been stored",
+            "when a transaction is updated with new body payloads the old files need to be deleted as they will never be used again",
+            "when a transaction is deleted the old files need to be deleted as they will never be used again"
+        ],
+        "timespent": "92700",
+        "alpha": 100
+    },
+    {
+        "id": "59752",
+        "project": "OHM",
+        "summary": [
+            "update the api to support storing in gridfs"
+        ],
+        "description": [
+            "integrate the body content chunking functionality with the api functions for storing the transactions"
+        ],
+        "timespent": "68400",
+        "alpha": 100
+    },
+    {
+        "id": "59750",
+        "project": "OHM",
+        "summary": [
+            "store routes bodies in gridfs"
+        ],
+        "description": [
+            "same as but for secondary routes"
+        ],
+        "timespent": "75600",
+        "alpha": 100
+    },
+    {
+        "id": "59664",
+        "project": "OHM",
+        "summary": [
+            "update the api to support storing in gridfs"
+        ],
+        "description": [
+            "integrate the body content chunking functionality with the api functions for storing the transactions"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "59302",
+        "project": "OHM",
+        "summary": [
+            "openhim mapping mediator nodered evaluation spike"
+        ],
+        "description": [
+            "openhim mediators can be developed in any language and only talk to the openhim via its restful api",
+            "they do not have to be installed on the same server as the openhim",
+            "the only restriction is that a mediator must communicate with the openhim core in a particular way",
+            "in order to support centralized management of mediators in the openhim console mediators must register themselves with the openhim core accept requests from the openhim core and return a specialised response to the openhim core to explain what that mediator did",
+            "the mapping mediator discussed in this paper would need to comply with the general requirements of openhim mediators and should ensure that the mediator is able to reach the servers restful api endpoint",
+            "the openhim is able to reach the mediators endpoint for receiving requests",
+            "the mediator is configured with the correct credentials so that it may access the openhims restful api as an admin user",
+            "the mediator trusts the openhim cores certificate as all api communication takes place over https",
+            "the mapping mediator does not need to fulfil functionality offered by the openhim core and console such as transaction and error management and the configuration/management of clients channels and routes",
+            "the mapping mediator is primarily concerned with simplifying the task and complexity of configuring message format adaptation and then orchestration between hie components services and point of service applications as well as the potential for easier management of workflows and interactions between mediators",
+            "of the objectives dont need to fully implemented if theres no time were just looking for a clearer sense of whether the objectives be met",
+            "goals document how to get it installed getting started"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "59020",
+        "project": "OHM",
+        "summary": [
+            "configure gridfs for openhim"
+        ],
+        "description": [
+            "setup the gridfs mechanism to allow for chunking of data when we get to the next tasks"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "59017",
+        "project": "OHM",
+        "summary": [
+            "update the methods that retrieve the transactions"
+        ],
+        "description": [
+            "update the old methods that retrieve transactions",
+            "the methods should incorporate the new methods that retrieve the bodies and the transformer function"
+        ],
+        "timespent": "147600",
+        "alpha": 100
+    },
+    {
+        "id": "59016",
+        "project": "OHM",
+        "summary": [
+            "create a transformer function"
+        ],
+        "description": [
+            "create a method that takes the transaction and the bodies and then addsthe bodies to the transaction"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "59015",
+        "project": "OHM",
+        "summary": [
+            "create a method for retrieving bodies"
+        ],
+        "description": [
+            "create a method for retrieving the bodies of a transaction",
+            "the method should take in the id of the transaction as an argument",
+            "the method should get the response and request bodies"
+        ],
+        "timespent": "100800",
+        "alpha": 100
+    },
+    {
+        "id": "59005",
+        "project": "OHM",
+        "summary": [
+            "create a method for storing bodies in gridfs"
+        ],
+        "description": [
+            "store the request and response bodies in gridfs",
+            "the metadata should have the following fields id transaction id type response or request the id links the bodies to the transactions",
+            "make use of the gridfs npm package"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "59003",
+        "project": "OHM",
+        "summary": [
+            "remove body from schema"
+        ],
+        "description": [
+            "remove the body field from the transaction schema and update all the methods using the transactions model"
+        ],
+        "timespent": "248400",
+        "alpha": 100
+    },
+    {
+        "id": "58146",
+        "project": "OHM",
+        "summary": [
+            "confirm batch rerun button still clickable after clicking"
+        ],
+        "description": [
+            "when a user reruns transactions the button to confirm and begin the reruns remains visible and clickable for a few seconds after first being clicked",
+            "if the user clicks a few times it reruns the selected transactions for each click"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "57533",
+        "project": "OHM",
+        "summary": [
+            "run the performance tests and document results"
+        ],
+        "description": [
+            "document steps along the way"
+        ],
+        "timespent": "198000",
+        "alpha": 100
+    },
+    {
+        "id": "57532",
+        "project": "OHM",
+        "summary": [
+            "create a playbook for running the performance tests"
+        ],
+        "description": [
+            "it should run each type of test against the openhim",
+            "results need to be stored or output in a format that can be saved for later reporting"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "57530",
+        "project": "OHM",
+        "summary": [
+            "create a playbook for destroying the provisioned servers"
+        ],
+        "description": [
+            "so that we do not end up paying for them while they are not in use"
+        ],
+        "timespent": "111600",
+        "alpha": 100
+    },
+    {
+        "id": "57529",
+        "project": "OHM",
+        "summary": [
+            "create a playbook for setting up digital ocean servers"
+        ],
+        "description": [
+            "it should create the droplets required for performance testing",
+            "we need to run instances of mongodb in a replica set an instance or two with a load balancer of the openhim and a server for running the test scripts from"
+        ],
+        "timespent": "165600",
+        "alpha": 100
+    },
+    {
+        "id": "57397",
+        "project": "OHM",
+        "summary": [
+            "clients unassigning the roles does not work"
+        ],
+        "description": [
+            "when creating a new client a role must be assigned to the client you are creating",
+            "this works as expected when editing a client a new role can be assigned to the existing client",
+            "this works as expected when trying to edit a client by removing one of the assigned roles the role being removed does not get removed from the client"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "57286",
+        "project": "OHM",
+        "summary": [
+            "investigate fix not starting on centos"
+        ],
+        "description": [
+            "rpm package installs with dependencies on centos",
+            "service fails on startup though",
+            "possibly an issue with the version of node installed"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "57150",
+        "project": "OHM",
+        "summary": [
+            "change the openhim package version to"
+        ],
+        "description": [
+            "the current version of the package has had the webpack cli separated from it",
+            "this issue was not noticed when the version upgrade was done",
+            "the version is being changed to"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "57104",
+        "project": "OHM",
+        "summary": [
+            "openhim-console"
+        ],
+        "description": [
+            "bump versions in package files",
+            "tag the release and push to github",
+            "build assets and centos package and add to gh release"
+        ],
+        "timespent": "102600",
+        "alpha": 100
+    },
+    {
+        "id": "57007",
+        "project": "OHM",
+        "summary": [
+            "some helper text buttons are blank"
+        ],
+        "description": [
+            "on the transaction log there are helper text question mark buttons next to the basic filter types to help users understand their purpose",
+            "none functional buttons transaction log date range limit show reruns audit log date range"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "56918",
+        "project": "OHM",
+        "summary": [
+            "fix flaky tests logs api"
+        ],
+        "description": [
+            "there are flaky tests that happen on a basis where the tests timeout",
+            "investigate the issue and implement a fix"
+        ],
+        "timespent": "46800",
+        "alpha": 100
+    },
+    {
+        "id": "56914",
+        "project": "OHM",
+        "summary": [
+            "brent"
+        ],
+        "description": [
+            "investigate nodejs streams library for files and http",
+            "look at gridfs"
+        ],
+        "timespent": "72000",
+        "alpha": 100
+    },
+    {
+        "id": "56727",
+        "project": "OHM",
+        "summary": [
+            "build the console on multiple versions of node.js"
+        ],
+        "description": [
+            "update the travis build to build on the latest lts versions and the current version"
+        ],
+        "timespent": "36000",
+        "alpha": 100
+    },
+    {
+        "id": "56726",
+        "project": "OHM",
+        "summary": [
+            "set up slack notifications for the console"
+        ],
+        "description": [
+            "use the channel on slack"
+        ],
+        "timespent": "34200",
+        "alpha": 100
+    },
+    {
+        "id": "56725",
+        "project": "OHM",
+        "summary": [
+            "set up slack notifications for the core"
+        ],
+        "description": [
+            "use the channel on slack"
+        ],
+        "timespent": "30600",
+        "alpha": 100
+    },
+    {
+        "id": "56707",
+        "project": "OHM",
+        "summary": [
+            "finalize review story"
+        ],
+        "description": [
+            "ensure that all descriptions are met",
+            "code has been reviewed and approved"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "56706",
+        "project": "OHM",
+        "summary": [
+            "add config option for reports to specify the timezone that needs to be applied"
+        ],
+        "description": [
+            "we need to enable the reports that get generated to be for a specific timezone if the servers are in different countries add an option to the configuration file and documentation that allows for a new report config variable we can name this utcoffset e.g we can make use of the existing moment functionality for setting the timezone utcoffset if no utcoffset is defined we default it to the servers timezone offset"
+        ],
+        "timespent": "82800",
+        "alpha": 100
+    },
+    {
+        "id": "56704",
+        "project": "OHM",
+        "summary": [
+            "update report template to include full timestamp from to"
+        ],
+        "description": [
+            "we need to update the existing report email template to include the full timestamp of when this report was generated for",
+            "at the moment we are only displaying the date the report is valid for but this can be misleading depending on the timezone the server is in",
+            "it will also give more clarity as to the exact timestamp the report was generated for",
+            "for the dail report we need to include the from and to values",
+            "even though its the same date it will be better to show the full timestamps for more clarity these need to be the full timestamp including the timezone specified timezone config done part of a different story"
+        ],
+        "timespent": "72000",
+        "alpha": 100
+    },
+    {
+        "id": "56597",
+        "project": "OHM",
+        "summary": [
+            "create a console patch release"
+        ],
+        "description": [
+            "an urgent bug fix needs to be released for datim"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "56386",
+        "project": "OHM",
+        "summary": [
+            "update to the latest major versions"
+        ],
+        "description": [
+            "look at changelogs to see what breaking changes were introduced",
+            "incrementally upgrade to the latest versions"
+        ],
+        "timespent": "270000",
+        "alpha": 100
+    },
+    {
+        "id": "56385",
+        "project": "OHM",
+        "summary": [
+            "update to the latest versions"
+        ],
+        "description": [
+            "upgrade dependencies to the latest patch or minor versions",
+            "these should not contain any breaking changes"
+        ],
+        "timespent": "82800",
+        "alpha": 100
+    },
+    {
+        "id": "56384",
+        "project": "OHM",
+        "summary": [
+            "brent"
+        ],
+        "description": [
+            "hi please use this ticket to capture the first weeks work hours please dont add to sprint thank you"
+        ],
+        "timespent": "248400",
+        "alpha": 100
+    },
+    {
+        "id": "56312",
+        "project": "OHM",
+        "summary": [
+            "some email report links not working"
+        ],
+        "description": [
+            "there is another bug within the report where the link to the transaction filter isnt working properly due to a missing exclamation mark in the url",
+            "we also need to check all places where openhim links are being created and ensure they have the expected exclamation mark nb we need check that the filter link is working correctly",
+            "its been noted that the dates do not contain any timestamp values and thus dont give back an accurate result in the filter"
+        ],
+        "timespent": "39600",
+        "alpha": 100
+    },
+    {
+        "id": "56311",
+        "project": "OHM",
+        "summary": [
+            "show reruns clicking row doesnt redirect the user to the transactions"
+        ],
+        "description": [
+            "the show reruns button now bring up the popover table that contains all the reruns but clicking on the row doesnt redirect the user to the transaction",
+            "only clicking on the right side icon does the transaction get opened in a new tab"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "56138",
+        "project": "OHM",
+        "summary": [
+            "support secondary routes"
+        ],
+        "description": [
+            "using the streaming mechanism that the primary route uses"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "56135",
+        "project": "OHM",
+        "summary": [
+            "store orchestration bodies in gridfs"
+        ],
+        "description": [
+            "same as but for orchestrations"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "56134",
+        "project": "OHM",
+        "summary": [
+            "store the main transaction bodies in gridfs"
+        ],
+        "description": [
+            "remove the bodies from the transaction schema and store them in gridfs instead",
+            "for now the whole body can be written directly to the stream as a single chunk since request and response streaming is not implemented",
+            "this mainly affects messagestore.js but the api will also need to be updated to retrieve the bodies when viewing a single transaction"
+        ],
+        "timespent": "72000",
+        "alpha": 100
+    },
+    {
+        "id": "56041",
+        "project": "OHM",
+        "summary": [
+            "investigate requirements for routing refactor"
+        ],
+        "description": [
+            "look at the current routing implementation and figure out what needs to be changed which components are affected and what the possible approaches are refactoring current implementation vs a new router as proposed by martin"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "55910",
+        "project": "OHM",
+        "summary": [
+            "verify metrics are created with reruns"
+        ],
+        "description": [
+            "we just need to verify that if a transaction is rerun that it also gets a metric record captured for it to display on the dashboard"
+        ],
+        "timespent": "36000",
+        "alpha": 100
+    },
+    {
+        "id": "55909",
+        "project": "OHM",
+        "summary": [
+            "verify metrics are created with mediators"
+        ],
+        "description": [
+            "verify that mediator that respond to the him with a string timestamp also gets captured successfully to display the metrics results on the dashboard",
+            "at the moment mediator metrics doesnt seem to get captured due to the timestamp format not being an instance of date object"
+        ],
+        "timespent": "109800",
+        "alpha": 100
+    },
+    {
+        "id": "55875",
+        "project": "OHM",
+        "summary": [
+            "watches the entire directory for changes"
+        ],
+        "description": [
+            "when installed globally via npm starting the openhim sets up file watchers for the entire directory which can exhaust the max inotify watchers",
+            "this causes problems which may prevent the openhim from starting and if it does start it will be restarted on any change to a file in i suspect that this was introduced by changing watch to false on the server after installing is a temporary workaround"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "55556",
+        "project": "OHM",
+        "summary": [
+            "increase interval for running the task"
+        ],
+        "description": [
+            "once an hour is sufficient"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "55540",
+        "project": "OHM",
+        "summary": [
+            "use calendar days for report timeframes instead of relative times"
+        ],
+        "description": [
+            "at the moment the reports that the openhim generates are calculated relative to the current time if the daily report is sent at it includes transactions since the previous day",
+            "this has been confusing on multiple occasions and would make more sense if it reported all transactions for the previous day the time period should also be made clear on the email that is sent",
+            "this should apply to the daily and weekly report"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "54152",
+        "project": "OHM",
+        "summary": [
+            "display an indicator in the transaction logs on transactions that are replays"
+        ],
+        "description": [
+            "currently transactions that have been replayed have a small circular indicator but it would be useful to have an indicator on the transactions that are replays as well",
+            "screenshot from"
+        ],
+        "timespent": "90000",
+        "alpha": 100
+    },
+    {
+        "id": "51166",
+        "project": "OHM",
+        "summary": [
+            "labels on the charts are not showing"
+        ],
+        "description": [
+            "the labels and scales are not showing on the charts in the latest version of the console",
+            "see attached screenshots"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "51164",
+        "project": "OHM",
+        "summary": [
+            "daily reports not being sent"
+        ],
+        "description": [
+            "we have deployed the latest version of the openhim to one of the medscheme test environments and now the daily reports do not seem to be sending",
+            "the logs look okay but the emails never arrive i have confirmed that the email config is correct by doing a password reset"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "50150",
+        "project": "OHM",
+        "summary": [
+            "changing role name throws an error message"
+        ],
+        "description": [
+            "test steps create a role and save it",
+            "click on the edit button for roles change a role name",
+            "outcome an error banner is displayed see an error has occurred while saving the roles details unknown top level operator push"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "50142",
+        "project": "OHM",
+        "summary": [
+            "forgot password throws a internal server error"
+        ],
+        "description": [
+            "when selecting forgot password on an unlocked account a internal server error is thrown"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "50140",
+        "project": "OHM",
+        "summary": [
+            "user helper hover for phone number does not display helper message"
+        ],
+        "description": [
+            "when hovering over the phone number msisdn format helper question mark icon no help information is displayed"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "50122",
+        "project": "OHM",
+        "summary": [
+            "reset password redirecting to login"
+        ],
+        "description": [
+            "resetting password and setting up password is not working"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "49801",
+        "project": "OHM",
+        "summary": [
+            "flaky test"
+        ],
+        "description": [
+            "occasionally this test fails for no passing pending failing upgrade db tests updatefunction2 migrate visualizer settings from user profile to shared collection should migrate visualizer settings even when user have the same name assertionerror expected to be expected actual at"
+        ],
+        "timespent": "66600",
+        "alpha": 100
+    },
+    {
+        "id": "49774",
+        "project": "OHM",
+        "summary": [
+            "review qa test plan for openhim"
+        ],
+        "description": [
+            "please review openhim and mediator qa test plan for please add comments or make edits in suggest mode please add your name and date to the document control when done"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "49773",
+        "project": "OHM",
+        "summary": [
+            "review openhim requirements"
+        ],
+        "description": [
+            "review openhim functional requirements and technical specs for accuracy and completeness",
+            "this document should reflect what is currently available in and not future requirements",
+            "please add comments or make edits in suggest mode this must include adding comments if you do not know if a section is correct or not specifically the openhie workflows ihe profiles please add your name and date to the document control when done"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "49749",
+        "project": "OHM",
+        "summary": [
+            "create an agenda job which removes the transaction bodies for configured channels"
+        ],
+        "description": [
+            "the task should run daily",
+            "it must check the configuration per channel and based on that remove the request and response bodies for the transactions that are older than the number of days configured",
+            "for efficiency the date that the transaction bodies were last deleted from may need to be stored on the channel so that the date range can be constrained",
+            "the other fields on the transaction should be looked at to decide if they need to be updated as well the flag for whether or not the transaction can be rerun"
+        ],
+        "timespent": "61200",
+        "alpha": 100
+    },
+    {
+        "id": "49747",
+        "project": "OHM",
+        "summary": [
+            "update the channel schema to include options for removing transaction bodies"
+        ],
+        "description": [
+            "it should be possible to this functionality and to specify the number of days after which the bodies should be removed"
+        ],
+        "timespent": "36000",
+        "alpha": 100
+    },
+    {
+        "id": "49728",
+        "project": "OHM",
+        "summary": [
+            "fix broken links in read the docs"
+        ],
+        "description": [
+            "section with broken link examples"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "49657",
+        "project": "OHM",
+        "summary": [
+            "ssl bug when accessing from latest firefox"
+        ],
+        "description": [
+            "ssl error when access core using latest firefox in a docker container",
+            "use this compose file"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "49562",
+        "project": "OHM",
+        "summary": [
+            "write volume testing script"
+        ],
+        "description": [
+            "write tests which call the large body channels in the openhim",
+            "should measure how long it takes for a set number of requests to be made"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "49561",
+        "project": "OHM",
+        "summary": [
+            "write a stress testing script"
+        ],
+        "description": [
+            "call the stress testing channels in the openhim",
+            "should test the maximum number of requests per second with fewer users than the load tests"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "49545",
+        "project": "OHM",
+        "summary": [
+            "creating visualizer fails without telling the user why"
+        ],
+        "description": [
+            "test case expected result when required field is left out an error message should be displayed with helpful information actual result error message is thrown but no detail of what field is incorrect"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "49537",
+        "project": "OHM",
+        "summary": [
+            "regression bug when deleting a role duplicate messages are displayed under the clients section"
+        ],
+        "description": [
+            "test case expected result successful deletion of role actual result role is deleted but multiple messages are displayed under the client section"
+        ],
+        "timespent": "59400",
+        "alpha": 100
+    },
+    {
+        "id": "49534",
+        "project": "OHM",
+        "summary": [
+            "register mediators in travis"
+        ],
+        "description": [
+            "deliverable is to ensure that travis ci is setup on all openhim mediators",
+            "see the list of mediators here"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "49533",
+        "project": "OHM",
+        "summary": [
+            "regression bug when creating a role it say's the role is created but is not displayed in the console"
+        ],
+        "description": [
+            "test case expected result when adding a role it should be displayed on saving",
+            "actual result success banner displays that new role has been created but the new role is not visible"
+        ],
+        "timespent": "30600",
+        "alpha": 100
+    },
+    {
+        "id": "49529",
+        "project": "OHM",
+        "summary": [
+            "tcp any delay will close the connection"
+        ],
+        "description": [
+            "use the delay tcp server in load tests",
+            "the connection is closed by openhim if any delay between writes is introduced"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "49487",
+        "project": "OHM",
+        "summary": [
+            "create rpm package for centos"
+        ],
+        "description": [
+            "from need to create a rpm pacakge for centos",
+            "create a build centos docker image with node and rpmbuild installed",
+            "add a build spec seems like the easiest approach would be to use rpmbuild automation of the version shouldn't be too hard as rpmbuild can use the package.json information in the project",
+            "only question left is will the build just be added as a github release or do we have to setup a repository"
+        ],
+        "timespent": "97200",
+        "alpha": 100
+    },
+    {
+        "id": "49422",
+        "project": "OHM",
+        "summary": [
+            "seed data generator"
+        ],
+        "description": [
+            "write the appropriate tests for the performance testing scenarios listed in this does not include any testing environment setup it should just be possible to run these tests manually for the time being"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "49421",
+        "project": "OHM",
+        "summary": [
+            "write performance test mediator"
+        ],
+        "description": [
+            "write the appropriate tests for the performance testing scenarios listed in this does not include any testing environment setup it should just be possible to run these tests manually for the time being"
+        ],
+        "timespent": "88200",
+        "alpha": 100
+    },
+    {
+        "id": "49420",
+        "project": "OHM",
+        "summary": [
+            "write api performance tests for openhim scenarios"
+        ],
+        "description": [
+            "write the appropriate tests for the performance testing scenarios listed in this does not include any testing environment setup it should just be possible to run these tests manually for the time being"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "49380",
+        "project": "OHM",
+        "summary": [
+            "write router performance tests for openhim scenarios"
+        ],
+        "description": [
+            "write the appropriate tests for the performance testing scenarios listed in this does not include any testing environment setup it should just be possible to run these tests manually for the time being"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "49313",
+        "project": "OHM",
+        "summary": [
+            "investigate missing notice to accept cert from core"
+        ],
+        "description": [
+            "investigate on console why notice to accept cert from core is missing"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "49305",
+        "project": "OHM",
+        "summary": [
+            "update the channel modal in the console to support selecting allowed methods"
+        ],
+        "description": [
+            "it should be possible for a user to select one or more allowed http methods and enable or disable the method check if needed",
+            "bear in mind that this configuration is specific to http routes so should not be visible when configuring tcp routes"
+        ],
+        "timespent": "88200",
+        "alpha": 100
+    },
+    {
+        "id": "49304",
+        "project": "OHM",
+        "summary": [
+            "check the http method when routing requests"
+        ],
+        "description": [
+            "if this functionality is enabled for the channel that matches the request then check if the http method is in the allowed array and send a method not allowed response if not"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "49303",
+        "project": "OHM",
+        "summary": [
+            "update the channel model to include allowed http methods"
+        ],
+        "description": [
+            "this should be an array of which is allowed to have any of the standard http methods as values",
+            "either it needs to be populated with all of the allowed methods by default or there needs to be an additional flag do indicate whether this functionality is enabled or not",
+            "this is so that existing channels will continue to work"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "49282",
+        "project": "OHM",
+        "summary": [
+            "several tests break on node"
+        ],
+        "description": [
+            "on node all the tests pass but on fail"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "49082",
+        "project": "OHM",
+        "summary": [
+            "implement new views"
+        ],
+        "description": [
+            "update audit views to display new fields",
+            "come up with design and work flow for new views",
+            "get feedback from team"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "49078",
+        "project": "OHM",
+        "summary": [
+            "implement api and model changes"
+        ],
+        "description": [
+            "update the audit api endpoints and model schema to include the new fields"
+        ],
+        "timespent": "25200",
+        "alpha": 100
+    },
+    {
+        "id": "49070",
+        "project": "OHM",
+        "summary": [
+            "provide technical support for the nextgen project"
+        ],
+        "description": [
+            "high priority",
+            "jembi needs to provide technical design input and techncial support to the project specifically for the icf team who are going to develop the new mediator that is required",
+            "input to the new deployment architecture is also an ongoing need",
+            "this ticket is to be used to log time for call attendance responding to emails and providing support"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "49057",
+        "project": "OHM",
+        "summary": [
+            "the tabs are broken in the add channel dialog after the dependency upgrades"
+        ],
+        "description": [
+            "all of the content is shown in a single column instead of tabbed as it was before"
+        ],
+        "timespent": "12600",
+        "alpha": 100
+    },
+    {
+        "id": "49056",
+        "project": "OHM",
+        "summary": [
+            "content is being but original header remains"
+        ],
+        "description": [
+            "when the him gets a compressed response it decompresses it and then it and forwards",
+            "however it keeps the original header so if the compression ratio is different to the original the response can be truncated",
+            "the him needs to set the header to the new value when happens",
+            "ideally the him would just decompress for the transaction log and pass through the original response rather than using resources to compress again"
+        ],
+        "timespent": "25200",
+        "alpha": 100
+    },
+    {
+        "id": "48995",
+        "project": "OHM",
+        "summary": [
+            "design for datim multiple moh facility sync process"
+        ],
+        "description": [
+            "pepfar wants to offer mohs a facility sync process that does not required an ohie stack for the moh",
+            "the process would be something like pepfar has a nightly or weekly facility refresh process that does the following extract any changes or updates in moh facility records",
+            "place that extract in csd document on global create dxf for import into global import additions changes into global requirements would be something like scheduled job on pepfar side asynchronous will require a new or updated mediator to support this process for multiple mohs",
+            "design still to be agreed and finalised working with the regenstrief team design doc here"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "48985",
+        "project": "OHM",
+        "summary": [
+            "as an administrator i want to be able to create channels"
+        ],
+        "description": [
+            "we would like to be able to set up a channel which allows get requests but not any put post delete etc requests",
+            "this is so that we can allow downstream services to request data directly from the source but for any changes to this data to be routed through an additional validation layer which uses a separate channel"
+        ],
+        "timespent": "61200",
+        "alpha": 100
+    },
+    {
+        "id": "48976",
+        "project": "OHM",
+        "summary": [
+            "set up openhim staging server so that it is available in heal kiosk"
+        ],
+        "description": [
+            "set up openhim staging server so that it is available in heal kiosk"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "48754",
+        "project": "OHM",
+        "summary": [
+            "set up staging and test servers and continuous deployment process"
+        ],
+        "description": [
+            "setting up continuous deployment of the test and staging servers for openhim"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "48552",
+        "project": "OHM",
+        "summary": [
+            "update mocha in openhim from"
+        ],
+        "description": [
+            "this ticket can only be done after the openhim core tests have been rewritten"
+        ],
+        "timespent": "919800",
+        "alpha": 100
+    },
+    {
+        "id": "48548",
+        "project": "OHM",
+        "summary": [
+            "integration tests"
+        ],
+        "description": [
+            "integration tests are using callbacks for async and should use async await instead"
+        ],
+        "timespent": "46800",
+        "alpha": 100
+    },
+    {
+        "id": "48547",
+        "project": "OHM",
+        "summary": [
+            "unit test upgrade"
+        ],
+        "description": [
+            "unit tests use callbacks for asynchronous tests",
+            "change to async await"
+        ],
+        "timespent": "61200",
+        "alpha": 100
+    },
+    {
+        "id": "48541",
+        "project": "OHM",
+        "summary": [
+            "remove shared resources with tests"
+        ],
+        "description": [
+            "currently when the tests fire they share resources for example the instance they are testing db it's working and the faked tcp servers",
+            "when a test breaks it can break unrelated tests",
+            "this will also reduce the amount and reliance on buggy cleanup code"
+        ],
+        "timespent": "46800",
+        "alpha": 100
+    },
+    {
+        "id": "48512",
+        "project": "OHM",
+        "summary": [
+            "as an administrator i need a way to remove bodies from transactions after a certain period of time"
+        ],
+        "description": [
+            "the bodies of transactions can contain sensitive personal information",
+            "there needs to be a way to remove the bodies from transactions after a certain period of time in order to comply with privacy requirements",
+            "ideally this should happen automatically after a configurable period of time",
+            "this allows transactions to be investigated and replayed within a window period",
+            "after this the bodies should be removed but the rest of the transaction details should remain"
+        ],
+        "timespent": "36000",
+        "alpha": 100
+    },
+    {
+        "id": "48444",
+        "project": "OHM",
+        "summary": [
+            "investigate performance testing tools and strategies"
+        ],
+        "description": [
+            "spike investigate approach research options and agree metrics we want"
+        ],
+        "timespent": "140400",
+        "alpha": 100
+    },
+    {
+        "id": "47009",
+        "project": "OHM",
+        "summary": [
+            "cannot save a client in global ohie due to strange error"
+        ],
+        "description": [
+            "see please see attachment for detailed background information",
+            "user is experiencing an issue when trying to update the certificate for an existing client",
+            "see the screen capture of the github issue where users are experiencing this"
+        ],
+        "timespent": "73800",
+        "alpha": 100
+    },
+    {
+        "id": "48217",
+        "project": "OHM",
+        "summary": [
+            "remove ensureindex call when saving events from core"
+        ],
+        "description": [
+            "performance testing uncovered that multiple ensureindex calls are being done on the events collection per transaction",
+            "this should be done once when the application starts up instead of on every call",
+            "some investigation needs to be done to decide on the best approach with mongoose before this is implemented",
+            "see"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "48056",
+        "project": "OHM",
+        "summary": [
+            "new transactions are in the wrong order in the transaction log"
+        ],
+        "description": [
+            "the new transactions that appear at the top of the transaction when polling are in reverse order"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "47506",
+        "project": "OHM",
+        "summary": [
+            "deploy latest version of the openhim to"
+        ],
+        "description": [
+            "need to deploy the latest release of the openhim",
+            "this server needs to be as a means to actively ensure qa for product quality and performance",
+            "we need to ensure that hetzner openhim bench is also setup"
+        ],
+        "timespent": "234000",
+        "alpha": 100
+    },
+    {
+        "id": "47131",
+        "project": "OHM",
+        "summary": [
+            "publish to ilr script need to handle special characters in the password"
+        ],
+        "description": [
+            "from tash it looks like the issue has been resolved and we were not involved in the conversation but it might be worth just giving the ticket a read through in light of the question"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "47107",
+        "project": "OHM",
+        "summary": [
+            "get headers auth token needs to be wrapped"
+        ],
+        "description": [
+            "actual when logging into the console then selecting transaction log from the navigation menu then selecting a post request type the value overlaps the containing border and is also cut shorter",
+            "expected when logging into the console then selecting transaction log from the navigation menu then selecting a post request type the value must fit into the containing border if too long by wrapping the text value"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "46641",
+        "project": "OHM",
+        "summary": [
+            "incorporate new function into relevant api calls"
+        ],
+        "description": [
+            "incorporate function that adds mongo config to mongoose calls into relevant api calls",
+            "there will now be two mongoose connections one for api calls and one for the primary routes"
+        ],
+        "timespent": "167400",
+        "alpha": 100
+    },
+    {
+        "id": "46613",
+        "project": "OHM",
+        "summary": [
+            "refactor transaction polling mechanism"
+        ],
+        "description": [
+            "refactor the transactions polling mechanism to not be done on a set interval basis but rather to only trigger once the previous response has returned",
+            "just ensure that the time stamps are correct"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "46206",
+        "project": "OHM",
+        "summary": [
+            "core crashes with memory leak"
+        ],
+        "description": [
+            "info job auto retry failed transactions has completed info starting job generate transaction alerts last ran at wed jun utc info starting job auto retry failed transactions last ran at wed jun utc debug executing query autoretry.findandremove and channelid requesttimestamp lte debug alerting task total time ms info job generate transaction alerts has completed debug auto retry task total time ms info job auto retry failed transactions has completed info api request made by from has expired denying access debug processed internal audit info starting job generate transaction alerts last ran at wed jun utc info starting job auto retry failed transactions last ran at wed jun utc debug executing query autoretry.findandremove and channelid requesttimestamp lte debug alerting task total time ms info job generate transaction alerts has completed debug auto retry task total time ms info job auto retry failed transactions has completed fatal error allocation failed javascript heap out of memory last few gcs ms mb ms allocation failure gc in old space last resort js stacktrace js stack trace security context js object defer undefined then an object with map js function s sharedfunctioninfo js function t const char const bool warn master worker died info master worker with pid is online the options are deprecated all their options are supported at the top level of the options object the options are deprecated all their options are supported at the top level of the options object info starting openhim server on info started rerun task processor info auditing udp server listening on port info http listening on port info auditing tcp server listening on port"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "46102",
+        "project": "OHM",
+        "summary": [
+            "missing indexes for the basic transaction log filters"
+        ],
+        "description": [
+            "with a large number of transactions in the database the transaction log in the console becomes unusable and trying to use it causes throughput in the core to drop off",
+            "by using the mongodb query profiler i found that there was a missing index on parentid and a missing compound index on channelid and request timestamp",
+            "by adding these the transaction log becomes fairly usable again as long as no advanced filters are used"
+        ],
+        "timespent": "133200",
+        "alpha": 100
+    },
+    {
+        "id": "46101",
+        "project": "OHM",
+        "summary": [
+            "large rerun batches cause massive cpu load"
+        ],
+        "description": [
+            "medscheme issue rerunning transactions in large batches causes the cpu usage to increase dramatically which results in reduced throughput in the openhim",
+            "rerunning batches of causes the openhim to almost grind to a halt and the processing is extremely slow transactions rerun over smaller batches of transactions and a batch size of still increase the cpu usage a lot but don't cause the same issues as the larger batches",
+            "the openhim needs to be smarter about how it handles large batches or the maximum batch size needs to be reduced"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "45808",
+        "project": "OHM",
+        "summary": [
+            "the dashboard becomes unusable under load"
+        ],
+        "description": [
+            "medscheme the dashboard uses aggregation queries to calculate the number of transactions and the average response time",
+            "when there is a large number of transactions in the date range then this aggregation becomes extremely slow and the dashboard stops working",
+            "this issue is exaggerated by the repeated requests that the dashboard makes to keep up to date",
+            "a possible solution would be to have a separate collection to be used for the dashboard metrics and use increment operators to update the documents in this collection efficiently"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "43500",
+        "project": "OHM",
+        "summary": [
+            "improve mediator tutorial docs"
+        ],
+        "description": [
+            "feedback from a user i know the difficulty of keeping docs in sync with development",
+            "i found some changes that need to be made to instruct user to install a recent version of nodejs",
+            "ubuntu version is too old",
+            "the yeoman fill out the questions section is missing several options not sure the npm install part is needed as yeoman did it automatically",
+            "is now just and contains additional parameters by default is likewise just in the config directory is in lib it does not have an app.get section it does have the documentation seems to suggest one just needs to alter something already in the file",
+            "var app express is now const app express i stopped once i got to the needle section additional notes on the tutorial passthrough mediator would be good to let users know they need to install grunt ahead of time npm install grunt the tutorial mediator does not include a grunt file causing an error when running grunt serve"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "39122",
+        "project": "OHM",
+        "summary": [
+            "edit openhie demo wiki page to point to our new demo servers"
+        ],
+        "description": [
+            "see here"
+        ],
+        "timespent": "100800",
+        "alpha": 100
+    },
+    {
+        "id": "38820",
+        "project": "OHM",
+        "summary": [
+            "transaction log fails to display transactions"
+        ],
+        "description": [
+            "when filtering by status channel and limit the console prints the following error and fails to display the filtered transactions typeerror cannot read property foreach of null at"
+        ],
+        "timespent": "9000",
+        "alpha": 100
+    },
+    {
+        "id": "38805",
+        "project": "OHM",
+        "summary": [
+            "mediator status appears red when the mediator reports a time that is in the future"
+        ],
+        "description": [
+            "if a future time is received from the mediator we should still display a green status"
+        ],
+        "timespent": "208800",
+        "alpha": 100
+    },
+    {
+        "id": "38205",
+        "project": "OHM",
+        "summary": [
+            "configure openhie systems for demo"
+        ],
+        "description": [
+            "configure all systems so that the demo functions setup integration tests that run against the demo on a schedule"
+        ],
+        "timespent": "137100",
+        "alpha": 100
+    },
+    {
+        "id": "36737",
+        "project": "OHM",
+        "summary": [
+            "make sure that the report type property is set"
+        ],
+        "description": [
+            "in reports.coffee the type property of the report object is accessed but has no value",
+            "make sure that this is set to weekly or monthly as it was previously",
+            "it was removed here"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "35907",
+        "project": "OHM",
+        "summary": [
+            "clients and roles conflict when not unique"
+        ],
+        "description": [
+            "in order to create a role and successfully assign the role to channels as an openhim admin i want to not be able to name a role with the same name as a client",
+            "currently if there is a conflict on the clients page the role does not appear to be assigned to channels"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "35801",
+        "project": "OHM",
+        "summary": [
+            "per channel timeouts"
+        ],
+        "description": [
+            "when a new timeout is set we would need to make sure that timeout is set for outbound requests and then broadcast an event to that each cluster node picks up and check if the timeout being set is greater than the current on if so we need to set the timeout to the greater value plus some buffer we also need to set the server timeout to the longest channel timeout buffer on startup"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "34631",
+        "project": "OHM",
+        "summary": [
+            "truncate response so that document is and set canrerun to false"
+        ],
+        "description": [
+            "use buffer.bytelength to check the size of the response and if it is too large then truncate it before saving the transaction",
+            "the max size needs to be because that limit is for the entire transaction document including the request response and other fields"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "34627",
+        "project": "OHM",
+        "summary": [
+            "release the openhim console"
+        ],
+        "description": [
+            "see also make sure the packaging works once uploaded"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "34626",
+        "project": "OHM",
+        "summary": [
+            "release the openhim core"
+        ],
+        "description": [
+            "see also make sure the packaging works once uploaded"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "34612",
+        "project": "OHM",
+        "summary": [
+            "the tooltip on the response time graph shows the wrong units"
+        ],
+        "description": [
+            "on the dashboard hovering over a point on the response time graph shows a tooltip which has the date and a label transactions next to the value",
+            "this seems like a error from the transactions graph above"
+        ],
+        "timespent": "2400",
+        "alpha": 100
+    },
+    {
+        "id": "34535",
+        "project": "OHM",
+        "summary": [
+            "as a user i need better visibility into the requests that are made when my request is being routed so that i can debug connectivity issues"
+        ],
+        "description": [
+            "currently there is no way to see the request that is sent to the upstream endpoint when a request coming in to the him is routed",
+            "it would be really useful to see exactly what headers and body were sent so that it is possible to debug issues with that request"
+        ],
+        "timespent": "46800",
+        "alpha": 100
+    },
+    {
+        "id": "33989",
+        "project": "OHM",
+        "summary": [
+            "visualizer settings migration bug"
+        ],
+        "description": [
+            "the following error was seen when upgrading to the latest him cannot read length of undefined this might be as simple as adding existential checks for each of the three clauses in that line"
+        ],
+        "timespent": "9000",
+        "alpha": 100
+    },
+    {
+        "id": "33652",
+        "project": "OHM",
+        "summary": [
+            "add questions via debconf to the debian package installer to ask if certificate watching should be turned on and if yes which paths to watch"
+        ],
+        "description": [
+            "for context see"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "33651",
+        "project": "OHM",
+        "summary": [
+            "disable uploaded and generating server certificates on console and core when certificate watching config option is set"
+        ],
+        "description": [
+            "for context see"
+        ],
+        "timespent": "52200",
+        "alpha": 100
+    },
+    {
+        "id": "33650",
+        "project": "OHM",
+        "summary": [
+            "setup a file watchers on server startup to watch for changes in the certificate if the certificate watch option is turned on"
+        ],
+        "description": [
+            "for context see"
+        ],
+        "timespent": "73800",
+        "alpha": 100
+    },
+    {
+        "id": "33648",
+        "project": "OHM",
+        "summary": [
+            "when the server starts up we should check the config to see if we need to load a certificate from a folder"
+        ],
+        "description": [
+            "there should be new config options keep track of the whether we are watching for certificates toggle keep track of the certificate file path keep track of the key file path for context see"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "33407",
+        "project": "OHM",
+        "summary": [
+            "add keystore support to metadata resource"
+        ],
+        "description": [
+            "story as an openhim admin i want to be able to import and export the keystore so i can transfer this config between instances",
+            "acceptance criteria given an keystore in the openhim when an admin chooses to export this data then the data should be exported given an keystore in the openhim when an admin chooses to import a new keystore then the old keystore data should be replaced with the new keystore"
+        ],
+        "timespent": "8280",
+        "alpha": 100
+    },
+    {
+        "id": "33203",
+        "project": "OHM",
+        "summary": [
+            "add support for core configuration via environment variables"
+        ],
+        "description": [
+            "nconf already supports env variables so should hopefully not be difficult to implement"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "32502",
+        "project": "OHM",
+        "summary": [
+            "centos installation package for datim"
+        ],
+        "description": [
+            "been a request to create packaging for the mediator updated request from bao systems organisation that supports datim to provide an installation package for openhim for centos",
+            "they have provided some installations scripts as an example the estimate for this work needs to include initial work to create and leve of effort required to keep this updated per release openhim centos install draft instructions modified from install mongo get current mongodb repo vi repository baseurl gpgkey yum install config selinux for mongo yum install policycoreutils-python semanage port a t p tcp start mongo sudo service mongod start set for run on reboot systemctl enable mongod install nodejs yum install nodejs install git yum install git install openhim core sudo npm install g todo make a script to run in the background sudo install openhim web console sudo yum install wget see for version number wget sudo mkdir p cd sudo tar xvzf directory apache sudo yum install httpd firewall rules sudo permanent sudo reload sudo systemctl enable httpd sudo chown r sudo systemctl start httpd sudo restorecon r log into and change the root password",
+            "if using certs you will need to go to first",
+            "once in the admin console you can add certificates using the link in the left hand"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "32094",
+        "project": "OHM",
+        "summary": [
+            "write scripts to set up a performance testing environment for the openhim"
+        ],
+        "description": [
+            "in order to acturately measure performance a pristine testing environment is needed for each test run",
+            "the process of deploying and configuring such an environment to closely match an expected production environment should be automated with ansible",
+            "this must include importing a baseline set of data so that the tests produce consistent results between runs",
+            "see"
+        ],
+        "timespent": "45000",
+        "alpha": 100
+    },
+    {
+        "id": "31947",
+        "project": "OHM",
+        "summary": [
+            "filter transaction log by time"
+        ],
+        "description": [
+            "user story as a transaction monitoring user i would like to filter transaction log by time and date instead of just date so that i can more easily locate a particular set of transaction around a specific time acceptance criteria given a list of transactions when the list is viewed then the user should be able to add a time component to the current start and end date fields given a list of transactions when the user sets a start date then if they don't set a time component it should default to midnight on the start date given a list of transactions when the user sets a end date then if they don't set a time component it should default to the last millsecond of the end date"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "31339",
+        "project": "OHM",
+        "summary": [
+            "events api occasionally throws a error during tests"
+        ],
+        "description": [
+            "underlined"
+        ],
+        "timespent": "39600",
+        "alpha": 100
+    },
+    {
+        "id": "31137",
+        "project": "OHM",
+        "summary": [
+            "when a user changes their own password on the users page they should be logged out else they get errors"
+        ],
+        "description": [
+            "see"
+        ],
+        "timespent": "4500",
+        "alpha": 100
+    },
+    {
+        "id": "31112",
+        "project": "OHM",
+        "summary": [
+            "update autoretry code with suggested changes core and console"
+        ],
+        "description": [
+            "see here for more details"
+        ],
+        "timespent": "4800",
+        "alpha": 100
+    },
+    {
+        "id": "31111",
+        "project": "OHM",
+        "summary": [
+            "store internal routing error results in core instead of just returning a core and console"
+        ],
+        "description": [
+            "this is so that the user could know were the is coming from",
+            "if it's from the openhim we likely have more information on what is causing this error",
+            "we should also allow for mediators to report this sort of failure to core",
+            "the solution should implement this as well",
+            "for context of this issue see and"
+        ],
+        "timespent": "59400",
+        "alpha": 100
+    },
+    {
+        "id": "30790",
+        "project": "OHM",
+        "summary": [
+            "transactions list should support entering only start or end date"
+        ],
+        "description": [
+            "user story as an openhim user i want the transaction list date range to support entering only start or end date so that i can make more flexible queries acceptance criteria given a user performing a transaction list filter when only start date is set then all transaction from that date on wards are returned given a user performing a transaction list filter when only end date is set then all transaction previous to that date are returned"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "30725",
+        "project": "OHM",
+        "summary": [
+            "testing audit server fails occasionally"
+        ],
+        "description": [
+            "see"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "30724",
+        "project": "OHM",
+        "summary": [
+            "testing loaddefaultchannels fails occasionally"
+        ],
+        "description": [
+            "see"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "30723",
+        "project": "OHM",
+        "summary": [
+            "testing getauditbyid fails occasionally"
+        ],
+        "description": [
+            "see"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "30722",
+        "project": "OHM",
+        "summary": [
+            "packaging and tests should use the latest lts version of node"
+        ],
+        "description": [
+            "given the latest packaging when the package is installed then the latest node lts at time of packaging being updated should be installed see"
+        ],
+        "timespent": "16200",
+        "alpha": 100
+    },
+    {
+        "id": "30719",
+        "project": "OHM",
+        "summary": [
+            "config import shouldn't email users"
+        ],
+        "description": [
+            "see"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "30715",
+        "project": "OHM",
+        "summary": [
+            "console polling transaction should also display the http method and the http status on the transaction details page rather than just polling"
+        ],
+        "description": [
+            "see"
+        ],
+        "timespent": "19800",
+        "alpha": 100
+    },
+    {
+        "id": "30693",
+        "project": "OHM",
+        "summary": [
+            "as an openhim admin i'd like to change the metrics graphs on the console to have a selectable time series"
+        ],
+        "description": [
+            "we will attempt to use morris charts for this and in the current implementation however if it is determined to be insufficient then we may need to pivot to go with a new graphing library",
+            "this may lead to increased scope and changes to the sprint"
+        ],
+        "timespent": "91800",
+        "alpha": 100
+    },
+    {
+        "id": "30598",
+        "project": "OHM",
+        "summary": [
+            "events aren't being generated for async secondary routes"
+        ],
+        "description": [
+            "when a secondary route completes after the primary then no events will be generated for it",
+            "this will affect both the visualizer and alerting"
+        ],
+        "timespent": "52200",
+        "alpha": 100
+    },
+    {
+        "id": "29428",
+        "project": "OHM",
+        "summary": [
+            "release openhim"
+        ],
+        "description": [
+            "blocked on"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "25022",
+        "project": "OHM",
+        "summary": [
+            "modify default transaction filter to exclude rurrun transactions"
+        ],
+        "description": [
+            "need to update mongo indexes should be a checkbox on basic filter for this"
+        ],
+        "timespent": "36000",
+        "alpha": 100
+    },
+    {
+        "id": "24792",
+        "project": "OHM",
+        "summary": [
+            "openhim does not handle redirects"
+        ],
+        "description": [
+            "found that redirects response cause transactions to remain stuck in processing and the request is not passed through"
+        ],
+        "timespent": "9000",
+        "alpha": 100
+    },
+    {
+        "id": "23858",
+        "project": "OHM",
+        "summary": [
+            "add link to transaction list from emails"
+        ],
+        "description": [
+            "clicking a cell on the email should to console with correct filter parameters"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "23856",
+        "project": "OHM",
+        "summary": [
+            "spike investigate and prototype data mapper"
+        ],
+        "description": [
+            "openhim mediator with frontend pluggable into the console that can be used to give a number of connectors for data mapping datasets tracker openmrs reporting module commcae mobenzi hprs speak to as he is working on the openmrs side of things"
+        ],
+        "timespent": "72000",
+        "alpha": 100
+    },
+    {
+        "id": "23847",
+        "project": "OHM",
+        "summary": [
+            "deploy latest java mediator engine"
+        ],
+        "description": [
+            "will need this for the cda validator"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "23706",
+        "project": "OHM",
+        "summary": [
+            "enable easy scanning of responses"
+        ],
+        "description": [
+            "when investigating issues with completed transactions it is very laborious to check each message one by one",
+            "it would be helpful to be able to click through the list of transactions selected by the filter and see immediately the relevant information",
+            "this could be done as a pop up screen with backward and forward arrows showing the response of the request"
+        ],
+        "timespent": "79200",
+        "alpha": 100
+    },
+    {
+        "id": "22913",
+        "project": "OHM",
+        "summary": [
+            "include optional client information in the data model"
+        ],
+        "description": [
+            "do the console updates as part of this ticket"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "21699",
+        "project": "OHM",
+        "summary": [
+            "openhim issued picked up"
+        ],
+        "description": [
+            "and"
+        ],
+        "timespent": "50400",
+        "alpha": 100
+    },
+    {
+        "id": "20993",
+        "project": "OHM",
+        "summary": [
+            "spike memory issues with console"
+        ],
+        "description": [
+            "se tup production api server and point console at this momconnect prod validate that memoery issue doesnt exist"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "20890",
+        "project": "OHM",
+        "summary": [
+            "uptime ping channel exposed but not logged in transaction list"
+        ],
+        "description": [
+            "expose an endpoint for checking if the him is up and available but exclude these requests from the transaction log"
+        ],
+        "timespent": "36000",
+        "alpha": 100
+    },
+    {
+        "id": "20715",
+        "project": "OHM",
+        "summary": [
+            "loadtest and identify bottlenecks openhim"
+        ],
+        "description": [
+            "load test openhim with a fully loaded mongodb records identify bottlenecks if any"
+        ],
+        "timespent": "70200",
+        "alpha": 100
+    },
+    {
+        "id": "20701",
+        "project": "OHM",
+        "summary": [
+            "hitrac training week"
+        ],
+        "description": [
+            "hours of training to hitrak via skype"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "20700",
+        "project": "OHM",
+        "summary": [
+            "hitrak training week"
+        ],
+        "description": [
+            "hours of openhim training and support via skype to hitrak"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "20693",
+        "project": "OHM",
+        "summary": [
+            "drp template and guidlines"
+        ],
+        "description": [
+            "back up database back up config app tomcat bachup all scripts back up certificates back up all user generated content ssisa photographs all released binaries every version documentation of app"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "20692",
+        "project": "OHM",
+        "summary": [
+            "mpi investigation"
+        ],
+        "description": [
+            "this is a very important project to decide on which mpi solution we will use",
+            "current options are openmpi graph database thoughtworks shr cassandra and the mohawk mpi net questions that need to be answered reliability scalability speed with a loaded database quality of documentation ease of use has communication has http api communication quality of batch matching algorithms can a realtime fuzzy match on certain field be done eg search for pierre lane and get back pierre dane output should include a concise report and vms available for use",
+            "nice to have is vagrant script for setting up each mpi"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "20298",
+        "project": "OHM",
+        "summary": [
+            "research running openhim on windows"
+        ],
+        "description": [
+            "use windows vm on jembi server"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "20204",
+        "project": "OHM",
+        "summary": [
+            "create a upstart config that uses the openhim binary created by npm install"
+        ],
+        "description": [
+            "include in repo using forever forks the process this makes it more complicated"
+        ],
+        "timespent": "11400",
+        "alpha": 100
+    },
+    {
+        "id": "20202",
+        "project": "OHM",
+        "summary": [
+            "research syntax highlighting/formatting of response bodies in console"
+        ],
+        "description": [
+            "format in response when rendering payload determine type and format in correct way",
+            "libraries are available need to find correct one martin couldn't find a library that does formatting and highlighting"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "20201",
+        "project": "OHM",
+        "summary": [
+            "report metrics on behalf of mediators"
+        ],
+        "description": [
+            "mediators are able to report back metrics to the core in the same way they update visualizer stats",
+            "when we get response need to read metrics and post as is to statsd make sure name spacing is correct add handling to the mediator engine",
+            "need to specify what kind of metric this is reformat json"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "20199",
+        "project": "OHM",
+        "summary": [
+            "routes still send to an old endpoint when a channel's route has been updated"
+        ],
+        "description": [
+            "channel is being stored in global variable channel details need to be pulled from mongo on each request specifically for tcp routes"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "20198",
+        "project": "OHM",
+        "summary": [
+            "rerun only working for http requests"
+        ],
+        "description": [
+            "add method to rerun non http requests",
+            "add tests"
+        ],
+        "timespent": "68400",
+        "alpha": 100
+    },
+    {
+        "id": "65167",
+        "project": "OHM",
+        "summary": [
+            "investigate"
+        ],
+        "timespent": "115200"
+    },
+    {
+        "id": "64535",
+        "project": "OHM",
+        "summary": [
+            "finalise review and merge"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "64534",
+        "project": "OHM",
+        "summary": [
+            "service for config import"
+        ],
+        "timespent": "161100"
+    },
+    {
+        "id": "64533",
+        "project": "OHM",
+        "summary": [
+            "service for creating hapi fhir"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "64532",
+        "project": "OHM",
+        "summary": [
+            "service for creating the core and console"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "64972",
+        "project": "OHM",
+        "summary": [
+            "cloud deployment scripts"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "64863",
+        "project": "OHM",
+        "summary": [
+            "finalise review and merge"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "65003",
+        "project": "OHM",
+        "summary": [
+            "implement pod start up order"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "64856",
+        "project": "OHM",
+        "summary": [
+            "main yaml scripts"
+        ],
+        "timespent": "149400"
+    },
+    {
+        "id": "64764",
+        "project": "OHM",
+        "summary": [
+            "matthew"
+        ],
+        "timespent": "78300"
+    },
+    {
+        "id": "64763",
+        "project": "OHM",
+        "summary": [
+            "martin"
+        ],
+        "timespent": "126000"
+    },
+    {
+        "id": "64352",
+        "project": "OHM",
+        "summary": [
+            "trigger deploy for sandbox environments"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "64350",
+        "project": "OHM",
+        "summary": [
+            "matthew"
+        ],
+        "timespent": "50400"
+    },
+    {
+        "id": "64349",
+        "project": "OHM",
+        "summary": [
+            "bradford"
+        ],
+        "timespent": "158400"
+    },
+    {
+        "id": "64062",
+        "project": "OHM",
+        "summary": [
+            "create alpha release on npm"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "64030",
+        "project": "OHM",
+        "summary": [
+            "update readme to reference node instead of node and also merge other changes from"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "63939",
+        "project": "OHM",
+        "summary": [
+            "fix broken tests"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "63938",
+        "project": "OHM",
+        "summary": [
+            "update package.json supported node engine"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "63937",
+        "project": "OHM",
+        "summary": [
+            "add travis script to test node"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "63837",
+        "project": "OHM",
+        "summary": [
+            "work out which colors belong to which statuses and apply"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "63783",
+        "project": "OHM",
+        "summary": [
+            "docs update tutorials sections"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "63782",
+        "project": "OHM",
+        "summary": [
+            "docs remove how tos"
+        ],
+        "timespent": "208800"
+    },
+    {
+        "id": "63781",
+        "project": "OHM",
+        "summary": [
+            "docs getting started"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "63676",
+        "project": "OHM",
+        "summary": [
+            "api audits"
+        ],
+        "timespent": "82800"
+    },
+    {
+        "id": "63080",
+        "project": "OHM",
+        "summary": [
+            "finalize"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "63545",
+        "project": "OHM",
+        "summary": [
+            "api server uptime"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "63544",
+        "project": "OHM",
+        "summary": [
+            "api metadata"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "63542",
+        "project": "OHM",
+        "summary": [
+            "api keytore"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "63541",
+        "project": "OHM",
+        "summary": [
+            "api metrics"
+        ],
+        "timespent": "30600"
+    },
+    {
+        "id": "63540",
+        "project": "OHM",
+        "summary": [
+            "api mediators"
+        ],
+        "timespent": "39600"
+    },
+    {
+        "id": "63539",
+        "project": "OHM",
+        "summary": [
+            "api tasks"
+        ],
+        "timespent": "90000"
+    },
+    {
+        "id": "63538",
+        "project": "OHM",
+        "summary": [
+            "api users"
+        ],
+        "timespent": "61200"
+    },
+    {
+        "id": "63536",
+        "project": "OHM",
+        "summary": [
+            "api contact groups"
+        ],
+        "timespent": "32400"
+    },
+    {
+        "id": "63079",
+        "project": "OHM",
+        "summary": [
+            "update the document"
+        ],
+        "timespent": "144000"
+    },
+    {
+        "id": "63408",
+        "project": "OHM",
+        "summary": [
+            "fix tcp route functionality"
+        ],
+        "timespent": "153000"
+    },
+    {
+        "id": "62882",
+        "project": "OHM",
+        "summary": [
+            "ensure incoming body type matched the header"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "62879",
+        "project": "OHM",
+        "summary": [
+            "ensure all outgoing response are converted into supplied output format"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "62870",
+        "project": "OHM",
+        "summary": [
+            "implement middleware parser for incoming data in specified format"
+        ],
+        "timespent": "64800"
+    },
+    {
+        "id": "62868",
+        "project": "OHM",
+        "summary": [
+            "add integration tests for complete flow"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "62867",
+        "project": "OHM",
+        "summary": [
+            "implement middleware parser for converting to specified format"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "62793",
+        "project": "OHM",
+        "summary": [
+            "validation error thrown in logs but not returned as response payload"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "62785",
+        "project": "OHM",
+        "summary": [
+            "finalise"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "62784",
+        "project": "OHM",
+        "summary": [
+            "add constants file"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "62745",
+        "project": "OHM",
+        "summary": [
+            "add constants file per endpoint"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "62743",
+        "project": "OHM",
+        "summary": [
+            "enhance to take in a set of values into a custom function"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "62726",
+        "project": "OHM",
+        "summary": [
+            "replace validation schema interpretation code with existing library"
+        ],
+        "timespent": "187200"
+    },
+    {
+        "id": "62722",
+        "project": "OHM",
+        "summary": [
+            "set methods to be allowed per endpoint"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "62652",
+        "project": "OHM",
+        "summary": [
+            "openimis mapping"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "62648",
+        "project": "OHM",
+        "summary": [
+            "openimis schema"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "62647",
+        "project": "OHM",
+        "summary": [
+            "bahmni schema"
+        ],
+        "timespent": "19800"
+    },
+    {
+        "id": "62645",
+        "project": "OHM",
+        "summary": [
+            "review and close"
+        ],
+        "timespent": "45000"
+    },
+    {
+        "id": "62636",
+        "project": "OHM",
+        "summary": [
+            "add documentation as you go"
+        ],
+        "timespent": "36000"
+    },
+    {
+        "id": "62634",
+        "project": "OHM",
+        "summary": [
+            "create output object using"
+        ],
+        "timespent": "64800"
+    },
+    {
+        "id": "62629",
+        "project": "OHM",
+        "summary": [
+            "configure koa routes from meta.json files"
+        ],
+        "timespent": "54000"
+    },
+    {
+        "id": "62627",
+        "project": "OHM",
+        "summary": [
+            "finalize"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "62625",
+        "project": "OHM",
+        "summary": [
+            "review and close"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "62143",
+        "project": "OHM",
+        "summary": [
+            "fix transaction logic"
+        ],
+        "timespent": "64800"
+    },
+    {
+        "id": "61023",
+        "project": "OHM",
+        "summary": [
+            "request matching"
+        ],
+        "timespent": "102600"
+    },
+    {
+        "id": "60932",
+        "project": "OHM",
+        "summary": [
+            "fix autoretry functionality"
+        ],
+        "timespent": "210600"
+    },
+    {
+        "id": "60780",
+        "project": "OHM",
+        "summary": [
+            "tag latest release and deploy to dockerhub"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "60778",
+        "project": "OHM",
+        "summary": [
+            "fix all broken tests"
+        ],
+        "timespent": "279000"
+    },
+    {
+        "id": "60722",
+        "project": "OHM",
+        "summary": [
+            "finalise"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "60721",
+        "project": "OHM",
+        "summary": [
+            "business logic code through"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "60720",
+        "project": "OHM",
+        "summary": [
+            "scaffold mediator code through"
+        ],
+        "timespent": "162000"
+    },
+    {
+        "id": "60719",
+        "project": "OHM",
+        "summary": [
+            "mediator setup tutorial"
+        ],
+        "timespent": "9000"
+    },
+    {
+        "id": "60712",
+        "project": "OHM",
+        "summary": [
+            "mediator video tutorial"
+        ],
+        "timespent": "43200"
+    },
+    {
+        "id": "60519",
+        "project": "OHM",
+        "summary": [
+            "verify analytics still work correctly"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "60515",
+        "project": "OHM",
+        "summary": [
+            "handle rerun response no response to upstream client"
+        ],
+        "timespent": "111600"
+    },
+    {
+        "id": "60513",
+        "project": "OHM",
+        "summary": [
+            "stream back body from gridfs for rerun tasks"
+        ],
+        "timespent": "109800"
+    },
+    {
+        "id": "60506",
+        "project": "OHM",
+        "summary": [
+            "mediator tutorial documentation on read the docs"
+        ],
+        "timespent": "52200"
+    },
+    {
+        "id": "60504",
+        "project": "OHM",
+        "summary": [
+            "create some guide gifs videos"
+        ],
+        "timespent": "64800"
+    },
+    {
+        "id": "60501",
+        "project": "OHM",
+        "summary": [
+            "finalise and test"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "60243",
+        "project": "OHM",
+        "summary": [
+            "storeresponse middleware update incoming request with response details"
+        ],
+        "timespent": "221400"
+    },
+    {
+        "id": "60242",
+        "project": "OHM",
+        "summary": [
+            "storeresponse middleware extract incoming stream to gridfs"
+        ],
+        "timespent": "75600"
+    },
+    {
+        "id": "60241",
+        "project": "OHM",
+        "summary": [
+            "sendrequest middleware save incoming request as new transaction"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "60239",
+        "project": "OHM",
+        "summary": [
+            "sendrequest middleware route incoming stream to upstream server primary route only"
+        ],
+        "timespent": "100800"
+    },
+    {
+        "id": "60180",
+        "project": "OHM",
+        "summary": [
+            "document the flow of a transaction in openhim"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "60049",
+        "project": "OHM",
+        "summary": [
+            "drop support for some features"
+        ],
+        "timespent": "36000"
+    },
+    {
+        "id": "59755",
+        "project": "OHM",
+        "summary": [
+            "finalise review story description"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "59754",
+        "project": "OHM",
+        "summary": [
+            "ensure bodyculling removes the route bodies"
+        ],
+        "timespent": "43200"
+    },
+    {
+        "id": "59753",
+        "project": "OHM",
+        "summary": [
+            "update the api to support retrieving bodies from gridfs"
+        ],
+        "timespent": "115200"
+    },
+    {
+        "id": "59669",
+        "project": "OHM",
+        "summary": [
+            "finalise review story description"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "59668",
+        "project": "OHM",
+        "summary": [
+            "ensure bodyculling removes the orchestrations bodies"
+        ],
+        "timespent": "70200"
+    },
+    {
+        "id": "59665",
+        "project": "OHM",
+        "summary": [
+            "update the api to support retrieving bodies from gridfs"
+        ],
+        "timespent": "162000"
+    },
+    {
+        "id": "59435",
+        "project": "OHM",
+        "summary": [
+            "fix of transactions due to gridfs bodies being chuncked"
+        ],
+        "timespent": "68400"
+    },
+    {
+        "id": "59332",
+        "project": "OHM",
+        "summary": [
+            "do it"
+        ],
+        "timespent": "46800"
+    },
+    {
+        "id": "59018",
+        "project": "OHM",
+        "summary": [
+            "finalize"
+        ],
+        "timespent": "73800"
+    },
+    {
+        "id": "57531",
+        "project": "OHM",
+        "summary": [
+            "create a playbook for installing and configuring the services on the servers mongodb openhim"
+        ],
+        "timespent": "54000"
+    },
+    {
+        "id": "57505",
+        "project": "OHM",
+        "summary": [
+            "create final releases"
+        ],
+        "timespent": "140400"
+    },
+    {
+        "id": "57504",
+        "project": "OHM",
+        "summary": [
+            "test em"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "57503",
+        "project": "OHM",
+        "summary": [
+            "cut new release candidates"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "57500",
+        "project": "OHM",
+        "summary": [
+            "release the final versions of the core and console for"
+        ],
+        "timespent": "64800"
+    },
+    {
+        "id": "57102",
+        "project": "OHM",
+        "summary": [
+            "create openhim releases"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "56917",
+        "project": "OHM",
+        "summary": [
+            "test all routing functionality http https tcp tls mllp"
+        ],
+        "timespent": "36000"
+    },
+    {
+        "id": "56916",
+        "project": "OHM",
+        "summary": [
+            "test all console functionality"
+        ],
+        "timespent": "37800"
+    },
+    {
+        "id": "56913",
+        "project": "OHM",
+        "summary": [
+            "bwad"
+        ],
+        "timespent": "79200"
+    },
+    {
+        "id": "56912",
+        "project": "OHM",
+        "summary": [
+            "matt"
+        ],
+        "timespent": "32400"
+    },
+    {
+        "id": "56911",
+        "project": "OHM",
+        "summary": [
+            "martin"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "56909",
+        "project": "OHM",
+        "summary": [
+            "remove statsd code and dependency"
+        ],
+        "timespent": "61200"
+    },
+    {
+        "id": "56906",
+        "project": "OHM",
+        "summary": [
+            "version end to end testing"
+        ],
+        "timespent": "39600"
+    },
+    {
+        "id": "56766",
+        "project": "OHM",
+        "summary": [
+            "add roadmap to openhim docs"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "56711",
+        "project": "OHM",
+        "summary": [
+            "fix the bug"
+        ],
+        "timespent": "77400"
+    },
+    {
+        "id": "56710",
+        "project": "OHM",
+        "summary": [
+            "upgrade major versions"
+        ],
+        "timespent": "104400"
+    },
+    {
+        "id": "56709",
+        "project": "OHM",
+        "summary": [
+            "upgrade versions"
+        ],
+        "timespent": "111600"
+    },
+    {
+        "id": "56142",
+        "project": "OHM",
+        "summary": [
+            "measure the performance of the refactored version of the openhim"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "55801",
+        "project": "OHM",
+        "summary": [
+            "transactions are not showing up in the dashboard"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "55557",
+        "project": "OHM",
+        "summary": [
+            "exclude task updates from channel audits"
+        ],
+        "timespent": "118800"
+    },
+    {
+        "id": "55555",
+        "project": "OHM",
+        "summary": [
+            "fix"
+        ],
+        "timespent": "48600"
+    },
+    {
+        "id": "55554",
+        "project": "OHM",
+        "summary": [
+            "fix"
+        ],
+        "timespent": "46800"
+    },
+    {
+        "id": "55553",
+        "project": "OHM",
+        "summary": [
+            "investigate and fix"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "55552",
+        "project": "OHM",
+        "summary": [
+            "investigate and fix"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "55551",
+        "project": "OHM",
+        "summary": [
+            "investigate and fix"
+        ],
+        "timespent": "9000"
+    },
+    {
+        "id": "55550",
+        "project": "OHM",
+        "summary": [
+            "fix"
+        ],
+        "timespent": "70200"
+    },
+    {
+        "id": "55549",
+        "project": "OHM",
+        "summary": [
+            "fix"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "52238",
+        "project": "OHM",
+        "summary": [
+            "show reruns buttton no longer displays disclosure with rerun transctions"
+        ],
+        "timespent": "79200"
+    },
+    {
+        "id": "52094",
+        "project": "OHM",
+        "summary": [
+            "transaction links in alert emails no longer redirect to the relevant transaction"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "51581",
+        "project": "OHM",
+        "summary": [
+            "fix certifcates on console server"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "50423",
+        "project": "OHM",
+        "summary": [
+            "fix npm global publish"
+        ],
+        "timespent": "64800"
+    },
+    {
+        "id": "50312",
+        "project": "OHM",
+        "summary": [
+            "release me"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "50171",
+        "project": "OHM",
+        "summary": [
+            "fix"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "50167",
+        "project": "OHM",
+        "summary": [
+            "fix"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "50166",
+        "project": "OHM",
+        "summary": [
+            "throw something else"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "50164",
+        "project": "OHM",
+        "summary": [
+            "read some documents"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "50161",
+        "project": "OHM",
+        "summary": [
+            "read some documents"
+        ],
+        "timespent": "66600"
+    },
+    {
+        "id": "50160",
+        "project": "OHM",
+        "summary": [
+            "read some documents"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "50113",
+        "project": "OHM",
+        "summary": [
+            "update dockerfile with rpm build steps"
+        ],
+        "timespent": "46800"
+    },
+    {
+        "id": "50112",
+        "project": "OHM",
+        "summary": [
+            "update readthedocs"
+        ],
+        "timespent": "43200"
+    },
+    {
+        "id": "49899",
+        "project": "OHM",
+        "summary": [
+            "remove q dependency"
+        ],
+        "timespent": "43200"
+    },
+    {
+        "id": "49893",
+        "project": "OHM",
+        "summary": [
+            "update api to accept channel timeout"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "49892",
+        "project": "OHM",
+        "summary": [
+            "update console to allow editing of channel timeout"
+        ],
+        "timespent": "100800"
+    },
+    {
+        "id": "49798",
+        "project": "OHM",
+        "summary": [
+            "update the api endpoints to return the new metrics"
+        ],
+        "timespent": "50400"
+    },
+    {
+        "id": "49794",
+        "project": "OHM",
+        "summary": [
+            "general review and merge"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "49793",
+        "project": "OHM",
+        "summary": [
+            "import baseline data"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "49792",
+        "project": "OHM",
+        "summary": [
+            "setup openhim"
+        ],
+        "timespent": "165600"
+    },
+    {
+        "id": "49791",
+        "project": "OHM",
+        "summary": [
+            "setup mediator"
+        ],
+        "timespent": "50400"
+    },
+    {
+        "id": "49788",
+        "project": "OHM",
+        "summary": [
+            "take your turn to review and comment"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "49787",
+        "project": "OHM",
+        "summary": [
+            "everybody review it"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "49785",
+        "project": "OHM",
+        "summary": [
+            "summon nicholas cage"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "49777",
+        "project": "OHM",
+        "summary": [
+            "implement frontend changes"
+        ],
+        "timespent": "12600"
+    },
+    {
+        "id": "49748",
+        "project": "OHM",
+        "summary": [
+            "update the channel modal to allow setting the options from"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "49739",
+        "project": "OHM",
+        "summary": [
+            "update channel ids dates etc in tests"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "49730",
+        "project": "OHM",
+        "summary": [
+            "time in transaction date range selector is cut off"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "49566",
+        "project": "OHM",
+        "summary": [
+            "write a script to call metrics endpoint with date and channel filters"
+        ],
+        "timespent": "2700"
+    },
+    {
+        "id": "49565",
+        "project": "OHM",
+        "summary": [
+            "write a script to call metrics endpoint with different date filters"
+        ],
+        "timespent": "2700"
+    },
+    {
+        "id": "49564",
+        "project": "OHM",
+        "summary": [
+            "write a script to call transactions endpoint with different combinations of filters"
+        ],
+        "timespent": "37800"
+    },
+    {
+        "id": "49563",
+        "project": "OHM",
+        "summary": [
+            "write a script to call transactions endpoint with no filters"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "49511",
+        "project": "OHM",
+        "summary": [
+            "set up a tcp server which responds immediately for stress testing"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "49510",
+        "project": "OHM",
+        "summary": [
+            "set up a tcp server which responds after a simulated delay data for load testing"
+        ],
+        "timespent": "36000"
+    },
+    {
+        "id": "49417",
+        "project": "OHM",
+        "summary": [
+            "tabs on the user modal are broken after the angular bootstrap update"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "49315",
+        "project": "OHM",
+        "summary": [
+            "investigate and fix bug"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "49312",
+        "project": "OHM",
+        "summary": [
+            "update channel api to handle allowed methods"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "49311",
+        "project": "OHM",
+        "summary": [
+            "limit transactions to page size on tail"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "49310",
+        "project": "OHM",
+        "summary": [
+            "move tail checkbox to the transaction page"
+        ],
+        "timespent": "30600"
+    },
+    {
+        "id": "49285",
+        "project": "OHM",
+        "summary": [
+            "change username search to use regex for lowercase match"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "48954",
+        "project": "OHM",
+        "summary": [
+            "setup certificates on servers for secure access"
+        ],
+        "timespent": "210600"
+    },
+    {
+        "id": "48949",
+        "project": "OHM",
+        "summary": [
+            "update openhim-console travis config to deploy for test and staging"
+        ],
+        "timespent": "16200"
+    },
+    {
+        "id": "48757",
+        "project": "OHM",
+        "summary": [
+            "document process and setup"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "48756",
+        "project": "OHM",
+        "summary": [
+            "update travis config to deploy for test and staging"
+        ],
+        "timespent": "142200"
+    },
+    {
+        "id": "48755",
+        "project": "OHM",
+        "summary": [
+            "investigate how to deploy from travis using ansible"
+        ],
+        "timespent": "54000"
+    },
+    {
+        "id": "48327",
+        "project": "OHM",
+        "summary": [
+            "upgrade pem to the latest version in core"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "48274",
+        "project": "OHM",
+        "summary": [
+            "sprint planning retrospective and review"
+        ],
+        "timespent": "174600"
+    },
+    {
+        "id": "48241",
+        "project": "OHM",
+        "summary": [
+            "change the write concern for writing logs to mongodb to in the core"
+        ],
+        "timespent": "45000"
+    },
+    {
+        "id": "48210",
+        "project": "OHM",
+        "summary": [
+            "upgrade grunt to the latest version in console"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "48207",
+        "project": "OHM",
+        "summary": [
+            "check for and remove unused dependencies in console"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "48206",
+        "project": "OHM",
+        "summary": [
+            "update remaining dependencies to the latest versions in console"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "48205",
+        "project": "OHM",
+        "summary": [
+            "update angular to the latest version in console"
+        ],
+        "timespent": "172800"
+    },
+    {
+        "id": "48202",
+        "project": "OHM",
+        "summary": [
+            "upgrade remaining dependencies to the latest versions in core"
+        ],
+        "timespent": "176400"
+    },
+    {
+        "id": "48200",
+        "project": "OHM",
+        "summary": [
+            "upgrade nodemailer to the latest version in core"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "48199",
+        "project": "OHM",
+        "summary": [
+            "upgrade agenda to the latest version in core"
+        ],
+        "timespent": "5400"
+    },
+    {
+        "id": "48198",
+        "project": "OHM",
+        "summary": [
+            "upgrade mongoose to the latest version in core"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "48197",
+        "project": "OHM",
+        "summary": [
+            "upgrade koa to the latest version in core"
+        ],
+        "timespent": "66600"
+    },
+    {
+        "id": "48149",
+        "project": "OHM",
+        "summary": [
+            "core"
+        ],
+        "timespent": "84600"
+    },
+    {
+        "id": "48148",
+        "project": "OHM",
+        "summary": [
+            "console"
+        ],
+        "timespent": "266400"
+    },
+    {
+        "id": "48147",
+        "project": "OHM",
+        "summary": [
+            "upgrade dependencies"
+        ],
+        "timespent": "345600"
+    },
+    {
+        "id": "48145",
+        "project": "OHM",
+        "summary": [
+            "test openhim performance and log issues"
+        ],
+        "timespent": "90000"
+    },
+    {
+        "id": "46645",
+        "project": "OHM",
+        "summary": [
+            "create test that spins up replica set and asserts that changes are working"
+        ],
+        "timespent": "79200"
+    },
+    {
+        "id": "46642",
+        "project": "OHM",
+        "summary": [
+            "finalize"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "46639",
+        "project": "OHM",
+        "summary": [
+            "write function to add new config to mongoose calls"
+        ],
+        "timespent": "59400"
+    },
+    {
+        "id": "46638",
+        "project": "OHM",
+        "summary": [
+            "add new config options"
+        ],
+        "timespent": "27000"
+    },
+    {
+        "id": "46616",
+        "project": "OHM",
+        "summary": [
+            "make it happen"
+        ],
+        "timespent": "36000"
+    },
+    {
+        "id": "46615",
+        "project": "OHM",
+        "summary": [
+            "finalize"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "46614",
+        "project": "OHM",
+        "summary": [
+            "fix memory leak"
+        ],
+        "timespent": "36000"
+    },
+    {
+        "id": "46612",
+        "project": "OHM",
+        "summary": [
+            "create load tests"
+        ],
+        "timespent": "126000"
+    },
+    {
+        "id": "42863",
+        "project": "OHM",
+        "summary": [
+            "analysis openhim do not remove or put into sprint"
+        ],
+        "timespent": "1166400"
+    },
+    {
+        "id": "42358",
+        "project": "OHM",
+        "summary": [
+            "username should be case on login"
+        ],
+        "timespent": "120600"
+    },
+    {
+        "id": "39509",
+        "project": "OHM",
+        "summary": [
+            "update certificates documentation to mention openhim keystore"
+        ],
+        "timespent": "11700"
+    },
+    {
+        "id": "39117",
+        "project": "OHM",
+        "summary": [
+            "configure openhim to pass patient management request to mediccr"
+        ],
+        "timespent": "9000"
+    },
+    {
+        "id": "39116",
+        "project": "OHM",
+        "summary": [
+            "configure mediccr to send patient notifications to openshr"
+        ],
+        "timespent": "32400"
+    },
+    {
+        "id": "39115",
+        "project": "OHM",
+        "summary": [
+            "configure an affinity domain in mediccr"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "39114",
+        "project": "OHM",
+        "summary": [
+            "configure the mediccr admin interface"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "38921",
+        "project": "OHM",
+        "summary": [
+            "fix bug"
+        ],
+        "timespent": "22200"
+    },
+    {
+        "id": "38903",
+        "project": "OHM",
+        "summary": [
+            "investigate and fix"
+        ],
+        "timespent": "51300"
+    },
+    {
+        "id": "36751",
+        "project": "OHM",
+        "summary": [
+            "when adding roles to a user half word roles are often added"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "34923",
+        "project": "OHM",
+        "summary": [
+            "test sending mails without authentication details"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "34922",
+        "project": "OHM",
+        "summary": [
+            "add from address to mailer config"
+        ],
+        "timespent": "35100"
+    },
+    {
+        "id": "34716",
+        "project": "OHM",
+        "summary": [
+            "finalise"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "34021",
+        "project": "OHM",
+        "summary": [
+            "add warning when exporting keystore that the key will be exported and should be protected"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "33906",
+        "project": "OHM",
+        "summary": [
+            "finalize"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "33661",
+        "project": "OHM",
+        "summary": [
+            "add keystore support to the metadata endpoint"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "33660",
+        "project": "OHM",
+        "summary": [
+            "update view and controller to support keystore"
+        ],
+        "timespent": "12000"
+    },
+    {
+        "id": "33655",
+        "project": "OHM",
+        "summary": [
+            "make sure code coverage is generated on travis build and uploaded to codecov.io"
+        ],
+        "timespent": "12600"
+    },
+    {
+        "id": "33654",
+        "project": "OHM",
+        "summary": [
+            "setup nyc or similar to generate code coverage reports on the command line"
+        ],
+        "timespent": "34200"
+    },
+    {
+        "id": "33638",
+        "project": "OHM",
+        "summary": [
+            "fix"
+        ],
+        "timespent": "43200"
+    },
+    {
+        "id": "33636",
+        "project": "OHM",
+        "summary": [
+            "replicate bug"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "32827",
+        "project": "OHM",
+        "summary": [
+            "do the work"
+        ],
+        "timespent": "5400"
+    },
+    {
+        "id": "32805",
+        "project": "OHM",
+        "summary": [
+            "do the work"
+        ],
+        "timespent": "12600"
+    },
+    {
+        "id": "32791",
+        "project": "OHM",
+        "summary": [
+            "make it happen"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "32598",
+        "project": "OHM",
+        "summary": [
+            "make it happen"
+        ],
+        "timespent": "39600"
+    },
+    {
+        "id": "32494",
+        "project": "OHM",
+        "summary": [
+            "persist filters"
+        ],
+        "timespent": "115200"
+    },
+    {
+        "id": "32484",
+        "project": "OHM",
+        "summary": [
+            "make it happen"
+        ],
+        "timespent": "39600"
+    },
+    {
+        "id": "32004",
+        "project": "OHM",
+        "summary": [
+            "if response is truncated display button to fetch full response and download"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "32002",
+        "project": "OHM",
+        "summary": [
+            "truncate large responses in core with query string to allow full response"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "32001",
+        "project": "OHM",
+        "summary": [
+            "organize meeting with everyone"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "32000",
+        "project": "OHM",
+        "summary": [
+            "investigate and document"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "31793",
+        "project": "OHM",
+        "summary": [
+            "refactor partial index into collection"
+        ],
+        "timespent": "9000"
+    },
+    {
+        "id": "31701",
+        "project": "OHM",
+        "summary": [
+            "finalize and merge"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "31698",
+        "project": "OHM",
+        "summary": [
+            "link openhim console to the visualizer delete api"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "31697",
+        "project": "OHM",
+        "summary": [
+            "add delete visualizer api function"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "31694",
+        "project": "OHM",
+        "summary": [
+            "long transaction headers overflow the view boundary in transaction details"
+        ],
+        "timespent": "36000"
+    },
+    {
+        "id": "31604",
+        "project": "OHM",
+        "summary": [
+            "make values more user friendly"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "31603",
+        "project": "OHM",
+        "summary": [
+            "implement visualiser logic"
+        ],
+        "timespent": "12000"
+    },
+    {
+        "id": "31602",
+        "project": "OHM",
+        "summary": [
+            "final merge and review"
+        ],
+        "timespent": "600"
+    },
+    {
+        "id": "31601",
+        "project": "OHM",
+        "summary": [
+            "implement visualiser logic for core"
+        ],
+        "timespent": "70200"
+    },
+    {
+        "id": "31600",
+        "project": "OHM",
+        "summary": [
+            "implement add console visualiser logic"
+        ],
+        "timespent": "109800"
+    },
+    {
+        "id": "31337",
+        "project": "OHM",
+        "summary": [
+            "changes in console"
+        ],
+        "timespent": "79200"
+    },
+    {
+        "id": "31336",
+        "project": "OHM",
+        "summary": [
+            "final merge and review"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "31335",
+        "project": "OHM",
+        "summary": [
+            "changes in core"
+        ],
+        "timespent": "37800"
+    },
+    {
+        "id": "31334",
+        "project": "OHM",
+        "summary": [
+            "make it happen"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "31333",
+        "project": "OHM",
+        "summary": [
+            "remember the users preference of which visualiser they viewed last"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "31332",
+        "project": "OHM",
+        "summary": [
+            "write a view to display a list of visualisers which allow the user to choose one to view"
+        ],
+        "timespent": "59400"
+    },
+    {
+        "id": "31331",
+        "project": "OHM",
+        "summary": [
+            "create a api endpoint to fetch a list of visualisers from the model"
+        ],
+        "timespent": "11400"
+    },
+    {
+        "id": "31327",
+        "project": "OHM",
+        "summary": [
+            "as an openhim user i'd like to have my visualiser setting in my profile migrated to the visualiser list when the openhim is upgraded"
+        ],
+        "timespent": "27000"
+    },
+    {
+        "id": "31136",
+        "project": "OHM",
+        "summary": [
+            "investigate discuss and collaborate on a design for openhim apps"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "31115",
+        "project": "OHM",
+        "summary": [
+            "create the visualiser model in a separate collection"
+        ],
+        "timespent": "7800"
+    },
+    {
+        "id": "31113",
+        "project": "OHM",
+        "summary": [
+            "add a max retry limit option in core and console"
+        ],
+        "timespent": "75600"
+    },
+    {
+        "id": "30994",
+        "project": "OHM",
+        "summary": [
+            "edit console to work with the updated metadata api"
+        ],
+        "timespent": "39600"
+    },
+    {
+        "id": "30993",
+        "project": "OHM",
+        "summary": [
+            "create metadata resource in core"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "29396",
+        "project": "OHM",
+        "summary": [
+            "fix email report bug counts dont add up"
+        ],
+        "timespent": "55200"
+    },
+    {
+        "id": "28811",
+        "project": "OHM",
+        "summary": [
+            "start docs and have chat as an ohie implementer i would like the openhim to be deployed locally and cache requests when my connection is and retry these when it is available again"
+        ],
+        "timespent": "75600"
+    },
+    {
+        "id": "28692",
+        "project": "OHM",
+        "summary": [
+            "improve loading times of advanced filter options"
+        ],
+        "timespent": "1200"
+    },
+    {
+        "id": "28691",
+        "project": "OHM",
+        "summary": [
+            "improve response times on initial load"
+        ],
+        "timespent": "600"
+    },
+    {
+        "id": "28690",
+        "project": "OHM",
+        "summary": [
+            "as an openhim auditor i would like the logs to accommodate for growth"
+        ],
+        "timespent": "36000"
+    },
+    {
+        "id": "27750",
+        "project": "OHM",
+        "summary": [
+            "finalise and merge story"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "27333",
+        "project": "OHM",
+        "summary": [
+            "dilate settimeouts when the test are running on travis"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "27313",
+        "project": "OHM",
+        "summary": [
+            "increase the mocha test timeouts when the test run on travis"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "27109",
+        "project": "OHM",
+        "summary": [
+            "update java generator with the latest engine"
+        ],
+        "timespent": "8100"
+    },
+    {
+        "id": "27108",
+        "project": "OHM",
+        "summary": [
+            "update js generator with a new template"
+        ],
+        "timespent": "221400"
+    },
+    {
+        "id": "27095",
+        "project": "OHM",
+        "summary": [
+            "openhim mediator config bug"
+        ],
+        "timespent": "27000"
+    },
+    {
+        "id": "25412",
+        "project": "OHM",
+        "summary": [
+            "update openhim dependencies"
+        ],
+        "timespent": "43200"
+    },
+    {
+        "id": "25228",
+        "project": "OHM",
+        "summary": [
+            "rerun transactions not updating as rerun including icon"
+        ],
+        "timespent": "79200"
+    },
+    {
+        "id": "25227",
+        "project": "OHM",
+        "summary": [
+            "audit log repeating audit when future event date is used"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "25225",
+        "project": "OHM",
+        "summary": [
+            "console add channel orders functionality"
+        ],
+        "timespent": "36000"
+    },
+    {
+        "id": "25224",
+        "project": "OHM",
+        "summary": [
+            "core add channels orders functionality"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "25223",
+        "project": "OHM",
+        "summary": [
+            "console it should be possible to duplicate a channel"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "25222",
+        "project": "OHM",
+        "summary": [
+            "console display channel in channel list"
+        ],
+        "timespent": "4500"
+    },
+    {
+        "id": "25221",
+        "project": "OHM",
+        "summary": [
+            "core disabled channels should not appear in reports"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "25220",
+        "project": "OHM",
+        "summary": [
+            "console and core routes"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "25218",
+        "project": "OHM",
+        "summary": [
+            "console and core forgot my password feature"
+        ],
+        "timespent": "104400"
+    },
+    {
+        "id": "25024",
+        "project": "OHM",
+        "summary": [
+            "pair program with martin on openhim filtering"
+        ],
+        "timespent": "75600"
+    },
+    {
+        "id": "24698",
+        "project": "OHM",
+        "summary": [
+            "ohie calls and admin"
+        ],
+        "timespent": "18900"
+    },
+    {
+        "id": "24697",
+        "project": "OHM",
+        "summary": [
+            "openhim release w testing"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "24001",
+        "project": "OHM",
+        "summary": [
+            "add support for config repeating fields and groups"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "23992",
+        "project": "OHM",
+        "summary": [
+            "console report checkboxes on profile page aren't clickable"
+        ],
+        "timespent": "900"
+    },
+    {
+        "id": "23991",
+        "project": "OHM",
+        "summary": [
+            "console change all datepickers to use the datetimepicker"
+        ],
+        "timespent": "16800"
+    },
+    {
+        "id": "23851",
+        "project": "OHM",
+        "summary": [
+            "fix mediator registration issue"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "23836",
+        "project": "OHM",
+        "summary": [
+            "fix core statsd issues"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "23813",
+        "project": "OHM",
+        "summary": [
+            "console complete server logs display page"
+        ],
+        "timespent": "29400"
+    },
+    {
+        "id": "23812",
+        "project": "OHM",
+        "summary": [
+            "incorporate comment into openhim website"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "23707",
+        "project": "OHM",
+        "summary": [
+            "add mediator uptime to heartbeat"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "23603",
+        "project": "OHM",
+        "summary": [
+            "core providing an api endpoint to get the server logs would be useful"
+        ],
+        "timespent": "72000"
+    },
+    {
+        "id": "23602",
+        "project": "OHM",
+        "summary": [
+            "core audit log the fact that an openhim user as logged in"
+        ],
+        "timespent": "48600"
+    },
+    {
+        "id": "23601",
+        "project": "OHM",
+        "summary": [
+            "core audit log openhim application start"
+        ],
+        "timespent": "30600"
+    },
+    {
+        "id": "23403",
+        "project": "OHM",
+        "summary": [
+            "mediator engine finish work on heartbeats"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "23402",
+        "project": "OHM",
+        "summary": [
+            "pickup openhim issues"
+        ],
+        "timespent": "52200"
+    },
+    {
+        "id": "23097",
+        "project": "OHM",
+        "summary": [
+            "optimise the alerting query"
+        ],
+        "timespent": "73800"
+    },
+    {
+        "id": "23092",
+        "project": "OHM",
+        "summary": [
+            "core lint errors"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "23091",
+        "project": "OHM",
+        "summary": [
+            "the build is failing on travis the tests need to be debugged to find the issue"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "22894",
+        "project": "OHM",
+        "summary": [
+            "update him audit page"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "22724",
+        "project": "OHM",
+        "summary": [
+            "console mediator config update mediator page to allow for mediator configuration"
+        ],
+        "timespent": "68400"
+    },
+    {
+        "id": "22723",
+        "project": "OHM",
+        "summary": [
+            "core mediator config update the medaitor api to supply mediator config metadata"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "22722",
+        "project": "OHM",
+        "summary": [
+            "core mediator config add a mediator heartbeat api endpoint"
+        ],
+        "timespent": "56700"
+    },
+    {
+        "id": "22721",
+        "project": "OHM",
+        "summary": [
+            "update and improve openhim-console deb packaging"
+        ],
+        "timespent": "39600"
+    },
+    {
+        "id": "22720",
+        "project": "OHM",
+        "summary": [
+            "update and improve deb packaging"
+        ],
+        "timespent": "51300"
+    },
+    {
+        "id": "22715",
+        "project": "OHM",
+        "summary": [
+            "core research openid"
+        ],
+        "timespent": "16200"
+    },
+    {
+        "id": "22692",
+        "project": "OHM",
+        "summary": [
+            "ohie calls and admin"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "22691",
+        "project": "OHM",
+        "summary": [
+            "write and structure openhim documentation"
+        ],
+        "timespent": "39600"
+    },
+    {
+        "id": "22514",
+        "project": "OHM",
+        "summary": [
+            "work on plan for new openhim website content"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "22512",
+        "project": "OHM",
+        "summary": [
+            "collate all available openhim documentation into readthedocs or similar"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "22400",
+        "project": "OHM",
+        "summary": [
+            "design and discuss the mediator framework improvements config uis"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "22395",
+        "project": "OHM",
+        "summary": [
+            "spec out discuss and design openhim documentation update"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "22305",
+        "project": "OHM",
+        "summary": [
+            "do new openhim release"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "22302",
+        "project": "OHM",
+        "summary": [
+            "code review openhim keep open and out of sprint"
+        ],
+        "timespent": "93300"
+    },
+    {
+        "id": "21860",
+        "project": "OHM",
+        "summary": [
+            "transaction details page transaction time"
+        ],
+        "timespent": "600"
+    },
+    {
+        "id": "21856",
+        "project": "OHM",
+        "summary": [
+            "console add host and port to transaction details page"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "21843",
+        "project": "OHM",
+        "summary": [
+            "console add ui for url rewriting"
+        ],
+        "timespent": "23400"
+    },
+    {
+        "id": "21795",
+        "project": "OHM",
+        "summary": [
+            "urls returned back in a response body or headers need to point to the him not the service consumer"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "21604",
+        "project": "OHM",
+        "summary": [
+            "prep for and present openhim for aehin webinar"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "21596",
+        "project": "OHM",
+        "summary": [
+            "prettyify the daily and weekly reports"
+        ],
+        "timespent": "36000"
+    },
+    {
+        "id": "21497",
+        "project": "OHM",
+        "summary": [
+            "core async routes"
+        ],
+        "timespent": "189000"
+    },
+    {
+        "id": "21494",
+        "project": "OHM",
+        "summary": [
+            "core polling channels add lastrun datetime to message header"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "21490",
+        "project": "OHM",
+        "summary": [
+            "console tasks auto refresh"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "21317",
+        "project": "OHM",
+        "summary": [
+            "new client data should be queried from the api when the client modal is opened"
+        ],
+        "timespent": "17100"
+    },
+    {
+        "id": "21297",
+        "project": "OHM",
+        "summary": [
+            "figure out what is causing the openhim memory issue on mom connect"
+        ],
+        "timespent": "12600"
+    },
+    {
+        "id": "21296",
+        "project": "OHM",
+        "summary": [
+            "openhie calls and community work"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "21295",
+        "project": "OHM",
+        "summary": [
+            "plan and perform openhim release"
+        ],
+        "timespent": "30600"
+    },
+    {
+        "id": "21294",
+        "project": "OHM",
+        "summary": [
+            "security vunerability use certificate thumbprint or serial number instead of cn"
+        ],
+        "timespent": "59400"
+    },
+    {
+        "id": "21293",
+        "project": "OHM",
+        "summary": [
+            "reports not being sent"
+        ],
+        "timespent": "43200"
+    },
+    {
+        "id": "21292",
+        "project": "OHM",
+        "summary": [
+            "change transaction page ui"
+        ],
+        "timespent": "30600"
+    },
+    {
+        "id": "21291",
+        "project": "OHM",
+        "summary": [
+            "global ui changes"
+        ],
+        "timespent": "54000"
+    },
+    {
+        "id": "21111",
+        "project": "OHM",
+        "summary": [
+            "refactor console code and improve user experience"
+        ],
+        "timespent": "63000"
+    },
+    {
+        "id": "21099",
+        "project": "OHM",
+        "summary": [
+            "core mllp requests taking to respond from openempi"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "21098",
+        "project": "OHM",
+        "summary": [
+            "console when a user is redirected to the login page the page they were trying to visit should be stored and load once they login"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "21097",
+        "project": "OHM",
+        "summary": [
+            "core add ability to the api and polling processor in config"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "21096",
+        "project": "OHM",
+        "summary": [
+            "core include timestamps in the logs"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "21095",
+        "project": "OHM",
+        "summary": [
+            "core upgrade to mongoose"
+        ],
+        "timespent": "32400"
+    },
+    {
+        "id": "21094",
+        "project": "OHM",
+        "summary": [
+            "core unhandled ssl error"
+        ],
+        "timespent": "16200"
+    },
+    {
+        "id": "20997",
+        "project": "OHM",
+        "summary": [
+            "core mongo repl failure should not crash him log to file"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "20995",
+        "project": "OHM",
+        "summary": [
+            "console can't add a second user to an alert group"
+        ],
+        "timespent": "9000"
+    },
+    {
+        "id": "20994",
+        "project": "OHM",
+        "summary": [
+            "core key and certificate don't match"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "20992",
+        "project": "OHM",
+        "summary": [
+            "core reports not being sent"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "20991",
+        "project": "OHM",
+        "summary": [
+            "console can't create user in firefox console"
+        ],
+        "timespent": "16200"
+    },
+    {
+        "id": "20797",
+        "project": "OHM",
+        "summary": [
+            "review debian packaging and ensure we now how to build it"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "20791",
+        "project": "OHM",
+        "summary": [
+            "openhim bench perhaps the graphs should have the git commit hash on the x axis rather than date"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "20790",
+        "project": "OHM",
+        "summary": [
+            "console certificates page restart server after trusted certificate has been remove"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "20771",
+        "project": "OHM",
+        "summary": [
+            "core and console tasks multiple transaction running strategies"
+        ],
+        "timespent": "46800"
+    },
+    {
+        "id": "20769",
+        "project": "OHM",
+        "summary": [
+            "core the design of the tcp channel adapter stops us for being able to scale horizontally look at scalability in general"
+        ],
+        "timespent": "73800"
+    },
+    {
+        "id": "20768",
+        "project": "OHM",
+        "summary": [
+            "core and console allow tasks to be and cancel"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "20767",
+        "project": "OHM",
+        "summary": [
+            "allow task worker thread to be enabled/disabled in config"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "20766",
+        "project": "OHM",
+        "summary": [
+            "core and console creation of tasks based on filters"
+        ],
+        "timespent": "32400"
+    },
+    {
+        "id": "20765",
+        "project": "OHM",
+        "summary": [
+            "core validate clients domain against any certificate in the certification path"
+        ],
+        "timespent": "39600"
+    },
+    {
+        "id": "20764",
+        "project": "OHM",
+        "summary": [
+            "core and console allow setting server key with ca signed pem"
+        ],
+        "timespent": "36000"
+    },
+    {
+        "id": "20763",
+        "project": "OHM",
+        "summary": [
+            "core and console should not be able to delete contact group if they are linked to a channel alert"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "20762",
+        "project": "OHM",
+        "summary": [
+            "console allow url rewriting for transaction filters so that we can link to a page with particular filter and so the back button works"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "20761",
+        "project": "OHM",
+        "summary": [
+            "console enable advanced searching for transactions that have routes or orchestrations with a particular status code"
+        ],
+        "timespent": "81000"
+    },
+    {
+        "id": "20760",
+        "project": "OHM",
+        "summary": [
+            "core and console large tasks take a very long time to load"
+        ],
+        "timespent": "64800"
+    },
+    {
+        "id": "20759",
+        "project": "OHM",
+        "summary": [
+            "prep for and perform hitrac training on openhim"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "20758",
+        "project": "OHM",
+        "summary": [
+            "add basic mediator architecture descriptions to openhim.org mediator repo"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "20736",
+        "project": "OHM",
+        "summary": [
+            "fix openhim performance issues"
+        ],
+        "timespent": "46800"
+    },
+    {
+        "id": "20729",
+        "project": "OHM",
+        "summary": [
+            "openhim console chrome login bug"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "20728",
+        "project": "OHM",
+        "summary": [
+            "release latest mediator engine"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "20723",
+        "project": "OHM",
+        "summary": [
+            "improve openhim staging auto deployment move from puppet to bash scripts"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "20710",
+        "project": "OHM",
+        "summary": [
+            "build and release shr modules"
+        ],
+        "timespent": "34200"
+    },
+    {
+        "id": "20709",
+        "project": "OHM",
+        "summary": [
+            "update ohie save encounter workflow and other documentation"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "20705",
+        "project": "OHM",
+        "summary": [
+            "draft the initial ohie proposal"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "20704",
+        "project": "OHM",
+        "summary": [
+            "review final version of iol implementation guide"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "20703",
+        "project": "OHM",
+        "summary": [
+            "shr implementation guide"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "20509",
+        "project": "OHM",
+        "summary": [
+            "create openhim benchmarking suite"
+        ],
+        "timespent": "136800"
+    },
+    {
+        "id": "20499",
+        "project": "OHM",
+        "summary": [
+            "metrics testing"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "20498",
+        "project": "OHM",
+        "summary": [
+            "console ui testing"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "20497",
+        "project": "OHM",
+        "summary": [
+            "general endpoint channels testing"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "20496",
+        "project": "OHM",
+        "summary": [
+            "tls endpoint testing"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "20490",
+        "project": "OHM",
+        "summary": [
+            "core and console server restart functions and move ui to keystore page"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "20408",
+        "project": "OHM",
+        "summary": [
+            "finalise and deploy openhim.org to a server"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "20407",
+        "project": "OHM",
+        "summary": [
+            "console add ui tweak to display dropdown list of certs for route.cert in channels page"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "20405",
+        "project": "OHM",
+        "summary": [
+            "openshr develop a benchmark tests for openshr"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "20404",
+        "project": "OHM",
+        "summary": [
+            "openshr rip out the validation logic to increase performance"
+        ],
+        "timespent": "37800"
+    },
+    {
+        "id": "20403",
+        "project": "OHM",
+        "summary": [
+            "openshr profile the database optimise reindex"
+        ],
+        "timespent": "34200"
+    },
+    {
+        "id": "20402",
+        "project": "OHM",
+        "summary": [
+            "core create the atna repository api"
+        ],
+        "timespent": "136800"
+    },
+    {
+        "id": "20401",
+        "project": "OHM",
+        "summary": [
+            "core create the syslog atna interface"
+        ],
+        "timespent": "32400"
+    },
+    {
+        "id": "20400",
+        "project": "OHM",
+        "summary": [
+            "core create the atna interface"
+        ],
+        "timespent": "50400"
+    },
+    {
+        "id": "20399",
+        "project": "OHM",
+        "summary": [
+            "core create the schema for an atna audit repository"
+        ],
+        "timespent": "32400"
+    },
+    {
+        "id": "20398",
+        "project": "OHM",
+        "summary": [
+            "console create the ui to view stored atna messages"
+        ],
+        "timespent": "87600"
+    },
+    {
+        "id": "20396",
+        "project": "OHM",
+        "summary": [
+            "core update nodemailer and fix breaking changes"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "20395",
+        "project": "OHM",
+        "summary": [
+            "core update koa and fix breaking changes"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "20394",
+        "project": "OHM",
+        "summary": [
+            "core allow both basic and tls auth for clients simultaneously"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "20393",
+        "project": "OHM",
+        "summary": [
+            "core enable the openhim to act as a ca"
+        ],
+        "timespent": "144000"
+    },
+    {
+        "id": "20392",
+        "project": "OHM",
+        "summary": [
+            "core update transaction schema to include custom metrics and orchestration groups"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "20391",
+        "project": "OHM",
+        "summary": [
+            "core and console prepare readme and documentation for release"
+        ],
+        "timespent": "19800"
+    },
+    {
+        "id": "20368",
+        "project": "OHM",
+        "summary": [
+            "convert restart.coffee small to coffeescript and move to api folder"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "20367",
+        "project": "OHM",
+        "summary": [
+            "convert koamiddleware.coffee tiny to coffeescript"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "20366",
+        "project": "OHM",
+        "summary": [
+            "convert all files in to cofeescript med"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "20365",
+        "project": "OHM",
+        "summary": [
+            "convert tiny to coffeescript"
+        ],
+        "timespent": "1200"
+    },
+    {
+        "id": "20364",
+        "project": "OHM",
+        "summary": [
+            "convert large to coffeescript"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "20363",
+        "project": "OHM",
+        "summary": [
+            "convert large to coffeescript"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "20362",
+        "project": "OHM",
+        "summary": [
+            "convert large to coffeescript"
+        ],
+        "timespent": "5400"
+    },
+    {
+        "id": "20361",
+        "project": "OHM",
+        "summary": [
+            "convert small to coffeescript"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "20360",
+        "project": "OHM",
+        "summary": [
+            "convert med to coffeescript"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "20359",
+        "project": "OHM",
+        "summary": [
+            "convert med to coffeescript"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "20358",
+        "project": "OHM",
+        "summary": [
+            "convert med to coffeescript"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "20357",
+        "project": "OHM",
+        "summary": [
+            "convert med to coffeescript"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "20356",
+        "project": "OHM",
+        "summary": [
+            "convert small to coffeescript"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "20355",
+        "project": "OHM",
+        "summary": [
+            "review and add openhim.org content"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "20354",
+        "project": "OHM",
+        "summary": [
+            "core support public channels where request are not authenticated and authorised"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "20353",
+        "project": "OHM",
+        "summary": [
+            "xds mediator ensure all xds registry and repository requests can be passed through even if they aren't orchestrated"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "20352",
+        "project": "OHM",
+        "summary": [
+            "xds mediator some request bodies are getting cut off"
+        ],
+        "timespent": "46800"
+    },
+    {
+        "id": "20351",
+        "project": "OHM",
+        "summary": [
+            "console implement keystore ui"
+        ],
+        "timespent": "79200"
+    },
+    {
+        "id": "20349",
+        "project": "OHM",
+        "summary": [
+            "include mongo client in scripts"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "20346",
+        "project": "OHM",
+        "summary": [
+            "console update dependencies to latest versions"
+        ],
+        "timespent": "16200"
+    },
+    {
+        "id": "20345",
+        "project": "OHM",
+        "summary": [
+            "need tests for routing binary data"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "20338",
+        "project": "OHM",
+        "summary": [
+            "implement a keystore were a user to can add certificates to authorise clients"
+        ],
+        "timespent": "84600"
+    },
+    {
+        "id": "20337",
+        "project": "OHM",
+        "summary": [
+            "visualizer not picking up orchestration events"
+        ],
+        "timespent": "36000"
+    },
+    {
+        "id": "20336",
+        "project": "OHM",
+        "summary": [
+            "display http headers on transaction request and reponse"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "20310",
+        "project": "OHM",
+        "summary": [
+            "time and login issues"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "20309",
+        "project": "OHM",
+        "summary": [
+            "complete tests fro service"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "20303",
+        "project": "OHM",
+        "summary": [
+            "openmrs prep openhie shr investigate justin's work questions/issues for openmrs community"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "20302",
+        "project": "OHM",
+        "summary": [
+            "release for xds mediator post connectathon make repo public"
+        ],
+        "timespent": "46800"
+    },
+    {
+        "id": "20301",
+        "project": "OHM",
+        "summary": [
+            "release for mediator engine maven"
+        ],
+        "timespent": "32400"
+    },
+    {
+        "id": "20300",
+        "project": "OHM",
+        "summary": [
+            "run priority xds.b provider and register pre-connectathon tests"
+        ],
+        "timespent": "32400"
+    },
+    {
+        "id": "20299",
+        "project": "OHM",
+        "summary": [
+            "run priority atna pre-connectathon tests"
+        ],
+        "timespent": "36000"
+    },
+    {
+        "id": "20297",
+        "project": "OHM",
+        "summary": [
+            "redesign json to better handle this"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "20296",
+        "project": "OHM",
+        "summary": [
+            "add a test mediator for metrics"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "20295",
+        "project": "OHM",
+        "summary": [
+            "ensure core test still pass and ensure channel routeing still works"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "20294",
+        "project": "OHM",
+        "summary": [
+            "make ui changes"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "20293",
+        "project": "OHM",
+        "summary": [
+            "make api level changes"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "20206",
+        "project": "OHM",
+        "summary": [
+            "add header to transaction responses in documentation"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "20205",
+        "project": "OHM",
+        "summary": [
+            "document metrics endpoint in api reference"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "20203",
+        "project": "OHM",
+        "summary": [
+            "update package.json so that we can release to npm"
+        ],
+        "timespent": "7200"
+    }
+]

@@ -1,0 +1,4338 @@
+[
+    {
+        "id": "12986",
+        "project": "YADE",
+        "summary": [
+            "yade client doesn't find its"
+        ],
+        "description": [
+            "yade client doesn't find its"
+        ],
+        "timespent": "14400",
+        "alpha": 96
+    },
+    {
+        "id": "11656",
+        "project": "JITL",
+        "summary": [
+            "dequeuemail-job doesn't read the in the"
+        ],
+        "description": [
+            "dequeuemail-job doesn't read the in the it use always port"
+        ],
+        "timespent": "1800",
+        "alpha": 96
+    },
+    {
+        "id": "11773",
+        "project": "JITL",
+        "summary": [
+            "using parameter in com.sos.jitl.sync.jobschedulersynchronizejobchainsjsadapterclass without comma"
+        ],
+        "description": [
+            "if you specify the parameter in com.sos.jitl.sync.jobschedulersynchronizejobchainsjsadapterclass to set the value for the number of waiting orders for a job chain the format has been changed to as it is in the former implementation sos.scheduler.job.jobschedulersynchronizejobchains"
+        ],
+        "timespent": "300",
+        "alpha": 97
+    },
+    {
+        "id": "11404",
+        "project": "JITL",
+        "summary": [
+            "existsfile job doesn't check steady state"
+        ],
+        "description": [
+            "existsfile job doesn't check steady state"
+        ],
+        "timespent": "14400",
+        "alpha": 97
+    },
+    {
+        "id": "12014",
+        "project": "YADE",
+        "summary": [
+            "with sftp jcraft doesn't work"
+        ],
+        "description": [
+            "with sftp jcraft doesn't work",
+            "junit in sosdataexchangeenginetest"
+        ],
+        "timespent": "7200",
+        "alpha": 98
+    },
+    {
+        "id": "10275",
+        "project": "JS",
+        "summary": [
+            "support sybase in setup"
+        ],
+        "description": [
+            "untersttzung fr sybase bei auslieferung der php und java-komponenten test der installation fileprocessor treiberkonfiguration in factory.ini und"
+        ],
+        "timespent": "57600",
+        "alpha": 98
+    },
+    {
+        "id": "12819",
+        "project": "JITL",
+        "summary": [
+            "parameter has no effect in jobschedulerremovefile job"
+        ],
+        "description": [
+            "the jobschedulerremovefile job doesn't read the parameter"
+        ],
+        "timespent": "10800",
+        "alpha": 98
+    },
+    {
+        "id": "11999",
+        "project": "JITL",
+        "summary": [
+            "sqlplus job parameters for ignoring and ora messages don't work"
+        ],
+        "description": [
+            "the list of or ora messages which should be ignored are empty at the moment where stdout is checked for or ora errors",
+            "so the parameter and don't work"
+        ],
+        "timespent": "28800",
+        "alpha": 98
+    },
+    {
+        "id": "13167",
+        "project": "DOC",
+        "summary": [
+            "java required for release"
+        ],
+        "description": [
+            "desired behavior with release all products require java or later which is reflected in each components product documentation",
+            "status jade installation guide ready jobscheduler_installation.pdf ready readme.txt files in setup archive ready"
+        ],
+        "timespent": "3600",
+        "alpha": 98
+    },
+    {
+        "id": "13103",
+        "project": "YADE",
+        "summary": [
+            "transfer via jump host should work if the installation path of yade client is the same as the installation path on the jump host"
+        ],
+        "description": [
+            "if you start yade on hosta for a transfer via a jump host hostb and the yade installation path on hosta and hostb are the same then the yade client on the jump host doesn't get any parameter and the ssh session ends with exit this behavior does not occur if a different location of the yade start script jade.sh on the local system and on the jump host are used"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "13089",
+        "project": "YADE",
+        "summary": [
+            "environment variables for setup of yade background service history viewer"
+        ],
+        "description": [
+            "current situation in a comment to a user reports it seems that setup.sh is not perfectly configuring jadehistoryviewer.war was which it is not in our environment dbname was scheduler which it is not in our environment desired behavior check and correct the use of environment variables in the start script"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "12982",
+        "project": "YADE",
+        "summary": [
+            "yade does not write local"
+        ],
+        "description": [
+            "if user specify historyfilename and parameters to create history and log file respectivly yade does create the but does not create yade does create both files on windows as expected",
+            "yade does not throw any error",
+            "how to reproduce user yade cli on galadriel.sos cd settings profile"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "12833",
+        "project": "YADE",
+        "summary": [
+            "yade info log messages should be more concise"
+        ],
+        "description": [
+            "desired situation suppress detailed logging of parameters for info log level suppress java stack trace for info log level in this use case yade is not able to create a remote directory",
+            "along with the error message yade prints the java stack trace which makes it difficult to find the exact cause of the error",
+            "for info level log no java stake trace should be printed code bin main info id oh main info id ur main info execute sosdataexchange main routine started revision copyright sos gmbh berlin main info establishsshconnection sossshjoboptions.url the url for the connection raise an exception if an error occured true this parameter specifies the path and name of a us this parameter specifies the authentication method publickey sossshjoboptions.command this parameter specifies a command that is to be executed sossshjoboptions.command_delimiter command delimiter characters are specified using this par sossshjoboptions.command_script this parameter can be used as an alternative to command contains a parameterstring which will be homer.sos sossshjoboptions.protocol type of requested datatransfer the values ftp sftp ssh sossshjoboptions.ignore_error should the value true be specified then execution errors false this parameter configures one or more exit codes which wi sossshjoboptions.ignore_signal should the value true be specified then on false sossshjoboptions.ignore_stderr this job checks if any output to stderr has been created false sosftpoptionssuperclass.jump_password password for authentication with the sosftpoptionssuperclass.jump_port port on the by which files should be tra the value of this parameter is the host name or the ip ad sossshjoboptions.proxy_password this parameter specifies the password for the proxy serve this parameter specifies the port number of the proxy the value of this parameter specifies the user account fo user sossshjoboptions.simulate_shell should the value true be specified for this parameter false if no new characters are written to stdout or stderr afte the expected comman line prompt",
+            "using this prompt the jo sosftpoptionssuperclass.jump_user user name for authentication with the test should the value true be specified then execution errors true sossshjoboptions.base_directory a base directory for all relative filenames used by sosoptionfilename createfolder folder anlegen wenn noch nicht vorhanden true general mask for date fomatting general mask for time formatting pathname to the jobscheduler createfolder folder anlegen wenn noch nicht vorhanden true sossshjoboptions.scheduler_data data folder of jobscheduler installation createfolder folder anlegen wenn noch nicht vorhanden true sossshjoboptions.scheduler_home home root folder of jobscheduler createfolder folder anlegen wenn noch nicht vorhanden true name of local user jenkins sossshjoboptions.locale is for internationalization of application sossshjoboptions.checknotprocessedoptions if this option is set to true all not processed or recognized options are reported as a warning false sossshjoboptions.xmlid this ist the root sossshjoboptions.testmode test modus schalten false sossshjoboptions.debug schalten false sossshjoboptions.debuglevel debuglevel sossshjoboptions.log_filename name der datei mit den logging-eintrgen stdout name of the property file sossshjoboptions.applicationname name of the application sossshjoboptions.applicationdocuurl the url of the documentation of this application sossshjoboptions.allowemptyparameterlist if true an empty parameter list leads not into an error true main info authenticate user test logged in",
+            "main info checkstdout stdout main info execute id sosdataexchangeengine.java oh revision copyright sos gmbh berlin main info setlogger without instance of logger called",
+            "main info execute jade jobscheduler advanced data exchange version id sosdataexchangeengine.java oh revision copyright sos gmbh berlin date operation copy protocol sftp port file specification file path local host gollum.sos local directory target host homer.sos target directory pid main info setinfo files found for regexp main info run transfer of started main info dotransfer security hash for file is main info run transfer of started main info dotransfer security hash for file is main info rename server reply rename from to writehistory transfer-operation copy started at ended at duration main info writehistory operation copy targetfile sourcefile bytestransferred printstate files transferred main info execute elapsed time per file total bytes main info execute execution status sucess",
+            "without errors",
+            "successful transfers failed transfers last error main in"
+        ],
+        "timespent": "10800",
+        "alpha": 99
+    },
+    {
+        "id": "12826",
+        "project": "YADE",
+        "summary": [
+            "yade cli jade.sh and script show usage message when invoked without parameters"
+        ],
+        "description": [
+            "current situtation by default if jade.sh or scripts are started without any parameter scripts try to connect with all default parameters",
+            "desired behaviour an error message should be presented yade requires parameters",
+            "please see no stracktrace shall be presented scripts should show some usage message like jobscheduler.sh script when invoked without parameters when invoked with h help unix or windows main info execute sosdataexchange main routine started revision copyright sos gmbh berlin main info execute id sosdataexchangeengine.java oh revision copyright sos gmbh berlin main info setlogger without instance of logger called",
+            "main info execute jade jobscheduler advanced data exchange version id sosdataexchangeengine.java oh revision copyright sos gmbh berlin date operation send protocol ftp port file specification file path local host homer local directory target host target directory pid java.net.unknownhostexception name or service not known main error raiseexception processing aborted returns an exception see stacktrace on stderr java.net.unknownhostexception name or service not known main error raiseexception processing aborted returns an exception see stacktrace on stderr java.net.unknownhostexception processing aborted returns an exception see stacktrace on stderr main info transfer data transfer ended with error processing aborted returns an exception see stacktrace on stderr at"
+        ],
+        "timespent": "28800",
+        "alpha": 99
+    },
+    {
+        "id": "12822",
+        "project": "YADE",
+        "summary": [
+            "job should use a jump host instead of trying to connect directly"
+        ],
+        "description": [
+            "current situation the job firstly tries to connect directly to a target system",
+            "if successful then the user wouldn't know that no jump host has been used",
+            "desired behavior a jump host should always be used if configured"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "12807",
+        "project": "YADE",
+        "summary": [
+            "yade operation copyfrominternet should delete temporary files from jump host"
+        ],
+        "description": [
+            "with the yade jump host operation copyfrominternet after successful trasfer the temporary files on the jump host are not deleted file list on jump host yade log code main info id oh main info id ur main info execute sosdataexchange main routine started revision copyright sos gmbh berlin main info establishsshconnection sossshjoboptions.url the url for the connection raise an exception if an error occured true this parameter specifies the path and name of a us this parameter specifies the authentication method password sossshjoboptions.command this parameter specifies a command that is to be executed sossshjoboptions.command_delimiter command delimiter characters are specified using this par sossshjoboptions.command_script this parameter can be used as an alternative to command contains a parameterstring which will be gollum.sos sossshjoboptions.protocol type of requested datatransfer the values ftp sftp ssh sossshjoboptions.ignore_error should the value true be specified then execution errors false this parameter configures one or more exit codes which wi sossshjoboptions.ignore_signal should the value true be specified then on false sossshjoboptions.ignore_stderr this job checks if any output to stderr has been created false sosftpoptionssuperclass.jump_password password for authentication with the sosftpoptionssuperclass.jump_port port on the by which files should be tra the value of this parameter is the host name or the ip ad sossshjoboptions.proxy_password this parameter specifies the password for the proxy serve this parameter specifies the port number of the proxy the value of this parameter specifies the user account fo user sossshjoboptions.simulate_shell should the value true be specified for this parameter false if no new characters are written to stdout or stderr afte the expected comman line prompt",
+            "using this prompt the jo sosftpoptionssuperclass.jump_user user name for authentication with the jenkins should the value true be specified then execution errors true sossshjoboptions.base_directory a base directory for all relative filenames used by sosoptionfilename createfolder folder anlegen wenn noch nicht vorhanden true general mask for date fomatting general mask for time formatting pathname to the jobscheduler createfolder folder anlegen wenn noch nicht vorhanden true sossshjoboptions.scheduler_data data folder of jobscheduler installation createfolder folder anlegen wenn noch nicht vorhanden true sossshjoboptions.scheduler_home home root folder of jobscheduler createfolder folder anlegen wenn noch nicht vorhanden true name of local user test sossshjoboptions.locale is for internationalization of application sossshjoboptions.checknotprocessedoptions if this option is set to true all not processed or recognized options are reported as a warning false sossshjoboptions.xmlid this ist the root sossshjoboptions.testmode test modus schalten false sossshjoboptions.debug schalten false sossshjoboptions.debuglevel debuglevel sossshjoboptions.log_filename name der datei mit den logging-eintrgen stdout name of the property file sossshjoboptions.applicationname name of the application sossshjoboptions.applicationdocuurl the url of the documentation of this application sossshjoboptions.allowemptyparameterlist if true an empty parameter list leads not into an error true main info authenticate user jenkins logged in",
+            "main info checkstdout stdout info main sosdataexchange main routine started revision copyright sos gmbh berlin info main id sosdataexchangeengine.java oh revision copyright sos gmbh berlin info main no file appender found info main jade jobscheduler advanced data exchange version id sosdataexchangeengine.java oh revision copyright sos gmbh berlin date operation copy protocol local port file specification file path local host gollum.sos local directory outbound target host target directory pid info main unix emulated by filezilla info main files found for regexp info main transfer of started info main security hash for file is"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "12805",
+        "project": "YADE",
+        "summary": [
+            "yade operation copytointernet ended succesfully even path is wrong in the profile"
+        ],
+        "description": [
+            "if the parameter in a yade profile for jumphost operation is wrong etc yade complete the operation without any error and return success code please see the parameter although yade shows an error main error checkexitcode remote command terminated with exit code profile yade log code main info id oh main info id ur main info execute sosdataexchange main routine started revision copyright sos gmbh berlin main info establishsshconnection sossshjoboptions.url the url for the connection raise an exception if an error occured true this parameter specifies the path and name of a us this parameter specifies the authentication method password sossshjoboptions.command this parameter specifies a command that is to be executed sossshjoboptions.command_delimiter command delimiter characters are specified using this par sossshjoboptions.command_script this parameter can be used as an alternative to command contains a parameterstring which will be gollum.sos sossshjoboptions.protocol type of requested datatransfer the values ftp sftp ssh sossshjoboptions.ignore_error should the value true be specified then execution errors false this parameter configures one or more exit codes which wi sossshjoboptions.ignore_signal should the value true be specified then on false sossshjoboptions.ignore_stderr this job checks if any output to stderr has been created false sosftpoptionssuperclass.jump_password password for authentication with the sosftpoptionssuperclass.jump_port port on the by which files should be tra the value of this parameter is the host name or the ip ad sossshjoboptions.proxy_password this parameter specifies the password for the proxy serve this parameter specifies the port number of the proxy the value of this parameter specifies the user account fo user sossshjoboptions.simulate_shell should the value true be specified for this parameter false if no new characters are written to stdout or stderr afte the expected comman line prompt",
+            "using this prompt the jo sosftpoptionssuperclass.jump_user user name for authentication with the jenkins should the value true be specified then execution errors true sossshjoboptions.base_directory a base directory for all relative filenames used by sosoptionfilename createfolder folder anlegen wenn noch nicht vorhanden true general mask for date fomatting general mask for time formatting pathname to the jobscheduler createfolder folder anlegen wenn noch nicht vorhanden true sossshjoboptions.scheduler_data data folder of jobscheduler installation createfolder folder anlegen wenn noch nicht vorhanden true sossshjoboptions.scheduler_home home root folder of jobscheduler createfolder folder anlegen wenn noch nicht vorhanden true name of local user test sossshjoboptions.locale is for internationalization of application sossshjoboptions.checknotprocessedoptions if this option is set to true all not processed or recognized options are reported as a warning false sossshjoboptions.xmlid this ist the root sossshjoboptions.testmode test modus schalten false sossshjoboptions.debug schalten false sossshjoboptions.debuglevel debuglevel sossshjoboptions.log_filename name der datei mit den logging-eintrgen stdout name of the property file sossshjoboptions.applicationname name of the application sossshjoboptions.applicationdocuurl the url of the documentation of this application sossshjoboptions.allowemptyparameterlist if true an empty parameter list leads not into an error true main info authenticate user jenkins logged in",
+            "main info checkstdout stdout main info execute id sosdataexchangeengine.java oh revision copyright sos gmbh berlin main info setlogger without instance of logger called",
+            "main info execute jade jobscheduler advanced data exchange version id sosdataexchangeengine.java oh revision copyright sos gmbh berlin date operation copy protocol ftp port file specification file path local host homer local directory target host gollum.sos target directory pid main info setinfo files found for regexp main info run transfer of started main info dotransfer security hash for file is main info run transfer of started main info dotransfer security hash for file is main info run transfer of started main info dotransfer security hash for file is main info rename server reply rename from to"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "12580",
+        "project": "YADE",
+        "summary": [
+            "parameter for passive mode has no effect when the parameter is used"
+        ],
+        "description": [
+            "this issue should be fixed see the test was incomplete",
+            "it doesn't work when parameter is used",
+            "if you start jade as cli with the profile then the passive mode parameter has no effect",
+            "active mode is used",
+            "the above profile is an older version to configure a transfer from local to a ftp server",
+            "please use the following profile instead see also for further parameters"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "12388",
+        "project": "YADE",
+        "summary": [
+            "the setup should create and environment variables"
+        ],
+        "description": [
+            "the start scripts jade.sh and should create the respective environment variables",
+            "the same modification applies to the windows start scripts"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "12015",
+        "project": "YADE",
+        "summary": [
+            "mkd command via ftp is only send if directory doesn't exist"
+        ],
+        "description": [
+            "if it is necessary to create directories on a ftp server the or subdirectories for recursive transfers then jade sends the mkd command only if directory doesn't exist"
+        ],
+        "timespent": "43200",
+        "alpha": 99
+    },
+    {
+        "id": "11908",
+        "project": "YADE",
+        "summary": [
+            "parameter passive mode has no effect",
+            "active mode is used"
+        ],
+        "description": [
+            "if the parameter is set true then a pasv command is sent to the server but active mode is still used",
+            "for example ftpclient.listfiles in sosvfsftp.getfilenames sends a port command"
+        ],
+        "timespent": "28800",
+        "alpha": 99
+    },
+    {
+        "id": "11403",
+        "project": "YADE",
+        "summary": [
+            "parameters and shall rename source files into new folder"
+        ],
+        "description": [
+            "the following parameters should rename the source to the folder that does not exist",
+            "all looks good in the log but the new folder is not created though the parameters and resp",
+            "are set",
+            "see test copyandmovesource2newfolder in"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "11388",
+        "project": "YADE",
+        "summary": [
+            "setup of the background-service removes the"
+        ],
+        "description": [
+            "the installer of the background-service removes the in the jobscheduler installation",
+            "the jobscheduler cannot start if this jar is missing",
+            "workaround call the jobscheduler-update installer from"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "11187",
+        "project": "YADE",
+        "summary": [
+            "sosftp receive with and transactional=no tries twice to delete the source files"
+        ],
+        "description": [
+            "if you receive files with the setting and transactional=no then the source files are deleted for two times",
+            "the second trial throws an error",
+            "workaround please use transactional=yes"
+        ],
+        "timespent": "1200",
+        "alpha": 99
+    },
+    {
+        "id": "11171",
+        "project": "YADE",
+        "summary": [
+            "replacing should occur once and not twice when sending files with jump client"
+        ],
+        "description": [
+            "problem for example you send files via jump and want to add a prefix on the target files to get source test.txt target parameter then the substitution occurs twice so that the result is source test.txt target"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "10917",
+        "project": "YADE",
+        "summary": [
+            "support for"
+        ],
+        "description": [
+            "filenames encoded with encoding must be processed correctly",
+            "this affects the processing of german umalute in new options to activate objoptions.preftpcommands.value opts on objoptions.controlencoding.value if the does not support but filenames contans coded characters the option preftpcommands has to be used as shown in the above example",
+            "default is with the option controlencoding the client will activate the feature",
+            "default is off an example for using this options in an transfer-example preftpcommand=opts on see for option preftpcommands"
+        ],
+        "timespent": "28800",
+        "alpha": 99
+    },
+    {
+        "id": "13584",
+        "project": "SET",
+        "summary": [
+            "add ddl script code to create table and script"
+        ],
+        "description": [
+            "the scheduler.sql script for oracle postgres mssql server sybase and is missing the ddl command to create the table and this behavior has been observed as stated in"
+        ],
+        "timespent": "28800",
+        "alpha": 99
+    },
+    {
+        "id": "13517",
+        "project": "SET",
+        "summary": [
+            "setup should provide sql scripts to create sosftp tables"
+        ],
+        "description": [
+            "current situation jobscheduler setup doesn't contain sql scripte to create sosftp tables in release and desired behavior jobscheduler setup should provide sql scripte to create sosftp tables"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "13173",
+        "project": "JS",
+        "summary": [
+            "restrict scope of environment variables in windows event script"
+        ],
+        "description": [
+            "current situation the script jobscheduler event.cmd creates environment variables that are visible to a calling script",
+            "therefore script environment variables can interfere and overlap variables with the same name in the calling script",
+            "desired situation the script jobscheduler event.cmd should restrict environment variables to the local scope",
+            "workaround when calling the event script from your own scripts then add setlocal and endlocal before and after that call"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "12830",
+        "project": "JS",
+        "summary": [
+            "no more duplicate main log in scheduler.out"
+        ],
+        "description": [
+            "under unix the file scheduler.out does not include duplicate log entries from jobscheduler main.log any more",
+            "jobscheduler logs with loggers jobscheduler and log levels are set as follows jobscheduler none not logging at all info"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "12827",
+        "project": "JS",
+        "summary": [
+            "joc with jetty port gets a page"
+        ],
+        "description": [
+            "if joc is calling with the jetty port then the redirect to doesn't work",
+            "instead it comes a page"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "11977",
+        "project": "JS",
+        "summary": [
+            "a database reconnect after the connection got lost doesn't work for show history commands"
+        ],
+        "description": [
+            "a database reconnect after the connection got lost doesn't work for show history commands",
+            "if a job or an order is started or a configuration file is modified then the reconnect works properly",
+            "this has the effect in joc that you don't see logs even though the database is up again since a job is started"
+        ],
+        "timespent": "158400",
+        "alpha": 99
+    },
+    {
+        "id": "11606",
+        "project": "JS",
+        "summary": [
+            "the logs directory on unix will be located under"
+        ],
+        "description": [
+            "now the logs directory is located in jobscheduler's working directory this place will be changed to according to the linux standard base"
+        ],
+        "timespent": "115200",
+        "alpha": 99
+    },
+    {
+        "id": "11554",
+        "project": "JS",
+        "summary": [
+            "joc nested job chains doesn't display its nodes because of"
+        ],
+        "description": [
+            "the job chain with other job chains as nodes doesn't show its nodes",
+            "the reason is the issue joc interprets the element with a attribute like a element"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "11539",
+        "project": "JS",
+        "summary": [
+            "a job referencing a name schedule should log as warning not error when read from disk before the schedule"
+        ],
+        "description": [
+            "ein job der auf einen benannten schedule verweist schedule initialisert nicht wenn die vor der scheduler-datei eingelesen wird",
+            "wengistens unter linux kann das zufllig sein abhngig von der ordnung der dateien im verzeichnis",
+            "place schedule in the main configuration file scheduler.xml"
+        ],
+        "timespent": "1200",
+        "alpha": 99
+    },
+    {
+        "id": "11375",
+        "project": "JS",
+        "summary": [
+            "setup add fields for jetty ports http https"
+        ],
+        "description": [
+            "fields to enter the ports for jetty http and https are added",
+            "the values are inserted into the for a new installation",
+            "during an update installation the jetty.xml retains unchanged"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "11241",
+        "project": "JS",
+        "summary": [
+            "startscript only useful for autorun after some modifications"
+        ],
+        "description": [
+            "the startscript tries to read to get the environment",
+            "if you copy it to for autorun then it doesn't find the environment"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "10924",
+        "project": "JS",
+        "summary": [
+            "almost all job documentation can not be displayed in the browser"
+        ],
+        "description": [
+            "further almost all have the wrong stylesheet reference type href description xmlns xsi:schemalocation old documentations without elements had errors while transforming via"
+        ],
+        "timespent": "25200",
+        "alpha": 99
+    },
+    {
+        "id": "10042",
+        "project": "JS",
+        "summary": [
+            "uniformly layout css"
+        ],
+        "description": [
+            "gui create a css file which declares background-colors further a button template should be created"
+        ],
+        "timespent": "28800",
+        "alpha": 99
+    },
+    {
+        "id": "12896",
+        "project": "JOE",
+        "summary": [
+            "joe linux startup script jobeditor.sh should have debug parameter like windows script"
+        ],
+        "description": [
+            "as of today problem on windows platform user can execute the jobeditor.cmd with parameter debug with debug parameter jobeditor.com write few stdout message containing java options etc",
+            "snippet from the jobeditor.cmd file on linux jobeditor.sh script does not have implementation for debug paramter expected behaviour from jobeditor.sh script when user executed jobeditor.sh script with debug message script should stdout similar output as windows script"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "11102",
+        "project": "JOE",
+        "summary": [
+            "jobdoc xslt-stylesheet process a variable number of languages"
+        ],
+        "description": [
+            "the xslt-stylesheet has to be modified to process a variable number of languages see it should support all languages which are containing in the job documentation"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "12847",
+        "project": "JITL",
+        "summary": [
+            "sos.scheduler.managed.jobschedulermanageddatabasejob should read the value for the parameter command from the script value"
+        ],
+        "description": [
+            "as implemented in the plsql or the sqlplus job the sos.scheduler.managed.jobschedulermanageddatabasejob should also read the value for the command from the script tag",
+            "if the parameter command and the script is are defined the value from the script should be taken",
+            "the example in the attachment should work"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "11941",
+        "project": "JITL",
+        "summary": [
+            "using the configuration monitor without having node parameters should not produce file not found exception with stacktrace"
+        ],
+        "description": [
+            "when using the configuration monitor without having node parameters there is file not found exception with a stacktrace",
+            "as it is possible to use the configuration monitor in this way there should not be this stacktrace",
+            "java.io.filenotfoundexception no such file or directory source"
+        ],
+        "timespent": "600",
+        "alpha": 99
+    },
+    {
+        "id": "11920",
+        "project": "JITL",
+        "summary": [
+            "setting of required_orders in com.sos.jitl.sync.jobschedulersynchronizejobchainsjsadapterclass has no effect"
+        ],
+        "description": [
+            "the number of orders the sync job has to wait for can be set with the parameter in the implementation com.sos.jitl.sync.jobschedulersynchronizejobchainsjsadapterclass this has no effect",
+            "workaraound set the parameter where jobchain is the name of the job chain where the job is used"
+        ],
+        "timespent": "600",
+        "alpha": 99
+    },
+    {
+        "id": "11900",
+        "project": "JITL",
+        "summary": [
+            "the new implementation of th sync job com.sos.jitl.sync.jobschedulersynchronizejobchainsjsadapterclass should have the setback option"
+        ],
+        "description": [
+            "the new implementation of the sync job com.sos.jitl.sync.jobschedulersynchronizejobchainsjsadapterclass should have the setback option",
+            "at the moment it is possible to suspend the order if the order has to wait at the sync node",
+            "the old implementation did have the option to specify the param to let the order perform a setback",
+            "the parameters setback_interval and are specifying the behaviour of the setback",
+            "with this option it is possible to define a timeout for the waiting"
+        ],
+        "timespent": "1200",
+        "alpha": 99
+    },
+    {
+        "id": "11778",
+        "project": "JITL",
+        "summary": [
+            "it should be possible in the sync job to configure a sync context global or jobchain"
+        ],
+        "description": [
+            "the job com.sos.jitl.sync.jobschedulersynchronizejobchainsjsadapterclass should have a parameter which specifies the context of the actual sync",
+            "default is global what means that all sync nodes with the specific sync job must be released to continue orders",
+            "it is also possible to specify the name of a job chain to let the orders continue if the sync nodes in the specific job chain are released",
+            "the context also could be a specific node in one job chain"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "14104",
+        "project": "YADE",
+        "summary": [
+            "yade history viewer writes wrong value in the table view"
+        ],
+        "description": [
+            "current situation yade generates correct history items and timestamp during transfer see session yade creates correct order object to be imported by yade background service job yade writes correct value for the field into file",
+            "yade history view shows wrong value in column log files session log history import log yade history csv desired behavior yade history viewer should show correct timestamp value for the column"
+        ],
+        "timespent": "17100",
+        "alpha": 100
+    },
+    {
+        "id": "13804",
+        "project": "YADE",
+        "summary": [
+            "yade client should handle integrity hash parameters in log output"
+        ],
+        "description": [
+            "current behavior there is no indication listed in the target block of the yade cli output that integrity hash parameters have been set",
+            "there is no indication in the cli output that all files have been successfully checked against their integrity hashes",
+            "only errors are reported",
+            "the number of successful and unsuccessful file transfers is not correctly written to the cli output in the event of an error consider when five files have been found for transfer and the integrity hash for one file is found to be incorrect after two files have been correctly checked and transferred",
+            "transfer of the remaining three files will be aborted and rolled back",
+            "however successful and unsuccessful transfers will be reported",
+            "see also example configuration download the file from the jade client command line interface tutorial checking files for completeness follow the procedure described in the first two examples on that page to run transfers with and without an integrity hash mismatch error",
+            "desired behavior check integrity hash parameters should be listed in the target block of the yade cli output after overwritefiles",
+            "an entry should be made in the cli output after a transfer operation has been completed and all files successfully checked against their integrity hashes",
+            "the number of successful and unsuccessful file transfers should be correctly written to the cli output",
+            "see also"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "13796",
+        "project": "YADE",
+        "summary": [
+            "yade background service returns parameter be empty"
+        ],
+        "description": [
+            "current situation the background service job returns the following error when reading the file transfer parameters after completion of a file transfer operation udp transfer does not take place",
+            "this error was not present in and means that the yade backgroundservice in current releases can only work via the csv history file the reason for this is the new integrity hash implementation where no checksum is created per default",
+            "desired situation orders for job should be processed without errors and job information forwarded to the history viewer per please change error message to parameter can't be empty for status success test case according to resolver is not required error source is known",
+            "workaround set the parameter checkintegrityhash to true or set createintegrityhashfile to true for futher infomation see and"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "13651",
+        "project": "YADE",
+        "summary": [
+            "parameters without source or target prefix are not processed using"
+        ],
+        "description": [
+            "current situation almost all parameters will not work when used without source or target prefix recursive desired behavior all parameters should be processed if used without prefix"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "13648",
+        "project": "YADE",
+        "summary": [
+            "jump host should get correct target or source parameter"
+        ],
+        "description": [
+            "current situation the jump get the jump parameter as target parameter with operation copyfrominternet and the jump parameter as source parameter with operation copytointernet example copyfrominternet instead of desired behavior the right target and source parameters should set"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "13512",
+        "project": "YADE",
+        "summary": [
+            "every transfer failed with failure for file xxx"
+        ],
+        "description": [
+            "current situation every transfer failed with"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "13453",
+        "project": "YADE",
+        "summary": [
+            "yade getlist operation should not create result file"
+        ],
+        "description": [
+            "current behavior the yade for operation getlist creates two result files where file's location and name is configure using parameter this result file contains list of files found on matching with this result file is csv file contains various information file size name etc",
+            "the contains of csv result files are not complete and relevant for the operation getlist since this information is also available in file",
+            "the name of csv file is not explicitly configured in the yade profile but derived from the parameter the yade starting from version also print information on stdout console",
+            "desired behavior the csv result file should not be created",
+            "how to reproduce profile session log"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "13208",
+        "project": "YADE",
+        "summary": [
+            "yade does not handle relative path names correctly"
+        ],
+        "description": [
+            "current situation when setting a relative path for the source directory then yade does not handle this correctly when using the protocol ftp then no files will be found to transfer even if matching files are present",
+            "when using the protocol sftp then an error message appears to reproduce the problem start this job desired behavior it should be possible to use a relative path for the source directory",
+            "maintainer notes due to the complexitiy of this fix it will not be applied to maintenance release and in order to keep this fix free from side effects"
+        ],
+        "timespent": "66600",
+        "alpha": 100
+    },
+    {
+        "id": "13136",
+        "project": "YADE",
+        "summary": [
+            "yade should not throw error no matching file found when parameter overwrite_files false is set"
+        ],
+        "description": [
+            "as of situation when yade is configured with parameter overwrite_files false jade throws an error expected behavior when file is not present at target serer target directory yade should transfer the files from source to target without any error when file is already present and target server target directory yade should print an appropriate warning how to reproduce profile execute command line"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "13132",
+        "project": "YADE",
+        "summary": [
+            "alternative server for source or target should be used exclusively if the respective alternative parameters are set"
+        ],
+        "description": [
+            "current situation if jade faces a connection error to the source or the target system then it tries a second connection to an alternative server if configured to do it tries it even though no alternative_source or alternative_target parameter are set",
+            "desired behaviour an alternative connection should be used exclusivey if the alternative parameters are set"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "13127",
+        "project": "YADE",
+        "summary": [
+            "yade client logs every line twice if it finds a"
+        ],
+        "description": [
+            "current situation the main class of the yade client has a basis configuration",
+            "if it find a configuration which has a consoleappender for the rootlogger then both configurations affects that every line is logged twice",
+            "desired situation the main class of the yade client gets a basis configuration only if the rootlogger doesn't have already an appender"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "13125",
+        "project": "YADE",
+        "summary": [
+            "yade should support use of a proxy for ftp and sftp protocols"
+        ],
+        "description": [
+            "current situation proxy support is provided exclusively for the proxy protocol http and the file transfer protocols webdav and http",
+            "desired situation use of a proxy should be possible for the file transfer protocols ftp and sftp too",
+            "resolution use of a proxy with the http protocol is supported for the file transfer protocols webdav http https ftp and sftp",
+            "with the and protocols is supported for the file transfer protocols ftp and sftp",
+            "parameterization the following parameters are added to connect to a source host via a proxy the above parameters can be used in a similar way for connections to a target host via a proxy by replacing the source prefix by target"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "13123",
+        "project": "YADE",
+        "summary": [
+            "the error should be raised exclusively if no source files have been found"
+        ],
+        "description": [
+            "current situation the error message no filename found which match the criteria as specified using the regular expression occurs in cases when source files have been found but no file was successfully transferred",
+            "in this case the error message is wrong",
+            "desired behavior the error message no filename found which match the criteria as specified using the regular expression should exclusively occur if no source files have been found",
+            "in case that no file was successfully transferred then an error message should be logged that states why the transfer failed"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "13121",
+        "project": "YADE",
+        "summary": [
+            "if no files are transferred then the yade client should return exit code if this was the expected result"
+        ],
+        "description": [
+            "current situation when setting the parameter the no files will be transferred",
+            "after executing the command an error is raised and the client terminates with exit code to reproduce the error use this results in an error message such as desired behavior if no files are transferred and the parameter then the yade client should terminated with exit code"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "13120",
+        "project": "YADE",
+        "summary": [
+            "yade should not show duplicate output of file names in logs"
+        ],
+        "description": [
+            "current behavior the yade client creates two lines of output when logging any file names found",
+            "using this profile the following output is created desired behavior each log line should be appear only once"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "13113",
+        "project": "YADE",
+        "summary": [
+            "option has no efffect"
+        ],
+        "description": [
+            "current situation when trying to transfer a file with jade that does not exist and the option then an exception will be raised",
+            "desired behavior if option then no error should occur if no file is found",
+            "no exception should be raised"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "13082",
+        "project": "YADE",
+        "summary": [
+            "yade background service setup changes"
+        ],
+        "description": [
+            "starting situation the yade background service setup configures the job chains for import of the transfer history with the following names in the folder expected behavior the setup should store yade history files in the folder",
+            "the setup should rename jobscheduler configuration items from sosftp to jade as follows"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "13027",
+        "project": "YADE",
+        "summary": [
+            "jade.cmd should not always show a usage clause"
+        ],
+        "description": [
+            "current situation the jade startscript on windows always shows a usage clause",
+            "desired situation the jade startscript on windows shows a usage clause only if it is started without any argument or if the first argument is h help workaround edit the jade start script bin jade.cmd and bin add a line with the command goto banner in line"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "13012",
+        "project": "YADE",
+        "summary": [
+            "yade should return an exit code if an error has occurred"
+        ],
+        "description": [
+            "current situation example to force an error and to receive an exit the user doesn't have sufficient permissions to create the target file on a ftp sever desired behavior yade should return the correct exit code",
+            "should an error occur and no orignal exit code be available then exit code is returned"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "12992",
+        "project": "YADE",
+        "summary": [
+            "yade parameter transaction=true should roll back a transfer if one of the files cannot be written"
+        ],
+        "description": [
+            "use case user want to transfer three files if user specify transactional true and tmp parameters to ensure either all three files are transferred or non of in case of unsuccessful file transfer yade should rollback the transaction and delete all successful transferred and temporary files jade cli positive test start the yade cli with as specified in the yade cli yade will transfer three files without error and also write log message",
+            "negative test start the yade cli with following configuration yade will transfer three files without error open any of the file in a windows application notepad excel",
+            "the windows application will not allow any other process to overwrite the file start the yade with same settings as previous step yade will transfer three files and also log that files are successfully transfer",
+            "check the target windows system there will be files which are successful transferred file opened in the windows application file transferred by jade but couldn't overwrite with"
+        ],
+        "timespent": "25200",
+        "alpha": 100
+    },
+    {
+        "id": "12985",
+        "project": "YADE",
+        "summary": [
+            "yade should create a checksum file for operation copytointernet"
+        ],
+        "description": [
+            "see the checksum file chapter in the checksum file should only generated by yade on the jump host"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "12909",
+        "project": "YADE",
+        "summary": [
+            "yade jump host transfer should work for file names that contain umlaut"
+        ],
+        "description": [
+            "user want to transfer three files all contains umlauts in the file names sos yade does transfer all three files to the jumphost but as soon as trasnfer from jumphost to target starts jade throws error how to reproduce user yade cli on galadriel.sos settings profile"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "12907",
+        "project": "YADE",
+        "summary": [
+            "rewrite yade logging for better overview and debugging"
+        ],
+        "description": [
+            "the current yade logging severely lacks traceability clarity about parameters used wrong banner connection direction for operations sequence which yade execute connection/operations logging of operations performed connected to server start transfer etc readability debug levels if an error occurred then the original error message should log at the end without stracktrace in info level"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "12902",
+        "project": "YADE",
+        "summary": [
+            "yade should not raise an error file not found when for use with jump hosts"
+        ],
+        "description": [
+            "if user specifies a yade profile for a matching file group yade does following find the correct file and compress it with default compressed file extension gz transfer to jumphost temporary directory but when yade starts the transfer from jumphost to yade looks for original files matching with xls but since there is no file but compressed file yade throws error how to reproduce user yade cli on galadriel.sos"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "12901",
+        "project": "YADE",
+        "summary": [
+            "yade should evaluate regex for multiple file extensions when used with jump host"
+        ],
+        "description": [
+            "if user specify a regexto transfer group of files with same filename but different file extention user want to transfer two files valid regex for such a file group is jade does find files and transfer them to jump host but as soon as it start transfer file from jumphost to target host yade throws an error how to reproduce user yade cli on galadriel.sos"
+        ],
+        "timespent": "23400",
+        "alpha": 100
+    },
+    {
+        "id": "12891",
+        "project": "YADE",
+        "summary": [
+            "mkdir in sftp should create a directory only if it does not exist"
+        ],
+        "description": [
+            "problem mkdir in sftp tries to create a directory even though it exists because the sftp client gets no information about whether the directory exists",
+            "for a path like it asks at first for the attributes isdirectory of a then of and so on",
+            "this is the wrong order",
+            "based on the permissions settings it is possible that the attributes of a are not readable",
+            "then it seems that a is not a directory and the mkdir command fails",
+            "solution jade should ask at first the attributes in the reverse order then and so on until a subpath is a directory",
+            "then jade should create the directories in the original order a"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "12880",
+        "project": "YADE",
+        "summary": [
+            "receiving files by ftp with should transfer files from all level folders"
+        ],
+        "description": [
+            "current situation when files are received by ftp with then only the files from the specified folder are transferred desired behavior all files from the specified folder and all should recursively be transferred"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "12825",
+        "project": "YADE",
+        "summary": [
+            "update yade banner for correct usage of parameters"
+        ],
+        "description": [
+            "current situation yade is still using the old sosftp banners",
+            "with new source and traget paradigm",
+            "therefore it is very confusing to see only port protocol etc",
+            "for the target system old sosftp example desired behavior yade banner should present all parameter that are in use for a specific transfer independently from the fact if they have been specified by command line options file or jobscheduler parameters sequence of the parameters in the banner should be operation source paramters jump paramters target_paramters rest paramters polling renaming etc example"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "12798",
+        "project": "YADE",
+        "summary": [
+            "sourcefilename for has wrong filename on windows"
+        ],
+        "description": [
+            "and can use sourcefilename which is substitited with the filename of the transferred source file",
+            "on windows it get a wrong name",
+            "for example c emp jade txt sourcefilename c emp jade"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "12789",
+        "project": "YADE",
+        "summary": [
+            "yade should clean up temp files"
+        ],
+        "description": [
+            "yade generates temporary files that should be cleaned up"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "12655",
+        "project": "YADE",
+        "summary": [
+            "throws nullpointerexception"
+        ],
+        "description": [
+            "throws nullpointerexception"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "12654",
+        "project": "YADE",
+        "summary": [
+            "throws classcastexception"
+        ],
+        "description": [
+            "throws classcastexception"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "12024",
+        "project": "YADE",
+        "summary": [
+            "exceptions should be raised for some reasons even though the parameter"
+        ],
+        "description": [
+            "current situation if the parameter then no exception is thrown and the exit code is in case that the list of transferred files is empty",
+            "desired behaviour suppresses only the error which occurs if the list of source files is empty"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "12023",
+        "project": "YADE",
+        "summary": [
+            "yade should not raise an exception if the parameters and or are used"
+        ],
+        "description": [
+            "current situation when a user wants to ignore errors in case of a file not being found on source server and the parameter is set together with or with then yade raises an error",
+            "the behavior is correct and no error is raised if the parameter is used with the parameter see this job to reproduce the problem desired behavior no error shall be raised if is used as specified in the above-mentioned current situation"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "12016",
+        "project": "YADE",
+        "summary": [
+            "all slashes in transfer commands on windows are changed to backslashes"
+        ],
+        "description": [
+            "all slashes in transfer commands on windows are changed to backslashes",
+            "if the command has options like f or y then the command work the target system is windows y targetfilename c another older then jade calls save a cmd file on windows c emp myxcopy.cmd with the content and use emp myxcopy.cmd targetfilename c another older"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "12005",
+        "project": "YADE",
+        "summary": [
+            "list of transferred files is missing in the maill body"
+        ],
+        "description": [
+            "if jade is configured to send mails then it is expected that the list of the transferred files is written into the mail body",
+            "this list is missing"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "11969",
+        "project": "YADE",
+        "summary": [
+            "relative path should be possible with yade operation copy for sftp protocol"
+        ],
+        "description": [
+            "current situation if i try to transfer a file like this then i receive the output as yade puts a in front of the path",
+            "with the full absolute path it works",
+            "desired behavior if the starts with any of the characters drive tilde unix environment variable windows environment variable then the setting is ignored",
+            "if the starts with any other character then the setting is considered the setting is used as a prefix for the setting is suffixed with a unix or windows should no such character be present as the last character of this setting"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "11931",
+        "project": "YADE",
+        "summary": [
+            "global option timeformatmask mask for a general time format in yade"
+        ],
+        "description": [
+            "resource location line example"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "11930",
+        "project": "YADE",
+        "summary": [
+            "global option dateformatmask mask for a general date format in yade"
+        ],
+        "description": [
+            "resource location line"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "11901",
+        "project": "YADE",
+        "summary": [
+            "sftp in case of connection problems the original cause is not contained in yade log file"
+        ],
+        "description": [
+            "in case of refused connection to target host die verarbeitung endete mit dem fehler getfilesize schlug fehl",
+            "will be logged used yade client command profile host test ist not exist"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "11894",
+        "project": "YADE",
+        "summary": [
+            "a parameter is added to handle when a file is not steady"
+        ],
+        "description": [
+            "a parameter is added",
+            "this parameter expected a job chain node as value",
+            "if a check steady state of files is configured and one file is unsteady after the maximal number of checks then normally an exception is thrown and the order goes to the error node of the job chain",
+            "if this parameter is set then no exception is thrown and the order goes to the job chain node which is set in this parameter"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "11462",
+        "project": "YADE",
+        "summary": [
+            "it should be possible to specify the jobscheduler instance for which orders are created if"
+        ],
+        "description": [
+            "current situation the jobscheduler which runs the jade jitl job is the recipient for orders that are created when desired behavior the jobscheduler instance can be specified by the following options sosoptionhostname sosoptionportnumber"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "11461",
+        "project": "YADE",
+        "summary": [
+            "parameters for source file name and target file name should be created if"
+        ],
+        "description": [
+            "desired behavior these new parameters shall be created if the parameter is set"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "11387",
+        "project": "YADE",
+        "summary": [
+            "doesn't work"
+        ],
+        "description": [
+            "the parameter is ignored",
+            "only the parameter checksteadystateforfiles has an effect",
+            "an alias should be created",
+            "however if checksteadystateforfiles true then i see in the log debug main checking for steady state but nevertheless a transfer is started which reports an error main failure for file no of bytes transferred size of file is"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "11373",
+        "project": "YADE",
+        "summary": [
+            "avoid duplicate history entries in nontransactional mode"
+        ],
+        "description": [
+            "resource location line"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "11069",
+        "project": "YADE",
+        "summary": [
+            "sub folder should be deleted on a jump host if there are still inside that directory"
+        ],
+        "description": [
+            "it appears that there are issues when using the recursive option and a jump host",
+            "upon transferring the files from the remote host to the jump host",
+            "sos ftp successfully transfer the files again from the jump host to the internal sosftp machine",
+            "however during the cleanup process sos ftp attempts to delete the temporary files created on the jump host",
+            "but when recursive mode is used it fails to delete the temp folders",
+            "the reason for this is because sos ftp appears to attempt to delete the when there is still inside that directory",
+            "it works for jade",
+            "it will not fix for sosftp"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10889",
+        "project": "YADE",
+        "summary": [
+            "allow to process special like opts feat at start of data transfer"
+        ],
+        "description": [
+            "new option a list of pure separatet by a colon which are understandable directly by the server example opts on feat see for using this option together with the processing of encoded filenames"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "13869",
+        "project": "SET",
+        "summary": [
+            "installation and configuration of sonarqube for quality assurance"
+        ],
+        "description": [
+            "desired behavior a sonarqube analysis should run every night after the snapshot builds to be able to analyse the code quality improvements",
+            "therefore the following tasks have to be accomplished installation of sonarqube on the installation and configuration of a mysql db on one of the installation of the sonar runner on the which should run the analysis configuration of a jenkins job to run the analysis testing and initial analysis of the java projects"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "13666",
+        "project": "SET",
+        "summary": [
+            "jobscheduler setup should create tables that are used by the reporting interface"
+        ],
+        "description": [
+            "description jobscheduler setup delivers the jobs for the jobscheduler reporting interface",
+            "to run these jobs some database tables are needed",
+            "the tables have to be created manually",
+            "desired behaviour the jobscheduler setup should provide a dialog where the connection to the reporting database is handled",
+            "the setup then will create the tables"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "13401",
+        "project": "SET",
+        "summary": [
+            "setup should create the sequence only if it exist"
+        ],
+        "description": [
+            "current situation during the installer a database sequence will be created if it exist",
+            "the check wether the sequence already exists or not work properly and you get the error desired situation the sequence should created only if it exist"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "13285",
+        "project": "SET",
+        "summary": [
+            "setups should find a user provided jdbc driver for mssql server"
+        ],
+        "description": [
+            "current situation if you add a jdbc driver for mssql server then you get the following error when the installer tries to the databse tables",
+            "if you use the jtds driver for mssql server which is provided by the setup then all works fine",
+            "workaround call the following script after the installation",
+            "desired situation the installer should find the jdbc driver which is provided by the customer"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "13202",
+        "project": "SET",
+        "summary": [
+            "setup checks required java version"
+        ],
+        "description": [
+            "setup checks required java version"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "13201",
+        "project": "SET",
+        "summary": [
+            "installer should write nodeorderplugin into scheduler.xml"
+        ],
+        "description": [
+            "installer should write the following plugin into the"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "13194",
+        "project": "SET",
+        "summary": [
+            "update postgresql jdbc driver to"
+        ],
+        "description": [
+            "update postgres driver returns errors during the setup since batch processing in use"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "11964",
+        "project": "SET",
+        "summary": [
+            "file permissions in programdata prevent users from changing jobs in"
+        ],
+        "description": [
+            "not sure if this is a bug or by design",
+            "i installed jobscheduler with standard installation layout",
+            "i am able to create new jobs and folders in the live folder but i cannot change jobs created by the installation i need to start joe with run as administrator to do so",
+            "maintainer note worked for the c partition but we have an environment for an installation on a d partition where almost other acls are deleted with the different behavior of windows c and d partition is not comprehensible",
+            "so is rolled back with for release you have to configure the acls manually in case where you need permissions in the for a specific user"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "13784",
+        "project": "JS",
+        "summary": [
+            "publish binary files of jobscheduler releases to maven central repository"
+        ],
+        "description": [
+            "repository github hosts the repositories for the source code of the jobscheduler and jade products",
+            "maven central is a central repository for open source components",
+            "maven central is operated by sonatype the developer of maven",
+            "users of jobscheduler can connect to the maven central repository to retrieve the jobscheduler binaries see consumers binary repository sos publishes binary files jar files to the binary repository on a regular basis",
+            "this includes binaries from general avalability releases and maintenance releases of the jobscheduler engine",
+            "binaries should become visible within two days after each release depending on the availability and approval process of maven central",
+            "information published to the repository includes developer information scm information and dependencies",
+            "for details see requirements the jobscheduler binary files are available with publishing due to configuration changes for the build of jobscheduler binaries only binaries for future releases will be published",
+            "published binaries will start with release respectively the earliest",
+            "for instructions see the article how to integrate jobscheduler from a binary repository"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "13726",
+        "project": "JS",
+        "summary": [
+            "integrate task kill features into jobscheduler universal agent start script"
+        ],
+        "description": [
+            "feature specifies how an os dependent kill is integrated into jua",
+            "this requires some enhancements to scripts deployed with jua two kill scripts should be provided to kill a process and it's children for windows for unix both scripts are located in the folder of the jua installation",
+            "the kill scripts provide the functionality to kill a task and it's child processes if the kill script is called with the parameter it finds the process containing that id kills the process including all children the start script starts jua with the new parameter by default the is parameterized with the path to the respective kill script for the environment variable can be used to set a different kill script"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "13723",
+        "project": "JS",
+        "summary": [
+            "jobscheduler start script writes number of enqueued tasks to output"
+        ],
+        "description": [
+            "current situation when using the start script command status jobs then output is created such as job scheduler instance version operated for running since state running cpu used job chains jobs orders remote instances connected instances desired behavior the output of the start script should include the number of enqueued tasks such as job scheduler instance version operated for running since state running cpu used job chains jobs enqueued tasks orders remote instances connected instances implementation add the following line to the stylesheet"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "13588",
+        "project": "JS",
+        "summary": [
+            "sometimes the doesn't store the event into the csv file even though the connection failed"
+        ],
+        "description": [
+            "current situation the tries to send the event to the specified jobscheduler",
+            "if the connection failed to this jobscheduler then the event data are written into a csv file for later dequeueing",
+            "all environment variables with the prefix scheduler_param are added to the event data at the end of that line which is written into the csv file",
+            "if the last scheduler_param parameter has a numeric value then this value is interpreted as a filedescriptor and the event data are written to stdout and not into the csv file desired behavior the event data are always stored into the csv file if necessary connection"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "13582",
+        "project": "JS",
+        "summary": [
+            "add network interfaces configuration to the start script for the universal agent"
+        ],
+        "description": [
+            "desired behavior as specified with the start script for a jobscheduler universal agent could be used for indicating which network interfaces the agent should listen to for example similar to the port it should be also included in the help menu explaning to the user what the command means and an example of how to it"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "13479",
+        "project": "JS",
+        "summary": [
+            "add commands to start script to terminate jobscheduler universal agent"
+        ],
+        "description": [
+            "desired behavior as specified with the start script for a jobscheduler universal agent can be used in order to send commands to terminate the agent",
+            "commands to terminate an agent are sent by use of an http post request",
+            "the start script makes use of a java class that implements the http client"
+        ],
+        "timespent": "54000",
+        "alpha": 100
+    },
+    {
+        "id": "13283",
+        "project": "JS",
+        "summary": [
+            "verify jdbc urls created by the installer"
+        ],
+        "description": [
+            "verifiy if the solution by applies to all combinations of missing properties in jdbc urls",
+            "consder for verification"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "13196",
+        "project": "JS",
+        "summary": [
+            "jobscheduler command line option v returns an error"
+        ],
+        "description": [
+            "current situation if you call the jobscheduler startscript with option version v version then you get the version and an error",
+            "desired situation the version should display without an error"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "13186",
+        "project": "JS",
+        "summary": [
+            "bug fix versions of external libraries"
+        ],
+        "description": [
+            "scala scalactic akka jersey"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "13143",
+        "project": "JS",
+        "summary": [
+            "windows service interface for jobscheduler universal agent"
+        ],
+        "description": [
+            "the jobscheduler universal agent should be operable as a windows service interface a java wrapper class is used that provides the interface for windows service operations start stop windows service installer the start script of the jobscheduler universal agent allows to install/uninstall the windows service call bin install-service to install the windows service after the installation you find the service with the name sos jobscheduler agent in the services manager call bin to uninstall the windows service call bin to start the windows service call bin stop to stop the windows service call bin restart to restart the windows service"
+        ],
+        "timespent": "59400",
+        "alpha": 100
+    },
+    {
+        "id": "12906",
+        "project": "JS",
+        "summary": [
+            "configuration elements for global pre and post-processing"
+        ],
+        "description": [
+            "configuration the plugin implements configurable rules for the use of named monitors as stated in for selection by patterns regular expressions recursive use starting from a configurable directory ordering for named monitors from outer folders are applied before those from inner folders for postprocessing named monitors from inner folders are applied before those from outer folders all named monitors that comply with the configured rules are applied",
+            "schema usage the configuration elements are added to the jobscheduler xsd schema",
+            "validation of the configuration elements is enabled by use of the xsd schema"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "12810",
+        "project": "JS",
+        "summary": [
+            "and are missing in the english version of the reference documentation"
+        ],
+        "description": [
+            "see"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "12780",
+        "project": "JS",
+        "summary": [
+            "file order source with size more then throws error unknown error stat"
+        ],
+        "description": [
+            "when user try to configure a jobchain with file order source and if file size is larger or equal to scheduler throws error"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "12674",
+        "project": "JS",
+        "summary": [
+            "permanent orders for distributed job chains"
+        ],
+        "description": [
+            "current situation orders for distributed job chains are available as ad hoc orders non permanent orders that are added by use of the api and that will not be repeated",
+            "file orders that are created for incoming files and are removed with the files being processed",
+            "desired behavior permantent orders can be added to jobscheduler cluster members with distributed job chains",
+            "the user is responsible for the deployment of orders as files to hot folders in a jobscheduler cluster",
+            "jobscheduler supports crud operations for orders from files",
+            "order file operations the handling of order files is the same as for single instances of jobscheduler and supports crud operations adding an order file order.xml to a cluster member adds the order to the distributed job chain",
+            "though this works by adding the order to only one cluster member it is strictly recommended to deploy the order file to all cluster members",
+            "modifying an order file on one cluster member would apply the changes to the order to all cluster members",
+            "it is required that the order file is modified on all cluster members",
+            "if an order file were not modified on all cluster members then in case of jobscheduler restart two versions of the order would exist and would result in an arbitrary version to become effective for the cluster members",
+            "renaming an order file on one cluster member would rename the order for all cluster members",
+            "it is required that the order file is renamed on all cluster members",
+            "though this feature works if the order file is exclusively renamed on the first cluster member however in case of jobscheduler restart the order files that have previously not been renamed would the order which would result in the fact that the renamed order and the unchanged order would both be available",
+            "removing an order file from a cluster member removes the order from the distributed job chain in all cluster members",
+            "it is required that the order file is removed from all cluster members",
+            "though this feature works if the order file is removed exclusively from the first cluster member however in case of jobscheduler restart the order files that have previously not been removed would the order for the respective job chains",
+            "it is strictly recommended to use a jobscheduler supervisor instance for the deployment of orders",
+            "a supervisor will synchronize crud operations across jobscheduler cluster members"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "12491",
+        "project": "JS",
+        "summary": [
+            "environment variable directory of jdk or jre is respected for windows and linux"
+        ],
+        "description": [
+            "how the jobscheduler use the environment variable on windows to find the jvm is desribed in"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "12393",
+        "project": "JS",
+        "summary": [
+            "in a nested job chain the attribute does not work in inner job chains"
+        ],
+        "description": [
+            "if an outer job chain has no attribute then in each of the inner job chains the attribute can be set with different values",
+            "each inner job chains respects its individual value for parallel orders",
+            "use case a system which is able to support multiple clients where three billing cycles for three clients runs in parallel",
+            "for one cycle there is a job chain which must be used from only one client in a moment original description in a nested job chain it is not possible to combine job chains with different when user configured nested jobchain with sub jobchain when multiple orders are submitted expected behavior is only single order should be executed in but multiple orders should be executed in parallel since in the similarly in the and in attached example orders are waiting to be executed at and also run in parallel at but at orders run in parallel although due to orders should be executed sequentially",
+            "note all the nodes are set suspend order please see the attached example to reproduce the bug"
+        ],
+        "timespent": "72000",
+        "alpha": 100
+    },
+    {
+        "id": "12007",
+        "project": "JS",
+        "summary": [
+            "if you change a job configuration while the database connection get lost then the jobscheduler can crash"
+        ],
+        "description": [
+            "the following steps force a jobscheduler crash a job is choosen in joc and displayed in the right frame stop the database while jobscheduler is running change a job configuration the wait a little time until the jobscheduler knows that the configuration has changed click update in joc which sends particularly start the database then after a while when the automatic occurs the jobscheduler is down",
+            "see attached log"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "11953",
+        "project": "JS",
+        "summary": [
+            "pid file should not be overwritten if jobscheduler is started twice"
+        ],
+        "description": [
+            "starting situation when starting a jobscheduler instance while another instance is already running then during the second start the pid file is overwritten",
+            "this means the pid file for the running jobscheduler instance is lost",
+            "desired behaviour implementation for unix write pid file only if the jobscheduler has been started succesfully",
+            "check if a process exists with the pid from the latest pid file and deny starting jobscheduler if such a process exists",
+            "implementation for windows this feature will not be available for windows due to the fact that a windows service is used and that no manual jobscheduler start is expected"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "11913",
+        "project": "JS",
+        "summary": [
+            "logging user activities"
+        ],
+        "description": [
+            "desired behavior jobscheduler logs the commands like etc",
+            "in a configuration file is specified whether the logging is on or off and which commands should be logged whitelist the user who submits the respective command is logged too",
+            "maintainer notes this feature requires an architecture change as indicated with therefore a decision on the development of this feature will be taken with respect to"
+        ],
+        "timespent": "1152000",
+        "alpha": 100
+    },
+    {
+        "id": "11887",
+        "project": "JS",
+        "summary": [
+            "increasing the number of processes for a has no effect"
+        ],
+        "description": [
+            "jobscheduler allows to change attribute of a via the api",
+            "in this way it is possible to prevent more tasks of a job by setting but it is not possible to start tasks for those jobs by setting back to a value in this case the changed configuration of the has no effect"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "11776",
+        "project": "JS",
+        "summary": [
+            "api method for orders"
+        ],
+        "description": [
+            "additional api methods for orders setter getter boolean it is important that parallel orders created by jobchainsplitter can be started despite the fact that the is configured with or if has a value less than the number of orders required for parallel execution",
+            "the method allows the affected order to be run although it would be prevented by"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "11699",
+        "project": "JS",
+        "summary": [
+            "joc job chain and job chain node are coloured green in a distributed chain when the order is running at another jobscheduler in the cluster"
+        ],
+        "description": [
+            "job chain and job chain node are coloured green in a distributed chain when the order is running at another jobscheduler in the cluster"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "11687",
+        "project": "JS",
+        "summary": [
+            "joc email list in the job detail view wraps so no horizontal scrollbar is needed"
+        ],
+        "description": [
+            "until now when multiple mail addresses are configured in the item then joc displays the comma separated list without wrapping it",
+            "to see all mail addresses you have to scroll to the right"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "11632",
+        "project": "JS",
+        "summary": [
+            "joc last activities tab is deprecated and only dispayed by a parameter if necessary"
+        ],
+        "description": [
+            "the development of the last activities tab in joc has been stopped",
+            "please use jid jobscheduler information dashboard instead",
+            "jid provides an overview of the jobs planned and those that have successfully been completed",
+            "for more information about jid look at reason this tab is very slow because it needs multiple commands to the jobscheduler and every command produced many database queries",
+            "the joc in jobscheduler release is the last release where this tab is shown",
+            "in later releases you can configure the to add this tab if necessary"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "11622",
+        "project": "JS",
+        "summary": [
+            "joc cannot display a missing schedule"
+        ],
+        "description": [
+            "the answer of and a commands should always contain the schedule in a requisite element",
+            "in the case that the schedule exist then the requisite element has the attribut yes now only a has the schedule-requsite when the schedule exist"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "11603",
+        "project": "JS",
+        "summary": [
+            "setup should not add to connection string if database schema and port are empty"
+        ],
+        "description": [
+            "current situation the jobscheduler setup is not able to manage taf service configurations for jdbc drivers",
+            "for example a connection string for an oracle rac cluster with tafservice might contain if the values for schema and port are empty during setup auto installation with xml file then the installer sets the colons as if these values were present as a result a connection to the database is not possible",
+            "the workaround is to remove the colons manually",
+            "these files are affected druing installation factor.ini sample excerpt from the auto installation xml file desired behavior the jobscheduler setup should omit colons for missing values of schema and workaround add the setup parameters directly to the file of the installer and run the installer in headless mode",
+            "more information on this batch mode can be found in the jobscheduler installation instructions see"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "11598",
+        "project": "JS",
+        "summary": [
+            "option is added in the"
+        ],
+        "description": [
+            "the option file is added in the so that logging with finds a properties file"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "11596",
+        "project": "JS",
+        "summary": [
+            "joc displays in nested job chains more orders than justified"
+        ],
+        "description": [
+            "if you have two nested job chains where both master job chains have the same child job chain in the first node and both master job chains have one order then joc displays both orders in both nested chains"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "11595",
+        "project": "JS",
+        "summary": [
+            "joc if the master chain of a nested job chain stored directly in folder then all child job chain are shown in folder"
+        ],
+        "description": [
+            "if you have a nested job chain like which is stored directly in not in a subfolder then the job chain is displayed in joc on the root folder too although it is stored in the nested folder"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "11575",
+        "project": "JS",
+        "summary": [
+            "joc you can click in the whole line to open or close a folder in the tree view"
+        ],
+        "description": [
+            "previously you had to click on the folder if you wanted to open or close it",
+            "now you can click in the whole line to open or close a folder in the tree view"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "11563",
+        "project": "JS",
+        "summary": [
+            "joc",
+            "dialogs of functions like start task at etc",
+            "are not visible in google chrome if you have scrolled down the left frame"
+        ],
+        "description": [
+            "if you have scrolled down the left frame in joc and you call a function in google chrome with a dialog start task at etc then the dialog is hidden",
+            "you find it when you scroll up"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "11562",
+        "project": "JS",
+        "summary": [
+            "joc scrollbar in the tree view in google chrome is moving a little to top after an update"
+        ],
+        "description": [
+            "if you have scrolled down in the tree view then the scrollbar is moving a little to top after an update when using google chrome"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "11540",
+        "project": "JS",
+        "summary": [
+            "joc the task and order log is shown when you click on the history entry or you use the context menu",
+            "the button show log is removed"
+        ],
+        "description": [
+            "you see the order history or the task history on the right side when you choose a job chain or a job on the left side",
+            "in this history the button show log is removed",
+            "instead of it you can click the history entry directly to show the log",
+            "in additional you have a context menu to show the log"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "11491",
+        "project": "JS",
+        "summary": [
+            "joc the function set run time doesn't change the configuration file",
+            "changes only valid until the next jobscheduler restart"
+        ],
+        "description": [
+            "for persistent changes use joe"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "11484",
+        "project": "JS",
+        "summary": [
+            "joc nested job chain are always displayed under the master chain in the job chain tab"
+        ],
+        "description": [
+            "for now the nested job chains are only displayed under the master chain if one of the checkboxes show jobs or show orders is active"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "11452",
+        "project": "JS",
+        "summary": [
+            "the options in the listbox of the job chain nodes have an incorrect order in the functions like set state and add order using"
+        ],
+        "description": [
+            "the options in the listbox of the job chain nodes are sorted automatically so that they have an incorrect order",
+            "example if you have a job chain then in the options of the listbox in the set state and add order function has the order error instead of error"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "11412",
+        "project": "JS",
+        "summary": [
+            "joc task and order history shows the duration of the task or order"
+        ],
+        "description": [
+            "now only start and end time is shown",
+            "furthermore the duration is shown too"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "11406",
+        "project": "JS",
+        "summary": [
+            "the color of the job chain bullet in the tree view in joc inherits the color of the job chain node which is not yellow because it is skipped orange stopped red or an order is running green"
+        ],
+        "description": [
+            "if one of the bullets of a job chain node in a job chain has another color than yellow then the job chain bullet gets the same color",
+            "for example if an order is running in the job chain then the job chain node bullet of the running step is green",
+            "in this case the job chain bullet should be green too",
+            "if a job chain node is skipped then its bullet is orange and the job chain bullet should be orange too",
+            "if a job chain node is stopped then its bullet is red and the job chain bullet should be red too",
+            "red beats orange and green beats orange running is more important that something was skipped orange beats yellow"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "11361",
+        "project": "JS",
+        "summary": [
+            "joc support"
+        ],
+        "description": [
+            "the document object from the responsexml property of the xmlhttprequest object doesn't know some methods like selectsinglenode selectnodes etc",
+            "see also"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "11235",
+        "project": "JS",
+        "summary": [
+            "if set level info then it should be disallowed to terminate or pause the jobscheduler"
+        ],
+        "description": [
+            "the jobscheduler engine works properly",
+            "the answer of a terminate command contains and the jobscheduler stop but you cannot see above error message in joc"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "11234",
+        "project": "JS",
+        "summary": [
+            "a job error should not displayed at the job chain order"
+        ],
+        "description": [
+            "particularly if a job is used in multiple job chains and the job has an error for one order then the error is displayed at all orders of that job chains which contain the job"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "11226",
+        "project": "JS",
+        "summary": [
+            "database table scheduler_messages not created when using ms sql server"
+        ],
+        "description": [
+            "this table is only neccessary if you want to use the jobschedulerloganalyser job",
+            "workaround create the table manually",
+            "open a ms sql client and execute the content of"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "11194",
+        "project": "JS",
+        "summary": [
+            "element params attribute name the attribute name is not allowed",
+            "is thrown when a correct params xml should be accepted"
+        ],
+        "description": [
+            "if you want to edit a params object via the xml button then you get the error element params attribute name the attribute name is not allowed",
+            "after you click to the accept button although the params element does not have an attribute",
+            "workaround disable the validation against the schema",
+            "for this edit the"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "11182",
+        "project": "JS",
+        "summary": [
+            "standalone jobs and order jobs get a different layout"
+        ],
+        "description": [
+            "in the list view standalone jobs and order jobs get different colors",
+            "in the tree view a standalone jobs have a square in front of its name order jobs have a circle in front of its name"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "11180",
+        "project": "JS",
+        "summary": [
+            "jobscheduler joe and jid startscript read file in to get environment variables"
+        ],
+        "description": [
+            "the jobscheduler startscript call the file and to get some environment variables",
+            "the joe startscript call the file and to get some environment variables",
+            "the jid startscript call the file and to get some environment variables",
+            "calling files in are new",
+            "reason if you change some variables in then it is possible that your changes get lost after a new setup",
+            "create a file if you want to change the environment for jobscheduler",
+            "create a file if you want to change the environment for joe",
+            "create a file if you want to change the environment for jid"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "11133",
+        "project": "JS",
+        "summary": [
+            "if the create database checkbox is deactivated then the installer doesn't execute any database transaction",
+            "the database connection will be only configured"
+        ],
+        "description": [
+            "so far even with deactivated checkbox the installer has checked the database connection and has run some sqls to ensure that changes the data model are considered",
+            "the update installer does remain unchanged"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "11118",
+        "project": "JS",
+        "summary": [
+            "generate ssl keys"
+        ],
+        "description": [
+            "an unsigned ssl key should be generated in directory for https protocol in jetty"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "11111",
+        "project": "JS",
+        "summary": [
+            "treeview hides folders if the filter has an absolute path starting with and ends with"
+        ],
+        "description": [
+            "because of performance reasons the treeview know what the subfolders contain so that each subfolder is displayed even if it is empty",
+            "if you use a filter in the treeview of the jobs job chains or orders tab with a regular expression that describes an absolute path and starts with then all other folders are hidden",
+            "example you have jobs a filter hides the folders and a filter hides the folder test"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "11108",
+        "project": "JS",
+        "summary": [
+            "the activation of objects in jmj works only if the jobscheduler is running"
+        ],
+        "description": [
+            "if an object is activated in jmj jobscheduler managed jobs gui then a row is inserted into a database table and the job gets an order to read this table in order to update this object in the hot folder if the jobscheduler is not running then the job get the order and it read the database after starting the jobscheduler"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "11107",
+        "project": "JS",
+        "summary": [
+            "when an order is imported via jmj then afterwards the object is empty"
+        ],
+        "description": [
+            "if you call the import function in the jobscheduler managed jobs gui jmj to import an order object then afterwards the object is empty"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "11079",
+        "project": "JS",
+        "summary": [
+            "starting a parameterized job do not transfer the given parameter values in the xml command"
+        ],
+        "description": [
+            "starting a standalone job with more than one parameter will result in a command like job params param name value params"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "11049",
+        "project": "JS",
+        "summary": [
+            "column guid of the database table must be extended to firebird users need to do it manually see description"
+        ],
+        "description": [
+            "the installer contains the new file and executes them",
+            "for firebird user please open a firebird sql client isql and call select from where key and delete the primary key constraint",
+            "for this use the constraint name from above sql statement",
+            "alter table drop constraint name alter the type of the column guid alter table alter column guid type add the primary key alter table add primary key guid"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "11045",
+        "project": "JS",
+        "summary": [
+            "the managed jobs component cannot be selected during the setup"
+        ],
+        "description": [
+            "the managed jobs component is now a hidden component",
+            "so it can not be selected but it will be updated when it was selected in an existing installation",
+            "the reason for freezing development for the managed jobs gui jmj has been stopped",
+            "here are some of the reasons for this decision the technology mix of jmj produces complex dependencies between web server db systems php versions and php packages and this leads to difficulties for many users during installation and often causes ongoing problems for users of this feature",
+            "in other words issues around jmj are in front of all other issues in the support service of sos gmbh",
+            "added to this for us this means doubled up capacities are required in maintaining jmj and joe jobscheduler object editor capacities that are urgently needed for other issues",
+            "however you can still continue to use jmj we also will support our commercial customers that wish to continue to use this feature",
+            "it is our strategy to concentrate the software development onto the jvm",
+            "this means that the focus continues to be java and we also expect that the usage of scala will increase",
+            "choosing jvm for jobscheduler means that all script languages groovy jython or anything else that is offered in javax will be available to create jobs",
+            "it is intended to move jobscheduler toward the eclipse world in order to create the possibility for a single source concept as well as a rich client rcp and also rich ajax rap web furthermore it is planned to integrate the reporting tool birt it will be implemented and recommended",
+            "alternatives to managed jobs gui jmj joe jobscheduler object editor is used to manage objects of the jobscheduler jobs chains orders schedules joe is a application and is installed at the client but can also access jobscheduler objects remotely",
+            "joe has features in the area of the creation of objects that are not available in jmc",
+            "the installation of joe is included in the jobscheduler it is usually a xcopy deployment",
+            "jobscheduler also offers the concept of remote configuration",
+            "this feature has the possibility to create and administrate objects centrally and it automates the distribution to instances of the jobschedulers which are installed on other servers",
+            "available for central monitoring is the jobscheduler operations centre this is also embedded in jmj which means there is no difference here",
+            "joc works with each browser and will be integrated into joe",
+            "die weiterentwicklung des managed jobs gui jmj ist aktuell eingefroren",
+            "support und wartung findet weiterhin statt",
+            "der grund liegt darin da fr das jmj ein technologiemix verwendet wird der vielen nutzern aufgrund der komplexen abhngigkeiten zwischen webserver und div",
+            "eine problemlose installation und einen entsprechenden betrieb doch sehr schwer macht",
+            "mit anderen worten der spitzenreiter im support-serviceder sos gmbh ist jmj",
+            "desweiteren binden wir mit der doppelpflege des jmj und joe kapazitten die wir dringender an anderer stelle einsetzen mten",
+            "aber sie knnen also das jmj weiterhin verwenden und wir werden auch unsere nutzer weiterhin untersttzen",
+            "unsere strategie zielt darauf ab die softwareentwicklung zum einen auf die jvm zu konzentrieren",
+            "damit liegt das schwergewicht der softwarentwicklung zum einen wie bisher auf java aber auch die verwendung zum beispiel von scala wird in zukunft zunehmen",
+            "durch die nutzung der jvm auch im jobscheduler sind auch alle in der jvm laufenden scriptsprachen wie zum beispiel groovy oder jython eben alles was in javax angeboten wird fr die erstellung von jobs verfgbar",
+            "zum anderen wollen wir mit unserer software in die um dort nach mglichkeit mit einem single source konzept sowohl rich client rcp als auch rich ajax rap zu ermglichen",
+            "darberhinaus werden wir als reporting-werkzeug birt einsetzen und empfehlen",
+            "alternativen zum managed jobs gui jmj sind zum einen joe jobscheduler objekt editor der fr die verwaltung der objekte des jobschedulers jobs chains order schedules etc",
+            "verwendet wird",
+            "joe ist eine und luft auf dem client kann allerdings auch remote auf objekte des jobschedulers zugreifen",
+            "joe hat funktionen zum beispiel im bereich der template-basierten erstellung von objekten die es in jmj nicht gibt",
+            "die intallation von joe ist im enthalten und normalerweise ein darberhinaus bietet der jobscheduler das konzept der remote configuration an",
+            "dies ist die mglichkeit objekte zentral zu erstellen und zu verwalten und automatisiert an instanzen des jobschedulers zu verteilen die auf anderen servern installiert sind",
+            "fr die zentrale berwachung ist das jobscheduler operations center joc zu verwenden",
+            "dies wird auch im jmj eingebettet verwendet unterscheidet sich von daher gar nicht",
+            "joc luft in jedem brower und wir werden es auch in joe integrieren"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "11029",
+        "project": "JS",
+        "summary": [
+            "sometimes the update installer reads wrong paths from the previous installation"
+        ],
+        "description": [
+            "the installer expected a file jobschedulerinstallinformation in the install directory of the previous installation",
+            "however these files are missing respectively a file installinformation was generated by the previous installation",
+            "the installer reads now the installinformation files too"
+        ],
+        "timespent": "16200",
+        "alpha": 100
+    },
+    {
+        "id": "11027",
+        "project": "JS",
+        "summary": [
+            "sql error for ms sql server when execute sosftphistory.sql"
+        ],
+        "description": [
+            "there ia an commit without begin transaction"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "11026",
+        "project": "JS",
+        "summary": [
+            "if the title of a jobscheduler object contains an url then the operationsgui creates a link"
+        ],
+        "description": [
+            "see also under the following conditions the operationsgui finds an url in the title the url must start with http https or www",
+            "the url must ends with an space or the tilte ends with the url",
+            "punctuations at the ends are allowed",
+            "examples this job title has a link and another link both urls will be created",
+            "further you have the options to type a html link",
+            "examples this job has a href in this case remember that you must use entites in the xml configuration file title this job has a"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "11019",
+        "project": "JS",
+        "summary": [
+            "log window in operationsgui has strange scroll behaviour for some browser"
+        ],
+        "description": [
+            "in firefox safari and seamonkey the log window automatically scrolls down when using the vertical scrollbar mouse wheel or key",
+            "in chrome and internet explorer the log window automatically scrolls down when using the mouse wheel"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10991",
+        "project": "JS",
+        "summary": [
+            "namen aus variableset in java bereitstellen"
+        ],
+        "description": [
+            "die neue proxy variableset soll die namen iterierbar machen",
+            "interface map implementieren"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "10984",
+        "project": "JS",
+        "summary": [
+            "the job menu node is expanded by some functions of the job menu"
+        ],
+        "description": [
+            "the following function from job menu will added to job node menu show configuration show description stop job unstop job"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "10927",
+        "project": "JS",
+        "summary": [
+            "setup creates automatically xml file for a parametrized setup without dialogs"
+        ],
+        "description": [
+            "the parameter xml file will be created in with the name for the full setup installer for the update installer for the agent installer"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "10906",
+        "project": "JS",
+        "summary": [
+            "different color schemes for the operations gui"
+        ],
+        "description": [
+            "the operations gui should be configured with different color schemes",
+            "it is helpfull to differ production and development installations of the scheduler",
+            "additionally it would be nice if the color for alert situations in jobscheduler such as an order in error or suspended state will be more perhaps red background and white font"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10905",
+        "project": "JS",
+        "summary": [
+            "operations gui should be provide the possibility to display the scheduler objects"
+        ],
+        "description": [
+            "the operations gui should be provide the possibility to display the xml content of the scheduler objects jobs orders the should be displayed via the job chain menu the order should be displayed via the order menu the job should be displayed via the job node menu and the job menu"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "10887",
+        "project": "JS",
+        "summary": [
+            "support"
+        ],
+        "description": [
+            "support domparser which not supported xpath methods like selectsinglenode and selectnodes",
+            "it will be enforced that uses"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "10880",
+        "project": "JS",
+        "summary": [
+            "new behaviour for update the operationsgui inclusive the hot folder"
+        ],
+        "description": [
+            "the checkbox incl",
+            "hot folder for update is removed in the top of the interface",
+            "if this checkbox was on then the job scheduler has checked changes in its hot folder too",
+            "now if the operationsgui is updated automatically via the corresponding checkbox then the job scheduler doesn't check the hot folder",
+            "only if you click on the update button the job scheduler looks to its hot folder"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "10860",
+        "project": "JS",
+        "summary": [
+            "it should not be possible to delete job chain orders in operations gui"
+        ],
+        "description": [
+            "die operations gui sollte keine objekte von der platte lschen knnen"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10840",
+        "project": "JS",
+        "summary": [
+            "all sample orders are created with a description"
+        ],
+        "description": [
+            "everyone who wants to store an order from the samples directory in the managed jobs web interface get the error xml document does not conform to schema element description this element is not expected",
+            "expected is one of params payload because an order has no description",
+            "the description element must be deleted before storing"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "10794",
+        "project": "JS",
+        "summary": [
+            "is undefined error when open the settings dialog in operationsgui inside the managed jobs interface"
+        ],
+        "description": [
+            "the above error occurres if you open the dialog in the operationsgui inside the managed jobs interface because the object is forgotten to initialize in the"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "10793",
+        "project": "JS",
+        "summary": [
+            "sort order of is confusing"
+        ],
+        "description": [
+            "an actual running job is appended to the but when the job is finished it is moved to the top of the table",
+            "desired behaviour the sequence should be in ascending order related to the of the order",
+            "i did not check this for but this could be the same problem"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "10780",
+        "project": "JS",
+        "summary": [
+            "setting the of an order to none submits an invalid command"
+        ],
+        "description": [
+            "setting the of an order to none submits the following command state it has to be see also"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "10737",
+        "project": "JS",
+        "summary": [
+            "error message when host in is not available"
+        ],
+        "description": [
+            "wenn eine prozessklasse einen scheduler auf einen anderen host definiert und dieser host ist nicht erreichbar sollte bei jobs die prozessklasse verwenden die fehlermeldung darauf hinweisen dass der host nicht erreichbar ist",
+            "zurzeit wird process class host is missing ausgegeben was nicht stimmt die prozessklasse ist vorhanden und der host ist nicht erreichbar",
+            "bei der prozessklasse steht error in configuration file socket is not connected host not found gethostbyname host das ist nicht richtig denn es handelt sich um einen fehler im netzwerk und nicht in der konfigurationsdatei",
+            "es sollte stattdessen ausgebeben werden error socket is not connected host not found gethostbyname host"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "10700",
+        "project": "JS",
+        "summary": [
+            "some parameters are hidden in the start parametrized dialog"
+        ],
+        "description": [
+            "the following parameters are hidden"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "10694",
+        "project": "JS",
+        "summary": [
+            "function show description loads the value directly into the window location"
+        ],
+        "description": [
+            "the function show description calls up to now in this case it is possible that some links in the description cannot be resolved",
+            "now first this function reads the value of the attribute of the descriptions include element and put it into the window location",
+            "if the description is not under the working directory of the job scheduler or the hot folder is somewhere else you can add virtual directories descriptions and live in the in order to find the descriptions path somewhere descriptions path other hot folder live"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "10631",
+        "project": "JS",
+        "summary": [
+            "the site job efficiency is not longer available"
+        ],
+        "description": [
+            "this site displays only job chains but does not found any job chains in a hot folder subdirectory",
+            "further it has no function to start orders",
+            "the operations gui assumes that"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10616",
+        "project": "JS",
+        "summary": [
+            "add iceweasel to supported browser"
+        ],
+        "description": [
+            "iceweasel is almost the same as firefox",
+            "examples for useragent strings u linux"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10615",
+        "project": "JS",
+        "summary": [
+            "when creating an order job order yes is not set"
+        ],
+        "description": [
+            "when creating an order job order yes should be set automatically in the created job"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10613",
+        "project": "JS",
+        "summary": [
+            "the environment element in job is placed at the wrong position"
+        ],
+        "description": [
+            "when using environment and params in job the order is incorrect"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "10599",
+        "project": "JS",
+        "summary": [
+            "editing the runtime of an order on the operations gui which has an active repeat interval will cause the order to run twice"
+        ],
+        "description": [
+            "to reproduce choose set run time in the order menu of order make a small change to the run time press submit check the order history to see that the order has been started twice"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10571",
+        "project": "JS",
+        "summary": [
+            "api does not have the path in"
+        ],
+        "description": [
+            "thus it remains compatible with existing applications i propose to implement a new property with the path to the job chain",
+            "now string returns name of the job chain new string returns the path of the object relative to the live folder including starting with a example"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "10557",
+        "project": "JS",
+        "summary": [
+            "environment variables in startscript are removed to new file"
+        ],
+        "description": [
+            "the startscript calls to get its environment",
+            "substitutes during the setup must be adjust"
+        ],
+        "timespent": "36000",
+        "alpha": 100
+    },
+    {
+        "id": "10554",
+        "project": "JS",
+        "summary": [
+            "html gui knows its own svn version"
+        ],
+        "description": [
+            "job scheduler version removed below the rabbit click on rabbit opens gui info box a version file in is required content of version is subversion release no date of release"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "10507",
+        "project": "JS",
+        "summary": [
+            "needs process is shown too often"
+        ],
+        "description": [
+            "create two jobs with using the same with the jobs need to sleep long enough",
+            "try starting tasks of one job and tasks of the other",
+            "will appear several times in one job"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "10499",
+        "project": "JS",
+        "summary": [
+            "orders are ordered strangely in job chain view"
+        ],
+        "description": [
+            "this list of orders in the job chain view has a strange ordering it seems orders wich will be processed next are on top of the list",
+            "however and order with next start appears below an order with next start"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10490",
+        "project": "JS",
+        "summary": [
+            "increasing a lock that is used by a job does not work"
+        ],
+        "description": [
+            "example is defined with tries to get the lock non exclusive of course it cannot get the lock",
+            "the task remains enqueued",
+            "after updating the lock definition the task still remains enqueued",
+            "after removing the task from the queue the job still cannot start",
+            "the job definition needs to be updated before it can start"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "10477",
+        "project": "JS",
+        "summary": [
+            "hierarchical view for jobs related objects in the web interface"
+        ],
+        "description": [
+            "hierachische ansicht der objekte job jobkette order schedule process class diese objekte werden entsprechend ihrer hierachischen struktur im angezeigt",
+            "alle knoten ausser live sind collapsed alle objekte direkt unterhalb live sind zu sehen wenn ein ordner geffnet wird bleiben bereits bestehende geffnete ordner geffnet die einrckung kann beliebig eingestellt werden auch es gibt eine maximale einrckung ab der jede weitere ist",
+            "zum aufklappen wird das zeichen geklickt zum schlieen wird das zeichen geklickt es gibt einen knopf alles schlieen zwischen der hierachischen sicht und der listenansicht jetzige form kann umgeschaltet werden"
+        ],
+        "timespent": "288000",
+        "alpha": 100
+    },
+    {
+        "id": "10472",
+        "project": "JS",
+        "summary": [
+            "a schedule with errors cannot be edited in the web interface"
+        ],
+        "description": [
+            "create a bad schedule in the web interface schedule period begin end repeat schedule the schedule is then displayed on the interface but cannot be edited or deleted anymore beacaus the schedule menu is missing"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "10431",
+        "project": "JS",
+        "summary": [
+            "jobkette running active"
+        ],
+        "description": [
+            "statt jobkette running soll in der weboberflche active angezeigt werden"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "10430",
+        "project": "JS",
+        "summary": [
+            "standard filters for displaying jobs"
+        ],
+        "description": [
+            "die weboberflche soll um folgende filter ergnzt werden zeige alle jobs einer prozessklasse zeige alle gestoppten jobs zeige alle laufenden jobs zeige alle order jobs zeige alle standalone jobs"
+        ],
+        "timespent": "68400",
+        "alpha": 100
+    },
+    {
+        "id": "10385",
+        "project": "JS",
+        "summary": [
+            "store regex for job and job chain filters"
+        ],
+        "description": [
+            "in the release regular expressions can be used to check boxes in the manage filters dialog",
+            "when storing the filter the checked jobs or job chains are stored",
+            "it would be better to store the regular expressions if used because dynamic filters can be built jobs which are later added with the same naming scheme need to be added to the filter manually problems due to large cookies could be avoided see"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "10383",
+        "project": "JS",
+        "summary": [
+            "running the installer on an existing database with jobs in the tree will invalidate the tree structure"
+        ],
+        "description": [
+            "running the setup seems to remove the existing scheduler root node and the live folder node in the tree",
+            "new scheduler root and live nodes are created but the references of existing subfolders still point to the deleted live node",
+            "consequences in the managed jobs interface no folders are visible under the live node the managed starter reports failed to create directory failed to find parent directory of live in database"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "10354",
+        "project": "JS",
+        "summary": [
+            "navigation-tree expansion"
+        ],
+        "description": [
+            "im verzeichnisbaum funktionert die funktion erweitern im nicht"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "10334",
+        "project": "JS",
+        "summary": [
+            "access to a log in a clustered job scheduler is not available"
+        ],
+        "description": [
+            "in a load balanced environment it is not possible to access a log of an order which is executed on a remote scheduler"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10329",
+        "project": "JS",
+        "summary": [
+            "eventing does not work with windows"
+        ],
+        "description": [
+            "when using the script on windows in a parallel environment there a locked files"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "10328",
+        "project": "JS",
+        "summary": [
+            "showing of job description does not work"
+        ],
+        "description": [
+            "when clicking on job description a error message appears",
+            "has no properties"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "10327",
+        "project": "JS",
+        "summary": [
+            "files and tables for eventing will not be installed"
+        ],
+        "description": [
+            "the files and tables for eventing will not be installed by the setup"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10325",
+        "project": "JS",
+        "summary": [
+            "managed jobs shows uuml in the web gui"
+        ],
+        "description": [
+            "when assigning more than one job scheduler to the managed jobs there is a combo box in the upper left corner",
+            "here the string is shown when using german as language"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "10314",
+        "project": "JS",
+        "summary": [
+            "display titles from job chains in operational interface"
+        ],
+        "description": [
+            "based on the title of a job chain shall be displayed by the html interface in both the left and the right frame when using the job chains tab"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "10307",
+        "project": "JS",
+        "summary": [
+            "provide functions in dialogs to set"
+        ],
+        "description": [
+            "in add order and add persistant order dialogs add field to set in order menu add function to change end state of an existant running order"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "10293",
+        "project": "JS",
+        "summary": [
+            "support current options in javascript run time editor"
+        ],
+        "description": [
+            "komplexe fr wiederholbare monate etc",
+            "analog zum java editor einbauen"
+        ],
+        "timespent": "129600",
+        "alpha": 100
+    },
+    {
+        "id": "10287",
+        "project": "JS",
+        "summary": [
+            "add features of and to managed jobs interface"
+        ],
+        "description": [
+            "add features to managed jobs interface after they were added to the scheduler editor"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "10270",
+        "project": "JS",
+        "summary": [
+            "setup for aix"
+        ],
+        "description": [
+            "setup ist ablauffhig unter aix"
+        ],
+        "timespent": "72000",
+        "alpha": 100
+    },
+    {
+        "id": "10257",
+        "project": "JS",
+        "summary": [
+            "name and value in add order dialog are inverted"
+        ],
+        "description": [
+            "when creating a new order with add order from the job chain menu name and value of entered parameters are inverted",
+            "the string entered in the name field becomes the value the string entered in the value field becomes the name"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "10241",
+        "project": "JS",
+        "summary": [
+            "filter for displaying jobs in html gui"
+        ],
+        "description": [
+            "a new function adminstrate filters will be added to the job scheduler menu which opens the filter administration in a new window",
+            "inside the filter administration you can add new filters or edit and remove existing filters",
+            "per filter a list of visible jobs will be shown",
+            "a checkbox beside every job can be used to add the respective job to the filter",
+            "the filters will be stored in a cookie",
+            "a selectbox of filters will be shown in the jobs tab that restricts the job list to jobs that are contained in the selected filter",
+            "the name of the current filter will be stored in a cookie"
+        ],
+        "timespent": "72000",
+        "alpha": 100
+    },
+    {
+        "id": "10206",
+        "project": "JS",
+        "summary": [
+            "consider visibility of jobs and job chains in the html interface"
+        ],
+        "description": [
+            "the attribute visible no that is returned by job scheduler answer elements for jobs and job chains should be considered by the html interface that hides such jobs and job chains respectively",
+            "additionally a javascript variable in custom.js could be used to enforce the previous behaviour that makes jobs and job chains visible and their history accessible should they have been executed before this switch makes the html interface ignore the attribute visible as returned by answer elements"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "10201",
+        "project": "JS",
+        "summary": [
+            "managed jobs gui does not support mixed case job scheduler ids"
+        ],
+        "description": [
+            "see sourceforge thread at"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10182",
+        "project": "JS",
+        "summary": [
+            "summary of the latest job and order activities"
+        ],
+        "description": [
+            "a new tab will be created to display the latest activities",
+            "it shows a list of the latest order starts and order logs across all job chains in descending order of the start times",
+            "furthermore it show this list for independent jobs"
+        ],
+        "timespent": "39600",
+        "alpha": 100
+    },
+    {
+        "id": "10181",
+        "project": "JS",
+        "summary": [
+            "job and job chain list are sortable by name next start time status and path"
+        ],
+        "description": [
+            "two listboxes at the top of the job and job chain list describe the sort navigation",
+            "in the first listbox is the attribute name next start time status or path selectable while in the second the sort direction is chosen"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "10177",
+        "project": "JS",
+        "summary": [
+            "installing of automation does not install table"
+        ],
+        "description": [
+            "when installing scheduler automation the table should be installed",
+            "it is used by the job"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "10171",
+        "project": "JS",
+        "summary": [
+            "document cron converter"
+        ],
+        "description": [
+            "document cron converter command line utility and job"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10145",
+        "project": "JS",
+        "summary": [
+            "add confirmation request when removing orders by the html interface"
+        ],
+        "description": [
+            "the html interface should show up a confirmation request when a user tries to remove an order"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "10126",
+        "project": "JS",
+        "summary": [
+            "show order log of a running distributed order from any job scheduler cluster member"
+        ],
+        "description": [
+            "show log for distributed orders only works if it is chosen on the web interface of the job scheduler which is currently executing the order",
+            "it needs to be accessible from all job schedulers"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "10110",
+        "project": "JS",
+        "summary": [
+            "standard job jobschedulercleanupfiles deletes files only when they are writeable"
+        ],
+        "description": [
+            "there is a test in the implementation of jobschedulercleanupfile if tempfile.canwrite this is not right because the file may be readonly but the job could delete it",
+            "it is sufficient when the directory is writeable for example for the correct test would be whether the directory is writeable"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "10101",
+        "project": "JS",
+        "summary": [
+            "enable job documentations for managed jobs"
+        ],
+        "description": [
+            "was ist zu tun managed jobs a job dokus fr job dokus wird ein neues objekt eingerichtet",
+            "die dokus werden weiter mit dem java editor eingerichtet ein eigener editor fr die wird aktuell nicht implementiert eine import-mglichkeit file upload wird bereitgestellt fr jeden job kann eine verknpfung zu einer hergestellt werden b deployment alle job dokus fr werden mit der datenbank ausgeliefert die verknpfungen von zu ihren dokus werden mit der datenbank ausgeliefert managed starter job siehe prft ob eine in der db vorhanden ist und schreibt sie ggf",
+            "auf platte nach falls sie dort fehlt"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "10090",
+        "project": "JS",
+        "summary": [
+            "oversized window when viewing properties of tree node belonging to another user"
+        ],
+        "description": [
+            "see attached image"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "10082",
+        "project": "JS",
+        "summary": [
+            "replacements with paramname don't work in jobschedulermanagedexecutablejob if the job is run outside the managed jobs environment"
+        ],
+        "description": [
+            "if paramname replacements are configured for jobschedulermanagedexecutablejob in the xml configuration the job scheduler will try to replace these with environment variables already on startup",
+            "as the configured parameters propably don't exist as environment variables paramname will be replaced by whitespace leaving nothig for jobschedulermanagedexecutablejob to replace",
+            "the paramname parameters work in managedjobs because they are read from the database at runtime"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "10081",
+        "project": "JS",
+        "summary": [
+            "improvements for timeout in jobschedulermanagedexecutablejob"
+        ],
+        "description": [
+            "when an executable times out this results in an arrayindexoutofbounds exception",
+            "more flexibility is needed when handling timeouts"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10061",
+        "project": "JS",
+        "summary": [
+            "update managed documentation"
+        ],
+        "description": [
+            "the new features and improvements of the component managed jobs must be documented in the according documentation"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "10044",
+        "project": "JS",
+        "summary": [
+            "script for migration of the older managed jobs version to the current version"
+        ],
+        "description": [
+            "the script must map the old data model to the current data model",
+            "it must be implemented as sh and cmd file"
+        ],
+        "timespent": "32400",
+        "alpha": 100
+    },
+    {
+        "id": "10043",
+        "project": "JS",
+        "summary": [
+            "search function in the managed-explorer"
+        ],
+        "description": [
+            "gui a search dialog should be created which looks like the search in the windows explorer"
+        ],
+        "timespent": "201600",
+        "alpha": 100
+    },
+    {
+        "id": "10039",
+        "project": "JS",
+        "summary": [
+            "providing the assignment of a job to a job chain etc",
+            "by an open dialog"
+        ],
+        "description": [
+            "gui the assignment of a job to a job chain or a job chain to an order etc",
+            "in the shall be provide by an open dialog considering the permissions which are set in the"
+        ],
+        "timespent": "72000",
+        "alpha": 100
+    },
+    {
+        "id": "10037",
+        "project": "JS",
+        "summary": [
+            "adding a pulldown menu besides the history back and forward buttons"
+        ],
+        "description": [
+            "gui adding a pulldown menu besides the history back and forward buttons which displays the last addresses of the history in the explorer of the managed jobs"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10034",
+        "project": "JS",
+        "summary": [
+            "remove show log in order menu"
+        ],
+        "description": [
+            "in order menu exists entry show log even though it has no log"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10033",
+        "project": "JS",
+        "summary": [
+            "add persitent order doesn't work in ie"
+        ],
+        "description": [
+            "on leaving the dialog job persistent order an error is thrown in ie ist null oder kein objekt the order is not added"
+        ],
+        "timespent": "6300",
+        "alpha": 100
+    },
+    {
+        "id": "10013",
+        "project": "JS",
+        "summary": [
+            "does not work with ie"
+        ],
+        "description": [
+            "when the menu item abort restart terminate restart is hit then ie will crash"
+        ],
+        "timespent": "3660",
+        "alpha": 100
+    },
+    {
+        "id": "10001",
+        "project": "JS",
+        "summary": [
+            "update setup files"
+        ],
+        "description": [
+            "copy all files to the setup environment which are declared in the resolve issue dialog field updated files of all linked issues and"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "12499",
+        "project": "JOE",
+        "summary": [
+            "the checkboxes let run and run once have no effect"
+        ],
+        "description": [
+            "the checkboxes let run and run once have no effect",
+            "the attributes and once are not written into the configuration file"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "11599",
+        "project": "JOE",
+        "summary": [
+            "option is added in joe's startscript"
+        ],
+        "description": [
+            "the option file is added in the so that the logging finds a properties file",
+            "you can change the value in the"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "15780",
+        "project": "JOC",
+        "summary": [
+            "advanced search with wildcards should be supported"
+        ],
+        "description": [
+            "current situation the advanced search in a number of views support to search for exact matches and in some cases to search for regular expressions",
+            "searching for exact matches is not too useful in many cases",
+            "use of regular expressions forces a steep learning curve",
+            "desired behavior all input fields for the advanced search in any view that allow to search for exact matches or for regular expressions should allow to use the wildcard character to search for any number of characters",
+            "use of the wildcard character to search for an individual character is not supported",
+            "daily plan regular expression or folders may contain as a wildcard",
+            "the field always will be handles as a regular expression job chain path can be uncompleted from the left site",
+            "may contain as a wildcard",
+            "job path can be uncompleted",
+            "may contain as a wildcard",
+            "order id may contain as a wildcard",
+            "job chains regular expression or folders may contain as a wildcard",
+            "the field always will be handles as a regular expression job is a wild char",
+            "the field always will be handles as a regular expression orders regular expression or folders may contain as a wildcard",
+            "the field always will be handles as a regular expression jobs regular expression or folders may contain as a wildcard",
+            "the field always will be handles as a regular expression file transfer profile name may contain as a wildcard",
+            "mandator may contain as a wildcard",
+            "source file name may contain as a wildcard",
+            "can be more than one value source file regular expression may contain as a wildcard",
+            "the field always will be handles as a regular expression target file name may contain as a wildcard",
+            "can be more than one value target file regular expression is a wild char",
+            "the field always will be handles as a regular expression source host may contain as a wildcard",
+            "can be more than one value source protocol can be more than one value target host may contain as a wildcard",
+            "can be more than one value target protocol can be more than one value agent job execution agent url may contain as a wildcard",
+            "can be more than one value custom events event ids",
+            "can be more than one value event classes may contain as a wildcard",
+            "can be more than one value event exit codes can be more than one value jobchains/order can be a job chain or an order assigned to a job chain",
+            "can be more than one value jobs can be more than one value history order regular expression or folders may contain as a wildcard",
+            "if containing field will be used with a db search",
+            "can be more than one value",
+            "value is the job chain history task regular expression or folders may contain as a wildcard",
+            "if containing field will be used with a db search",
+            "can be more than one value",
+            "value is the job file transfers see file transfer audit log reason may contain as a wildcard",
+            "job chain path can be uncompleted from the left site",
+            "may contain as a wildcard",
+            "order ids may contain as a wildcard",
+            "can be more than one value job path can be uncompleted",
+            "may contain as a wildcard",
+            "can be more than one value calendar path can be uncompleted from the left site",
+            "may contain as a wildcard",
+            "can be more than one value account may contain as a wildcard"
+        ],
+        "timespent": "72000",
+        "alpha": 100
+    },
+    {
+        "id": "15496",
+        "project": "JOC",
+        "summary": [
+            "add shiro strategies for collecting permissions from mappings with ldap directory services"
+        ],
+        "description": [
+            "current situation shiro provides a firstsuccessful strategy with the class please note that the implementation is wrong they override the method protected authenticationinfo merge instead of public authenticationinfo afterattempt you can use the class with the standard authenticator or the authenticator to fix this",
+            "all given realms in securitymanager.realms will be checked",
+            "the first authenticated realm will be used to get the roles for the login",
+            "desired behavior additionally there should be a strategy realms can be named with example roles sosfirstsuccessfulgroupstrategy all realms with the same group will be checked group wise in every group there must be one realm that can be authenticated the roles from the first realm per group will be merged to the roles the user have",
+            "example if and can authenticate than the user will have the roles and sosallsuccessfulgroupstrategy all realms with the same group will be checked group wise in at least one group all realms must be authenticated the roles from realms in groups where all realms can be authenticae will be merged to the roles the user have",
+            "example if and can authenticate than the user will have the roles sosallsuccessfulfirstgroupstrategy all realms with the same group will be checked group wise in at least one group all realms must be authenticated the roles from realms in the first group where all realms can be authenticae will be merged to the roles the user have",
+            "example if and can authenticate than the user will have the roles sosatleastonesuccessfulgroupstrategy all realms with the same group will be checked group wise in all groups at least one realms must be authenticated the roles from realms that can be authenticate will be merged to the roles the user have",
+            "example if can authenticate than the user will have the roles how to configure this in shiro.ini example with group wise first successful strategy"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "15485",
+        "project": "JOC",
+        "summary": [
+            "shiro handling should stop after the first successful realm"
+        ],
+        "description": [
+            "current situation in a environment all realms will be checked",
+            "this will produce warnings if a user in the ini realm is not known in the ldap realm",
+            "securitymanager.realms inirealm ldaprealm will show the warning behavior of the shiro implementation even if the firstsuccessfulstrategy strategy is assigned all realms will be checked",
+            "the cause for this problem is the class that is not properly implemented",
+            "desired behavior it should be possible to configure the behavior in a way that after succesful authentication no more realms are checked",
+            "to achieve this a new shiro authenticator class should be implemented",
+            "this authenticator will stop calling realms if one successul authentication was performed and the strategy is assigned",
+            "if this new authenticator is not used then messages originating from the namingexception should have the severity info instead of warn or error",
+            "behavior in the sos implementation additionally a new strategy class should be implemented that works with the standard authenticator",
+            "with this feature there are two alternative ways to get the firstsuccessfulstrategy behavior a via strategy b via authenticator recommended b similarity only the roles from the first successful realm will be assigned",
+            "difference with a all realms will be contacted",
+            "with b no more realms will be contacted after the first successful login"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "13595",
+        "project": "JOC",
+        "summary": [
+            "japanese language setting should work"
+        ],
+        "description": [
+            "current situation if you set in then it has no effect",
+            "the japanese language file is corrupt",
+            "desired behavior joc should change to japanese if is configured in workaround use attached language file and copy it to"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "13471",
+        "project": "JOC",
+        "summary": [
+            "lists menu and do not open correctly in google chrome"
+        ],
+        "description": [
+            "both lists menu and do not expand correctly as usual when opening joc in google chrome see attached google chrome version jobscheduler version"
+        ],
+        "timespent": "50400",
+        "alpha": 100
+    },
+    {
+        "id": "13098",
+        "project": "JOC",
+        "summary": [
+            "joc denies remove order for a file based order on a distributed job chain"
+        ],
+        "description": [
+            "general the function show configuration in joc should available exclusively for orders",
+            "the function remove order in joc should available exclusively for temporary orders",
+            "joc expects a file attribute in the element of the order to decide if it is or not",
+            "a order of a distributed job chain provides the file attribute in the element of the jobscheduler answer iff the order configuration file is stored in the live directory of the respective jobscheduler",
+            "it is recommended that the order is stored in every jobscheduler member of a cluster",
+            "current situation the function show configuration is inactive if the order stored in the live directory of the respective jobscheduler",
+            "this is ok because the respective jobscheduler cannot send the content of the order configuration file to joc",
+            "the function remove order is active if the order stored in the live directory of the respective jobscheduler which is not intended",
+            "so it is possible to remove file based orders by joc",
+            "desired situation file based orders should not be removed by joc"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "13412",
+        "project": "JOC",
+        "summary": [
+            "joc shows backup job scheduler no jobs found while starting jobscheduler"
+        ],
+        "description": [
+            "current situation when jobscheduler is starting and at the same time joc is opened joc shows the message backup job scheduler no jobs found while starting jobscheduler and the state waiting for activation",
+            "this also happens when job is not in a backup cluster environment",
+            "desired behaviour there should no message backup job scheduler no jobs found while starting jobscheduler when the jobscheduler instance is not part of a backup cluster"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "13200",
+        "project": "JOC",
+        "summary": [
+            "joc should show the job chain configuration that is used for the nodeorderplugin"
+        ],
+        "description": [
+            "actual condition in jobscheduler new feature see is implemented where depending upon return code order's state can be set or a order can be submitted to any other job chain for new feature new xml elements such as etc are added when user in joc right click on job chain and choose show configuration joc throws an error desired behavior joc should show the job chain xml as for other job chains how to deploy attached job chain go to job chains tab in joc right click job chain choose show configuration"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "13081",
+        "project": "JOC",
+        "summary": [
+            "the task history tab lists the logs of all cluster members"
+        ],
+        "description": [
+            "we assume that the jobscheduler is operated in a cluster and that multiple jobscheduler cluster members use the same jobs",
+            "current situation the task history of a job lists only the logs of the job if it was started from the current jobscheduler instance",
+            "desired situation the task history of a job lists all logs of the job independent from the cluster member by which it was started",
+            "the task history tab has the new column member where you see the jobscheduler cluster member which has started the job",
+            "joc expects a new attribute member in the history.entry element of the jobscheduler answer"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "12900",
+        "project": "JOC",
+        "summary": [
+            "setup for jetty's writes urlencoded path of the joc sources"
+        ],
+        "description": [
+            "it is required by jetty"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "11943",
+        "project": "JOC",
+        "summary": [
+            "after deleting a folder in the live folder this is still in the reply"
+        ],
+        "description": [
+            "after deleting a folder in the live folder this is still in the answer of what folder but it has the attribute removed yes"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "12813",
+        "project": "JOC",
+        "summary": [
+            "additional check after suspending order in cluster"
+        ],
+        "description": [
+            "see"
+        ],
+        "timespent": "12600",
+        "alpha": 100
+    },
+    {
+        "id": "10386",
+        "project": "JOC",
+        "summary": [
+            "add command to remove multiple orders from a job chain"
+        ],
+        "description": [
+            "function delete temporary orders in job chain menu",
+            "a selection of temporary not running orders appears to select those orders that are to be deleted together"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "10658",
+        "project": "JOC",
+        "summary": [
+            "joc shows the attribute value for the element"
+        ],
+        "description": [
+            "the configuration element includes the attribute this attribute determines the number of orders of a job chain that can be executed in parallel",
+            "the declaration of this attribute is optional",
+            "it can contain integer values starting from job chain is deactivated to max joc should present the value of the attribute",
+            "in case of the job chain should be displayed with a special markup similiar to the markup used when a job chain is locked via job chain the content of the attribute can be retrieved with the jobscheduler command"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "11374",
+        "project": "JOC",
+        "summary": [
+            "joc configuration added so that some functions are deactivated or ask for a confirmation before executing"
+        ],
+        "description": [
+            "the following functions are deactivated or ask for a confirmation when it is configured",
+            "job chain node job start order reset order change state of an order remove order kill task the joc configuration file is extended to set the deactivation or the confirmation or not",
+            "for more information look at"
+        ],
+        "timespent": "64800",
+        "alpha": 100
+    },
+    {
+        "id": "12392",
+        "project": "JOC",
+        "summary": [
+            "a temporary order which is not a file order goes into the blacklist if it is suspended when it reach the end of the job chain"
+        ],
+        "description": [
+            "we have a job chain with one node",
+            "the node is configured to suspend the order when job has an error",
+            "when you skip the node and a temporary order is suspended then this order goes into the blacklist",
+            "in case of a persitent order it goes to that end state which is configured in the attribute of the node where the order comes from",
+            "the temporary order should have the same behaviour then the persitent order",
+            "in a nested job chain the order should assign to the next job chain"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "11772",
+        "project": "JOC",
+        "summary": [
+            "joc should be able to display timestamps according to the timezone of the jobscheduler engine"
+        ],
+        "description": [
+            "currently joc displays all timestamps according to the local time of joc frontend",
+            "it should be possible customizable to display the timestamps according to the timezone settings of the jobscheduler engine",
+            "the of the timezone should be displayed near the jobscheduler start time"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "12481",
+        "project": "JOC",
+        "summary": [
+            "allow to remove predefined order parameters when using start order parameterized"
+        ],
+        "description": [
+            "current situation if a user makes use of the operation start order parameterized then parameters can be added or modified parameters cannot be removed",
+            "desired behavior in addition the user should be able to remove existing parameters of the order with joc",
+            "resolution currently the following command is used to add or to modify parameters of an order",
+            "if a parameter is omitted in the above command then this parameter is still active with jobscheduler",
+            "the jobscheduler provide a command to remove a parameter",
+            "therefore it is not possible to remove a parameter from joc",
+            "workaround implement your scripts to handle empty parameter values in the same way as missing parameters",
+            "when using api methods to retrieve parameters then an empty parameter returns an empty string",
+            "a missing parameter returns null",
+            "for shell jobs an empty parameter is represented by an environment variable with no value",
+            "a missing parameteter is not assgined an environment variable"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "12184",
+        "project": "JOC",
+        "summary": [
+            "time zone of joc should be configurable"
+        ],
+        "description": [
+            "currently joc is running with the timezone of its host",
+            "it should be possible to configure the timezone",
+            "joc provides a selectbox with configure timezones berlin tokyo buenos aires the content of the selectbox can customized in the see for example timezones berlin timezones tokyo"
+        ],
+        "timespent": "64800",
+        "alpha": 100
+    },
+    {
+        "id": "12182",
+        "project": "JOC",
+        "summary": [
+            "a new command to terminate a task with sigterm should exist"
+        ],
+        "description": [
+            "desired behavior joc should send the respective commands as stated in to the jobscheduler engine",
+            "joc provides three task menu functions to terminate a task terminate terminates the process with the signal sigterm",
+            "terminate with timeout terminates the process with the signal sigterm",
+            "should that process not terminate within the specified timeout then it will be killed with a signal sigkill",
+            "an input field is provided in joc to enter the timeout",
+            "kill immediately kills the process immediately with the signal sigkill delimitation this feature is intended for unix platforms that implement the sigterm and sigkill signals",
+            "it is not intended for windows platforms",
+            "for windows systems exclusively the kill immediately command applies"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "12021",
+        "project": "JOC",
+        "summary": [
+            "joc allows to resume a suspended order with different parameters"
+        ],
+        "description": [
+            "a new function in the order menu should be added to edit the parameters of a suspended order before the order is resumed",
+            "furthermore it should be possible to set the job chain node in the same dialog"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "11721",
+        "project": "JOC",
+        "summary": [
+            "the attribute of a job chain should be visible"
+        ],
+        "description": [
+            "eg",
+            "instead of orders it should be orders maxorders unlimited"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "13866",
+        "project": "JITL",
+        "summary": [
+            "when starting jobscheduler universal agent with the jitl the job should terminate"
+        ],
+        "description": [
+            "current situation when starting the jobscheduler universal agent with the jitl ssh job the agents starts but the job does not terminate",
+            "desired behaviour when starting the jobscheduler universal agent with the jitl ssh job the job should terminate",
+            "example job"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "13729",
+        "project": "JITL",
+        "summary": [
+            "remove parameter expiration_period from jitl job"
+        ],
+        "description": [
+            "current situation the job from the job directory is configured like this desired behavior the parameter expiration_period can be used to overwrite the default value of hrs",
+            "that is given with the job source code",
+            "the job configuration should not modify this default value",
+            "a value of hours as stated in this job creates problems for users who work with longer periods hrs",
+            "for one day",
+            "therefore the parameter expiration_period should be removed from this job"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "13699",
+        "project": "JITL",
+        "summary": [
+            "yade jitl job wizard behavior inconsistent when used with settings.ini file"
+        ],
+        "description": [
+            "definition of a settings.ini file and profile in a yade jitl job with for example a file path variable definition causes some parameters set in the job such as to be ignored",
+            "other parameters such as operation and sendtransferhistory and the definition of the settings file and profile are not ignored",
+            "this behavior is inconsistent with other aspects of js yade config where mixing of parameter sources works",
+            "restricting parameter specification to only one source job or settings file is not seen as a desirable solution",
+            "zipped config is attached relevant is the job",
+            "run the order in the folder",
+            "the log is attached and shows the wrong source parameters and the error",
+            "see also"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "13409",
+        "project": "JITL",
+        "summary": [
+            "remove job sos.scheduler.managed.jobschedulermanagedcustomreportjob from release"
+        ],
+        "description": [
+            "this job is unsupported as of release and is removed from release remove job documentation from folder remove class from repository"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "13163",
+        "project": "JITL",
+        "summary": [
+            "retirement of jobscheduler update service"
+        ],
+        "description": [
+            "feature deprecation jobscheduler provides a standard job that checks for updates",
+            "this feature has rarely been used and is removed due to major changes to our infrastructure",
+            "we are aware of the fact that this announcement breaks our deprecation policies however this would not touch the scheduling functionality and only a very small number of users will be affected by this change",
+            "future releases will provide a new functionaly for updates",
+            "in between please use our news subscription to stay informed about product changes",
+            "deprecation history release deprecated unsupported removed"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "13166",
+        "project": "JITL",
+        "summary": [
+            "add this fix for to release"
+        ],
+        "description": [
+            "this fix has been added to release it should be available for maintenance release"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "12846",
+        "project": "JITL",
+        "summary": [
+            "sos.scheduler.managed.jobschedulermanageddatabasejob should not try to read table when having parameter command not in order params"
+        ],
+        "description": [
+            "preconditions a job uses sos.scheduler.managed.jobschedulermanageddatabasejob the job defines the parameter command the job is an order job the order does not provide the parameter command result the parameter command from the job configuration will be taken but before there is a try to get the command from the database table as the table is not being installed an error occurs",
+            "the error will be catched and ignored by the job but in the logfiles of the database an error message could appear",
+            "it should be avoided to post this error message",
+            "to reproduce this add an order to job chain"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "12013",
+        "project": "JITL",
+        "summary": [
+            "jobschedulermanageddatabasejob do not return parameter values as in job documentation"
+        ],
+        "description": [
+            "the job jobschedulermanageddatabasejob is not operating as described in the job documentation",
+            "when database command selects more then column ideally if is set to true each column represents name value pair but job would return first column name and value"
+        ],
+        "timespent": "9000",
+        "alpha": 100
+    },
+    {
+        "id": "11206",
+        "project": "JITL",
+        "summary": [
+            "the script should return an exit code should an exception occur"
+        ],
+        "description": [
+            "current situation sometimes the script throws the process cannot access the file because it is being used by another process",
+            "in this case returns an exit desired behavior the error the process cannot access the file because it is being used by another process",
+            "should be avoided",
+            "the script should return an exit code should this exception occur"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "11886",
+        "project": "JITL",
+        "summary": [
+            "fatal error invalid byte of sequence"
+        ],
+        "description": [
+            "the sync job makes a request to the job scheduler",
+            "in debug modus the answer of the job scheduler is written into the log file this answer includes names and titles of all job chains in the live folder",
+            "one of these job chains not the started one has an in the title the configuration monitor in the example used next by the job jobchainend in pre processing is calling the api method order.xml contains the entire log including the disturbing characters",
+            "then parsing of order.xml causes the error fatal error invalid byte of sequence",
+            "error has occurred after ticket has been resolved"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "11774",
+        "project": "JITL",
+        "summary": [
+            "com.sos.jitl.sync.jobschedulersynchronizejobchainsjsadapterclass should show the number of orders the node is waiting for"
+        ],
+        "description": [
+            "if the node is not released it should be shown how many orders are required for this node and how many orders are waiting",
+            "if the node is released required waiting it should be shown the first node which is using the actual sync job and is not released",
+            "if there is more than one not release sync node this should be identified by for example required waiting released",
+            "waiting for"
+        ],
+        "timespent": "300",
+        "alpha": 100
+    },
+    {
+        "id": "11702",
+        "project": "JITL",
+        "summary": [
+            "loganalyser job empty info lines should not be logged"
+        ],
+        "description": [
+            "empty info lines are logged by the job loganalyser",
+            "these should be turned off so that they are not logged anymore",
+            "find attached an example of a task protocol for this job",
+            "thank you"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "11526",
+        "project": "JITL",
+        "summary": [
+            "jitl scp job with unc path for the settings and recursive=false should work"
+        ],
+        "description": [
+            "general if you use unc paths then note that the jobscheduler service has an account which has sufficient permissions to connect with the remote host from the unc path",
+            "otherwise the unc path is not found and you get an exception current situation using the scp jitl job with a unc path here c mp scp for the parameter and the setting recursive=false results in the setting being used twice for different purposes get instead of put in consequence an exception is raised workaround the problem does not occur with the setting"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "11393",
+        "project": "JITL",
+        "summary": [
+            "an in jobschedulerremotecommandjob requires that the parameter is set"
+        ],
+        "description": [
+            "if you want to create an with the jobschedulerremotecommandjob then the parameter is required which set the id attribute in the only a attribute is required",
+            "if the order id is empty then the jobscheduler create an id itself"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "11950",
+        "project": "JID",
+        "summary": [
+            "it should be possible to set a limit for the database queries in jid"
+        ],
+        "description": [
+            "at the moment the queries in jid do not have a limit",
+            "in the case of an very big resultset it could happen that jid is not able to show all the rows in the database and will to avoid this the limit is set to the default value of rows and can be changed per table using the context menu"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "11938",
+        "project": "JID",
+        "summary": [
+            "when starting jid there should be senseful defaults for the options in the context menu"
+        ],
+        "description": [
+            "when starting jid the first time either jobs nor job chains is selected what has the effect of an empty list",
+            "the default for both options should be checked"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "11710",
+        "project": "JID",
+        "summary": [
+            "running in a linux box jid does not show any events in the list of events"
+        ],
+        "description": [
+            "install dashboard in linux box",
+            "set in create an event start dashboard navigate to the events list tab no events are shown",
+            "in the log the messages sendcommand param.get name jobschedulereventjob.events fatal error content is not allowed in prolog",
+            "are shown"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "11683",
+        "project": "JID",
+        "summary": [
+            "joc in jid doesn't remember the authentication credentials if a new window is opened"
+        ],
+        "description": [
+            "if you use joc in jid and you have configured a http authentication for joc then you get the authentication dialog for each new windows show the browser in jids joc tab should remember the authentication credentials"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "11602",
+        "project": "JID",
+        "summary": [
+            "option is added in jid's startscript"
+        ],
+        "description": [
+            "is actually an option in joe",
+            "if you open a hot folder in joe then the dialog starts with the folder which is set by the option the default value is if you open jid inklusive joe then you have now the option to change this value in this is useful if you have installed jid standalone"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "11600",
+        "project": "JID",
+        "summary": [
+            "option is added in jid's startscript"
+        ],
+        "description": [
+            "the option file is added in the so that the logging finds a properties file",
+            "you can change the value in the"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "11261",
+        "project": "JID",
+        "summary": [
+            "indexes for the database table are added via the jobscheduler installer"
+        ],
+        "description": [
+            "the following indexes are added"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "13419",
+        "project": "DOC",
+        "summary": [
+            "complete xsd schema documentation"
+        ],
+        "description": [
+            "deliverables complete the xsd schema documentation doc annotations for undocumented elements"
+        ],
+        "timespent": "140400",
+        "alpha": 100
+    },
+    {
+        "id": "11485",
+        "project": "YADE",
+        "summary": [
+            "yade client should configure standard no file should be neccessary"
+        ],
+        "timespent": "600"
+    },
+    {
+        "id": "11198",
+        "project": "JS",
+        "summary": [
+            "convert utc timestamps in local timestamps field connected in remote scheduler tab"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "11191",
+        "project": "JS",
+        "summary": [
+            "joc job chains which are set in nodes of a job chain should be displayed separate too and not only under the master chain"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "11190",
+        "project": "JS",
+        "summary": [
+            "joc cannot display nested job chains if the job chains in the nodes of the master chain are in different folders"
+        ],
+        "timespent": "43200"
+    },
+    {
+        "id": "11132",
+        "project": "JS",
+        "summary": [
+            "the jobscheduler start at the end of the installation is optional"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "11131",
+        "project": "JS",
+        "summary": [
+            "jobschedulercheckrunhistory doesn't work"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "11109",
+        "project": "JS",
+        "summary": [
+            "the label steps should be renamed to process steps"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "11053",
+        "project": "JS",
+        "summary": [
+            "if a job is used in two job chains and an order starts the job then only this one is shown as running"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "11052",
+        "project": "JS",
+        "summary": [
+            "order title are also shown at the job chain"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "11047",
+        "project": "JS",
+        "summary": [
+            "asks for elevated permission if necessary"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "11044",
+        "project": "JS",
+        "summary": [
+            "the top frame of the operationsgui has received a more compact form"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "11003",
+        "project": "JS",
+        "summary": [
+            "for some browsers are the right menus in the top frame not labelled"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "10950",
+        "project": "JS",
+        "summary": [
+            "update should use e in sudo when this is supported"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "10948",
+        "project": "JS",
+        "summary": [
+            "linux setup creates wrong symlink to libsosperlscript.so"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "10923",
+        "project": "JS",
+        "summary": [
+            "factory.ini in windows setup is in unix format and can not be edited with notepad"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "10919",
+        "project": "JS",
+        "summary": [
+            "every context menu of the managed jobs gui has hidden text in"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "10910",
+        "project": "JS",
+        "summary": [
+            "time stamps like task is running since are not shown with fleeting time"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "10907",
+        "project": "JS",
+        "summary": [
+            "the update installer reads the database password wrong when it is empty"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "10881",
+        "project": "JS",
+        "summary": [
+            "force attribute of is not documented in the english version"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "10862",
+        "project": "JS",
+        "summary": [
+            "language of setup should not be the language of operations gui"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "10861",
+        "project": "JS",
+        "summary": [
+            "it should not be possible to create persistent job chain orders in operations gui"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "10782",
+        "project": "JS",
+        "summary": [
+            "checkbox update every is checked but automatic update in operations gui does not work"
+        ],
+        "timespent": "43200"
+    },
+    {
+        "id": "10774",
+        "project": "JS",
+        "summary": [
+            "setup checks for forbidden characters in the scheduler id"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "10767",
+        "project": "JS",
+        "summary": [
+            "standalone jobs which are used in job chains should be marked in operations gui"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "10761",
+        "project": "JS",
+        "summary": [
+            "in the job chain tab setting the filter to stopped jobs show any jobs even if some are stopped"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "10733",
+        "project": "JS",
+        "summary": [
+            "new php constant in to set after which idle time the login will be redirected"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "10732",
+        "project": "JS",
+        "summary": [
+            "job processing site includes always german language file"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "10730",
+        "project": "JS",
+        "summary": [
+            "some object menus in the right frame doesn't work if the object not listed in the left frame"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "10701",
+        "project": "JS",
+        "summary": [
+            "wrong link in if proxy alias is used instead of"
+        ],
+        "timespent": "1200"
+    },
+    {
+        "id": "10633",
+        "project": "JS",
+        "summary": [
+            "jobeditor.cmd should use"
+        ],
+        "timespent": "900"
+    },
+    {
+        "id": "10632",
+        "project": "JS",
+        "summary": [
+            "in jobeditor.cmd the is to be changed to"
+        ],
+        "timespent": "900"
+    },
+    {
+        "id": "10630",
+        "project": "JS",
+        "summary": [
+            "operations gui alters filestamp with timezone"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "10629",
+        "project": "JS",
+        "summary": [
+            "improved request/response behaviour of the operations gui ca",
+            "faster"
+        ],
+        "timespent": "288000"
+    },
+    {
+        "id": "10627",
+        "project": "JS",
+        "summary": [
+            "hierachacle view for schedules in the operations gui"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "10626",
+        "project": "JS",
+        "summary": [
+            "hierachacle view for orders in the operations gui"
+        ],
+        "timespent": "144000"
+    },
+    {
+        "id": "10624",
+        "project": "JS",
+        "summary": [
+            "hierachacle view for jobs in the operations gui"
+        ],
+        "timespent": "144000"
+    },
+    {
+        "id": "10623",
+        "project": "JS",
+        "summary": [
+            "problems with installation paths containing c program files"
+        ],
+        "timespent": "9000"
+    },
+    {
+        "id": "10621",
+        "project": "JS",
+        "summary": [
+            "check if object is already synchronized avoid submitting unnecessarily"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "10620",
+        "project": "JS",
+        "summary": [
+            "decreasing php error reporting level to if is set"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "10583",
+        "project": "JS",
+        "summary": [
+            "startsite of managedjobsgui depends on user permissions"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "10552",
+        "project": "JS",
+        "summary": [
+            "adjust managed jobs interface for deprecated functions etc"
+        ],
+        "timespent": "144000"
+    },
+    {
+        "id": "10546",
+        "project": "JS",
+        "summary": [
+            "hide the function start task unforced now per configuration"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "10473",
+        "project": "JS",
+        "summary": [
+            "filters don't match any objects with paths that contain special characters of regular expressions"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "10463",
+        "project": "JS",
+        "summary": [
+            "in task detail view order shows the task id instead of the order id"
+        ],
+        "timespent": "900"
+    },
+    {
+        "id": "10416",
+        "project": "JS",
+        "summary": [
+            "endless loop at the managed explorer php site job chains jobs orders if cookies disabled"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "10407",
+        "project": "JS",
+        "summary": [
+            "function set run time reads always empty run times from hot folder objects"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "10406",
+        "project": "JS",
+        "summary": [
+            "function set run time returns sometimes"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "10405",
+        "project": "JS",
+        "summary": [
+            "function show start times returns an insufficient result"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "10404",
+        "project": "JS",
+        "summary": [
+            "html gui provides multilingualism"
+        ],
+        "timespent": "288000"
+    },
+    {
+        "id": "10403",
+        "project": "JS",
+        "summary": [
+            "wrong number of orders at job chain nodes"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "10399",
+        "project": "JS",
+        "summary": [
+            "show order log in job chain history is empty until job chain is finished"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "10391",
+        "project": "JS",
+        "summary": [
+            "support"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "10390",
+        "project": "JS",
+        "summary": [
+            "add attributes to managed jobs interface"
+        ],
+        "timespent": "5400"
+    },
+    {
+        "id": "10382",
+        "project": "JS",
+        "summary": [
+            "orders tab does not show anything if show orders is deactivated in job chains tab"
+        ],
+        "timespent": "1200"
+    },
+    {
+        "id": "10372",
+        "project": "JS",
+        "summary": [
+            "add reset order command to operations gui"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "10353",
+        "project": "JS",
+        "summary": [
+            "history function of an order which is stored in a remote folder doesn't work"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "10352",
+        "project": "JS",
+        "summary": [
+            "import and export of too many objects don't work because of the php execution timeout"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "10347",
+        "project": "JS",
+        "summary": [
+            "add element to managed jobs gui"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "10343",
+        "project": "JS",
+        "summary": [
+            "tab orders incl",
+            "filter-management"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "10342",
+        "project": "JS",
+        "summary": [
+            "add features of to editor in managed jobs interface"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "10299",
+        "project": "JS",
+        "summary": [
+            "add remove button for enqueued tasks"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "10265",
+        "project": "JS",
+        "summary": [
+            "single objects without elements are not importable for if schema validation is omitted"
+        ],
+        "timespent": "5400"
+    },
+    {
+        "id": "10264",
+        "project": "JS",
+        "summary": [
+            "virtual directories of a proxy are supported"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "10263",
+        "project": "JS",
+        "summary": [
+            "order history is not displayed if a job chain of job chains exists"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "10239",
+        "project": "JS",
+        "summary": [
+            "bash is not longer required for setup"
+        ],
+        "timespent": "43200"
+    },
+    {
+        "id": "10232",
+        "project": "JS",
+        "summary": [
+            "add support for smtp authentication in the installer"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "10195",
+        "project": "JS",
+        "summary": [
+            "support for paths of jobs and job chains by the html interface"
+        ],
+        "timespent": "115200"
+    },
+    {
+        "id": "10180",
+        "project": "JS",
+        "summary": [
+            "provide calendar dialog on all datetime input fields show start time start job at start order at etc"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "10125",
+        "project": "JS",
+        "summary": [
+            "reset button image is missing in gui for parameter management"
+        ],
+        "timespent": "300"
+    },
+    {
+        "id": "10080",
+        "project": "JS",
+        "summary": [
+            "jobschedulermanagedexecutablejob executes file without errors but ends with classcastexception"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "10584",
+        "project": "JITL",
+        "summary": [
+            "documentation of managedjobstarter jobschedulermanagedstarter.xml is not up to date"
+        ],
+        "timespent": "600"
+    }
+]

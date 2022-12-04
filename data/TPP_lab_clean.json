@@ -1,0 +1,45 @@
+[
+    {
+        "id": "26836",
+        "project": "JEMH",
+        "summary": [
+            "new user creation"
+        ],
+        "description": [
+            "the switch for creating users from email was not working",
+            "all other switches defined in the emh.properties file were active and working",
+            "thanks gareth"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "26835",
+        "project": "JEMH",
+        "summary": [
+            "bulk header option being ignored"
+        ],
+        "description": [
+            "hi the bulk switch seems to be ignored causing non delivery loops",
+            "i'm not entirely sure i have the config right but all my other entries for emh.properties are active and working",
+            "thanks gareth"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "26284",
+        "project": "JEMH",
+        "summary": [
+            "directives no longer work"
+        ],
+        "description": [
+            "i've recently updated jira from to as part of this i've had to upgrade jemh from to however the multiline handling of prefixed fields no longer works as a result of a fix for previously it would cope with body that looked like this debugging the code it looks like it matches issues description but the check for next lines fails as it see description and assumes it's a line field",
+            "our description field is filled in by our end users so we cannot mandate that there are no blank lines in the content",
+            "i see from the code that it's related to the fact that a blank line at the end of a list of keys indicates the start of the comments field",
+            "perhaps we could have this functionality optional instead and instead ensure that the comments are added to a comments key instead which can also be currently i've modified the code to ignore blank line checks and this works ok with the addition of a comment field as described is there another way to fix this thanks"
+        ],
+        "timespent": "18000",
+        "alpha": 99
+    }
+]

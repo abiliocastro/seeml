@@ -1,0 +1,136 @@
+[
+    {
+        "id": "21178",
+        "project": "OV",
+        "summary": [
+            "quick filter name is not encoded in while saving in xml configuration file"
+        ],
+        "description": [
+            "quick filter name is not encoded in while saving in xml configuration file"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "21006",
+        "project": "OV",
+        "summary": [
+            "study downloading is not working when the zip filename contains special characters and spaces"
+        ],
+        "description": [
+            "study downloading is not working when the zip filename contains special characters and spaces",
+            "this issue occurs in oviyam hosted in windows environment"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "20834",
+        "project": "OV",
+        "summary": [
+            "lung window incorrect preset value assigned"
+        ],
+        "description": [
+            "windowing preset value for lung is incorrect"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "20750",
+        "project": "OV",
+        "summary": [
+            "display both study and series time in same format or hours"
+        ],
+        "description": [
+            "and hours formats are followed for study and series time respectively",
+            "rather the time format for both study and series must be same"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "20747",
+        "project": "OV",
+        "summary": [
+            "study comparison add download invoker for archived studies"
+        ],
+        "description": [
+            "a download indicator for archived studies rather than downloading the study when clicking on study description itself could improve the user experience"
+        ],
+        "timespent": "25200",
+        "alpha": 100
+    },
+    {
+        "id": "20746",
+        "project": "OV",
+        "summary": [
+            "image navigation slider ui improvements"
+        ],
+        "description": [
+            "add a slider for image navigation and to represent the current status in the image display area"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "20745",
+        "project": "OV",
+        "summary": [
+            "add support for png image type in wado retrieval"
+        ],
+        "description": [
+            "image type should be configurable for wado retrieval"
+        ],
+        "timespent": "25200",
+        "alpha": 100
+    },
+    {
+        "id": "20744",
+        "project": "OV",
+        "summary": [
+            "for some selected studies image navigation doesn't move to the next image as expected"
+        ],
+        "description": [
+            "for some studies the text display shows the image count correctly but the image remains same without moving on during image navigation"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "20743",
+        "project": "OV",
+        "summary": [
+            "patient name is not encoded in while launching viewer with direct url"
+        ],
+        "description": [
+            "the patient name is not encoded correctly when viewer page is launched directly with url where as its working fine while navigating from query screen"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "20716",
+        "project": "OV",
+        "summary": [
+            "prevent duplicate descriptions for quick search filters"
+        ],
+        "description": [
+            "while creating quick search filters the duplicate labels should not be allowed"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "20715",
+        "project": "OV",
+        "summary": [
+            "eliminating patient id in direct launch url results in blank page"
+        ],
+        "description": [
+            "launching without patient id no longer works when using the url ip"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    }
+]

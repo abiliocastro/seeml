@@ -1,0 +1,31 @@
+[
+    {
+        "id": "147457",
+        "project": "EDUCATOR",
+        "summary": [
+            "course team unable to create a new run in publisher"
+        ],
+        "description": [
+            "issue key reporter marina pastor hello current behavior course team user tried to create a new run of this course in publisher but she received a client error screenshot expected behavior this course team member to be able to create new runs of courses of her institution",
+            "could you take a look at this thanks"
+        ],
+        "timespent": "201600",
+        "alpha": 100
+    },
+    {
+        "id": "144523",
+        "project": "DEPR",
+        "summary": [
+            "remove original sailthru retirement endpoint"
+        ],
+        "description": [
+            "the party email provider retirement endpoint in lms has been deprecated and moved to tubular",
+            "it is an optional step in the retirement pipeline and we have not seen any evidence of community adoption of the feature",
+            "the reasons for the deprecation are twofold sailthru introduced a new api around that more effectively deletes user data than the method currently used in lms the current lms call to sailthru is synchronous and often slow tying up a worker process and degrading performance if run on a production cluster the new method makes the call directly from the tubular script additionally the changes in tubular and the modular nature of the retirement pipeline mean that even hawthorn installs can use the tubular functionality right now for the performance and compliance boosts",
+            "as such we are pushing to do this removal before ironwood",
+            "removal signal email marketing use of the signal and function accountretiremailingsview url replacement sailthru retirement has been moved out of lms to tubular and can be adopted by any users of the hawthorn or above retirement pipeline target dates accepted deadline for comments before acceptance removed first named release without it ironwood"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    }
+]

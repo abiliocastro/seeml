@@ -1,0 +1,478 @@
+[
+    {
+        "id": "10125",
+        "project": "OASVN",
+        "summary": [
+            "request larger heap size from os"
+        ],
+        "description": [
+            "android and higher allows android:largeheap true max memory avail free memory avail"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "10123",
+        "project": "OASVN",
+        "summary": [
+            "implement svnkit"
+        ],
+        "description": [
+            "will be evaluated for release in future version"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "10120",
+        "project": "OASVN",
+        "summary": [
+            "prepare for pro realese"
+        ],
+        "description": [
+            "incorporate any bug fixes from lite and test"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10115",
+        "project": "OASVN",
+        "summary": [
+            "support key pair authentication"
+        ],
+        "description": [
+            "support for key pair authentication"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "10114",
+        "project": "OASVN",
+        "summary": [
+            "local file move"
+        ],
+        "description": [
+            "add the ability to move a local file on the device using the local file browser"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10113",
+        "project": "OASVN",
+        "summary": [
+            "local file copy"
+        ],
+        "description": [
+            "add the ability for the user to copy a file using the local file browser"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "10110",
+        "project": "OASVN",
+        "summary": [
+            "check that the path change does not break existing installations connections"
+        ],
+        "description": [
+            "the old method of storing folder paths in the db only stored the folder after the externalstorage oasvn now the entire path is stored in the database",
+            "the existing connections folder locations will need to be converted"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "10109",
+        "project": "OASVN",
+        "summary": [
+            "add the ability to export from the working copy"
+        ],
+        "description": [
+            "currently export just supporting export from the repository",
+            "add ability to export directly from a local working copy"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "10108",
+        "project": "OASVN",
+        "summary": [
+            "move the edit button into the menu"
+        ],
+        "description": [
+            "takes up space that can be better used for the local and remote built in browser"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10107",
+        "project": "OASVN",
+        "summary": [
+            "remove the folder browse button"
+        ],
+        "description": [
+            "largely useless feature dependent on user installed file browser",
+            "as the local and remote built in browser matures it will completely take over the functions"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10106",
+        "project": "OASVN",
+        "summary": [
+            "merge remote browser code contributed into the trunk"
+        ],
+        "description": [
+            "merge contributed code for the remote repository browser and file export code into the trunk"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "10050",
+        "project": "OASVN",
+        "summary": [
+            "svn api reorganization"
+        ],
+        "description": [
+            "svn logic has been handled so far in the application layer and this was fine when there where only a few methods to manage but as the svn command set grows the need to properly organize is becoming more apparent",
+            "i will be breaking all svn related logic out of the application layer and into a new svn package"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "10046",
+        "project": "OASVN",
+        "summary": [
+            "create method to handle moving existing files and database entries"
+        ],
+        "description": [
+            "if the uesr chooses to migrate script will have to copy all data from the oasvnlite folder to the oasvn folder and also copy all database information from the oasvnlite database to the oasvn one"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10044",
+        "project": "OASVN",
+        "summary": [
+            "create way for the pro version to check for lite version only on install"
+        ],
+        "description": [
+            "will prob use shared preferences to check only on install and then call an activity that will prompt the user"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10040",
+        "project": "OASVN",
+        "summary": [
+            "gui prompt that askes user for revision when doing a checout or export"
+        ],
+        "description": [
+            "required to retrieve user revision preference for checkout and export"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10039",
+        "project": "OASVN",
+        "summary": [
+            "add svn export"
+        ],
+        "description": [
+            "allow user to export adding the ability to create local copies of repositories that are not working copies",
+            "decision point should export checkout be choosen at the point the connection is created or should export just be an option untilled checkout is used a working copy is created and the export choice dissappears for the connection unless the working copy is deleted"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "10033",
+        "project": "OASVN",
+        "summary": [
+            "efficient usable log list"
+        ],
+        "description": [
+            "this application is also useful for monitoring and managing work flow across a team",
+            "we use it to see what was checked in for that day or to understand new build problem areas",
+            "a general svn client allows the user to get a log listing",
+            "it will return the most recent logs for a fixed period of time",
+            "our project spans years",
+            "it is very cumbersome to wait for loading of all of this data in fact it is unusable in its current the program should return the last days worth of listings showing most recent first",
+            "the amount of listings returned can be configurable should there is an app subdroid that we use now but it does not allow us to pull a file",
+            "for performance and speed the listing should be cached allowing user to see the log even if no data connection",
+            "for testing purposes we want to see what has been checked in and pull an apk file that has been checked in to the local android device once review is complete"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "10032",
+        "project": "OASVN",
+        "summary": [
+            "create the lite version"
+        ],
+        "description": [
+            "create lite version"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10029",
+        "project": "OASVN",
+        "summary": [
+            "move delete folder and repo buttons and rename"
+        ],
+        "description": [
+            "move the delete buttons delete folder and repo off the details screen itself and into the context menu",
+            "also rename them the current names are confusing",
+            "maybe something like delete working copy and delete connection"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10027",
+        "project": "OASVN",
+        "summary": [
+            "gui local file browser"
+        ],
+        "description": [
+            "in order to implement the next wave of features a file browsing ability is going to be required"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "10026",
+        "project": "OASVN",
+        "summary": [
+            "checkout update gui rework"
+        ],
+        "description": [
+            "currently checkout is the one of the dominent options of the connection details screen",
+            "this really does not make sense once the initial check out is complete and it should really be svn update that is in it's place and not stuck up in the menu",
+            "two options being considered stick checkout in the menu but have a pop up the first time the details screen is accessed asking if the user would like to check out the repo at that time",
+            "if they press no pressing update would indicate that they have to check out from the menu first",
+            "change the buttons purpose based on the local status if no files exist then make the button check out if they do make the button update and add checkout to the menu it would not exist in the menu before it is checked"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10020",
+        "project": "OASVN",
+        "summary": [
+            "german translation is incorrect and misleading"
+        ],
+        "description": [
+            "incorrect translations found so far checkout in repository view is translated to kasse commit in repository view is translated to verbindlichkeit these terms should not be translated since they are names for the actual actions"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10019",
+        "project": "OASVN",
+        "summary": [
+            "implement svn update"
+        ],
+        "description": [
+            "it is unacceptable that a app that claims to have a complete and functional svn client does not support svn update",
+            "this must be implemented as soon as possible it is vastly more important than branching/merging and ssl support",
+            "and yes i am one of whose of people who has bought the pro version"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "10018",
+        "project": "OASVN",
+        "summary": [
+            "checkout commit revsions fail on screen rotation holo theme only"
+        ],
+        "description": [
+            "does not affect the pre honeycomb versions"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10017",
+        "project": "OASVN",
+        "summary": [
+            "determine and implement new gui way to access additional features on the connection details screen"
+        ],
+        "description": [
+            "menu is the obvious choice unless a better way shows itself",
+            "blocks implementation of new features"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10016",
+        "project": "OASVN",
+        "summary": [
+            "add revert functionality for the local copy"
+        ],
+        "description": [
+            "allow user to revert the local copy back to the remote version"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10015",
+        "project": "OASVN",
+        "summary": [
+            "create lite version"
+        ],
+        "description": [
+            "branch need to do the rest"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10012",
+        "project": "OASVN",
+        "summary": [
+            "add svn cleanup option"
+        ],
+        "description": [
+            "need to add the ability to recover the local repository if there is a problem"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "10010",
+        "project": "OASVN",
+        "summary": [
+            "commiting a new file causes the whole commit to fail"
+        ],
+        "description": [
+            "the only response back is to the user",
+            "modifying existing files works fine"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "10006",
+        "project": "OASVN",
+        "summary": [
+            "listactivitys are not using the buttons at the bottom of the screen as a lower boundry"
+        ],
+        "description": [
+            "this is causing some of the text at the bottom of the list to be because it is behind the button"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10002",
+        "project": "OASVN",
+        "summary": [
+            "create logging"
+        ],
+        "description": [
+            "create a logging mechanism log all network actions with the repos log all errors persist logs in local database create activity to list all logs create activity to list log details"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "10001",
+        "project": "OASVN",
+        "summary": [
+            "show remote repository detailed information on all versions"
+        ],
+        "description": [
+            "this enhancement will be a base for much of the future versions requirements",
+            "requires an activity that lists the available versions for a repository a detail activity that lists all the specific information about the repository"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "10000",
+        "project": "OASVN",
+        "summary": [
+            "allow checkout of specific revision"
+        ],
+        "description": [
+            "allow checkout of specific revision show author commiter show the comments for the available revisions in the list"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10041",
+        "project": "OASVN",
+        "summary": [
+            "create lite version"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "10031",
+        "project": "OASVN",
+        "summary": [
+            "reverse revision order so most recent is first"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "10030",
+        "project": "OASVN",
+        "summary": [
+            "final testing for release"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "10011",
+        "project": "OASVN",
+        "summary": [
+            "enable holo theme for and"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "10009",
+        "project": "OASVN",
+        "summary": [
+            "add german translation for strings.xml"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "10008",
+        "project": "OASVN",
+        "summary": [
+            "need a creative way to deal with out of memory issues for large repos when retrieving revisions"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "10007",
+        "project": "OASVN",
+        "summary": [
+            "lots of error reporting and some random text is not in the strings file"
+        ],
+        "timespent": "3600"
+    }
+]

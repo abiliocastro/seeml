@@ -1,0 +1,88 @@
+[
+    {
+        "id": "12401",
+        "project": "INSPECTIT",
+        "summary": [
+            "update license information prior to going open source"
+        ],
+        "description": [
+            "we need to add our new license to the base folder and releases add license exceptions as suggested by lawyer add third party license info and copyrights"
+        ],
+        "timespent": "32400",
+        "alpha": 100
+    },
+    {
+        "id": "12304",
+        "project": "INSPECTIT",
+        "summary": [
+            "move to jpa with hibernate and annotation based mapping"
+        ],
+        "description": [
+            "migrated from novatec jira",
+            "original ticket from the spring version the support for the hibernate is decreasing and we should move away from hibernatetemplate to hibernate as the jpa provider",
+            "the daos should use the entitymanager interface as a standard in jee applications",
+            "in addition we need to move away from the xml mappings and change them with annotation"
+        ],
+        "timespent": "230400",
+        "alpha": 100
+    },
+    {
+        "id": "12303",
+        "project": "INSPECTIT",
+        "summary": [
+            "demo inspectit monitoring for netflix rss reader"
+        ],
+        "description": [
+            "migrated from novatec jira",
+            "original ticket developing of a new test environment for inspectit",
+            "use the rss reader project from netflix",
+            "deploy the components in docker container and use inspectit to monitor it",
+            "put special attention on the http communication between the moduls of the rss reader and the monitoring of this communication",
+            "documentation"
+        ],
+        "timespent": "73800",
+        "alpha": 100
+    },
+    {
+        "id": "12200",
+        "project": "INSPECTIT",
+        "summary": [
+            "adapt the release artifact names to a common pattern"
+        ],
+        "description": [
+            "the release artifact names should be in a common pattern"
+        ],
+        "timespent": "32400",
+        "alpha": 100
+    },
+    {
+        "id": "12117",
+        "project": "INSPECTIT",
+        "summary": [
+            "null value in yesnodetailscellcontent when it is copied out of the detailsdialog"
+        ],
+        "description": [
+            "if the copy action of the is used the string which is copied to the clipboard contains null values if the yesnodetailscellcontent is used and its text is not additionally set",
+            "for example invocation sequence info children count nested sqls null nested exceptions null"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "12111",
+        "project": "INSPECTIT",
+        "summary": [
+            "use fork and join technique for querying the indexing tree"
+        ],
+        "description": [
+            "migrated from novatec jira",
+            "originalticket since the storage is written for java as soon as we switch to it on the cmr i would propose that fork and join technique of java should be used when we query the indexing tree",
+            "the advantage should be that the separate branches that need to be queried in the same query can be processed in parallel",
+            "this would in general brings us the faster query",
+            "however there should be a selection of situations where technique should be used",
+            "it should not be used always since overhead for using it can be bigger than what we would get with parallelism more about fork join in jdk"
+        ],
+        "timespent": "41400",
+        "alpha": 100
+    }
+]

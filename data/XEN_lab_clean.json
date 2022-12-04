@@ -1,0 +1,1000 @@
+[
+    {
+        "id": "13502",
+        "project": "ZONG",
+        "summary": [
+            "slurs not correctly positioned"
+        ],
+        "description": [
+            "see screenshot from brahwimesample.mxl"
+        ],
+        "timespent": "14400",
+        "alpha": 97
+    },
+    {
+        "id": "11306",
+        "project": "ZONG",
+        "summary": [
+            "acquire certificate for code signing"
+        ],
+        "description": [
+            "we want to sign our jar files",
+            "for applets and webstart this is now even required otherwise the apps will be blocked by the default security settings of the jre installations",
+            "certum.pl provides free code signing for open source projects"
+        ],
+        "timespent": "10800",
+        "alpha": 99
+    },
+    {
+        "id": "10800",
+        "project": "UTILS",
+        "summary": [
+            "convenient platform specific functions"
+        ],
+        "description": [
+            "refactor platformutils including jseplatformutils move desktopio instance into the jseplatformutils class and auto-initialize platformutils to get rid of the jseplatformutils-init and calls at the beginning of the unit tests"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "13901",
+        "project": "ZONG",
+        "summary": [
+            "blog entry to sprint"
+        ],
+        "description": [
+            "topics renderer including webapp demo rewrite multistaff beams"
+        ],
+        "timespent": "4500",
+        "alpha": 100
+    },
+    {
+        "id": "13800",
+        "project": "ZONG",
+        "summary": [
+            "load slurs from musicxml"
+        ],
+        "description": [
+            "currently slurs are always now load slurs too"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "13701",
+        "project": "ZONG",
+        "summary": [
+            "cleanup slurcache"
+        ],
+        "description": [
+            "merge into class and cleanup slurstamper parameters"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "13700",
+        "project": "ZONG",
+        "summary": [
+            "rename xystampingrenderer to xyrenderer"
+        ],
+        "description": [
+            "rename xystampingrenderer to xyrenderer",
+            "they still extend stampingrenderer but the name is shorter"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "13600",
+        "project": "ZONG",
+        "summary": [
+            "fragmented beam lines have wrong order"
+        ],
+        "description": [
+            "see screenshot"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "13501",
+        "project": "ZONG",
+        "summary": [
+            "introduce java in all projects"
+        ],
+        "description": [
+            "since now also android and gwt support java features lambda expressions introduce java for all projects and use lambdas from now on"
+        ],
+        "timespent": "26100",
+        "alpha": 100
+    },
+    {
+        "id": "13401",
+        "project": "ZONG",
+        "summary": [
+            "multistaff beams not correctly positioned"
+        ],
+        "description": [
+            "see image"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "12900",
+        "project": "ZONG",
+        "summary": [
+            "introduce dependency injection"
+        ],
+        "description": [
+            "try to add dependency injection into the projects",
+            "we begin with the musicxml project by providing a settings service in document scope for the io classes that tells us how to handle if it works try the same with the readers of probably we will use selfmade dependency injection and no framework since it must be compatible with gwt and google gin seems not to be an active"
+        ],
+        "timespent": "2700",
+        "alpha": 100
+    },
+    {
+        "id": "12700",
+        "project": "ZONG",
+        "summary": [
+            "improve musicxml import with lots of test files"
+        ],
+        "description": [
+            "try to load lots of musicxml files find thousands on website linked on the musicxml website and improve the musicxml and projects"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "12502",
+        "project": "ZONG",
+        "summary": [
+            "beams spanning over two staves"
+        ],
+        "description": [
+            "support and test beams spanning over two staves in a piano score"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "12100",
+        "project": "ZONG",
+        "summary": [
+            "update ide import guide"
+        ],
+        "description": [
+            "the zong build is now completely based on gradle",
+            "update the eclipse wiki page and add an intellij wiki page"
+        ],
+        "timespent": "18120",
+        "alpha": 100
+    },
+    {
+        "id": "11900",
+        "project": "ZONG",
+        "summary": [
+            "try ivy as a package manager for eclipse"
+        ],
+        "description": [
+            "the dependency management of zong is still not satisfying while the gradle build works well the eclipse integration of the required libraries is painful",
+            "now try ivy which is focussed just on dependency management and which seems to have a good eclipse integration"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "11800",
+        "project": "ZONG",
+        "summary": [
+            "eclipse build based on gradle script"
+        ],
+        "description": [
+            "currently the dependencies have to be managed twice for eclipse and for gradle now use a gradle plugin for eclipse to read the dependencies from gradle and get rid of the xenoage simplesync workaround"
+        ],
+        "timespent": "30600",
+        "alpha": 100
+    },
+    {
+        "id": "11608",
+        "project": "ZONG",
+        "summary": [
+            "demo for webapp"
+        ],
+        "description": [
+            "finish the webapp so far that it can be presented to the public as a prototype software",
+            "make it available on the zong website so that everybody can test it without having to download the source code or install something"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "11604",
+        "project": "ZONG",
+        "summary": [
+            "renderer"
+        ],
+        "description": [
+            "renderer implementation for the webapp"
+        ],
+        "timespent": "50400",
+        "alpha": 100
+    },
+    {
+        "id": "11603",
+        "project": "ZONG",
+        "summary": [
+            "javafx renderer"
+        ],
+        "description": [
+            "javafx renderer implementation"
+        ],
+        "timespent": "25200",
+        "alpha": 100
+    },
+    {
+        "id": "11602",
+        "project": "ZONG",
+        "summary": [
+            "clean"
+        ],
+        "description": [
+            "clean up backed up by the musicxml test suite"
+        ],
+        "timespent": "39600",
+        "alpha": 100
+    },
+    {
+        "id": "11601",
+        "project": "ZONG",
+        "summary": [
+            "demo app for developers using zong"
+        ],
+        "description": [
+            "create a simple demo desktop app showing how to use zong as a library",
+            "the demo app should be able to open a musicxml file play it display it and save it to pdf",
+            "document the app in the wiki"
+        ],
+        "timespent": "33600",
+        "alpha": 100
+    },
+    {
+        "id": "11400",
+        "project": "ZONG",
+        "summary": [
+            "reduce null values in musicxml"
+        ],
+        "description": [
+            "currently many classes in the musicxml project can contain null values null for mxlplacement or replace them by default instances and make the calls from simpler remove null"
+        ],
+        "timespent": "9000",
+        "alpha": 100
+    },
+    {
+        "id": "11303",
+        "project": "ZONG",
+        "summary": [
+            "other work"
+        ],
+        "description": [
+            "issue for logging the time needed for other small work"
+        ],
+        "timespent": "39000",
+        "alpha": 100
+    },
+    {
+        "id": "11301",
+        "project": "ZONG",
+        "summary": [
+            "run zong player via webstart"
+        ],
+        "description": [
+            "visitors of the website can start the javafx zong player by clicking on a webstart link",
+            "for this task the zong player has to be bundled and a corresponding jnlp file has to be created",
+            "the link has to be posted on the website"
+        ],
+        "timespent": "41100",
+        "alpha": 100
+    },
+    {
+        "id": "11201",
+        "project": "ZONG",
+        "summary": [
+            "layout tests using the unofficial musicxml test suite and"
+        ],
+        "description": [
+            "create a class which creates and renders layouts for all supported musicxml test suite test cases",
+            "they should be written as images on a html page with two columns",
+            "left side expected result taken from lilyponds docs right side zong results",
+            "this page should be built automatically by the jenkins build server and linked in the zong wiki"
+        ],
+        "timespent": "104400",
+        "alpha": 100
+    },
+    {
+        "id": "11200",
+        "project": "ZONG",
+        "summary": [
+            "unit tests for musicxml and using unofficial musicxml test suite"
+        ],
+        "description": [
+            "finish tests in for both the musicxml and projects"
+        ],
+        "timespent": "124500",
+        "alpha": 100
+    },
+    {
+        "id": "10703",
+        "project": "ZONG",
+        "summary": [
+            "improve stability of project"
+        ],
+        "description": [
+            "improve stability of project"
+        ],
+        "timespent": "149580",
+        "alpha": 100
+    },
+    {
+        "id": "10702",
+        "project": "ZONG",
+        "summary": [
+            "make"
+        ],
+        "description": [
+            "improve stability of project"
+        ],
+        "timespent": "96900",
+        "alpha": 100
+    },
+    {
+        "id": "10701",
+        "project": "ZONG",
+        "summary": [
+            "make layout"
+        ],
+        "description": [
+            "improve stability of layout project"
+        ],
+        "timespent": "447300",
+        "alpha": 100
+    },
+    {
+        "id": "10320",
+        "project": "ZONG",
+        "summary": [
+            "other work"
+        ],
+        "description": [
+            "like project planning some pr in the blog musicxml"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "10319",
+        "project": "ZONG",
+        "summary": [
+            "other work"
+        ],
+        "description": [
+            "like project planning some pr in the blog musicxml"
+        ],
+        "timespent": "29100",
+        "alpha": 100
+    },
+    {
+        "id": "10318",
+        "project": "ZONG",
+        "summary": [
+            "test drawing with javafx"
+        ],
+        "description": [
+            "test drawing scores using javafx draw lines text musical symbols svg test speed on both windows and linux"
+        ],
+        "timespent": "40500",
+        "alpha": 100
+    },
+    {
+        "id": "10317",
+        "project": "ZONG",
+        "summary": [
+            "player project using javafx"
+        ],
+        "description": [
+            "for testing javafx integrate the player project from but use javafx instead of swing"
+        ],
+        "timespent": "85440",
+        "alpha": 100
+    },
+    {
+        "id": "10315",
+        "project": "ZONG",
+        "summary": [
+            "renderer implementation for webclient"
+        ],
+        "description": [
+            "create a concrete renderer implementation for the webclient using canvas and svg symbols"
+        ],
+        "timespent": "32400",
+        "alpha": 100
+    },
+    {
+        "id": "10314",
+        "project": "ZONG",
+        "summary": [
+            "integrate layout and renderer into webclient"
+        ],
+        "description": [
+            "integrate layout and renderer into webclient the payout process and the data structures should work in js for testing output renderer data as text in html page"
+        ],
+        "timespent": "36900",
+        "alpha": 100
+    },
+    {
+        "id": "10311",
+        "project": "ZONG",
+        "summary": [
+            "integrate webviewer project"
+        ],
+        "description": [
+            "integrate the webviewer project from zong should be renamed since we also have a webviewer now which is called zong webclient maybe rename to zong webserver project webserver"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10310",
+        "project": "ZONG",
+        "summary": [
+            "integrate test project"
+        ],
+        "description": [
+            "integrate the test project from zong"
+        ],
+        "timespent": "8700",
+        "alpha": 100
+    },
+    {
+        "id": "10309",
+        "project": "ZONG",
+        "summary": [
+            "integrate androidviewer project"
+        ],
+        "description": [
+            "integrate the androidviewer project from zong should be renamed to remove android from its name maybe renamed to zong mobile project mobile"
+        ],
+        "timespent": "38700",
+        "alpha": 100
+    },
+    {
+        "id": "10308",
+        "project": "ZONG",
+        "summary": [
+            "integrate voc project"
+        ],
+        "description": [
+            "integrate the voc project from zong"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "10307",
+        "project": "ZONG",
+        "summary": [
+            "integrate converter project"
+        ],
+        "description": [
+            "integrate the converter project from zong"
+        ],
+        "timespent": "11700",
+        "alpha": 100
+    },
+    {
+        "id": "10306",
+        "project": "ZONG",
+        "summary": [
+            "integrate project"
+        ],
+        "description": [
+            "integrate the project from zong"
+        ],
+        "timespent": "2700",
+        "alpha": 100
+    },
+    {
+        "id": "10305",
+        "project": "ZONG",
+        "summary": [
+            "integrate project"
+        ],
+        "description": [
+            "integrate the project from zong"
+        ],
+        "timespent": "54900",
+        "alpha": 100
+    },
+    {
+        "id": "10304",
+        "project": "ZONG",
+        "summary": [
+            "integrate musicxml project"
+        ],
+        "description": [
+            "integrate the musicxml project from zong"
+        ],
+        "timespent": "45900",
+        "alpha": 100
+    },
+    {
+        "id": "10303",
+        "project": "ZONG",
+        "summary": [
+            "integrate project"
+        ],
+        "description": [
+            "integrate the project from zong"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "10301",
+        "project": "ZONG",
+        "summary": [
+            "integrate renderer project"
+        ],
+        "description": [
+            "integrate the renderer project from zong"
+        ],
+        "timespent": "24300",
+        "alpha": 100
+    },
+    {
+        "id": "10208",
+        "project": "ZONG",
+        "summary": [
+            "integrate layout project"
+        ],
+        "description": [
+            "integrate the layout project from zong"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "10205",
+        "project": "ZONG",
+        "summary": [
+            "simple prototype for webclient"
+        ],
+        "description": [
+            "using gwt create a simple prototype based on the core project that creates a demo score and writes some information about the score on a html page just to show that it works"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "10204",
+        "project": "ZONG",
+        "summary": [
+            "workflow description from musicxml to device"
+        ],
+        "description": [
+            "in the wiki explain the workflow steps in zong loading a file musicxml internal data structures core layout process layout renderer implementation for devices android"
+        ],
+        "timespent": "12900",
+        "alpha": 100
+    },
+    {
+        "id": "10201",
+        "project": "ZONG",
+        "summary": [
+            "other work"
+        ],
+        "description": [
+            "like project planning some pr in the blog musicxml"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "10200",
+        "project": "ZONG",
+        "summary": [
+            "define more zong version names"
+        ],
+        "description": [
+            "continue in wiki page"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "10100",
+        "project": "ZONG",
+        "summary": [
+            "log time of previous work"
+        ],
+        "description": [
+            "import working hours per year and per user andi and uli into jira",
+            "the details issues are not needed just the hours"
+        ],
+        "timespent": "2400",
+        "alpha": 100
+    },
+    {
+        "id": "10011",
+        "project": "ZONG",
+        "summary": [
+            "define zong version names"
+        ],
+        "description": [
+            "define zong version names can be based on the version names of the earlier proprietary work music history may be repeated and explain them in the wiki"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "10008",
+        "project": "ZONG",
+        "summary": [
+            "acquire free licenses for the atlassian products"
+        ],
+        "description": [
+            "for all atlassian software jira agile confluence stash and bamboo request free licenses which are available for public instances",
+            "see"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "10007",
+        "project": "ZONG",
+        "summary": [
+            "build server and continuous integration based on bamboo"
+        ],
+        "description": [
+            "setup a bamboo server for xenoage utils and create jobs for building and testing both projects",
+            "jenkins which was used so far is great but a local bamboo installation may provide a tighter integration into the whole zong structure including the issue tracker and the wiki"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "10006",
+        "project": "ZONG",
+        "summary": [
+            "source code management based on github"
+        ],
+        "description": [
+            "install stash and move the zong and xenoage utils repositories there",
+            "github which was used so far is great but a local stash installation may provide a tighter integration into the whole zong structure including the issue tracker and the wiki"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "10005",
+        "project": "ZONG",
+        "summary": [
+            "wiki based on confluence"
+        ],
+        "description": [
+            "create a development wiki for zong based on confluence",
+            "create first content a simple page with the projects structure modules and their dependencies a guide how to build zong an overview over the future development plan"
+        ],
+        "timespent": "24300",
+        "alpha": 100
+    },
+    {
+        "id": "10004",
+        "project": "ZONG",
+        "summary": [
+            "issue tracking and project planning based on jira"
+        ],
+        "description": [
+            "setup jira as a replacement for redmine which was hard to manage on the server side"
+        ],
+        "timespent": "29100",
+        "alpha": 100
+    },
+    {
+        "id": "10003",
+        "project": "ZONG",
+        "summary": [
+            "website and blog based on wordpress"
+        ],
+        "description": [
+            "create simple website for the zong poject including a welcome message a blog and links to the other public resources of the zong projects",
+            "after some attempts with drupal and joomla it is now based on wordpress"
+        ],
+        "timespent": "66600",
+        "alpha": 100
+    },
+    {
+        "id": "13300",
+        "project": "UTILS",
+        "summary": [
+            "implement promise for asynchronous results"
+        ],
+        "description": [
+            "promises like in javascript instead of asyncproducer"
+        ],
+        "timespent": "46800",
+        "alpha": 100
+    },
+    {
+        "id": "11500",
+        "project": "UTILS",
+        "summary": [
+            "javafx utils in new project"
+        ],
+        "description": [
+            "move some of the generally useful javafx utils to the new project create the class javafxapp which delivers general information on the current app name vocabulary"
+        ],
+        "timespent": "2700",
+        "alpha": 100
+    },
+    {
+        "id": "11100",
+        "project": "UTILS",
+        "summary": [
+            "simple sync tool for lib updates"
+        ],
+        "description": [
+            "we do not want to upload jar files and other binaries into the git repository but want to put them on the xenoage webserver and update them via a simple sync tool",
+            "this sync tool should be built with a single java class and read a simple xml configuration containing the files and paths"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "11000",
+        "project": "UTILS",
+        "summary": [
+            "gwt implementation"
+        ],
+        "description": [
+            "create a xenoage utils implementation for google web toolkit including implementations for platformutils io inputstream and xmlreader"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "10501",
+        "project": "UTILS",
+        "summary": [
+            "build server broken"
+        ],
+        "description": [
+            "build server does not work any more restart and fix classpath problems in utils and zong"
+        ],
+        "timespent": "1890",
+        "alpha": 100
+    },
+    {
+        "id": "10500",
+        "project": "UTILS",
+        "summary": [
+            "clean up"
+        ],
+        "description": [
+            "merge into move all tests to own project test"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10400",
+        "project": "UTILS",
+        "summary": [
+            "java se implementation for xmlreader and xmlwriter"
+        ],
+        "description": [
+            "create java se implementations for the platform independent xmlreader and xmlwriter classes"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10322",
+        "project": "UTILS",
+        "summary": [
+            "clean up utils"
+        ],
+        "description": [
+            "get rid of integrate them into as far as possible move the pdlib collections based on arraylist and hashmap to rename them from vector to list",
+            "prefix immutable with i prefix closable with c"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "10321",
+        "project": "UTILS",
+        "summary": [
+            "java se dependencies in own project"
+        ],
+        "description": [
+            "clean the utils projects from java se dependencies move all java se dependencies in an own project merge into"
+        ],
+        "timespent": "8100",
+        "alpha": 100
+    },
+    {
+        "id": "10001",
+        "project": "UTILS",
+        "summary": [
+            "update java formatting"
+        ],
+        "description": [
+            "update the formatting of the java source files to reflect the current standard for xenoage projects"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "14200",
+        "project": "ZONG",
+        "summary": [
+            "zoom scores in androidviewer"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "14000",
+        "project": "ZONG",
+        "summary": [
+            "new vserver for website"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "13601",
+        "project": "ZONG",
+        "summary": [
+            "load beams from musicxml"
+        ],
+        "timespent": "1200"
+    },
+    {
+        "id": "12200",
+        "project": "ZONG",
+        "summary": [
+            "reactivate android project and integrate it in android studio and gradle build"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "12001",
+        "project": "ZONG",
+        "summary": [
+            "try buildship gradle integration for eclipse"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "12000",
+        "project": "ZONG",
+        "summary": [
+            "get new code signing certificate and update player"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "11700",
+        "project": "ZONG",
+        "summary": [
+            "other tasks"
+        ],
+        "timespent": "75000"
+    },
+    {
+        "id": "11600",
+        "project": "ZONG",
+        "summary": [
+            "other work"
+        ],
+        "timespent": "29100"
+    },
+    {
+        "id": "11305",
+        "project": "ZONG",
+        "summary": [
+            "recent files list in player does not work"
+        ],
+        "timespent": "600"
+    },
+    {
+        "id": "10600",
+        "project": "ZONG",
+        "summary": [
+            "merge into desktop project"
+        ],
+        "timespent": "900"
+    },
+    {
+        "id": "10109",
+        "project": "ZONG",
+        "summary": [
+            "uli's work in"
+        ],
+        "timespent": "136800"
+    },
+    {
+        "id": "10108",
+        "project": "ZONG",
+        "summary": [
+            "uli's work in"
+        ],
+        "timespent": "144000"
+    },
+    {
+        "id": "10107",
+        "project": "ZONG",
+        "summary": [
+            "uli's work in"
+        ],
+        "timespent": "788400"
+    },
+    {
+        "id": "10106",
+        "project": "ZONG",
+        "summary": [
+            "andi's work in"
+        ],
+        "timespent": "619200"
+    },
+    {
+        "id": "10105",
+        "project": "ZONG",
+        "summary": [
+            "andi's work in"
+        ],
+        "timespent": "54000"
+    },
+    {
+        "id": "10104",
+        "project": "ZONG",
+        "summary": [
+            "andi's work in"
+        ],
+        "timespent": "1681200"
+    },
+    {
+        "id": "10103",
+        "project": "ZONG",
+        "summary": [
+            "andi's work in"
+        ],
+        "timespent": "1008000"
+    },
+    {
+        "id": "10102",
+        "project": "ZONG",
+        "summary": [
+            "andi's work in"
+        ],
+        "timespent": "3589200"
+    },
+    {
+        "id": "10010",
+        "project": "ZONG",
+        "summary": [
+            "create diagrams showing the zong modules and their dependencies"
+        ],
+        "timespent": "9600"
+    },
+    {
+        "id": "10009",
+        "project": "ZONG",
+        "summary": [
+            "write guide how to build zong"
+        ],
+        "timespent": "11400"
+    }
+]

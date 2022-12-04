@@ -1,0 +1,110 @@
+[
+    {
+        "id": "17835",
+        "project": "ALLUXIO",
+        "summary": [
+            "improve javadoc in tieredblockstore#commitblockinternal"
+        ],
+        "description": [
+            "tieredblockstore#commitblockinternal puts its return javadoc after its throws javadoc but the return javadoc belongs between the param section and the throws section"
+        ],
+        "timespent": "28800",
+        "alpha": 99
+    },
+    {
+        "id": "17824",
+        "project": "ALLUXIO",
+        "summary": [
+            "remove unused variables in abstractfilesystem"
+        ],
+        "description": [
+            "the recomputation constants are no longer used"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "17055",
+        "project": "ALLUXIO",
+        "summary": [
+            "problem launching cluster using the vagrant scripts"
+        ],
+        "description": [
+            "forking from a customer report in mailing list also seeing this when playing with deployment script myself happening in both and master",
+            "it shows ssh error however manual ssh connections are okay to instances",
+            "logs using tachyon distribution running provisioner running play all gathering facts fatal ssh error data could not be sent to the remote host",
+            "make sure this host can be reached over ssh fatal tachyonmaster ssh error data could not be sent to the remote host",
+            "make sure this host can be reached over ssh fatal ssh error data could not be sent to the remote host",
+            "make sure this host can be reached over ssh task install libselinux-python fatal no hosts matched or all hosts have already failed aborting play recap to retry use limit tachyonmaster ansible failed to complete successfully",
+            "any error output should be visible above",
+            "please fix these errors and try again"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "16932",
+        "project": "ALLUXIO",
+        "summary": [
+            "add test coverage for nettyremoteblockwriter"
+        ],
+        "description": [
+            "currently this class is only covered by integration tests unit tests are needed"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "16834",
+        "project": "ALLUXIO",
+        "summary": [
+            "rename to"
+        ],
+        "description": [
+            "we have a bunch of classes named utils making it difficult to tell which utils class is being referenced when reading code",
+            "it would be better to clarify the name as webutils",
+            "should also be renamed to"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "14207",
+        "project": "ALLUXIO",
+        "summary": [
+            "clean up local tachyon cluster"
+        ],
+        "description": [
+            "currently the local tachyon cluster has a huge start method and is very difficult to follow",
+            "we should improve the readability of the code by separating logic into methods and adding documentation when appropriate",
+            "there may also be unnecessary logic that can be removed"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "13914",
+        "project": "ALLUXIO",
+        "summary": [
+            "investigate ramdisk on osx"
+        ],
+        "description": [
+            "it seems like the ramdisk provisioned on osx is a few mb smaller than it should be causing out of space errors when the worker thinks it should still have some space left"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "10212",
+        "project": "ALLUXIO",
+        "summary": [
+            "inetsocketaddress may resolve localhost to network address like"
+        ],
+        "description": [
+            "test failed in but changing the original test first one to the second version fixes it",
+            "test public void tostringtest throws ioexception string tfsaddress tachyonfs tfs"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    }
+]

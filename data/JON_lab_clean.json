@@ -1,0 +1,2880 @@
+[
+    {
+        "id": "31757",
+        "project": "LOG",
+        "summary": [
+            "add logback.xml to pomba sdc context builder"
+        ],
+        "description": [
+            "it's been missing for some reason"
+        ],
+        "timespent": "14400",
+        "alpha": 96
+    },
+    {
+        "id": "28912",
+        "project": "SDNC",
+        "summary": [
+            "charts for network discovery and service decomposition include sensitive credential details"
+        ],
+        "description": [
+            "we should probably remove the auth directory and the enricher configuration from we will need to document the configuration steps in our confluence for our demo purposes",
+            "enircher rest client configuration enricher.connectiontimeout=xxxxxxxxxxx enricher.readtimeout=xxxxxxxxx enricher.keystorepath=xxxxxxxxxxxxxxx enricher.keystorepassword=xxxxxxxxxxxxxxxxxxxxxx we should remove the keystore related info from these values are not needed in onap",
+            "aai rest client configuration aai.truststorepath=xxxxxxxxxxxxxxxxxxx aai.keystorepath=xxxxxxxxxxxxxxxxxx aai.keystorepassword=obf:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx aai.keymanagerfactoryalgorithm=xxxxxxxxxxx aai.keystoretype=xxxxxxxxxxxxx prudence"
+        ],
+        "timespent": "14400",
+        "alpha": 97
+    },
+    {
+        "id": "29013",
+        "project": "OOM",
+        "summary": [
+            "oom charts for network discovery and service decomposition include sensitive credential details"
+        ],
+        "description": [
+            "we should probably remove the auth directory and the enricher configuration from we will need to document the configuration steps in our confluence for our demo purposes",
+            "enircher rest client configuration enricher.connectiontimeout=xxxxxxxxxxx enricher.readtimeout=xxxxxxxxx enricher.keystorepath=xxxxxxxxxxxxxxx enricher.keystorepassword=xxxxxxxxxxxxxxxxxxxxxx we should remove the keystore related info from these values are not needed in onap",
+            "aai rest client configuration aai.truststorepath=xxxxxxxxxxxxxxxxxxx aai.keystorepath=xxxxxxxxxxxxxxxxxx aai.keystorepassword=obf:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx aai.keymanagerfactoryalgorithm=xxxxxxxxxxx aai.keystoretype=xxxxxxxxxxxxx prudence"
+        ],
+        "timespent": "3600",
+        "alpha": 97
+    },
+    {
+        "id": "41621",
+        "project": "AAF",
+        "summary": [
+            "release jars docker update new versions"
+        ],
+        "description": [
+            "done however it's flawed",
+            "hello and locate aren't working",
+            "fixed in"
+        ],
+        "timespent": "25200",
+        "alpha": 97
+    },
+    {
+        "id": "23411",
+        "project": "AAF",
+        "summary": [
+            "fix truststore.sh"
+        ],
+        "description": [
+            "truststore.sh content not correct"
+        ],
+        "timespent": "1800",
+        "alpha": 97
+    },
+    {
+        "id": "22727",
+        "project": "AAF",
+        "summary": [
+            "package names not completely changed"
+        ],
+        "description": [
+            "package names from org.osaaf to org.onap not completely changed in config"
+        ],
+        "timespent": "7200",
+        "alpha": 97
+    },
+    {
+        "id": "20760",
+        "project": "AAF",
+        "summary": [
+            "double check and remove as many license issue dependencies as possible"
+        ],
+        "description": [
+            "can't remove ones",
+            "remove references which likely had most of the invalid ones"
+        ],
+        "timespent": "3600",
+        "alpha": 97
+    },
+    {
+        "id": "21039",
+        "project": "AAF",
+        "summary": [
+            "remove code from inno and cadi repos so we can put all in auth"
+        ],
+        "description": [
+            "these should never have been in separate repos",
+            "we'll fix that in beijing"
+        ],
+        "timespent": "1800",
+        "alpha": 98
+    },
+    {
+        "id": "21168",
+        "project": "SDC",
+        "summary": [
+            "implement the new observable notify design"
+        ],
+        "description": [
+            "initialize a list of events to wait for each plugin",
+            "refactor the notify function to return an observable in order for sdc and the plugin to register for a notification on action completed",
+            "solve the observable if the current event doesn't appear on the events to wait list",
+            "dod the mechanism is working with the new notify design",
+            "the isn't broken after implementing said design"
+        ],
+        "timespent": "86400",
+        "alpha": 99
+    },
+    {
+        "id": "17096",
+        "project": "SDC",
+        "summary": [
+            "expose rest for designer config"
+        ],
+        "description": [
+            "need to move the business logic out of the servlet",
+            "currently we're using the old httpclient",
+            "need to update in the future to the new one"
+        ],
+        "timespent": "57600",
+        "alpha": 99
+    },
+    {
+        "id": "17065",
+        "project": "SDC",
+        "summary": [
+            "sdc api documentation mismatch"
+        ],
+        "description": [
+            "on the wiki we can find a docx document about sdc external api on we can read about something that seems to be the internal api please complete/change"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "16009",
+        "project": "SDC",
+        "summary": [
+            "fill administration"
+        ],
+        "description": [
+            "according to the documentation team this what should be in this section describing how roles/permissions are setup for the creation/validation/distribution of service models is probably a good sdc or portal example everything is applicable for changes"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "10903",
+        "project": "OOM",
+        "summary": [
+            "add dcae yaml for cdap cluster stg and collector"
+        ],
+        "description": [
+            "would need to update review to the code if in update git pull enables behavior around of containers up we can move to sdc provisioning and dcae uploaded dcae yaml zip i am going to push for review this code that i was provided by the kubernetes team would be my first commit after push the image changes for using dcae.zip provided by mail from original seed code developer for dcae would like to push entire code set containers and drives docker images need to be pushed to nexus dockerfile entries from the following is a preliminary dcae.sh to retrofit into the createall.sh framework status persistent volumes also created noformat kubectl get pods o wide grep dcae init:imagepullbackoff obriensystemskub0 running containercreating none obriensystemskub0"
+        ],
+        "timespent": "86400",
+        "alpha": 99
+    },
+    {
+        "id": "29293",
+        "project": "LOG",
+        "summary": [
+            "service decomposition service doesn't implement basic auth to aai"
+        ],
+        "description": [
+            "the code that constructs the aai rest client doesnt include the basicauthusername or basicauthpassword builder methods nor are there any properties for specifying the basic auth username/password for aai",
+            "aaiclient public restclient return new restclient validateserverhostname(*false validateservercertchain(*false however i think this code was original adapted from an https client with ssl certificates providing the necessary security",
+            "i guess in the absence of ssl basic auth is better than nothing",
+            "the is using basic auth in queries that could easily be ported to brad"
+        ],
+        "timespent": "28800",
+        "alpha": 99
+    },
+    {
+        "id": "19612",
+        "project": "LOG",
+        "summary": [
+            "cd oom automated deployment script"
+        ],
+        "description": [
+            "put the script we are using in the onap on kubernetes page into source control to be used by developers or the current cd jenkins job plan directory structure of underclouds install/rancher install/kubeadm install/cloudify cloud templates installation wrappers may be deprecated by helm install install/continuous-deployment todo stop before config pod if kubernetes pods are in pending state ip issue todo force delete needed periodically melliott pm kubectl delete pods pod force guys just had an idea the hardcoded onap namespace i was only deleting and i was also running a repo in but my n namespace as dev so a combination of hardcoding and the fact i was not deleting the dev dir fixing all this here is my old state ls dev onap test.sh ls aai appc nexus postgres redis sdnc ls aai appc clamp mso portal sdc sdnc sms vid"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "19611",
+        "project": "LOG",
+        "summary": [
+            "cd kubernetes automated provisioning rancher script for ubuntu vms"
+        ],
+        "description": [
+            "put the rancher script we are using in the onap on kubernetes page into source control to be used by developers or the current cd jenkins job the script will later be used by all the cloud templates as the script tested script for amsterdam and master on clean vms see test results below plan directory structure of underclouds install/rancher install/kubeadm install/cloudify cloud templates installation wrappers may be deprecated by helm install install/continuous-deployment as of on"
+        ],
+        "timespent": "21600",
+        "alpha": 99
+    },
+    {
+        "id": "17731",
+        "project": "LOG",
+        "summary": [
+            "onap wide eelf usage review"
+        ],
+        "description": [
+            "please use the latest from nexus artifacts pending not in use wrapper on commons-logging and logback needs this ri provide a demo to the appc upgrade eelf.version not in use sdc upgrade"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "17421",
+        "project": "LOG",
+        "summary": [
+            "lf add sonar jobs for logging-analytics repo"
+        ],
+        "description": [
+            "see we need sonar jobs enabled for our new java ri code in talk with sebastien hook up see new done see logging-analytics project on sonar yet via up"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "17409",
+        "project": "LOG",
+        "summary": [
+            "logging ri generate logging ri project structure"
+        ],
+        "description": [
+            "purpose a spring parent pom with provisions for multiple sub projects in the logging repo work retrofit original breaking it up into smaller commits setup dev environment clone oparent clone logging-analytics copy reference structure off logging-analytics build oparent mvn clean install u build push war for testing to aws elasticbeanstalk"
+        ],
+        "timespent": "10800",
+        "alpha": 99
+    },
+    {
+        "id": "42002",
+        "project": "CLAMP",
+        "summary": [
+            "create npm package for clamp ui"
+        ],
+        "description": [
+            "add the required files in folder so that the clamp build can create a npm package and upload it to when we ask for a nexus release",
+            "the pom.xml must be modified accordingly so that maven is able to generate that package and upload it"
+        ],
+        "timespent": "288000",
+        "alpha": 99
+    },
+    {
+        "id": "21713",
+        "project": "AAI",
+        "summary": [
+            "aai maven build issues"
+        ],
+        "description": [
+            "master michaelobrien mvn clean install u dskiptests=true info success s failure s info skipped error failed to execute goal on project could not resolve dependencies for project could not find artifact in help"
+        ],
+        "timespent": "900",
+        "alpha": 99
+    },
+    {
+        "id": "37076",
+        "project": "AAF",
+        "summary": [
+            "change generated to utilize"
+        ],
+        "description": [
+            "generated check.sh grabs the local java directory",
+            "this jdk might change so update generator to utilize if it exists"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "30668",
+        "project": "AAF",
+        "summary": [
+            "inconsistent startup with truly persistent cass data"
+        ],
+        "description": [
+            "has truly persistent cass data which case startup didn't recognize",
+            "aaf cass now recognizes whether cass keyspace exists and is at the current onap level and doesn't reload data if it has already been initialized"
+        ],
+        "timespent": "18000",
+        "alpha": 99
+    },
+    {
+        "id": "29758",
+        "project": "AAF",
+        "summary": [
+            "add detail cassandra config to service config container"
+        ],
+        "description": [
+            "external cass access was a future feature",
+            "however,mandeep khinda says that he cannot get oom to work with the containers without it so we will add it now"
+        ],
+        "timespent": "10800",
+        "alpha": 99
+    },
+    {
+        "id": "21646",
+        "project": "AAF",
+        "summary": [
+            "standalone docker cass reports errors for locate"
+        ],
+        "description": [
+            "can't use this cluster instance because it was previously closed may be cleaning may be quorum"
+        ],
+        "timespent": "5400",
+        "alpha": 99
+    },
+    {
+        "id": "33682",
+        "project": "VID",
+        "summary": [
+            "increase code coverage in"
+        ],
+        "description": [
+            "cos achieve code coverage rewrite roletest rolevalidatortest roleprovidertest"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "12123",
+        "project": "SO",
+        "summary": [
+            "update license text on seed code"
+        ],
+        "description": [
+            "lf scan has spotted an inconsistent license text in one of the seed code file"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "33151",
+        "project": "SDC",
+        "summary": [
+            "deployment through sdc shell script testing"
+        ],
+        "description": [
+            "remove plugin configuration from catalog frontend testing"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "24254",
+        "project": "SDC",
+        "summary": [
+            "component questionnaire data retention"
+        ],
+        "description": [
+            "nfc naming code and nfc function fields values are wiped out with a vsp update disk attributes in component questionnaire are not retained after healing on existing data after fixing above"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "20406",
+        "project": "SDC",
+        "summary": [
+            "analyze and fix iq server violations distribution-client"
+        ],
+        "description": [
+            "review iq server violations dod analyze all issues identified",
+            "review items and decide on what can be fixed",
+            "fix items",
+            "items that cannot be fixed should bedocumented in thecopied template"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "20405",
+        "project": "SDC",
+        "summary": [
+            "analyze and fix iq server violations jtosca"
+        ],
+        "description": [
+            "review iq server violations dod analyze all issues identified",
+            "review items and decide on what can be fixed",
+            "fix items",
+            "items that cannot be fixed should bedocumented in thecopied template"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "19323",
+        "project": "SDC",
+        "summary": [
+            "test the actions added to the hub using the mock designer"
+        ],
+        "description": [
+            "add listeners to the different actions being published by the test if the mock designers that will listen to those actions will receive the correct notifications"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "19322",
+        "project": "SDC",
+        "summary": [
+            "implement usage of hub notify in the required actions"
+        ],
+        "description": [
+            "add usage of the notify events to the required actions that sdc needs to notify the different plugins about the action list can be found in the plugins architecture design document"
+        ],
+        "timespent": "115200",
+        "alpha": 100
+    },
+    {
+        "id": "18706",
+        "project": "SDC",
+        "summary": [
+            "align configuration for new design an implement new behavior"
+        ],
+        "description": [
+            "the sdc user role should be added to the contextpassed in all cases",
+            "v the fe server configuration should be enhancedto allow the definitionof roles in which the plugin is displayed",
+            "v the uineed to supportthisfunctionality",
+            "v enhancethe contextdefinitionto in the future this may supportcp vletc",
+            "remove the use of favor of a single url",
+            "pluginsourceurl update a configuration with discovery url and plugin url",
+            "plugindiscoveryurl"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "18702",
+        "project": "SDC",
+        "summary": [
+            "change the use of designer to plugin in the code"
+        ],
+        "description": [
+            "change the definitionsacross theimplementation from the designer plugin"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "18392",
+        "project": "SDC",
+        "summary": [
+            "add option for passing query params to the iframe"
+        ],
+        "description": [
+            "add an option to pass query params to the component",
+            "the params to be passed are defined in the designer integration architecture document"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "18388",
+        "project": "SDC",
+        "summary": [
+            "add designers service to handle actions considering the designers configuration"
+        ],
+        "description": [
+            "add designers service in project to handle all the actions that consider the designers configuration"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "18333",
+        "project": "SDC",
+        "summary": [
+            "update jtosca packages"
+        ],
+        "description": [
+            "as a ptl i want to alignthejtosca packages so thatjtosca will have the same namespace as the onap project",
+            "dod update all the packages folders and imports from org.openecomp org.onap update the pom file and change the artifact id grep the code for org.openecompreview the item found and decide what should be done with them",
+            "update the sdcprojects using this artifact(sdcand sdctosca with the new dependencyand align imports",
+            "update the artifactversion in pom and properties version",
+            "the code compiles and unit tests pass",
+            "create arelease version"
+        ],
+        "timespent": "120",
+        "alpha": 100
+    },
+    {
+        "id": "18076",
+        "project": "SDC",
+        "summary": [
+            "create component for that will be dynamic"
+        ],
+        "description": [
+            "as a designer i want to be able to display different designers view from a resource scope",
+            "need to dynamically add designers to of resource according to resource types from the designers configuration",
+            "create the component each designer will use the component",
+            "dod the user will be able to see the tabs of the connected designers the user will be able to click on the wanted tab and the required designer will be displayed in the resource scope"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "18075",
+        "project": "SDC",
+        "summary": [
+            "update configuration to support new display options"
+        ],
+        "description": [
+            "the designers configuration needs to be updated to support the option to be opened as a tab in resource context and as a designer in application context",
+            "each designer will have the following structure in the configuraiton id url currently separated into different url parts stateurl position top displayname topdisplay tab displayname tabdisplay validresourcetypes dod the new designers configuration will be received by the ui and will match the defined designer model",
+            "the ui will support the new designers definition all previous flows will not be broken by this change"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "17598",
+        "project": "SDC",
+        "summary": [
+            "create component and create tabs dynamically"
+        ],
+        "description": [
+            "as a designer i want to be able to switch to different designers from the top in sdc the designers will be read from the designers configuration coming from the be for each designer the ui will create a view dynamically and an iframe component",
+            "all the components needs to be angular components",
+            "dod the user will be able to see all the connected designers in the top the user will be able to click on a designer and to see the designer view in an iframe"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "17464",
+        "project": "SDC",
+        "summary": [
+            "when the manufacture reference number in a feature group is changed manufacturer reference number on ep and lkg in vendor license model is not updated"
+        ],
+        "description": [
+            "pfa mail and refer point"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "17403",
+        "project": "SDC",
+        "summary": [
+            "jenkins job validation"
+        ],
+        "description": [
+            "go over the current sdcjenkinsjob check that all jobsarepassing if some jobs are failing rerun or open tickets to lf",
+            "send mail to lf to remove all the dockers that are with version"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "17400",
+        "project": "SDC",
+        "summary": [
+            "validate vnf sdk integration"
+        ],
+        "description": [
+            "after the code marge of the feature we need to validate its functionality",
+            "start vnf sdk dockerrun t dockerrun need to add wiki entry to explain how to setup the vnf sdk environment and how to configure it dod the code is available in amsterdam and beijingbranch",
+            "the code works correctlyin both branches"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "16791",
+        "project": "SDC",
+        "summary": [
+            "sdc designer integration part"
+        ],
+        "description": [
+            "sdc is creating a framework for onboarding new designers",
+            "the framework will allowthe addition of newdesigners regardlessof theui languagechosen",
+            "add supportfor opening the iframe as part of the vf or service context",
+            "based on the configuration defined for the designerin thrfe server thesdc ui will opentheiframe in the tab or in the context of avf service or both",
+            "the order of the designers willbeassigned according to theirlocation in the configuration",
+            "add designers service to handle actions considering the designers configuration dod the designer can be displayed inthe tab or in the contextof the service/resourcedefined by the configuration defined allowscontrolover where the designer will be displayed",
+            "define a way to pass parametersto the iframe when it is loading",
+            "in tab context the iframe should receivethe logged user in the service/resource context it should recive the type of view the id and the life cycle state if the service/resource in the configuration define a url for retrieving the designer ui and a url for discovery"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "16776",
+        "project": "SDC",
+        "summary": [
+            "clean up and update docker run script"
+        ],
+        "description": [
+            "clan all unneeded and commented out sections of the docker run script",
+            "alignindentation of the script",
+            "add a descriptionto the parameters usedin the script",
+            "remove the use of swap memory in the docker run commands and remove memory from fe docker run update the fedocker to use ram by updating the java options in the add a wiki entry explaining the use of our docker run",
+            "dod after the updates the docker run flags still work",
+            "the two basic flows start local dockers and pull remote dockers can be successfully executedusing the script",
+            "the memory update works successfully",
+            "the memory consumption does not raise other time"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "16678",
+        "project": "SDC",
+        "summary": [
+            "update the docker image name to use onap instead of openecomp"
+        ],
+        "description": [
+            "update the image name for the sdc dockers and sdc base dockers from openecomp to this will be the first time we are using the new docker base images dod update base image names in the pom",
+            "validate jenkins build pass successfully after the change",
+            "update the fromin the sdcdocker images to the new docker base updatesdc image names in the pom",
+            "validate jenkins build pass successfully after the change",
+            "validate the dockers start successfully",
+            "execute sanity successfully"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "16654",
+        "project": "SDC",
+        "summary": [
+            "manage to set up an angular app with angular component and react component"
+        ],
+        "description": [
+            "currently want to use shadow dom",
+            "needs to check if firefox has native support or not",
+            "if not need to think of a different approach"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "16525",
+        "project": "SDC",
+        "summary": [
+            "create unit test using csar from onap"
+        ],
+        "description": [
+            "create unit test using csar from onap make tuning to csar and validate there is no warning errors in jtosca log"
+        ],
+        "timespent": "129600",
+        "alpha": 100
+    },
+    {
+        "id": "16522",
+        "project": "SDC",
+        "summary": [
+            "update vsp by resetting the vlm and uploading new heat",
+            "could not submit"
+        ],
+        "description": [
+            "update existing vsp by resetting the vlm and uploading new heat",
+            "could not submit see attached error",
+            "i have also attached the heat which we had successfully used last evening in ete",
+            "it did pass validation without any errors",
+            "findings components errors error when submitting the vsp",
+            "i have attached the vsp export from psl"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "16490",
+        "project": "SDC",
+        "summary": [
+            "sdc designer integration part"
+        ],
+        "description": [
+            "sdc is creating a framework for onboarding new designers",
+            "the framework will allowthe addition of newdesigners regardlessof theui languagechosen",
+            "create a logic for adding new designers and theirserver location the configuration should be runtime editable",
+            "the configuration will include the designer name as will be shown in the ui it will include the location of the server and port of the designer uiand it will provide a path for retrieving the ui interface",
+            "the fewill expose an apifor retrievingthe designerinfo",
+            "when the request is received the fe will check if the designer is availablebased on a head request to the designer",
+            "if the response is receivedthe designer info will be included in the response request",
+            "dod define and add anew configuration for the designer servers",
+            "the configuration should be runtime editable",
+            "the apiis exposed and provides corectinformation unit tests are added to the devlopedlogic"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "16489",
+        "project": "SDC",
+        "summary": [
+            "code sync"
+        ],
+        "description": [
+            "sync internal and external code",
+            "create the abilityto separate the onap types creation from the main import dod remove patches created all code compiles successfullywithout a profile",
+            "all code compiles successfullywith catalogprofile",
+            "import normative works after the change",
+            "sanity flow works and successfullyexecutes",
+            "automation is successfully executedon the merged code to prevent regression"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "16233",
+        "project": "SDC",
+        "summary": [
+            "adoption research"
+        ],
+        "description": [
+            "forbeijing the deployment ofonap will be oom based",
+            "sdc needs to set up reviewand understand the deployment and their requirements",
+            "dod setup oom deployment with the full onapstack without review the sdc deployment by the oom",
+            "set up a meeting to showcase theoomand how it works",
+            "set up a session to review the sdcdeploymentby oom"
+        ],
+        "timespent": "144780",
+        "alpha": 100
+    },
+    {
+        "id": "16047",
+        "project": "SDC",
+        "summary": [
+            "general arrangement for the docs"
+        ],
+        "description": [
+            "this task is for small fixes and changes around all the docs page"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "16016",
+        "project": "SDC",
+        "summary": [
+            "fill installation"
+        ],
+        "description": [
+            "for now we will put the following links"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "16015",
+        "project": "SDC",
+        "summary": [
+            "fill human interfaces"
+        ],
+        "description": [
+            "according to the documentation team this is what this section should include for the human interfaces section of sdc we were hoping to leverage the existing design documentation under using onap on the developer wiki",
+            "that entire section was seed documentation based on sdc code but obviously needs to be validated edited to match onaps sdc functionality"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "16014",
+        "project": "SDC",
+        "summary": [
+            "fill delivery"
+        ],
+        "description": [
+            "according to the documentation team this is what this section should include packaging eg artifacts for a library containers or executables for a run time component"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "16010",
+        "project": "SDC",
+        "summary": [
+            "fill architecture"
+        ],
+        "description": [
+            "according to the documentation team this is what this section should include examples from other projects cli policy"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "15915",
+        "project": "SDC",
+        "summary": [
+            "change of sdc artifact generator version from to for amsterdam"
+        ],
+        "description": [
+            "the needs to be added in amsterdam to make the version of sdc artifact generator to"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "15216",
+        "project": "SDC",
+        "summary": [
+            "refactoring of module in onboarding"
+        ],
+        "description": [
+            "refactoring of module in onboarding"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "12161",
+        "project": "SDC",
+        "summary": [
+            "support for ucpe usecase"
+        ],
+        "description": [
+            "all the us below a relevantto supporting and testing"
+        ],
+        "timespent": "115560",
+        "alpha": 100
+    },
+    {
+        "id": "11900",
+        "project": "SDC",
+        "summary": [
+            "cannot access kibana dashboard after logged into sdc as an admin user"
+        ],
+        "description": [
+            "cannot access kibana dashboard after logged into sdc as an admin user docker version is see following page as reference"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "11596",
+        "project": "SDC",
+        "summary": [
+            "remove mojohaus maven from pom file"
+        ],
+        "description": [
+            "the mojohaus maven was previously used to add automatically a license to a file",
+            "since any new file is not necessary created under the license the needs to be removed"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "10101",
+        "project": "SDC",
+        "summary": [
+            "ete test model distribution add license model status"
+        ],
+        "description": [
+            "all ete tests are failing on model distribution on the add license model operation",
+            "request iconref icon vendorname description vendor license model"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "16290",
+        "project": "POLICY",
+        "summary": [
+            "modify junit tests to improve consistency of success in"
+        ],
+        "description": [
+            "latest example failure"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "14283",
+        "project": "POLICY",
+        "summary": [
+            "junit coverage"
+        ],
+        "description": [
+            "increase junit code coverage of"
+        ],
+        "timespent": "36000",
+        "alpha": 100
+    },
+    {
+        "id": "13396",
+        "project": "POLICY",
+        "summary": [
+            "move features globalinit tasks to policyengine.afterstart"
+        ],
+        "description": [
+            "the and globalinit functions initializes infrastructure such as the droolspdpintegritymonitor before the topic endpoints and controllers are up",
+            "this has the potential of causing issues in the future if a dependency ever exists on those infrastructure elements",
+            "to avoid any issue the initialization code should be moved to then you can remove the dependency on and remove the policysessionfeatureapi implementation",
+            "care should be taken to assign sequence numbers so that the correct order of initialization is maintained between the and note that an instance of policyengine is required on the call to in the junit implementation this can be accomplished by either creating a dummy policyengine instance or passing policyengine.manager to the method",
+            "see junits for example"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "12933",
+        "project": "POLICY",
+        "summary": [
+            "remove new sonar blocker and criticals"
+        ],
+        "description": [
+            "is showing new blocker a criticals"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "11969",
+        "project": "POLICY",
+        "summary": [
+            "addition of feature"
+        ],
+        "description": [
+            "add management which controls the state of the drools pdp it monitors states and controls of both within and across sites",
+            "this provides the controls which allows persisted policy transactions to be assumed by a drools pdp whose standby state has been promted to providing service",
+            "this depends on an state management system"
+        ],
+        "timespent": "165600",
+        "alpha": 100
+    },
+    {
+        "id": "11968",
+        "project": "POLICY",
+        "summary": [
+            "addition of state-management feature"
+        ],
+        "description": [
+            "add state management capabilities to the drools pdp",
+            "this provides the state management for the managment"
+        ],
+        "timespent": "360000",
+        "alpha": 100
+    },
+    {
+        "id": "11785",
+        "project": "POLICY",
+        "summary": [
+            "addition of policy-persistence feature"
+        ],
+        "description": [
+            "this adds a feature for policy-persistence which persists the state of drools pdp transactions and makes that state available across all drools pdp",
+            "this allows the transactions which were being served by a drools pdp which has failed to be assumed by another drools pdp which is designated as active by the management feature"
+        ],
+        "timespent": "540000",
+        "alpha": 100
+    },
+    {
+        "id": "11541",
+        "project": "POLICY",
+        "summary": [
+            "junit test code coverage"
+        ],
+        "description": [
+            "as an onap developer i want to ensure the seed code coverage of the junit tests so that i can meet onap guidelines for incubation projects"
+        ],
+        "timespent": "64800",
+        "alpha": 100
+    },
+    {
+        "id": "19501",
+        "project": "OPENLABS",
+        "summary": [
+            "openlab ips missing as of"
+        ],
+        "description": [
+            "stephen likely a temporary provider issue",
+            "looks like all ip addresses missing from all the tenants as of today was an error in a tenant cleanup script at est tested bringing back up my oom stack ok for now"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "12109",
+        "project": "OPENLABS",
+        "summary": [
+            "setup remote access enviroment"
+        ],
+        "description": [
+            "construct the environment for remote access"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "17479",
+        "project": "OOM",
+        "summary": [
+            "two pods not starting under oom crashloopbackoff under rancher"
+        ],
+        "description": [
+            "fix use rancher avoid or until we solve issues related to and basic setup two hosts devstack rancher kubernetes oom onap the following containers fail to start namespace name ready status restarts age crashloopbackoff kubectl describe n po name namespace node start time wed jan labels app=elasticsearch annotations kind serializedreference apiversion reference kind replicaset namespace name uid status running ip created by controlled by containers elasticsearch container id image id ports state waiting reason crashloopbackoff last state terminated reason error exit code started wed jan finished wed jan ready false restart count readiness environment none mounts from elasticsearch-conf rw from elasticsearch-data rw from elasticsearch-logs rw from ro conditions type status initialized true ready false podscheduled true volumes elasticsearch-data type persistentvolumeclaim a reference to a persistentvolumeclaim in the same namespace claimname elasticsearch-db readonly false elasticsearch-logs type hostpath bare host directory volume path elasticsearch-conf type configmap a volume populated by a configmap name elasticsearch-configmap optional false type secret a volume populated by a secret secretname optional false qos class besteffort none tolerations for events type reason age from message warning failedsync over kubelet error syncing pod kubectl describe n po name namespace node start time wed jan labels annotations kind serializedreference apiversion reference kind replicaset namespace name uid status running ip created by controlled by containers container id image id port none state waiting reason crashloopbackoff last state terminated reason error exit code started wed jan finished wed jan ready false restart count environment password mounts from localtime ro from rw ro conditions type status initialized true ready false podscheduled true volumes localtime type hostpath bare host directory volume path type emptydir a temporary directory that shares a lifetime medium type configmap a volume populated by a configmap name optional false type secret a volume populated by a secret secretname optional false qos class besteffort none tolerations for events type reason age from message warning backoff over kubelet restarting failed container normal pulled over kubelet successfully pulled image normal pulling over kubelet pulling image warning failedsync over kubelet error syncing pod"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "17243",
+        "project": "OOM",
+        "summary": [
+            "upgrade kubernetes from to"
+        ],
+        "description": [
+            "upgrade to kubernetes will break secrets for docker pulls see issues with nexus secrets in that we need to fix or get fixed first before we consume the new features in see fixed in the following fails to create the secret properly kubectl namespace create secret docker-registry related issues our move to helm to be able to use the tpl function is blocked by an issue with our container as helm comes is with rancher we are still on using helm fixed our move to kubernetes is blocked by an issue in the way we store docker repo secrets i will look into using the older approach so we can move from our move off docker is dictated by the version of rancher that kubernetes works with our move off ubuntu to is dictated by the version of ubuntu rancher is good with more minor essentially we need to fix the issue with to bump helm which will allow us to use a later rancher and then fix the docker secret issue in kubernetes issues docker pulls involving protected nexus server secrets failing after kubernetes upgrade from upgrade kubernetes from to rancher issues we cannot move to which contains the server version of helm until is fixed rancher will run docker via up from for elasticsearch container memory config too low to start fix sysctl w under rancher deployment poc helm upgrade from to oom container down since after helm upgrade from to and rancher on same day"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "16774",
+        "project": "OOM",
+        "summary": [
+            "helm upgrade from to"
+        ],
+        "description": [
+            "update we are good for on rackspace and aws as well working now note rancher upgraded next test update rancher helm docker kubernetes kubectl ok team we need to do the rancher and helm client upgrade rancher from and cover off the ram and issues will post links shortly we need to fix running on helm see also raising priority by request as several teams run into this issue running helm one issue i covered off is the new docker image it came out a couple months before the helm update and also has the issue full integration testing on multiple deployment environment will certify our move from rancher upgrade procedure for"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "16350",
+        "project": "OOM",
+        "summary": [
+            "log containers fail to create since using tpl template function on helm not"
+        ],
+        "description": [
+            "rolled back the change merged yesterday and tested it looks like the original change to work around the hardcoded onap namespace was not tested properly",
+            "the templating tpl function should work see the oom cd job picked this up at utc see kibana query"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "15221",
+        "project": "OOM",
+        "summary": [
+            "sdc logback chef failure"
+        ],
+        "description": [
+            "the elk work externalized the logback file and the chef boot process of needs to create this file so it fails and never truly comes up properly",
+            "the culprit is the following mountpath it seems has the same issue however it used a work around that externalizes the file in tmp and then overwrites the logback.xml file post container startup",
+            "be needs to do the same"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "11697",
+        "project": "OOM",
+        "summary": [
+            "update pom to inherit from oparent"
+        ],
+        "description": [
+            "refactor pom to inherit from oparent",
+            "remove local settings related to nexus and checkstyle",
+            "the goals of oparent are to centrally define shared parent pom definitions such as nexus distributionmanagement location coding styles license checks coding style checks sonar setup etc",
+            "for additional details see"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "29353",
+        "project": "LOG",
+        "summary": [
+            "source of service uuids passed by aai and network discovery builders is inconsistent"
+        ],
+        "description": [
+            "aai service instance uuid shows the value of model version id uuid nd service instance uuid shows the value of service instance id"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "17488",
+        "project": "LOG",
+        "summary": [
+            "add esr to cd infrastructure"
+        ],
+        "description": [
+            "there is a new namespace in master error release not found error from server notfound namespaces not found error from server notfound not found service account deleted"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "16458",
+        "project": "LOG",
+        "summary": [
+            "oom container down since after helm upgrade from to and rancher on same day"
+        ],
+        "description": [
+            "update fix rancher not with helm instead of helm docker run d issue the pod started crashing at dec the rest of the system except for the elk elasticsearch regression is ok portal healthcheck is ok we should include the went through the commits the only one that went in at that time is forced a helm upgrade as part of rancher but nothing should affect it is self contained turns out that the helm upgrade to is breaking this",
+            "server version in rancher is but in it is mb days ago check versions basic portal health check pass see pending at the sec interval crashloopbackoff pending at the sec interva report on containers crashloopbackoff the last successful pod was the cd system was down for hours after that for migration build pm pending at the sec interval running pending at the sec interva tried running older version of from before days ago"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "16948",
+        "project": "LOG",
+        "summary": [
+            "add aai cert to cd.sh to do put before robot init"
+        ],
+        "description": [
+            "see"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "16437",
+        "project": "LOG",
+        "summary": [
+            "conf only cd logstash/elasticsearch/kibana"
+        ],
+        "description": [
+            "get docker compose elk stack add jenkins logstash plugin"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "16288",
+        "project": "LOG",
+        "summary": [
+            "install elk server for cd history/presentation"
+        ],
+        "description": [
+            "workaround"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "16281",
+        "project": "LOG",
+        "summary": [
+            "conf only cd jenkins"
+        ],
+        "description": [
+            "we are on rackspace instead of aws for the servers kill the following taking cpus root s eyshcjdmzg gitlab s prometheus sudo kill using aws docker host"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "15953",
+        "project": "LOG",
+        "summary": [
+            "onap using oom kubernetes"
+        ],
+        "description": [
+            "title using oom kubernetes address full name michael company amdocs biography characters maximum the talk type presentation panel discussion hands on presentation for your proposal onap using oom kubernetes abstract character maximum development at onap occurs on the master branch",
+            "the onap project is therefore in need of an automated integration sanity to declare a particular tagged build sane and working at some defined level of functionality",
+            "this tagged build would represent a snapshot of artifacts and docker images usually a nightly or commit triggered tag",
+            "automatically determining the status of the master branch can be accomplished by running a continuous deployment framework after ci finishes and builds the artifacts in response to a git merge trigger callback",
+            "this presentation will go over a particular implementation of a short regression test as opposed to a full long regression that exercises an extended health check and the automated subset of the vfirewall use case demo to mark a particular tagged build as good",
+            "developers can then consume the and update their environments with only builds marked as ok a tbd this cd job can also verify that a commit did not break integration with other components as much as the sanity can provide maximum spanning coverage for",
+            "the presentation will run from triggered jenkins jobs that deploy for example an amazon aws spot vm deploy oom run health and the vfirewall collect and tear down the temporary vm",
+            "the process from the jenkins artifact creation trigger to vm teardown is between min per trigger depending on docker image preload",
+            "a combination of several and parallel live/background demos will compress the actual time to demonstrate onap cd in several passes",
+            "northbound clients like the opnfv auto project and cncf can also mark builds as ready to work with by subscribing to the cd result stream",
+            "in summary automatically deploy onap oom based on git submission artifact generation run extended healthcheck and automated parts of vfirewall sanity use case report back on whether specific tag code artifacts docker image repos is sane and ready for developer and northbound cncf opnfv consumption by default tear down oom deployment after testing or keep a rolling set up for testing or provide saved tagged ami for later reproduction the cd deploy will depending on load test or more merges per cd job see redeploy sh script on deployment integration jenkins job using to validate branch rotating live deployments in a public lab on aws feeds directly into the development process could show benefits vs docker compose/vagrant cncf crosscloud integration with onap discuss opnfv northbound client integration with onap discuss results of opnfv plugfest week before our see prototype on see tracking wiki at see tracking jira at recommended prerequisites an introduction to the onap operations manager oom deploy on any environment recommended follow up presentations for developers"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "18870",
+        "project": "LOG",
+        "summary": [
+            "get running on bridge for logging"
+        ],
+        "description": [
+            "status ok get running so we can capture logs from dmaap policy dcae and appc in closed loop use case scenarios details on the first step of getting a system up troubleshooting the heat deployment dcae bootstrap requires aai for example so the entire openstack yaml is required later we can purge some duplicate vms the workaround for is to reboot the vm then reboot dcae rm the boot container and run docker logs f boot to watch the cloudify logs in a separate terminal following this jira instead from the oom side instead of the heat side writing up alexis just an fyi that several of us will be switching to bringing up amsterdam oom tomorrow to try to get dcae running via all your work on designate and everything else there",
+            "i have been in master for the last weeks at least outside of most of this",
+            "the focus is to get closed loop running for ourselves as well as we started late nov in the calls you drove that you continued with after that week reviewing already merged looked at this in the past looking more deeply now starting to look more at wip work as well under we will be deploying both heat and oom for this hybrid environment on a local openstack here",
+            "so just keeping you in the loop",
+            "any issues we will keep and follow the discussions in public as usual michael update working all of dcae is up via oom including the cdap nodes issue was each tenant hits its floating ip allocation after dcae installs we run out of ips because they are not deleted",
+            "fix delete all unassociated ips before brining up we cannot mix cloudify blueprint orchestration with manual openstack deletion once in a blueprint we need to remove everything orchestrated on top of heat using the cloudify manager or do as the integration team does and clean the tenant before a deployment"
+        ],
+        "timespent": "151200",
+        "alpha": 100
+    },
+    {
+        "id": "18336",
+        "project": "LOG",
+        "summary": [
+            "platform maturity beijing required security badging procedure"
+        ],
+        "description": [
+            "follow using my github account evidence"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18309",
+        "project": "LOG",
+        "summary": [
+            "logging ri add eclipse classpath and project structure required to debug war in ide"
+        ],
+        "description": [
+            "tested on sts springsource tool suite eclipse oxygen on and tomcat and a breakpoint at"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "17841",
+        "project": "LOG",
+        "summary": [
+            "delete logging-analytics reference config after doing a sync first"
+        ],
+        "description": [
+            "here it should be a straight delete after the sync was previously done entire tree below all component trees below"
+        ],
+        "timespent": "1320",
+        "alpha": 100
+    },
+    {
+        "id": "17754",
+        "project": "LOG",
+        "summary": [
+            "logging ri code oom kubernetes template/values yamls for ri microservice and filebeat container"
+        ],
+        "description": [
+            "code up a dual pod containing the microservice developed for the ri and a filebeat container to push logs to the onap oom elk stack these yamls should ideally be pushed to the oom repository however the structure including the scripts could be in logging-analytics alongside the ri code and the docker image spec",
+            "need to discuss more which repo to put it in as if we put it with oom then it will need to be disabled by default",
+            "see the sniro container in the robot namespace we are essentially the same",
+            "see existing code for the following see documentation for logging side container"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "17753",
+        "project": "LOG",
+        "summary": [
+            "logging ri microservice docker image"
+        ],
+        "description": [
+            "the image can be pushed to the dockerhub for expediency for now in this image should contain the ri war so we can run multiple copies of the image in a pod to simulate requestid passing in a couple simple rest calls between containers dockerfile get the war from the target dir of"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "17750",
+        "project": "LOG",
+        "summary": [
+            "logging ri logging library aop code"
+        ],
+        "description": [
+            "purpose an aop logging library jar to be used by onap component teams acceptance criteria library can log via before and after advice the of a function call library provides for requestid and invocationid tracking via logging guidelines library provides for eelf compliance see"
+        ],
+        "timespent": "300",
+        "alpha": 100
+    },
+    {
+        "id": "17712",
+        "project": "LOG",
+        "summary": [
+            "remove reference logging config in logging-analytics repo use oom config implementation only"
+        ],
+        "description": [
+            "issue we have duplicate logging config in oom and logging-analytics entire tree below all component trees below why i am reverse engineering here but it looks like we have a reference logging for use by oom and heat",
+            "since heat is now deprecated in beijing we can remove the reference and just use the runtime config in oom this will also solve a lingering issue where the copies are not kept in sync",
+            "this must also be coordinated with the tarball config refactor going on getting epic please expand split"
+        ],
+        "timespent": "3660",
+        "alpha": 100
+    },
+    {
+        "id": "17420",
+        "project": "LOG",
+        "summary": [
+            "lf add jenkins onap jobbuilder infrastructure for logging-analytics repo"
+        ],
+        "description": [
+            "since we are adding reference java ri code we need to enable the trigger initiated onap jobbuilder in jenkins with the help of the lf see new"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "17149",
+        "project": "LOG",
+        "summary": [
+            "logging api audit existing code"
+        ],
+        "description": [
+            "purpose go through the existing onap code and figure out how where and to what extent we are using spring and logging why as part of we are proposing using spring aop to create a logging reference library and a ri to use it",
+            "as part of this we need to know to what extent we are using the spring framework and how we are logging and using eelf specifically across onap",
+            "additional to this get an audit of individual versions and recommend a standard version for our ri in acceptance criteria we understand where we are using spring where we are using eelf and where we are using logging libraries custom to onap libraries/existing api's and mixed versions need an answer please use the latest from nexus artifacts pending not in use wrapper on commons-logging and logback needs this ri provide a demo to the appc upgrade eelf.version not in use sdc upgrade raw data to retrofit above"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "15000",
+        "project": "LOG",
+        "summary": [
+            "extract componentname from the source path of log files"
+        ],
+        "description": [
+            "add a filter in logstash config file to extract componentname from the source path of log files",
+            "the current source path for log files is"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "37500",
+        "project": "DCAEGEN2",
+        "summary": [
+            "security vulnerabilities"
+        ],
+        "description": [
+            "following vulnerabilities are identified in clm scan",
+            "evaluation of the risk not impacted provide justification on each on why the vulnerability wont apply if impacted try to the dependencies if work around exist",
+            "or upgrade version as recommended last column if dependency cannot be removed for dublin ex jackson no version available please identify them and provide a plan on how this could be resolved in future",
+            "hibernate-validator validator before final and it was found that when the security manager's reflective permissions which allows it to access the private members of the class are granted to hibernate validator a potential privilege escalation can occur",
+            "by allowing the calling code to access those private members without the permission an attacker may be able to validate an invalid instance and access the private member value via to application is vulnerable by using this component when default typing is enabled and passing in untrusted data to be deserialized",
+            "note spring security has provided their own fix for this vulnerability if this component is being used as part of spring security then you are not vulnerable if you are running spring security or greater for or spring security or greater for request exception if cannot be addressed in time for dublin will need to be handled for e release",
+            "is vulnerable to remote code execution the validatesubtype function in the subtypevalidator class allows untrusted java objects to be deserialized",
+            "a remote attacker can exploit this by uploading a malicious serialized object that will result in rce if the application attempts to deserialize it",
+            "workaround do not use the default typing",
+            "instead you will need to implement your request exception if cannot be addressed in time for dublin will need to be handled for e release",
+            "application is vulnerable by using this component when default typing is enabled and passing in untrusted data to be deserialization",
+            "workaround do not use the default typing",
+            "instead you will need to implement your request exception if cannot be addressed in time for dublin will need to be handled for e release",
+            "fasterxml package contains a denial of service dos vulnerability",
+            "the deserialize method in the durationdeserializer class and the fromdecimal method in the instantdeserializer class allow arbitrarily large bigdecimal initialization values",
+            "a remote attacker can exploit this vulnerability by crafting and submitting a request that causes the application to deserialize an inordinately large value causing the application to hang and leading to a dos situation",
+            "the application is vulnerable by using the durationdeserializer or instantdeserializer classes of this component to deserialize untrusted request exception if cannot be addressed in time for dublin will need to be handled for e release"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "27230",
+        "project": "CLAMP",
+        "summary": [
+            "due to tosca parser version"
+        ],
+        "description": [
+            "clamp sdc adapter has to be updated to refer to match latest sdc parser errorreason error csar version is unsupported",
+            "parser supports versions to omfcomponentid clamp status timestamp url"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "20166",
+        "project": "CCSDK",
+        "summary": [
+            "ccsdk dashboard still using code from locked repos ecompsdkos"
+        ],
+        "description": [
+            "the ecompsdkos repo was no longer used",
+            "it has been locked archived",
+            "based on this the onap team decided lastyear to exclude it from ongoing license scans with the commitment that it was no longer relevant to onap",
+            "however it looks to me like some of your onap components are still pulling in wars from ecompsdkos treating them as if they are external libraries",
+            "in particular the war is apparently being used in"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "14801",
+        "project": "APPC",
+        "summary": [
+            "lcm restart fails with error executing dg cannot format given object as a date"
+        ],
+        "description": [
+            "from ran a restart lcm request against the appc and have attached the i am using a fake vnf called some observations from the log on line you can see that fetches information about the vnf from on line the restart action is resolved to the following dg by the dispatcher module appc name generic_restart version i had to change the table on the mysql database",
+            "i think the original mapping dg was not there on line i got the error workflowmanagerimpl error executing dg cannot format given object as a date input timestamp flags force true ttl action restart action-identifiers payload aicidentity"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "31728",
+        "project": "AAI",
+        "summary": [
+            "handle logging"
+        ],
+        "description": [
+            "rebuildalledges class should have the logging capability"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "31727",
+        "project": "AAI",
+        "summary": [
+            "create new class rebuildalledges"
+        ],
+        "description": [
+            "to support rebuildedges functionality create a new class named rebuildalledges by extending existing edgemigrator class and calling rebuildedges method of edgemigrator class"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "31726",
+        "project": "AAI",
+        "summary": [
+            "enhance edgemigrator class"
+        ],
+        "description": [
+            "enhance existing edgemigrator class with a new method named rebuildedges",
+            "this takes set of edges as input and rebuild them according to the latest edgerules version"
+        ],
+        "timespent": "72000",
+        "alpha": 100
+    },
+    {
+        "id": "31725",
+        "project": "AAI",
+        "summary": [
+            "introduce a new flag in script"
+        ],
+        "description": [
+            "introducing a new flag rebuildedges for script",
+            "this flag is optional"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "40101",
+        "project": "AAF",
+        "summary": [
+            "cm validate we are already adding identity into subject alt name portion of cert"
+        ],
+        "description": [
+            "current identity is in dn but also add into subj alt name this will prep for possible faster processing and match onap desires"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "40018",
+        "project": "AAF",
+        "summary": [
+            "cadi log cert expirations in init log"
+        ],
+        "description": [
+            "logging cert expirations in init log is easier than teaching people how to handle their credential artifacts"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "40015",
+        "project": "AAF",
+        "summary": [
+            "sms needs new cert"
+        ],
+        "description": [
+            "sms cert ran out"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "40010",
+        "project": "AAF",
+        "summary": [
+            "move to jjb with jess"
+        ],
+        "description": [
+            "move to jjb with jess"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "38686",
+        "project": "AAF",
+        "summary": [
+            "startup issues with certs"
+        ],
+        "description": [
+            "certs and configs on new start with old data needs to correctly refresh with new props"
+        ],
+        "timespent": "36000",
+        "alpha": 100
+    },
+    {
+        "id": "37486",
+        "project": "AAF",
+        "summary": [
+            "create helm based client cert and prop volumes"
+        ],
+        "description": [
+            "done"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "37122",
+        "project": "AAF",
+        "summary": [
+            "update ip address for"
+        ],
+        "description": [
+            "already fixed"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "36070",
+        "project": "AAF",
+        "summary": [
+            "aaf needs a temp datamigration batch for dublin"
+        ],
+        "description": [
+            "when new fields are created need a process to load the fields with good data for cred tag load basicauth with random key for load tag with"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "35905",
+        "project": "AAF",
+        "summary": [
+            "improve batch bulk load"
+        ],
+        "description": [
+            "batch bulk on very big files has gotten too big",
+            "improve batches to do in smaller chunks when rows get large"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "35794",
+        "project": "AAF",
+        "summary": [
+            "sdnc in company having logging issues"
+        ],
+        "description": [
+            "change logging and adjust for multi object instantiations"
+        ],
+        "timespent": "46800",
+        "alpha": 100
+    },
+    {
+        "id": "35690",
+        "project": "AAF",
+        "summary": [
+            "aaf csit not working"
+        ],
+        "description": [
+            "csit stopped working sometime after casablanca"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "34816",
+        "project": "AAF",
+        "summary": [
+            "aaf docker mode instructions appear incorrect/outdated"
+        ],
+        "description": [
+            "done"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "33938",
+        "project": "AAF",
+        "summary": [
+            "cert subject check confused by email"
+        ],
+        "description": [
+            "email in cert confused auth check and caused invalid failure",
+            "refine subject check"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "33831",
+        "project": "AAF",
+        "summary": [
+            "aaf continues to be available to even though aaf database appears to be down"
+        ],
+        "description": [
+            "while debugging and found that the rest calls started to return unauthorized error on get calls even though the get calls were just working a second ago the container logs showed the transition from authenticated to invalid thereafter every get call to returned the unauthorized error",
+            "checking the pods with kubectl showed no particular recent changes checking the logs of showed so apparently the aaf database is down but the authentication api continued to respond to calls",
+            "apparently this condition was not picked up by healthchecks",
+            "we are trying to do a workaround by restarting aaf pods but presumably this kind of corrective action should be automated by kubernetes assuming it detects the service is down",
+            "after a restart of aaf pods found this error in the logs kubectl n onap logs info main skipping playback of empty log waiting for cassandra to sleep error main exiting due to error while processing commit log during initialization",
+            "mutation checksum failure at in next section at in at"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "33356",
+        "project": "AAF",
+        "summary": [
+            "move docker image to alpine"
+        ],
+        "description": [
+            "ubuntu images take too much space",
+            "onap teams have asked that we attempt smaller images",
+            "kiran please create an image from alpine latest please make sure it has java should we move up from jdk to jdk what do you think essential network utils added ping and host would be minimal openssl is usually a given but make sure please"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "33208",
+        "project": "AAF",
+        "summary": [
+            "sonar fixes"
+        ],
+        "description": [
+            "add merges with comments"
+        ],
+        "timespent": "540",
+        "alpha": 100
+    },
+    {
+        "id": "33121",
+        "project": "AAF",
+        "summary": [
+            "onboard holmes to onap test"
+        ],
+        "description": [
+            "onboard holmes to onap test"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "32176",
+        "project": "AAF",
+        "summary": [
+            "batch packaging not correct"
+        ],
+        "description": [
+            "add batch to packages"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "31216",
+        "project": "AAF",
+        "summary": [
+            "sunil wants changes"
+        ],
+        "description": [
+            "for dublin"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "30980",
+        "project": "AAF",
+        "summary": [
+            "missing licenses for authz"
+        ],
+        "description": [
+            "fix up"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "30925",
+        "project": "AAF",
+        "summary": [
+            "csit aaf needs liveness controls"
+        ],
+        "description": [
+            "utilize status based liveness available for helm"
+        ],
+        "timespent": "36000",
+        "alpha": 100
+    },
+    {
+        "id": "30869",
+        "project": "AAF",
+        "summary": [
+            "refactor csit"
+        ],
+        "description": [
+            "csit has been unstable often failing between releases",
+            "csit code attempted to duplicate what is already in the docker mechanism",
+            "instead we need to use the docker mechanism"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "30447",
+        "project": "AAF",
+        "summary": [
+            "complete cii silver badge"
+        ],
+        "description": [
+            "obtain badge add into webpages per requirement"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "30235",
+        "project": "AAF",
+        "summary": [
+            "example not showing for version"
+        ],
+        "description": [
+            "only set for putting in mechanism for reading back versions"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "29709",
+        "project": "AAF",
+        "summary": [
+            "modify aaf oom to use refactored aaf containers"
+        ],
+        "description": [
+            "due to many different envs and the complication of bootstrapping new certificates aaf created containers that make configuration similar across the different kinds of environments required",
+            "env types have been created and are oom is the last"
+        ],
+        "timespent": "129600",
+        "alpha": 100
+    },
+    {
+        "id": "29604",
+        "project": "AAF",
+        "summary": [
+            "portal and others request bootstrap data update"
+        ],
+        "description": [
+            "they are ready"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "29432",
+        "project": "AAF",
+        "summary": [
+            "password management gui not working"
+        ],
+        "description": [
+            "not mismatch of versions with service"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "29200",
+        "project": "AAF",
+        "summary": [
+            "aaf guidance on policy configuration on vanilla onap install"
+        ],
+        "description": [
+            "we need to understand better aaf configuration before is fully enabled for policy access",
+            "there are main topics of discussion what is aaf is going to come up preconfigured with in a default vanilla onap installation commands to guide users to use that configuration regarding the current working assumptions is that the will be with certificate based credentials for similar to how it is in the windriver reference test lab if aaf does not get stood up based on the previous assumption we need command line references to go into the ui to enable them or sample scripts to automate this activity",
+            "regarding we are and generated the cadi configuration files and certificate stores using the procedures outline in the aaf documentation",
+            "problem unable to create additional password based credentials to use in some use cases in for user the ui is accessed and does not allow to create those types of credentials",
+            "problem provided that we are enable to password based auth permissions the overarching used in multiple namespaces is tried to be used to give it appropriate permissions to access policy resources",
+            "the configuration seems intuitively correct as cadi cli reports the user having the following permissions the aaf cadifilter works well when used in our system that performs authentication for the demo user as can be seen in the cadi related logging after the cadifilter the next step in processing will call isuserinrole according to the previous permission configuration it is expected that authorization will be successful bat it does not succeed",
+            "these are cadi initialization entries for reference init cadi loading cadi properties from points to hostname is set to newton init cadi points to init cadi lur is not instantiated",
+            "is required for oauth access java.lang.reflect.invocationtargetexception init cadi is set to info cadi aaflocator enabled using init cadi is not explicitly set init cadi cleaning thread initialized with interval of ms and max objects of init cadi aaf lur configured to init cadi is not explicitly set init cadi hostname set to newton init cadi cadi_truststore is set to init cadi trusting identity for certificates signed by is set to init cadi certificate authorization enabled init cadi is not explicitly set init cadi is set to init cadi local basic authorization is disabled",
+            "enable by setting realm init cadi is set to init cadi aaf taf configured to init cadi is set to init cadi"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "28382",
+        "project": "AAF",
+        "summary": [
+            "style changes"
+        ],
+        "description": [
+            "make style changes especially those complained about in builds which makes build look bad"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "26861",
+        "project": "AAF",
+        "summary": [
+            "unable to assign permissions to roles"
+        ],
+        "description": [
+            "i am unable to assign any permissions to roles",
+            "when i execute the command to assign permissions the aaf gui freezes permissions get created but they never get assigned",
+            "steps to reproduce go to command prompt in the gui issue perm create some type read somerole the command line freezes permission some type gets created but it is not assigned to somerole note the same happens if i try to grant an already existing permission to a role"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "26725",
+        "project": "AAF",
+        "summary": [
+            "property is duplicated"
+        ],
+        "description": [
+            "when using aaf gui to create a certificate artifact it allows me to select and jks formats which is great",
+            "and the generation process does files for both formats",
+            "however the cred.props file contains duplicate entries for the and properties one set for each of the formats",
+            "furthermore the showpass command only reports on the last property in the props file",
+            "the workaround is to only request of the formats at a time"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "26489",
+        "project": "AAF",
+        "summary": [
+            "improve aaf deployment via heat"
+        ],
+        "description": [
+            "for beijing release aaf compiled code and built containers inside the vm instead of pulling docker images from the nexus repository",
+            "for casablanca we expect aaf to be aligned to other projects code and docker images will be compiled and built during regular jenkins jobs while at onap instantiation time aaf will simply download and run existing docker images from nexus"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "25220",
+        "project": "AAF",
+        "summary": [
+            "change legal collection instantiations because of sonar complaints"
+        ],
+        "description": [
+            "sonar calls legal creations do massive change"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "24433",
+        "project": "AAF",
+        "summary": [
+            "fix http"
+        ],
+        "description": [
+            "found in testing"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "24352",
+        "project": "AAF",
+        "summary": [
+            "create a refined onapclient example"
+        ],
+        "description": [
+            "utilize the mechanism for now"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "24329",
+        "project": "AAF",
+        "summary": [
+            "change logging to better handle situations"
+        ],
+        "description": [
+            "set file from properties"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "24046",
+        "project": "AAF",
+        "summary": [
+            "intermediate ca for onap expiring"
+        ],
+        "description": [
+            "was only set for days set for years"
+        ],
+        "timespent": "12600",
+        "alpha": 100
+    },
+    {
+        "id": "23755",
+        "project": "AAF",
+        "summary": [
+            "remove string for oracle causing sonar issue"
+        ],
+        "description": [
+            "remove oracle strings"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "23719",
+        "project": "AAF",
+        "summary": [
+            "add aaf cert to aafcli sso"
+        ],
+        "description": [
+            "need to do aafsso with certificates"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "23603",
+        "project": "AAF",
+        "summary": [
+            "fix password change"
+        ],
+        "description": [
+            "password changes did not work",
+            "analysis showed not valid on server"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "23583",
+        "project": "AAF",
+        "summary": [
+            "fix aaf locator for onap"
+        ],
+        "description": [
+            "adjust for onap usage"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "23528",
+        "project": "AAF",
+        "summary": [
+            "change beijing branch's version"
+        ],
+        "description": [
+            "remove snapshot from build"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "23527",
+        "project": "AAF",
+        "summary": [
+            "branch beijing"
+        ],
+        "description": [
+            "branch beijing code so we can finish out effort",
+            "make sure various labs will point at the right code"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "22876",
+        "project": "AAF",
+        "summary": [
+            "instances ending with colon cause exception"
+        ],
+        "description": [
+            "perm eval throws exception when a instance variable incorrectly ends in protect against exception change validation to disallow instances ending in"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "22810",
+        "project": "AAF",
+        "summary": [
+            "aaf fails health check on oom deployment"
+        ],
+        "description": [
+            "aaf fails robot health check in daily deployment testing"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "22809",
+        "project": "AAF",
+        "summary": [
+            "aaf fails health check on heat deployment"
+        ],
+        "description": [
+            "aaf fails robot health check in daily deployment testing"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "22739",
+        "project": "AAF",
+        "summary": [
+            "document"
+        ],
+        "description": [
+            "document property trust chain inform chris butler"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "22726",
+        "project": "AAF",
+        "summary": [
+            "aaf cmd perm list role not returning correct value"
+        ],
+        "description": [
+            "typing perm list role will not yield result in cmd"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "22487",
+        "project": "AAF",
+        "summary": [
+            "aaf onap not picking up aaf taf"
+        ],
+        "description": [
+            "class name change affected this"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "22151",
+        "project": "AAF",
+        "summary": [
+            "onap apps need a trustore with onap ca plus all external cas currently in java"
+        ],
+        "description": [
+            "take an existing cacert from jdk and add onap ca",
+            "post on beijing fs"
+        ],
+        "timespent": "2700",
+        "alpha": 100
+    },
+    {
+        "id": "21775",
+        "project": "AAF",
+        "summary": [
+            "create a running aaf beijing in windriver test docker"
+        ],
+        "description": [
+            "avoid tool entanglements and just get it as we do locally"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "21577",
+        "project": "AAF",
+        "summary": [
+            "apache cassandra references must be removed"
+        ],
+        "description": [
+            "this involves removing the project",
+            "can reinstate later if is better license wise"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "21530",
+        "project": "AAF",
+        "summary": [
+            "need method for logging outside the container for aaf components"
+        ],
+        "description": [
+            "be able to log to host with plugin for future logging"
+        ],
+        "timespent": "25200",
+        "alpha": 100
+    },
+    {
+        "id": "21342",
+        "project": "AAF",
+        "summary": [
+            "onap tooling automation broken"
+        ],
+        "description": [
+            "get onap working for aaf beijing code"
+        ],
+        "timespent": "64800",
+        "alpha": 100
+    },
+    {
+        "id": "21311",
+        "project": "AAF",
+        "summary": [
+            "localca should work with keystores in addition to key and crt"
+        ],
+        "description": [
+            "manjunath ranganathaiah recognized that localca would be a lot more powerful and potentially more secure if we can load private key and cert chain with keystores",
+            "excellent idea",
+            "working for beijing as it is needed for devl environment"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "21044",
+        "project": "AAF",
+        "summary": [
+            "move back to"
+        ],
+        "description": [
+            "onap jenkins build with snapshot references"
+        ],
+        "timespent": "1080",
+        "alpha": 100
+    },
+    {
+        "id": "21042",
+        "project": "AAF",
+        "summary": [
+            "branch amsterdam and remove from master"
+        ],
+        "description": [
+            "this will be a code drop from replacing the code from amsterdam for beijing",
+            "there are too many changes to do incrementally"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "20986",
+        "project": "AAF",
+        "summary": [
+            "deploy all the updated code from intermediate repo to onap"
+        ],
+        "description": [
+            "this is the final step for making sure we are open source first coding"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "20776",
+        "project": "AAF",
+        "summary": [
+            "create method of running aaf in docker container"
+        ],
+        "description": [
+            "build off of command line method"
+        ],
+        "timespent": "46800",
+        "alpha": 100
+    },
+    {
+        "id": "20715",
+        "project": "AAF",
+        "summary": [
+            "change color scheme from to onap"
+        ],
+        "description": [
+            "gui already had a theme mechanism",
+            "copy colors and pngs from onap site and make gui look more onap official"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "20588",
+        "project": "AAF",
+        "summary": [
+            "work penetration test issues detailed in workflow"
+        ],
+        "description": [
+            "the full findings document with details about each finding how they found it in some cases detailed instructions for fixing can be found here"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "20396",
+        "project": "AAF",
+        "summary": [
+            "create local ca instructions and scripts for bootstrapping"
+        ],
+        "description": [
+            "need to startup aaf with certificates right away not an afterthought"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "20293",
+        "project": "AAF",
+        "summary": [
+            "work how to do trust perms in cadi"
+        ],
+        "description": [
+            "authmech authenticate when we use"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "20191",
+        "project": "AAF",
+        "summary": [
+            "bring onap organization from amsterdam into onap codeset"
+        ],
+        "description": [
+            "separate sample organization was created for opensource and is not part of official code pulled over",
+            "bring into repo and utilize for usage"
+        ],
+        "timespent": "36000",
+        "alpha": 100
+    },
+    {
+        "id": "19789",
+        "project": "AAF",
+        "summary": [
+            "take aaf code put in to working repository"
+        ],
+        "description": [
+            "copy code from git remove obvious code that will not be there repo items reports etc check into intermediate repo we can appropriately"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "19067",
+        "project": "AAF",
+        "summary": [
+            "casablanca code coverage"
+        ],
+        "description": [
+            "authz service certman command line"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "17538",
+        "project": "AAF",
+        "summary": [
+            "provide a jetty server level solution to secure all servlets on a jetty instance"
+        ],
+        "description": [
+            "securing third party web services in opendaylight with servlet filters requires modifying third party jars to add the aaf cadifilter to servlet instances in web.xml files",
+            "supplying modified third party jar files in linux foundation onap is not an optimal solution and is likely to be rejected by the community",
+            "the base infrastructure of some onap components including appc and many sdc components is opendaylight which uses paxweb to manage the web services in the osgi container",
+            "paxweb simplifies the deployment of web services in an osgi container while isolating the services from each other",
+            "is an instance of a jetty server that can be configured through a jetty.xml or paxweb fragment bundle",
+            "paxweb isolates the web services on a per bundle basis with a webcontext and servlethandler connected to the main jetty server resulting in difficulty adding security filters to third party web services such as restconf and apidoc",
+            "due to this it is difficult to dynamically inject filters into existing osgi web services as it is not possible to access the webcontext or servlethandler outside of the web service bundle",
+            "current implementations of filters require modified versions of the web.xml in third party jars to add the cadifilter and aaf permissions filters to the servlet",
+            "paxweb allows customization of the jetty server at startup by providing a an aaf security handling solution that can be added to a jetty.xml will allow third party servlets to be secured through aaf without the need to modify the associated components",
+            "permission mapping should allow for customization based on request urls without server and port configured in a configuration file",
+            "default permission example namspace from configuration file url configuration example required optional solution should be compatible with open daylight nitrogen karaf pax web jetty"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "17406",
+        "project": "VID",
+        "summary": [
+            "onap support"
+        ],
+        "timespent": "144000"
+    },
+    {
+        "id": "33153",
+        "project": "SDC",
+        "summary": [
+            "oom deployment test"
+        ],
+        "timespent": "115200"
+    },
+    {
+        "id": "33152",
+        "project": "SDC",
+        "summary": [
+            "heat deployment test"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "28596",
+        "project": "SDC",
+        "summary": [
+            "ui development support"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "20509",
+        "project": "SDC",
+        "summary": [
+            "creates and moves redundant config and import files to"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "17973",
+        "project": "SDC",
+        "summary": [
+            "fix jtosca"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "17265",
+        "project": "SDC",
+        "summary": [
+            "sync"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "17099",
+        "project": "SDC",
+        "summary": [
+            "ut"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "17097",
+        "project": "SDC",
+        "summary": [
+            "implement designer health check"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "16777",
+        "project": "SDC",
+        "summary": [
+            "run sanity"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "16723",
+        "project": "SDC",
+        "summary": [
+            "sync"
+        ],
+        "timespent": "187200"
+    },
+    {
+        "id": "16651",
+        "project": "SDC",
+        "summary": [
+            "sync"
+        ],
+        "timespent": "100800"
+    },
+    {
+        "id": "16128",
+        "project": "SDC",
+        "summary": [
+            "update version"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "16026",
+        "project": "SDC",
+        "summary": [
+            "test testng plugin in jenkins sand box"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "49836",
+        "project": "SANDBOX",
+        "summary": [
+            "development"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "49834",
+        "project": "SANDBOX",
+        "summary": [
+            "qa"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "49831",
+        "project": "SANDBOX",
+        "summary": [
+            "qa"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "49823",
+        "project": "SANDBOX",
+        "summary": [
+            "development"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "49822",
+        "project": "SANDBOX",
+        "summary": [
+            "development"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "49821",
+        "project": "SANDBOX",
+        "summary": [
+            "development"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "16069",
+        "project": "POLICY",
+        "summary": [
+            "document feature management"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "16068",
+        "project": "POLICY",
+        "summary": [
+            "document feature state management"
+        ],
+        "timespent": "36000"
+    },
+    {
+        "id": "20462",
+        "project": "MUSIC",
+        "summary": [
+            "cii badging"
+        ],
+        "timespent": "5400"
+    },
+    {
+        "id": "30641",
+        "project": "LOG",
+        "summary": [
+            "address any bugs and vulnerabilities in sonar report"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "18304",
+        "project": "LOG",
+        "summary": [
+            "logging ri developer documentation"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "37633",
+        "project": "AAI",
+        "summary": [
+            "fix building process missing library"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "31906",
+        "project": "AAI",
+        "summary": [
+            "identify and analyze edgerules difference between and beijing"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "31905",
+        "project": "AAI",
+        "summary": [
+            "identify and analyze edgerules difference between beijing and"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "31904",
+        "project": "AAI",
+        "summary": [
+            "analyse change between to xsd schema"
+        ],
+        "timespent": "43200"
+    },
+    {
+        "id": "31903",
+        "project": "AAI",
+        "summary": [
+            "analyse change between to xsd schema"
+        ],
+        "timespent": "43200"
+    },
+    {
+        "id": "43674",
+        "project": "AAF",
+        "summary": [
+            "add exception for missing theme"
+        ],
+        "timespent": "540"
+    },
+    {
+        "id": "40213",
+        "project": "AAF",
+        "summary": [
+            "improve logging"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "40016",
+        "project": "AAF",
+        "summary": [
+            "appc having issue please help"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "39955",
+        "project": "AAF",
+        "summary": [
+            "switch el alto to use new aaf locator feature"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "39594",
+        "project": "AAF",
+        "summary": [
+            "move poms to version"
+        ],
+        "timespent": "2700"
+    },
+    {
+        "id": "37350",
+        "project": "AAF",
+        "summary": [
+            "add dmaap default data"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "37229",
+        "project": "AAF",
+        "summary": [
+            "modify logging in several files"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "37166",
+        "project": "AAF",
+        "summary": [
+            "update certificate local help"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "36904",
+        "project": "AAF",
+        "summary": [
+            "document trustprincipal"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "36840",
+        "project": "AAF",
+        "summary": [
+            "batch refinement testing"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "35713",
+        "project": "AAF",
+        "summary": [
+            "make agent.sh work for local bare metal"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "35365",
+        "project": "AAF",
+        "summary": [
+            "onap user support"
+        ],
+        "timespent": "36000"
+    },
+    {
+        "id": "33097",
+        "project": "AAF",
+        "summary": [
+            "doc add cadi into architecture"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "30983",
+        "project": "AAF",
+        "summary": [
+            "appc requests a bootstrap data request"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "30307",
+        "project": "AAF",
+        "summary": [
+            "remove final sonar reds"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "29810",
+        "project": "AAF",
+        "summary": [
+            "add artifact data to bootstrap"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "29724",
+        "project": "AAF",
+        "summary": [
+            "agent container validation after install"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "27888",
+        "project": "AAF",
+        "summary": [
+            "cadifilter running http not picking up default basicauth"
+        ],
+        "timespent": "19800"
+    },
+    {
+        "id": "27028",
+        "project": "AAF",
+        "summary": [
+            "change agent.sh to use nexus image"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "24729",
+        "project": "AAF",
+        "summary": [
+            "support simplification of onap deployment"
+        ],
+        "timespent": "72000"
+    },
+    {
+        "id": "24436",
+        "project": "AAF",
+        "summary": [
+            "aafcli needs the ability to change root ns"
+        ],
+        "timespent": "5400"
+    },
+    {
+        "id": "23796",
+        "project": "AAF",
+        "summary": [
+            "create overall security page in architecture"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "23749",
+        "project": "AAF",
+        "summary": [
+            "aaf gui role wasn't printing perm info"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "22200",
+        "project": "AAF",
+        "summary": [
+            "onap defaultorg needs to support multiple realms"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "21986",
+        "project": "AAF",
+        "summary": [
+            "aaf in test not picking up as default org"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "21923",
+        "project": "AAF",
+        "summary": [
+            "code coverage"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "21920",
+        "project": "AAF",
+        "summary": [
+            "code coverage"
+        ],
+        "timespent": "97200"
+    },
+    {
+        "id": "21916",
+        "project": "AAF",
+        "summary": [
+            "code coverage"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "21865",
+        "project": "AAF",
+        "summary": [
+            "work derived library security vulnerabilities"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "21826",
+        "project": "AAF",
+        "summary": [
+            "create functioning client sample for documentation"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "21673",
+        "project": "AAF",
+        "summary": [
+            "fix cassandra access cm oauth"
+        ],
+        "timespent": "5400"
+    },
+    {
+        "id": "21661",
+        "project": "AAF",
+        "summary": [
+            "make cross-component calls work"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "21045",
+        "project": "AAF",
+        "summary": [
+            "fix versions adjust for missing jars in nexus"
+        ],
+        "timespent": "4200"
+    },
+    {
+        "id": "21035",
+        "project": "AAF",
+        "summary": [
+            "create a notice in inno and cadi repositories notifying move to main"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "20790",
+        "project": "AAF",
+        "summary": [
+            "mohan and sai are reporting that aafcon.isdisabled is returning bad boolean"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "20589",
+        "project": "AAF",
+        "summary": [
+            "eliminate ecomp trademark in all headers"
+        ],
+        "timespent": "2700"
+    },
+    {
+        "id": "20534",
+        "project": "AAF",
+        "summary": [
+            "create method of starting components command line"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "20062",
+        "project": "AAF",
+        "summary": [
+            "change startup objects to use jetty only not"
+        ],
+        "timespent": "46800"
+    },
+    {
+        "id": "19798",
+        "project": "AAF",
+        "summary": [
+            "change java packages to onap standards"
+        ],
+        "timespent": "43200"
+    },
+    {
+        "id": "19779",
+        "project": "AAF",
+        "summary": [
+            "create a sample ca signing application using private key stored in keystore"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "19382",
+        "project": "AAF",
+        "summary": [
+            "create sample server and client application to verify tls communication using keystore in java"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "19136",
+        "project": "AAF",
+        "summary": [
+            "adding unit test cases to secret management"
+        ],
+        "timespent": "230400"
+    },
+    {
+        "id": "19070",
+        "project": "AAF",
+        "summary": [
+            "deploy in oom env"
+        ],
+        "timespent": "144000"
+    }
+]

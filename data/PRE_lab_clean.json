@@ -1,0 +1,60 @@
+[
+    {
+        "id": "33242",
+        "project": "PRESIDECMS",
+        "summary": [
+            "datamanager viewversion permission not checked"
+        ],
+        "description": [
+            "when user doesn't have permission to view records version button would still be available in listing user is still able to view previous records version from viewrecord page"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "33195",
+        "project": "PRESIDECMS",
+        "summary": [
+            "timeout occurs if changing download restrictions on some asset manager folders"
+        ],
+        "description": [
+            "if there are a lot of assets in an asset manager folder and an admin changes the download restrictions from inherited to restricted with a condition then a time out occurs if there are a lot of assets in that folder",
+            "it takes longer than seconds which is the timeout i guess this is related to the permission syncing which checks every asset in that folder",
+            "it might be good to evaluate if this can be improved in performance"
+        ],
+        "timespent": "8100",
+        "alpha": 100
+    },
+    {
+        "id": "33161",
+        "project": "PRESIDECMS",
+        "summary": [
+            "datamanager admin permissions to select data in ajax requests form controls"
+        ],
+        "description": [
+            "i need to block access to the data manager ui for some admin users",
+            "however those users should still be able to use other parts of the admin including selecting data from various dropdowns",
+            "use case meeting types defined in data manager meetings defined in custom ui",
+            "the user needs to be able to create a meeting and select a meeting type there but not have access to the datamanager listing",
+            "i thought it should be possible with using presideobject",
+            "and datamanager.read permissions",
+            "however this is not sufficient getting access denied on the ajax it only works if also having this is due to some additional stuff done in the general datamanager prehandler method loadcommonvariables seems to check for the navigate i wonder if other things in the prehandler method are not needed as well if i understand it correct it will also load the common breadcrumbs and top right buttons in case of a call of getobjectrecordsforajaxselectcontrol which seems superfluous if this is the case"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "13304",
+        "project": "PRESIDECMS",
+        "summary": [
+            "asset manager download restrictions add any logged in user"
+        ],
+        "description": [
+            "currently when configuring restrictions you must specify specific benefits users to allow disallow download permissions on an asset folder",
+            "users of the system should also be able to specify that any logged in user has download access to the folder",
+            "this has already been implemented for site tree page access permissions"
+        ],
+        "timespent": "3960",
+        "alpha": 100
+    }
+]

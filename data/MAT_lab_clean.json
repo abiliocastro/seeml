@@ -1,0 +1,98 @@
+[
+    {
+        "id": "14901",
+        "project": "MATSIM",
+        "summary": [
+            "update vehiclesimpl to reflect other matsimtoplevelcontainer"
+        ],
+        "description": [
+            "to add vehicles to a scenario you need to access the container in the following way vehicle this is to my knowledge inconsistent with for example population where the consistency checks are done in a method addperson(person can i go ahead and do the following a extend the current vehiclesimpl class and include an addvehicle(vehicle v method b make the getvehicles return an unmodifiable map c move the getvehicles in scenarioimpl up one level to scenario thanks",
+            "where necessary i'll add tests"
+        ],
+        "timespent": "10800",
+        "alpha": 98
+    },
+    {
+        "id": "19102",
+        "project": "MATSIM",
+        "summary": [
+            "writing of features in shape files does no longer work"
+        ],
+        "description": [
+            "since update to geotools writing of self created features geometries is broken",
+            "files are create but geometries in the resulting shp file are null added a test case a quick internet research regarding this issue did not lead to any results",
+            "should we switch back to geotools"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "18304",
+        "project": "MATSIM",
+        "summary": [
+            "how difficult to send stdout and stderr to different windows in our gui"
+        ],
+        "description": [
+            "how difficult would it be to send stdout and stderr to different windows in our gui i was just using it and for whatever reason it looks considerably more confused than normally in the console",
+            "not terribly useful for new users"
+        ],
+        "timespent": "1080",
+        "alpha": 100
+    },
+    {
+        "id": "17300",
+        "project": "MATSIM",
+        "summary": [
+            "in networkimpl.addnode invalidate nodequadtree only if neccessary"
+        ],
+        "description": [
+            "upon addition of a node to the network the node quadtree is invalidated",
+            "if you have an operation the makes structural changes to the network with repeated quadtree access the quadtree is newly initialized after each addition of a node",
+            "however if i understand the code correctly invalidating the node quadtree is only neccessary if the coordinate of the new node lies outside of the bounds of the current quadtree right so making an check would reduce the amount of initializations"
+        ],
+        "timespent": "2520",
+        "alpha": 100
+    },
+    {
+        "id": "17102",
+        "project": "MATSIM",
+        "summary": [
+            "example equil assumes queuesimulation"
+        ],
+        "description": [
+            "when testing the new gui i tried running the standard it seems the associated config file still requires the now deprecated well removed queuesimulation"
+        ],
+        "timespent": "300",
+        "alpha": 100
+    },
+    {
+        "id": "15501",
+        "project": "MATSIM",
+        "summary": [
+            "when adding a vehicle to the container the vehicletype is not validated"
+        ],
+        "description": [
+            "supercedes issue the vehiclewriterv1 works fine",
+            "the problem seems that you can add a vehicle to the vehicles in the following way the file written however cannot be read again as the vehicletype is never explicitly added to the vehicles container",
+            "it makes from my user perspective more sense to check for and add the vehicletype within the addvehicle method",
+            "are you happy with that or does anyone have a problem with that design approach at least there should be a validation check and indicating to the user how to proceed explicitly add the vehicletype first",
+            "added it to my local code and also added a test",
+            "if happy commit"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "15500",
+        "project": "MATSIM",
+        "summary": [
+            "vehicleswriterv1 not consistent with vehiclesreaderv1"
+        ],
+        "description": [
+            "when using the vehiclewriterv1 class to write the vehicles container it produces a file that looks something like the following when reading that same file using the vehiclesreaderv1 an error is produced it seems from the code that there are two conflicting schema names used from what i can see in the vehiclewriterv1 only and is written to file lines in the reader vehiclereaderv1 the code seems to honour the distinction between type and but the schema file seems to require both to be present",
+            "i would take it on myself but i know a what the design decisions related to this were and b i only know dtd files not the schema xsd files"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    }
+]

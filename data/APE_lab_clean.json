@@ -1,0 +1,2773 @@
+[
+    {
+        "id": "17927",
+        "project": "UP",
+        "summary": [
+            "portlets fail when maximized"
+        ],
+        "description": [
+            "java.lang.nullpointerexception caused by java.lang.nullpointerexception source more"
+        ],
+        "timespent": "6060",
+        "alpha": 95
+    },
+    {
+        "id": "23977",
+        "project": "SSP",
+        "summary": [
+            "do we need"
+        ],
+        "description": [
+            "we don't have any other jasper files in source"
+        ],
+        "timespent": "304",
+        "alpha": 97
+    },
+    {
+        "id": "15970",
+        "project": "UP",
+        "summary": [
+            "cgenericxslt.setstaticdata contains duplicate test conditions for"
+        ],
+        "description": [
+            "uportal cgenericxslt.setstaticdata contains an if statement with the same conditions this.channelcachescope else if this.channelcachescope will provide patch to change the second condition to test for"
+        ],
+        "timespent": "3600",
+        "alpha": 98
+    },
+    {
+        "id": "23944",
+        "project": "SSP",
+        "summary": [
+            "display student dob in expanded caseload view"
+        ],
+        "description": [
+            "when the caseload is expanded to full screen expanded caseload.png attached file display dob as show in the screen shot caseload dob.png"
+        ],
+        "timespent": "28800",
+        "alpha": 98
+    },
+    {
+        "id": "23798",
+        "project": "SSP",
+        "summary": [
+            "large number of transcript lookup calls when loading map"
+        ],
+        "description": [
+            "noticed when launching the map tool for a user with one very simple one planned course plan the api is being invoked times",
+            "happens to be the number of terms i'm currently seeing on screen",
+            "maybe related these have been killing us recently",
+            "let's get ahead of this one"
+        ],
+        "timespent": "3600",
+        "alpha": 98
+    },
+    {
+        "id": "23720",
+        "project": "SSP",
+        "summary": [
+            "eliminate duplicate student documents permissions"
+        ],
+        "description": [
+            "as discussed via email we want to retire two permissions instead we'll use the previously existing i don't know the best way to either instruct deployers to delete up permissions",
+            "we'll have to look into it",
+            "definitely want to modify or delete those permissions definitions so they aren't added to new installs though",
+            "for ssp of course it should just be a matter of removing code from the client and classes that enumerate permissions"
+        ],
+        "timespent": "7200",
+        "alpha": 98
+    },
+    {
+        "id": "22928",
+        "project": "SSP",
+        "summary": [
+            "add a new student intake/external data value for race"
+        ],
+        "description": [
+            "add a new field for race in the student intake and external data",
+            "the field should be a reference item included in the external_person table sync'd in person from external_person disabled for editing if sync'd from external_person if not sync'd a list in the student intake demographics tab"
+        ],
+        "timespent": "27000",
+        "alpha": 98
+    },
+    {
+        "id": "22400",
+        "project": "SSP",
+        "summary": [
+            "default early alert response email always suggests alert is closed and closed date expression is bad"
+        ],
+        "description": [
+            "reported by they're using the default early alert response email which always ends up rendering the following verbatim this is wrong the alert might or might not actually be closed and even if it is the earlyalertresponse.closeddate expression will never be successfully evaluated because earlyalertresponse does not have a closeddate field",
+            "the correct expression is earlyalert.closeddate"
+        ],
+        "timespent": "5400",
+        "alpha": 98
+    },
+    {
+        "id": "14422",
+        "project": "UPT",
+        "summary": [
+            "dbloader fails to create seed data in oracle"
+        ],
+        "description": [
+            "several distinct problems special characters in bin table names can cause jdbctypemaskfilter to fail",
+            "for example java error running dbloader java org.springframework.dao.dataintegrityviolationexception loading type mapping",
+            "sql missing or illegal character following the escape character java nested exception is missing or illegal character following the escape character java at not strictly a dbloader issue but gap is violating its pk index on when it tries to insert an empty string into the column",
+            "actually ora translates the empty string to a null thereby violating the constraint",
+            "trace java exception in thread main cannot insert null into uni java caused by cannot insert null into uni java at more jdbctypemaskfilter constructor leaks resultsets clob columns will not work reliably in ora without special handling",
+            "for example java error executing sql insert into locale values with values test web applications of type java org.springframework.jdbc.uncategorizedsqlexception preparedstatementcallback uncategorized sqlexception for sql insert into locale values sql state null error code invalid column type nested exception is invalid column type java at"
+        ],
+        "timespent": "115200",
+        "alpha": 99
+    },
+    {
+        "id": "13602",
+        "project": "UPT",
+        "summary": [
+            "integrate local resolver into portletmanager"
+        ],
+        "description": [
+            "the portletmanager is currently using portletrequest.getlocale to determine the locale to use",
+            "update to use the locale manager"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "13601",
+        "project": "UPT",
+        "summary": [
+            "copy portlet fails"
+        ],
+        "description": [
+            "attempting to clone or copy an existing portlet portletdefinition results in the following stack trace error rendering.portletwindowmanagerimpl setportletactionrequestparameters(iportletwindowid map httpservletrequest httpservletresponse exception raised while trying to process portlet action problem occurred in rendering portlet window caused by java.lang.illegalstateexception specified action copyportlet does not exist for page more caused by java.lang.nosuchmethodexception at more"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "13435",
+        "project": "UPT",
+        "summary": [
+            "resolve ambiguity with create store andd update methods on registries and daos"
+        ],
+        "description": [
+            "the create store and update methods don't seem to have a consistent contract through all daos and registries"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "16492",
+        "project": "UP",
+        "summary": [
+            "cgenericxslt system scope bug"
+        ],
+        "description": [
+            "there is a typo in cgenericxslt which results in an annoying warn message since the default scope is instance cgnericxslt channelstaticdata parameter system had unrecognized value instance failing shut with instance scoped caching",
+            "the problem is else if this.channelcachescope else this should be else if this.channelcachescope else"
+        ],
+        "timespent": "60",
+        "alpha": 99
+    },
+    {
+        "id": "15256",
+        "project": "UP",
+        "summary": [
+            "build process needs to recognize and as separate directories"
+        ],
+        "description": [
+            "when you start tomcat you see environment variables that get set and these point to the same directory most of the time",
+            "however they can point to different directories",
+            "should point to the base of your tomcat install",
+            "this would be the bin common and server directories at a minimum",
+            "the can point to a separate set of directories that would include the shared temp work and webapps directory",
+            "this allows multiple instances of tomcat hence multiple hosts to be running different applications on the same machine",
+            "see for additional information",
+            "the current deployment process is not aware of this convention",
+            "and most of the time it doesn't have to be",
+            "however we have our tomcat instances on our workstations and servers set up so that we have separate and directories",
+            "right now we have only directory we can set in build.properties for the deployment process usually sever.home is set to point to and most of the time that's ok",
+            "but when the portal initialized the jars that belong in the common directory get copied there when they really belong under i propose that a server.base property be introduced in to out of the box this should just point to but it would give those who need it the ability to set it to a different value",
+            "the affected properties in build.proerties would be the affected targets in build.xml would be deploy and dist"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "15124",
+        "project": "UP",
+        "summary": [
+            "istatsrecordereventhandleradapter throws"
+        ],
+        "description": [
+            "istatsrecordereventhandleradapter casts all portal events to cause a class cast exception when handling events",
+            "modified the lines to cast to i'll update the code in svn"
+        ],
+        "timespent": "600",
+        "alpha": 99
+    },
+    {
+        "id": "15048",
+        "project": "UP",
+        "summary": [
+            "cportletadapter fails to handle exceptions on attempt to invalidate portlet session"
+        ],
+        "description": [
+            "is this one of those times where a catch exception would be appropriate this way regardless of what exception may be raised on attempting to clear a particular state recovery and workflow continuation occur",
+            "introduction of additional catches seems to indicate that really the intent here is to apply recovery regardless of what may go wrong",
+            "try portletstatemanager.clearstate(windowimpl catch illegalstateexception ise ignore an illegal state when the portletstatemanager tries to access the session if it has already been destroyed",
+            "log.info attempted to clear state for window windowimpl but ise indicates session had already been destroyed",
+            "ise catch exception e no matter what went wrong clearing state nothing we can do about it and desirable to recover and continue the workflow",
+            "log.error error clearing state for window windowimpl e"
+        ],
+        "timespent": "900",
+        "alpha": 99
+    },
+    {
+        "id": "15038",
+        "project": "UP",
+        "summary": [
+            "xom.jar dependency license compliance"
+        ],
+        "description": [
+            "added to lib of project on need to verify what license is this dependency under is uportal allowed to redistribute this jar has acknowldgements/licenses/notices been updated to reflect this dependency"
+        ],
+        "timespent": "900",
+        "alpha": 99
+    },
+    {
+        "id": "15032",
+        "project": "UP",
+        "summary": [
+            "junit.jar dependency license compliance"
+        ],
+        "description": [
+            "verify junit.jar dependency license compliance",
+            "license declarations",
+            "this issue spun out from"
+        ],
+        "timespent": "300",
+        "alpha": 99
+    },
+    {
+        "id": "15022",
+        "project": "UP",
+        "summary": [
+            "tidy.jar dependency license compliance"
+        ],
+        "description": [
+            "tidy.jar dependency license compliance",
+            "verify allowability of including jar",
+            "verify add license declarations",
+            "spun out from"
+        ],
+        "timespent": "600",
+        "alpha": 99
+    },
+    {
+        "id": "15012",
+        "project": "UP",
+        "summary": [
+            "activation.jar dependency license compliance"
+        ],
+        "description": [
+            "spun out from address uportal's inclusion of activation.jar in terms of licensing compliance",
+            "verify that uportal is entitled to ship this jar include appropriate attributions acknowledgments licenses with up release"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "12517",
+        "project": "UP",
+        "summary": [
+            "login"
+        ],
+        "description": [
+            "with the exception of logging in as admin and guest the portal generates the following message after a user has been authenticated cannot start uportal sorry but a problem is preventing the portal from starting",
+            "the error must be corrected by system administrators",
+            "try again later",
+            "portal.log file contains the following info user demo is authenticated warn authentication service received unknown additional descriptor error exception java.lang.nullpointerexception method error programming error java.lang.reflect.invocationtargetexception"
+        ],
+        "timespent": "345600",
+        "alpha": 99
+    },
+    {
+        "id": "12239",
+        "project": "UP",
+        "summary": [
+            "dependency license compliance"
+        ],
+        "description": [
+            "the uportal distribution i have only looked at the only dist is currently breaking many of the licenses of the libraries that it distributes mostly by not also supplying a copy of their license",
+            "the following libraries come with the dist and are grouped under the license that should be included for them some sort of sun license not sure at all about these activation.jar jaas.jar jaxrpc.jar saaj.jar servlet.jar apache license version axis.jar licenses already included in jar file xalan.jar cos.jar hypersonic sql group hsql development group license hsqldb.jar common public license version junit.jar some sort of ibm license apache software license version software copyright notice and license xercesimpl.jar none required tidy.jar unknown"
+        ],
+        "timespent": "4500",
+        "alpha": 99
+    },
+    {
+        "id": "24432",
+        "project": "SSP",
+        "summary": [
+            "map transcript never loads"
+        ],
+        "description": [
+            "scenario log in as coach select student with map go to map tool and click transcript button verify loading icon that never goes away issue there is a console error in the extjs with not much else to go on",
+            "i suspect its probably related to using a js method that doesn't support"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "24421",
+        "project": "SSP",
+        "summary": [
+            "transcripted courses don't move in move plan"
+        ],
+        "description": [
+            "in testing the move plan feature i noticed that planned courses that appear on the transcript appear with a blue bar in a different term than the plan term don't move with move plan",
+            "steps add a course to a plan term that appears on the transcript choose move plan click save review the transcripted courses appear in the original term moving courses forward or backward don't affect the courses this does not occur with templates as the is transcript validation doesn't occur in templates"
+        ],
+        "timespent": "10800",
+        "alpha": 99
+    },
+    {
+        "id": "24403",
+        "project": "SSP",
+        "summary": [
+            "unscrollable printable mygps map window"
+        ],
+        "description": [
+            "a field deployment of reports that the containing the printable map view as launched from mygps does not contain scrollbars on wins ff nor ie",
+            "bit of a placeholder for now since this has come up twice",
+            "i've yet to reproduce it",
+            "also didn't get the specific ie version",
+            "one of the reports indicated chrome works fine",
+            "planning to fix in first to address complaints from the field"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "24103",
+        "project": "SSP",
+        "summary": [
+            "method undefined"
+        ],
+        "description": [
+            "scenario log into ssp in view console and errors select a student and go to map tool view errors and that the map doesn't load issue there are several methods being used in js that are undefined in"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "24042",
+        "project": "SSP",
+        "summary": [
+            "caseloadassign failure on edit student"
+        ],
+        "description": [
+            "putting this out there it could be due to stale code on linuxci",
+            "will try and verify with local build but microsoft ci doesn't have this behavior",
+            "however this also could deal with the external data setup on the linux ci which is different than microsoft ci",
+            "scenario log into linuxci ssp as go to second student down click edit student button view ui in caseload assignment is incomplete issue in the console there will be several errors",
+            "i've included a screenshot"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "23906",
+        "project": "SSP",
+        "summary": [
+            "provide default sort order for coaching history report"
+        ],
+        "description": [
+            "during the ssp upgrade to for spc they found that the coaching history report wasn't sorted",
+            "this item should probably be worked in conjunction with where the journal entries also didn't have a default sort order",
+            "the sort order column should probably be the same for both"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "23857",
+        "project": "SSP",
+        "summary": [
+            "dead end when searching for deactivated ea routing person"
+        ],
+        "description": [
+            "the person association for ea routings is handled a bit differently than most all other it's a text box that hits a search api",
+            "the idea i guess is that you should be able to pick anybody as a ea routing even though the campus ea coordinator must be a i'm not sure that's right but if it is it presents special problems",
+            "deactivated users don't work quite right assign a user to a ea routing deactivate the user edit the ea routing the deactivated user will still be correctly displayed as the routing's person add a character to the person's name delete it hit enter to try to trigger search it will find no results try to save the form you will receive an error that person is a required field",
+            "have to cancel out losing any other edits",
+            "might be able to fix this with a bit more logic in the save handling or it might be simpler to switch to the same combo box that ea campus management uses",
+            "on the topic of which users should be selectable in this field i would point out that while it might be a fine idea to try to allow end users to pick anybody not just coaches for ea routings our current person model doesn't support this very well since search operations only query the person table not external_person nor any more broadly scoped directory service",
+            "so if you're trying to pick a non-administrative user you're very unlikely to find them and the original design intent is probably lost",
+            "so maybe before we do anything we need to revisit the functional goal for this particular form field"
+        ],
+        "timespent": "28800",
+        "alpha": 99
+    },
+    {
+        "id": "23809",
+        "project": "SSP",
+        "summary": [
+            "submit student search form on enter press"
+        ],
+        "description": [
+            "i believe the previously implemented feature would submit the input form when the user pressed enter but it doesn't look like the new expanded search form supports the same thing",
+            "it's a small thing but something i bet most users will expect",
+            "i know i've personally kept trying to press enter whenever testing this feature",
+            "jim assigning this to you since you've been in or near that code most recently"
+        ],
+        "timespent": "10800",
+        "alpha": 99
+    },
+    {
+        "id": "23801",
+        "project": "SSP",
+        "summary": [
+            "suspiciously slow queries in transcript/full implementation"
+        ],
+        "description": [
+            "newrelic is currently reporting that the transcript/full implementation is by far the slowest transaction on average this morning",
+            "will attach screenshot of the breakdown but aside from the excessive lookups against which we already know about and which aren't actually the bottleneck here the problem really seems to be a small number of queries against person_demographics and course which take much longer than expected for a single student for the latter maybe just needs an and for is that even a lookup we need for this particular use case"
+        ],
+        "timespent": "28800",
+        "alpha": 99
+    },
+    {
+        "id": "23776",
+        "project": "SSP",
+        "summary": [
+            "map adjust is transcripted indicator for term matching"
+        ],
+        "description": [
+            "adjust the is transcripted indicator and logic to account for term matching in the logic",
+            "the two use cases for is transcripted are we want to know whether a previously planned course was taken or not",
+            "that is term based matching yellow planned course is on the transcript in the same term as the transcripted course we want to know if a course that is put on a plan current or future term is already on the transcript",
+            "that would tell them if it may be a duplicate",
+            "that wouldn't be term based",
+            "new color planned course is on the transcript but not the same term as the transcripted course"
+        ],
+        "timespent": "10800",
+        "alpha": 99
+    },
+    {
+        "id": "22811",
+        "project": "SSP",
+        "summary": [
+            "handling of different from null handling"
+        ],
+        "description": [
+            "while supporting irsc training effort newly uploaded data from irsc's sis populated the external_person table",
+            "for those people declared coaches they had an empty string for the this caused an exception such that cannot be blank",
+            "we updated their data so that would be null rather than empty string and have future integration teams be aware of this issue",
+            "the solution should be to treat the empty string in this column as a null and avoid the exception"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "22601",
+        "project": "SSP",
+        "summary": [
+            "student type sync'd from external data"
+        ],
+        "description": [
+            "this is an item that seems to have slipped through the cracks",
+            "a configuration feature exists to sync the student type from the external tables",
+            "the definition is in configuration.js but the column is missing from external_person and the sync process",
+            "both should be added to allow the sync'ing of student type into ssp from the external data"
+        ],
+        "timespent": "115200",
+        "alpha": 99
+    },
+    {
+        "id": "13132",
+        "project": "GAP",
+        "summary": [
+            "migrate entity locking service from uportal"
+        ],
+        "description": [
+            "migrate entity locking infrastructure from to entity locking is required by the group service for updating groups in editable component services",
+            "i've also used it to create process locks",
+            "create dao layer unit tests and spring definition"
+        ],
+        "timespent": "144000",
+        "alpha": 99
+    },
+    {
+        "id": "14388",
+        "project": "UPT",
+        "summary": [
+            "encoded a tag results in java javadoc failure"
+        ],
+        "description": [
+            "due to a known bug in java the following stacktrace is thrown when the ant javadoc target or mvn javadoc:javadoc goal is called javadoc java.util.missingresourceexception find resource for bundle key javadoc at method javadoc build successful total time seconds the root cause according to is malformed a tag throws error due to message not found in resource file this bug is closed however it was not properly resolved and is still an issue",
+            "the bug comments have some recommendations for a finding and fixing offending javadoc comments",
+            "use grep ir portal to find offending comments"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "13970",
+        "project": "UPT",
+        "summary": [
+            "publish valid uportal dtds on"
+        ],
+        "description": [
+            "in the process of upgrading to use jaxp we ended up enabling xml validation when dealing with user layout persistence",
+            "this required having a doctype header",
+            "this header now refers to a location on the dtd has to be actually placed on the server and its proper location needs to be established"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "13688",
+        "project": "UPT",
+        "summary": [
+            "locale manager portlet javascript namespace"
+        ],
+        "description": [
+            "the javascript method names and calls in the locale manager portlet need to be namespaced using the portlet:namespace tag",
+            "this ensures that multiple instances of the same portlet can exist on a page at a time",
+            "while this may be a rare case for the locale manager it is still good practice"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "13629",
+        "project": "UPT",
+        "summary": [
+            "renderresponse has char encoding"
+        ],
+        "description": [
+            "the renderresponse encoding is currently outputing in this needs to be fix so that it has character encoding of so that internalization works",
+            "right now there is a temporary fix in portalservlet the encoding is set there",
+            "this needs to be specified by the stylesheet"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "13621",
+        "project": "UPT",
+        "summary": [
+            "not all portlet definitions appear on manager"
+        ],
+        "description": [
+            "when displaying the list of portlet definitions portlets that shared a common deployment attribute were not being displayed correctly",
+            "only one portlet for each name would appear",
+            "the problem was tracked to the comparator being used to sort the set of definitions for viewing",
+            "the comparator was modified to use the displayname property for the current locale and fall back to comparing the portlet definition ids if the display names were equal"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "13525",
+        "project": "UPT",
+        "summary": [
+            "oracle dialect does not support identity key generation"
+        ],
+        "description": [
+            "i am not sure if this is hibernate bug or an implementation bug",
+            "schemaexport info processing association property references schemaexport oct am secondpasscompile schemaexport info processing foreign key constraints schemaexport oct am secondpasscompile schemaexport info processing extends queue schemaexport oct am secondpasscompile schemaexport info processing collection mappings schemaexport oct am secondpasscompile schemaexport info processing association property references schemaexport oct am secondpasscompile schemaexport info processing foreign key constraints build failed the following error occurred while executing this line schema text failed dialect does not support identity key generation"
+        ],
+        "timespent": "6300",
+        "alpha": 100
+    },
+    {
+        "id": "13472",
+        "project": "UPT",
+        "summary": [
+            "upgrade to latest version of pluto"
+        ],
+        "description": [
+            "move to pluto or ga if available"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "13468",
+        "project": "UPT",
+        "summary": [
+            "add unique checking on fname to portlet def wizard"
+        ],
+        "description": [
+            "currently the user will not see an error about a fname until they try to finish the publishing process",
+            "also better error handling needs to be added to the finish process to deal with possible valid data constraint errors"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "13465",
+        "project": "UPT",
+        "summary": [
+            "update hibernate dao unit tests"
+        ],
+        "description": [
+            "update the hibernate dao unit tests to pass",
+            "the following tests fail portletdefinition store portletdefinition remove portletdefinition all"
+        ],
+        "timespent": "172800",
+        "alpha": 100
+    },
+    {
+        "id": "13433",
+        "project": "UPT",
+        "summary": [
+            "update registry caching domain objects"
+        ],
+        "description": [
+            "the registries need to be updated to only cache transfer objects",
+            "along with this the domain objects need to be updated to only reference their direct transfer object",
+            "all other information should be retrieved at each call via referenced registries"
+        ],
+        "timespent": "115200",
+        "alpha": 100
+    },
+    {
+        "id": "13423",
+        "project": "UPT",
+        "summary": [
+            "update hibernate dao unit tests"
+        ],
+        "description": [
+            "update the hibernate dao unit tests to pass"
+        ],
+        "timespent": "115200",
+        "alpha": 100
+    },
+    {
+        "id": "13415",
+        "project": "UPT",
+        "summary": [
+            "integrate persondirectory service into portlet manager"
+        ],
+        "description": [
+            "the person directory service needs to be integrated into the portlet application definition publishing code to allow the publisher to map person directory supported attributes to portlet applicaton attributes"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "13414",
+        "project": "UPT",
+        "summary": [
+            "integrate groups servant into portlet manager"
+        ],
+        "description": [
+            "the groups manager servant needs to be integrated into the portlet manager to allow group and category selection during the publishing of portlet definitions"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "13362",
+        "project": "UPT",
+        "summary": [
+            "move acegi authentication provider store to the database table"
+        ],
+        "description": [
+            "acegis dao authentication provider is currently using store which should be moved to the database"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "13300",
+        "project": "UPT",
+        "summary": [
+            "value of lock validatefiles is changed while potentially owning it"
+        ],
+        "description": [
+            "found following problem by running jlint value of lock validatefiles is changed while potentially owning it",
+            "this page explains why this is a problem and how to fix it"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "13225",
+        "project": "UPT",
+        "summary": [
+            "add support for setting render time out value"
+        ],
+        "description": [
+            "added initial support for render time out values for the portlets",
+            "these values are ultimately obtained for a specific portlet window by the rendering classes however may be defined at much earlier stages even at portlet deployment",
+            "since portlet deployment is now limited to the standard portlet.xml schema there is no easy way to provide support for that btw",
+            "any ideas on how portlet/application definitions can be extended in a standard-tolerant way we should provide support for defining timeout values during publish and perhaps added appropriate methods to the iportletinformationprovider and iportletinformationprovidercontrol get and setrendertimeoutvalue the portletdeploymenttransferimpl simply sets the value to an undefined value implying that the rendering framework should use default timeout",
+            "to provide a way for controlloing timeout values at publish subscribe we need to extend portlet definition and portlet entity implementations to keep track of a timeout value",
+            "this means adding timeout value to the appropriate transfer object extending dao to handle persistance of that value modifying definition/entity domain object implementations to make use of the redefined values"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "12685",
+        "project": "UPT",
+        "summary": [
+            "portlet development framework"
+        ],
+        "description": [
+            "develop framework and standards that all uportal portlets can be developed to"
+        ],
+        "timespent": "190800",
+        "alpha": 100
+    },
+    {
+        "id": "12438",
+        "project": "UPT",
+        "summary": [
+            "locale manager"
+        ],
+        "description": [
+            "a object that will take the following lists of locales and determine a final list that should be handed over to a portlet before the portlet renders locales"
+        ],
+        "timespent": "288000",
+        "alpha": 100
+    },
+    {
+        "id": "12436",
+        "project": "UPT",
+        "summary": [
+            "locale selector portlet"
+        ],
+        "description": [
+            "allows the user to indicate their locale preferences",
+            "in uportal this was with a simple drop down box showing the user a list of available languages",
+            "the user could pick only one",
+            "in uportal we should consider presenting the user with a sortable list of languages with some way of easily moving their preferred language to the top of th list",
+            "the underlying data structure should support an ordered list of locales either way"
+        ],
+        "timespent": "259200",
+        "alpha": 100
+    },
+    {
+        "id": "11623",
+        "project": "UPT",
+        "summary": [
+            "add person directory service from uportal"
+        ],
+        "description": [
+            "bring the newly refactored persondirectory service into uportal consider renaming it to something that uses the terms user and attributes since these are the terms in the portlet specification and in we using the term person anymore",
+            "perhaps it could be one of our registries like userattributesregistry that has its own underlying daos like userattributesdao with ldapuserattributesdao and rdbmuserattributesdao implementations",
+            "proposed approach make up have an ant target that produces a jar which is dropped into up"
+        ],
+        "timespent": "240",
+        "alpha": 100
+    },
+    {
+        "id": "11621",
+        "project": "UPT",
+        "summary": [
+            "portlet administrator portlet"
+        ],
+        "description": [
+            "this portlet will allow a portal administrator to the deployment of a portlet application",
+            "it should allow the administrator to map custom user attributes window states and portlet modes to uportal-specific user attributes window states and portlet modes for portlets within a portlet application",
+            "it should also allow the administrator to publish and manage portlet definitions along with their portlet definition-level portlet preferences"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "11620",
+        "project": "UPT",
+        "summary": [
+            "portlet deployment mechanism"
+        ],
+        "description": [
+            "uportal needs a tool to deploy portlet applications",
+            "the first iteration of this tool can be a simple command line tool which could be launched from an ant task as we have in uportal alternatively and preferably we could make uportal detect new or changed portlet applications present in the servlet container webapps directory and automatically deploy them",
+            "deployment is a matter of exploding the war file and the web.xml file so that each portlet has an corresponding servlet wrapper",
+            "this is necessary for the pluto container to dispatch requests to its portlets"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "10023",
+        "project": "UPT",
+        "summary": [
+            "authentication with acegi"
+        ],
+        "description": [
+            "use acegi for authentication"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "15046",
+        "project": "UPD",
+        "summary": [
+            "dormitem website announcement"
+        ],
+        "description": [
+            "dormitem offering free uportal classifieds branded for your school dormitem college classifieds search engine is offering uportal administrators a free integration of the microregional classifieds system",
+            "classifieds are a great tool to attract students to your portal so they see important news and events that otherwise may be missed",
+            "dormitem builds a custom rss feed to place in a portlet which shows listings not just from your own school but neighboring campuses as well",
+            "the portlet then clicks through to a custom branded version of dormitem that matches your school colors",
+            "dormitem offers students free listings safer trading with rapleaf integration and facebook integration",
+            "more info view document attached",
+            "contact info dan scudder",
+            "website"
+        ],
+        "timespent": "3000",
+        "alpha": 100
+    },
+    {
+        "id": "23639",
+        "project": "UP",
+        "summary": [
+            "review tincan api documentation"
+        ],
+        "description": [
+            "read and make sure all required implementation issues have been created"
+        ],
+        "timespent": "2700",
+        "alpha": 100
+    },
+    {
+        "id": "23635",
+        "project": "UP",
+        "summary": [
+            "create mapping of uportal events to tincan api verbs"
+        ],
+        "description": [
+            "document a mapping from verbs listed here to uportal events that can be used when implementing this should be an enum"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "23290",
+        "project": "UP",
+        "summary": [
+            "create background sending api for tincanapi events"
+        ],
+        "description": [
+            "create a shim class that sits between the tincan api event handler and the rest client api that has a concurrent queue that gets tincan api objects added to it a scheduled method that is called and flushes the queue via the tincan rest api client"
+        ],
+        "timespent": "2700",
+        "alpha": 100
+    },
+    {
+        "id": "23289",
+        "project": "UP",
+        "summary": [
+            "add tincanapi event processor"
+        ],
+        "description": [
+            "create an event aggregator that converts uportal events to tincanapi objects this would interface with the background sending service so after each event is converted it would be passed on to the background event sending interface"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "23287",
+        "project": "UP",
+        "summary": [
+            "create tincan api data model"
+        ],
+        "description": [
+            "create data model for tincan api",
+            "see the sakai data model the data model needs to handle the following structure so something like"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "17734",
+        "project": "UP",
+        "summary": [
+            "refactor skin selection as a fluid component"
+        ],
+        "description": [
+            "the existing skin selection dialog should be refactored as a fluid component",
+            "this new component will need to be responsible for the following tasks locate and parse the current theme's skin list display a list of available skins indicating the current choice allow users to select a new skin persist skin choice by making an ajax call reload the portal page with the new skin"
+        ],
+        "timespent": "25200",
+        "alpha": 100
+    },
+    {
+        "id": "16257",
+        "project": "UP",
+        "summary": [
+            "uportal css files for enhanced maintainability and readability"
+        ],
+        "description": [
+            "uportal css files for enhanced maintainability and readability"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "15894",
+        "project": "UP",
+        "summary": [
+            "allow and for guest"
+        ],
+        "description": [
+            "it is possible to pass parameters to channels for authenticated users loginservlet thanks to the and parameters",
+            "some of the channels are used in guest mode phone directory and also need to accept parameters"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "15893",
+        "project": "UP",
+        "summary": [
+            "not encoded when redirected by loginservlet"
+        ],
+        "description": [
+            "the parameter allows to pass parameters to channels used with when the contains a the parameter is not correctly passed to the channel",
+            "example if one wants to pass the parameter to a channel he will use a url such as the loginservlet reads the parameter and redirects to a new url build by simply concatenating the value to the url which gives somthing like it is easy to see that the value of is now xxx instead of"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "15044",
+        "project": "UP",
+        "summary": [
+            "cyclic reference between nodes causes aggregatedlayout.getfirstsiblingnode getlastsiblingnode never to return"
+        ],
+        "description": [
+            "i discovered this problem when i noticed that the cpu usage was at a constant after a load test despite the fact the load test had completed and nothing else was using the portal",
+            "with yourkit and remote debugging i was able to pinpoint the cause",
+            "there appears to be an issue with corrupt aggregated layouts where the previousnodeid of a set of nodes all reference one another",
+            "references creating a cyclic reference",
+            "this causes a problem when invocating aggregatedlayout.getfirstsibling since the for loop will never complete as previd will never be null",
+            "this looks like a reasonably simple thing to fix by making sure previd nodeid after previd node.getpreviousnodeid on line of aggregatedlayout.java however it doesn't address the issue of corrupt layouts",
+            "nick"
+        ],
+        "timespent": "4500",
+        "alpha": 100
+    },
+    {
+        "id": "14953",
+        "project": "UP",
+        "summary": [
+            "fix cassecuritycontextmocktest to cope with casproxyticketacquisitionexception deriving from runtimeexception"
+        ],
+        "description": [
+            "cassecuritycontextmocktest has exception handling flow that assumed and required that casproxyticketacquisitionexception a subclass of portalexception not derive from runtimeexception",
+            "since portalexception is now a runtimeexception casproxyticketacquisitionexception now subclasses runtimeexception so the class stopped compiling",
+            "trivially fixed"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "13903",
+        "project": "UP",
+        "summary": [
+            "incorrect syntax in ldapgroupstore.dtd"
+        ],
+        "description": [
+            "return all members of the first entity set minus any that occur in the rest element subtract should be return all members of the first entity set minus any that occur in the rest element subtract"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "13780",
+        "project": "UP",
+        "summary": [
+            "sybsqlexception thrown while updating column width"
+        ],
+        "description": [
+            "a sybsqlexception is thrown while updating column width",
+            "this occurs because all values for are enclosed within single quotes even though the column is defines as an integer",
+            "the exception is caused by implicit conversion from datatype varchar to int is not allowed",
+            "use the convert function to run this query",
+            "the table has other columns defined as integer but only the value is enclosed in quote",
+            "the fix is to remove all quotes when entering values for this occurs in places"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "12499",
+        "project": "UP",
+        "summary": [
+            "contains doesn't always work for pags groups"
+        ],
+        "description": [
+            "in group services where group membership for entities is computed by testing the prospective entity member rather than by testing the group pags ientitygroup.contains and deepcontains always work",
+            "if a pags group has been initialized by calling getmembers then calling contains or deepcontains for a prospective entity member will always return false",
+            "this is because groups in entity testing services do not keep references to their members they only define the logic for computing if an entity is a member or not",
+            "the fix is to have these services use an ientitygroup implementation that answers contains by testing the entity not the group"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "12450",
+        "project": "UP",
+        "summary": [
+            "ability to purge xslt cache"
+        ],
+        "description": [
+            "additional static method in xslt.java to actuate cache purge and modifications to channelmanager and its associated xslt to provide an administrative ui to this feature",
+            "xslt provides a static cache of xslt instances",
+            "this feature provides a way to purge that cache"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "12105",
+        "project": "UP",
+        "summary": [
+            "replace alt interface image with alt"
+        ],
+        "description": [
+            "when using a screen reader the alt tag is spoken for every space in the portal output making it almost unusable",
+            "i recommend that a global replace of alt interface image with alt be done for all stylesheets to fix this problem",
+            "i found about documents that need to be updated"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "12000",
+        "project": "UP",
+        "summary": [
+            "add groups manager permissions policy"
+        ],
+        "description": [
+            "expose groups manager permissions policy through a utility so other classes can make use of groups manager permissions",
+            "enables custom policies in servant mode"
+        ],
+        "timespent": "365400",
+        "alpha": 100
+    },
+    {
+        "id": "11756",
+        "project": "UP",
+        "summary": [
+            "need to be able to publish"
+        ],
+        "description": [
+            "the channel type simple transformation allows you to enter xml and ssl documents but we need an option to enter xml and xsl documents since genericxslt can handle this",
+            "this could be an enhancement to simple transformation or it could be a new channel type"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "27226",
+        "project": "SURPLT",
+        "summary": [
+            "add testing support for angular controllers"
+        ],
+        "description": [
+            "add instrumentation for testing of javscript"
+        ],
+        "timespent": "36000",
+        "alpha": 100
+    },
+    {
+        "id": "27223",
+        "project": "SURPLT",
+        "summary": [
+            "separate out survey javascript from admin javascript"
+        ],
+        "description": [
+            "the angularjs controller for survey and survey admin portlets is complicated due to providing mixed functionality for both portlets",
+            "separating the controllers will help minimize complexity and facilitate customization"
+        ],
+        "timespent": "19800",
+        "alpha": 100
+    },
+    {
+        "id": "26418",
+        "project": "SSP",
+        "summary": [
+            "add early alert courses report"
+        ],
+        "description": [
+            "add a report for early alert count by courses",
+            "reference number is not necessary for this report",
+            "output will report on how many students were reported per course regardless of the section",
+            "course students reported"
+        ],
+        "timespent": "102600",
+        "alpha": 100
+    },
+    {
+        "id": "26417",
+        "project": "SSP",
+        "summary": [
+            "add actualstartterm to journal session details report"
+        ],
+        "description": [
+            "improvement to the journal session details report journal step detail report to add the actual start term as an additional report parameter"
+        ],
+        "timespent": "32400",
+        "alpha": 100
+    },
+    {
+        "id": "26105",
+        "project": "SSP",
+        "summary": [
+            "integrate uportal maven dependency download fix"
+        ],
+        "description": [
+            "looks like uportal might have a fix ready for the build problems described here bad ehcache pom downloads uportal is tracking the problem as prs master"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "25728",
+        "project": "SSP",
+        "summary": [
+            "student history report inconsistent formatting"
+        ],
+        "description": [
+            "the current student history report makes an attempt to differentiate by color between items however early alert copies tasks",
+            "furthermore there is no separator between journal entries in the which causes multiple entries to run together for the same date",
+            "made apparent by relates to"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "24611",
+        "project": "SSP",
+        "summary": [
+            "data import tool upsert to external table implementation"
+        ],
+        "description": [
+            "bucket for working involving the upserting staged data into external tables"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "24610",
+        "project": "SSP",
+        "summary": [
+            "data import tool staging step implementation"
+        ],
+        "description": [
+            "bucket for work involving the reading processing and writing of data to the data import staging data",
+            "although configured as part of the same step work around upserting to the external tables will be covered in another bucket"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "24589",
+        "project": "SSP",
+        "summary": [
+            "linux ci configuration to deploy for and execute api integration tests"
+        ],
+        "description": [
+            "the proposed idea splits the jenkins build into a build ssp build and deploy and execute api tests clean up the pipeline plugin is probably overkill",
+            "for now we can probably get by with simple job chaining",
+            "database reset and a http health check to make sure the app is up will probably be part of step this probably means it will involve a certain amount of shell scripting",
+            "initialization of integration test data might be part of step or step and probably warrants additional discussion",
+            "for now we'll target but we'll eventually need a similar pipeline for the time being we'll likely need to reuse the existing linux ci env which will mean that at a minimum we need to keep the qa and integration testing databases separate because the data in the qa db is not throwaway",
+            "step would reset a db specific to integration testing deploy the app in a configuration that connects to that db then step would or restart the app in a configuration that connects to the qa db",
+            "this could all theoretically be done in a single job esp if we're talking only about testing ssp in standalone mode",
+            "but we want these integration tests in ci to be as realistic as possible hence the as the second step",
+            "it should be possible to execute the integration tests themselves against an arbitrary deployment given that the deployment has the data to support the tests of this probably means a maven integration test bootstrapping failsafe plugin probably should be isolated into a maven profile and that the coordinates for the application server under test should be overridable via system properties",
+            "let's not worry too much about aggregating test coverage metrics or even success/failure metrics at this time"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "24422",
+        "project": "SSP",
+        "summary": [
+            "transcript in map doesn't scroll"
+        ],
+        "description": [
+            "the transcript is a fixed height window that may not show all courses from the transcript data",
+            "the window can be but there is no indication that addition courses exists",
+            "the solution should be to add a scroll bar or to match the resultset"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "24413",
+        "project": "SSP",
+        "summary": [
+            "missing caseload assignment buttons in"
+        ],
+        "description": [
+            "during training at stanly in a env from a build a user experienced missing caseload assignment add edit buttons while using internet explorer this has been a problem in the past and addressed multiple times in other commits mostly related to internet explorer"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "24383",
+        "project": "SSP",
+        "summary": [
+            "student history report fails on student with early alerts"
+        ],
+        "description": [
+            "scenario log in as coach select a student with alerts click on link to print student history report then verify nothing happens issue in working on some of the new development i encountered an error that looks to be most likely located in the early alert subreport or the calling code in the student history report",
+            "it will error out with a stacktrace on any student with early alerts when printing the coaching history report",
+            "stacktrace noformat dev tasks_subreport subreport filler error fill exception error retrieving field value from bean name at caused by java.lang.nosuchmethodexception unknown property name on class at common frames omitted dev error fill exception error retrieving field value from bean name at caused by error retrieving field value from bean name at common frames omitted caused by java.lang.nosuchmethodexception unknown property name on class at common frames omitted dev error retrieving field value from bean name at caused by error retrieving field value from bean name at net.sf"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "24366",
+        "project": "SSP",
+        "summary": [
+            "external person sync doesn't sync photo url"
+        ],
+        "description": [
+            "scenario setup a student record in external_person with a photo url log in to ssp as a coach and add a student external sync the created student such that they are imported into person table view the picture one will not show view the person table for that record and you should find nothing for the photo url",
+            "issue the photo url is not syncd into the person table"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "24165",
+        "project": "SSP",
+        "summary": [
+            "loading mask should cover course panel while course validation happens on course drop"
+        ],
+        "description": [
+            "on a slow env the async nature of the course validation that happens when dragging a course onto a term leads to a poor user experience and possibly other issues",
+            "while the client is waiting for the course validation to comes back the user gets no feedback that validation is still pending and then as if out of nowhere validation messages appear",
+            "loading mask will give better feedback to the user that course validation is still pending"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "24152",
+        "project": "SSP",
+        "summary": [
+            "caseload assignment errors out if person record has no coach"
+        ],
+        "description": [
+            "in caseload assignment search for a person by where the person has no assigned coach",
+            "will get a error in a dialog box",
+            "will attach screenshot"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "24108",
+        "project": "SSP",
+        "summary": [
+            "toggle for version info in portal footer"
+        ],
+        "description": [
+            "version info in the portal footer is nice and detailed but visually overwhelming",
+            "would be nice to hide it by default and provide a dhtml control for togging it to visible"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "24091",
+        "project": "SSP",
+        "summary": [
+            "canceling inline edit in color admin ui leads to fatal js error"
+        ],
+        "description": [
+            "was trying to reproduce a reported issue from cpcc where there was a transient problem when attempting to edit a color in the map admin tools where double clicking would do nothing in that bug report the error in the js console was this i been able to reproduce that exact error in my local env but i did find an obscure clickpath that would break the to edit handler in the color admin and maybe elsewhere",
+            "nav to the color admin double click a color record press esc to dismiss the editor nav to the elective admin nav back to the color admin try to double click another color nothing will appear to happen and this will show up in the js console subsequent on colors result in more errors but i do get odd ui behavior blank dhtml dialogs and the app is completely broken until i reload the page nav to a different admin"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "24080",
+        "project": "SSP",
+        "summary": [
+            "mail exception error for student intake"
+        ],
+        "description": [
+            "this issue has been prevalent in previous versions including this issue is caused by a blank primary email address in person table and blank recipient email addresses in the message table",
+            "the log file will fill up with mailservice exceptions that is hard to decipher and points to a java method",
+            "this java method has a place where the email address is checked for primary for the sender but then it doesn't do it for other email addresses recipient and the person so for consistency and to cut down on the log file size as well as for more description to the user this ticket deals with adding guards for this exception and outputting a more descriptive message so the problem can be rectified by end users",
+            "to be sure this issue is rare due to address not null conditions via the server code however in new integrations or other situations where there is no valid email address this will fill up the log quickly",
+            "other situations includes external"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "24017",
+        "project": "SSP",
+        "summary": [
+            "defaulting of unlikely to work for upgrades"
+        ],
+        "description": [
+            "seen at nc upgrades today that as suspected the defaulting of to work because values for the latter tend to be the acronyms we expected but rather lengthy values that fit in the value more dynamically",
+            "for example for postgres that thing uses the chars from id if you look at the defaults the chars for that dataset are identical up to chars",
+            "i think this should work in sqlserver as well as long as you parameterize the string concatenation operator",
+            "let me know though if you want me to run any test changesets against sqlserver before checking in though",
+            "also probably want to create a to update release notes to notify people that probably want to change these values after their"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "24008",
+        "project": "SSP",
+        "summary": [
+            "early alert reason explanation for other doesn't display on early alert"
+        ],
+        "description": [
+            "when submitting an early alert as a faculty in the early alert portlet the other reason allows for an explanation",
+            "the explanation dialog is saved with the submission",
+            "when viewing the early alert as a coach the reason is listed as other without the explanation",
+            "the explanation should show with or instead of other in the early alert details"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "23993",
+        "project": "SSP",
+        "summary": [
+            "action plan report problems"
+        ],
+        "description": [
+            "for reports the goal and strength header is displayed on the second page",
+            "it should only be displayed once when listing the items",
+            "change the completed label to status in the list of challenges",
+            "the label is just below the challenge label",
+            "sample report is attached"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "23990",
+        "project": "SSP",
+        "summary": [
+            "coaching history report missing dates"
+        ],
+        "description": [
+            "two dates are missing from the coaching history report",
+            "the created date for the early alert should be displayed above the instructor name in the early alert definition the action plan tasks step have dates listed but they are unclear as to what dates they represent",
+            "the created and due dates need to be listed and labeled in the header line or add the journal source to the details for journal entries"
+        ],
+        "timespent": "12600",
+        "alpha": 100
+    },
+    {
+        "id": "23982",
+        "project": "SSP",
+        "summary": [
+            "ssp permissons editing not visible in ie"
+        ],
+        "description": [
+            "scenario log into ssp as an administrator go to platform administration manage permissions go to student success platform click on an individual permission to edit view blank screen issue due to a error provided below ie is not displaying the ssp roles for the various permissions"
+        ],
+        "timespent": "9360",
+        "alpha": 100
+    },
+    {
+        "id": "23975",
+        "project": "SSP",
+        "summary": [
+            "student intake second address improper display"
+        ],
+        "description": [
+            "scenario login to ssp as a coach edit or add a student intake for a student add information to address line save the intake navigate away and back to the intake issue the address line is being put into the first address line",
+            "furthermore if there is no address and in other cases it is putting extraneous commas into the first address field"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "23926",
+        "project": "SSP",
+        "summary": [
+            "main tool transcript tab produces error"
+        ],
+        "description": [
+            "selecting the schedule tab for produces a error on screen",
+            "message is unable to determine the source of this error",
+            "see logs for additional details",
+            "the current log is attached"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "23919",
+        "project": "SSP",
+        "summary": [
+            "add student summary to the coaching history report"
+        ],
+        "description": [
+            "add a section to the top of the coaching history report to display the data on the main tool dashboard tab so it is easier to see and understand many details about the student and the work that has been done with them in one place",
+            "this makes it simpler for printed review",
+            "the current header can be replaced by the summary",
+            "a screen shot is attached to show the formatting from the main tool that could be used to display the data in columns similar to the dashboard",
+            "fields to include in a format column name student id dob phone email student type ssp status gpa completion rate standing restrictions registered terms payment for registered terms fa award sap status column service reasons service groups early alert totals action plan totals intake task assigned date intake completion date academic program map status map name advisor map last updated date map projected grad date"
+        ],
+        "timespent": "82800",
+        "alpha": 100
+    },
+    {
+        "id": "23915",
+        "project": "SSP",
+        "summary": [
+            "access denied error while impersonating a coach"
+        ],
+        "description": [
+            "while testing some strange behavior occurred",
+            "the error message is it looks like you are trying to access restricted information or your login session has expired",
+            "would you like to login to continue working in ssp steps to reproduce on linux ci",
+            "log in as admin search for user former coach set the user's role as coach return to ssp and assign student to former coach caseload in manage users locate former coach choose impersonate coach caseload assignment is opened with the search panel select the my caseload button caseload appears with no students the access denied error appears click yes in the dialog page refreshes and loads the search panel as admin i searched for and do see that the student is assigned to former coach"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "23914",
+        "project": "SSP",
+        "summary": [
+            "choosing a different journal track deletes existing track selections in model"
+        ],
+        "description": [
+            "pick a journaltrack and a few journalstepdetails therein for a journalentry pick a different track pick the original track your selections will be gone",
+            "both new and existing journalentries have the same problem",
+            "i think this is caused by editjournalviewcontroller#onjournaltrackcomboselect which does this so until the tool is reloaded the representation of this journalentry has no details or at least no way to get back to its original details",
+            "and if you do something like look at another track then pick your original track and press save you'll effectively lose data even though you didn't actually intend to change anything",
+            "seems to me there needs to be some way to get back to your original state without reloading the entire app or navigating out and back into the tool"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "23913",
+        "project": "SSP",
+        "summary": [
+            "appointment required first login and coach always required"
+        ],
+        "description": [
+            "issue is similar to but it is different",
+            "issue the main issue is that on first login with a clean browser no previous local cache on that site an appointment is always required regardless of student type",
+            "canceling and selecting the student again will usually clear it as well as if you can select a different student type and then go back",
+            "issue along with that issue is no matter what login the coach field is being highlighted as required regardless of the value in it",
+            "selecting a different coach will remove the highlighting",
+            "again this seems irrespective of login and local cache",
+            "scenario log into ssp select a student that doesn't require an appointment default is eal click edit student and go to appointment section view the red asterisks and that an appointment is required cancel or change student type and go back and view no red asterisks"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "23877",
+        "project": "SSP",
+        "summary": [
+            "mygps view my map not visible in"
+        ],
+        "description": [
+            "scenario use internet explorer log into ssp as student with an active map plan on the mygps home screen view the options issue the view my map option is not visible in there is a console error which will be shown in an attached screenshot below"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "23874",
+        "project": "SSP",
+        "summary": [
+            "mygps view map not scrollable in ie"
+        ],
+        "description": [
+            "scenario log into ssp as student with an active map plan using internet explorer you should be taken to mygps if not navigate there click on the view map option the subsequent for the map plan is not scrollable issue the map plan pop up in internet explorer is not scrollable by the user"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "23858",
+        "project": "SSP",
+        "summary": [
+            "cleanup retrieval and rendering of associated/selectable records assigned coaches"
+        ],
+        "description": [
+            "testing the cleanup retrieval and rendering of associated/selectable records for coaches in caseload assignment",
+            "the former coach shows as a uuid in the coach assignment list",
+            "steps created a new coach and assigned a coach role logged in as new coach to run the sync",
+            "assigned the new coach to a student changed the user role from coach to logged in as new coach to run the sync edit the student assigned to new coach the new coach remains in the list with the uuid displaying screen shot attached",
+            "i did confirm that the sync ran as new coach is not available for new coach assignment"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "23842",
+        "project": "SSP",
+        "summary": [
+            "error when trying to save new studenttype from admin"
+        ],
+        "description": [
+            "ssp admin caseload assignment student types add enter details click update at this point a error appears stating status error internal server error null value in column code violates constraint it appears there is not a corresponding input field for property on the student type admin panel"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "23807",
+        "project": "SSP",
+        "summary": [
+            "process pull requests for sso code"
+        ],
+        "description": [
+            "greg has opened two pull requests for merging sso code into ssp platform",
+            "we got the all clear from both schools to contribute that code so i need to merge those pull requests"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "23804",
+        "project": "SSP",
+        "summary": [
+            "map fa and transcript buttons don't belong on template page"
+        ],
+        "description": [
+            "the financial aid and transcript buttons do not belong on the template context page",
+            "they should only be on the plan context page"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "23803",
+        "project": "SSP",
+        "summary": [
+            "map allow the start term to be a past term for templates"
+        ],
+        "description": [
+            "the move plan currently does not allow for the start term to be a past term before that is the correct behavior for plans",
+            "the behavior for templates should be that the start term could be a past term",
+            "change the restrictions for move template to allow for past terms as the start term"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "23802",
+        "project": "SSP",
+        "summary": [
+            "for plan courses"
+        ],
+        "description": [
+            "on linux ci there are courses with y",
+            "those courses are all numbered below when dragging the course onto a plan the dev cr hrs and color indicator do not reflect the status",
+            "dev cr hrs remain zero and no red color indicator appears for the course",
+            "the calculation of dev hrs on the plan previously worked"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "23796",
+        "project": "SSP",
+        "summary": [
+            "grayscreen when log in"
+        ],
+        "description": [
+            "scenario use log into ssp application view grayscreen and errors on the console issue there are syntax issues using javascript most likely in model fields and most likely deal with extra commas",
+            "does not support commas on the last item it expects another"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "23794",
+        "project": "SSP",
+        "summary": [
+            "caseload search without any filters times out"
+        ],
+        "description": [
+            "caseload search perf is definitely improved since addressing the issue with program status loading but still able to reliably time out the ui in linux ci by not specifying any search params at all",
+            "i see the cpu on the is pegged for the entire wait and roughly thereafter guessing until the queries run their and some fairly reasonable searches i think anyway like programstatus=active take much longer than a normal user is likely to wait get twitchy finger and make the problem worse",
+            "i imagine we could do something to require at least one filter before executing a search would have to be both front and of the server resource usage issue but still a since we never really know what combo of filters will narrow results down enough to not end up in what amounts to a potential dos person searches i think are always going to be potentially much larger than say reference item i really think these results need to be paged somehow or else dramatically simplified or precalculated or something",
+            "could still be room for improvement just by looking at query plans and profiler output",
+            "paging of course might not actually help at all the issue here seem to be data on the wire back to the client",
+            "query execution and deserialization time on the server",
+            "and for paging to work as currently designed the db has to know how many total records there are in the entire result set",
+            "so we might end up running the same or more of the awful query were we to try to fix this with the usual pagination mechanism",
+            "interestingly this time around almost all the cpu time is in postgres",
+            "previously with the program status it was in the java process"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "23788",
+        "project": "SSP",
+        "summary": [
+            "selecting user with no coach throws error"
+        ],
+        "description": [
+            "if a student is selected in the returning search list that has no program coach on error is thown by the recent student activities view from the server"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "23778",
+        "project": "SSP",
+        "summary": [
+            "plan.js isdirty function does not work predictably"
+        ],
+        "description": [
+            "currently it appears that the isdirty function for the plan object does not work correctly specifically it appears that semesterstore.getupdatedrecords is never updated when the models are saved to the backend",
+            "this function always returns true that there is unsaved data even after specifically saving the data through the various dialogs",
+            "relies on this functionality to determine when to tell the user if they have unsaved data",
+            "currently the users always encounter a dialog telling them that they have unsaved data even after they have saved"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "23775",
+        "project": "SSP",
+        "summary": [
+            "map financial aid option"
+        ],
+        "description": [
+            "add the financial aid information option for the full report when emailing or printing",
+            "the data fields include attempted hours completed hours current completion rate number of hours needed to earn completion rate financial aid gpa number of hours needed to earn a gpa with all b grades screen shot attached"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "23774",
+        "project": "SSP",
+        "summary": [
+            "map move financial aid button next to the transcript button"
+        ],
+        "description": [
+            "move the financial aid button to be next to the transcript button to group the supplemental information together"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "23773",
+        "project": "SSP",
+        "summary": [
+            "map change color of cautioned courses"
+        ],
+        "description": [
+            "change the color of cautioned courses from gray to red",
+            "keep the italicization"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "23772",
+        "project": "SSP",
+        "summary": [
+            "map course notes indicator at far right"
+        ],
+        "description": [
+            "please move the course notes indicator to the far right of the row after the course hours"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "23766",
+        "project": "SSP",
+        "summary": [
+            "add option for person sync job to run to completion"
+        ],
+        "description": [
+            "given that the intention is now for the person sync job to run nightly by default that will actually be configurable now users will probably want the job to run to completion instead of stopping after processing as many records are specified by the batch config and waiting for the next execution period to elapse we need to provide the option on by default to simply continue processing batches until the job completes",
+            "i think batches should by default be rather small and be handled as discrete transactions",
+            "currently our transactions span the entire job which can lead to some very long running transactions"
+        ],
+        "timespent": "12600",
+        "alpha": 100
+    },
+    {
+        "id": "23764",
+        "project": "SSP",
+        "summary": [
+            "control person sync background job frequency and all other execution params from database config"
+        ],
+        "description": [
+            "but just for the person sync job",
+            "the new default will be to run this job during off hours probably daily"
+        ],
+        "timespent": "39600",
+        "alpha": 100
+    },
+    {
+        "id": "23761",
+        "project": "SSP",
+        "summary": [
+            "cleanup retrieval and rendering of associated/selectable records reports"
+        ],
+        "description": [
+            "see parent issue for background",
+            "fields possibly affected in the reports only dealing with the report request reports themselves would be a whole nuther general student report home department general student report assigned coach general student report program status general student report student type general student report service reason general student report special service groups general student report referrral source general student report actual start term general student report anticipated start term current caseload statuses report home department current caseload statuses report student type current caseload statuses report service reason current caseload statuses report special service groups caseload activity report assigned coach caseload activity report home department caseload activity report student type caseload activity report special service groups caseload activity report service reason caseload activity report term counselor case management report all fields except anticipated start year special services report all fields disability services report all fields except actual start year and anticipated start year ea case counts report all fields ea student referral report all fields ea student program report all fields ea student outreach report all fields ea student outcome report all fields journal step detail report all fields number of courses in plans all fields number of plans by advisor all fields number of students by status all fields"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "23757",
+        "project": "SSP",
+        "summary": [
+            "cleanup retrieval and rendering of associated/selectable records early alert ext.js tool"
+        ],
+        "description": [
+            "see parent issue for background",
+            "possibly affected fields in the ext.js early alert tools ea list view paginated ea details reasons ea details campus ea details suggestions responses paginated ea response details outcome ea response details outreach ea response details referrals ea response add outcome ea response add outreach ea response add department referrals also please see for some observations on implementation quirks that this patch should probably take care of"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "23754",
+        "project": "SSP",
+        "summary": [
+            "cleanup retrieval and rendering of associated/selectable records intake"
+        ],
+        "description": [
+            "see parent issue for background",
+            "possibly affected fields in intake demographics marital status demographics ethnicity demographics gender demographics citizenship demographics military affiliation demographics veteran status demographics student status edulevel entire tab edugoal education/career goal registration load possibly not solvable given current config impl hourse per week for coursework possibly not solvable given current config impl funding entire tab challenges entire tab"
+        ],
+        "timespent": "17100",
+        "alpha": 100
+    },
+    {
+        "id": "23752",
+        "project": "SSP",
+        "summary": [
+            "on dragdrop course show is course is in transcript"
+        ],
+        "description": [
+            "add to validation of course on drop an alert that course is in student transcript",
+            "mark droped course as istranscript"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "23746",
+        "project": "SSP",
+        "summary": [
+            "cleanup retrieval and rendering of associated/selectable records campus admin"
+        ],
+        "description": [
+            "see parent issue for background",
+            "potentially affected fields in administrative tools early alert campuses early alert coordinator"
+        ],
+        "timespent": "15300",
+        "alpha": 100
+    },
+    {
+        "id": "23734",
+        "project": "SSP",
+        "summary": [
+            "early alert always loading when using unminified configuration"
+        ],
+        "description": [
+            "scenario build and deploy ssp with configuration set start tomcat login to ssp and select a student go to the early alert tool view the loading icon for early alerts results it never loads issue early alert results are always loading when running unminified",
+            "this may not be an issue for normal users however it increases development time related to finding and fixing bugs in the early alert tool"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "23732",
+        "project": "SSP",
+        "summary": [
+            "external notes minor ui changes"
+        ],
+        "description": [
+            "change the name of the tool from legacy remarks to external notes change the date and time column name to date move the date column the position change the remark column name to department"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "23710",
+        "project": "SSP",
+        "summary": [
+            "migrate complex config records to reference types"
+        ],
+        "description": [
+            "added specialized admin screens for complex config records the values of which are stored as json in the config table",
+            "there's really no good reason why these values are treated as config rather than reference types so would be nice to migrate them to the latter",
+            "this includes coursework hours enrollment status registration load the admin access is currently in the system configuration tab but coursework and registration should be moved to the student intake tab"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "23665",
+        "project": "SSP",
+        "summary": [
+            "term dates compared using seconds"
+        ],
+        "description": [
+            "this is an offshoot of since term boundary ambiguity was fixed however the overly precise way of using seconds to compare dates was left in",
+            "term dates are stored using a format of time going down to seconds",
+            "when using built in comparisons dates are compared using seconds",
+            "with the fix for this isn't as big of an issue however there still could be issues that haven't been experienced especially on term boundaries with differing times"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "23660",
+        "project": "SSP",
+        "summary": [
+            "map add client side logic and ui to support bump validation"
+        ],
+        "description": [
+            "the bump feature allows an to bump the plan or template to accommodate student intent to continue or take a break and create templates for a new academic year",
+            "the bump will move courses into the next plan or template term and validate for availability and requisite rules",
+            "full specs at am breaking this into tickets",
+            "this the second ticket is focused on the logic and ui necessary to support the bump on validation",
+            "this is important as it allows confirmation of the bump ui early in the iteration",
+            "will come late in the iteration"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "23659",
+        "project": "SSP",
+        "summary": [
+            "external credit hour data type changeset does not respect config"
+        ],
+        "description": [
+            "needs to be modified to if see other integration changesets for examples",
+            "this is a blocker for the release",
+            "please fix in master and into when both are done please remove the label and add ssp as a fix version"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "23644",
+        "project": "SSP",
+        "summary": [
+            "add course term validation for courses to support bump"
+        ],
+        "description": [
+            "to support bump add course term validation to handle a plan or multiple courses"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "23626",
+        "project": "SSP",
+        "summary": [
+            "add description to elective management menu"
+        ],
+        "description": [
+            "change the descriptive text below the buttons from to edit an item to edit and drag to items"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "23511",
+        "project": "SSP",
+        "summary": [
+            "map transcripted term and requisite validation on plan load"
+        ],
+        "description": [
+            "when a user opens a plan perform the is transcripted term and requisite validation to pick up any changes to external data highlight any courses on the plan that violate the term and requisite rules as well as indicate the courses that are transcripted"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "23412",
+        "project": "SSP",
+        "summary": [
+            "map server side tasks for phase"
+        ],
+        "description": [
+            "parent issue for all assigned to map phase full specs located at ui tasks at"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "23321",
+        "project": "SSP",
+        "summary": [
+            "inactive electives in plan course details generate"
+        ],
+        "description": [
+            "if an elective is made inactive and is in a elective drop down showes the id and an error is thrown",
+            "however you can still select",
+            "program does not die",
+            "not sure if we want a foreign key restraint etc"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "23300",
+        "project": "SSP",
+        "summary": [
+            "early alert differences in results between double and single clicking"
+        ],
+        "description": [
+            "scenario login to ssp as a coach with students preferable one with several click on student that you know has early alerts click on early alert tool only once view the results and double click the early alert tool view the doubling of results issue it seems the early alert tool doesn't clean out the existing results or does some other weird behavior whereby when double click the early alert tool after single clicking the results are doubles or changed",
+            "subsequent clicking does not affect it"
+        ],
+        "timespent": "36000",
+        "alpha": 100
+    },
+    {
+        "id": "23282",
+        "project": "SSP",
+        "summary": [
+            "don't switch off of last thing entered"
+        ],
+        "description": [
+            "scenario log into ssp as coach create new student or edit an existing enter a state in the state go lower to another observe it won't let you do anything but select what was selected above",
+            "issue the remember the last item to filter results by and do not let you deviate from that in subsequent drop downs on that page until refresh or click another tool",
+            "this is largely present in the student intake where the are used frequently"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "23280",
+        "project": "SSP",
+        "summary": [
+            "map provide an indicator for dev ed courses"
+        ],
+        "description": [
+            "the plan keeps track of dev ed hours in as a total",
+            "there is no way to determine which courses are dev ed either in the available course list or plan",
+            "add an indicator as an icon or color with the course add a field on the plan course detail for dev ed"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "23265",
+        "project": "SSP",
+        "summary": [
+            "add save dialog for unsaved changes in map for ssp features"
+        ],
+        "description": [
+            "check for unsaved map data when a user navigates away from an unsaved map plan or this will include ssp tools if there is unsaved data open a dialog for the user to save the changes",
+            "in handled this for navigating within the map tool",
+            "this functionality depends on an isdirty method to determine if there is unsaved data in the current plan",
+            "there is a bug in this function that erroneously tells the user that they have unsaved data after they have saved their data",
+            "has been created to address this issue"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "23224",
+        "project": "SSP",
+        "summary": [
+            "new student entry by faculty met with access denied still creates student"
+        ],
+        "description": [
+            "scenario log in to ssp as faculty click on icon to add a new student enter information that is required click save view access denied popup click no or go back and click icon to student search for student that was just denied you can verify with other logins that the student was entered issue the popup says access denied but the student is still being created by a faculty and is visible by others in subsequent logins"
+        ],
+        "timespent": "27000",
+        "alpha": 100
+    },
+    {
+        "id": "23223",
+        "project": "SSP",
+        "summary": [
+            "access denied popup not displaying for eal with no appointment time set"
+        ],
+        "description": [
+            "scenario log into ssp as faculty/teacher select add a student icon fill in information under personal for new student under appointment and student type select eal don't select an appointment date or start time click save above there will be no access denied popup box but select an appointment time or any of the other student type options and a popup box will be encountered",
+            "furthermore you will not be taken back to starting screen"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "23220",
+        "project": "SSP",
+        "summary": [
+            "enhance map operational data model for phase"
+        ],
+        "description": [
+            "placeholder for issues",
+            "this will include adding a column for number to the plan table to support the reporting requirements"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "23219",
+        "project": "SSP",
+        "summary": [
+            "map report number of courses in plans for"
+        ],
+        "description": [
+            "report to identify the number courses in active plans for each term the is an extension from now to include plan status"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "23218",
+        "project": "SSP",
+        "summary": [
+            "map report number of students by status for"
+        ],
+        "description": [
+            "report to identify plan status by term or course this is an extension of the version in now that the plan status information is available",
+            "plan status is added to the criteria"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "23158",
+        "project": "SSP",
+        "summary": [
+            "general student report does not include date range nor term criteria in header"
+        ],
+        "description": [
+            "mostly this is just for the date range student entered term and date criteria you can flip back and forth between the actual and anticipated term criteria are reflected in the report header when selected"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "23122",
+        "project": "SSP",
+        "summary": [
+            "ods registration date not shown immediately on save"
+        ],
+        "description": [
+            "same as but for the ods registration date",
+            "think the underlying cause is the same model is not reloaded after form save nor cancel"
+        ],
+        "timespent": "8100",
+        "alpha": 100
+    },
+    {
+        "id": "23118",
+        "project": "SSP",
+        "summary": [
+            "intake completion date not shown immediately on save"
+        ],
+        "description": [
+            "save the intake form for a student who had it saved before",
+            "expect the intake completion date field to be populated immediately but it stays blank",
+            "think the underlying cause is the same as underlying model reloaded on save or cancel"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "23117",
+        "project": "SSP",
+        "summary": [
+            "intake completion date disappears on cancel"
+        ],
+        "description": [
+            "originally discussed in navigate to intake tool for a student who has already had that form saved an intake completion date will appear at the top of the form press save press cancel the completion date will disappear",
+            "i think this has something to do with the fact that the underlying model reloaded on save or on cancel"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "23004",
+        "project": "SSP",
+        "summary": [
+            "sorting not working for recent ssp activity for this student"
+        ],
+        "description": [
+            "scenario log into as click on the search icon magnifying enter a in the name or tartan id field and click on the search icon again",
+            "if not selected select student joseph mumford anderson",
+            "on the dashboard tab within the recent ssp activity for this student section click on the coach header",
+            "issue the order does not change",
+            "the order should change to descending order by coach's name",
+            "same issue when clicking on the service or date header"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "22847",
+        "project": "SSP",
+        "summary": [
+            "set student to non-participating uses last student found when no student is selected"
+        ],
+        "description": [
+            "scenario log into as on the left hand side click on the search icon magnifying enter x in the name or student id field and click on the search icon",
+            "no user are found",
+            "click on the set student to active status icon green the following error message is displayed unable to determine student to set to status click on the ok button",
+            "the error message is closed",
+            "click on the set student to no show status icon circle with line through the following error message is displayed unable to determine student to set to status click on the ok button",
+            "the error message is closed",
+            "click on the set student to non-participating status icon red dot with line through issue the following message is displayed please provide a reason the student will no longer be participating student reason issue the three icons should all function in the same manner instead of two not finding a user and one finding a user",
+            "see attached screenshot of icons i am referring to"
+        ],
+        "timespent": "7920",
+        "alpha": 100
+    },
+    {
+        "id": "22768",
+        "project": "SSP",
+        "summary": [
+            "map add client side logic to support shift plan"
+        ],
+        "description": [
+            "the bump feature allows an to bump the plan or template to accommodate student intent to continue or take a break and create templates for a new academic year",
+            "the bump will move courses into the next plan or template term and validate for availability and requisite rules",
+            "full specs at am breaking this into tickets",
+            "the first focused on the client side logic and ui to just do the bump while the second is focused on the logic and ui necessary to support the bump on validation",
+            "this is important as it allows confirmation of the bump ui early in the iteration"
+        ],
+        "timespent": "108000",
+        "alpha": 100
+    },
+    {
+        "id": "22767",
+        "project": "SSP",
+        "summary": [
+            "add indicators for course notes and term importance for phase"
+        ],
+        "description": [
+            "important term add an icon with a tooltip to the left of the term name to indicate an important term course note replace elective code with a paper icon to indicate course note at the far right of the course row full specs at"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "22765",
+        "project": "SSP",
+        "summary": [
+            "map validate course requisites when planning for phase"
+        ],
+        "description": [
+            "a new external table for course requisites will hold course co and pre requisites",
+            "as the adds courses from the available course list the requisites are validated and a warning is displayed to the user for any violations",
+            "will require addition to validation",
+            "full specs at"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "22764",
+        "project": "SSP",
+        "summary": [
+            "map add plan status indicator for phase"
+        ],
+        "description": [
+            "add the indicator for plan status",
+            "adopters will populate the table with the status and reason for status if the student is off plan",
+            "full specs at"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "22720",
+        "project": "SSP",
+        "summary": [
+            "map add financial aid link and data display for phase"
+        ],
+        "description": [
+            "add the financial aid link to the map ui to display icon for all need to consider what displays if there is no financial aid data for the student dialog box that displays financial aid data from same as main tool specs available at"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "22657",
+        "project": "SSP",
+        "summary": [
+            "early alert tool hangs"
+        ],
+        "description": [
+            "when there is no earlyalertreason tied to an early alert system hangs and does not send an exception error typeerror undefined is not an object evaluating earlyalertreasonids code in earlyalertdetailsviewcontroller.js bindearlyalerttoview function var me this var campus var reasonid null var reason reasonid minor issue as ui requires early alert to have a reason",
+            "issue showed in self generated code"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "22649",
+        "project": "SSP",
+        "summary": [
+            "connect external notes ui and api"
+        ],
+        "description": [
+            "connect the ui and apis for the external notes tool"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "22519",
+        "project": "SSP",
+        "summary": [
+            "collapsing a tool"
+        ],
+        "description": [
+            "testing in when collapsing a tool the arrows to compress the tool initially appear at the top of the screen",
+            "when tool is further collapsed the arrows to expand the tool appear at the bottom of the screen"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "22475",
+        "project": "SSP",
+        "summary": [
+            "wire early alert field to api"
+        ],
+        "description": [
+            "now that the transcript-related wiring has happend the new dashboard tab on the main tool still needs several additional fields wired up",
+            "this ticket is for the early alert field which is supposed to be a ratio of early alerts"
+        ],
+        "timespent": "11700",
+        "alpha": 100
+    },
+    {
+        "id": "22474",
+        "project": "SSP",
+        "summary": [
+            "wire payment and reg fields to api"
+        ],
+        "description": [
+            "now that the transcript-related wiring has happend the new dashboard tab on the main tool still needs several additional fields wired up",
+            "this ticket is for the reg and payment fields",
+            "payment is new",
+            "reg was there previously but the spec has changed",
+            "now not just a list of upcoming terms in which the user is registered"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "22470",
+        "project": "SSP",
+        "summary": [
+            "wire academic program field to api"
+        ],
+        "description": [
+            "now that the transcript-related wiring has happend the new dashboard tab on the main tool still needs several additional fields wired up",
+            "this ticket is for the academic program field"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "22439",
+        "project": "SSP",
+        "summary": [
+            "add new student intake fields for intended registration load and graduation"
+        ],
+        "description": [
+            "add three new fields to the mygps and student intake edugoal tab to collect additional information about the student's intent for registration and coursework",
+            "field registration load values hrs or more hours per week for coursework values more than field anticipated graduation date value list of future terms or year and month boxes"
+        ],
+        "timespent": "58560",
+        "alpha": 100
+    },
+    {
+        "id": "22438",
+        "project": "SSP",
+        "summary": [
+            "extend components to support of the main tool"
+        ],
+        "description": [
+            "this is a placeholder to define the api dao and services to support the extension of the main tool described in specs are available at"
+        ],
+        "timespent": "29280",
+        "alpha": 100
+    },
+    {
+        "id": "22389",
+        "project": "SSP",
+        "summary": [
+            "remove year range constraints on person"
+        ],
+        "description": [
+            "restrictions on person#anticipatedstartyear and person#actualstartyear which require those values to be between and conflict with values observed at clc and indian river",
+            "these restrictions are also out of sync with year enums maintained in the client see we should just remove the min and max constraints on these fields",
+            "discussed"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "22385",
+        "project": "SSP",
+        "summary": [
+            "year values caseload assignment form"
+        ],
+        "description": [
+            "the anticipated start year combo box in the caseload assignment form is populated by a list of years defined in i think this is going to cause at least two problems will have to keep remembering to update this list every year or possibly even for every deployment depending on how far in advance they track this data and even if we keep the current constraints on the corresponding java fields they match up currently java requires so i suspect this means underlying person state could easily be incorrectly reflected or just not reflected at all in this combo box",
+            "is it unreasonable to just make this a text field"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "22369",
+        "project": "SSP",
+        "summary": [
+            "action plan description field in pdf does not stretch vertically"
+        ],
+        "description": [
+            "originally reported on the pdf version of a student's action plan is cutting off the description of assigned resources at some seemingly arbitrary point",
+            "that cell appears to be"
+        ],
+        "timespent": "2700",
+        "alpha": 100
+    },
+    {
+        "id": "22364",
+        "project": "SSP",
+        "summary": [
+            "background jobs break with sql error"
+        ],
+        "description": [
+            "originally reported on something is generating invalid column selection expressions like over order by asc as seems to only be a problem on sqlserver and only on recent ssp code"
+        ],
+        "timespent": "9900",
+        "alpha": 100
+    },
+    {
+        "id": "22354",
+        "project": "SSP",
+        "summary": [
+            "appointment always required when editing student caseload assignment"
+        ],
+        "description": [
+            "seems rules about toggling the appointment requirement are being skipped when loading a record for edit",
+            "in an existing caseload select a student and press the edit icon if the student already has a type which does not require an appointment the form will still require setting an appointment select a different type then the type not requiring an appointment",
+            "the form will now allow you to save without specifying an appointment"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "22339",
+        "project": "SSP",
+        "summary": [
+            "caseload assignment form fails to save if no selectable special service groups exist"
+        ],
+        "description": [
+            "originally reported on i was unable to reproduce the problem in the intake form but i was able to reproduce it or at least very similar behavior in caseload assignment",
+            "first as admin i deleted all special service groups then i attempted to edit an existing student",
+            "the form save fails with this error in the chrome dev tools console i suspect we might have similar problems with other reference data types on that same form and possibly other marking this as lowest priority the chance of a deployment running with any given reference data type completely zeroed out is probably very low"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "22331",
+        "project": "SSP",
+        "summary": [
+            "referrals on early alert response not persisted if all referrals selected"
+        ],
+        "description": [
+            "if you select all of the referral types when authoring an early alert response the response will save successfully but none of the referral associations will have persisted",
+            "probably the same issue we ran into with special service groups etc in the caseload assignment tool"
+        ],
+        "timespent": "24300",
+        "alpha": 100
+    },
+    {
+        "id": "22297",
+        "project": "SSP",
+        "summary": [
+            "json error attempting to save the edulevel with no diploma supplemental information"
+        ],
+        "description": [
+            "in testing the student intake at clc on in dev there is an error when attempting to save a supplemental entry in the student intake edulevel tab",
+            "steps using student jason student open student intake navigate to edulevel check did not graduate and no longer attend hs this value was renamed from the source data for object originally titled no ged the supplemental entry box requires last year attended and highest grade completed",
+            "last year attended validates for numeric values entered highest grade completed validates for alpha values entered f clicking save produced the following error",
+            "status error internal server error could not read json can not construct instance of from string value f not a valid integer value at source line column through reference chain personeducationlevels highestgradecompleted nested exception is can not construct instance of from string value f not a valid integer value at source line column through reference chain personeducationlevels entering a numeric valid as the json indicates does not validate and produces a ssp error dialog when saving not a valid input"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "21721",
+        "project": "SSP",
+        "summary": [
+            "early alert routings without associated person not included in lookup results"
+        ],
+        "description": [
+            "person is not a required field in the ui nor the when creating/editing an early alert routing but gets to will not include any records where the person has not been set",
+            "looking at the hibernate query from earlyalertroutingdao.getallforcampusid this is because of an inner join between and the query itself is also far too complicated but a separate issue",
+            "basically the same problem as in also result counts are off probably calculating the count and retrieving results are two different queries",
+            "the count query has no joins"
+        ],
+        "timespent": "11700",
+        "alpha": 100
+    },
+    {
+        "id": "21604",
+        "project": "SSP",
+        "summary": [
+            "display some sort of number in ui"
+        ],
+        "description": [
+            "request from spc"
+        ],
+        "timespent": "48600",
+        "alpha": 100
+    },
+    {
+        "id": "21544",
+        "project": "SSP",
+        "summary": [
+            "caseload assignment always loads oldest appointment creating the impression recent appointment edits were lost"
+        ],
+        "description": [
+            "maybe there are more obvious paths for creating multiple appointments but this was how i discovered this behavior while working on click the button to create a new student retrieve a student record by external id assign required fields including appointment coordinates press save click yes in the dialog overwrite whatever is in the db already for that external id",
+            "if the student did not already have an appointment in the db repeat steps now have at least two appointments in the db for this student",
+            "select the student for edit",
+            "see the oldest appointment not the one you most recently edited",
+            "press save again",
+            "select the student for edit again",
+            "now see the appointment you had originally expected to see in repeat the appointments will each time",
+            "i think this happens for at least three reasons only the last of which is definitely wrong the overwrite option in step results in creation of a new appointment rather than updates to any existing saving the form always updates the on the appointment even if no changes were actually made and i think the sort order is wrong in appointmentdao.getcurrentappointmentforperson even when compared to the associated inline comment only return the most recently modified appointment modifieddate i think that should be order.desc so you always see whatever you edited most recently",
+            "not sure whether anything should really be done about the first what are the chances the user actually wants to overwrite an existing appointment for the second it seems like appointment should only have the modification timestamp updated if they are actually changed but the impact of the current behavior is mitigated entirely by just fixing the last issue incorrect sort"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "21507",
+        "project": "SSP",
+        "summary": [
+            "add fields to counselor case management report"
+        ],
+        "description": [
+            "the following fields will eventually need to be added to the counselor case management report academic standing fa standing cumulative gpa most recent term gpa registration status"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "21442",
+        "project": "SSP",
+        "summary": [
+            "overly restrictive phone number validation rules"
+        ],
+        "description": [
+            "phone number validation rules in student record uis require a conventional format",
+            "at spc this runs afoul of relatively chaotic phone number formats in data pulled from peoplesoft",
+            "is there a need for formi just removed it"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "20581",
+        "project": "SSP",
+        "summary": [
+            "getting the database to accept new attributes"
+        ],
+        "description": [
+            "getting the database and form to accept boolean attributes",
+            "properly track and display these attributes as well as let them function on the form"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "20523",
+        "project": "SSP",
+        "summary": [
+            "as a admin user i would have the ability to the access types and roles for students"
+        ],
+        "description": [
+            "getting the user control to accept different variable types for user attributes"
+        ],
+        "timespent": "115200",
+        "alpha": 100
+    },
+    {
+        "id": "19232",
+        "project": "PHPCAS",
+        "summary": [
+            "move all variables out of the global scope"
+        ],
+        "description": [
+            "move the and other global variables out of the global scope and make them private static variables of the phpcas class",
+            "this will prevent poorly written client applications from accessing the object created via and ensure that even public methods on the are not accidentally considered part of the public api"
+        ],
+        "timespent": "9000",
+        "alpha": 100
+    },
+    {
+        "id": "18099",
+        "project": "PHPCAS",
+        "summary": [
+            "support for proxied post requests"
+        ],
+        "description": [
+            "currently only supports get requests limiting its utility for proxying authentication to i propose the addition of methods that would allow at least post requests and potentially other types of http requests if needed to be sent to web services",
+            "one option is the addition of a body headers output if needed additional methods for the delete options put and other http request types could be added",
+            "an alternate track would be to add a single url body headers output method where the type could be get post delete put etc"
+        ],
+        "timespent": "37800",
+        "alpha": 100
+    },
+    {
+        "id": "17201",
+        "project": "NETC",
+        "summary": [
+            "implement support for cas proxy authentication"
+        ],
+        "description": [
+            "implement cas proxy support",
+            "we should provide at least proxy ticket storage for this task and ideally sql storage if time and resources permit"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "15417",
+        "project": "NETC",
+        "summary": [
+            "browser based service validation"
+        ],
+        "description": [
+            "at present the client is able to use proxy tickets to authenticate",
+            "it would be useful if it could also take service tickets and redirect a page to the cas server if there was no ticket"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "14526",
+        "project": "GAP",
+        "summary": [
+            "configure classes with gap service beans"
+        ],
+        "description": [
+            "the purpose of the package is to provide backwards compatibility in a future release of via adaptors run calls against gap service impls",
+            "this involves removing the gap service facades from and replacing them with a spring-configured service injector",
+            "this class will inject gap service beans into static access service classes in these classes implement a new interface which obligates them to a setservice method",
+            "in authorizationservicefacade deleted entitycachingservicefacade deleted entitylockservicefacade deleted entitytypesfacade deleted gapapplicationcontextfacade deleted groupservicefacade deleted sequencegeneratorfacade deleted gapapplicationcontextlocator springbeanlocator new in iservicecontainer new in authorizationservice entitycachingservice entitylockservice groupservice sequencegenerator in properties configures service facades"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "13758",
+        "project": "GAP",
+        "summary": [
+            "replace references to spring service facades in group service with injected sevice beans"
+        ],
+        "description": [
+            "replace references to spring service facades in group service with injected service beans",
+            "this requires changes to composite and component gorup service interfaces icompositegroupservice and iindividualgroupservice and their implementations referenceindividualgroupservice and referencecompositegroupservice"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "13617",
+        "project": "GAP",
+        "summary": [
+            "must be able to declaratively configure composite group separator string"
+        ],
+        "description": [
+            "we must be able to declaratively configure the composite group key separator string the string that separates the nodes of the group key",
+            "it is currently in the compositeentityidentifier class",
+            "this is required by users of jitldap group store as well as some home grown group services that have the default period string embedded in group keys"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "13586",
+        "project": "GAP",
+        "summary": [
+            "allow abandoned locks to be explicitly released"
+        ],
+        "description": [
+            "create api in the entity locking service to allow for explicitly unlocking an entity whose lock has been abandoned rather than having to wait until the lock expires",
+            "we spoke about this at the september developers meeting"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "13139",
+        "project": "GAP",
+        "summary": [
+            "migrate authorization service from uportal"
+        ],
+        "description": [
+            "migrate from to create permission dao layer write unit tests for dao impls service and default permission policy",
+            "use icachefactory to provide principal cache",
+            "use spring to manage dependencies"
+        ],
+        "timespent": "288000",
+        "alpha": 100
+    },
+    {
+        "id": "13138",
+        "project": "GAP",
+        "summary": [
+            "migrate group service components from uportal filesystem"
+        ],
+        "description": [
+            "migrate from to examine apache commons vfs see as possible abstraction layer for underlying filesystem",
+            "promising but sufficiently mature remove dependencies on group configuration from unit tests"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "13136",
+        "project": "GAP",
+        "summary": [
+            "migrate group service components from uportal local"
+        ],
+        "description": [
+            "migrate local group store from to write dao layer unit tests spring bean definition"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "13135",
+        "project": "GAP",
+        "summary": [
+            "migrate groups service core from uportal"
+        ],
+        "description": [
+            "migrate groups interfaces and composite group service reference implementation from to explore using spring to replace the composite service configuration xml document"
+        ],
+        "timespent": "288000",
+        "alpha": 100
+    },
+    {
+        "id": "13134",
+        "project": "GAP",
+        "summary": [
+            "migrate entity caching service from uportal"
+        ],
+        "description": [
+            "migrate entity caching infrastructure from to required by groups and permissions services with potential for other use",
+            "create icache and icachefactory interfaces for underlying caches",
+            "write whirlycache wrapper and factory",
+            "write icache implementation that uses a strict lru algorithm as opposed to a algorithm",
+            "create dao layer for entitycacheinvalidations",
+            "write unit tests for daos strictlrucache entitycache and invalidatingentitycache",
+            "create spring bean definitions for caching components"
+        ],
+        "timespent": "230400",
+        "alpha": 100
+    },
+    {
+        "id": "13133",
+        "project": "GAP",
+        "summary": [
+            "migrate entity types service from uportal"
+        ],
+        "description": [
+            "migrate entity types infrastructure from to extract interfaces for entityidentifier and entitytypes write dao layer unit tests spring bean definition"
+        ],
+        "timespent": "144300",
+        "alpha": 100
+    },
+    {
+        "id": "13131",
+        "project": "GAP",
+        "summary": [
+            "common gap services create sequence generator service"
+        ],
+        "description": [
+            "migrate sequence generator from to a sequence service is required by the following entity types entity caching and the local group service",
+            "create dao layer unit tests and spring bean definition"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "13293",
+        "project": "UPT",
+        "summary": [
+            "move core domain object dao implementations to hibernate"
+        ],
+        "timespent": "288000"
+    },
+    {
+        "id": "16341",
+        "project": "UP",
+        "summary": [
+            "implementation refactor html and css for each view of the administrative portlet"
+        ],
+        "timespent": "109800"
+    },
+    {
+        "id": "23645",
+        "project": "SSP",
+        "summary": [
+            "enhance map external data model for phase"
+        ],
+        "timespent": "43200"
+    },
+    {
+        "id": "22469",
+        "project": "SSP",
+        "summary": [
+            "wire transcript-related ui components api"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "20726",
+        "project": "SSP",
+        "summary": [
+            "add a tool for disability services data"
+        ],
+        "timespent": "17100"
+    }
+]

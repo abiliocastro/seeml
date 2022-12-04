@@ -1,0 +1,1030 @@
+[
+    {
+        "id": "272026",
+        "project": "ONE",
+        "summary": [
+            "default work schedule for new created programs based on current jira working days setting"
+        ],
+        "description": [
+            "when creating new program it's working schedule should be set to template that is currently set as default",
+            "task add button that sets the default template add parameter in jira property table add rest for updating the value"
+        ],
+        "timespent": "86400",
+        "alpha": 99
+    },
+    {
+        "id": "272205",
+        "project": "ONE",
+        "summary": [
+            "timetracking based on jira configuration"
+        ],
+        "description": [
+            "as attached image im not able to show in bigpicture gantt the estimated,remaing in hour",
+            "this happens even if i set hour in the current default unit for time tracking under system issue feature time tracking"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "273337",
+        "project": "ONE",
+        "summary": [
+            "add id's to elements in bigpicture administration section"
+        ],
+        "description": [
+            "new administration page had no css id's which was hard environment to write selenium tests in"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "272571",
+        "project": "ONE",
+        "summary": [
+            "new colour select tooltip"
+        ],
+        "description": [
+            "currently it's xboxhueg for an extremely simple feature see the description should be manually color this task",
+            "based on status overwrites the colors you choose"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "921596",
+        "project": "ONE",
+        "summary": [
+            "task names in link window should be hyperlinks"
+        ],
+        "description": [
+            "how to reproduce open bigpicture trello create link between to tasks click on link in link window task name should be url to trello's card"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "1162681",
+        "project": "ONE",
+        "summary": [
+            "bigpicture programs gadget all links except for gantt are invalid"
+        ],
+        "description": [
+            "repro steps create a program in bigpicture with some tickets and resources",
+            "create a dashboard in jira and add bigpicture programs gadget",
+            "on the gadget click on resources option from action column",
+            "result redirected to base error",
+            "expected result redirected to base proper url with html included"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "272025",
+        "project": "ONE",
+        "summary": [
+            "sync configuration description has bad grammar"
+        ],
+        "description": [
+            "that no fit to current filter results sounds like a google translate thing and should be that do not fit current filter results"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "272320",
+        "project": "ONE",
+        "summary": [
+            "better description for new program with saved filter"
+        ],
+        "description": [
+            "currently the description is only an advanced option using a jql filter",
+            "since many users are puzzled on how to create a gantt spanning multiple jira projects it should be changed to a new program based on an existing jql filter",
+            "use this option if you wish to have one gantt with issues from multiple jira projects simply create such a filter in jira and select it here"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "272373",
+        "project": "ONE",
+        "summary": [
+            "small typo in gantt view button"
+        ],
+        "description": [
+            "currently it says show baseline but at the same time show since it enables all baselines and not just once it should say show"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "80714",
+        "project": "ONE",
+        "summary": [
+            "tooltip programs list view"
+        ],
+        "description": [
+            "status name start date end date and leader click to sort column data date range you can filter programs by date range",
+            "only projects that have start and end date within the range are shown in programs view",
+            "filter you can filter programs by ownership and program status",
+            "list programs list view",
+            "list view allows you to sort each column status name start date end date and gantt program gantt view shows all projects on detailed timeline",
+            "it is possible to reschedule the whole project be moving program bar drag and drop timeline view shows all the programs in one view",
+            "this view is great for overview presentation of existing programs"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "272321",
+        "project": "ONE",
+        "summary": [
+            "sample data when creating a new program"
+        ],
+        "description": [
+            "many users get the evaluation license and sample data is extremely useful in such scenarios",
+            "both jira portfolio and tempo folio feature sample data and so should we"
+        ],
+        "timespent": "633600",
+        "alpha": 100
+    },
+    {
+        "id": "272240",
+        "project": "ONE",
+        "summary": [
+            "add issue collector to bp ibg"
+        ],
+        "description": [
+            "you can find more info here"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "275311",
+        "project": "ONE",
+        "summary": [
+            "change required fields in issue collector form"
+        ],
+        "description": [
+            "currently issue collector has only sumarry required expected form should have required field email to ensure that we always get contact to reporting customer"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "272830",
+        "project": "ONE",
+        "summary": [
+            "show message if in field configuration issue requires fields that conflict with creating sample data"
+        ],
+        "description": [
+            "message shows which field configuration conflicts and which required field creates conflict",
+            "if in global plugin config program section user has mapped field configuration scheme that has mapped field confgurations requiring fields other than summary issue type reporter then creating sample data will fail since we fill only those fields we actually also fill project field"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "272840",
+        "project": "ONE",
+        "summary": [
+            "add additional step to program creation process"
+        ],
+        "description": [
+            "for step cut the automatic cadences and arrange elements in a nicer way"
+        ],
+        "timespent": "288000",
+        "alpha": 100
+    },
+    {
+        "id": "273404",
+        "project": "ONE",
+        "summary": [
+            "in enterprise deleting the default roles destroys teams roles and resources"
+        ],
+        "description": [
+            "if you delete any of the default roles the role administration page will throw a hibernate error",
+            "all existing teams will disappear only hidden as it will say a team like this exists if you try to recreate creating new teams with only new roles does not help they are also invisible",
+            "likewise creating manually the same roles as before will not help at all",
+            "the team planner resources sections will also be useless empty"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "12123",
+        "project": "ONE",
+        "summary": [
+            "cadence menu in create program doe not do anything"
+        ],
+        "description": [
+            "cadence menu in create program does not do anything",
+            "no cadence is automatically created in roadmap bug"
+        ],
+        "timespent": "1080",
+        "alpha": 100
+    },
+    {
+        "id": "274982",
+        "project": "ONE",
+        "summary": [
+            "administration doesn't open"
+        ],
+        "description": [
+            "after opening bigpicture menu and chosing administration the program list page is loaded instead of opening administration page"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "272005",
+        "project": "ONE",
+        "summary": [
+            "working days information styling not updated"
+        ],
+        "description": [
+            "when entering working schedule configuration in settings and in program configuration inormation about jira working days appears to always start as red",
+            "need to check current template when in program config entering site clicking copy from template in settings editing template when creating new template the information update"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "921640",
+        "project": "ONE",
+        "summary": [
+            "grouping by members title or labels doesn't work correctly"
+        ],
+        "description": [
+            "steps to reproduce create multiple task cards attach the same user to a few of them select data group tasks and group tasks by members notice that the grouping is incorrect result tasks without members are grouped but each task with assigned member is displayed as a separate group expected result tasks should be correctly grouped by members all tasks with the same members attached should form one group note grouping by titles or labels displays the same behavior"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "271660",
+        "project": "ONE",
+        "summary": [
+            "fix css in column configuration page"
+        ],
+        "description": [
+            "screenshot from jiranewest"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "271809",
+        "project": "ONE",
+        "summary": [
+            "validation error popup cannot be closed"
+        ],
+        "description": [
+            "go to programs try to create a new program save popups appear ad infinitum without an option to close them"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "272523",
+        "project": "ONE",
+        "summary": [
+            "empty ms project file in bigpicture"
+        ],
+        "description": [
+            "steps to reproduce click on big picture in the top menue of jira choose programs select the project plan in the big picture top menu choose gantt in the opening plan click the icon between search and refresh and choose ms project from the opening export menu open the downloaded ms project file in ms project the file should be empty please find attached the logs"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "272352",
+        "project": "ONE",
+        "summary": [
+            "the assigned is the only user who can assign"
+        ],
+        "description": [
+            "we have detected an error that should be corrected the assigned is the only user who can assign",
+            "from the resource module the user moves a task to another user and the task is not assigned"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "12068",
+        "project": "ONE",
+        "summary": [
+            "the filter to chose between new started and closed programs doesnt work"
+        ],
+        "description": [
+            "we are facing a problem with the filter",
+            "the filter to chose between new started and closed programs doesnt work",
+            "in my case i can only see the programs that are new and started but i cant see the closed programs",
+            "it is possible to select the field marcel czech"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "271946",
+        "project": "ONE",
+        "summary": [
+            "cog icon column should be hidden in gantt gadget"
+        ],
+        "description": [
+            "if gantt is inside gadget you can skip method you can use isgadget property to determine if gantt is inside gadget"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "11984",
+        "project": "ONE",
+        "summary": [
+            "hide the header x and y new description"
+        ],
+        "description": [
+            "the header x should be changed to hide columns current description may be misleading for some users show gant grid should be changed to show columns the header y description should be changed to hide header the header z should be changed to show header"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "271757",
+        "project": "ONE",
+        "summary": [
+            "bigpicture log disaster message"
+        ],
+        "description": [
+            "should be performing data disaster recovery process",
+            "if you find this message it means that your database schema for bigpicture plugin was either corrupted or hsql database is used hsql is jira embedded database for trial and development purposes data disaster recovery will fix database schema possibly losing some of bigpicture plugin data",
+            "this error does not require you to take any action unless bigpicture plugin for jira work properly",
+            "in any case send us an email at"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "272619",
+        "project": "ONE",
+        "summary": [
+            "default start and end date as custom fields"
+        ],
+        "description": [
+            "users do not understand how the mapping works and are concerned about their estimates being changed when they move issues on gantt",
+            "therefore we need to make custom fields the default mapping configuration"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "272876",
+        "project": "ONE",
+        "summary": [
+            "sample data reporter field conflicts"
+        ],
+        "description": [
+            "description"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "966597",
+        "project": "ONE",
+        "summary": [
+            "user properties does not persist"
+        ],
+        "description": [
+            "trelloprincipalpropertyrepository has no setvalue implementation"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "275010",
+        "project": "ONE",
+        "summary": [
+            "html name attribute shouldn't be translated into other languages"
+        ],
+        "description": [
+            "it broke test shouldaddtasktemplate because we select element by attribute name with value description and internationalization replaced description with description as a result during test that adds task template we fill task templates name and this results in displaying modal dialog whenever we want to leave the page which fails all following tests"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "318941",
+        "project": "ONE",
+        "summary": [
+            "quick filter does not work after collapsing and extending the list of issues on gantt"
+        ],
+        "description": [
+            "if i have a sprint group expanded the issues will be hidden when i press the epic quick filter",
+            "but if i collapse and then expand the group the issues will become visible again even if the quick filter is still enabled"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "272801",
+        "project": "ONE",
+        "summary": [
+            "when i try to export the gantt to an excel file the downloaded file is kb and invalid"
+        ],
+        "description": [
+            "when i try to export the gantt to an excel file the downloaded file is kb and invalid",
+            "im using latest version of chrome browser"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "319633",
+        "project": "ONE",
+        "summary": [
+            "columns resize vs page"
+        ],
+        "description": [
+            "resize colums resync gantt resize columns reload page result column configuration is not saved after page"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "965365",
+        "project": "ONE",
+        "summary": [
+            "prevent from creating multiple programs in trello"
+        ],
+        "description": [
+            "because program creator service is tenantactivator we create new program every time when tenant is activated"
+        ],
+        "timespent": "32400",
+        "alpha": 100
+    },
+    {
+        "id": "965314",
+        "project": "ONE",
+        "summary": [
+            "nullpointerexception when trying to get defaulttaskmode"
+        ],
+        "description": [
+            "steps to reproduce create a new jira cloud instance has to be a fresh one that used for before set your personal and system default language to something other than english spanish german are well translated and should be easy to reproduce with corner click on your avatar personal settings change language jira settings system general configuration change default language install bp or bg try to create a new program notice task mode selector is not showing up notice something went error showing up after trying to create the program another connected issue go to gantt configuration and notice an error showing up error defaultexceptionhandler exception token jul utc url post cookies java.lang.nullpointerexception name is null source at"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "921026",
+        "project": "ONE",
+        "summary": [
+            "bigpicture and biggantt plugins are visible in jira header when user is not logged in"
+        ],
+        "description": [
+            "install bigpicture and biggantt log out result bigpicture and biggantt are visible in jira header"
+        ],
+        "timespent": "3120",
+        "alpha": 100
+    },
+    {
+        "id": "921593",
+        "project": "ONE",
+        "summary": [
+            "member icons are to big in member column"
+        ],
+        "description": [
+            "how to reproduce go to cards details view add member to card open bigpicture click data resync in member column you should see newly added member change view to compact"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "271913",
+        "project": "ONE",
+        "summary": [
+            "proper notification when user does not have the permission to create a new program and project contact with admin greyed out option"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "272799",
+        "project": "ONE",
+        "summary": [
+            "task template form save button add css class"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "272021",
+        "project": "ONE",
+        "summary": [
+            "one requireresource per velocity template"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "271949",
+        "project": "ONE",
+        "summary": [
+            "fadeout property should be set to true for succes messages in program configuration"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "272103",
+        "project": "ONE",
+        "summary": [
+            "more detailed troubleshooting archives export"
+        ],
+        "timespent": "144000"
+    },
+    {
+        "id": "271950",
+        "project": "ONE",
+        "summary": [
+            "display information with number of working days per week this value can be set in tracking"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "275487",
+        "project": "ONE",
+        "summary": [
+            "test workloadplan under oracle"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "272829",
+        "project": "ONE",
+        "summary": [
+            "services for jira field configuration and field configuration schemes"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "272234",
+        "project": "ONE",
+        "summary": [
+            "fix cog icon css"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "273416",
+        "project": "ONE",
+        "summary": [
+            "after plugin install all users have view creator admin permissions"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "273333",
+        "project": "ONE",
+        "summary": [
+            "restructure roadmap test that generates fake errors"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "273061",
+        "project": "ONE",
+        "summary": [
+            "autoresizing of create program dialog on browser window resize"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "272006",
+        "project": "ONE",
+        "summary": [
+            "embedded field project"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "273223",
+        "project": "ONE",
+        "summary": [
+            "test scenario for gantt synchronisation with jira issue changes"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "273215",
+        "project": "ONE",
+        "summary": [
+            "selenium tests compatibility with jira"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "273331",
+        "project": "ONE",
+        "summary": [
+            "plugin administration link has wrong id"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "273418",
+        "project": "ONE",
+        "summary": [
+            "fix roadmap test that adds cadence"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "273057",
+        "project": "ONE",
+        "summary": [
+            "improve wizard preview images"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "273087",
+        "project": "ONE",
+        "summary": [
+            "bigpicture roadmap tests"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "273119",
+        "project": "ONE",
+        "summary": [
+            "first resources tests"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "273332",
+        "project": "ONE",
+        "summary": [
+            "adapt creating projects to jira options business and software"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "410167",
+        "project": "ONE",
+        "summary": [
+            "create sprints checkbox should be visible only if small team is picked"
+        ],
+        "timespent": "600"
+    },
+    {
+        "id": "272804",
+        "project": "ONE",
+        "summary": [
+            "after importing project gantt is not visible for user"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "273058",
+        "project": "ONE",
+        "summary": [
+            "wizard doesn't display horizontal line"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "273183",
+        "project": "ONE",
+        "summary": [
+            "clicking task in resources view extends the gui component by day"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "410152",
+        "project": "ONE",
+        "summary": [
+            "redirect to modules from jira header menu bar completely stopped working"
+        ],
+        "timespent": "1200"
+    },
+    {
+        "id": "273456",
+        "project": "ONE",
+        "summary": [
+            "fix not showing preset preview images"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "409807",
+        "project": "ONE",
+        "summary": [
+            "change detection does not work on roadmap it is always one event behind"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "12075",
+        "project": "ONE",
+        "summary": [
+            "delete task end up with npe"
+        ],
+        "timespent": "900"
+    },
+    {
+        "id": "271981",
+        "project": "ONE",
+        "summary": [
+            "broken css responsible for displaying icons column in gadget"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "411217",
+        "project": "ONE",
+        "summary": [
+            "localstorage instead cookies in gantt"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "411590",
+        "project": "ONE",
+        "summary": [
+            "graphics for marketing summit booth"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "409243",
+        "project": "ONE",
+        "summary": [
+            "import wbs strategy implementation"
+        ],
+        "timespent": "104400"
+    },
+    {
+        "id": "409240",
+        "project": "ONE",
+        "summary": [
+            "implement to import wbs strategy"
+        ],
+        "timespent": "48600"
+    },
+    {
+        "id": "273345",
+        "project": "ONE",
+        "summary": [
+            "option to filter projects and programs that will be deleted in test suites set up methods"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "273348",
+        "project": "ONE",
+        "summary": [
+            "improve administration addons test due to change in id's from"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "273218",
+        "project": "ONE",
+        "summary": [
+            "update profiles for tests jira"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "273221",
+        "project": "ONE",
+        "summary": [
+            "fix tests that need other preset than manual"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "273344",
+        "project": "ONE",
+        "summary": [
+            "run each test suite in one browser"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "273166",
+        "project": "ONE",
+        "summary": [
+            "repacketing test files structure"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "273395",
+        "project": "ONE",
+        "summary": [
+            "temporarily ignore tests that don't work because of new plugin version"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "273346",
+        "project": "ONE",
+        "summary": [
+            "remove enterprise license dependent tests"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "273195",
+        "project": "ONE",
+        "summary": [
+            "basic smoke tests for bigpicture"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "273184",
+        "project": "ONE",
+        "summary": [
+            "use manual preset programs when running tests in selenium"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "273347",
+        "project": "ONE",
+        "summary": [
+            "each smoke test should have it's own program for tests"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "272800",
+        "project": "ONE",
+        "summary": [
+            "tests for task templates task sorting"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "272427",
+        "project": "ONE",
+        "summary": [
+            "linking schema with project"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "272412",
+        "project": "ONE",
+        "summary": [
+            "frontend simplified fields dashboard"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "272743",
+        "project": "ONE",
+        "summary": [
+            "selenium tests for new gui sample data"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "272760",
+        "project": "ONE",
+        "summary": [
+            "redesign create gant section gui in gantt manage page"
+        ],
+        "timespent": "144000"
+    },
+    {
+        "id": "966672",
+        "project": "ONE",
+        "summary": [
+            "refactor sharedsecret logic for exports"
+        ],
+        "timespent": "6600"
+    },
+    {
+        "id": "966307",
+        "project": "ONE",
+        "summary": [
+            "refactor tenantbyexternaltokencache to hold tenantid as cache key"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "966306",
+        "project": "ONE",
+        "summary": [
+            "reimplement cache stats collector job to trigger cache eviction"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "966822",
+        "project": "ONE",
+        "summary": [
+            "do not swallow the exception in activeprogramsetterservlet"
+        ],
+        "timespent": "480"
+    },
+    {
+        "id": "966305",
+        "project": "ONE",
+        "summary": [
+            "cloud webhooks should only refetch items that are already in the cache"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "966823",
+        "project": "ONE",
+        "summary": [
+            "cachefactorymbean should have a method to clear tenant caches of all tenants"
+        ],
+        "timespent": "1200"
+    },
+    {
+        "id": "965923",
+        "project": "ONE",
+        "summary": [
+            "cannot load card period configuration"
+        ],
+        "timespent": "4200"
+    },
+    {
+        "id": "410180",
+        "project": "ONE",
+        "summary": [
+            "dates get populated even when the task is removed from a program"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "272802",
+        "project": "ONE",
+        "summary": [
+            "after importing project gantt is not visible for user"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "272808",
+        "project": "ONE",
+        "summary": [
+            "update link can throw exception if link doesn't exist"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "404859",
+        "project": "ONE",
+        "summary": [
+            "last issue on gantt is by page layout"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "288428",
+        "project": "ONE",
+        "summary": [
+            "unnecessary line on resync view"
+        ],
+        "timespent": "300"
+    },
+    {
+        "id": "272803",
+        "project": "ONE",
+        "summary": [
+            "after importing project gantt is not visible for user"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "411196",
+        "project": "ONE",
+        "summary": [
+            "gantt selector problems"
+        ],
+        "timespent": "1200"
+    },
+    {
+        "id": "273634",
+        "project": "ONE",
+        "summary": [
+            "big gantt sample data not working because of invalid project key"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "921592",
+        "project": "ONE",
+        "summary": [
+            "empty title column for artificial task"
+        ],
+        "timespent": "5400"
+    }
+]

@@ -1,0 +1,31 @@
+[
+    {
+        "id": "10020",
+        "project": "OPENWIPSNG",
+        "summary": [
+            "solve licensing issue for closed source code to linking plugins to"
+        ],
+        "description": [
+            "the license doesn't currently allow you to link closed source code to which will be sometimes needed to get the information from the frames stored with those structs",
+            "one of the solution would be adding an exception to pcap.c and pcap.h"
+        ],
+        "timespent": "3600",
+        "alpha": 98
+    },
+    {
+        "id": "10016",
+        "project": "OPENWIPSNG",
+        "summary": [
+            "initialize database"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "10015",
+        "project": "OPENWIPSNG",
+        "summary": [
+            "create database schema"
+        ],
+        "timespent": "28800"
+    }
+]

@@ -1,0 +1,2530 @@
+[
+    {
+        "id": "28455",
+        "project": "POS",
+        "summary": [
+            "pos checkout waiter user role can access checkout page"
+        ],
+        "description": [
+            "description waiter user role can access checkout page step to reproduce click checkout button of a table on table layout or order management page input waiter pin screen takes to checkout page expected result manager/cashier user only can access checkout page there should be error on the screen eg",
+            "access denied'"
+        ],
+        "timespent": "2400",
+        "alpha": 96
+    },
+    {
+        "id": "29421",
+        "project": "POS",
+        "summary": [
+            "webadmin productpage delete product/category confirmation box is different from spec"
+        ],
+        "description": [
+            "delete product/category confirmation box is different from spec see actual capture.jpg compared with ui spec spec.jpg"
+        ],
+        "timespent": "4500",
+        "alpha": 97
+    },
+    {
+        "id": "29412",
+        "project": "WA",
+        "summary": [
+            "webadmin productpage page without product/category and is different from spec"
+        ],
+        "description": [
+            "description page without product/category and is different from spec",
+            "step to reproduce delete all products/categories and delete all from the system go to product page the result shown as capture.jpg go to modifier page the result is the same as expected result the result should be spec.jpg"
+        ],
+        "timespent": "3600",
+        "alpha": 98
+    },
+    {
+        "id": "30742",
+        "project": "POS",
+        "summary": [
+            "pos closedorder wrong column name of cashier and checkout time"
+        ],
+        "description": [
+            "wrong column name of cashier and checkout time refer to capture.jpg"
+        ],
+        "timespent": "1800",
+        "alpha": 98
+    },
+    {
+        "id": "30132",
+        "project": "POS",
+        "summary": [
+            "pos reportmonthlyrevenue incorrect total revenue"
+        ],
+        "description": [
+            "incorrect total revenue please refer to capture.jpg"
+        ],
+        "timespent": "300",
+        "alpha": 98
+    },
+    {
+        "id": "29428",
+        "project": "POS",
+        "summary": [
+            "webadmin general web admin layout doesn't support safari browser"
+        ],
+        "description": [
+            "web admin layout doesn't support safari browser capture.jpg menu bar and content drop out of their sections"
+        ],
+        "timespent": "3600",
+        "alpha": 98
+    },
+    {
+        "id": "28461",
+        "project": "POS",
+        "summary": [
+            "pos additem subtotal greater than cause the price drop out of table"
+        ],
+        "description": [
+            "subtotal greater than cause the price drop out of table see from capture.jpg"
+        ],
+        "timespent": "600",
+        "alpha": 98
+    },
+    {
+        "id": "35402",
+        "project": "WA",
+        "summary": [
+            "webadmin the others won't be able to access web admin except hr and branch manager"
+        ],
+        "description": [
+            "kris pm mod genielai toon o pond muey about group permission in bellagio edited except hr and branch manager the others won't be able to access web admin to reduce the complexity on permission control for now"
+        ],
+        "timespent": "57600",
+        "alpha": 99
+    },
+    {
+        "id": "34471",
+        "project": "WA",
+        "summary": [
+            "weberm employee list page header show as button can be click/highlight and mouse hold over show like it can click"
+        ],
+        "description": [
+            "in employee list page header of table was shown as button can be click/highlight mouse hold over header show like it can click"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "29907",
+        "project": "WA",
+        "summary": [
+            "webadmin product category form don't need to show alert when turning off position on pos"
+        ],
+        "description": [
+            "creating new category don't need to show alert when turning off position on pos before saved",
+            "product is not saved yet need to update test case for new modifier group new modifier new product category new product"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "29819",
+        "project": "POS",
+        "summary": [
+            "webadmin newproductcategory confirmation dialog still shows up even toggle display on pos to be on"
+        ],
+        "description": [
+            "description confirmation dialog still shows up even toggle display on pos to be on'",
+            "step to reproduce go to new product category page change display on pos to off confirmation dialog shows up click yes to confirm change display on pos to on change display on pos to off no confirmation dialog shows up incorrect change display on pos to on confirmation dialog shows up incorrect expected result confirmation dialog shows up only on changing from on to off"
+        ],
+        "timespent": "8100",
+        "alpha": 99
+    },
+    {
+        "id": "29423",
+        "project": "POS",
+        "summary": [
+            "webadmin productpage display on pos of the product can be changed from off to on but not send to backend"
+        ],
+        "description": [
+            "description display on pos of the product can be changed from off to on but not send to backend",
+            "step to reproduce in db set display on pos of a product to be off go to product page and go to the product in display on pos off toggle display on pos to on it's able to change but it didn't send update to backend",
+            "it happens only on product under category no problem with uncategorized product note i also found on build that ie and safari are also able to toggle on any products expected result in released version we will disable display on pos'",
+            "so we shouldn't allow user to toggle display on pos of any"
+        ],
+        "timespent": "23520",
+        "alpha": 99
+    },
+    {
+        "id": "28733",
+        "project": "POS",
+        "summary": [
+            "pos splitbill wrong service fee after removing min purchase"
+        ],
+        "description": [
+            "wrong service fee after removing min purchase need to exclude min purchase from service fee calculation after click split bill'"
+        ],
+        "timespent": "9000",
+        "alpha": 99
+    },
+    {
+        "id": "28646",
+        "project": "POS",
+        "summary": [
+            "pos endofday shift and time period table are not sorted by time"
+        ],
+        "description": [
+            "shift and time period table are not sorted by time capture.jpg should be changed following spec"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "28541",
+        "project": "POS",
+        "summary": [
+            "pos minpurchase qty of min purchase should be removed"
+        ],
+        "description": [
+            "qty of min purchase should be removed because it has no meaning and to make it consistent to guest check capture.jpg"
+        ],
+        "timespent": "300",
+        "alpha": 99
+    },
+    {
+        "id": "28511",
+        "project": "POS",
+        "summary": [
+            "pos checkout alert of payment fail from card reader should be correct"
+        ],
+        "description": [
+            "description alert of payment fail from card reader should be correct",
+            "step to reproduce go to checkout page unplug credit card reader select checkout using card click accept payment alert appears capture.jpg but different from design expected result refer to wireframe spec error should be expected.jpg"
+        ],
+        "timespent": "12000",
+        "alpha": 99
+    },
+    {
+        "id": "28452",
+        "project": "POS",
+        "summary": [
+            "pos checkout without order causes app crash"
+        ],
+        "description": [
+            "description click checkout button on order management page without order yet causes app crash",
+            "step to reproduce seat a table go to order management page of the table in click checkout button input valid pin then app crashes expected result no order shouldn't allow to checkout and app shouldn't crash"
+        ],
+        "timespent": "600",
+        "alpha": 99
+    },
+    {
+        "id": "28253",
+        "project": "POS",
+        "summary": [
+            "pos additem free modifiers don't need to show price"
+        ],
+        "description": [
+            "description free modifiers don't need to show price step to reproduce add product of to order list modifier tab is but the color of all groups are the same expected result modifier price will be displayed if it has a price"
+        ],
+        "timespent": "24600",
+        "alpha": 99
+    },
+    {
+        "id": "28224",
+        "project": "POS",
+        "summary": [
+            "pos additem pos randomly crashes during add item and modifier"
+        ],
+        "description": [
+            "description pos randomly crashes during add item and modifier",
+            "step to reproduce cannot specify exact steps just try to play on add item page and wait for a while sometimes app crashes without doing any action",
+            "please find crashlog.txt as a reference",
+            "expected result system can run without crash"
+        ],
+        "timespent": "600",
+        "alpha": 99
+    },
+    {
+        "id": "28125",
+        "project": "POS",
+        "summary": [
+            "pos tablelayout takeout zone border is not aligned with app border"
+        ],
+        "description": [
+            "description takeout zone border is not aligned with app border",
+            "step to reproduce select takeout zone on table layout takeout zone is highlighted but the border is indented from application's border",
+            "expected result takeout zone border shouldn't be indented"
+        ],
+        "timespent": "120",
+        "alpha": 99
+    },
+    {
+        "id": "27962",
+        "project": "POS",
+        "summary": [
+            "pos movetable move confirmation box is different from design"
+        ],
+        "description": [
+            "description move confirmation box is different from design",
+            "step to reproduce try to move tablea to tableb confirmation popup actual.jpg but different from design expected result confirmation popup should be expected.jpg screen background is gray not allow to click outside area of modal"
+        ],
+        "timespent": "12600",
+        "alpha": 99
+    },
+    {
+        "id": "27958",
+        "project": "POS",
+        "summary": [
+            "pos reservetable unlock confirmation is different from design"
+        ],
+        "description": [
+            "description unlock confirmation is different from design step to reproduce try to unlock table confirmation window appears actual.jpg but different from design expected result the behavior should be confirmation box should look like expected.jpg screen background is gray dark transparent not allow to click outside area other than yes and no button"
+        ],
+        "timespent": "10800",
+        "alpha": 99
+    },
+    {
+        "id": "27953",
+        "project": "POS",
+        "summary": [
+            "pos reservetable lock information modal is different from design"
+        ],
+        "description": [
+            "description lock information modal is different from design step to reproduce touch an available table select reserve input valid pin lock information modal appears then keyboard appears then the modal shifts up see actual.jpg expected result see expected.jpg after input valid pin the behavior should be keyboard and modal appear at the same time screen background is gray not allow to click outside area of modal and keyboard"
+        ],
+        "timespent": "10800",
+        "alpha": 99
+    },
+    {
+        "id": "34509",
+        "project": "IOS",
+        "summary": [
+            "migrate repositories to bitbucket"
+        ],
+        "description": [
+            "migrate all github repositories to bitbucket",
+            "enable smart commit feature grant permission to employees with domain ampostech.com"
+        ],
+        "timespent": "3000",
+        "alpha": 99
+    },
+    {
+        "id": "35619",
+        "project": "WA",
+        "summary": [
+            "weberm edit user can go to edit page but show empty data when put the wrong edit url directly"
+        ],
+        "description": [
+            "can go to edit page but show empty data when put the wrong edit url directly step to reproduce login put this url in browser expected result should not navigate to edit page and redirect to main page"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "35309",
+        "project": "WA",
+        "summary": [
+            "weberm system struck after multiple click on save button"
+        ],
+        "description": [
+            "system struck after multiple click on save button step to reproduce employee and multiple on save button"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "35160",
+        "project": "WA",
+        "summary": [
+            "weberm optional field department auto select after create user with job level"
+        ],
+        "description": [
+            "department auto select after create user with job level step to reproduce go to new employee fill mandatory field select job level save expected result department should not auto select"
+        ],
+        "timespent": "4200",
+        "alpha": 100
+    },
+    {
+        "id": "35149",
+        "project": "WA",
+        "summary": [
+            "weberm design hint text should be gray color"
+        ],
+        "description": [
+            "hint text should be gray color step to reproduce go to new employee page"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "32264",
+        "project": "WA",
+        "summary": [
+            "web admin product popup was show when leave page without edit data"
+        ],
+        "description": [
+            "product popup shown when leave page without edit data step to reproduce go to edit product page edit dining options checkbox edit item in select box change back to previous value close browser window expected result leave page confirm popup should not show up"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "32256",
+        "project": "WA",
+        "summary": [
+            "leave page alert when fill in and save data"
+        ],
+        "description": [
+            "leave page alert when user fill in correct data and click save button step to reproduce go to setting fill in data click save"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "31439",
+        "project": "WA",
+        "summary": [
+            "implement"
+        ],
+        "description": [
+            "implement unit test"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "30545",
+        "project": "WA",
+        "summary": [
+            "webadmin new product error message next to input boxes does not hide when click on error field"
+        ],
+        "description": [
+            "error message next to input boxes does not hide when click on error field step to reproduce click through product link from sidebar menu click on new product button input all fields click on save button without any input",
+            "click on error field expected result error message should hide when click on error field"
+        ],
+        "timespent": "2460",
+        "alpha": 100
+    },
+    {
+        "id": "29830",
+        "project": "WA",
+        "summary": [
+            "webadmin newproductcategory change position on pos causes product code on pos app changes"
+        ],
+        "description": [
+            "description change position on pos causes product code on pos app changes",
+            "step to reproduce on web admin change position on pos of product from to on pos app go to order management page is sorted at position which is correct but the category code is also changed from to expected result category code should be the same as before changing potition on pos"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "30204",
+        "project": "WA",
+        "summary": [
+            "webadmin product category after save new product category title of product category page should be edit page"
+        ],
+        "description": [
+            "webadmin after save new product category title of product category page should be edit page step to reproduce go to new product category create new category expected result title of product category page should be edit page"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "32135",
+        "project": "SO",
+        "summary": [
+            "clone pos machines and network prep simulation for garage launch"
+        ],
+        "description": [
+            "issues found test cases"
+        ],
+        "timespent": "230400",
+        "alpha": 100
+    },
+    {
+        "id": "32287",
+        "project": "POS",
+        "summary": [
+            "hide easy card information from all reports"
+        ],
+        "description": [
+            "for garage not only be the easy card payment option hidden the easy card info column in all reports must also be hidden",
+            "the reports include end of day end of month"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "30758",
+        "project": "POS",
+        "summary": [
+            "pos reportposmonthly incorrect report name on"
+        ],
+        "description": [
+            "please find comparison as attachments"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "30732",
+        "project": "POS",
+        "summary": [
+            "pos name on pos should be used in all sections of the pos app"
+        ],
+        "description": [
+            "expected result name on pos should show up in all screens of the pos item detail order list order management checkout buttons order history actual result buttons in pos app display name on pos of products sides sets modifiers order list display name on pos for sides sets modifiers order history display name on pos for sides sets modifiers"
+        ],
+        "timespent": "31200",
+        "alpha": 100
+    },
+    {
+        "id": "30712",
+        "project": "POS",
+        "summary": [
+            "pos endofshift app crashes after click closed shift and back to previous page"
+        ],
+        "description": [
+            "description app crashes after click closed shift and back to previous page",
+            "step to reproduce close all shifts and go back to table layout go to end of shift page again all shifts become gray color click on any shift click back then app crashes crashlog.txt expected result app is not expected to crash"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "30560",
+        "project": "POS",
+        "summary": [
+            "pos reportsalesbycategory product with qty always shows in no cat table"
+        ],
+        "description": [
+            "description product with qty always shows in no cat table",
+            "step to reproduce create product without category association generate report sales by category without selecting include qty input.jpg under no cat table product in still appears even its expected result in case no selecting include qty all products with qty shouldn't show up"
+        ],
+        "timespent": "4200",
+        "alpha": 100
+    },
+    {
+        "id": "30528",
+        "project": "POS",
+        "summary": [
+            "pos ui need to fixed"
+        ],
+        "description": [
+            "there are points that need to fix",
+            "the table in order history report sometimes the table are too narrow then text enter new line",
+            "printing button is shorter than any other buttons"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "29145",
+        "project": "POS",
+        "summary": [
+            "end of shift feature"
+        ],
+        "description": [
+            "description end of shift helps balance out cash in the drawer at the middle of a business day",
+            "managers run end of shift report to count how much money they have in the cash drawer and credit card machine",
+            "because end of shift happens at least twice per day its easier for restaurant to track any discrepancies",
+            "in nybc neihu branch the shifts are as follows morning shift manager counts morning shift money to see if they are the same as end of shift report",
+            "then places cash in separate bag",
+            "evening shift manager counts evening shift money to see if they are the same as end of shift report",
+            "then places cash in separate bag",
+            "close business day manager gathers all the money and counts them if they are the same as the pos end of day report",
+            "manager needs to be able to close shift a",
+            "pick which shift to close morning evening after release shifts can be added and removed via web admin",
+            "b",
+            "close a shift i",
+            "this marks all checks that have been checked out to belong to the selected shift ii",
+            "checks that already belong to a shift wont be affected iii",
+            "after closing a shift manager can a shift in case there were any mistakes in the checks",
+            "after closing a shift the manager will need to generate a report",
+            "this requirement is captured in helps balance out cash in the drawer at the middle of a business day powil need to create requirement"
+        ],
+        "timespent": "16860",
+        "alpha": 100
+    },
+    {
+        "id": "30418",
+        "project": "POS",
+        "summary": [
+            "hide product/category code from pos"
+        ],
+        "description": [
+            "agreed to hide product code and category code on pos"
+        ],
+        "timespent": "1260",
+        "alpha": 100
+    },
+    {
+        "id": "30133",
+        "project": "POS",
+        "summary": [
+            "pos reportmonthlyrevenue no discount and deductible table causes blank page appears on the screen"
+        ],
+        "description": [
+            "description no discount and deductible table causes blank page appears on the screen",
+            "step to reproduce go to report page select from and to the date that has to order click generate report preview shows up but the page shows as blank page expected result report should show only page"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "30110",
+        "project": "POS",
+        "summary": [
+            "pos average value are incorrect"
+        ],
+        "description": [
+            "average value are incorrect calculation should be correct to number of days in the report count only day that contains eod average guest count should be round to integer round down round up"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "29820",
+        "project": "POS",
+        "summary": [
+            "sales by category with more filters"
+        ],
+        "description": [
+            "format print pdf print csv user need to have the following filters include products with less than price checkbox include products with quantity checkbox select specific categories multiple select this report needs to be both in the restaurant regardless of whether it's in pos or in web admin this report also needs to be printable inside the restaurant in format see the requirements on this link ux design team string table probably needed for this report",
+            "make the report layout prettier if you want to"
+        ],
+        "timespent": "111840",
+        "alpha": 100
+    },
+    {
+        "id": "29816",
+        "project": "POS",
+        "summary": [
+            "webadmin fix regression script"
+        ],
+        "description": [
+            "fix regression script due to code changes",
+            "test result"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "29728",
+        "project": "POS",
+        "summary": [
+            "webadmin newproductcategory selected product becomes unchecked on edit category page"
+        ],
+        "description": [
+            "description selected product becomes unchecked on edit category page",
+            "step to reproduce go to product page and click edit button on any category which contains product inside on product selection area selected products on the right are unchecked on the left this problem was not found on build expected result products which appear on the right side should be checked on the left side"
+        ],
+        "timespent": "15540",
+        "alpha": 100
+    },
+    {
+        "id": "29722",
+        "project": "POS",
+        "summary": [
+            "webadmin newproductcategory products are not sorted by alphabet"
+        ],
+        "description": [
+            "products are not sorted by alphabet and it causes user difficult to find the product"
+        ],
+        "timespent": "6600",
+        "alpha": 100
+    },
+    {
+        "id": "29721",
+        "project": "POS",
+        "summary": [
+            "webadmin newproductcategory overlay of delete confirmation is only of the screen"
+        ],
+        "description": [
+            "description overlay of delete confirmation is only of the screen step to reproduce go to product page select on edit button of any category click delete button delete confirmation box is appeared but the overlay is shown only of the screen expected result overlay should show for the whole screen"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "29717",
+        "project": "POS",
+        "summary": [
+            "webadmin newproductcategory user form causes error message incremental appeared"
+        ],
+        "description": [
+            "description user form causes error message incremental appeared",
+            "step to reproduce go to new product category page leave all fields blank click save button many times then a lot of error message shows up expected result there should be only error message"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "29714",
+        "project": "POS",
+        "summary": [
+            "webadmin productpage position on pos is not recalculated after deleting category"
+        ],
+        "description": [
+            "description position on pos is not recalculated after deleting category",
+            "step to reproduce go to product page delete category which is position on pos screen takes back to product page but position on pos of the rest categories are not recalculated expected result once adding editing or removing category position on pos should be recalculated for all categories"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "29432",
+        "project": "POS",
+        "summary": [
+            "webadmin productpage firefox cannot use touch action to scroll page"
+        ],
+        "description": [
+            "description firefox cannot use touch action to scroll page step to reproduce use firefox browser then go to product page expand categories use touch screen to scroll down the page it's unable to scroll expected result web page should support major browsers both actions"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "29425",
+        "project": "POS",
+        "summary": [
+            "webadmin productpage ie cannot use touch action to scroll page"
+        ],
+        "description": [
+            "description ie cannot use touch action to scroll page step to reproduce use ie browser then go to product page expand categories use touch screen to scroll down the page it's unable to scroll expected result web page should support major browsers both actions"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "29422",
+        "project": "POS",
+        "summary": [
+            "webadmin productpage no loading progress shows up during page loading data"
+        ],
+        "description": [
+            "description no loading progress shows up during page loading data",
+            "step to reproduce click on product link during product/category loading there is no loading progress to inform user capture.jpg expected result there should have loading progress to inform user that web page is still loading information from database"
+        ],
+        "timespent": "36900",
+        "alpha": 100
+    },
+    {
+        "id": "29420",
+        "project": "POS",
+        "summary": [
+            "webadmin general page doesn't refresh after click on products link"
+        ],
+        "description": [
+            "description page doesn't refresh after click on products link step to reproduce click on product link on navigation menu product list shows on the right screen",
+            "click on product link again nothing happens",
+            "the product list does not refresh",
+            "expected result after click on the link the page should refresh to allow user get updated data"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "29410",
+        "project": "POS",
+        "summary": [
+            "webadmin productpage unwanted character beside delete icon of product under category"
+        ],
+        "description": [
+            "description there is unwanted character beside delete icon of product under category in case hover the delete icon happened only on delete icon of product under category step to reproduce go to product page expand any category hover on delete icon of any product under the category there is an unwanted character appears click on delete icon of click cancel border of delete icon becomes weird expected result remove unwanted character from delete icon"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "29409",
+        "project": "POS",
+        "summary": [
+            "webadmin productpage product inside category is not sorted by position on pos"
+        ],
+        "description": [
+            "description product inside category is not sorted by position on pos",
+            "step to reproduce go to product page expand any category products in the category are not sorted by position on pos capture.jpg expected result product and category are sorted by position on pos ascending"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "29370",
+        "project": "POS",
+        "summary": [
+            "pos checkout accept payment of checkout card becomes disabled after toggling min purchase"
+        ],
+        "description": [
+            "description accept payment of checkout card becomes disabled after toggling min purchase",
+            "there is a workaround by switch to cash tab and switch back to card tab again",
+            "step to reproduce make an order to be less than min purchase go to checkout page and select card tab accept payment button is enabled click min purchase to remove min purchase amount tendered is recalculated but accept payment button becomes disabled",
+            "click min purchase again accept payment button still disabled",
+            "expected result in case payment is met criteria accept payment button should be enabled"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "29363",
+        "project": "POS",
+        "summary": [
+            "pos closeorder takeout zone name is not localized"
+        ],
+        "description": [
+            "refer to and takeout zone name is not consistent",
+            "expected result is takeout zone should be localized in chinese as well"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "29137",
+        "project": "POS",
+        "summary": [
+            "pos additem app crash when click on category with no product"
+        ],
+        "description": [
+            "go to order page click menu no",
+            "app crash"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "29121",
+        "project": "POS",
+        "summary": [
+            "pos takeout zone should not apply minimum purchase"
+        ],
+        "description": [
+            "select takeout zone order item that price less than minimum purchase go to checkout page expected it should not apply minimum purchase",
+            "actual minimum purchase applied"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "29064",
+        "project": "POS",
+        "summary": [
+            "pos additem remove delete confirmation when delete a product"
+        ],
+        "description": [
+            "reported by joyce screenshot"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "29040",
+        "project": "POS",
+        "summary": [
+            "pos tablelayout when finish a task and go back to table layout it should go to the zone where user comes from not the first zone"
+        ],
+        "description": [
+            "table layout design priority reported by joyce"
+        ],
+        "timespent": "12600",
+        "alpha": 100
+    },
+    {
+        "id": "28939",
+        "project": "POS",
+        "summary": [
+            "pos tablelayout change available seat number to for all takeout tables"
+        ],
+        "description": [
+            "request to change available seat number to for all takeout tables"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "28937",
+        "project": "POS",
+        "summary": [
+            "pos reservetable default message of locked table should be updated to chinese"
+        ],
+        "description": [
+            "to support localization the default message of locked table should be changed from word locked to chinese language",
+            "string table url"
+        ],
+        "timespent": "3960",
+        "alpha": 100
+    },
+    {
+        "id": "28936",
+        "project": "POS",
+        "summary": [
+            "pos seatandplaceorder close button of invalid passcode message should be changed to chinese"
+        ],
+        "description": [
+            "currently some window alert boxes we call from windows os and the button name is still english eg",
+            "invalid passcode alert box users don't have permission alert box minimum purchase applied alert box we should change all buttons to chinese to support localization"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "28912",
+        "project": "POS",
+        "summary": [
+            "pos seatandplaceorder max capacity of table should be set to"
+        ],
+        "description": [
+            "scenario party of goes to restaurant",
+            "there are two available tables",
+            "waiter physically combines the two tables so that all can seat together",
+            "on the pos waiter locks a table",
+            "then the waiter should be able to seat guests on the other pos should have high max capacity for each table to allow this action"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "28743",
+        "project": "POS",
+        "summary": [
+            "pos integrate ci to jenkins server"
+        ],
+        "description": [
+            "manual build for qa depend on qa tag run every commit which push to dev branch run testing every friday run performance testing every friday"
+        ],
+        "timespent": "1920",
+        "alpha": 100
+    },
+    {
+        "id": "28734",
+        "project": "POS",
+        "summary": [
+            "pos additem space under product detail page should be removed"
+        ],
+        "description": [
+            "space under product detail page should be removed to increase screen utilization"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "28732",
+        "project": "POS",
+        "summary": [
+            "pos minpurchase min purchase button is always enable even order amount"
+        ],
+        "description": [
+            "min purchase button is always enable even order amount it should be disabled to avoid user confusion"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "28725",
+        "project": "POS",
+        "summary": [
+            "pos checkout negative case when credit card fail amount tendered didn't clear"
+        ],
+        "description": [
+            "regarding to test case seat order checkout card failed checkout cash amount tendered clear",
+            "used amount from credit card method see in attachment"
+        ],
+        "timespent": "23820",
+        "alpha": 100
+    },
+    {
+        "id": "28724",
+        "project": "POS",
+        "summary": [
+            "pos sendorder crash when connection lost then do order"
+        ],
+        "description": [
+            "regarding result seat server connection lost order crash expected seat server connection lost order pos alerts to user connection resumed order checkout kin noted after fixed need to verify that app does not crash from connection lost when do these actions switch between zone lock unlock move seat enter guest order send order print guest check apply comp to sent item apply void checkout split bill accept payment mark as paid end of day manage invoice home icon"
+        ],
+        "timespent": "59100",
+        "alpha": 100
+    },
+    {
+        "id": "28722",
+        "project": "POS",
+        "summary": [
+            "pos checkout receipt out of paper flow is different from design"
+        ],
+        "description": [
+            "receipt out of paper flow is different from design need to change to align with spec in next version",
+            "confirmed that the flow should follow spec"
+        ],
+        "timespent": "18600",
+        "alpha": 100
+    },
+    {
+        "id": "28720",
+        "project": "POS",
+        "summary": [
+            "pos additem order page should remove default highlight on item that already send to kitchen"
+        ],
+        "description": [
+            "step to reproduce seat table order sandwidh drinks and desserts order item to salad drinks desserts send to kitchen and wait until print complete go to order page again desserts is highlighted and make user confusion",
+            "need to remove the highlight"
+        ],
+        "timespent": "9900",
+        "alpha": 100
+    },
+    {
+        "id": "28718",
+        "project": "POS",
+        "summary": [
+            "pos manageinvoice access manage invoice doesn't ask for pin"
+        ],
+        "description": [
+            "refer to spec access manage invoice number from configuration icon should always asks for pin"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "28708",
+        "project": "POS",
+        "summary": [
+            "pos print guest check button is not disabled for first time order not send to kitchen"
+        ],
+        "description": [
+            "not only print guest check below buttons need to be disabled for first time order not send kitchen print guest check button repeat button send order button screenshot senario repeat button print button comp button send order button first time open order page no item add an order added item selected x sent order to kitchen have order number reopen order page no item selected"
+        ],
+        "timespent": "18720",
+        "alpha": 100
+    },
+    {
+        "id": "28703",
+        "project": "POS",
+        "summary": [
+            "pos movetable highlight is not moved to destination table"
+        ],
+        "description": [
+            "highlight is not moved to destination table",
+            "move table to then found that white border highlight is still at instead of"
+        ],
+        "timespent": "6420",
+        "alpha": 100
+    },
+    {
+        "id": "28672",
+        "project": "POS",
+        "summary": [
+            "pos tablelayout remove hardcode day on menu bar"
+        ],
+        "description": [
+            "remove hardcode day on menu bar"
+        ],
+        "timespent": "300",
+        "alpha": 100
+    },
+    {
+        "id": "28641",
+        "project": "POS",
+        "summary": [
+            "pos print total amount cannot print receipt and stuck at mark as paid page"
+        ],
+        "description": [
+            "description total amount cannot print receipt and stuck at mark as paid page it used to work on previous version",
+            "step to reproduce add item which go to checkout page remove min purchase click accept payment click mark as paid error shows on screen capture.jpg and stuck at this page expected result total amount should be able to checkout"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "28619",
+        "project": "POS",
+        "summary": [
+            "pos home page zone selector tweaking"
+        ],
+        "description": [
+            "remove jquery object",
+            "apply dispose concept to reduce memory leak"
+        ],
+        "timespent": "43500",
+        "alpha": 100
+    },
+    {
+        "id": "28603",
+        "project": "POS",
+        "summary": [
+            "pos splitbill split bill feature should always ask for input pin"
+        ],
+        "description": [
+            "refer to requirement always ask for input pin after click split bill only manager and cashier role can use this feature in case input waiter pin should have an error access denied"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "28599",
+        "project": "POS",
+        "summary": [
+            "pos discountorder discount is not allowed but option is still remembered"
+        ],
+        "description": [
+            "description discount is not allowed but option is still remembered",
+            "step to reproduce make an order to have discountable amount go to checkout page click discount button select fixed discount there is a popup alert click close click cancel screen takes back to checkout page and discount is not applied click discount button again fixed discount is still selected capture.jpg expected result not allow discount shouldn't be remembered"
+        ],
+        "timespent": "5100",
+        "alpha": 100
+    },
+    {
+        "id": "28593",
+        "project": "POS",
+        "summary": [
+            "pos checkout comp button should be disabled after accept payment"
+        ],
+        "description": [
+            "description comp button should be disabled after accept payment",
+            "step to reproduce go to checkout page of any ordered table enter amount tendered and click accept payment select an item on order list and click comp button",
+            "button should be disabled click mark as paid error occured capture.jpg expected result disable comp button after accept payment"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "28591",
+        "project": "POS",
+        "summary": [
+            "pos splitbill the number of item should not allow to split"
+        ],
+        "description": [
+            "description number of item should not allow to split",
+            "step to reproduce send order to kitchen void all items go to checkout page split bill button is still enabled while no item in this order expected result split function is allowed only on and only"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "28588",
+        "project": "POS",
+        "summary": [
+            "pos tablelayout split table is not counted as ordered table"
+        ],
+        "description": [
+            "description split table is not counted in ordered table",
+            "step to reproduce split order for some tables go to table layout page the number of ordered table is incorrect expected result the number of ordered table should include split table"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "28586",
+        "project": "POS",
+        "summary": [
+            "pos splitbill some buttons still enabled after applied split bill"
+        ],
+        "description": [
+            "some buttons still enabled after applied split bill if we allow to use then it will cause pos work incorrectly",
+            "below buttons should be disabled after applied split bill print guest check comp link go to order page home icon config icon"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "28574",
+        "project": "POS",
+        "summary": [
+            "pos checkout failed to pay with card causes some buttons disabled"
+        ],
+        "description": [
+            "description failed to pay with card causes some buttons disabled",
+            "step to reproduce go to checkout page unplug credit card machine click accept payment on card tab popup appears transaction unsuccessful please try again then click ok cannot change to cash tab cannot click home icon cannot click config icon expected result all buttons should be enabled since payment is not accepted yet"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "28542",
+        "project": "POS",
+        "summary": [
+            "backend message source for printing tickets"
+        ],
+        "description": [
+            "store localized message for printing in messages properties"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "28539",
+        "project": "POS",
+        "summary": [
+            "pos discountorder apply discount until amount less than should not allow"
+        ],
+        "description": [
+            "description apply discount until amount less than should not allow",
+            "step to reproduce order pepsi go to checkout page remove min purchase click discount button select fixed discount error code from server printed out expected result pos should not allow to apply fixed discount until amount for example disable fixed discount option which is greater than amount"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "28528",
+        "project": "POS",
+        "summary": [
+            "pos checkout click backspace then cannot enter amount tendered"
+        ],
+        "description": [
+            "description click backspace then cannot enter amount tendered",
+            "step to reproduce go to checkout page click backspace button enter amount tendered by touch any button on numpad amount is not changed while accept payment button becomes enabled expected result click backspace shouldn't affect to numpad and accept payment button should be disabled because amount tender"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "28508",
+        "project": "POS",
+        "summary": [
+            "pos minpurchase accept payment button is still enabled after reapply min purchase"
+        ],
+        "description": [
+            "description accept payment button is still enabled after reapply min purchase",
+            "step to reproduce send order amount less than min purchase go to checkout page min purchase is applied click remove min purchase button min purchase is removed enter amount tendered balance due click add min purchase button min purchase is applied currently balance due amount tendered but accept payment button is still enabled expected result accept payment should be disabled if amount tendered balance due"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "28507",
+        "project": "POS",
+        "summary": [
+            "pos minpurchase subtotal shows incorrect value after applied min purchase"
+        ],
+        "description": [
+            "description subtotal shows incorrect value after applied min purchase",
+            "step to reproduce send order amount less than min purchase go to checkout page min purchase is applied but subtotal is not recalculated total and balance due are correct expected result subtotal should include min purchase item"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "28506",
+        "project": "POS",
+        "summary": [
+            "pos minpurchase takeout table shouldn't apply min purchase"
+        ],
+        "description": [
+            "step to reproduce try to order less than min purchase on takeout table min purchase is also applied",
+            "expected result takeout table is not applied min purchase"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "28504",
+        "project": "POS",
+        "summary": [
+            "pos minpurchase min purchase is still appeared even subtotal reached"
+        ],
+        "description": [
+            "description min purchase is still appeared even subtotal reached step to reproduce send order contains item with price go to checkout page popup alerts min purchase will be applied try to send more order with price currently amount go to checkout page again no min purchase popup since it's reached but min purchase item is still appeared on order list expected result min purchase item should be removed from order list"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "28501",
+        "project": "POS",
+        "summary": [
+            "pos checkout accept payment is still enabled while amount tendered less than balance due"
+        ],
+        "description": [
+            "description accept payment is still enabled while amount tendered less than balance due",
+            "step to reproduce send order to kitchen and apply discount input amount tendered balance due accept payment button is enabled remove discount amount tendered becomes balance due but accept payment button is still enabled expected result accept payment button should be disabled in case amount tendered balance due"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "28478",
+        "project": "POS",
+        "summary": [
+            "pos discountorder selected discount option is not remembered"
+        ],
+        "description": [
+            "description selected discount option is not remembered after go to other page and come back to checkout page again",
+            "step to reproduce go to checkout page and apply discount go back to table layout page go back to checkout page again click discount button discount option is not"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "28477",
+        "project": "POS",
+        "summary": [
+            "pos discountorder additional order causes wrong discount calculation"
+        ],
+        "description": [
+            "description send more order to kitchen causes wrong discount order calculation",
+            "step to reproduce order and apply discount following click go to order page order one more item and send to kitchen go to checkout page discount order calculation is wrong and guest check also printed wrong discount amount expected result discount order should be recalculated"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "28473",
+        "project": "POS",
+        "summary": [
+            "pos discountorder discount still shows after unselected discount"
+        ],
+        "description": [
+            "description discount still shows after unselected discount remember last discount step to reproduce go to checkout page click discount button select happy time discount shows unselect happy time discount still shows expected result discount should be reset to"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "28472",
+        "project": "POS",
+        "summary": [
+            "pos checkout no wording enter tax number on input tax field"
+        ],
+        "description": [
+            "from ui spec input text field of tax number should display enter tax number when no numbers are entered"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "28471",
+        "project": "POS",
+        "summary": [
+            "pos checkout add item without sending order then checkout causes app crash"
+        ],
+        "description": [
+            "description add item without sending order then checkout causes app crash step to reproduce seat a table and go to order management page add item to order list click checkout button and input cashier pin then app crashes expected result crash is not allowed on the system"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "28463",
+        "project": "POS",
+        "summary": [
+            "pos checkout some buttons should be disabled after accept payment"
+        ],
+        "description": [
+            "following buttons should be disabled after accept payment switch between tab discount button tax number button all buttons on numpad link go to order page home icon configuration icon split bill button comp button following buttons should be allowed after accept payment print guest check open cash drawer mark as paid button"
+        ],
+        "timespent": "4500",
+        "alpha": 100
+    },
+    {
+        "id": "28458",
+        "project": "POS",
+        "summary": [
+            "pos checkout balance due of checkout card should be red text"
+        ],
+        "description": [
+            "balance due of checkout card should be red text for consistency with checkout cash"
+        ],
+        "timespent": "300",
+        "alpha": 100
+    },
+    {
+        "id": "28457",
+        "project": "POS",
+        "summary": [
+            "pos checkout amount tendered greater than balance due but cannot accept payment"
+        ],
+        "description": [
+            "description amount tendered greater than balance due but cannot accept payment",
+            "step to reproduce go to checkout page of any table input amount tendered balance due click on card tab click back to cash tab amount tendered is still the same as but accept payment is disabled expected result accept payment button should be enabled if amount tendered is greater than balance due"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "28422",
+        "project": "POS",
+        "summary": [
+            "basic category form"
+        ],
+        "description": [
+            "features to be implemented category attributes no location product association selection box field validation"
+        ],
+        "timespent": "199740",
+        "alpha": 100
+    },
+    {
+        "id": "28418",
+        "project": "POS",
+        "summary": [
+            "pos multiple credit card terminal"
+        ],
+        "description": [
+            "july sean powil confirmed that nybc pos is not set up to handle union pay cashier need to manually key in amount on the card reader for payments made by union pay",
+            "powil confirmed that nybc pos is set up to handle amex",
+            "cashier does not need to manually key in amount on the card reader",
+            "july sean talked to systex and identified flows",
+            "taipei team feels option a is easier",
+            "also the current flow we are following a",
+            "pos sends amount and card type to credit card reader cashier card and then credit card tells pos success or fail",
+            "b",
+            "pos sends a request to card reader asking for the card type this only works for but not union pay cashier card reader tells the pos card type pos sends another request with amount and card type card reader processes transaction and tells pos success or fail",
+            "for option a to happen checkout screen has to have steps to make a credit card transaction",
+            "step choose from card types general visa mastercard jcb amex union pay step choose from card readers is the main credit card reader nybc uses",
+            "it should support the following cards amex union pay specifications this model should use change value of nexsysmode to in the file ecr.cfg and data format on this link is the backup card reader",
+            "it should support the following cards amex union pay specifications this model should use and data format on this link for nybc we need to support visa mastercard jcb amex and union pay we need to support visa amex and union pay"
+        ],
+        "timespent": "31200",
+        "alpha": 100
+    },
+    {
+        "id": "28404",
+        "project": "POS",
+        "summary": [
+            "pos additem default tab of product with side should be modifier tab"
+        ],
+        "description": [
+            "description default tab of product with side dish but no combo option should be modifier tab",
+            "step to reproduce add product comes with side dish but no combo option to order list on the right pane set tab is selected by default",
+            "expected behavior if no combo option set tab should be disabled and modifier tab should be selected by default"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "28400",
+        "project": "POS",
+        "summary": [
+            "pos print qty of item on guest check should align to right"
+        ],
+        "description": [
+            "description qty of item on guest check should align to right",
+            "step to reproduce add item and change qty to and send order to kitchen and guest check printed capture.jpg and qty is not align right expected result qty of item should align right similar to kitchen ticket"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "28302",
+        "project": "POS",
+        "summary": [
+            "pos sendorder order time is not continue counted after making additional order"
+        ],
+        "description": [
+            "description order time is not continue counted after making additional order",
+            "step to reproduce send an order to the kitchen go to order management page again all items become gray background and order time started correctly add some more items and send order to kitchen go to order management page again order time is not continue counted it restarts to again",
+            "expected result order time should start after order has been sent to kitchen at time and continue counting until checkout"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "28301",
+        "project": "POS",
+        "summary": [
+            "pos print modifier name is overlapped to quantity in guest check"
+        ],
+        "description": [
+            "description modifier name which is quite long is overlapped to quantity in guest check",
+            "step to reproduce add produce to order list assign side dish and combo set drink and dessert send order to check printed guestcheck.jpg the long modifier name is overlapped to its quantity expected result if modifier name is too long it should drop to line"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "28299",
+        "project": "POS",
+        "summary": [
+            "pos print line of item name in guest check should be indented"
+        ],
+        "description": [
+            "description line of item name in guest check should be indented to align with line",
+            "step to reproduce add produce to order list assign side dish and combo set send order to kitchen guest check printed guestcheck.jpg the item drinks and desserts is dropped to line without indent",
+            "expected result for user experience line of item name should be indented to align with line"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "28295",
+        "project": "POS",
+        "summary": [
+            "pos sendorder kitchen ticket for item qty greater than should be splitted"
+        ],
+        "description": [
+            "kitchen ticket for item qty greater than should be splitted"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "28289",
+        "project": "POS",
+        "summary": [
+            "pos additem side dish name shows null value"
+        ],
+        "description": [
+            "side dish name shows null value need to change data on back end side please find more details in attachment"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "28285",
+        "project": "POS",
+        "summary": [
+            "pos tablelayout takeout zone should show the last order"
+        ],
+        "description": [
+            "description takeout zone should show the last order",
+            "step to reproduce go to table layout page currently takeout zone shows on the first order",
+            "expected result zone should be"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "28261",
+        "project": "POS",
+        "summary": [
+            "pos additem order list should be auto scrolled down to show newest item"
+        ],
+        "description": [
+            "description order list should be auto scrolled down to show newest item",
+            "step to reproduce add multiple items to order list until the order larger than order list window size",
+            "currently the order list always shows at the top user needs to scroll down to see the new item",
+            "expected result order list should be able to down to the newest item"
+        ],
+        "timespent": "9000",
+        "alpha": 100
+    },
+    {
+        "id": "28235",
+        "project": "POS",
+        "summary": [
+            "pos additem icon is too closed to order list border"
+        ],
+        "description": [
+            "description when trying to delete product items icon will be shifted to close to the border of order list",
+            "step to reproduce add some items to order list touch edit button on of order list icon is shifted to the border of order list expected result for ux design there should be some space between border and icon"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "28006",
+        "project": "POS",
+        "summary": [
+            "qa create testcase minimum purchase"
+        ],
+        "description": [
+            "wireframe"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "27988",
+        "project": "POS",
+        "summary": [
+            "pos tablelayout getting push notification causes memory leak"
+        ],
+        "description": [
+            "description getting push notification causes memory leak around per push received",
+            "step to reproduce on go to table layout page on move a table to another table screen will get push notification from server",
+            "repeat for times found memory increased per push see performance monitor log of from expected result memory leak is not expected"
+        ],
+        "timespent": "104400",
+        "alpha": 100
+    },
+    {
+        "id": "27985",
+        "project": "POS",
+        "summary": [
+            "pos checkout credit card"
+        ],
+        "description": [
+            "checkout page wireframe"
+        ],
+        "timespent": "48600",
+        "alpha": 100
+    },
+    {
+        "id": "27975",
+        "project": "POS",
+        "summary": [
+            "pos checkout cash"
+        ],
+        "description": [
+            "checkout page wireframe"
+        ],
+        "timespent": "102000",
+        "alpha": 100
+    },
+    {
+        "id": "27956",
+        "project": "POS",
+        "summary": [
+            "pos reservetable user info message exceed characters is allowed"
+        ],
+        "description": [
+            "description user can enter info message longer than character string different from step to reproduce touch an available table select reserve input valid pin type info message to be longer than chars expected result refer to requirement info message is not allowed to be greater than char string"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "27951",
+        "project": "POS",
+        "summary": [
+            "api create take out zone hardcode"
+        ],
+        "description": [
+            "description by powil all tables in this zone should be named takeout example takeout"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "27940",
+        "project": "POS",
+        "summary": [
+            "pos service fee feature"
+        ],
+        "description": [
+            "service fee applies to these to taiwan holidays",
+            "we should hard code these dates",
+            "service fee does not apply to takeouts currently products are considered for takeout if the ff",
+            "are true product has takeout modifier and product belongs to a table in the takeout zone",
+            "pos should use order time to check whether service fee is applicable example scenario if service fee applies from pm to am then the following happens service fee is not applied to order list with order time of pm service fee is applied to order list with order time of am to taiwan holidays flow"
+        ],
+        "timespent": "9600",
+        "alpha": 100
+    },
+    {
+        "id": "27838",
+        "project": "POS",
+        "summary": [
+            "pos tablelayout no pin login required setting"
+        ],
+        "description": [
+            "description to expected result pos system to be able to configure whether required login or not for actions seat order checkout reserve move default value is required for seat order checkout and not required for the rest"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "27832",
+        "project": "POS",
+        "summary": [
+            "pos tablelayout touch home icon too frequent causes app crash"
+        ],
+        "description": [
+            "description on table layout page touch home icon too frequent causes app crash step to reproduce go to table layout page touch home icon on of the screen time within seconds application crashes",
+            "expected result application should work fine even touch any button too frequent"
+        ],
+        "timespent": "32400",
+        "alpha": 100
+    },
+    {
+        "id": "27831",
+        "project": "POS",
+        "summary": [
+            "pos tablelayout application crash when could not connect to server"
+        ],
+        "description": [
+            "description pos application crash when could not connect to server step to reproduce disconnect pos from network or other way that make pos to unable to connect server open application then crash found or go to table layout page disconnect network select a seated table then click order app crashes",
+            "expected result application must provide connection timeout handling"
+        ],
+        "timespent": "145800",
+        "alpha": 100
+    },
+    {
+        "id": "27830",
+        "project": "POS",
+        "summary": [
+            "pos tablelayout waiter name lost after click home icon"
+        ],
+        "description": [
+            "description after login waiter name shows on welcome area but when click on home icon the waiter name is disappeared",
+            "step to reproduce login with name shows by replacing welcome message touch home icon on of the screen the name of lost the welcome area becomes blank expected result waiter name should always show on welcome area"
+        ],
+        "timespent": "16800",
+        "alpha": 100
+    },
+    {
+        "id": "27829",
+        "project": "POS",
+        "summary": [
+            "pos takeout individual product flow"
+        ],
+        "description": [
+            "waiter should be able to set products as takeout in the same order list as dine in order management",
+            "nybc has this feature",
+            "old flow by to be used for inspiration/guide needs ux design team to move forward"
+        ],
+        "timespent": "36600",
+        "alpha": 100
+    },
+    {
+        "id": "27824",
+        "project": "POS",
+        "summary": [
+            "pos tablelayout login modal still appears after idle for seconds"
+        ],
+        "description": [
+            "description login modal still appears after leave it to be idle for long time step to reproduce go to table layout screen select on an available table login modal will be appeared wait seconds login modal still exists expected result if no input pin from user after seconds login modal should be closed and go back to previous screen"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "27823",
+        "project": "POS",
+        "summary": [
+            "pos tablelayout no icon beside table options"
+        ],
+        "description": [
+            "description no icon beside table options step to reproduce go to table layout page touch on any table menu for that table will show up without icon expected result there should be an icon for each option"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "27817",
+        "project": "POS",
+        "summary": [
+            "pos tablelayout zone can be unselected"
+        ],
+        "description": [
+            "description on table layout screen zone can be unselected by swipe down on the zone button",
+            "this issue causes no zone is selected at a time",
+            "step to reproduce open table layout page the default zone abe is swipe down on abe zone then no zone is selected expected result swipe action should not allow on zone button and there must be a zone selected at a time"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "27805",
+        "project": "POS",
+        "summary": [
+            "pos minimum purchase for every diner"
+        ],
+        "description": [
+            "this story is from meeting with nybc on april powil g",
+            "is the contact person for this requirement",
+            "discount order does not apply to minimum purchase does not apply to takeouts service fee is applied after minimum purchase",
+            "ex",
+            "minimum purchase service total ux update flow on how user can remove and add minimum purchase pending flows minimum purchase flow minimum purchase cash flow minimum purchase card flow"
+        ],
+        "timespent": "15000",
+        "alpha": 100
+    },
+    {
+        "id": "27622",
+        "project": "POS",
+        "summary": [
+            "sales by category"
+        ],
+        "description": [
+            "sep we confirmed with monkey the following voided products don't show up in sales by category report",
+            "complemented products show up in sales by category report",
+            "the qty column is affected but the effect on the amount column is zero",
+            "if a product has been deleted it won't show up in sales by category report",
+            "for version sales by category version only needs columns name qty and amount",
+            "we should not implement and design the first column",
+            "see screenshot for more info",
+            "august format print pdf print csv user need to have the following filters start date to end date this report needs to be both in the restaurant regardless of whether it's in pos or in web admin this report also needs to be printable inside the restaurant in format see the requirements on this link ux design team string table probably needed for this report",
+            "make the report layout prettier if you want to"
+        ],
+        "timespent": "139740",
+        "alpha": 100
+    },
+    {
+        "id": "27476",
+        "project": "POS",
+        "summary": [
+            "qa write test case for comp item"
+        ],
+        "description": [
+            "write test case for comp item flow and send powil to review",
+            "requirement not provided by powil yet"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "27461",
+        "project": "POS",
+        "summary": [
+            "pos add item and modifier and product set"
+        ],
+        "description": [
+            "add item and modifier flow"
+        ],
+        "timespent": "3000",
+        "alpha": 100
+    },
+    {
+        "id": "27325",
+        "project": "POS",
+        "summary": [
+            "qa create test guideline"
+        ],
+        "description": [
+            "to define testing guideline in area of kitchenup project"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "26918",
+        "project": "POS",
+        "summary": [
+            "inf design restful api for client server interaction"
+        ],
+        "description": [
+            "login table layout seat and place order add item and modifier"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "33121",
+        "project": "IOS",
+        "summary": [
+            "ios pointing app to appropriate server address"
+        ],
+        "description": [
+            "there are tasks related to pointing app to appropriate server address",
+            "create default server address following branch dev branch connect to tbd release branch connect to tbd master branch connect to tbd find solution to change server address after app installed move to"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "35804",
+        "project": "WA",
+        "summary": [
+            "implement"
+        ],
+        "timespent": "2100"
+    },
+    {
+        "id": "33052",
+        "project": "WA",
+        "summary": [
+            "implementation"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "33051",
+        "project": "WA",
+        "summary": [
+            "test case"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "32872",
+        "project": "WA",
+        "summary": [
+            "regression catch up for leave page popup setting"
+        ],
+        "timespent": "9420"
+    },
+    {
+        "id": "32738",
+        "project": "WA",
+        "summary": [
+            "side set form display on pos switch bug"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "32223",
+        "project": "WA",
+        "summary": [
+            "implementation"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "32010",
+        "project": "WA",
+        "summary": [
+            "regression test"
+        ],
+        "timespent": "900"
+    },
+    {
+        "id": "31845",
+        "project": "WA",
+        "summary": [
+            "regression test script"
+        ],
+        "timespent": "300"
+    },
+    {
+        "id": "31801",
+        "project": "WA",
+        "summary": [
+            "test case"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "31736",
+        "project": "WA",
+        "summary": [
+            "webadmin tree view index edit product page for product only"
+        ],
+        "timespent": "29700"
+    },
+    {
+        "id": "31453",
+        "project": "WA",
+        "summary": [
+            "regression test edit"
+        ],
+        "timespent": "28260"
+    },
+    {
+        "id": "31435",
+        "project": "WA",
+        "summary": [
+            "implementation"
+        ],
+        "timespent": "6600"
+    },
+    {
+        "id": "31434",
+        "project": "WA",
+        "summary": [
+            "notification testcase"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "31408",
+        "project": "WA",
+        "summary": [
+            "implementation"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "29921",
+        "project": "WA",
+        "summary": [
+            "webadmin fix site's logo text appear"
+        ],
+        "timespent": "2400"
+    },
+    {
+        "id": "29142",
+        "project": "WA",
+        "summary": [
+            "webadmin product form"
+        ],
+        "timespent": "13200"
+    },
+    {
+        "id": "29920",
+        "project": "WA",
+        "summary": [
+            "webadmin remove display on pos switch animation",
+            "product category"
+        ],
+        "timespent": "1200"
+    },
+    {
+        "id": "32744",
+        "project": "SO",
+        "summary": [
+            "get network diagram of rdc"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "31659",
+        "project": "POS",
+        "summary": [
+            "ur usability test report"
+        ],
+        "timespent": "115200"
+    },
+    {
+        "id": "30754",
+        "project": "POS",
+        "summary": [
+            "localized string for sales by category report"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "30653",
+        "project": "POS",
+        "summary": [
+            "cashier occasionally uses partial payment in checkout"
+        ],
+        "timespent": "12600"
+    },
+    {
+        "id": "30549",
+        "project": "POS",
+        "summary": [
+            "pos reportsalesbycategory generate button of report page dropped out of screen"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "30513",
+        "project": "POS",
+        "summary": [
+            "implement backend for end of shift report"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "30409",
+        "project": "POS",
+        "summary": [
+            "implement"
+        ],
+        "timespent": "2460"
+    },
+    {
+        "id": "30127",
+        "project": "POS",
+        "summary": [
+            "implement"
+        ],
+        "timespent": "51000"
+    },
+    {
+        "id": "30121",
+        "project": "POS",
+        "summary": [
+            "pos print report in"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "29712",
+        "project": "POS",
+        "summary": [
+            "webadmin fix bug product page's switch button"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "29345",
+        "project": "POS",
+        "summary": [
+            "pos terminal crash on start app when config file very large"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "29227",
+        "project": "POS",
+        "summary": [
+            "pos change theme"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "29124",
+        "project": "POS",
+        "summary": [
+            "separate admin project for front and backend"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "29038",
+        "project": "POS",
+        "summary": [
+            "pos endofday manager can generate and view end of day report in chinese"
+        ],
+        "timespent": "28200"
+    },
+    {
+        "id": "29037",
+        "project": "POS",
+        "summary": [
+            "web localization"
+        ],
+        "timespent": "900"
+    },
+    {
+        "id": "29027",
+        "project": "POS",
+        "summary": [
+            "basic left navigation"
+        ],
+        "timespent": "34800"
+    },
+    {
+        "id": "29014",
+        "project": "POS",
+        "summary": [
+            "remove minify file from code converage"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "28796",
+        "project": "POS",
+        "summary": [
+            "pos refactor scss code by scsslint suggestion"
+        ],
+        "timespent": "20160"
+    },
+    {
+        "id": "28792",
+        "project": "POS",
+        "summary": [
+            "web integrate code reviewing tool by jshint scsslint"
+        ],
+        "timespent": "600"
+    },
+    {
+        "id": "28767",
+        "project": "POS",
+        "summary": [
+            "pos unit testing for data module modifier.js"
+        ],
+        "timespent": "8340"
+    },
+    {
+        "id": "28766",
+        "project": "POS",
+        "summary": [
+            "pos unit testing for data module product.js"
+        ],
+        "timespent": "14700"
+    },
+    {
+        "id": "28765",
+        "project": "POS",
+        "summary": [
+            "pos unit testing for data module zone.js"
+        ],
+        "timespent": "2220"
+    },
+    {
+        "id": "28764",
+        "project": "POS",
+        "summary": [
+            "pos unit testing for utility module messagebox.js"
+        ],
+        "timespent": "1200"
+    },
+    {
+        "id": "28757",
+        "project": "POS",
+        "summary": [
+            "pos unit testing for utility module localstorage.js"
+        ],
+        "timespent": "29220"
+    },
+    {
+        "id": "28728",
+        "project": "POS",
+        "summary": [
+            "pos additem overlay won't work when click at number to input quantity by manual"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "28622",
+        "project": "POS",
+        "summary": [
+            "pos background task to do collectgarbage"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "28512",
+        "project": "POS",
+        "summary": [
+            "qa create testcase deductible item"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "28464",
+        "project": "POS",
+        "summary": [
+            "deductible item"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "28410",
+        "project": "POS",
+        "summary": [
+            "basic select box"
+        ],
+        "timespent": "71700"
+    },
+    {
+        "id": "28401",
+        "project": "POS",
+        "summary": [
+            "pos print guest check"
+        ],
+        "timespent": "4200"
+    },
+    {
+        "id": "28135",
+        "project": "POS",
+        "summary": [
+            "change pin input to password type"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "28010",
+        "project": "POS",
+        "summary": [
+            "qa create testcase split bill"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "28009",
+        "project": "POS",
+        "summary": [
+            "qa manual test service fee"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "28008",
+        "project": "POS",
+        "summary": [
+            "qa create testcase service fee"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "28007",
+        "project": "POS",
+        "summary": [
+            "qa manual test minimum purchase"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "27969",
+        "project": "POS",
+        "summary": [
+            "qa create testcase performance test"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "27967",
+        "project": "POS",
+        "summary": [
+            "qa create testcase print guest check kitchen receipt"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "27941",
+        "project": "POS",
+        "summary": [
+            "pos tax number feature"
+        ],
+        "timespent": "3000"
+    },
+    {
+        "id": "27922",
+        "project": "POS",
+        "summary": [
+            "qa manual test checkout card"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "27921",
+        "project": "POS",
+        "summary": [
+            "qa manual test checkout cash"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "27920",
+        "project": "POS",
+        "summary": [
+            "qa manual test move table"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "27919",
+        "project": "POS",
+        "summary": [
+            "qa manual test reserve table"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "27916",
+        "project": "POS",
+        "summary": [
+            "qa manual test send order"
+        ],
+        "timespent": "43200"
+    },
+    {
+        "id": "27915",
+        "project": "POS",
+        "summary": [
+            "qa manual test add item and modifier"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "27914",
+        "project": "POS",
+        "summary": [
+            "qa manual test comp item"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "27763",
+        "project": "POS",
+        "summary": [
+            "api category"
+        ],
+        "timespent": "144000"
+    },
+    {
+        "id": "27759",
+        "project": "POS",
+        "summary": [
+            "qa create testcase login"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "27749",
+        "project": "POS",
+        "summary": [
+            "qa manual test seat and place order"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "27748",
+        "project": "POS",
+        "summary": [
+            "qa manual test table layout"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "27747",
+        "project": "POS",
+        "summary": [
+            "qa uat test doc"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "27746",
+        "project": "POS",
+        "summary": [
+            "qa create test scenario"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "27745",
+        "project": "POS",
+        "summary": [
+            "pos discount order"
+        ],
+        "timespent": "48000"
+    },
+    {
+        "id": "27603",
+        "project": "POS",
+        "summary": [
+            "api retrieve order data for each table"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "27428",
+        "project": "POS",
+        "summary": [
+            "learning angularjs"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "27417",
+        "project": "POS",
+        "summary": [
+            "qa create testcase access admin page on pos"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "27413",
+        "project": "POS",
+        "summary": [
+            "qa create testcase end of day closing process for manager"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "27300",
+        "project": "POS",
+        "summary": [
+            "read kitchenup technical documents eg",
+            "sass grunt"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "27299",
+        "project": "POS",
+        "summary": [
+            "read kitchenup business and flowchart documents"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "27298",
+        "project": "POS",
+        "summary": [
+            "read development process documents"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "27266",
+        "project": "POS",
+        "summary": [
+            "terminal implement login table layout"
+        ],
+        "timespent": "38700"
+    },
+    {
+        "id": "26926",
+        "project": "POS",
+        "summary": [
+            "flow list"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "26924",
+        "project": "POS",
+        "summary": [
+            "spring data rest"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "26923",
+        "project": "POS",
+        "summary": [
+            "spring data jpa reference"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "26922",
+        "project": "POS",
+        "summary": [
+            "spring boot reference"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "26921",
+        "project": "POS",
+        "summary": [
+            "gradle user guide"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "26914",
+        "project": "POS",
+        "summary": null,
+        "timespent": "7200"
+    },
+    {
+        "id": "26913",
+        "project": "POS",
+        "summary": null,
+        "timespent": "1800"
+    },
+    {
+        "id": "26861",
+        "project": "POS",
+        "summary": [
+            "implement zone section with dynamic content"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "26601",
+        "project": "POS",
+        "summary": [
+            "read vdo course learning"
+        ],
+        "timespent": "43200"
+    },
+    {
+        "id": "34243",
+        "project": "IOS",
+        "summary": [
+            "ios test case view user profile"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "33607",
+        "project": "IOS",
+        "summary": [
+            "android chinese name should have no space between name"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "33424",
+        "project": "IOS",
+        "summary": [
+            "implement and add thai language into the app"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "33404",
+        "project": "IOS",
+        "summary": [
+            "implement"
+        ],
+        "timespent": "9000"
+    },
+    {
+        "id": "32658",
+        "project": "IOS",
+        "summary": [
+            "android implement"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "31323",
+        "project": "IOS",
+        "summary": [
+            "android implement unit test framework"
+        ],
+        "timespent": "115200"
+    }
+]

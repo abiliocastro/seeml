@@ -1,0 +1,1785 @@
+[
+    {
+        "id": "30930",
+        "project": "BE",
+        "summary": [
+            "restructure project platform specific"
+        ],
+        "description": [
+            "move all fabric related api's under platform/fabric"
+        ],
+        "timespent": "28800",
+        "alpha": 96
+    },
+    {
+        "id": "30796",
+        "project": "FAB",
+        "summary": [
+            "upgrade homebrew-fabric to"
+        ],
+        "description": [
+            "homebrew-fabric should be the latest version"
+        ],
+        "timespent": "7200",
+        "alpha": 97
+    },
+    {
+        "id": "31109",
+        "project": "BE",
+        "summary": [
+            "merge into master"
+        ],
+        "description": [
+            "update readme.md document merge code into master branch"
+        ],
+        "timespent": "25200",
+        "alpha": 98
+    },
+    {
+        "id": "29222",
+        "project": "BE",
+        "summary": [
+            "write code to save the additional transaction fields into pg"
+        ],
+        "description": [
+            "save the following data into pg we get for transactions",
+            "validation_code status version type"
+        ],
+        "timespent": "57600",
+        "alpha": 98
+    },
+    {
+        "id": "20248",
+        "project": "FABCN",
+        "summary": [
+            "enable peer grpc prefix to be determined at runtime"
+        ],
+        "description": [
+            "allow developers to pass in peer.address value in either of the following styles when the protocol is omitted use the environment variable to determine the proper protocol"
+        ],
+        "timespent": "28800",
+        "alpha": 99
+    },
+    {
+        "id": "19448",
+        "project": "FABCN",
+        "summary": [
+            "ci jobs"
+        ],
+        "description": [
+            "note that the ci environment must have node.js and npm installed the ci capabilities to support node.js chaincode run unit tests using gulp command which generates cubertura coverage report set up the integration test environment clone so a peer directory to run gulp run integration tests using gulp command on merge publish to npm based on the version string in not package.json in the root directory of the repo similarly to how the ci is set up for repo if then publish to the unstable stream if or and the suffix is anything other than snapshot then publish to the main stream reference finally need merge cis that will publish the api reference to like is done for"
+        ],
+        "timespent": "57600",
+        "alpha": 99
+    },
+    {
+        "id": "19345",
+        "project": "FABCN",
+        "summary": [
+            "design and implement the js chaincode plugin mechanism"
+        ],
+        "description": [
+            "the format of the chaincode source chaincode should be written as commonjs modules and be with the node.js engine how does the chaincode get discovered and loaded into the node.js app a package.json must accompany is chaincode sources in the root folder of the chaincodepath parameter during chaincode install",
+            "the package.json is critically important for two purposes specifies any dependencies including the package itself which is needed by all js chaincodes and any other external dependencies using the scripts section to specify how the chaincode should be launched do we allow js chaincodes to have other source dependencies in other words can a js chaincode by broken up into multiple modules yes definitely how do we ensure multiple install operations produce the same binary from npm install use best practices with shrinkwrap.json"
+        ],
+        "timespent": "86400",
+        "alpha": 99
+    },
+    {
+        "id": "19344",
+        "project": "FABCN",
+        "summary": [
+            "chaincode platform for handling javascript chaincode docker builds"
+        ],
+        "description": [
+            "node.js chaincode platform should be responsible for the following build steps that result in a image during chaincode instantiation using build the chaincode package by running within the chaincode source folder which must contain a package.json along with the chaincode source itself create a package that contains the entire app folder including the package.json chaincode js source files and any other source files one or more folder resulted from the npm install step above the runtime image should be based on fabric-baseimage which already contains node engine and npm but we be using that since all dependencies will have been resolved in the build steps and contained in the chaincode"
+        ],
+        "timespent": "288000",
+        "alpha": 99
+    },
+    {
+        "id": "34146",
+        "project": "FAB",
+        "summary": [
+            "remove fixtures from sampleconfig folder"
+        ],
+        "description": [
+            "pem certificates aren't examples and they're not samples",
+            "they do not belong in a sample folder",
+            "the only explicit references to these artifacts is in and these appear to be due to how these are tested"
+        ],
+        "timespent": "600",
+        "alpha": 99
+    },
+    {
+        "id": "30875",
+        "project": "FAB",
+        "summary": [
+            "orderers should reject incoming config messages"
+        ],
+        "description": [
+            "as things stand today the orderer does not reject transactions of type headertype_config this should not be the case it is the orderers that are tasked with validating/authorizing incoming configuration updates and they do so by receiving messages of type and turning them into properly validated messages of type we should be preventing malicious clients from being able to submit config messages otherwise we run the risk of the peer crashing upon receiving malformed/unauthorized config messages"
+        ],
+        "timespent": "2700",
+        "alpha": 99
+    },
+    {
+        "id": "23859",
+        "project": "FAB",
+        "summary": [
+            "generate tls client certificates for users"
+        ],
+        "description": [
+            "cryptogen is used to generate crypto material for people to get up and running and is also used within ci tests to generate the bootstrap crypto material",
+            "in order to properly test and demonstrate mutual tls the crypto material generated for users should include client certificates",
+            "the plan is to putthe tls client credentialsin the folder and name them client.key and client.crt"
+        ],
+        "timespent": "2400",
+        "alpha": 99
+    },
+    {
+        "id": "22737",
+        "project": "FAB",
+        "summary": [
+            "add mutual tls flag to comm.grpcserver"
+        ],
+        "description": [
+            "the comm.grpcserver implementation supports mutual tls but there currently does not have a flag which indicated whether or not mutual tls is required"
+        ],
+        "timespent": "1200",
+        "alpha": 99
+    },
+    {
+        "id": "22469",
+        "project": "FAB",
+        "summary": [
+            "create ordering service faq"
+        ],
+        "description": [
+            "we see the same questions coming up in time and time again",
+            "let us document these in a faq document that we'll be pointing folks to next time one of these questions come up"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "15898",
+        "project": "FAB",
+        "summary": [
+            "move admin user certs to proper msp location for peers and orderers"
+        ],
+        "description": [
+            "cryptogen needs to add the public certificate of each organization's admin user to the msp for each peer and orderer in the organization"
+        ],
+        "timespent": "2700",
+        "alpha": 99
+    },
+    {
+        "id": "15745",
+        "project": "FAB",
+        "summary": [
+            "configtx.yaml in peer was not override by"
+        ],
+        "description": [
+            "during joining to channel i have got error peers were started with parameter but in configtx.yaml it was not updated file configtx.yaml docker manifest and logs are attached"
+        ],
+        "timespent": "360",
+        "alpha": 99
+    },
+    {
+        "id": "15726",
+        "project": "FAB",
+        "summary": [
+            "improve test coverage for package"
+        ],
+        "description": [
+            "the current coverage for the package is but the major gap in tests for functions found in connection.go"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "15723",
+        "project": "FAB",
+        "summary": [
+            "include install script with each release package"
+        ],
+        "description": [
+            "as we currently distribute the various runtime components as docker images it is convenient to include a script which will download the correct version of the images for a given release and platform",
+            "with this task we'll include a script which will pull all of the images for a given release"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "15707",
+        "project": "FAB",
+        "summary": [
+            "add release targets to makefile"
+        ],
+        "description": [
+            "while there are targets to make binaries for some packages we need a more uniform way of creating the binaries we want to publish",
+            "we currently have build platforms and but we don't have build environments for or go has the ability to so we'll add release targets for all platforms and can choose to for windows macos in the ci for"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "12684",
+        "project": "FAB",
+        "summary": [
+            "verify manual state transfer works"
+        ],
+        "description": [
+            "as we discussed over the weekend following gari's suggestion",
+            "needed in case things go terribly bad"
+        ],
+        "timespent": "86400",
+        "alpha": 99
+    },
+    {
+        "id": "12489",
+        "project": "FAB",
+        "summary": [
+            "cut an error log message if a checkpoint failure occurs"
+        ],
+        "description": [
+            "if the pbft checkpoint incurs a failure different hash's and can not proceed",
+            "the fabric needs to cut and error message",
+            "this has cost us a lot of pd time"
+        ],
+        "timespent": "28800",
+        "alpha": 99
+    },
+    {
+        "id": "33458",
+        "project": "CE",
+        "summary": [
+            "one exception thrown in when creating a"
+        ],
+        "description": [
+            "when operator created a in deployment one exception was thrown as follow exception in thread traceback most recent call last file line in bootstrap_inner self.run file line in run file line in valueerror invalid literal for int with base none"
+        ],
+        "timespent": "10800",
+        "alpha": 99
+    },
+    {
+        "id": "29488",
+        "project": "CE",
+        "summary": [
+            "add instructions to install git review on contributing.md"
+        ],
+        "description": [
+            "the contributing.md file recommends using git review s which is not installed by default",
+            "it needs to beinstalled per the instructions"
+        ],
+        "timespent": "600",
+        "alpha": 99
+    },
+    {
+        "id": "32097",
+        "project": "BE",
+        "summary": [
+            "no reload needed for a single channel in drop down"
+        ],
+        "description": [
+            "check if the channel drop down list contain only one channel no need to reload or trigger reload event see attached image the spinner doesn't go away otherwise you click on other are of the window"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "30854",
+        "project": "BE",
+        "summary": [
+            "update channel table part"
+        ],
+        "description": [
+            "add columns to channel table analyse how to make channel name unique across network possible use of channel currentblockhash peer channel getinfo channelid utc channelcmd initcmdfactory info endorser and orderer connections initialized blockchain info height currentblockhash create date should be the timestamp from the fabric transaction id if there is such info store channel.tx binary column channel.block binary inchannel_block column channel config in table including channel policy does a channel update assigns another hashblock store channel version in table tb continued"
+        ],
+        "timespent": "57600",
+        "alpha": 99
+    },
+    {
+        "id": "30609",
+        "project": "BE",
+        "summary": [
+            "test hl explorer with node"
+        ],
+        "description": [
+            "team will upgrade jenkins build environment tonode we would need member's fromour team to test hl explorer with the requirements install node you can use nvm version manager check nvm version install if you don't have it you can look at install node version nvm install nvm use node version after you switched please go ahead and do all the npm install run tests as instructed in readme.md document do a full test of the application if any errors please put in the jira i would suggest once you have tested assign to another developer"
+        ],
+        "timespent": "18000",
+        "alpha": 99
+    },
+    {
+        "id": "29567",
+        "project": "BE",
+        "summary": [
+            "utilized moment.js to display date and time"
+        ],
+        "description": [
+            "we need to show timestamps in a consistent fashion",
+            "use a js timsteamp formatting library to display full timestamp in user's timezone"
+        ],
+        "timespent": "10800",
+        "alpha": 99
+    },
+    {
+        "id": "27478",
+        "project": "BE",
+        "summary": [
+            "create jenkins job for branch"
+        ],
+        "description": [
+            "setup jenkins job frombranch see attached file the following steps needed for the job",
+            "git dir blockchain-explorer npm install test u coverage npm run build coverage report location"
+        ],
+        "timespent": "86400",
+        "alpha": 99
+    },
+    {
+        "id": "44008",
+        "project": "IS",
+        "summary": [
+            "slow performance of anoncred-generated wql for proof request"
+        ],
+        "description": [
+            "the wql generated by anoncreds for a proof request generates a very poorly performing sql on a wallet with a large number of credentials creds and the query slows linearly with the number of credentials so as the wallet grows the query slows",
+            "with the bc gov von database million credentials this makes the proof request unusable",
+            "the generated wql checks for attribute existence first and then filters on equality operators",
+            "reversing the order of these subqueries equality first then attribute existence solves the performance issue",
+            "the attribute existence check results in a large number of records basically every credential of the requested type which is then filtered using the equality operators filters on values of specific when reversing the order the query does the equality check first value of specific attributes which results in a much smaller number of records ideally which is then filtered by the attribute existence options to improve query performance database indexes i was able to gain marginal improvements by tuning the database indexes but the root cause is the number of records selected in the initial part of the query so this still suffered slow performance with large numbers of credentials",
+            "translation this is done within the storage and is a straightforward conversion",
+            "the wql structure determines the sql structure exactly",
+            "since the storage only deals with queries the does not have any information about the nature of the query in order to do any optimization",
+            "i have added sample wql and sql in comments before and after database structure the database structure is restricted base on the requirements of item content is encrypted as are tag values",
+            "the deals only with encrypted values and does not have information on the nature of the query",
+            "there are only tables involved in this query item and so i think any optimization possible in the based on the information available"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "21734",
+        "project": "IS",
+        "summary": [
+            "update default wallets to use sqlcipher"
+        ],
+        "description": [
+            "replace sqlite with sqlcipher",
+            "first pass will use password encrypted key"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "40090",
+        "project": "IR",
+        "summary": [
+            "getaccountdetail pagination in request"
+        ],
+        "description": [
+            "add pagination metadata to getaccountdetail request without breaking backward compatibility"
+        ],
+        "timespent": "1560",
+        "alpha": 100
+    },
+    {
+        "id": "39670",
+        "project": "IR",
+        "summary": [
+            "accountassetresponse pagination"
+        ],
+        "description": [
+            "it should be possible perform getaccountassets query with pagination in case a user has a large number of assets",
+            "it should be possible to extend the existing api and return alternative grpc status when the client does not set pagination meta",
+            "design draft"
+        ],
+        "timespent": "2940",
+        "alpha": 100
+    },
+    {
+        "id": "39504",
+        "project": "IR",
+        "summary": [
+            "investigate the issue with getaccounttransactions"
+        ],
+        "description": [
+            "the task is to reproduce the problem",
+            "reported in community chat files attached"
+        ],
+        "timespent": "7920",
+        "alpha": 100
+    },
+    {
+        "id": "38710",
+        "project": "IR",
+        "summary": [
+            "send batches to round"
+        ],
+        "description": [
+            "since round can be both next round on commit and next after next round on commit after reject batches in connection manager should be additionally sent to documentation should be updated"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "38569",
+        "project": "IR",
+        "summary": [
+            "validate batch size with"
+        ],
+        "description": [
+            "batches which have more than transactions should be considered as stateless invalid",
+            "note check"
+        ],
+        "timespent": "3360",
+        "alpha": 100
+    },
+    {
+        "id": "38450",
+        "project": "IR",
+        "summary": [
+            "speed up a process of tables/database drop when wsv is restored from blockstore"
+        ],
+        "description": [
+            "at the moment when iroha daemon is relaunched with an existing blockstore wsv is purged in order to use blocks to create new wsv",
+            "this process takes unreasonably long time and has to be speeded up"
+        ],
+        "timespent": "420",
+        "alpha": 100
+    },
+    {
+        "id": "38203",
+        "project": "IR",
+        "summary": [
+            "rework torii transaction processor to use observable"
+        ],
+        "description": [
+            "reuse existing committed blocks observable",
+            "an optimization of cpu ram usage"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "37378",
+        "project": "IR",
+        "summary": [
+            "build iroha binary with a leak sanitizer and find places where iroha leaks memory"
+        ],
+        "description": [
+            "recently introduced load testing via locust tool",
+            "when launched it is easy to observe undesired memory consumption behavior see the we need to localize leaks and perform memory management optimizations"
+        ],
+        "timespent": "3240",
+        "alpha": 100
+    },
+    {
+        "id": "37212",
+        "project": "IR",
+        "summary": [
+            "fix new pipeline"
+        ],
+        "description": [
+            "run docker push outside build container in dev branch we run build again in release type it fails because we have network from debug build clean it or check release build steps"
+        ],
+        "timespent": "660",
+        "alpha": 100
+    },
+    {
+        "id": "36734",
+        "project": "IR",
+        "summary": [
+            "change target for develop docker image from dev back to develop"
+        ],
+        "description": [
+            "right now we build images from codebase in dev branch but we want to use develop instead"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "36689",
+        "project": "IR",
+        "summary": [
+            "migrate to new ci pipeline"
+        ],
+        "description": [
+            "we have an alternative implementation for jenkinsci file with respect to a design document for ci pipeline",
+            "this task is to merge implementation to development branch test it possible bugs and abandon the old implementation"
+        ],
+        "timespent": "300",
+        "alpha": 100
+    },
+    {
+        "id": "23908",
+        "project": "FABN",
+        "summary": [
+            "use implementation to improve performance"
+        ],
+        "description": [
+            "the hash functions in the nodesdk currently use a combination of sjcl native crypto and for the various algorithms",
+            "the default currently use sjcl",
+            "sjcl is fine for small payloads but with large payloads it is much slower that using the crypto module",
+            "a simple test proves this with a payload the results sjcl native"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "15625",
+        "project": "FABN",
+        "summary": [
+            "leading no longer required for serial numbers in"
+        ],
+        "description": [
+            "changed the implementation to no longer prepend a to serial numbers",
+            "need to modify the to match this change"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "20264",
+        "project": "FABCN",
+        "summary": [
+            "integration test framework for node.js chaincode"
+        ],
+        "description": [
+            "the integration tests should be carried out in an environment as close to the real world as possible which means use docker images to launch a target network deploy chaincodes to peers in dev and network modes run through the install instantiate invoke query upgrade invoke query lifecycle"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "20252",
+        "project": "FABCN",
+        "summary": [
+            "upgrade node.js chaincode engine to"
+        ],
+        "description": [
+            "among other things introduced native async and await support that transforms messy source code like this to this also performance benefits due to ignition interpreter and turbofan jit note that node does not enter lts service status until october exact date to be determined but we have obtained agreement from node.js engine committers for support on possible bug fixes during the interim",
+            "thus we felt appropriate to introduce the node.js chaincode feature directly on top of node rather than for developers who are writing both chaincode and client applications with the node.js sdk although the node.js sdk may still be stuck on for official support pending further discussions the good news is that node has excellent backward compatibility so they should be able to continue to write both code for app and chaincode under node and test",
+            "as long as they accidentally introduce language features that are not supported by in the client app they should be fine"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "19474",
+        "project": "FABCN",
+        "summary": [
+            "complete implementation of remaining shim apis"
+        ],
+        "description": [
+            "after the these are the remaining ones to be implemented in the phase"
+        ],
+        "timespent": "576000",
+        "alpha": 100
+    },
+    {
+        "id": "19347",
+        "project": "FABCN",
+        "summary": [
+            "sdk support node.js sdk"
+        ],
+        "description": [
+            "the current protocol how the responsibility for golang is like this given the chaincode path build a chaincode package that includes all the dependencies then the sdk sends the package to the peer to install then the sdk calls the peer to instantiate the chaincode",
+            "if instantiating for the first time it may get instantiated multiple times for different channels the peer will use the environment to build it into native binaries and package the resulting binary into a custom docker image based on a base image for this protocol can be directly translated to handling node.js chaincode lifecycles like the following given the node.js chaincode path which is expected to be a folder containing the chaincode js code plus package.json to declare dependencies then the sdk sends the package to the peer to install then the sdk calls the peer to instantiate the chaincode",
+            "if instantiating for the first time the peer will use the environment to build it by running npm install production and package the resulting folder into a custom docker image based on a base image at the moment does not have node.js engine so we should use fabric-baseimage for another option is to utilize the car support"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "19346",
+        "project": "FABCN",
+        "summary": [
+            "define the code package content structure"
+        ],
+        "description": [
+            "what files should be contained in the code package of the chaincodedeploymentspec for a javascript chaincode two files are the main ones chaincode.js does not have to be named exactly as such because the chaincode container will use npm start to launch the container instance",
+            "this module gets called by the node.js engine and should start the shim by calling it will implement the init and invoke functions required by the chaincode api interface",
+            "it can require other source modules with require or external modules with require package.json is critical in two aspects one is to declare how to launch the chaincode program by providing a scripts section that has a start entry which will be used by the chaincode container to start the chaincode program with npm start another is to declare the runtime dependencies"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "20156",
+        "project": "FABCN",
+        "summary": [
+            "complete implementation of shim apis part ii"
+        ],
+        "description": [
+            "based on feedback from composer the apis to be implemented part ii",
+            "see for list of part i key and state calls fundamental to composer other calls"
+        ],
+        "timespent": "288000",
+        "alpha": 100
+    },
+    {
+        "id": "19473",
+        "project": "FABCN",
+        "summary": [
+            "complete implementation of shim apis part i"
+        ],
+        "description": [
+            "based on feedback from composer the apis to be implemented the basic lifecycle type calls key and state calls fundamental to composer other calls finally these come for free"
+        ],
+        "timespent": "288000",
+        "alpha": 100
+    },
+    {
+        "id": "19343",
+        "project": "FABCN",
+        "summary": [
+            "code structure design and initial impl of node chaincode shim"
+        ],
+        "description": [
+            "the runtime image should be built based on the fabric-baseimage image which already has node and npm and add the following pieces module grpc the chaincode should be the main entry point to start the app all shim interface's functions should be implemented in the package arguments passing the sdk and the chaincode should be json based instead of byte arrays note a significant internal refactoring on the communication protocol the peer and chaincode container during endorsement is being worked on with the main goal to eliminate fsm basing the javascript shim implementation on the refactored code should be preferred"
+        ],
+        "timespent": "115200",
+        "alpha": 100
+    },
+    {
+        "id": "43823",
+        "project": "FABCG",
+        "summary": [
+            "add hasouvalue function to cid library"
+        ],
+        "description": [
+            "public cas do not support the inclusion of extra extension attributes like the one used for chaincode access control in fabric that had oid this obliges the use of to be able to use certificate attributes with the cid library",
+            "for some organizations it is not allowed by the security department to use and they prefer to use other ca services",
+            "access control in the chaincode could also be done by using other fields in the certificates like for example the ou field of the subject",
+            "the advantage of using the ou field is that it is a standard field and that the distinguished name of a certificate subject can have multiple ou values",
+            "the objective of this jira story is to add a method in the cid library that looks for a specified ou value in the certificate of the transaction sender so the cid library can also be used for access control based on ou values and people do not have to write their custom function for it",
+            "link to public one pager with more information"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "26236",
+        "project": "FABC",
+        "summary": [
+            "use strong encryption cipher suites for tls"
+        ],
+        "description": [
+            "nodes currently restrict to tls to version but we can also improve security a but by using high encryption cipher suites by default",
+            "my suggestion is"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "35868",
+        "project": "FAB",
+        "summary": [
+            "data race in test reported in ci"
+        ],
+        "description": [
+            "fail testetcdraft race detected during execution of test fail coverage of statements fail"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "35287",
+        "project": "FAB",
+        "summary": [
+            "write wal and snapshots in temp dir when testing"
+        ],
+        "description": [
+            "var is not an unprivileged user writable directory on almost any platform",
+            "the unit tests should explicitly target temporary directories",
+            "not only does it prevent this kind of issue it keeps test stuff isolated from the rest of the world",
+            "panic channel system error creating consenter failed to restore persited raft data failed to initialize wal mkdir var/hyperledger permission denied also note the typo persited instead of persisted"
+        ],
+        "timespent": "300",
+        "alpha": 100
+    },
+    {
+        "id": "34668",
+        "project": "FAB",
+        "summary": [
+            "mistakes of outof example in endorsement-policies doc"
+        ],
+        "description": [
+            "in endorsement-policies doc there is the part of outof expression example as below it seams mistake it will make users confused",
+            "organization b needs to change to as below added more exmaple for outof as below related doc file"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "32607",
+        "project": "FAB",
+        "summary": [
+            "high throughput tutorial for is not correct"
+        ],
+        "description": [
+            "hello the high throughput tutorial's readme is very a lot for the user to infer that can make it difficult to setup the network",
+            "i would like to update the documentation as well as update the chaincode slightly in order to allow traditional standard assets to be deleted from the network since currently there is no way to do so",
+            "this pertains to the branch of the repository",
+            "i understand the latest is however a lot of the clients i work with still prefer so it is worthwhile to update this documentation",
+            "i have attached the new chaincode which includes the updates",
+            "all it is a simple delstandard function that works in tandem with putstandard and getstandard in order to facilitate deleting something on the network if it is put on using the traditional way"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "32336",
+        "project": "FAB",
+        "summary": [
+            "link to kafka config sample"
+        ],
+        "description": [
+            "removing the bddtests folder meant we also remove the sample configuration file for the ordering service",
+            "we need to add a link to it in the ordering service faq as our users in have questions that can be addressed by it"
+        ],
+        "timespent": "360",
+        "alpha": 100
+    },
+    {
+        "id": "32211",
+        "project": "FAB",
+        "summary": [
+            "fix link to kafka design document"
+        ],
+        "description": [
+            "the original document used to reside in a google drive account that is no longer active",
+            "as a result the link to the doc is now broken"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "25105",
+        "project": "FAB",
+        "summary": [
+            "peer chaincode install doesn't return error if no js files in directory"
+        ],
+        "description": [
+            "while installing a node chaincode with the command installed remotely payload ok returned always even if no js files in the location"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "22944",
+        "project": "FAB",
+        "summary": [
+            "add mutual tls config option for peer"
+        ],
+        "description": [
+            "the peer currently has all the runtime code needed for supporting mutual tls for its service endpoints",
+            "however there is currently no way to configure the endpoints to require mutual tls"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "22913",
+        "project": "FAB",
+        "summary": [
+            "configure peer to make mutual tls connections"
+        ],
+        "description": [
+            "the peer currently makes two types of client connections to other peers via gossip to ordering nodes for channels need to be able to configure the peer to use a client certificate for mutual tls",
+            "the default will be to use the same certificate it uses for tls"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "22734",
+        "project": "FAB",
+        "summary": [
+            "enable mutual tls support for orderer nodes"
+        ],
+        "description": [
+            "the orderer already supports the ability to enable enforce mutual tls however it does not support updating the trusted root certificates for clients based on channel membership",
+            "in order to accomplish this a callback needs to be triggered everytime there is a config update and if mutual tls is required the list of trusted client cas can be updated by using the capability of the comm.grpcserver component to dynamically update cas at runtime",
+            "the channel resource/config manager already supports the ability to invoke callback functions on config updates so all that is required is to create the callback function and hook all of this together"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "20521",
+        "project": "FAB",
+        "summary": [
+            "balance transfer sample application using fabric java sdk"
+        ],
+        "description": [
+            "transfer*spring boot application sdk will demonstrates all the such as enrolling and registering user creating channel installing chaincode instantiating chaincode invoking chaincode and querying chaincode",
+            "i have created this sample application for reference so that people who want to develop a hyperledger fabric solution using java sdk can use the sample to accelerate their application development"
+        ],
+        "timespent": "230400",
+        "alpha": 100
+    },
+    {
+        "id": "20450",
+        "project": "FAB",
+        "summary": [
+            "upgrade to"
+        ],
+        "description": [
+            "currently uses was released a few weeks back and we should try to stay current",
+            "addtionally is now license under there are some performance improvements and some new features to tweak logging as well"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "17381",
+        "project": "FAB",
+        "summary": [
+            "add support for grpc keepalive for grpcserver and client connections"
+        ],
+        "description": [
+            "in order to deal with a series of timeout errors generally caused by proxies terminating connections due to inactivity grpc now supports a keepalive mechanism",
+            "this task will add support for the keepalive options for the common grpcserver and for client connections used in the peer and orderer"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "16851",
+        "project": "FAB",
+        "summary": [
+            "upgrade to latest version of"
+        ],
+        "description": [
+            "the latest version of includes a number of things we can take advantage of keep alive client credentials rpc and stream interceptors"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "16722",
+        "project": "FAB",
+        "summary": [
+            "improve test coverage for"
+        ],
+        "description": [
+            "loc coverage is under"
+        ],
+        "timespent": "36000",
+        "alpha": 100
+    },
+    {
+        "id": "16475",
+        "project": "FAB",
+        "summary": [
+            "query is failing on cli tests"
+        ],
+        "description": [
+            "cli tests are failing while querying",
+            "below is the error message observed latest merge jobs are failing with the above error",
+            "please see the build reference here observed above error from below patch set merge"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "16444",
+        "project": "FAB",
+        "summary": [
+            "cleanup package and improve test coverage"
+        ],
+        "description": [
+            "has some dead code and has low test coverage"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "16414",
+        "project": "FAB",
+        "summary": [
+            "trusted roots for orderer and peer connections should not be the same"
+        ],
+        "description": [
+            "peer.buildtrustedrootsforchain had a todo from earlier to properly populate the trusted roots used to connect to ordering nodes and to peer nodes",
+            "currently both the app and orderer roots are the same and include both app and orderer roots",
+            "while this works it is a security hole"
+        ],
+        "timespent": "7500",
+        "alpha": 100
+    },
+    {
+        "id": "16120",
+        "project": "FAB",
+        "summary": [
+            "modify comm implementation is use callback function to get secure dial options"
+        ],
+        "description": [
+            "the current gossip implementation is initialized with a set of dial options which don't change during the lifecycle of the peer",
+            "in order to always get the most up to date secure dial options which basically means dial options with the latest set of trusted roots for remote peers organizations this task will add a callback function to the comm impl"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "15951",
+        "project": "FAB",
+        "summary": [
+            "remove testchainid from peer start up"
+        ],
+        "description": [
+            "not sure if even used anymore other than in tests but we must remove testchainid from the peer startup",
+            "minimally settle for making the default false",
+            "this code should be removed from the peer altogether imho"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "15943",
+        "project": "FAB",
+        "summary": [
+            "improve test coverage for cryptogen"
+        ],
+        "description": [
+            "as more people start using cryptogen need to make sure the test coverage is increased"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "15889",
+        "project": "FAB",
+        "summary": [
+            "bccsp does not generate compliant private keys when storing to file keystore"
+        ],
+        "description": [
+            "when and storing ec private keys bccsp currently uses the header begin ecdsa private key while this is not illegal it produces a format which is not consumable by the current node sdk or by openssl",
+            "the proposed fix is to simply generate compliant ec keys"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "15712",
+        "project": "FAB",
+        "summary": [
+            "remove sfhackfest from examples"
+        ],
+        "description": [
+            "the sfhackfest example is not longer relevant to the master branch"
+        ],
+        "timespent": "300",
+        "alpha": 100
+    },
+    {
+        "id": "15692",
+        "project": "FAB",
+        "summary": [
+            "gossip dialoptions need to use the comm.secureserver cert pools"
+        ],
+        "description": [
+            "currently the dialoptions passed to gossip is from which prevents peers from communicating with peers from different orgs when tls is used because the tls client rejects the tls server from the other org"
+        ],
+        "timespent": "14460",
+        "alpha": 100
+    },
+    {
+        "id": "15302",
+        "project": "FAB",
+        "summary": [
+            "make grpc logging configurable"
+        ],
+        "description": [
+            "there is a grpc logger that is silenced by default because it logs messages when peers disconnect grpc addrconn.transportmonitor exits due to grpc the connection is closing the silencing line is found in sometimes however this information is useful for debugging issues",
+            "i suggest having this grpc logger silenced upon demand by a viper configuration"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "14051",
+        "project": "FAB",
+        "summary": [
+            "references to rocksdb should be removed from fabric"
+        ],
+        "description": [
+            "the fabric still has references to rocksdb",
+            "removing the one in the env variable in so cop will build in but looks like other references need to be removed and perhaps other clean up needed",
+            "see references to rocksdb cd fabric grep r rocksdb run cd opt git clone branch depth cd rocksdb workdir env run lrocksdb lstdc lm lz lsnappy go install cp run cd opt git clone branch depth cd rocksdb workdir env run lrocksdb lstdc lm lz lsnappy go install cp"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "13332",
+        "project": "FAB",
+        "summary": [
+            "remove membership services from fabric repo"
+        ],
+        "description": [
+            "for fabric the artist known as membership services is now in its own repository need to remove membership services from the master branch of the fabric repository"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "13299",
+        "project": "FAB",
+        "summary": [
+            "need to update the logrus package"
+        ],
+        "description": [
+            "logrus is currently vendored as it is used by the go-dockerclient i the vendoring is a bit messed up some odd files and the version in there does not compile natively on osx",
+            "as an aside i am also going to propose moving to using this package for logging in general so will be good to update it"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "13012",
+        "project": "FAB",
+        "summary": [
+            "investigate certificate pinning for grpc tls"
+        ],
+        "description": [
+            "in fabric orderer nodes will identified via certificates",
+            "these certificates will not be verifiable via a known root certificate chain",
+            "the individual certificates will be made available to the various fabric orderer network nodes via transactions in blocks on a block chain",
+            "if these same certificates can be used to initiate the tls connection between the various nodes that might prove to be enough to identify the nodes"
+        ],
+        "timespent": "115200",
+        "alpha": 100
+    },
+    {
+        "id": "13009",
+        "project": "FAB",
+        "summary": [
+            "create a policy manager"
+        ],
+        "description": [
+            "with the ability to specify policy in it is necessary for the orderer to track what policies are currently in effect and be able to evaluate whether a policy is satisfied by a given transaction",
+            "therefore a framework for updating and evaluating policies is necessary"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "12842",
+        "project": "FAB",
+        "summary": [
+            "switch the dockerfile to install hfc from npm instead of local file system"
+        ],
+        "description": [
+            "the last line of the dockerfile is currently like this install the hfc locally for use by the application run npm install this means the version of hfc can get out of sync with what the application developers are told to use namely the version published in npm",
+            "also the publishing of this image could be lagging behind the publishing of hfc in npm resulting in errors seen with the starter kit that have already been fixed in npm",
+            "should really switch to run npm install hfc"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "12768",
+        "project": "FAB",
+        "summary": [
+            "add support for package"
+        ],
+        "description": [
+            "switch over the kafka orderer to the config package introduced in"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "12606",
+        "project": "FAB",
+        "summary": [
+            "testhttpexecutedeploytransaction failing on master"
+        ],
+        "description": [
+            "introduced a breaking change for unit tests on master",
+            "testhttpexecutedeploytransaction is failing on the master branch because it passing in as a parameter",
+            "this would be ok since it is trying to test getting remote chaincode but the issue is that the chaincode in that repo is implementing new based on the convergence branch"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "31542",
+        "project": "COM",
+        "summary": [
+            "the composer network start command doesn't run"
+        ],
+        "description": [
+            "i have seen several versions of this command to deploy a network and a business card",
+            "this one seems to be the most up to date however the network name is not recognized",
+            "i run the install command composer network install a c peeradmin i try to run the start command unsuccessfully composer network start networkname v c a admin s adminpw a f networkadmin.card required argument networkname i have specified the network name but it seems like it does not recognize it",
+            "is it me doing something wrong or some problems with installed version flags environment thank you"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "19921",
+        "project": "CE",
+        "summary": [
+            "add user management in basic theme"
+        ],
+        "description": [
+            "add user management in basic theme for admin dashboard"
+        ],
+        "timespent": "9480",
+        "alpha": 100
+    },
+    {
+        "id": "18861",
+        "project": "CE",
+        "summary": [
+            "fix operation error in cluster view"
+        ],
+        "description": [
+            "fix operation error in cluster view"
+        ],
+        "timespent": "4920",
+        "alpha": 100
+    },
+    {
+        "id": "18671",
+        "project": "CE",
+        "summary": [
+            "support user authentication for dashboard"
+        ],
+        "description": [
+            "add user authentication and registration for admin user dashboard"
+        ],
+        "timespent": "74220",
+        "alpha": 100
+    },
+    {
+        "id": "18659",
+        "project": "CE",
+        "summary": [
+            "react theme create chains fail for solo"
+        ],
+        "description": [
+            "when create solo type chain return error"
+        ],
+        "timespent": "16260",
+        "alpha": 100
+    },
+    {
+        "id": "16361",
+        "project": "CE",
+        "summary": [
+            "complete the realization for react theme"
+        ],
+        "description": [
+            "complete the realization for react theme"
+        ],
+        "timespent": "31800",
+        "alpha": 100
+    },
+    {
+        "id": "43635",
+        "project": "BE",
+        "summary": [
+            "fix env variable in readme.md"
+        ],
+        "description": [
+            "update environment variable to be the env variable mentioned correctly in section fabric network setup however the env variable is not correct in section configure fabcar sample"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "34947",
+        "project": "BE",
+        "summary": [
+            "the point displayed on the graph in the other time zones is incorrect"
+        ],
+        "description": [
+            "the point displayed on the graph in the other timezone is incorrect because getblocktimestamp return date depends on timezone",
+            "need to change to getblocktimestamp return"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "31853",
+        "project": "BE",
+        "summary": [
+            "explorer fails to run in"
+        ],
+        "description": [
+            "error is posted in rocket chat see details add meaningful message in therender if return div style height display flex justifycontent center alignitems center one or more components failed to div"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "31601",
+        "project": "BE",
+        "summary": [
+            "number of transactions per organization in the pie chart are disappearing"
+        ],
+        "description": [
+            "metricsin pie chart organization disappearing this happens when switching channels or reloading the page see attached components appear in different order maybe we need a spinner the last updated time not shown in activity window ii used to be like seconds ago or h mins ago see attachments"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "31574",
+        "project": "BE",
+        "summary": [
+            "compress http request and response"
+        ],
+        "description": [
+            "follow up on compress rest api responses take the size transfer measurements before compress implementation and after"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "31295",
+        "project": "BE",
+        "summary": [
+            "application logging analyses"
+        ],
+        "description": [
+            "need to perform analyses on the application logging read write to the logs could be a potential candidate for the slowness"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "31294",
+        "project": "BE",
+        "summary": [
+            "rest api response analyses"
+        ],
+        "description": [
+            "need to analyse response time from rest api calls on low data and high volume",
+            "can use syncstartdate to sync into postgresql db to load less historical data prerequisirtes high volume of data at least blocks and transactions use swagger to analyse the performance research any available plugin to inject into the code to get the performance one of them connect to aws network and to test how to profile how to runapache bench for ubuntu only macos has it installed installapache bench start hl explorer from a terminalrun commands that are in file before running change the request parameters to you specific channel hash easy would be to copy the from the chrome network tab example command ab k c n report.tx the report.tx will append to the report file please attach for the review"
+        ],
+        "timespent": "158400",
+        "alpha": 100
+    },
+    {
+        "id": "31152",
+        "project": "BE",
+        "summary": [
+            "upgrade node client to"
+        ],
+        "description": [
+            "we need to stay current with fabric updates on node sdk"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "30971",
+        "project": "BE",
+        "summary": [
+            "security vulnerabilities found in some packages"
+        ],
+        "description": [
+            "see attached report all high are reactjs packages",
+            "research if there are updated version and apply to the hlexplorer"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "30888",
+        "project": "BE",
+        "summary": [
+            "need to upgrade fabric clients to version"
+        ],
+        "description": [
+            "npm complains about security vulnerabilities of fabric client dependencies which appear to be addressed in client version"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "30865",
+        "project": "BE",
+        "summary": [
+            "refactor create channel to use hlf configtxgen tool"
+        ],
+        "description": [
+            "generate channel genesis block and transaction artifacts upload channel config org config add record to db"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "30663",
+        "project": "BE",
+        "summary": [
+            "error in metrics service"
+        ],
+        "description": [
+            "error metricservice typeerror cannot read property foreach of null at anonymous at object"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "30489",
+        "project": "BE",
+        "summary": [
+            "automatic code formatting"
+        ],
+        "description": [
+            "setup project to automatically format code using prettier upon git commits",
+            "will utilize prettier husky and setup instructions adding a new branch to test this change during the git branch code-formatting the next stepsafter pushing the change after approving the change we would need to test explorer locally before merging it to branch or running the code format task from command line"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "30473",
+        "project": "BE",
+        "summary": [
+            "implement file upload for channel creation"
+        ],
+        "description": [
+            "add the ability to upload and files to create channel and peers to join channel create channel requirements setup your own network if you do not have it using build your network tutorial from fabric",
+            "generate binary config files use the configtxgen tool to produce the binary config files",
+            "from the sample directory setup export outputblock channelname.block profile twoorgsorderergenesis channelid channelname outputcreatechanneltx channelname.tx profile twoorgschannel channelname is the name of your channel you want to create update in file to your fabric network path everytime you create a new channel you need to define it in file search for keyword newchannel and update it to the name of your new channel use web ui admin panel to create and manage a channel more on how to create a hyperledger fabric channel"
+        ],
+        "timespent": "115200",
+        "alpha": 100
+    },
+    {
+        "id": "30370",
+        "project": "BE",
+        "summary": [
+            "create channel by uploading channel artifacts"
+        ],
+        "description": [
+            "create channel by uploading channel artifacts"
+        ],
+        "timespent": "115200",
+        "alpha": 100
+    },
+    {
+        "id": "30095",
+        "project": "BE",
+        "summary": [
+            "historical data retrieval for peers"
+        ],
+        "description": [
+            "decide on the process to run one time when brining up hl explorer retreive historical data for new peers",
+            "assignee needs to do analysis to determine best way to accomplish this goal",
+            "to sync data historically configure syncstartdate in file to format example syncstartdate"
+        ],
+        "timespent": "100800",
+        "alpha": 100
+    },
+    {
+        "id": "29999",
+        "project": "BE",
+        "summary": [
+            "activity stream back end"
+        ],
+        "description": [
+            "display any activities going on in the blockchain on the dash board"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "29921",
+        "project": "BE",
+        "summary": [
+            "create new branch for fabric upgrade"
+        ],
+        "description": [
+            "need new branch to check in changes for fabric upgrade efforts"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "29920",
+        "project": "BE",
+        "summary": [
+            "merge release to master"
+        ],
+        "description": [
+            "we have a bug fix in release that needs to be pushed to master"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "29531",
+        "project": "BE",
+        "summary": [
+            "load configuration from the network yaml file"
+        ],
+        "description": [
+            "create new channel listen and query eventsfrom fabricrequires use of the network configuration file of type yaml currently this file defines the network properties to connect to a fabric network such as peers channels certificate authority etc"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "29512",
+        "project": "BE",
+        "summary": [
+            "design session to support fabric"
+        ],
+        "description": [
+            "how do we sync multiple channels and how do we create event listeners as we add more channels add a background service to check for new channels every minutes to be defined i see two options here a sync data into local postgresql db by registering to the events by channels b create background services based on number of channels or sync channels one by one use of some npm's such as ref"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "29489",
+        "project": "BE",
+        "summary": [
+            "support hlfabric in hlexplorer"
+        ],
+        "description": [
+            "released hlf has a different api see in hfl known event hub is not supported new services provided",
+            "multiple or single channel support research needed versions we need to support"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "29462",
+        "project": "BE",
+        "summary": [
+            "update result for transaction details"
+        ],
+        "description": [
+            "return single row by transaction id as array"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "29278",
+        "project": "BE",
+        "summary": [
+            "get explorer to work with fabric"
+        ],
+        "description": [
+            "one of the developers confirmed that if they upgrade to fabric on their aws instance of fabric network explorer gave a bunch of errors",
+            "need someone to look at getting explorer to work with fabric new feature of hlf connection profiles connection profile configuration events api how to upgrade to"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "29200",
+        "project": "BE",
+        "summary": [
+            "resolve licensing issues discovered by fossology scan"
+        ],
+        "description": [
+            "context hyperledgerexplorer source files from april were scanned by the linux foundation utilizing fossology to determine license for files contained in the following repositories from the hyperledger charter section all files that are included in hyperledger projects should either be licensed with the apache license version for source code or creative commons attribution international license for documentation",
+            "expected behavior all files should have license text included either directly or via a license file in the directory for files that cannot be modified to include a comment with the license text think binary actual behavior see attached results ofthe scan",
+            "to fix the package metadata files generally bower.json package.json for npm incorrectly describe the hyperledgerexplorer as licensed underisc rather than apache",
+            "default isiscso this is a common mistake",
+            "highlighted these instances in the attached reports",
+            "these files should be changed from isc to for files with attribution license ideally we would replace those with apache files and dependencies otherwise we will need to go to the hyperledger governing board for anexception",
+            "for all files that do not have a license included the first step is to check with the contributor to ensure that the file can be released as apache or if the contributor agrees the file should be modified to include the license",
+            "you can utilize spdx identifiers represent the correct license",
+            "for those files you will need to include a license file in the directory containing the license that the files are covered by",
+            "here are a few examples of how this might be done opnfv apex this is an example of explicitly calling out apache for source code and for docs",
+            "containerd see notice at bottom",
+            "this also calls out the separate apache explicitly references the docs directory",
+            "before closing this bug please let me know that you have made the above changes",
+            "i will then run thecode through fossology ensure the changes"
+        ],
+        "timespent": "115200",
+        "alpha": 100
+    },
+    {
+        "id": "28484",
+        "project": "BE",
+        "summary": [
+            "coaching and mentoring new team members sprint"
+        ],
+        "description": [
+            "nik vinita and mekia all are taking the time to coach and mentor new team members helping to ramp them up and then answer questions and provide help to remove obstacles to reduce the time of orientation and making them productive more quickly"
+        ],
+        "timespent": "90000",
+        "alpha": 100
+    },
+    {
+        "id": "28483",
+        "project": "BE",
+        "summary": [
+            "coaching and mentoring new team members sprint"
+        ],
+        "description": [
+            "nik vinita and mekia all are taking the time to coach and mentor new team members helping to ramp them up and then answer questions and provide help to remove obstacles to reduce the time of orientation and making them productive more quickly"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "28482",
+        "project": "BE",
+        "summary": [
+            "coaching and mentoring new team members sprint"
+        ],
+        "description": [
+            "nik vinita and mekia all are taking the time to coach and mentor new team members helping to ramp them up and then answer questions and provide help to remove obstacles to reduce the time of orientation and making them productive more quickly"
+        ],
+        "timespent": "32700",
+        "alpha": 100
+    },
+    {
+        "id": "28481",
+        "project": "BE",
+        "summary": [
+            "coaching and mentoring new team members sprint"
+        ],
+        "description": [
+            "nik vinita and mekia all are taking the time to coach and mentor new team members helping to ramp them up and then answer questions and provide help to remove obstacles to reduce the time of orientation and making them productive more quickly"
+        ],
+        "timespent": "39600",
+        "alpha": 100
+    },
+    {
+        "id": "28480",
+        "project": "BE",
+        "summary": [
+            "coaching and mentoring new team members sprint"
+        ],
+        "description": [
+            "nik vinita and mekia all are taking the time to coach and mentor new team members helping to ramp them up and then answer questions and provide help to remove obstacles to reduce the time of orientation and making them productive more quickly"
+        ],
+        "timespent": "36000",
+        "alpha": 100
+    },
+    {
+        "id": "28478",
+        "project": "BE",
+        "summary": [
+            "coaching and mentoring new team members sprint"
+        ],
+        "description": [
+            "nik vinita and mekia all are taking the time to coach and mentor new team members helping to ramp them up and then answer questions and provide help to remove obstacles to reduce the time of orientation and making them productive more quickly"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "28477",
+        "project": "BE",
+        "summary": [
+            "coaching and mentoring new team members sprint"
+        ],
+        "description": [
+            "nik vinita and mekia all are taking the time to coach and mentor new team members helping to ramp them up and then answer questions and provide help to remove obstacles to reduce the time of orientation and making them productive more quickly"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "28363",
+        "project": "BE",
+        "summary": [
+            "full testing of patch sprint"
+        ],
+        "description": [
+            "full testing of a patch to ensure no bugs are found",
+            "if bugs are found the team will open a bug in the current sprint and fix the bug and submit another patch which will need to be test should be done with and branch perform a test with at least a blocks in your ledger",
+            "if there are any bugs please create a bug and steps to recreate",
+            "if the bug already exists please do not create a new one"
+        ],
+        "timespent": "100800",
+        "alpha": 100
+    },
+    {
+        "id": "28362",
+        "project": "BE",
+        "summary": [
+            "full testing of patch sprint"
+        ],
+        "description": [
+            "full testing of a patch to ensure no bugs are found",
+            "if bugs are found the team will open a bug in the current sprint and fix the bug and submit another patch which will need to be"
+        ],
+        "timespent": "46800",
+        "alpha": 100
+    },
+    {
+        "id": "27482",
+        "project": "BE",
+        "summary": [
+            "add channel backend implementation"
+        ],
+        "description": [
+            "see ashish did analysis you can implement in the node backend add a channel service under setup instructions for create new channel set path to configtxgen tool in your bashrc file on ubnuntu you can use command sudo nano bashrc export save the file and refresh use command source bashrc update config.json file look for the key configtxgentoolpath should match your configtxgen tool path update in file to your fabric network path everytime you add a new channel you need to define it in file search for keyword newchannel and update it to the name of your new channel"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "39456",
+        "project": "IR",
+        "summary": [
+            "create tests for batch validator"
+        ],
+        "timespent": "1440"
+    },
+    {
+        "id": "38161",
+        "project": "IR",
+        "summary": [
+            "check iroha with intel inspector"
+        ],
+        "timespent": "9540"
+    },
+    {
+        "id": "36677",
+        "project": "IR",
+        "summary": [
+            "delete ci step for python package"
+        ],
+        "timespent": "1200"
+    },
+    {
+        "id": "23924",
+        "project": "FABJ",
+        "summary": [
+            "test certificates are expired"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "32243",
+        "project": "FAB",
+        "summary": [
+            "fix copyright year in docs"
+        ],
+        "timespent": "60"
+    },
+    {
+        "id": "27615",
+        "project": "FAB",
+        "summary": [
+            "update minimum versions of node.js and npm"
+        ],
+        "timespent": "300"
+    },
+    {
+        "id": "23804",
+        "project": "FAB",
+        "summary": [
+            "support mutual tls for connections to peer and orderer"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "23203",
+        "project": "FAB",
+        "summary": [
+            "support mutual tls for connections to peer and orderer"
+        ],
+        "timespent": "2700"
+    },
+    {
+        "id": "21775",
+        "project": "FAB",
+        "summary": [
+            "remove github folder from project repo"
+        ],
+        "timespent": "180"
+    },
+    {
+        "id": "17191",
+        "project": "FAB",
+        "summary": [
+            "improve code coverage for package"
+        ],
+        "timespent": "172800"
+    },
+    {
+        "id": "16714",
+        "project": "FAB",
+        "summary": [
+            "improve test coverage for"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "16681",
+        "project": "FAB",
+        "summary": [
+            "increase test coverage for"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "12672",
+        "project": "FAB",
+        "summary": [
+            "write unit tests for kafka orderer"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "12671",
+        "project": "FAB",
+        "summary": [
+            "build the kafka orderer prototype"
+        ],
+        "timespent": "201600"
+    },
+    {
+        "id": "12670",
+        "project": "FAB",
+        "summary": [
+            "build docker image for kafka/zookeeper"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "32101",
+        "project": "BE",
+        "summary": [
+            "change from beta to main release"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "31858",
+        "project": "BE",
+        "summary": [
+            "merge into master and create new branch of master"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "31110",
+        "project": "BE",
+        "summary": [
+            "merge into master branch"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "29491",
+        "project": "BE",
+        "summary": [
+            "research how to use the event service hlf"
+        ],
+        "timespent": "3600"
+    }
+]

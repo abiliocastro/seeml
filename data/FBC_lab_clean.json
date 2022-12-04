@@ -1,0 +1,106 @@
+[
+    {
+        "id": "52892",
+        "project": "SS",
+        "summary": [
+            "nxp found the data check for tool assignment escalation does not work and creates error"
+        ],
+        "description": [
+            "the data check in version runnable recall escalation tool assignment does not work pm datetime parameter determined am pm error occured when sending mail",
+            "pm due to an error mail was not sent for the alert uid pm exception details pm message index was out of range",
+            "must be and less than the size of the collection",
+            "parameter name index pm stack trace at system.throwhelper.throwargumentoutofrangeexception(exceptionargument argument exceptionresource resource at metteam.alertengine.dateexpressionparser.processtimespan(datetime current count tokens at metteam.alertengine.dateexpressionparser.processoperator(datetime current token tokens at value at metteam.alertengine.helpers.alertinghelper.processpendingalerts pm loading system"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "57695",
+        "project": "SS",
+        "summary": [
+            "support request"
+        ],
+        "description": [
+            "request description fluke park laboratory recently underwent its biennial nvlap accreditation audit",
+            "a calibration certificate nonconformance was identified and posted in intelex as sncr the relevant part of that sncr is reproduced here section each report shall include the results with the units of measurement",
+            "specifically the auditor noted that our accredited tcal calibration certificates do not contain the units of measurement for the uncertainty columns",
+            "this applies to page of all certificates and to page of a select few certificates",
+            "please make the following edits the following product certificates require c the degree celsius symbol in the header of every uncertainty column on page triclamp models including the model field metrology wells including the beamex models field metrology wells including the model the following product certificates require c the degree celsius symbol in the header of every uncertainty column on page they also require the omega symbol in the header of every uncertainty column on page metrology well calibrators including the beamex models sample certificates can be provided on request",
+            "requested priority medium requested need date special background info kenny w requestor email new ticket created on microsoft forms submission"
+        ],
+        "timespent": "39960",
+        "alpha": 100
+    },
+    {
+        "id": "51964",
+        "project": "SS",
+        "summary": [
+            "support request"
+        ],
+        "description": [
+            "request description need help with a data check",
+            "they want service types restricted to only the service types represented in the scheduled services grid in other words they want ever want a service type to be available if it in the assets scheduled services already",
+            "i am not sure how to run through the list of what scheduled services that a given asset has already and compare it to the receiving service type requested priority high requested need date special background info requestor email new ticket created on microsoft forms submission"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "50766",
+        "project": "SS",
+        "summary": [
+            "ii support request"
+        ],
+        "description": [
+            "request description software has error due to microsoft update",
+            "we need this fixed asap",
+            "due to month end revenue risk of this has been marked critical",
+            "requested priority critical requested need date special background info alan c requestor email new ticket created on microsoft forms submission"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "50207",
+        "project": "SS",
+        "summary": [
+            "code review of tek sso mobile checkout script change"
+        ],
+        "description": [
+            "tek sso developed scripts to change the mobile checkout process",
+            "they want a code review to ensure that nothing will obviously break the they have successfully tested these scripts with adequate results for their need"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "50082",
+        "project": "SS",
+        "summary": [
+            "chamber tests support request"
+        ],
+        "description": [
+            "request description i need help installing this on a new pc radmin enabled id windows bit",
+            "requested priority medium requested need date special background info alan c requestor email new ticket created on microsoft forms submission"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "48681",
+        "project": "SS",
+        "summary": [
+            "investigate additional adcs work"
+        ],
+        "description": [
+            "michael the adcs tools upgrade project is not yet completely put to bed",
+            "afmetcal is requesting an additional fix",
+            "theres a situation where it appears that two functions are using the same path when they should be independent",
+            "i need a block of time hours for kenny to review the code to establish a scope of work for making the fix",
+            "functions adcs tools leak test button press compass for pressure pretest tab leak test check box problem description compass for pressure pretest tab leak test check box brings the piston into float",
+            "the piston should only float when the adcs tools leak test button is pressed"
+        ],
+        "timespent": "20160",
+        "alpha": 100
+    }
+]

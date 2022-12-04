@@ -1,0 +1,1823 @@
+[
+    {
+        "id": "18706",
+        "project": "OPENMV",
+        "summary": [
+            "ajustes metodo form.clear"
+        ],
+        "description": [
+            "form.clear no est limpando o radio group"
+        ],
+        "timespent": "7200",
+        "alpha": 97
+    },
+    {
+        "id": "17736",
+        "project": "OPENMV",
+        "summary": [
+            "suporte a description do select para objetos complexos"
+        ],
+        "description": [
+            "suporte a select.setdescriptionfield obj.subdescricao usando internamente map"
+        ],
+        "timespent": "126000",
+        "alpha": 97
+    },
+    {
+        "id": "15767",
+        "project": "OPENMV",
+        "summary": [
+            "ao utilizar o radiogroup.setvalue o valor no refletido nos radiobuttons do mesmo verso"
+        ],
+        "description": [
+            "this.rdoativo new radiobutton ativo this.rdoinativo new radiobutton inativo o valor padro"
+        ],
+        "timespent": "14400",
+        "alpha": 97
+    },
+    {
+        "id": "30915",
+        "project": "OPENMV",
+        "summary": [
+            "plataforma faturamento mvcomponents form.clear"
+        ],
+        "description": [
+            "metodo form.clear no est limpando o valor do campo"
+        ],
+        "timespent": "7200",
+        "alpha": 98
+    },
+    {
+        "id": "19182",
+        "project": "OPENMV",
+        "summary": [
+            "novo metodo progressbar.disableanimation"
+        ],
+        "description": [
+            "novo metodo do progressbar progressbar.disableanimation(true ir para o progresso sem animao"
+        ],
+        "timespent": "7200",
+        "alpha": 98
+    },
+    {
+        "id": "19181",
+        "project": "OPENMV",
+        "summary": [
+            "metodo progressbar.setheight"
+        ],
+        "description": [
+            "novo metodo do progressbar progressbar.setheight tamanho da barra"
+        ],
+        "timespent": "7200",
+        "alpha": 98
+    },
+    {
+        "id": "16910",
+        "project": "OPENMV",
+        "summary": [
+            "mtodo dropmenu.settitle"
+        ],
+        "description": [
+            "criar mtodo dropmenu.settitle para poder modificar o titulo posteriormente"
+        ],
+        "timespent": "10800",
+        "alpha": 98
+    },
+    {
+        "id": "16908",
+        "project": "OPENMV",
+        "summary": [
+            "mtodo textarea.setheight"
+        ],
+        "description": [
+            "mtodo textarea.setheight para abstrair a chamada do jquery"
+        ],
+        "timespent": "14400",
+        "alpha": 98
+    },
+    {
+        "id": "16819",
+        "project": "OPENMV",
+        "summary": [
+            "colocar parmetro como opcional no removeevent"
+        ],
+        "description": [
+            "icustomcomponent.removeevent esta com o segundo parmetro como obrigatrio"
+        ],
+        "timespent": "7200",
+        "alpha": 98
+    },
+    {
+        "id": "15892",
+        "project": "OPENMV",
+        "summary": [
+            "criar metodos open close e configure"
+        ],
+        "description": [
+            "criar mtodos dialog.open dialog.close e instancia o mtodo dialog.show deve inserir o elemento no dom o mtodo dialog.hide deve esconder o elemento do dom e pode ser acompanhado e cancelado pelo mtodo o mtodo dialog.configure recebe como parametro a instancia que se deseja configurar"
+        ],
+        "timespent": "1800",
+        "alpha": 98
+    },
+    {
+        "id": "39339",
+        "project": "OPENMV",
+        "summary": [
+            "metodo para adicionar parametros para o tilelist"
+        ],
+        "description": [
+            "atualmente no possvel passar parametros para o tilelist proposta listview.addparams title test"
+        ],
+        "timespent": "28800",
+        "alpha": 99
+    },
+    {
+        "id": "31741",
+        "project": "OPENMV",
+        "summary": [
+            "criar componente checkable(igual do datagrid no treegrid"
+        ],
+        "description": [
+            "criar componente checkable(igual do datagrid no treegrid para que possam ser selecionados vrios itens de uma s vez"
+        ],
+        "timespent": "104400",
+        "alpha": 99
+    },
+    {
+        "id": "19981",
+        "project": "OPENMV",
+        "summary": [
+            "setheight do datagrid realizando o scroll"
+        ],
+        "description": [
+            "ajuste no setheight do datagrid realizando o scroll sem a necessidade de setinfinitescroll(true"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "19609",
+        "project": "OPENMV",
+        "summary": [
+            "novo metodo datagrid.clearselection"
+        ],
+        "description": [
+            "novo metodo datagrid.clearselection para remover o efeito de seleo das linhas da grid"
+        ],
+        "timespent": "10800",
+        "alpha": 99
+    },
+    {
+        "id": "19608",
+        "project": "OPENMV",
+        "summary": [
+            "novo metodo treegrid.clearselection"
+        ],
+        "description": [
+            "novo metodo treegrid.clearselection para remover o efeito de seleo das linhas da grid"
+        ],
+        "timespent": "10800",
+        "alpha": 99
+    },
+    {
+        "id": "16911",
+        "project": "OPENMV",
+        "summary": [
+            "mtodo dropbutton.settitle"
+        ],
+        "description": [
+            "criar mtodo dropbutton.settitle para poder modificar o titulo posteriormente"
+        ],
+        "timespent": "10800",
+        "alpha": 99
+    },
+    {
+        "id": "16008",
+        "project": "OPENMV",
+        "summary": [
+            "onclick do radiobutton est sendo disparado duas vezes"
+        ],
+        "description": [
+            "ao se clicar no label de um radiobutton o evento de clique est sendo disparado duas vezes se apenas o componente radio for clicado apenas um evento de clique disparado",
+            "this.onchecarobrigatorios verificado que este um comportamento do prprio html dom"
+        ],
+        "timespent": "28800",
+        "alpha": 99
+    },
+    {
+        "id": "15895",
+        "project": "OPENMV",
+        "summary": [
+            "suporte ao container fieldset"
+        ],
+        "description": [
+            "criar o componente fieldset com suporte a legend",
+            "o form precisa ter acesso aos dados que esto dentro do fieldset ao executar o mtodo form.getdata"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "15891",
+        "project": "OPENMV",
+        "summary": [
+            "corrigir paginateddatagrid para receber evento onchange generico do store"
+        ],
+        "description": [
+            "corrigir inscrio no evento onchange item da store do componente para buscar os dados de store.get e no da assinatura do"
+        ],
+        "timespent": "21600",
+        "alpha": 99
+    },
+    {
+        "id": "156621",
+        "project": "OPENMV",
+        "summary": [
+            "componente"
+        ],
+        "description": [
+            "criao do novo componente"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "156620",
+        "project": "OPENMV",
+        "summary": [
+            "correo do ndice do listview"
+        ],
+        "description": [
+            "correo do ndice do listview"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "54447",
+        "project": "OPENMV",
+        "summary": [
+            "removendo typings do"
+        ],
+        "description": [
+            "removendo typings do para simplificar o processo de atualizao"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "54433",
+        "project": "OPENMV",
+        "summary": [
+            "adio de tslint no"
+        ],
+        "description": [
+            "adicionado tslint ao projeto para melhorar a qualidade e uniformidade do cdigo do projeto"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "54432",
+        "project": "OPENMV",
+        "summary": [
+            "validao do projeto com tslint"
+        ],
+        "description": [
+            "adicionado tslint ao projeto jscomponent com o finto de melhorar a qualidade e uniformidade do cdigo do projeto"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "54431",
+        "project": "OPENMV",
+        "summary": [
+            "suporte a projeto anlise tiss"
+        ],
+        "description": [
+            "dar suporte ao projeto de anlise tiss"
+        ],
+        "timespent": "115200",
+        "alpha": 100
+    },
+    {
+        "id": "54123",
+        "project": "OPENMV",
+        "summary": [
+            "erro com linhas do fullcalendar"
+        ],
+        "description": [
+            "ao exibir o fullcalendar o thema do bootstrap da mv est entrando em conflito com o fullcalendar"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "45223",
+        "project": "OPENMV",
+        "summary": [
+            "ultimo valor no eventemitter"
+        ],
+        "description": [
+            "recuperando ltimo valor emitido quando para um novo inscrito"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "42533",
+        "project": "OPENMV",
+        "summary": [
+            "mtodo ischecked para o checkbox"
+        ],
+        "description": [
+            "adicionar o mtodo ischecked para o checkbox"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "42532",
+        "project": "OPENMV",
+        "summary": [
+            "mtodo ischecked para o radiobutton"
+        ],
+        "description": [
+            "adicionar o mtodo ischecked para o radiobutton"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "39343",
+        "project": "OPENMV",
+        "summary": [
+            "possibilidade configurar o header do accordion"
+        ],
+        "description": [
+            "atualmente no possvel configurar o header do accordion proposta accordion class"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "39341",
+        "project": "OPENMV",
+        "summary": [
+            "configurao para destruio automatica do dialog ao fechar"
+        ],
+        "description": [
+            "configurao para destruio automatica do dialog ao fechar proposta new string"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "39336",
+        "project": "OPENMV",
+        "summary": [
+            "treinamento"
+        ],
+        "description": [
+            "treinamento para markus fuzari fortaleza e gravao de videos do treinamento"
+        ],
+        "timespent": "158400",
+        "alpha": 100
+    },
+    {
+        "id": "36651",
+        "project": "OPENMV",
+        "summary": [
+            "ajustar height da treegrid e barra de rolagem"
+        ],
+        "description": [
+            "ajustar height da treegrid e barra de rolagem"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "36182",
+        "project": "OPENMV",
+        "summary": [
+            "duplo click retornar o item clicado"
+        ],
+        "description": [
+            "o duplo click esta retornando um item html porem para retornar o objeto clicado"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "31742",
+        "project": "OPENMV",
+        "summary": [
+            "a validao dos campos no esto funcionando corretamente"
+        ],
+        "description": [
+            "em um cenrio onde um campo ou outro devem ser preenchidos caso um seja preenchido o outro no obrigatrio no est perdendo a validao e esse continua sendo validado interferindo diretamente no que j foi desenvolvido"
+        ],
+        "timespent": "79200",
+        "alpha": 100
+    },
+    {
+        "id": "31007",
+        "project": "OPENMV",
+        "summary": [
+            "destroy no est funcionando como deveria"
+        ],
+        "description": [
+            "destroy no est funcionando como deveria"
+        ],
+        "timespent": "25200",
+        "alpha": 100
+    },
+    {
+        "id": "31006",
+        "project": "OPENMV",
+        "summary": [
+            "evento onclick do grid no est funcionado"
+        ],
+        "description": [
+            "evento onclick do grid no est funcionado"
+        ],
+        "timespent": "25200",
+        "alpha": 100
+    },
+    {
+        "id": "31005",
+        "project": "OPENMV",
+        "summary": [
+            "setdata no est funcionando no primeiro clique tendo q clicar duas vezes para carregar todos os dados no formulrio"
+        ],
+        "description": [
+            "etdata no est funcionando no primeiro clique tendo q clicar duas vezes para carregar todos os dados no formulrio"
+        ],
+        "timespent": "25200",
+        "alpha": 100
+    },
+    {
+        "id": "31004",
+        "project": "OPENMV",
+        "summary": [
+            "evento de onstop do workspace est com probelma"
+        ],
+        "description": [
+            "evento de onstop do workspace est com probelma"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "31002",
+        "project": "OPENMV",
+        "summary": [
+            "clear do form no est funcionado"
+        ],
+        "description": [
+            "clear do form no est funcionado"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "30874",
+        "project": "OPENMV",
+        "summary": [
+            "plataforma faturamento mvcomponents grfico"
+        ],
+        "description": [
+            "disponibilizar componente de criao de grfico barras e pizza"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "30873",
+        "project": "OPENMV",
+        "summary": [
+            "plataforma faturamento mvcomponents validations"
+        ],
+        "description": [
+            "suporte precisamos de apoio na validao de campos usando o validations"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "30872",
+        "project": "OPENMV",
+        "summary": [
+            "plataforma faturamento mvcomponents tilelist"
+        ],
+        "description": [
+            "componente tilelist ao adicionar icones com funo de clique est sempre sendo acessado o mtodo de onselect aps clicar no icone que chama outro mtodo"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "30871",
+        "project": "OPENMV",
+        "summary": [
+            "plataforma faturamento mvcomponents datepickerinput"
+        ],
+        "description": [
+            "componente datepickerinput no est deixando setar s competncia mesmo colocando a mscara"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "30870",
+        "project": "OPENMV",
+        "summary": [
+            "plataforma faturamento mvcomponents select"
+        ],
+        "description": [
+            "componente select no est funcionando o foco ficando sempre aberto quando acessado"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "30783",
+        "project": "OPENMV",
+        "summary": [
+            "ajustar treegrid para receber componentes igual a datagrid"
+        ],
+        "description": [
+            "conforme conversado com o alexandre essa tarefa para liberar uma verso da treegrid onde ser possvel adicionar componetes como por exemplo checkbox"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "30301",
+        "project": "OPENMV",
+        "summary": [
+            "alterar required para false no entendido pela"
+        ],
+        "description": [
+            "alterar required para false no entendido pela"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "30299",
+        "project": "OPENMV",
+        "summary": [
+            "getvalue de um textinput com mascara retorna da mascara"
+        ],
+        "description": [
+            "mtodo getvalue de um textinput com mscara retorna da mascara",
+            "ex duvidas procurar marcelo mouro"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "30297",
+        "project": "OPENMV",
+        "summary": [
+            "problemas com select autocomplete"
+        ],
+        "description": [
+            "ao selecionar um item de um select com enter no disparado o evento onselect",
+            "o evento ocorre apenas ao clicar",
+            "ao sair de um select em um evento change limpando o contedo nem sempre o getvalue retorna duvidas procurar marcelo mouro"
+        ],
+        "timespent": "25200",
+        "alpha": 100
+    },
+    {
+        "id": "30294",
+        "project": "OPENMV",
+        "summary": [
+            "problemas com paginateddatagrid"
+        ],
+        "description": [
+            "paginao ao realizar paginao os itens so concatenados com os da pgina anterior",
+            "ordenao ao realizar ordenao os itens so concatenados com os j existentes",
+            "setdata anteriormente o mtodo setdata limpava os dados da grid e adicionava o array passado",
+            "obs qualquer dvida procurar marcelo mouro"
+        ],
+        "timespent": "104400",
+        "alpha": 100
+    },
+    {
+        "id": "30293",
+        "project": "OPENMV",
+        "summary": [
+            "atualizao da documentao"
+        ],
+        "description": [
+            "necessrio atualizao da documentao do mvcomponent pois atual est na verso e no projeto aponta para verso obs isso foi solicitado por em"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "30292",
+        "project": "OPENMV",
+        "summary": [
+            "problema encontrados na ltima verso do framework"
+        ],
+        "description": [
+            "lista dos problemas encontrado na ltima verso do framework"
+        ],
+        "timespent": "192600",
+        "alpha": 100
+    },
+    {
+        "id": "30084",
+        "project": "OPENMV",
+        "summary": [
+            "suporte fortaleza"
+        ],
+        "description": [
+            "orientao respeito da utilizao do"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "29519",
+        "project": "OPENMV",
+        "summary": [
+            "a treegrid no est agrupando"
+        ],
+        "description": [
+            "estou tentando exibir na tela uma treegrid que tem o agrupamento pro um atributo de um objeto do item da listagem e j tentei das formas abaixo tentei conferir na documentao porm no tem nada muito explicativo ou que faa eu saber como funciona o componente segue a imagem da tela que estou desenvolvendo e o agrupamento pasted image at"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "28520",
+        "project": "OPENMV",
+        "summary": [
+            "ajustar o atributo width do tbody da grid"
+        ],
+        "description": [
+            "quando o atributo width do thead est com a porcentagem o width no td do tbody da grid no coloca o atributo width com a mesma porcentagem com isso o campo no segue aquele tamanho especificado na implementao"
+        ],
+        "timespent": "25200",
+        "alpha": 100
+    },
+    {
+        "id": "28163",
+        "project": "OPENMV",
+        "summary": [
+            "checkbox na grid"
+        ],
+        "description": [
+            "necessrio seja possvel selecionar todos os itens listado com base no checkbox do header",
+            "veja segundo print",
+            "e tambm importante mostrar um checkbox com base em uma instruo booleana",
+            "veja primeiro print",
+            "segue prints de exemplo do que usamos no flex"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "27798",
+        "project": "OPENMV",
+        "summary": [
+            "implementar multiselect para o autocomplete"
+        ],
+        "description": [
+            "o componente deve funcionar como multi seleo"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "27797",
+        "project": "OPENMV",
+        "summary": [
+            "implementar no autocomplete a consulta interna via"
+        ],
+        "description": [
+            "permitir configurao de simbolo para que o componente consiga fazer pesquisa no dataprovider",
+            "exemplo pesquisar por obs solicitar ajuda ux para opinar em possveis solues"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "27144",
+        "project": "OPENMV",
+        "summary": [
+            "apoio atualizao produtos fortaleza"
+        ],
+        "description": [
+            "esse ticket descreve o apoio para a ataulizao dos produtos de fortalezas relatiovos ao e ao"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "24592",
+        "project": "OPENMV",
+        "summary": [
+            "atualizar processo de build"
+        ],
+        "description": [
+            "atualizar typescript para a verso gerar bundles"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "24413",
+        "project": "OPENMV",
+        "summary": [
+            "botes alinhados no footer"
+        ],
+        "description": [
+            "necessrio orientao ou componente para alinhar botes no footer das telas de listagem ou edio",
+            "conforme demonstrado nos prottipos do time de ux",
+            "segue link da documentao do metodo setbottom que permitirar a grid emporrar os botes",
+            "obs",
+            "caso os botes no estejam abaixo de uma grid necessrio o uso de css como no exemplo abaixo favor adaptar o cdigo a necessidade do projeto e da tela elemente.addstylename"
+        ],
+        "timespent": "23160",
+        "alpha": 100
+    },
+    {
+        "id": "24411",
+        "project": "OPENMV",
+        "summary": [
+            "telas do flex recarregando ao clicar no menu"
+        ],
+        "description": [
+            "necessrio validar e testar que as telas do flex no recarregam ao serem clicadas dentro do workspace",
+            "ajustes realizados no workspace do fortaleza",
+            "em alguns browsers quando o mdulo flex mostrado novamente aps ser escondido usando o browser realiza um reload do modulo swf",
+            "como relatado no link abaixo obs",
+            "como cada produto tem sua estratgia de reteno de modulo e exibio do mesmo alguns no guardam estado dos mdulos e outros guardam estado como o e outros mantem os mdulos carregados em abas necessrio realizar as adequaos no workspace do produto"
+        ],
+        "timespent": "84240",
+        "alpha": 100
+    },
+    {
+        "id": "24409",
+        "project": "OPENMV",
+        "summary": [
+            "telas flex no abre em"
+        ],
+        "description": [
+            "as telas do flex quando abertas dentro do workspace novo no esto ficando do espao do workspace",
+            "ajustes foram realizados no produto e repassadas as orientaes por email",
+            "segue trecho do email relativo aos ajustes feitos margens da tela de login ficaram com uma borda branca no workspace do s.criar a regra de estilo com o seguinte cdigo e vincular a regra nos container que esto com a margin quebrando o layout no"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "24405",
+        "project": "OPENMV",
+        "summary": [
+            "componente autocomplete"
+        ],
+        "description": [
+            "necessrio a liberao do componente autocomplete",
+            "solicitado em de janeiro",
+            "documentao"
+        ],
+        "timespent": "143580",
+        "alpha": 100
+    },
+    {
+        "id": "24400",
+        "project": "OPENMV",
+        "summary": [
+            "orientaes relacionadas ao tile list"
+        ],
+        "description": [
+            "necessrio orientao de uso relacionadas ao tile list para o colaborador ryan",
+            "foi solicitado em de janeiro atualizado documentao do component com exemplo de uso"
+        ],
+        "timespent": "19260",
+        "alpha": 100
+    },
+    {
+        "id": "24399",
+        "project": "OPENMV",
+        "summary": [
+            "adaptaes dos componentes dentro de um datagrid"
+        ],
+        "description": [
+            "adaptaes dos componentes dentro de um datagrid para o fuzari",
+            "est previsto para o dia de fevereiro prxima foi realizado ajustes internos no metodo refresh da grid para que ela no destrua a instancia dos componentes",
+            "documentao do metodo refresh"
+        ],
+        "timespent": "70668",
+        "alpha": 100
+    },
+    {
+        "id": "24397",
+        "project": "OPENMV",
+        "summary": [
+            "grid alinhada em de altura"
+        ],
+        "description": [
+            "grid alinhada em de altura",
+            "est previsto para o dia de fevereiro prxima documentao"
+        ],
+        "timespent": "26220",
+        "alpha": 100
+    },
+    {
+        "id": "24394",
+        "project": "OPENMV",
+        "summary": [
+            "css dos rdios checkebox"
+        ],
+        "description": [
+            "css dos rdios checkebox",
+            "estava previsto para o dia de fevereiro passada"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "24392",
+        "project": "OPENMV",
+        "summary": [
+            "required dos componentes dos formulrios"
+        ],
+        "description": [
+            "required dos componentes dos formulrios",
+            "estava previsto para o dia de fevereiro passada",
+            "liberado e documentado segue link da documentao com radiogroup"
+        ],
+        "timespent": "26568",
+        "alpha": 100
+    },
+    {
+        "id": "24358",
+        "project": "OPENMV",
+        "summary": [
+            "adequao do menu conforme prottipo do time de ux"
+        ],
+        "description": [
+            "necessrio adequao do menu conforme prottipo do time de ux",
+            "do texto do menu",
+            "ok dos icones",
+            "ok padro dos icones",
+            "ok slide",
+            "ok ajustes disponveis apartir da verso do"
+        ],
+        "timespent": "70980",
+        "alpha": 100
+    },
+    {
+        "id": "23005",
+        "project": "OPENMV",
+        "summary": [
+            "efeito de transio no accordion"
+        ],
+        "description": [
+            "efeito de aumentar ou dimininuir o accordion"
+        ],
+        "timespent": "41460",
+        "alpha": 100
+    },
+    {
+        "id": "23004",
+        "project": "OPENMV",
+        "summary": [
+            "efeito de transio no viewstack"
+        ],
+        "description": [
+            "adicionar efeito de transio no viewstack"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "22644",
+        "project": "OPENMV",
+        "summary": [
+            "atualizar css de acordo com guia de estilos"
+        ],
+        "description": [
+            "atualizar css de acordo com guia de estilos definido em"
+        ],
+        "timespent": "97200",
+        "alpha": 100
+    },
+    {
+        "id": "22603",
+        "project": "OPENMV",
+        "summary": [
+            "atualizar documentao"
+        ],
+        "description": [
+            "atualizar documentao da verso"
+        ],
+        "timespent": "64800",
+        "alpha": 100
+    },
+    {
+        "id": "22567",
+        "project": "OPENMV",
+        "summary": [
+            "metodo addvalidation para atalho do validation"
+        ],
+        "description": [
+            "criar mtodo addvalidation como atalho do validation"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "22561",
+        "project": "OPENMV",
+        "summary": [
+            "treinamento fortaleza"
+        ],
+        "description": [
+            "treinamento incluiu uso correto de css para no sobrepor as configuraes dos estilos dos componentes do uso de service store custom validation remote validation"
+        ],
+        "timespent": "93600",
+        "alpha": 100
+    },
+    {
+        "id": "22559",
+        "project": "OPENMV",
+        "summary": [
+            "revisar scroll do datagrid"
+        ],
+        "description": [
+            "revisar scroll do datagrid"
+        ],
+        "timespent": "50400",
+        "alpha": 100
+    },
+    {
+        "id": "22558",
+        "project": "OPENMV",
+        "summary": [
+            "revisar datagrid paginated"
+        ],
+        "description": [
+            "reorganizar datagrid paginated relativo os campos de paginao cor de fundo do datagrid como branco e no como transparente itens de paginao abaixo da grid e pesquisa no inicio da data grid"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "22557",
+        "project": "OPENMV",
+        "summary": [
+            "marcao no label do campo para requerido"
+        ],
+        "description": [
+            "colocar marcao visual no label do campo para marcado como requerido"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "22551",
+        "project": "OPENMV",
+        "summary": [
+            "treinamento websocket"
+        ],
+        "description": [
+            "treinamento para a equipe de fortaleza sobre o uso de websocket"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "22548",
+        "project": "OPENMV",
+        "summary": [
+            "possibilidade de customizar os itens do select"
+        ],
+        "description": [
+            "possibilidade de customizar visualmente os itens do select"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "22546",
+        "project": "OPENMV",
+        "summary": [
+            "evento de duplo click na grid"
+        ],
+        "description": [
+            "liberar evento de duplo click na grid com observao para possiveis restries no mobile"
+        ],
+        "timespent": "36000",
+        "alpha": 100
+    },
+    {
+        "id": "21296",
+        "project": "OPENMV",
+        "summary": [
+            "apresentao do"
+        ],
+        "description": [
+            "apresentao do para a fabrica"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "21295",
+        "project": "OPENMV",
+        "summary": [
+            "adicionar multiplos resources"
+        ],
+        "description": [
+            "possibilitar a adio de multiplos arquivos de internacionalizao ao"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "20696",
+        "project": "OPENMV",
+        "summary": [
+            "apoio a criao de pacotes para fortaleza e publicao"
+        ],
+        "description": [
+            "suporte a equipe de fortaleza para a criao de pacotes e publicao dos mesmos"
+        ],
+        "timespent": "79200",
+        "alpha": 100
+    },
+    {
+        "id": "19991",
+        "project": "OPENMV",
+        "summary": [
+            "metodo select.onnoresultsfound"
+        ],
+        "description": [
+            "metodo onnoresultsfound para o select"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "19990",
+        "project": "OPENMV",
+        "summary": [
+            "custumizar o header do datagrid"
+        ],
+        "description": [
+            "capacidade de custumizar o header do datagrid"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "19988",
+        "project": "OPENMV",
+        "summary": [
+            "metodo"
+        ],
+        "description": [
+            "novo metodo"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "19986",
+        "project": "OPENMV",
+        "summary": [
+            "ajuste na exibio do select"
+        ],
+        "description": [
+            "ajuste na exibio do select quando o texto for maior que o campo"
+        ],
+        "timespent": "25200",
+        "alpha": 100
+    },
+    {
+        "id": "19985",
+        "project": "OPENMV",
+        "summary": [
+            "ordenao automatica para o datagrid"
+        ],
+        "description": [
+            "ordenao automatica para o datagrid"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "19984",
+        "project": "OPENMV",
+        "summary": [
+            "especificao da largura das colunas no datagrid"
+        ],
+        "description": [
+            "novo recurso para especificao da largura das colunas de forma flexivel"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "19982",
+        "project": "OPENMV",
+        "summary": [
+            "metodo setheight do treegrid"
+        ],
+        "description": [
+            "novo metodo setheight do treegrid permitindo scroll para o mesmo"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "19979",
+        "project": "OPENMV",
+        "summary": [
+            "agrupamento com mais de uma coluna"
+        ],
+        "description": [
+            "suporte a agrupamento usando mais de uma coluna"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "19560",
+        "project": "OPENMV",
+        "summary": [
+            "metodo hasstylename"
+        ],
+        "description": [
+            "metodo para verificar se um elemento possui uma determinada classe css"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "19559",
+        "project": "OPENMV",
+        "summary": [
+            "treegrid.groupby"
+        ],
+        "description": [
+            "criar nova funcionalidade groupby no treegrid permitindo o agrupamento por alguma coluna do data"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "19186",
+        "project": "OPENMV",
+        "summary": [
+            "novo metodo progressbar.onprogress"
+        ],
+        "description": [
+            "novo metodo do progressbar ser avisado da mudana na barra de progresso"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "19184",
+        "project": "OPENMV",
+        "summary": [
+            "novo metodo progressbar.setduration"
+        ],
+        "description": [
+            "novo metodo do progressbar tempo de durao do progresso"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "19183",
+        "project": "OPENMV",
+        "summary": [
+            "novo metodo progressbar.setstyle"
+        ],
+        "description": [
+            "novo metodo do progressbar deixa a cor ou textura do progress solida ou animada"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "19126",
+        "project": "OPENMV",
+        "summary": [
+            "guardar dados no visiveis dos formularios"
+        ],
+        "description": [
+            "guardar todos os dados que so usados no set data do formulrio para posterior utilizao num getdata"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "19111",
+        "project": "OPENMV",
+        "summary": [
+            "setsize para o datagrid"
+        ],
+        "description": [
+            "metodo setsize para o datagrid"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "18707",
+        "project": "OPENMV",
+        "summary": [
+            "marcar borda do select como invalido"
+        ],
+        "description": [
+            "marcar a borda do select como invalida assim com acontece com o label"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "18281",
+        "project": "OPENMV",
+        "summary": [
+            "component accordion"
+        ],
+        "description": [
+            "criar container accordion"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "15830",
+        "project": "OPENMV",
+        "summary": [
+            "adicionar generic ao form"
+        ],
+        "description": [
+            "remover generic dos mtodos getdata e setdata adicionar generic classe form"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "15558",
+        "project": "OPENMV",
+        "summary": [
+            "corrigir bugs de inputs"
+        ],
+        "description": [
+            "select remover autofocus do primeiro elemento no est desfocando no internet explorer colorpicker no est exibido o picker"
+        ],
+        "timespent": "70320",
+        "alpha": 100
+    },
+    {
+        "id": "15557",
+        "project": "OPENMV",
+        "summary": [
+            "reescrever input addons"
+        ],
+        "description": [
+            "permitir que o desenvolvedor adicione mltiplos addons aos inputs"
+        ],
+        "timespent": "64800",
+        "alpha": 100
+    },
+    {
+        "id": "15283",
+        "project": "OPENMV",
+        "summary": [
+            "refatorar os campos de input"
+        ],
+        "description": [
+            "remover propriedades no mais utilizadas"
+        ],
+        "timespent": "34200",
+        "alpha": 100
+    },
+    {
+        "id": "15258",
+        "project": "OPENMV",
+        "summary": [
+            "adicionar validao aos inputs"
+        ],
+        "description": [
+            "necessrio criar mecanismo de validao para os campos de entrada"
+        ],
+        "timespent": "39600",
+        "alpha": 100
+    },
+    {
+        "id": "15250",
+        "project": "OPENMV",
+        "summary": [
+            "refatorar o componente tabpanel"
+        ],
+        "description": [
+            "tornar o os mtodos de tabpanel mais parecido com os demais containers",
+            "adicionar eventos ao trocar de aba adicionar a possibilidade de uma ser fechada"
+        ],
+        "timespent": "32400",
+        "alpha": 100
+    },
+    {
+        "id": "15203",
+        "project": "OPENMV",
+        "summary": [
+            "refatorar o servio http"
+        ],
+        "description": [
+            "necessrio adicionar ao httpservice algumas opes de configuraes default",
+            "como por exemplo headers e propriedades"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "15127",
+        "project": "OPENMV",
+        "summary": [
+            "conhecer o projeto do"
+        ],
+        "description": [
+            "tentar entender a atual situao do projeto quais seus objetivos qual seu estado atual documentar cdigos"
+        ],
+        "timespent": "129600",
+        "alpha": 100
+    },
+    {
+        "id": "15128",
+        "project": "OPENMV",
+        "summary": [
+            "desenvolver componentes iconbutton e badge"
+        ],
+        "description": [
+            "desenvolver o componentes iconbutton ser exibido apenas um cone ou letra em um boto redondo",
+            "badge uma espcie de tag clicvel"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "15123",
+        "project": "OPENMV",
+        "summary": [
+            "desenvolver componente toast"
+        ],
+        "description": [
+            "desenvolver o componente toast responsvel por dar feedback ao usurio de uma maneira simples e discreta a respeito de aes realizadas no sistema"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "15124",
+        "project": "OPENMV",
+        "summary": [
+            "refatorar o componente select"
+        ],
+        "description": [
+            "aps constatado o baixo suporte a eventos do select utilizando com base em um plugin conhecido o disponvel em"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "17277",
+        "project": "OPENMV",
+        "summary": [
+            "novo component viewstack"
+        ],
+        "description": [
+            "novo componente viewstack"
+        ],
+        "timespent": "50400",
+        "alpha": 100
+    },
+    {
+        "id": "17234",
+        "project": "OPENMV",
+        "summary": [
+            "possibilitar adio de cones no header do panel"
+        ],
+        "description": [
+            "possibilitar a incluso de cones no header no panel"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "16994",
+        "project": "OPENMV",
+        "summary": [
+            "ajustes das cores do toast"
+        ],
+        "description": [
+            "ajustes nas cores do toast de acordo com mvdocs"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "16817",
+        "project": "OPENMV",
+        "summary": [
+            "criar gerador de projetos"
+        ],
+        "description": [
+            "utilizar um generator de mercado para facilitar a inicializao dos projetos",
+            "nome propsito do projeto facilitar a e publicao de projetos atravez de uma ferramenta visual",
+            "escopo do gerador manuteno de projetos manuteno de modulos publish do projeto estrutura de metadados para modulos name author creation description columns description:string required:boolean render input checkbox o render seja select"
+        ],
+        "timespent": "108000",
+        "alpha": 100
+    },
+    {
+        "id": "16528",
+        "project": "OPENMV",
+        "summary": [
+            "definir estrutura pra projetos com mltiplos mdulos"
+        ],
+        "description": [
+            "atualmente um projeto utilizando typescript publica um nico mdulo",
+            "encontrar uma maneira de um projeto poder publicar vrios mdulos"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "16405",
+        "project": "OPENMV",
+        "summary": [
+            "criar repositrio para o"
+        ],
+        "description": [
+            "criar repositrio para o"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "16058",
+        "project": "OPENMV",
+        "summary": [
+            "novo component icon"
+        ],
+        "description": [
+            "novo componente icon componente com efeito visual simples"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "16051",
+        "project": "OPENMV",
+        "summary": [
+            "retirar componente label do select"
+        ],
+        "description": [
+            "nao deixar visivel"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "16050",
+        "project": "OPENMV",
+        "summary": [
+            "retirar addon do password"
+        ],
+        "description": [
+            "retirar addon do password permitindo o usurio escolher em qual posio que colocar o addo"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "16049",
+        "project": "OPENMV",
+        "summary": [
+            "setoffset bugado"
+        ],
+        "description": [
+            "setoffset bugado quando chamado antes do setsize"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "16052",
+        "project": "OPENMV",
+        "summary": [
+            "permitir adon no select"
+        ],
+        "description": [
+            "permitir adon no selct"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "16043",
+        "project": "OPENMV",
+        "summary": [
+            "criao de component dropdown"
+        ],
+        "description": [
+            "criao de component dropdown let menu new dropmenu opcoes linkbutton button iconbutton"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "16018",
+        "project": "OPENMV",
+        "summary": [
+            "orientar e acompanhar o prottipo funcional do workspace do pep html junto com alexandre e lo"
+        ],
+        "description": [
+            "orientar e acompanhar o prottipo funcional do workspace do pep html junto com alexandre e lo"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "15915",
+        "project": "OPENMV",
+        "summary": [
+            "adicionar configurao de e no verticalsplitter"
+        ],
+        "description": [
+            "adicionar configurao de e no verticalsplitter com feedback visual escondendo a seta do splitter quando o container alcanar os limites"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "15770",
+        "project": "OPENMV",
+        "summary": [
+            "alinhamento de botes no form"
+        ],
+        "description": [
+            "quando se adiciona um boto ao form ele no fica alinhado com os campos vizinhos",
+            "para conseguir isto o desenvolvedor altera o estilo do campo para adequar as margens",
+            "seria interessante ter este alinhamento por padro"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "164259",
+        "project": "OPENMV",
+        "summary": [
+            "metodo update de n especifico no treeview"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "164258",
+        "project": "OPENMV",
+        "summary": [
+            "componente number-pagination"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "54452",
+        "project": "OPENMV",
+        "summary": [
+            "adicionando polyfill do fetch api no"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "54450",
+        "project": "OPENMV",
+        "summary": [
+            "recuperando ultimo valor passado ao"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "54448",
+        "project": "OPENMV",
+        "summary": [
+            "removendo arquivos desnecessrios no assets do dist"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "15829",
+        "project": "OPENMV",
+        "summary": [
+            "permitir que a rea de footer seja utilizada no dialog"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "15360",
+        "project": "OPENMV",
+        "summary": [
+            "documentao dos componentes"
+        ],
+        "timespent": "176400"
+    },
+    {
+        "id": "15293",
+        "project": "OPENMV",
+        "summary": [
+            "remover referncias diretas ao jquery"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "15257",
+        "project": "OPENMV",
+        "summary": [
+            "estudar o"
+        ],
+        "timespent": "50400"
+    },
+    {
+        "id": "15831",
+        "project": "OPENMV",
+        "summary": [
+            "permitir configurao da posio das abas no tabpanel"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "17067",
+        "project": "OPENMV",
+        "summary": [
+            "systemapplication.getdomain no esta trazendo a porta"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "16575",
+        "project": "OPENMV",
+        "summary": [
+            "definir tarefa para publicar webjar"
+        ],
+        "timespent": "36000"
+    },
+    {
+        "id": "16009",
+        "project": "OPENMV",
+        "summary": [
+            "componentes radiogroup/radiobutton no do suporte ao evento change"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "15894",
+        "project": "OPENMV",
+        "summary": [
+            "mtodo setvalue do checkbox no est agindo como esperado"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "15888",
+        "project": "OPENMV",
+        "summary": [
+            "radiogroup/radiobutton no est com feedback visual ao ficar invlido"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "15863",
+        "project": "OPENMV",
+        "summary": [
+            "adicionar mtodos append e prepend interface do container"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "15716",
+        "project": "OPENMV",
+        "summary": [
+            "possibilidade de configurar o resource do"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "15722",
+        "project": "OPENMV",
+        "summary": [
+            "refresh do treegrid"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "15745",
+        "project": "OPENMV",
+        "summary": [
+            "erro com select propriedade every no existe no objeto indefinido"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "15766",
+        "project": "OPENMV",
+        "summary": [
+            "fazer evento onnotfound do select funcionar"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "15705",
+        "project": "OPENMV",
+        "summary": [
+            "ajustar layout do numeric stepper"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "15727",
+        "project": "OPENMV",
+        "summary": [
+            "criar metodo form.clear"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "15713",
+        "project": "OPENMV",
+        "summary": [
+            "erro de layout quando um componente vem abaixo de algum checkbox"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "15707",
+        "project": "OPENMV",
+        "summary": [
+            "novo component separator para criar uma linha entre os inputs do form"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "15731",
+        "project": "OPENMV",
+        "summary": [
+            "input campo j vem marcado como invlido ao exibir um formulrio"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "15728",
+        "project": "OPENMV",
+        "summary": [
+            "criar metodo input.setcleanable nos inputs com default true"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "15711",
+        "project": "OPENMV",
+        "summary": [
+            "permitir configurao do dialog para ser ou no modal"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "15823",
+        "project": "OPENMV",
+        "summary": [
+            "atualizar doc mvcomponents"
+        ],
+        "timespent": "108900"
+    },
+    {
+        "id": "15704",
+        "project": "OPENMV",
+        "summary": [
+            "permitir configura o dialog para especificar a posio ex setverticalalign(eposition.top sethorizontalalign"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "15702",
+        "project": "OPENMV",
+        "summary": [
+            "criar container split vertical"
+        ],
+        "timespent": "46800"
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "id": "22101",
+        "project": "CPT",
+        "summary": [
+            "restore performance of copy page tree"
+        ],
+        "description": [
+            "i haven't written up the page yet but since we started updating the users of larger systems report that it is very slow minutes to do a page tree copy sometimes whereas it's only a few seconds with the older version prior to our updates",
+            "i know we added code to keep the page order so i'm wondering if that is the primary change",
+            "we also changed the ui but that should not have caused a performance",
+            "so i guess the task is to look to see if there is something very inefficient happening with code we added for maintaining page order",
+            "it would be more helpful if i had a reproducer but i don't as of yet",
+            "at this time i'll approve hours to look into that",
+            "i don't want it to be open ended especially since we don't have clear success criteria",
+            "i'll see if i can create a reproducer based on the tickets users have opened we can work with"
+        ],
+        "timespent": "10800",
+        "alpha": 99
+    },
+    {
+        "id": "17204",
+        "project": "CPT",
+        "summary": [
+            "add delete page tree option as cloud has"
+        ],
+        "description": [
+            "a few users have requested a delete page tree function like the one on the could version",
+            "if you could implement a page tree deletion that would be great",
+            "a couple of stipulations make sure the user has delete page access for all pages involved and only delete pages they have access to delete make sure the deleted pages are going into the trash where they can be recovered if needed at least temporarily"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    }
+]

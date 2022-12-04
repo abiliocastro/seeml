@@ -1,0 +1,42 @@
+[
+    {
+        "id": "22018",
+        "project": "DM",
+        "summary": [
+            "feature development"
+        ],
+        "timespent": "68400"
+    },
+    {
+        "id": "22006",
+        "project": "DM",
+        "summary": [
+            "discussion of the proposal draft with team prepare execute"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "22003",
+        "project": "DM",
+        "summary": [
+            "initial meeting"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "16102",
+        "project": "DM",
+        "summary": [
+            "demo story in completed sprint"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "15401",
+        "project": "DM",
+        "summary": [
+            "demo task"
+        ],
+        "timespent": "3600"
+    }
+]

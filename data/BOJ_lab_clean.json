@@ -1,0 +1,655 @@
+[
+    {
+        "id": "4778723",
+        "project": "JDK",
+        "summary": [
+            "test task develop global suite test"
+        ],
+        "description": [
+            "it's to track the test development status"
+        ],
+        "timespent": "604800",
+        "alpha": 97
+    },
+    {
+        "id": "4776286",
+        "project": "JDK",
+        "summary": [
+            "test task develop new global suite tests"
+        ],
+        "description": [
+            "develop the new global suite test",
+            "it's mainly to track the test dev status"
+        ],
+        "timespent": "3456000",
+        "alpha": 98
+    },
+    {
+        "id": "4847744",
+        "project": "JDK",
+        "summary": [
+            "develop tests for the rest of cp related methods in compilertovm"
+        ],
+        "description": [
+            "resolveconstantinpool constantpoolremapinstructionoperandfromcache lookupnameinpool lookupnameandtyperefindexinpool lookupsignatureinpool lookupklassrefindexinpool lookupmethodinpool resolvefieldinpool update other tests to use sun.reflect instead of values from javap update sun.reflect to return cptag by index"
+        ],
+        "timespent": "144060",
+        "alpha": 99
+    },
+    {
+        "id": "4795064",
+        "project": "JDK",
+        "summary": [
+            "cvm reports critical assert running mediabox"
+        ],
+        "description": [
+            "running mediabox pressing mouse in various parts of the screen i got two asserts",
+            "critical file c workspace label gstlite jfxme gstreamer gst gsttaglist.c line assertion list failed"
+        ],
+        "timespent": "57600",
+        "alpha": 99
+    },
+    {
+        "id": "4787275",
+        "project": "JDK",
+        "summary": [
+            "http api and implementation"
+        ],
+        "description": [
+            "this is the http part of the api and implementation excluding websockets",
+            "this includes unit tests for using the current internal com.sun http server"
+        ],
+        "timespent": "7203600",
+        "alpha": 99
+    },
+    {
+        "id": "4667630",
+        "project": "JDK",
+        "summary": [
+            "jtreg needs to copy additional whitebox class file to"
+        ],
+        "description": [
+            "the fix for bug should be improved to also copy whitebox$whiteboxpermission.class to directory currently only whitebox.class gets copied",
+            "otherwise the whitebox tests fail when run with jtreg if xfuture is specified"
+        ],
+        "timespent": "86400",
+        "alpha": 99
+    },
+    {
+        "id": "4913927",
+        "project": "DIO",
+        "summary": [
+            "unavailabledeviceexception when zulu jre is used"
+        ],
+        "description": [
+            "simple test is failed with following exception when zulu jre is used instead of oracle jdk caused by jdk.dio.unavailabledeviceexception locked by other application"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "4928785",
+        "project": "JDK",
+        "summary": [
+            "security for jds api"
+        ],
+        "description": [
+            "need to add security for the restfull api we use for the dashboard application or for any other clients",
+            "basic authentication should be sufficient",
+            "will consider integration with sso"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "4913246",
+        "project": "JDK",
+        "summary": [
+            "the products codes monitoring and analysis"
+        ],
+        "description": [
+            "there are cases when close monitoring and analysis of the selected product codes helps pinpoint bugs that otherwise difficult to reproduce in development and sqe",
+            "it should include trend analysis across the releases and correlation with the other parameters",
+            "for example shows very hight counts for general windows installer error for vista service packs and comparing with the source of the problem will be investigated",
+            "we already have reports for identifying products codes anomalies but need to significantly enhance the scope of the reports"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "4897214",
+        "project": "JDK",
+        "summary": [
+            "fix license and copyright headers under and"
+        ],
+        "description": [
+            "fix license and copyright headers under and"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "4897203",
+        "project": "JDK",
+        "summary": [
+            "fix license and copyright headers under for white blank space comma"
+        ],
+        "description": [
+            "clean up license and copyright header files in forest under"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "4881158",
+        "project": "JDK",
+        "summary": [
+            "test task new tests for jep hash algorithms"
+        ],
+        "description": [
+            "this is created to develop new tests in accordance with changes proposed with jep"
+        ],
+        "timespent": "288000",
+        "alpha": 100
+    },
+    {
+        "id": "4867281",
+        "project": "JDK",
+        "summary": [
+            "optimize mysql server settings to improve performance"
+        ],
+        "description": [
+            "mysql server allows performance optimization by tuning configuration parameters",
+            "it becomes important for the current data volumes"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "4867277",
+        "project": "JDK",
+        "summary": [
+            "migrate and partition existing data"
+        ],
+        "description": [
+            "along with deploying enhanced etls need to migrate and partition existing data"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "4867275",
+        "project": "JDK",
+        "summary": [
+            "upgrade warehouse schemas"
+        ],
+        "description": [
+            "to accommodate data volumes some modifications to existing schemas are needed convert entity id to big integers create better indexes",
+            "it requires data migration and testing"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "4867266",
+        "project": "JDK",
+        "summary": [
+            "deploy and test enhanced etls"
+        ],
+        "description": [
+            "enhanced etl services feed files acquisition warehouse loaders data marts loaders yahoo partner insights loader akamai data mart loader and analytics data sets loader needs to be tested and deployed in production"
+        ],
+        "timespent": "201600",
+        "alpha": 100
+    },
+    {
+        "id": "4861067",
+        "project": "JDK",
+        "summary": [
+            "impl small implementation tasks"
+        ],
+        "description": [
+            "remaining implementation work server push priority stream closure error handling"
+        ],
+        "timespent": "432000",
+        "alpha": 100
+    },
+    {
+        "id": "4847917",
+        "project": "JDK",
+        "summary": [
+            "improve tests for compilertovm::materializevirtualobjecttest"
+        ],
+        "description": [
+            "the method should be also tested with another cases check that while materializing some frame other frames are not affected by materialization possible another cases"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "4844553",
+        "project": "JDK",
+        "summary": [
+            "test task develop global suite tests"
+        ],
+        "description": [
+            "develop global suite test and track the test dev status"
+        ],
+        "timespent": "288000",
+        "alpha": 100
+    },
+    {
+        "id": "4838142",
+        "project": "JDK",
+        "summary": [
+            "add tests for humongous objects allocation threshold"
+        ],
+        "description": [
+            "tests should check that if object is larger than a half of region it should be humongous if object is exactly a half of region it should not be humongous if object is smaller than a half of region it should not be humongous all these checks should be done with different region sizes"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "4833069",
+        "project": "JDK",
+        "summary": [
+            "develop tests for catalog api miscellaneous cases"
+        ],
+        "description": [
+            "develops tests for the cases on the miscellaneous cases for more details please see"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "4833068",
+        "project": "JDK",
+        "summary": [
+            "develop tests for catalog api catalog file management"
+        ],
+        "description": [
+            "develops tests for the cases on the catalog file management for more details please see"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "4833067",
+        "project": "JDK",
+        "summary": [
+            "develop tests for catalog api control resolution"
+        ],
+        "description": [
+            "develops tests for the cases on the control resolution for more details please see"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "4833066",
+        "project": "JDK",
+        "summary": [
+            "develop tests for catalog api complex resolutions"
+        ],
+        "description": [
+            "develops tests for the cases on the complex resolution for more details please see"
+        ],
+        "timespent": "100800",
+        "alpha": 100
+    },
+    {
+        "id": "4833065",
+        "project": "JDK",
+        "summary": [
+            "develop tests for catalog api basic resolutions"
+        ],
+        "description": [
+            "develops tests for the cases on the basic resolution for more details please see"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "4789867",
+        "project": "JDK",
+        "summary": [
+            "dtfx.js should not automatically redirect the user to the java.com install page"
+        ],
+        "description": [
+            "right now the dtfx.js deployment script will detect if the user have java installed and then redirect the user to java.com to install it",
+            "in some cases it shows a javascript popup window and then redirects the user",
+            "this behavior is bad because when a user arrives at a webpage they should never be redirected to another page without an explicit user action",
+            "users who do have java installed but are viewing blogs with an rss reader that supports javascript but not java will not be able to view the blog",
+            "instead they will be forwarded to a page that is not useful to the user nor can they go back",
+            "when the user does have java but our scripts fail to detect it properly which has happened quite frequently the user is taken to a new page without an understanding of why nor how to fix it or get back to what they were trying to do",
+            "in all cases above the user is left with a bad impression of java and javafx and will avoid pages with java altogether",
+            "instead of redirecting the user the area where the applet would be should be replaced with a box button or some text saying you need java to view this application",
+            "please click to install it only once the user clicks on the should the user go to java.com or have the installer launched",
+            "this is what flash and sliverlight do"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "4790425",
+        "project": "JDK",
+        "summary": [
+            "add z depth sorting to javafx"
+        ],
+        "description": [
+            "we need to add to javafx for sorting objects by depth when using transforms",
+            "may consider adding the ability to enable on node",
+            "this will allow the support of underlay overlay and depth sorted rendering",
+            "resolve semantics of mixing z depth sorting with rendering order",
+            "the current depth order for objects is a strict painters algorithm where the last thing rendered ends up on top",
+            "there are scene graph operations to send a node to the front or back of the z stack by moving it to the end or beginning of the rendering order",
+            "we need to rationalize this with depth sorting with a taking into account transparency"
+        ],
+        "timespent": "201600",
+        "alpha": 100
+    },
+    {
+        "id": "4787535",
+        "project": "JDK",
+        "summary": [
+            "test task for develop new tests for update serviceloader for modules"
+        ],
+        "description": [
+            "a place holder for tracking test development activities",
+            "please input detail schedule and estimates according with test plan"
+        ],
+        "timespent": "576000",
+        "alpha": 100
+    },
+    {
+        "id": "4787299",
+        "project": "JDK",
+        "summary": [
+            "implement test server for"
+        ],
+        "description": [
+            "update implementation using some common code from client possibly enhance the api to support some features",
+            "realistically only features essential for testing ability to enable per context if possible limited server push capability"
+        ],
+        "timespent": "288000",
+        "alpha": 100
+    },
+    {
+        "id": "4787298",
+        "project": "JDK",
+        "summary": [
+            "implementation main part"
+        ],
+        "description": [
+            "debugging and testing of implementation up to point where multiple requests and responses can be sent and received in parallel to same destination and which include large request and response bodies"
+        ],
+        "timespent": "1296000",
+        "alpha": 100
+    },
+    {
+        "id": "4781053",
+        "project": "JDK",
+        "summary": [
+            "improvement add event logging for class redefinition to the file"
+        ],
+        "description": [
+            "would be nice to see which classes are redefined if any in crash logs"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "4776294",
+        "project": "JDK",
+        "summary": [
+            "test task develop global suite tests"
+        ],
+        "description": [
+            "develop global suite test and track the test dev status"
+        ],
+        "timespent": "1728000",
+        "alpha": 100
+    },
+    {
+        "id": "4776153",
+        "project": "JDK",
+        "summary": [
+            "develop tests for xml catalog api"
+        ],
+        "description": [
+            "develop new tests for xml catalog api",
+            "there are five such as and for all of case groups respectively"
+        ],
+        "timespent": "835200",
+        "alpha": 100
+    },
+    {
+        "id": "4775623",
+        "project": "JDK",
+        "summary": [
+            "test task develop tests for xerces update"
+        ],
+        "description": [
+            "develop new tests and revise existing tests for xerces update with the following bugs develop test for xerces update dom serializer develop test for xerces update xml schema validation develop test for xerces update xpointer"
+        ],
+        "timespent": "432420",
+        "alpha": 100
+    },
+    {
+        "id": "4774873",
+        "project": "JDK",
+        "summary": [
+            "test task develop new tests for client"
+        ],
+        "description": [
+            "this task is to create new tests for jep http client"
+        ],
+        "timespent": "928800",
+        "alpha": 100
+    },
+    {
+        "id": "4774848",
+        "project": "JDK",
+        "summary": [
+            "test task process api updates"
+        ],
+        "description": [
+            "this is the bug tracking test development effort current test has been pushed into sandbox repo current tests have been covered all the tests cases in test plan"
+        ],
+        "timespent": "1152000",
+        "alpha": 100
+    },
+    {
+        "id": "4771878",
+        "project": "JDK",
+        "summary": [
+            "additional tests for signature algorithm oids and transformation string"
+        ],
+        "description": [
+            "added oids for nsa suite b algorithms",
+            "consider adding some tests for it"
+        ],
+        "timespent": "115200",
+        "alpha": 100
+    },
+    {
+        "id": "4768172",
+        "project": "JDK",
+        "summary": [
+            "remote debugging for applets in a browser not working"
+        ],
+        "description": [
+            "full product version a description of the problem following parameters xnoagent xdebug should do the trick but id does not work",
+            "i can connect from eclipse but if i let my application run all hangs",
+            "with browser hangs at start from applet and there is impossible to connect",
+            "it worked in the past with some version but i don't know it exactly",
+            "reproducibility this bug can be reproduced always"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "4767041",
+        "project": "JDK",
+        "summary": [
+            "test task develop new tests for jep datagram transport layer security dtls"
+        ],
+        "description": [
+            "this is created to develop new tests in accordance with changes proposed with jep"
+        ],
+        "timespent": "666000",
+        "alpha": 100
+    },
+    {
+        "id": "4696551",
+        "project": "JDK",
+        "summary": [
+            "improvement print compilation mode server client or tiered"
+        ],
+        "description": [
+            "we should add exactly what compilation mode is used",
+            "this will become extra important as tiered compilation becomes the default mode"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "4696550",
+        "project": "JDK",
+        "summary": [
+            "improvement print exact compressed oops mode and the heap base value"
+        ],
+        "description": [
+            "we should add the exact compressed oops mode and the heap base value to files"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "4696547",
+        "project": "JDK",
+        "summary": [
+            "improvement print gc strategy"
+        ],
+        "description": [
+            "we should print what gc strategy was used in files",
+            "right now it is hard to see if it is cms parallel etc"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "4696545",
+        "project": "JDK",
+        "summary": [
+            "improvement print if we have seen any outofmemoryerrors or stackoverflowerrors"
+        ],
+        "description": [
+            "a very useful piece of information in jrockit dump files was a counter of outofmemoryerrors and stackoverflowerrors",
+            "even if we should always try to handle these errors correctly there are a lot of corner cases",
+            "if a customer sees hundreds of ooms before crashing it isn't unreasonable that this is the root cause",
+            "even if we still want to fix the crash the customer can start with fixing their oom issue"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "4696542",
+        "project": "JDK",
+        "summary": [
+            "improvement add summary section to file"
+        ],
+        "description": [
+            "files are currently divided into the sections thread process and system the problem with this is that a lot of important information is hidden far down in the file",
+            "the vm arguments are below a long list of dynamic libraries the os version is printed in the last section etc",
+            "not only is it hard to get a quick overview of an file but in many cases we even get the full file from customers or the webbugs system",
+            "it may have been truncated or someone just copies parts of it",
+            "therefore we should add a summary section at the top of the file",
+            "the summary section should mostly include and should include everything needed to get a quick overview of the crash",
+            "suggested summary s u m a r y time fri oct elapsed time seconds java server vm for jre built on sep by with gcc red hat enterprise linux server release tikanga smp wed jan est nptl rlimit stack core nproc nofile as infinity load cores per cpu threads per core family model stepping cmov fxsr mmx sse tsc memory page physical free swap free vm arguments myclass initial launcher type environment variables vm at safepoint normal execution vm currently owned by a thread none heap psyounggen total used eden space used from space used to space used paroldgen total used object space used metaspace total used reserved data space used reserved class space used reserved this summary will give a lot of the information needed to quickly categorize a crash",
+            "did it happen during or after several days is it a supported platform did we run with any strange vm arguments is the heap close to full note that there are many other suggestions for information to be added to the file",
+            "some of these should definitely go to the summary like if we run on a hypervisor or not",
+            "edited there were some discussions about if we should duplicate the information in the summary",
+            "for example the os name should clearly be in the summary but it also makes sense to have it in the more detailed system section",
+            "in that case this information should be printed twice but in many cases just having the information in the summary section is enough",
+            "original suggestion was that everything should be both in the summary and in the detailed sections"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "4847814",
+        "project": "DIO",
+        "summary": [
+            "update dio spec version at makefile"
+        ],
+        "description": [
+            "since release dio api is"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "4847813",
+        "project": "DIO",
+        "summary": [
+            "dev branch build failure"
+        ],
+        "description": [
+            "error cannot find symbol private final registeredtypes new vector symbol class vector location class eventqueuemanager"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "4847709",
+        "project": "DIO",
+        "summary": [
+            "loopback uart connection is not robust"
+        ],
+        "description": [
+            "vts detects multiple failures of uart tests when they are running in group",
+            "however single test is successful",
+            "it looks like race conditions in event delivering code"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "4846022",
+        "project": "DIO",
+        "summary": [
+            "align rpi properties file with me version"
+        ],
+        "description": [
+            "default trigger value for gpiopin config differs from default value from me dio"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "4845924",
+        "project": "DIO",
+        "summary": [
+            "failure"
+        ],
+        "description": [
+            "tests are failed with unexpected unavailabledeviceexception"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "4845581",
+        "project": "DIO",
+        "summary": [
+            "example build error"
+        ],
+        "description": [
+            "example is not buildable after spec update"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    }
+]

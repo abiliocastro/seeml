@@ -1,0 +1,2921 @@
+[
+    {
+        "id": "32246",
+        "project": "IKASAN",
+        "summary": [
+            "version mismatch in the ikasan bom for tomcat"
+        ],
+        "description": [
+            "variable name change in parent pom.xml for to is missing the rename in the pom.xml for the ikasan bom"
+        ],
+        "timespent": "900",
+        "alpha": 98
+    },
+    {
+        "id": "19468",
+        "project": "IKASAN",
+        "summary": [
+            "error occurrence table populated with incorrect flow name"
+        ],
+        "description": [
+            "the flow name seems to be populated with the same name even if the error originated from a different flow error occurrence table",
+            "gloss-referencemarketdatatgt|asset publisher flow|goldensource counterparty consumer gloss-referencemarketdatatgt|asset publisher flow|counterparty publisher consumer"
+        ],
+        "timespent": "1800",
+        "alpha": 98
+    },
+    {
+        "id": "10644",
+        "project": "IKASAN",
+        "summary": [
+            "error thrown when viewing web console user admin screen"
+        ],
+        "description": [
+            "when in the web console and visiting the user admin screen at error springapp servlet.service for servlet springapp threw exception org.springframework.beans.notreadablepropertyexception invalid property confirm_password of bean class bean property confirm_passwor d is not readable or has an invalid getter method does the return type of the getter match the parameter type of the setter"
+        ],
+        "timespent": "10800",
+        "alpha": 98
+    },
+    {
+        "id": "10505",
+        "project": "IKASAN",
+        "summary": [
+            "mysql scripts are not syntactically correct missing commas which cause the script to fail"
+        ],
+        "description": [
+            "framework mysql scripts initiatorstartupcontrol.sql and systemevent.sql are missing commas on the line just prior to their primary key definition"
+        ],
+        "timespent": "300",
+        "alpha": 98
+    },
+    {
+        "id": "32201",
+        "project": "IKASAN",
+        "summary": [
+            "ensure archetypes are consistently formatted and defined"
+        ],
+        "description": [
+            "summary ensure archetypes are formatted and consistently created for the following aspects ikasan.sh script with executable bit set jars in lib directory logs directory containing named logs for and im persistence directory containing objectstore and database readme.md consistently formatted"
+        ],
+        "timespent": "36000",
+        "alpha": 99
+    },
+    {
+        "id": "32185",
+        "project": "IKASAN",
+        "summary": [
+            "document and package dashboard deployment"
+        ],
+        "description": [
+            "document process of dashboard deployment",
+            "create additional packaging for dashboard which includes visualisation-dashboard jar solr-distribution start script to all above"
+        ],
+        "timespent": "172800",
+        "alpha": 99
+    },
+    {
+        "id": "27100",
+        "project": "IKASAN",
+        "summary": [
+            "monitor notifier email doesnt support multiple addresses within one line"
+        ],
+        "description": [
+            "default monitor email notifier currently supports multiple address lists for recipient cc bcc addresses however when passed in from ikasan-environment.properties the loader doesnt recognise multiple addresses in a single line",
+            "need to add support for tokenising the string line into separate email addresses"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "24652",
+        "project": "IKASAN",
+        "summary": [
+            "schedulercallbackexecutiontest occassionally fails in travis"
+        ],
+        "description": [
+            "test case schedulercallbackexecutiontest.test_createjobdetail_concurrentcallbacks occassionally fails in travis",
+            "suspect its a problem with the boolean used as the check not being volatile"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "20566",
+        "project": "IKASAN",
+        "summary": [
+            "in the dashboard ui the errors gui table needs to include a column to show the errormessage"
+        ],
+        "description": [
+            "the errors gui table should have a column for the erroroccurrence.errormessage text",
+            "when clicking on a row the associated modal dialog should also show this errormessage as a field"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "20350",
+        "project": "IKASAN",
+        "summary": [
+            "allow xmlstring marshaller to auto extract value objects from jaxbelement instances"
+        ],
+        "description": [
+            "currently xmlstring/object converter marshalls xml strings to.from objects using jaxb",
+            "this currently returns the object model as the raw object model when marked as the document root or a jaxbelement wrapping the object when its not marked explicitly as the root",
+            "certain xsd definitions dont specify any specific root element fpml hence we should allow for auto extraction of the jaxbelement where needed"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "20074",
+        "project": "IKASAN",
+        "summary": [
+            "maven archetype used to create the integration module projects refers to incorrect project.version in the ear pom as a property"
+        ],
+        "description": [
+            "the ear pom.xml requires manifest entries be added for the project to load the required ikasan jboss module at deploy time however rather than referring to the variable it currently refers to the change this to be the correct variable"
+        ],
+        "timespent": "600",
+        "alpha": 99
+    },
+    {
+        "id": "19753",
+        "project": "IKASAN",
+        "summary": [
+            "misnamed archetype descriptor name for"
+        ],
+        "description": [
+            "the archetype descriptor for has an incorrect name which means the archetype is not found at the point of execution",
+            "name should be changed to reflect the artefact name in the pom.xml"
+        ],
+        "timespent": "600",
+        "alpha": 99
+    },
+    {
+        "id": "19456",
+        "project": "IKASAN",
+        "summary": [
+            "dependency incorrect"
+        ],
+        "description": [
+            "the artifact pom has the underlying artifact as this is incorrect since its not provided by the jvm or any deployment container",
+            "we shouldn't have to respecify in our poms to pull it in",
+            "this should be default compile scope"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "18054",
+        "project": "IKASAN",
+        "summary": [
+            "allow the messageprovider in the scheduled consumer to be a managedresource and configured"
+        ],
+        "description": [
+            "currently the messageprovider registered with the default scheduleddrivenconsumer is not checked/treated as a configured or managedresoruce",
+            "we should allow this to be checked and managed/configured as the messageprovider can be anything"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "16650",
+        "project": "IKASAN",
+        "summary": [
+            "mongobroker should be able to be configured with one or more bson encoding transformers"
+        ],
+        "description": [
+            "should allow a map of bsontransformer's keyed on java class include the bsonencodingstringtransformer to allow the mapping of string's to java date and number types"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "10659",
+        "project": "IKASAN",
+        "summary": [
+            "create splash pages for ikasan.org and ikasan.com"
+        ],
+        "description": [
+            "kerry will come up with initial designs and then i'll likely implement the dhtml"
+        ],
+        "timespent": "180000",
+        "alpha": 99
+    },
+    {
+        "id": "10641",
+        "project": "IKASAN",
+        "summary": [
+            "creates a log file when tests are run"
+        ],
+        "description": [
+            "this is annoying as it leaves it behind and svn clients think you've made a change"
+        ],
+        "timespent": "600",
+        "alpha": 99
+    },
+    {
+        "id": "10572",
+        "project": "IKASAN",
+        "summary": [
+            "improving unit test coverage for framework"
+        ],
+        "description": [
+            "test unit coverage currently stands at to start things off the wiretap event package is in need of unit testing",
+            "todo list all other classes/packages that either need unit tests or stronger tests"
+        ],
+        "timespent": "3300",
+        "alpha": 99
+    },
+    {
+        "id": "10330",
+        "project": "IKASAN",
+        "summary": [
+            "package the license and copyright.txt files with each project distribution"
+        ],
+        "description": [
+            "since the license change from lgpl to modified bsd we have created the required license text file and a copyright.txt file containing all these two files should be packaged with the project distributions"
+        ],
+        "timespent": "21600",
+        "alpha": 99
+    },
+    {
+        "id": "10138",
+        "project": "IKASAN",
+        "summary": [
+            "style.css has a font declaration bug affecting the webconsole for ff"
+        ],
+        "description": [
+            "style.css had the following declaration font trebuchet ms which caused ff to silently ignore that css styling it should be font trebuchet ms note the extra"
+        ],
+        "timespent": "1200",
+        "alpha": 99
+    },
+    {
+        "id": "32218",
+        "project": "IKASAN",
+        "summary": [
+            "change current fix version from to"
+        ],
+        "description": [
+            "update release version to across all poms and documentation"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "32217",
+        "project": "IKASAN",
+        "summary": [
+            "duplicate wrapped objects being created on multiple pointcut calls"
+        ],
+        "description": [
+            "the builder pattern calls aop proxy to apply pointcuts across a number of objects",
+            "currently calling this method on an already pointcut object creates another pointcut object wrapping the first resulting in multiple pointcut objects",
+            "this is somewhat wasteful",
+            "as the aop proxy class is initialised on start of the jvm from spring context it makes sense to keep a list of components on which the method has been applied any repeat calls on object instances should simply return the original object instance from the original call ie from the cached list"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "32180",
+        "project": "IKASAN",
+        "summary": [
+            "delete old dashboard sources"
+        ],
+        "description": [
+            "summary remove the old dashboard module and restructure the visualisation modules to live under a single parent",
+            "detail delete dashboard module and all children rename visualisation to vaadin create new visualisation parent move vaadin under visualisation parent move visualisation-dashboard and under visualisation and rename them to dashboard and"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "32166",
+        "project": "IKASAN",
+        "summary": [
+            "singlerecipientrouter and multirecipientrouter not correctly supporting otherwise conditional"
+        ],
+        "description": [
+            "summary when executing a single recipient router and probably a multi recipient router the router will return an outcome value which is matched to an outgoing transition",
+            "for instance a srr for colours may identify red green blue as target transitions which are then matched and followed defined in the fluent api as follows this requires strict matching of each outcome to a transition",
+            "sometimes we just need a catch all which can be achieved using otherwise which will send anything not matching the when to a different route",
+            "currently otherwise only works if the developer of the component return a default this puts unwarranted expectations on the developer to understand how the framework manages this",
+            "the developer should be able to return any value which is either matched by a when or matched as a catch all if otherwise is specified",
+            "workaround this is a bug",
+            "workaround for runtime failures is for the developer to specify default when otherwise is an option",
+            "fix not sure this is simple",
+            "if strict matching is in place where only when matchers are specified then ikasan should throw an exception on any outcome not matching",
+            "if otherwise is also specified then that should be a catch all and default transition used but only if otherwise is specified"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "32160",
+        "project": "IKASAN",
+        "summary": [
+            "review ikasan db and tables for missing indexes"
+        ],
+        "description": [
+            "review and conclusion review has been completed",
+            "the following objects require new indexes",
+            "erroroccurrence index on the expiry column"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "32133",
+        "project": "IKASAN",
+        "summary": [
+            "clean up topology logging on module startup"
+        ],
+        "description": [
+            "summary logging on start up on a module should be useful and precise",
+            "some of the logging doesnt make sense and some is too low level for info",
+            "detail current topology logging on startup lines should be debug and some of those should be more descriptive"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "32118",
+        "project": "IKASAN",
+        "summary": [
+            "explore edge cases around db running as part of a module"
+        ],
+        "description": [
+            "summary we need to explore options on how to run ikasan standalone module with db persisting data to a local file",
+            "there are three options being reviewed for db runtime connection configuration",
+            "embedded mode in embedded mode an application opens a database from within the same jvm using jdbc",
+            "this is the fastest and easiest connection mode",
+            "the disadvantage is that a database may only be open in one virtual machine and class loader at any time",
+            "as in all modes both persistent and databases are supported",
+            "there is no limit on the number of database open concurrently or on the number of open connections",
+            "server mode when using the server mode sometimes called remote mode or mode an application opens a database remotely using the jdbc or odbc api",
+            "a server needs to be started within the same or another virtual machine or on another computer",
+            "many applications can connect to the same database at the same time by connecting to this server",
+            "internally the server process opens the in embedded mode",
+            "the server mode is slower than the embedded mode because all data is transferred over as in all modes both persistent and databases are supported",
+            "there is no limit on the number of database open concurrently per server or on the number of open connections",
+            "mixed mode the mixed mode is a combination of the embedded and the server mode",
+            "the first application that connects to a database does that in embedded mode but also starts a server so that other applications running in different processes or virtual machines can concurrently access the same data",
+            "the local connections are as fast as if the database is used in just the embedded mode while the remote connections are a bit slower",
+            "the server can be started and stopped from within the application using the server api or automatically automatic mixed when using the automatic mixed mode all clients that want to connect to the database no matter if it's an local or remote connection can do so using the exact same database url",
+            "each jira attached to this story covers the testing of the above modes",
+            "in addition we need to review the springboot console to see if this has any value",
+            "see"
+        ],
+        "timespent": "1296000",
+        "alpha": 100
+    },
+    {
+        "id": "32111",
+        "project": "IKASAN",
+        "summary": [
+            "provide post endpoint"
+        ],
+        "description": [
+            "in order to allow dashboard to persist exclusion from any given module new rest endpoint is required in new dashboard",
+            "sample payload of post request sent by any module todo json format to be confirmed above data structure could be stored to dashboard persistence store of choice db solr"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "32109",
+        "project": "IKASAN",
+        "summary": [
+            "provide post endpoint"
+        ],
+        "description": [
+            "in order to allow dashboard to persist replay from any given module new rest endpoint is required in new dashboard",
+            "sample payload of post request sent by any module todo json format to be confirmed above data structure could be stored to dashboard persistence store of choice db solr"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "32108",
+        "project": "IKASAN",
+        "summary": [
+            "provide post endpoint"
+        ],
+        "description": [
+            "in order to allow dashboard to persist wiretaps from any given module new rest endpoint is required in new dashboard",
+            "sample payload of post request sent by any module todo json format to be confirmed above data structure could be stored to dashboard persistence store of choice db solr"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "32078",
+        "project": "IKASAN",
+        "summary": [
+            "incorrect error text being reported when module is used at runtime but not in pom.xml"
+        ],
+        "description": [
+            "summary incorrect error text is being reported by the eventgeneratingconsumer when not found at runtime",
+            "current code reporting the error says to include to your dependencies whereas it should specify"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "32074",
+        "project": "IKASAN",
+        "summary": [
+            "allow authentication credentials to be passed to the email provider by the producer"
+        ],
+        "description": [
+            "summary currently not possible to provide credentials in the form of username and password to the email producer",
+            "detail allow the credentials to be passed in to create an email authentication object"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "32071",
+        "project": "IKASAN",
+        "summary": [
+            "exception on scheduled callbacks to the transactional sftp consumer"
+        ],
+        "description": [
+            "summary when running an sftp flow the sftp consumer starts throwing exceptions after a number of callbacks",
+            "the number of callbacks seem to be explicitly linked to the number of quartz scheduler threads available in the pool",
+            "once the pool limit is hit we get the following exception"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "32062",
+        "project": "IKASAN",
+        "summary": [
+            "allow the build call on and within the flowbuidler be implied"
+        ],
+        "description": [
+            "summary many of the fluentapi calls in the builder pattern now allow the build call to be optional and the framework calls it internally if not provided",
+            "this allows for less verbose code in the fluentapi",
+            "the withexceptionresolver and withmonitor calls on the flowbuilder are currently missing this option"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "32000",
+        "project": "IKASAN",
+        "summary": [
+            "add vulnerability dependency check for oswasp"
+        ],
+        "description": [
+            "add the following plugin to scan for software vulnerabilities on build"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "31986",
+        "project": "IKASAN",
+        "summary": [
+            "add ikasan logo to replace springboot logo on application startup"
+        ],
+        "description": [
+            "provide a standard ikasan banner on of ikasan based applications"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "31930",
+        "project": "IKASAN",
+        "summary": [
+            "fileconsumer fails to start if the fileconsumerconfiguration isn't specified on the builder"
+        ],
+        "description": [
+            "the fileconsumer fails on startup with a class cast exception if the fileconsumerconfiguration isnt specified on the builder by the developer",
+            "this is due to the scheduledconsumerconfiguration being used which is parent to the fileconsumerconfiguration",
+            "fix is to simply ensure the fileconsumerconfiguration is set when the fileconsumer component is built"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "31919",
+        "project": "IKASAN",
+        "summary": [
+            "simplemessagegenerator is not rolling back the event count on a transaction rollback"
+        ],
+        "description": [
+            "ensure the event counter is rolled back if a forcetransactionrollback exception bubbles up through to the messageprovider",
+            "although nothing really to rollback to simulates the rollback of consumer tech"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "31903",
+        "project": "IKASAN",
+        "summary": [
+            "flow goes to stoppedinerror when scheduledconsumer is set to eager and events are in flight when stop is issued to the flow"
+        ],
+        "description": [
+            "although not a show stopper it is somewhat misleading to have a flow stoppedinerror when the user calls stop on it",
+            "this scenario can happen on the scheduled consumer endpoint when set to eager consumption which will immediately reschedule the job in quartz",
+            "if stop is called on the flow and the eager consumption means the job is immediately rescheduled we get in a position where we are trying to reschedule a cancelled job and the scheduler throws an exception",
+            "this really just causes noise in the logs and a of flow state as stoppedinerror rather than stopped",
+            "this can be remediated by catching any scheduler exceptions on the eager reschedule job method and ignoring if the flow is being stopped"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "31895",
+        "project": "IKASAN",
+        "summary": [
+            "jms serialisation fails if the incoming jms message properties contains a null value"
+        ],
+        "description": [
+            "the replay record service is failing to serialise an incoming jms text message with a named property containing a null value"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "31894",
+        "project": "IKASAN",
+        "summary": [
+            "resubmission service check when auto assigning on the builder is checking the flow element rather than the component for resub capabilities"
+        ],
+        "description": [
+            "flowbuilder is not checking the component correctly for resubmission service abilities",
+            "it is checking the flow element rather than the component within"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "31887",
+        "project": "IKASAN",
+        "summary": [
+            "provide better logging messages when cancelling scheduled recovery jobs as part of recovery manager"
+        ],
+        "description": [
+            "make the logging of cancelled recovery manager jobs on the scheduled recovery manager a little more informative"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "31886",
+        "project": "IKASAN",
+        "summary": [
+            "add to standard platform ikasan packaging rather than external dependency"
+        ],
+        "description": [
+            "currently ikasan requires to successfully bootstrap which must be included as an external dependency",
+            "given this is a required library it should be packaged as default with the application"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "31875",
+        "project": "IKASAN",
+        "summary": [
+            "ikasan dashboard update to allow both the new invoker configuration to be managed"
+        ],
+        "description": [
+            "a new configuration aspect specific to invokers has been introduced into ikasan this separates the framework invoker configuration from developer pojo configuration but utilises the same configurationservice",
+            "the blue console has been enhanced to accommodate management of invoker configuarations in addition to pojo component configurations",
+            "we simply need to extend support in the dashboard to allow management of the invoker configurations",
+            "note we may at a later date wish to separate the permissioning of invoker configuration management from pojo configuration management"
+        ],
+        "timespent": "36000",
+        "alpha": 100
+    },
+    {
+        "id": "31859",
+        "project": "IKASAN",
+        "summary": [
+            "flowbuilder withrecoverymanagerfactory should take an interface not a class",
+            "use of recoverymanagerfactory.getinstance concrete class by the flowbuilder makes override of factory impossible"
+        ],
+        "description": [
+            "problem users currently can only add their own recovery manager see below to the builder by extending the recoverymanagerfactory which assumes the creation of a scheduledrecoverymanager the method below needs to be changed to accept an interface",
+            "unfortunately the above method will never work due to this code which creates the recovery manager via a static call to getinstance on the recoverymanager class solution rename recoverymanagerfactory to create an interface recoverymanagerfactory that contains the method change the default recovery manager autowired code in flowbuilder to ensure no clashes when multiple implementations of recoverymanagerfactory are on the classpath either by naming convention or explicitly using a resource name annotation to point to the scheduledrecoverymanagerfactory",
+            "remove this unnecessary static call in the flowbuilder the recoverymanagerfactory will always be present by this line"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "31821",
+        "project": "IKASAN",
+        "summary": [
+            "ikasan failing to exclude serialise by kryo hornetq bytes messages"
+        ],
+        "description": [
+            "seeing the following stack trace shouldnt vendor specific bytes message be unpacked into a more serializable form code serialization trace classes contextclassloader threads groups parent group threadfactory parent executor clientsession handler channels connection channel consumer message java.util.concurrentmodificationexception serialization trace classes contextclassloader threads groups parent group threadfactory parent executor clientsession handler channels connection channel consumer message method source at"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "31809",
+        "project": "IKASAN",
+        "summary": [
+            "allow setting of jms producer postprocessor from the builder pattern"
+        ],
+        "description": [
+            "expose the setting of jms producer postprocessor as part of the builder pattern"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "31804",
+        "project": "IKASAN",
+        "summary": [
+            "the arjunaikasanmessagelistenercontainer needs to allow for session lookup of destinations as is done for"
+        ],
+        "description": [
+            "this will allow for lookups of destinations that arent accessible via jndi standalone amq destinations for instance",
+            "code change is below"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "31700",
+        "project": "IKASAN",
+        "summary": [
+            "flowbuilder.primaryroutebuilder and routebuilder missing splitter builder method"
+        ],
+        "description": [
+            "looks like this was missed need to add and"
+        ],
+        "timespent": "300",
+        "alpha": 100
+    },
+    {
+        "id": "29703",
+        "project": "IKASAN",
+        "summary": [
+            "no active eventlisteners registered for flowevent thrown endlessly when a jms consumer flow in recovery is stopped"
+        ],
+        "description": [
+            "this exception is seen being endlessly thrown in the logs when moving a jms consumer fronted flow from recovery to the stopped state this behaviour is easily repeatable",
+            "this code is where the exception is thrown the eventlistener is set to null in the stop method of the flow however it seems the recoverymanager.cancel call is ineffective proposed solution the recovery manager needs to cater for a number of scenarios when a flow is initially started and a consumer or managed resource fails to start the recovery manager is invoked with no flowevent/identifier since no message has been received a consumer may receive in multiple threads concurrent jms consumer and the following may apply one or more messages are causing recovery but other messages in other consuming threads are ok the other successful messages should not cause the recovery manager to cancel since there are threads/messages in recovery state a consumer or the underlying messageprovider may cause a different event id to be generated for each recovery attempt",
+            "for example a scheduledconsumer with the default quartzmessageprovider and hashedmanagedidentifierservice gives a different jobexecutioncontext and therefore different event id on each recovery attempt",
+            "in general if a consumer is this is not the case and the event ids are generated in an idempotent manner to resolve all these scenarios if there is no identifier provided to the recovery manager first scenario then we can safely cancel any jobs associated with the given recoverymanager instance since there is one per flow when we call flow.stop or exit recovery if a consumer is multi threaded we can safely assume any identifiers are the same per recovery attempt and can use these to track which messages via the event ids are in recovery and only cancel when all eventids are out of recovery or stop is called",
+            "we use the thread id here since it may change between invocations of the recovery jms may use different threads to receive on otherwise we need to assume the consumer may not provide an idempotent event id so track the identifiers in the same way as the previous"
+        ],
+        "timespent": "25200",
+        "alpha": 100
+    },
+    {
+        "id": "28302",
+        "project": "IKASAN",
+        "summary": [
+            "simplify flow tests with builder rule"
+        ],
+        "description": [
+            "using work initially from simplify flow tests with builder rules for the standard flows scheduler and provide examples and update existing examples and maven archetype",
+            "eg"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "27003",
+        "project": "IKASAN",
+        "summary": [
+            "maven archetype for creation of an parent project should prompt for ikasan version"
+        ],
+        "description": [
+            "the flow integration tests created from the archetypes did not have the added to their flow integration test configurations when the replay service was first introduced",
+            "this causes the tests generated as part of any archetype project to fail when the generated im is built",
+            "to fix this issue simply add the to the integration test configuration to allow this o be pulled in at test time"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "24850",
+        "project": "IKASAN",
+        "summary": [
+            "allow setting of xmladapters on the underlying marshaller for objecttoxmlstringconverter"
+        ],
+        "description": [
+            "we should allow for setting of a jaxb xmladapter on the underlying marshaller for objecttoxmlstringconverter"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "24650",
+        "project": "IKASAN",
+        "summary": [
+            "allow setting of the timezone on a cron schedule in the quartz consumer"
+        ],
+        "description": [
+            "we should expose the timezone setting on the quartz scheduler in case there is a need to run on a specific timezone"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "24550",
+        "project": "IKASAN",
+        "summary": [
+            "message history dao fails if message is excluded"
+        ],
+        "description": [
+            "the after event ids are not copied into the invocation context if a component throws an error",
+            "if this results in an excluded event the mh dao tries to write a mh with no after event id which is mandatory"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "24350",
+        "project": "IKASAN",
+        "summary": [
+            "resubmissionservice is not automatically registered with each flow it currently has to be set manually at build time"
+        ],
+        "description": [
+            "currently the registration of the consumer with support for the resubmissionservice functionality is left to be explicitly set by the developer at build time",
+            "this is often overlooked not configured and not noticed until the resubmission of an event is required at runtime clearly not ideal",
+            "we should automatically register the consumer against the resubmission service if it is resubmission service capable implements the resubmissionservice contract",
+            "we can treat this as a bug as it really is an oversight of the initial implementation"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "24050",
+        "project": "IKASAN",
+        "summary": [
+            "xml validation failure error message is hidden when the exception gets and thrown on the pojo to xml converter"
+        ],
+        "description": [
+            "when pojo to xml converter objecttoxmlstringconverter fails validation the original exception containing the error the saxparseexception is wrapped in a transformerexception and when this is subsequently displayed on the consoles/dashboards the cause of the validation failure is not visible",
+            "need to ensure the saxparseexception details are exposed in the transformationexception",
+            "the following saxparseexception text should be exposed"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "23850",
+        "project": "IKASAN",
+        "summary": [
+            "create messagehistory write strategy for messagehistory listener"
+        ],
+        "description": [
+            "by default the message history will write events if they are published filtered ignored excluded we may want to customise this based on the message for example we filter out fix heartbeats every seconds but don't really care about logging their metrics",
+            "create a pluggable strategy for determining the write semantics with a default as above"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "23750",
+        "project": "IKASAN",
+        "summary": [
+            "spring module bootstrap tries to log abstract bean types"
+        ],
+        "description": [
+            "the spring module loader tries to log each bean name and class",
+            "this throws an exception if we have abstract bean types since they cannot be instantiated directly"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "22451",
+        "project": "IKASAN",
+        "summary": [
+            "concurrent processing of events out of a splitter can never be xa"
+        ],
+        "description": [
+            "currently splitters are single threaded and do not allow concurrent processing of the multiple events returned from a splitter",
+            "we should allow concurrent processing of the split events as these are usually independent events",
+            "proposal is to invoke the components downstream from a concurrent splitter in a concurrent returning the flowevent objects back to the main thread which then can continue down its main path",
+            "this will mean utilising the transitions functionality of the flowelement one transition being the subflow and one being the default"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "22251",
+        "project": "IKASAN",
+        "summary": [
+            "official release of"
+        ],
+        "description": [
+            "official release of"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "21955",
+        "project": "IKASAN",
+        "summary": [
+            "add configuration to amq archetype to ensure xa semantics"
+        ],
+        "description": [
+            "currently the archetype does not include standard xa semantics configuration for amq",
+            "this should be added for the xa connection pools to ensure its there as part of the default archetype"
+        ],
+        "timespent": "3630",
+        "alpha": 100
+    },
+    {
+        "id": "21950",
+        "project": "IKASAN",
+        "summary": [
+            "official release of"
+        ],
+        "description": [
+            "official release of"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "21751",
+        "project": "IKASAN",
+        "summary": [
+            "official release of"
+        ],
+        "description": [
+            "official release of"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "21750",
+        "project": "IKASAN",
+        "summary": [
+            "scheduled consumer is reporting an incorrect stopped state to the monitor when going from recovery to running"
+        ],
+        "description": [
+            "on recovery of a scheduledconsumer the consumer goes from a recovering state to a running state in real time almost immediately",
+            "however the period between recovering and running effectively has the scheduled consumer in a stopped state in the sense that the business schedule is not active so when the recovery is cancelled after a successful recovery the business schedule is not active a the point the cancelled recovery reports a change in state so the consumer is reported as stopped",
+            "this is only apparent on attached notifies where the state history can be viewed email",
+            "to fix this we should start the business schedule before cancelling the recovery",
+            "this will work as all scheduled callbacks are so not callback will result from the business schedule until the recovery callback has completed"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "21654",
+        "project": "IKASAN",
+        "summary": [
+            "filewalker does not cope well if a file is changed when scanning a directory"
+        ],
+        "description": [
+            "the filewalker currently scans file lists in a directory when nudertaking regexp matches to see if any files are of interest",
+            "an issue arises when any of these scanned files are changed renamed between the initial listing and scanning for file patterns of interest",
+            "when this happens the filewalker throws an exception",
+            "we should allow the filewalker to be a little more robust to this and have a configuration property which states whether it cares or not about files changing when scanning"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "21653",
+        "project": "IKASAN",
+        "summary": [
+            "filemessageprovider is not shutting down the thread on the filewalker when stop is issued on the flow"
+        ],
+        "description": [
+            "when the scheduled filemessageprovider is invoked it starts its own callback thread",
+            "this thread is still active if currently processing files even if the flow is stopped",
+            "the flow consumer needs to inform the filemessageprovider filewalker that it has been stopped",
+            "we should also handle the concurrentmodificationexception that opccuirs on stop a little more gracefully",
+            "has no functional impact but looks scary in the logs"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "21350",
+        "project": "IKASAN",
+        "summary": [
+            "allow quartz scheduler to ignore misfires as an optional property"
+        ],
+        "description": [
+            "scheduled consumers that take longer to execute than the actual elapsed poll time will end up queueing up subsequent fires of the trigger",
+            "this results in multiple callbacks happening once the original job has completed",
+            "although the callbacks are still single threaded it looks a little odd in the logs",
+            "we can address this by adding an ignoremisfires boolean property to the schedulerconfiguration",
+            "this can be defaulted to true which will stop the queuing up of scheduled jobs in the background"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "21251",
+        "project": "IKASAN",
+        "summary": [
+            "logs on the integration module startups look to be reporting multiple major versions of spring being packaged"
+        ],
+        "description": [
+            "the following is getting logged when integration modules deploy and start up",
+            "this looks like we may have a stray spring version still being packaged",
+            "this version should be removed"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "20974",
+        "project": "IKASAN",
+        "summary": [
+            "incorrect identity assignment with some of the ft file transfer tables"
+        ],
+        "description": [
+            "there are five occurrences within the ft table schema definition which define id as an identity column for mssql however these are just cross reference fk's not actual idenititys",
+            "remove the identity part"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "20971",
+        "project": "IKASAN",
+        "summary": [
+            "flows with leading or trailing white space in the flow xml definition in their name are not being reported to the dashboard"
+        ],
+        "description": [
+            "this is not an issue with ikasan or the dashboard",
+            "it is an issue with sybase varchar datatype not maintaining trailing white space",
+            "see nothing to do",
+            "closing jira"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "20970",
+        "project": "IKASAN",
+        "summary": [
+            "searches that return no data should indicate so"
+        ],
+        "description": [
+            "when searching for if no data is returned from the underlying query this should be indicated in the results pane"
+        ],
+        "timespent": "2700",
+        "alpha": 100
+    },
+    {
+        "id": "20968",
+        "project": "IKASAN",
+        "summary": [
+            "unreadable erroroccurrence event detail tab"
+        ],
+        "description": [
+            "currently the event detail shows what looks to be a byte object representation of the original event",
+            "this is unreadable and hinders us rolling the tool out to users as we cant expect them to decipher the text",
+            "an example is here the error occurence event should instead just call tostring on the event and save this to the database rather than a byte representation of the object"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "20967",
+        "project": "IKASAN",
+        "summary": [
+            "allow a module prefix string to be provided to the default managedidentifierservice for file transfer clients"
+        ],
+        "description": [
+            "currently the filetransfer default managedidentifierservice implementation does not accommodate the provision of a module prefix string to allow uniqueness on the id assignment",
+            "this should be added as an optional"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "20966",
+        "project": "IKASAN",
+        "summary": [
+            "closing browser and reopening dashboard in a new browser results in user having to logout and log back in again to access dashboard menu items"
+        ],
+        "description": [
+            "if you login to the dashboard close the browser and then open a new browser to connect to the dashboard you can no longer access the dashboard menu items in the menu bar as shown below",
+            "you are forced to log out and in again to be able to see use these"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "20964",
+        "project": "IKASAN",
+        "summary": [
+            "topology service discovery feature enhancements"
+        ],
+        "description": [
+            "the functionality of the topology service needs to be enhanced",
+            "we need to consider the eai module life cycle",
+            "currently when an ikasan eai module is deployed to a server it registers a record in the ikasanmodule table in the ikasan database",
+            "however there is not mechanism to remove that record if the module is we should add functionality to the topology tree that allows us to delete modules",
+            "the topologyservice discovery method is somewhat simple at the moment",
+            "it only adds module flow and component details to the database",
+            "it never actually cleans orphaned records if the eai module changes for example a flow or component is we should add the following behaviour delete flows if they no longer exist in the module",
+            "delete components if they no longer exist in the module",
+            "if a component changes from being configurable to non-configurable or we need to reflect this in the topology db tables",
+            "if a component or flow is renamed this must be reflected"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "20963",
+        "project": "IKASAN",
+        "summary": [
+            "syntax errors in a couple of the mssql scripts for ft table creation"
+        ],
+        "description": [
+            "some typos noticed on the mssql when trying to create the required tables in support of the file transfer protocols",
+            "mainly missing brackets or too many brackets",
+            "each sql needs individually testing in an ide to ensure the syntax is correct"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "20961",
+        "project": "IKASAN",
+        "summary": [
+            "dashboard unable to deserialize excluded event when event class belongs to im"
+        ],
+        "description": [
+            "in the case where an event is excluded and it is of type jms objectmessage if the contained object class belongs to the integration module it will be successfully serialized out to the database but won't be available to the dashboard when it attempts to deserialize this entity",
+            "this affects the dashboard exclusion view causing a classnotfound exception when selecting an excluded item from the list and presumably this will affect the resubmission of the entity"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "20959",
+        "project": "IKASAN",
+        "summary": [
+            "reduce amount of info logging from dashboard"
+        ],
+        "description": [
+            "dashboard is currently logging a lot of info this will eventually eat all disk space and cause issues",
+            "for example"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "20860",
+        "project": "IKASAN",
+        "summary": [
+            "excluded event resubmission fails with meaningless error"
+        ],
+        "description": [
+            "i have problems resubmitting a textmessage via the dashboard i get the following error on the front end in the ikasan dashboard log in the modules log there are no exception message in either"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "20859",
+        "project": "IKASAN",
+        "summary": [
+            "ikasan-dashboard does not support https"
+        ],
+        "description": [
+            "server config in topologyu screen does not account for eai server being available on https port",
+            "currently one of our server is configured to us https the configuration did not allow me to fill in the protocol",
+            "further discovery did not work"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "20851",
+        "project": "IKASAN",
+        "summary": [
+            "ikasan configuration for namespaceuri is not currently supported"
+        ],
+        "description": [
+            "the namespaceuri is not currently a configuration option so the creation of the qname with a namespace is not created correctly",
+            "we need to add support for namespaceuri and namespace prefix to allow this to be specified at runtime"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "20757",
+        "project": "IKASAN",
+        "summary": [
+            "ensure the consumer is not restarted by the recovery manager when paused or stopped by the user"
+        ],
+        "description": [
+            "there are a number of circumstances where the consumer can be paused or stopped but the recovery manager activated and a retry invoked which restarts the consumer",
+            "when a consumer is paused or stopped we should not let the recovery manager restart it as part of exception recovery process"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "20754",
+        "project": "IKASAN",
+        "summary": [
+            "skin down the size of ikasan-dashboard projec"
+        ],
+        "description": [
+            "we need to skin down the size of the dashboard current war build is that is way too much the build war has libs see full list below",
+            "why do we need jetty and selenium browser drivers code amajewski ls lh total amajewski staff jun sep jul amajewski staff jun sep jul jun sep amajewski staff jun jul sep jun sep jun sep amajewski staff jul amajewski staff jun sep jun"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "20751",
+        "project": "IKASAN",
+        "summary": [
+            "database schema management"
+        ],
+        "description": [
+            "liquibase poc pros liquibase supports all the databases ikasan is currently bundled with cons sybase comes with the following disclaimer ase required",
+            "select into database option needs to be set",
+            "best driver is jtds",
+            "sybase does not support transactions for ddl so rollbacks will not work on failures",
+            "foreign keys can not be dropped which can break the rollback or dropall functionality",
+            "poc criteria introducing liquibase to a project where a baseline database already exists",
+            "defining the liquibase life cycle within ikasan",
+            "confirm that is fulfils required use cases add tables remove table alter tables add constraints remove constraints add data remove data confirm script failures leave a healthy database behind confirm all criteria against all flavours of databases supported by ikasan",
+            "if desired can data from one database to another initial poc implementaiton i have managed to get a very basic example of liquibase working as follows added the following files to the projects directory added the following spring bean to the file in the ikasan dashboard deploy the dashboard war to jboss",
+            "the liquibase spring bean gets fired when the ioc container starts and the liquibase change files get fired",
+            "if not created already liquibase also creates database tables databasechangelog and databasechangeloglock which it uses to track changes",
+            "subsequent releases of the dashboard war to not fire the database script changes",
+            "the addition of another change log file to the list above would get fire next time the dashboard was deployed",
+            "in order to address the need to start from an existing basline i exported the existing ikasan db using the command with the result as has also taken a look here implementation details the ikasan platform set up project has been and now delegates to liquibase in order to manage the database set up and maintenance for all current and future database requirements of ikasan",
+            "the project is structured as follows as liquibase is being added to a project with an existing database schema a few considerations have been made in order to assist with the transition to a new approach to managing the creation and maintenance of the ikasan database",
+            "ideas have been borrowed from liquibase recommendations the following approach has been taken the database has been base lined in a series of change log files with change sets restricted to granular database operations",
+            "the baseline change sets have been give a context of baseline as seen below preconditions have been added to all baseline scripts to check if the script can be run",
+            "if it can be run it will be and if it does not meet the precondition the change set will not run but the change log database table will be updated so that there will not be a future attempt to run the change set",
+            "all new change sets added to the project after the base line will be given a context of"
+        ],
+        "timespent": "432000",
+        "alpha": 100
+    },
+    {
+        "id": "20654",
+        "project": "IKASAN",
+        "summary": [
+            "allow optional fast fail on the failure of configuration of the objecttoxml jaxb validating converter"
+        ],
+        "description": [
+            "currently if any aspect of the configuration into the jaxb validating converter fails then the deployment of the integration module fails",
+            "we need to allow for optional configuration of a fast fail scenario on initial loading of the configuration",
+            "sometimes initial configuration failure is fine the loading of the schema as this will get addressed at runtime when the event hits"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "20450",
+        "project": "IKASAN",
+        "summary": [
+            "topology state cache"
+        ],
+        "description": [
+            "simple implementation underpinned by a hashmap"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "20071",
+        "project": "IKASAN",
+        "summary": [
+            "add local file system as a message provider in the off the shelf components"
+        ],
+        "description": [
+            "add a local file system message provider implementation which can be plugged into the scheduled consumer"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "20070",
+        "project": "IKASAN",
+        "summary": [
+            "official release"
+        ],
+        "description": [
+            "official release"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "20062",
+        "project": "IKASAN",
+        "summary": [
+            "default principal creation missing from detup code"
+        ],
+        "description": [
+            "i have added a call to create admin as part for the test to catch this in the future"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "20061",
+        "project": "IKASAN",
+        "summary": [
+            "highlight the specific failed persistence resource that failed on initial setup should this fail"
+        ],
+        "description": [
+            "currently we are just throwing a npe when we fail to find a resource in the sql properties on initial setup",
+            "change this to be specific as to the resource failure"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "20055",
+        "project": "IKASAN",
+        "summary": [
+            "can't highlight wiretap table without the modal box popping up"
+        ],
+        "description": [
+            "if you wish to highlight and select say the event id from the wiretap table it automatically pops up the modal box to show the wiretap",
+            "perhaps the modal box view should only appear on double click"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "20054",
+        "project": "IKASAN",
+        "summary": [
+            "should be possible to open in separate browser tab"
+        ],
+        "description": [
+            "the dashboard shows wiretap and possibly excluded events error events etc in a modal box",
+            "its useful sometimes to view different wiretaps to compare so it would be nice to be able to the wiretap modal box to a new tab from the modal view or the wiretap in the table and open it in new tab this will also allow individual errors/wiretaps to have their own url for direct access"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "19955",
+        "project": "IKASAN",
+        "summary": [
+            "review web console pointcuts and make them more focused"
+        ],
+        "description": [
+            "web console pointcuts are now more focused i tested the following web console functionality and all fine create user",
+            "grant authority",
+            "revoke authority",
+            "enable user",
+            "disable user",
+            "create wiretap",
+            "delete wiretap",
+            "create configuration",
+            "save configuration",
+            "delete configuration",
+            "start module",
+            "pause module",
+            "resume module",
+            "stop module",
+            "save startup control"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "19952",
+        "project": "IKASAN",
+        "summary": [
+            "point cut in webconsole conflicting with point cut in ikasan flow"
+        ],
+        "description": [
+            "the ikasan web console blue console performs some administrative functions",
+            "since the hibernate upgrade it is required to explicitly manage transactions for these administrative calls whereas the previous version with hibernate did not require this to be managed",
+            "as a result a point cut had been added to manage system events as this service is hit when start up of flows etc occur",
+            "however this clashed with an ikasan flow pointcut on the flow invoker",
+            "i have made the pointcut for the blue console more focused and this has resolved the issue",
+            "the same issue could occur for other services that are point cut in the blue console if used in flows",
+            "i thought that been diligent enough but obviously not",
+            "also we should probably move these point cuts into a more aptly named config file but the blue consoles days are numbered so is it worth doing"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "19857",
+        "project": "IKASAN",
+        "summary": [
+            "ensure any artefacts resulting from the build reference the versioned ikasan module in the manifest"
+        ],
+        "description": [
+            "ensure all ikasan artefacts which reference the ikasan runtime application server system actually include the version of what they should be referring to as this is pinned one to one with the actual version of the ikasan code base"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "19754",
+        "project": "IKASAN",
+        "summary": [
+            "when flow is disabled it is possible to a flow then start it",
+            "is this desirable"
+        ],
+        "description": [
+            "this is a bug",
+            "i think an existing jira may have been raised around this a while ago but this does need fixing"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "19662",
+        "project": "IKASAN",
+        "summary": [
+            "align developer archetypes with exclusion services"
+        ],
+        "description": [
+            "ensure the archetypes are updated and work with the latest version of services exclusion and error reporting"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "19659",
+        "project": "IKASAN",
+        "summary": [
+            "ikasan module discovery"
+        ],
+        "description": [
+            "create a discovery service as part of the topology module",
+            "dashboard continues to rely on topology tables for flow and component information",
+            "this allows them to remain visible even if the server module has failed",
+            "add administrator functionality to the dashboard to manually kick of the discovery service"
+        ],
+        "timespent": "129600",
+        "alpha": 100
+    },
+    {
+        "id": "19653",
+        "project": "IKASAN",
+        "summary": [
+            "enter key does not work on login model dialogue on dashboard"
+        ],
+        "description": [
+            "the popup model login dialogue does not allow the enter key to be used to submit the form"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "19652",
+        "project": "IKASAN",
+        "summary": [
+            "ldap stacking"
+        ],
+        "description": [
+            "implemented as per attached images",
+            "functionally complete but look and feel such as images may need to be tidied"
+        ],
+        "timespent": "345600",
+        "alpha": 100
+    },
+    {
+        "id": "19553",
+        "project": "IKASAN",
+        "summary": [
+            "exclusion service eventlifeidentifier can be mutated on flows containing splitters"
+        ],
+        "description": [
+            "the exclusion service centres around the consistent management of the eventlifeidentifier on the flowevent",
+            "this is immutable across all components apart from splitters/brokers which have the potential to mutate the eli",
+            "we need to ensure the exclusion can always get the originally assigned eli for an event in the flow"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "19474",
+        "project": "IKASAN",
+        "summary": [
+            "resubmission behaviour"
+        ],
+        "description": [
+            "i have been doing some testing and have observed some behaviour relating to the way that resubmission is currently working",
+            "i think this related to the way that the exclusion service is working in order to get a handle to the original message",
+            "here are my observations a message is injected into an ikasan flow with an exception thrown from a transformer in the flow",
+            "the message is excluded",
+            "the message is resubmitted from the dashboard",
+            "in the first instance an excludedevent exception is thrown back to the dashboard",
+            "interestingly a wiretap that is in the flow before the exception is thrown is logged to the db ie no rollback",
+            "i added a pointcut for the submit method but no change so need to look at this but this is a separate issue",
+            "the same excluded message is then resubmitted again",
+            "in this instance the dashboard does not receive another excludedevent exception and thinks the message was resubmitted",
+            "return to the excluded event screen in the dashboard and a new excluded event is created and the original one has been marked as resubmitted",
+            "in this case the wiretap is not in the db can you correlate this behaviour with the implementation of the exclusion service and the way it does the return trip in order to get a handle to the original message"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "19465",
+        "project": "IKASAN",
+        "summary": [
+            "allow jms consumer to be configured to provision the auto extraction of the payload content"
+        ],
+        "description": [
+            "added an autocontentconversion boolean to the genericjmsconsumer which when set to true to try to extract the content of the incoming jms message and pass this as the flowevent content rather than the full jms message",
+            "this currently supports textmessage objectmessge and mapmessage",
+            "streammessage bytesmessage and message are returned as is",
+            "by default this option is set to false on the jms configuration"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "19462",
+        "project": "IKASAN",
+        "summary": [
+            "jersey clashing with jboss web service sub system when using ikasan skinny war"
+        ],
+        "description": [
+            "caused by only one application class allowed"
+        ],
+        "timespent": "50400",
+        "alpha": 100
+    },
+    {
+        "id": "19459",
+        "project": "IKASAN",
+        "summary": [
+            "remove expiry and housekeeping from the excludedevents",
+            "only blacklists should be housekept not the business data"
+        ],
+        "description": [
+            "we should never expiry business data which is on the excluded list",
+            "this needs a purposeful action not an automatic cleanup"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "19457",
+        "project": "IKASAN",
+        "summary": [
+            "database persistence of serialised exclusion and error occurrence events is being corrupted"
+        ],
+        "description": [
+            "this corruption of the byte only seems to happen when hitting need to investigate the hibernate config and db types"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "19356",
+        "project": "IKASAN",
+        "summary": [
+            "flowfactorytest fails with java"
+        ],
+        "description": [
+            "abstractflowconfiguration line values of hashmap guarantees no order but flowfactorytest checks for order as no order is specified for these data structures this is theoretically a problem in java as well",
+            "but it just comes up with java where the old order from previous java version is not guaranteed anymore",
+            "anybody relying on that will get failures",
+            "you can even get this with the more strict ibm java vm where items in this collections have random order",
+            "be aware that this is a general matter and that build might fail with similar things with java in regard to ordering in collections and other structures",
+            "possible solutions a use sorted data structures or b make the unit test not relying on the order",
+            "solution a might need a lot more work and without having a requirement to use sorted structures i would not recommend it",
+            "i would prefer to go with solution"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "19354",
+        "project": "IKASAN",
+        "summary": [
+            "hospital service"
+        ],
+        "description": [
+            "add the below file to the ear of you ikasan module at location make sure you change the dependency of the connector you are using to one that has the interface implemented on it",
+            "this has been done for all consumers in ikasan as well as the esb generic jms jca connector",
+            "in all of your beans add the following property name resubmissionservice ref goldensourceassetconsumer obviously the reference will be to the consumer of the associated flow",
+            "finally add the resubmission point cut file to your loader"
+        ],
+        "timespent": "561600",
+        "alpha": 100
+    },
+    {
+        "id": "19353",
+        "project": "IKASAN",
+        "summary": [
+            "provide kryo serializer for jms textmessage and mapmessage"
+        ],
+        "description": [
+            "we found a problem with default kryo serialiser trying to serialise hornetq jms message when performing exclusion",
+            "to fix that we need to implement new kryo serialisers to explicitly serialise jms messages",
+            "for jms text message we should only serialise the text payload jms map message we should extract the messages map and serialise the map"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "19252",
+        "project": "IKASAN",
+        "summary": [
+            "wiretap trigger save fails in blue console hibernate spring"
+        ],
+        "description": [
+            "the following exception is seen when saving a wiretap trigger from the blue console"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "19151",
+        "project": "IKASAN",
+        "summary": [
+            "upgrade the spring and hibernate versions to the latest available"
+        ],
+        "description": [
+            "ikasan has been upgraded to use the following versions of hibernate and spring",
+            "hibernate spring generally the upgrade has gone smoothly apart from a few missed references as well as a regression of some of the functionality in the web console",
+            "however this regression has now been rectified",
+            "web console issues with new versions of hibernate and spring the following exception was being thrown when trying to write data to the database via the webconsole solution applied the open session in view filter pattern to the web console project",
+            "this allows us to maintain hibernate session per request and also to allow the hibernatetransactionmanager to manage the hibernaresession flush mode thus allowing data to be written to the database",
+            "see this was achieved as follows added the following to define the hibernatetransactionmanager and to point cut on the security service layer",
+            "this allows the transaction manager to change the flush mode when writing to the database",
+            "added the following filter to"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "19050",
+        "project": "IKASAN",
+        "summary": [
+            "mapping service is generating sql via hibernate that contain cross join syntax",
+            "sybase does not support cross join'"
+        ],
+        "description": [
+            "this issue is described in the hibernate jira resolution i updated hibernate to the following version upated all spring dependencies to the following version with the above libraries the hibernate session no longer flush automatically and we need to pointcut our dao and service layer in order for this to occur",
+            "i added the pointcut in the substitute components file that gets pulled into the tests",
+            "any reference to the package to in both xml and java will need to be replaced with"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "18953",
+        "project": "IKASAN",
+        "summary": [
+            "remove mappingconfigurationserviceimpl dependency on keylocationqueryprocessorfactory"
+        ],
+        "description": [
+            "this method is no longer required on two grounds historically this method hasnt been used with people prefering to provide the sourcesystem string or strings directly either by calling from within xsl or java the byte payload is an incorrect type definition for with a generic payload type being preferred will keep the keylocationqueryprocessor code in place should this need to be used by the platform in future"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "18754",
+        "project": "IKASAN",
+        "summary": [
+            "create standard maven archetypes for integration module project creation"
+        ],
+        "description": [
+            "we should have standard maven archetypes for creating skeleton integration module projects and associated build dependency management projects"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "18751",
+        "project": "IKASAN",
+        "summary": [
+            "scheduledconsumer not adhering to recovery schedule on recovery"
+        ],
+        "description": [
+            "this is a problem with the recovery manager assuming that just calling start on a consumer will cleanly start it after a retry action schedule or delay",
+            "however calling start on the scheduledconsumer doesnt actually start the consumer but schedules the callback of the consumer",
+            "a quick workaround for this is for the rm to check to see if the supported consumer implements job denoting a quartz driven scheduled if so then callback on execute rather than the start",
+            "once recovered restore the normal business schedule by a longer term more abstract fix would be to provide a proxy for each consumer as a recovery coordinator",
+            "this may be overkill if this is an isolated incident purely with scheduled based consumers"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "18555",
+        "project": "IKASAN",
+        "summary": [
+            "scheduled consumer not cancelling recovery properly"
+        ],
+        "description": [
+            "if a scheduled consumer goes into recovery it will only update the flow status from recovering running when an event hits the flow invoke",
+            "for processes or ones which rarely receive events the flow stays in recovering status even though the scheduled consumer is executing the messageprovider correctly",
+            "this could be in recovery for hours",
+            "the cause of this is the messageprovider returning null thus the flow is never invoked even though the underlying managedresources are running",
+            "we need a better mechanism to determine if a scheduled consumer is recovered correctly"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "18554",
+        "project": "IKASAN",
+        "summary": [
+            "remove deprecated module for consumer implementations"
+        ],
+        "description": [
+            "this has now been migrated into components"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "18453",
+        "project": "IKASAN",
+        "summary": [
+            "create messagehistory functionality"
+        ],
+        "description": [
+            "message history is a useful tool for debugging tracing and checking performance bottlenecks either within a single flow or across multiple flows and modules",
+            "we have wiretap but its not straight forward to consolidate an event into one stream of processing that event",
+            "ikasan has the flowinvocationcontext that is used in a flow to maintain the current state this should be extended to allow for switchable stats gathering",
+            "an additional improvement would be the ability to persist this context"
+        ],
+        "timespent": "432000",
+        "alpha": 100
+    },
+    {
+        "id": "18257",
+        "project": "IKASAN",
+        "summary": [
+            "official release for"
+        ],
+        "description": [
+            "official release cut for"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18252",
+        "project": "IKASAN",
+        "summary": [
+            "add restful interfaces and clients to ikasan"
+        ],
+        "description": [
+            "there needs to be a clean and consistent way of controlling ikasan modules remotely",
+            "a rest interface should be provided this offers benefits over the current interface provided by the webconsole war",
+            "reasons ease of scripting writing clients that administer ikasan replace messy hard to maintain sql scripts for configuring ikasan modules the replacement console gui needs a clean and consistent interface into ikasan modules can provide standard rest security basic authentication over the more tricky to handle form based authentication the current webconsole is not a standard rest client so cannot easily be used by standard libs e.g spring resttemplate suggested areas of work expose the management interface via rest expose other useful interfaces via rest e.g wiretap startuptype provide client lib for the rest services provide script execution framework for ikasan which will make client calls specified in a script framework can be agnostic to script language scala groovy etc"
+        ],
+        "timespent": "259200",
+        "alpha": 100
+    },
+    {
+        "id": "18053",
+        "project": "IKASAN",
+        "summary": [
+            "allow messagelistener to provide a more generic exception definition type for onexception"
+        ],
+        "description": [
+            "currently the onexception forces throwable on the argument",
+            "this is not always practical as the client may have already defined a more explicit exception which we dont want to dumb down so allow the exception parameter to be any extension of throwable"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "17850",
+        "project": "IKASAN",
+        "summary": [
+            "default vanilla implementation of a multi-recipient router for recipient list"
+        ],
+        "description": [
+            "the contract for a mr router is in place but there is no default vanilla implementation for a simple recipient list router which just returns as list of recipients to be invoked as setup on the constructor"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "17351",
+        "project": "IKASAN",
+        "summary": [
+            "need to ensure ikasan is useable after reboot of appserver and datasource boxes"
+        ],
+        "description": [
+            "exception seen prevents context of deployed apps from loading two initial resolution actions i",
+            "add exception handling to moduleinitialisationserviceimpl.java after properties set initialisemodulesecurity call ii",
+            "remove the classloaddloadleakcleaner until we have a fully stable environment"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "17050",
+        "project": "IKASAN",
+        "summary": [
+            "allow wiretap and error tables to store text payloads on sybase"
+        ],
+        "description": [
+            "payload columns in the wiretap table does not support on sybase if the db is set to attempting to store a payload with characters not in the character set throws the following exception"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "16554",
+        "project": "IKASAN",
+        "summary": [
+            "user management console orange console does not currently support ldap for authentication/authorisation"
+        ],
+        "description": [
+            "after the port from ikasan version to ldap authentication for the orange console was not initially ported",
+            "we should update the console to support ldap authentication",
+            "ideally this should be a configurable aspect of the console to allow switching of authentication mechanisms database ldap etc"
+        ],
+        "timespent": "39600",
+        "alpha": 100
+    },
+    {
+        "id": "16552",
+        "project": "IKASAN",
+        "summary": [
+            "genericflowevent recursively calling tostring causes stackoverflowexception"
+        ],
+        "description": [
+            "possible bug resulting in exception below if you create a broker that accepts and returns generic t or just returns at least a flowevent then the visitor manages to eventually blow the stack by setting the flow event to itself",
+            "this in itself doesnt cause the problem but the tostring method on the genericflowevent appends payload which recursively calls tostring on itself",
+            "or then this line in the visitingflowelementinvoker sets the flow event to itself there are a few of these line and internally ikasan may be calling tostring on the flowevent at some point which then causes the problem",
+            "work around is not to implement a broker that returns flowevent or accepts generic type fix could be simple in the visitor instead of just or you could have an overloaded method on the genericflowevent that allows you to set a flowevent on itself by pulling out the internals and setting payload and identifier internally"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "16450",
+        "project": "IKASAN",
+        "summary": [
+            "extend the flow functionality to include an immediate pause of the consumer on start of the flow"
+        ],
+        "description": [
+            "currently flows can be stopped started this invokes on all managed resources in the flow and this invokes on just the it would be hugely beneficial to be able to start the flow all managed resources with the consumer initially this can simply be added as another operation on the flow of"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "16350",
+        "project": "IKASAN",
+        "summary": [
+            "add an embeddedmongo test class to help test flows that use the mongobroker"
+        ],
+        "description": [
+            "when testing flows that use the mongo broker its convenient to be able to use an embedded mongo instance",
+            "this helper class can be used to ensure only a single mongo instance is used for all tests rather than a new one being created each time",
+            "it also allows the user to use a mongo distribution that is available locally rather than downloading from the internet",
+            "this is useful where such downloads are blocked for instance on jenkins bamboo build machines"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "13350",
+        "project": "IKASAN",
+        "summary": [
+            "wiretap persistence parameters not validating correctly"
+        ],
+        "description": [
+            "changes to the expression language specification and spring implementation of such requires very minor tweaks to el definitions",
+            "form assignment variables for map binding now require to be enclosed in quotes"
+        ],
+        "timespent": "172800",
+        "alpha": 100
+    },
+    {
+        "id": "12252",
+        "project": "IKASAN",
+        "summary": [
+            "failure on notification of the monitor causes the flow to fail"
+        ],
+        "description": [
+            "notification of the business flow status to the registered monitor is causing the flow to fail when the monitor is not available",
+            "this should not cause flow failure but simply be logged",
+            "business flow should continue unhindered"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10822",
+        "project": "IKASAN",
+        "summary": [
+            "ensure scheduled quartz triggers are removed and as new on an initiator"
+        ],
+        "description": [
+            "currently quartz triggers are simply paused and resumed on the of the initiator",
+            "really these triggers should be completely unscheduled and scheduled on a this will allow any configuration changes in the triggers as part of the flow configuration to take effect on an initiator"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10729",
+        "project": "IKASAN",
+        "summary": [
+            "make the monitoremailnotifier configurable for the alerted status and email recipients"
+        ],
+        "description": [
+            "currently the monitoremailnotifier only notifies the specified email when a flow is stoppedinerror in reality some modules should also notify when specific flows have changed state simply stopped rather than stoppedinerror it is also a requirement to ensure that multiple recipients can be specified within the sendto setter"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "10727",
+        "project": "IKASAN",
+        "summary": [
+            "ikasan license header standardisation has caused xml files to become invalid not as pi must be the first line in the file"
+        ],
+        "description": [
+            "this has been noticed on the xml files in the webconsole module but all xmls and most probably jsp files should be checked for correctness"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "10722",
+        "project": "IKASAN",
+        "summary": [
+            "webconsole is missing the environment property bean creation"
+        ],
+        "description": [
+            "this property is available in the ikasan.properties file as dropped to the application server however it is not currently being read into a springbean construction",
+            "this simply requires adding to the environment context spring configuration"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "10704",
+        "project": "IKASAN",
+        "summary": [
+            "provide compatibility between events generated in version and of ikasan"
+        ],
+        "description": [
+            "the ikasan data domain changes to event and payload now mean that events generated by modules on ikasan are not compatible for consumption with modules on ikasan there are a number of ways this can be addressed",
+            "provide an optional converter implementation to the initiator",
+            "this converter can provide a module specific implementation allowing the module to define how to deal with the differences in the ikasan versions",
+            "a default converter implementation can be provided to cover the most common scenario",
+            "pros each module can specifically deal with this gap as they need to",
+            "cons each module will require a converter if the default converter does not suit",
+            "update the event definition to accommodate additional optional attributes and copy the attributes to regardless",
+            "pros do not need to develop any module specific converters",
+            "cons takes all the baggage of into and defeats the point of skinnying the event down",
+            "ignore all attributes from pros no development",
+            "cons we may lose some value in specific attributes not be taken over",
+            "based on the three options above it seems that option a converter will provide the most flexible route for this migration and future migrations between versions"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "10699",
+        "project": "IKASAN",
+        "summary": [
+            "allow default component configuration to be sourced from the components configuration bean see for initial requirement"
+        ],
+        "description": [
+            "on creation of an initial component configuration via the webconsole for marked configuredresources allow the population of fields form any defaults specified on the configuration bean model"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "10688",
+        "project": "IKASAN",
+        "summary": [
+            "create and deploy ikasan.org ikasan.com web site pages"
+        ],
+        "description": [
+            "org deployed"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "10681",
+        "project": "IKASAN",
+        "summary": [
+            "merge ikasan test project from back onto trunk"
+        ],
+        "description": [
+            "merge the ikasan test project back on to trunk to allow for the incompatibilities between the event definition of and to be accommodated"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "10680",
+        "project": "IKASAN",
+        "summary": [
+            "expectation execution position text is being incorrectly formatted when reporting the expectation executed"
+        ],
+        "description": [
+            "when each expectation is recorded as part of the test flow harness setup the expectation order is prepended to the description to aid troubleshooting when the test fails",
+            "this simply uses the position of the expectation in the array list and adds however as this is in a formatted string its converting to a string and appending rather than calculating then appending",
+            "simple fix is to bracket the evaluation to ensure order of precedence of calculation followed by string formatting"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "10673",
+        "project": "IKASAN",
+        "summary": [
+            "split platform and code into jar and war components"
+        ],
+        "description": [
+            "the spring configuration and java code are not easily testable as there is no jar component to run against"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "10672",
+        "project": "IKASAN",
+        "summary": [
+            "ability for initiators to invoke existing lifecycle hooks on resources used within flow components"
+        ],
+        "description": [
+            "at present resources on the left side of the initiator which have lifecycles such as a jca connector are accessible via the initiator as the initiator has a handle on that resource",
+            "this allows these resources to be stopped and started by the initiator as required",
+            "resources on the right hand side of the initiator are not known by either the initiator or the flows that encompass components utilising those resources hence those resources are not managed within the scope of an initiator the attached diagram currentflowimplementation.jpg provides an overview of this",
+            "this creates problems when trying to stop resources used by components in the flow such as connections to external systems",
+            "the only effective way to stop these is either via the jmx console by removing connections from their pool or by bouncing the application server",
+            "both are less than ideal",
+            "there are a number of options which can address this issue",
+            "however we really want to keep the initiator as the controller of the flows therefore the initiator should really be calling a start managed resource and stop managed resources on a flow as part of the initiator accordingly",
+            "below are two lightweight approaches which differ only slightly in their implementation",
+            "add startmanagedresources and stopmanagedresources to the flow interface",
+            "each of these methods can be called by the initiator on the existing initiator methods",
+            "care should be taken to ensure flow resources are started before the initiator starts its own resources and conversely stops its own resources before stopping the flow resources",
+            "within the flow implementation any flow components marked with the new managedresource interface will have startmanagedresource and stopmanagedresource called appropriately",
+            "this allows for only the flow components specifically marked by the developer as having a managedresource to be managed in this way",
+            "exactly the same as option above but rather than adding to the existing flow interface create another managedflow interface with the new startmanagedresources and stopmanagedresources methods",
+            "although this creates a clearer distinction between a management operation and a business event operation it adds complexity to the implementation that is not otherwise required",
+            "option is the selected approach with option easily migrated to should we need to make this distinction",
+            "the attached diagram updatedflowimplementation.jpg details the additions described in red"
+        ],
+        "timespent": "172800",
+        "alpha": 100
+    },
+    {
+        "id": "10668",
+        "project": "IKASAN",
+        "summary": [
+            "remove dependency on from test"
+        ],
+        "description": [
+            "the simplexsltransformertest is directly invoking the transformerfactoryimpl to create a new transformerfactory instance rather than the contracted interface",
+            "remove this dependency to allow the transformerfactory to be used rather than its direct implementation"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "10630",
+        "project": "IKASAN",
+        "summary": [
+            "file comment part of the ikasan code template isn't working once imported in to the ide eclipse as expected"
+        ],
+        "description": [
+            "in the code template xml id url are not getting parsed hence the filecomment part not included in the new source files created"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "10618",
+        "project": "IKASAN",
+        "summary": [
+            "merge into trunk"
+        ],
+        "description": [
+            "needs to be done extremely carefully as several fixes should not go across"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "10595",
+        "project": "IKASAN",
+        "summary": [
+            "ikasan filter module does not currently provision for checked filterentryconverter exceptions"
+        ],
+        "description": [
+            "the filter entry converter interface does not currently allow for checked exceptions to be thrown therefore only runtime exceptions are currently supported",
+            "this will be problematic if an implementation of the filter within a business module fails when creating the filter entry usually based around data in the incoming leaving this to or will result in the flow getting blocked on one event",
+            "provisioning for a checked exception will allow the developer to configure the flow to skip filter entry issues caused by data",
+            "for example add a filterentryconverterexception to the filter package and defined this as a throwable from the filterentryconverter.convert interface definition",
+            "all classes are self contained under the filter project"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "10526",
+        "project": "IKASAN",
+        "summary": [
+            "strengthen the unit test cases around the wiretapevent object"
+        ],
+        "description": [
+            "wiretapevent is currently missing specific test cases on the date update field which would ensure the test fails if this update field is removed",
+            "this test is being strengthened as part of a demo working group task to walk new graduates through open source project management and participation"
+        ],
+        "timespent": "300",
+        "alpha": 100
+    },
+    {
+        "id": "10486",
+        "project": "IKASAN",
+        "summary": [
+            "ikasan exceptionhandler needs to log the full stacktrace of the thrown exception"
+        ],
+        "description": [
+            "summary all exception handling within ikasan should follow the pattern of catch and deal with it or catch and throw up the stack an exception has crept into many places in the code where we catch an exception log it then it",
+            "this results in repeated stacktraces in the log which simply become noise the other extreme of this problem is that we sometimes log nothing i.e we the exception up the stack to ultimately be dealt with by the exceptionhandler",
+            "the exceptionhandler resolves this exception on to an appropriate action which is returned to the caller",
+            "however at no point is the stacktrace logged",
+            "this makes support quite tricky",
+            "proposed solution the exceptionhandler is the catch all point for any exceptions in ikasan so we should log the stacktrace as the first operation of the exceptionhandler",
+            "for example a simple logger statement will suffice",
+            "logger.info handling exception thrown this may initially result in multiple logging of the same stacktrace however this should be resolved as the exception is refactored out of the offending code moving forward"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "10479",
+        "project": "IKASAN",
+        "summary": [
+            "remove individual ikasan project release notes and replace with jira created project wide release notes"
+        ],
+        "description": [
+            "summary currently each ikasan project has an associated release notes text file detailing the changes made to that project",
+            "this was originally introduced prior to jira to track drivers to changes for the project however this is not always kept up to date and is hard to match back against ikasan jira",
+            "solution we will use the generated ikasan jira release notes and ensure these are packaged ikasan project wide for each release",
+            "the existing release notes text files will be deleted",
+            "care must be taken to always create and package these jira generated release notes as part of the official project release"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10478",
+        "project": "IKASAN",
+        "summary": [
+            "merge customer patch branch into"
+        ],
+        "description": [
+            "merge the emergency fixes released in customer patch back into the main branch"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10476",
+        "project": "IKASAN",
+        "summary": [
+            "quick fix to alleviate immediate ftp connection pooling of bad connections"
+        ],
+        "description": [
+            "quick fix i have simply changed the transactionalcommandconnection to mark all connections as unpoolable should any exception be thrown back to the transactionalcommandconnection",
+            "this has the unfortunate side effect of unnecessarily removing connections throwing exceptions that would still have been good but this is better than leaving bad connections in for which would result in a server bounce to clear",
+            "this quick fix has only been released for a specific customer as"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "10468",
+        "project": "IKASAN",
+        "summary": [
+            "ftp connector not checking replycode after connection"
+        ],
+        "description": [
+            "ftp jca connector is not checking the replycode after the connection to the remote ftp server",
+            "this is a slightly odd one in the fact that i would not have expected us to have to check this as the ftp client connect either works or it doesn't the latter case resulting in an exception",
+            "anyway apache example code and docs always recommend this replycode be checked after connection"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10467",
+        "project": "IKASAN",
+        "summary": [
+            "ftp connector not defaulting to passive mode"
+        ],
+        "description": [
+            "found a very subtle but nasty bug in the ftp jca connector where we are setting the mode of the ftp connection before we connect to the remote ftp server",
+            "this setting is only effective if set after connection to the remote ftp server",
+            "the nature of this bug is subtle in the fact it will only really present itself when there is a firewall between the ftp server and our ftp connector or any form of ip nating",
+            "when either of these scenarios occur we must use passive ftp mode both command and data ports are initiated from the client side and this mode must be set after we are connected to the remote ftp server"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10462",
+        "project": "IKASAN",
+        "summary": [
+            "filetrransferprotocolclient doesn't logout before disconnecting"
+        ],
+        "description": [
+            "fix can be put in the disconnect method",
+            "is probably wise to check the return code and deal with exceptions as well so we get extra info about how we're interacting with ftp servers"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10410",
+        "project": "IKASAN",
+        "summary": [
+            "remove empty java source package from common"
+        ],
+        "description": [
+            "the package was left as an oversight after the tools were moved out of common into their own area",
+            "simply delete this empty package"
+        ],
+        "timespent": "300",
+        "alpha": 100
+    },
+    {
+        "id": "10408",
+        "project": "IKASAN",
+        "summary": [
+            "jms jca based initiator hung on a"
+        ],
+        "description": [
+            "the new jca based jms initiator seems to have hung on a rollback/recovery cycle when creating the anesthetist thread",
+            "this behaviour is very intermittent only happened once in four weeks of testing",
+            "the scenarios was based on jms subscriber ftp connector",
+            "the ftp connector failed due to too many user logins error code and caused a correct behaviour",
+            "the correctly created the anesthetist thread but this thread was either never started or never returned as the initiator never came back to retry the event",
+            "have tried to the issue in development by giving a bad ftp host but the initiator responds correctly by creating the anesthetist sleeping for the given period and subsequently retries"
+        ],
+        "timespent": "864000",
+        "alpha": 100
+    },
+    {
+        "id": "10406",
+        "project": "IKASAN",
+        "summary": [
+            "new message driven initiator based on spring's jca jms message endpoints part"
+        ],
+        "description": [
+            "spring's jmsmessageendpointmanager is a messagelistener container and will behave in the same manner as ejb mdbs",
+            "from initial tests they will resolve some of the problems we are having with the current defaultmessagelistenercontainer implementation namely performance drag the new initiators will consume approximately messages per second",
+            "the current mdp initiator consumes messages a second",
+            "message order is maintained in a normal delivery cycle when they are stacked on a jms destination",
+            "in this scenario the current mdp initiator will transverse the stack of messages in bidrectional order first then last second then second to last etc",
+            "think doubly linked lists"
+        ],
+        "timespent": "1209600",
+        "alpha": 100
+    },
+    {
+        "id": "10379",
+        "project": "IKASAN",
+        "summary": [
+            "mysql tables do not tear down properly in table creation script"
+        ],
+        "description": [
+            "die to a foreign key constraint"
+        ],
+        "timespent": "300",
+        "alpha": 100
+    },
+    {
+        "id": "10354",
+        "project": "IKASAN",
+        "summary": [
+            "port svn from sourceforge to atlassian hosting"
+        ],
+        "description": [
+            "port the ikasaneip svn repository from sourceforge over to be hosted by atlassian",
+            "this should allow ikasan to avail itself of more granular svn permissioning and other atlassian products such as fisheye"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "10339",
+        "project": "IKASAN",
+        "summary": [
+            "change platform initialisation to not start the platformscheduler if configured in environmentalisation"
+        ],
+        "description": [
+            "the platformscheduler is a quartz scheduler instance that is instantiated and started by the webconsole during initialisation",
+            "we want to be able to configure at an environmentalisation level for this scheduler not to be started by default",
+            "it should still be startable manually through the console see"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10338",
+        "project": "IKASAN",
+        "summary": [
+            "add buttons to the platform scheduler to allow manual stopping and starting of this service"
+        ],
+        "description": [
+            "the webconsole loads up a number of platform services on initiatlisation to provide a base platform on which to run modules",
+            "one of these services is the platform scheduler to which we generally deploy housekeeping tasks etc",
+            "there is a screen in the webconsole under the admin secion that allows this to be inspected but nothing more",
+            "we would like to add buttons to this screen to allow the platform scheduler to be stopped and started"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "10337",
+        "project": "IKASAN",
+        "summary": [
+            "improve maintenance and performance of housekeeping"
+        ],
+        "description": [
+            "currently the platformscheduler webconsole is started on initialisation and cannot be stopped/started through the console",
+            "ideally we would like management functionality to stop and start this at runtime",
+            "lets add this feature for starters",
+            "additionally in common deployment scenarios we have several ikasan applications deployed and running against a shared ikasan database",
+            "each of the running applications have their own housekeeping tasks registered its own platformscheduler for cleaning up data in this database",
+            "in this scenario this is overkill housekeeping",
+            "only one of the running instances needs to fire the housekeeping job as the housekeeping functions tend to clean up all expired data rows regardless of who created them",
+            "ideally it would be great to be able to statically configure each registered task on a per application basis",
+            "however because the only tasks we currently register with the platformscheduler are housekeeping ones then for now we can probable get away with just configuring the platformscheduler itself on a per server basis"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "10334",
+        "project": "IKASAN",
+        "summary": [
+            "mysql ikasanwiretap sql table definition is incorrect",
+            "it should mirror the sybase ikasanwiretap sql table definition"
+        ],
+        "description": [
+            "mysql version of the ikasanwiretap table creation script fields are incorrectly defined apart from the dates everything is defined as a major stumbling block when using the mysql version is that the payloadcontent of wiretapped events regularly exceeds the mysql version should be changed to match the field definition of the sybase equivalent"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "10311",
+        "project": "IKASAN",
+        "summary": [
+            "file based connector delivery bug when file exists on target system and overwrite is set to false"
+        ],
+        "description": [
+            "to be confirmed but i believe a bug has been introduced into the file delivery aspect shared by both the ftp and sftp connectors",
+            "the file delivery has two methods called to coordinate the transactional delivery of a file",
+            "performexecute is the first method invoked within the execution of the flow",
+            "when called it delivers a temp file to the file system if that temp file does not already exist",
+            "if it does exist and the overwrite flag is set to true then it is simply overwritten",
+            "if the overwrite flag is set to false then it will correctly rollback and rety or whatever action is docommit is the second method invoked but not directly within the flow it is invoked by the transaction manager",
+            "this method renames the temp file to the real file name if the file exists and overwrite is true then the file is simply overwritten",
+            "if the overwrite is false then an exception is thrown back to the transaction manager",
+            "problem here is that a the transaction manager will not retry a commit it will simply rollback the whole transaction and b a previously raised issue refers to the file connectors not recovering correctly so we are left with a stopped flow outcome potentially heuristic which requires manual intervention",
+            "resolution would ideally be to sort out the transaction recovery however this may not be so simple",
+            "a quick work around would be to check for both the temp file name and the real file name on the initial performexecute if the overwrite is false",
+            "note this is only an issue when the overwrite is false"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10300",
+        "project": "IKASAN",
+        "summary": [
+            "file based ftp connector performance issues"
+        ],
+        "description": [
+            "a number of performance issues have been noticed in the ftp target connector when delivering files to a remote ftp server when that ftp server has a large number of files in the remote directory",
+            "specifically this issue arises in the deliverfilecommand class which performs the function of streaming the file to the destination as a temp file running various checks for delivery then renaming the temp file on commit of the transaction",
+            "there are a few performance issues here which can be mitigated by reducing unnecessary remote operations",
+            "specifically a reduction in the remote file listing will significantly improve performance when the remote system has large number of files"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "10285",
+        "project": "IKASAN",
+        "summary": [
+            "realign svn to remove blocker development currently on trunk"
+        ],
+        "description": [
+            "currently trunk has a major feature for resubmission in development that in hindsight should have been created as a feature branch",
+            "this feature is blocking minor updates to trunk and causing major issues in merging other branches back onto trunk",
+            "this needs to be resolved by moving the trunk into a feature branch and realigning trunk based on our current branch for our virtual steps to resolve this issue inform all of the action being undertaken as a they may have work that needs committing and b their sandboxes should be trashed and after this work rename the current trunk to rename the current branch to trunk take this opportunity to add a project layer ikasaneip to trunk branch trunk for resubmission-feature delete the branch and create a new branch email community",
+            "subsequent alignment of dirty resubmission branch to resubmission-feature branch will be completed by developers working on this feature"
+        ],
+        "timespent": "3660",
+        "alpha": 100
+    },
+    {
+        "id": "10282",
+        "project": "IKASAN",
+        "summary": [
+            "user registration"
+        ],
+        "description": [
+            "it would be nice to provide the ability for a user to change their own password at the login screen"
+        ],
+        "timespent": "172800",
+        "alpha": 100
+    },
+    {
+        "id": "10278",
+        "project": "IKASAN",
+        "summary": [
+            "web page for contributor license agreement click acceptance"
+        ],
+        "description": [
+            "create a simple web page publishing the cla and associated fields for population",
+            "this will allow contributors a acceptance of this agreement",
+            "point click of this agreement will result in the formatted agreement being sent to email address to later be changed to"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "10261",
+        "project": "IKASAN",
+        "summary": [
+            "distrinction in svn between ikasan platform projects and other"
+        ],
+        "description": [
+            "currently the structure under svn has the standard layout and assumes that all projects under svn are ikasan projects related to the platform",
+            "however this is not always going to be the case",
+            "we already have tools which are currently in aspects of the ikasan projects which should not be there and need splitting out into their own projects a tools project",
+            "additionally when we start producing integration solutions they are built on ikasan but not part of the ikasan platform and should exist in their own svn location",
+            "to accommodate this we simply need to introduce a grouping layer after the svn trunk",
+            "for instance the above svn urls are part of the ikasan platform and could therefore be represented in svn grouped as such this allows for other distinct groupings for tools and project integration solutions this should also make branching and tagging clearer as we would at ikasan"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "10248",
+        "project": "IKASAN",
+        "summary": [
+            "remove updateddatetime from ikasanwiretep dao and database schema"
+        ],
+        "description": [
+            "currently the ikasan wiretaps have a createddatetime and an updateddatetime",
+            "i believe the updateddatetime is an overhang from an original development and is not actually required as wiretaps are immutable once created",
+            "the updateddatetime should be removed"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "10247",
+        "project": "IKASAN",
+        "summary": [
+            "fop warnings in documentation downloading using maven"
+        ],
+        "description": [
+            "i tried to build ikasan documentation some fop warnings are coming"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10196",
+        "project": "IKASAN",
+        "summary": [
+            "improve maven pom chaining"
+        ],
+        "description": [
+            "have a nice parent pom for the project and a parent pom for the connectors etc"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "10171",
+        "project": "IKASAN",
+        "summary": [
+            "standardise our dao pattern usage across ikasaneip"
+        ],
+        "description": [
+            "we have multiple components that use a dao pattern but that pattern is different between the components",
+            "this should be rationalised",
+            "currently our usage of persistance classes is inconsistent across the application",
+            "our standard shoud cover at least cleanly separated dao interfaces any hibernate implementations extending from a basehibernatedao class cleanly injecting hibernate session factory naming of model objects and their properties a common unit of work when dealing with opening closing committing etc hibernatesession management of identity fields defined interface for throwing exceptions and probably more"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "10167",
+        "project": "IKASAN",
+        "summary": [
+            "create docbook version of developers guide"
+        ],
+        "description": [
+            "includes naming standards much of the information we currently have on the wiki"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "10162",
+        "project": "IKASAN",
+        "summary": [
+            "remove event searching from webconsole as its moved to the global console"
+        ],
+        "description": [
+            "web console should not longer allow the deprecated search mechanism for searching wiretap events now that the global console has this feature"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "10154",
+        "project": "IKASAN",
+        "summary": [
+            "quazrtz scheduled driven initiator is not notifying the monitors after successful recovery"
+        ],
+        "description": [
+            "all initiators have registered monitors which are notified of initiator status changes running recovering error the quartz scheduled driven initiators are not notifying the monitors when they have successfully recovered within a recovery cycle",
+            "this functionality should be implemented within the class to ensure all monitors inherit this behaviour automatically this is the case for the initiator stop and startrecovery cycles",
+            "note the messagedriven initiator should be checked to remove any unnecessary monitor notifications if implemented on the parent class",
+            "as usual all unit test cases should be updated to reflect the bug prior to applying the fix"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "10146",
+        "project": "IKASAN",
+        "summary": [
+            "add parent pom.xml for documentation component"
+        ],
+        "description": [
+            "this will allow us to build the documentation project from that base level"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "10143",
+        "project": "IKASAN",
+        "summary": [
+            "new global web console"
+        ],
+        "description": [
+            "the existing web consoles are only able to deal with ikasan eip artifacts within their module usually scoped by an ear it was decided that especially for wiretap searching and for administration of users that there should be a global web console built"
+        ],
+        "timespent": "691200",
+        "alpha": 100
+    },
+    {
+        "id": "10140",
+        "project": "IKASAN",
+        "summary": [
+            "svn properties not set correctly on properties files with a further suffix",
+            "requires manual addition"
+        ],
+        "description": [
+            "have not had the default svn properties eol and keywords added",
+            "this is becuase their suffix is not properties",
+            "this is more of an annoyance when checking out cross unix windows platforms"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "10127",
+        "project": "IKASAN",
+        "summary": [
+            "ikasan architecture diagrams"
+        ],
+        "description": [
+            "port reformat and update the existing diagrams to support the current open sourced version of ikasan"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "10094",
+        "project": "IKASAN",
+        "summary": [
+            "provide an eclipseide ikasan code template license etc for new files"
+        ],
+        "description": [
+            "check in the eclipse code format template to ikasaneip svn update the wiki under the ide standards for reference this template"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "32209",
+        "project": "IKASAN",
+        "summary": [
+            "ensure any sensitive configuration properties such as passwords are marked as masked for obfuscation on the console and dashboard"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "32184",
+        "project": "IKASAN",
+        "summary": [
+            "provide jp translation to en resource bundle"
+        ],
+        "timespent": "93600"
+    },
+    {
+        "id": "32135",
+        "project": "IKASAN",
+        "summary": [
+            "create common service contract for writing batches of records to underlying data store"
+        ],
+        "timespent": "129600"
+    },
+    {
+        "id": "22552",
+        "project": "IKASAN",
+        "summary": [
+            "discovery process to adjust server if im is moved from one server to another"
+        ],
+        "timespent": "64800"
+    },
+    {
+        "id": "22452",
+        "project": "IKASAN",
+        "summary": [
+            "discovery to update sever if module is moved"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "21456",
+        "project": "IKASAN",
+        "summary": [
+            "modify liquibase scripts in response to running against mysql database"
+        ],
+        "timespent": "36000"
+    },
+    {
+        "id": "21353",
+        "project": "IKASAN",
+        "summary": [
+            "adding flow order within modules to rest service calls as order is not preserved by the json"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "21154",
+        "project": "IKASAN",
+        "summary": [
+            "results should show timestamps with millisecond precision"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "21153",
+        "project": "IKASAN",
+        "summary": [
+            "provide filtering for ldap directories"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "21053",
+        "project": "IKASAN",
+        "summary": [
+            "allow users to action error occurrences"
+        ],
+        "timespent": "345600"
+    },
+    {
+        "id": "21052",
+        "project": "IKASAN",
+        "summary": [
+            "topology tree not visible if the user does not have all policy associated with their role"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "20972",
+        "project": "IKASAN",
+        "summary": [
+            "when admin user is created update the platform configuration with the account details of the admin user"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "20951",
+        "project": "IKASAN",
+        "summary": [
+            "audit dashboard dependencies"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "20658",
+        "project": "IKASAN",
+        "summary": [
+            "mapping configuration no resolving correctly"
+        ],
+        "timespent": "39600"
+    },
+    {
+        "id": "20656",
+        "project": "IKASAN",
+        "summary": [
+            "add error logging to the mcs dao"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "20565",
+        "project": "IKASAN",
+        "summary": [
+            "add root element override options to the standard jaxb validator to support constructs such as fpml where the root can change on document instance"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "20452",
+        "project": "IKASAN",
+        "summary": [
+            "add screen to manage new server creation"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "20451",
+        "project": "IKASAN",
+        "summary": [
+            "expose dashboard web services to allow for the topology state cache to be updated"
+        ],
+        "timespent": "216000"
+    },
+    {
+        "id": "20072",
+        "project": "IKASAN",
+        "summary": [
+            "provider properties incorrectly setting not null constraint on users table for mssql sybase and db creation"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "20060",
+        "project": "IKASAN",
+        "summary": [
+            "console authentication requires valid ldap after spring upgrade",
+            "desired behaviour is that we delegate to local authentication"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "20052",
+        "project": "IKASAN",
+        "summary": [
+            "remove unwanted logging statements"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "20051",
+        "project": "IKASAN",
+        "summary": [
+            "invalid sql function specified in the sql for ikasanmodule"
+        ],
+        "timespent": "900"
+    },
+    {
+        "id": "19950",
+        "project": "IKASAN",
+        "summary": [
+            "restyle to use vaadin valo theme"
+        ],
+        "timespent": "259200"
+    },
+    {
+        "id": "19859",
+        "project": "IKASAN",
+        "summary": [
+            "fix issue with compoent order field for mssql table creation"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "19854",
+        "project": "IKASAN",
+        "summary": [
+            "error categorisation"
+        ],
+        "timespent": "302400"
+    },
+    {
+        "id": "19853",
+        "project": "IKASAN",
+        "summary": [
+            "componentorder incorrectly defined on set up project for mssql db creation"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "19661",
+        "project": "IKASAN",
+        "summary": [
+            "configuration changes to be written as system events"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "19656",
+        "project": "IKASAN",
+        "summary": [
+            "notification of session expiry not working"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "19153",
+        "project": "IKASAN",
+        "summary": [
+            "create error reporting view"
+        ],
+        "timespent": "216000"
+    },
+    {
+        "id": "19152",
+        "project": "IKASAN",
+        "summary": [
+            "create topology server layer"
+        ],
+        "timespent": "147600"
+    },
+    {
+        "id": "19051",
+        "project": "IKASAN",
+        "summary": [
+            "create ikasan esb architecture reference model for comparison of ikasan feature set"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "18753",
+        "project": "IKASAN",
+        "summary": [
+            "ikasan security view"
+        ],
+        "timespent": "604800"
+    },
+    {
+        "id": "18681",
+        "project": "IKASAN",
+        "summary": [
+            "menu and navaigation panel"
+        ],
+        "timespent": "172800"
+    },
+    {
+        "id": "18664",
+        "project": "IKASAN",
+        "summary": [
+            "component view component configuration"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "18663",
+        "project": "IKASAN",
+        "summary": [
+            "module view"
+        ],
+        "timespent": "201600"
+    },
+    {
+        "id": "18662",
+        "project": "IKASAN",
+        "summary": [
+            "custom business stream view builder"
+        ],
+        "timespent": "172800"
+    },
+    {
+        "id": "18661",
+        "project": "IKASAN",
+        "summary": [
+            "business stream view"
+        ],
+        "timespent": "230400"
+    },
+    {
+        "id": "18658",
+        "project": "IKASAN",
+        "summary": [
+            "mapping service view"
+        ],
+        "timespent": "259200"
+    },
+    {
+        "id": "18654",
+        "project": "IKASAN",
+        "summary": [
+            "topology view"
+        ],
+        "timespent": "223200"
+    },
+    {
+        "id": "17851",
+        "project": "IKASAN",
+        "summary": [
+            "add ikasan messagfilter to the default platform persistence creation"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "12350",
+        "project": "IKASAN",
+        "summary": [
+            "provide a support description to the criteria in the messagefilter"
+        ],
+        "timespent": "30"
+    },
+    {
+        "id": "10679",
+        "project": "IKASAN",
+        "summary": [
+            "xsltransformer had incorrectly configured logger"
+        ],
+        "timespent": "600"
+    },
+    {
+        "id": "10675",
+        "project": "IKASAN",
+        "summary": [
+            "implement for"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "10547",
+        "project": "IKASAN",
+        "summary": [
+            "rename eventid column on errorevent to erroreventpersistenceid"
+        ],
+        "timespent": "1200"
+    },
+    {
+        "id": "10383",
+        "project": "IKASAN",
+        "summary": [
+            "tag libs were incorrectly defined in web.xml for"
+        ],
+        "timespent": "600"
+    },
+    {
+        "id": "10380",
+        "project": "IKASAN",
+        "summary": [
+            "spelling mistake in client list entry logging"
+        ],
+        "timespent": "300"
+    },
+    {
+        "id": "10186",
+        "project": "IKASAN",
+        "summary": [
+            "remove build.xml file from we use maven to build now"
+        ],
+        "timespent": "600"
+    }
+]

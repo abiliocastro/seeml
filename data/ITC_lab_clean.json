@@ -1,0 +1,1813 @@
+[
+    {
+        "id": "72624",
+        "project": "GH",
+        "summary": [
+            "creacin documento resumen de indicadores"
+        ],
+        "description": [
+            "es necesario tener el consolidado de los indicadores de rea definidos hasta el momento",
+            "compartirlo con grados y el equipo de trabajo"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "72623",
+        "project": "GH",
+        "summary": [
+            "aclaracin y definicin final indicadores gestin financiera"
+        ],
+        "description": [
+            "descripcin del evento de las ltimas sesiones con grados surgieron unas aclaraciones en cuanto a la propuesta de indicadores que se haba hecho relacionando stos ms con las responsabilidades del cargo que con indicadores propiamente dichos",
+            "me gustara compartir con ustedes estas observaciones y aclaraciones que nos hicieron y tambin la propuesta de algunos indicadores tpicos del rea que igual por lo que vi estn muy relacionados con la informacin que actualmente se presenta de forma mensual y que de all surja la estructura final de indicadores y mtricas"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "70914",
+        "project": "GH",
+        "summary": [
+            "quinta sesin grados"
+        ],
+        "description": [
+            "continuacin de la revisin de indicadores con grados"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "70509",
+        "project": "GH",
+        "summary": [
+            "reunin con alsanchez para revisin indicadores"
+        ],
+        "description": [
+            "informar de los nuevos indicadores revisar los datos que se estn recolectando en la carpeta de soporte y planear la generacin de datos para el da de abril con grados"
+        ],
+        "timespent": "12600",
+        "alpha": 100
+    },
+    {
+        "id": "70330",
+        "project": "GH",
+        "summary": [
+            "induccin personal de consultora"
+        ],
+        "description": [
+            "induccin de tema general de negocio jira intranet y service point"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "70160",
+        "project": "GH",
+        "summary": [
+            "validacin y revisin indicadores de soporte"
+        ],
+        "description": [
+            "validacin de observaciones realizadas por grados en los indicadores de soporte y propuesta de cambios sobre los indicadores existentes y creacin de algunos nuevos"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "62498",
+        "project": "GH",
+        "summary": [
+            "mejorar con grados modelo de desempeo definido"
+        ],
+        "description": [
+            "retroalimentacin efectiva planes de mejora efectivos incluir resultados del grupo proceso"
+        ],
+        "timespent": "191400",
+        "alpha": 100
+    },
+    {
+        "id": "51944",
+        "project": "GH",
+        "summary": [
+            "evaluacin excel"
+        ],
+        "description": [
+            "se debe evaluar los archivos de la prueba de excel practicados y posteriormente corregir la prueba"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "42519",
+        "project": "GH",
+        "summary": [
+            "modelo nuevo intranet"
+        ],
+        "description": [
+            "visualizacin de pagina principar para chequear el tema"
+        ],
+        "timespent": "72000",
+        "alpha": 100
+    },
+    {
+        "id": "42354",
+        "project": "GH",
+        "summary": [
+            "modificacin arquitectura"
+        ],
+        "description": [
+            "de acuerdo a lo comentado en la reunin de validacin de arquitectura y a solicitud de ymmartinez se modifica arquitectura como rea staff y se reciben otras correcciones infraestructura staff de direccin de producto para colocarlas en el repositorio"
+        ],
+        "timespent": "2700",
+        "alpha": 100
+    },
+    {
+        "id": "39019",
+        "project": "GH",
+        "summary": [
+            "benchmarking con otras pginas web parecidas"
+        ],
+        "description": [
+            "se debe revisar pginas de organizaciones como itc entre ellas gestor identificar que secciones tienen que informacin muestran y qu le falta a la pgina de itc de estos temas"
+        ],
+        "timespent": "19800",
+        "alpha": 100
+    },
+    {
+        "id": "39017",
+        "project": "GH",
+        "summary": [
+            "revisar pgina web de itc"
+        ],
+        "description": [
+            "se debe identificar donde est montada la pgina y quin tiene los permisos para poder editarla en un futuro"
+        ],
+        "timespent": "19800",
+        "alpha": 100
+    },
+    {
+        "id": "38528",
+        "project": "GH",
+        "summary": [
+            "reunin de validacin con arquitectura"
+        ],
+        "description": [
+            "recordar con anticipacin la preparacin de la validacin y la presentacin"
+        ],
+        "timespent": "9600",
+        "alpha": 100
+    },
+    {
+        "id": "37996",
+        "project": "GH",
+        "summary": [
+            "modificar portlet"
+        ],
+        "description": [
+            "modificar el de desarrollo a la medida"
+        ],
+        "timespent": "25200",
+        "alpha": 100
+    },
+    {
+        "id": "30498",
+        "project": "GH",
+        "summary": [
+            "actualizacin intranet"
+        ],
+        "description": [
+            "correccin de lineamientos y publicacin en jira"
+        ],
+        "timespent": "38700",
+        "alpha": 100
+    },
+    {
+        "id": "29995",
+        "project": "GH",
+        "summary": [
+            "reunin ymmartinez"
+        ],
+        "description": [
+            "reunin para aclarar el orden de la intranet y presentar dudas temas de jira y rfc"
+        ],
+        "timespent": "2700",
+        "alpha": 100
+    },
+    {
+        "id": "29862",
+        "project": "GH",
+        "summary": [
+            "exploracin de herramientas grficas"
+        ],
+        "description": [
+            "bsqueda de ayudas grficas para desplegar en intranet"
+        ],
+        "timespent": "6300",
+        "alpha": 100
+    },
+    {
+        "id": "29360",
+        "project": "GH",
+        "summary": [
+            "traslado mapa procesos a cuenta de procesos"
+        ],
+        "description": [
+            "exportar html del mapa de procesos a la cuenta propia del rea en itc",
+            "actualizacin del enlace en la intranet"
+        ],
+        "timespent": "4500",
+        "alpha": 100
+    },
+    {
+        "id": "25825",
+        "project": "GH",
+        "summary": [
+            "inicio uso de programa de seguimiento de tareas con rrhh"
+        ],
+        "description": [
+            "utilizar azendoo"
+        ],
+        "timespent": "8100",
+        "alpha": 100
+    },
+    {
+        "id": "24285",
+        "project": "GH",
+        "summary": [
+            "realizar manual para azendoo"
+        ],
+        "description": [
+            "manual exploratorio de la herramienta explicando las caractersticas y la forma de uso para planeacin y seguimiento en las reas"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "17025",
+        "project": "GH",
+        "summary": [
+            "validar si al realizar planes el lder de financiero define claramente las responsabilidades de cada persona y valida que cada uno la comprende antes de dejar definitivo el plan de trabajo",
+            "y que cada uno tiene claras las fechas de entrega y"
+        ],
+        "description": [
+            "presencial preguntar aleatoriamente a dos integrantes del equipo"
+        ],
+        "timespent": "3660",
+        "alpha": 100
+    },
+    {
+        "id": "17022",
+        "project": "GH",
+        "summary": [
+            "sesin con grados"
+        ],
+        "description": [
+            "presencial preguntar aleatoriamente a dos integrantes del equipo"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "17023",
+        "project": "GH",
+        "summary": [
+            "validar si al realizar planes el lder de administracin define claramente las responsabilidades de cada persona y valida que cada uno la comprende antes de dejar definitivo el plan de trabajo",
+            "y que cada uno tiene claras las fechas de entrega y"
+        ],
+        "description": [
+            "presencial preguntar aleatoriamente a dos integrantes del equipo"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "17024",
+        "project": "GH",
+        "summary": [
+            "validar si al realizar planes el lder de fondos define claramente las responsabilidades de cada persona y valida que cada uno la comprende antes de dejar definitivo el plan de trabajo",
+            "y que cada uno tiene claras las fechas de entrega y"
+        ],
+        "description": [
+            "presencial preguntar aleatoriamente a dos integrantes del equipo"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "17021",
+        "project": "GH",
+        "summary": [
+            "validar si al realizar planes el lder de financiero define claramente las responsabilidades de cada persona y valida que cada uno la comprende antes de dejar definitivo el plan de trabajo",
+            "y que cada uno tiene claras las fechas de entrega y"
+        ],
+        "description": [
+            "presencial preguntar aleatoriamente a dos integrantes del equipo"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "17026",
+        "project": "GH",
+        "summary": [
+            "validar si al realizar planes el lder de inversiones define claramente las responsabilidades de cada persona y valida que cada uno la comprende antes de dejar definitivo el plan de trabajo",
+            "y que cada uno tiene claras las fechas de entrega y"
+        ],
+        "description": [
+            "presencial preguntar aleatoriamente a dos integrantes del equipo"
+        ],
+        "timespent": "3000",
+        "alpha": 100
+    },
+    {
+        "id": "17013",
+        "project": "GH",
+        "summary": [
+            "validar si al realizar planes el lder de inversiones define claramente las responsabilidades de cada persona y valida que cada uno la comprende antes de dejar definitivo el plan de trabajo",
+            "y que cada uno tiene claras las fechas de entrega y"
+        ],
+        "description": [
+            "presencial preguntar aleatoriamente a dos integrantes del equipo"
+        ],
+        "timespent": "2400",
+        "alpha": 100
+    },
+    {
+        "id": "17020",
+        "project": "GH",
+        "summary": [
+            "validar si al realizar planes el lder de fondos define claramente las responsabilidades de cada persona y valida que cada uno la comprende antes de dejar definitivo el plan de trabajo",
+            "y que cada uno tiene claras las fechas de entrega y"
+        ],
+        "description": [
+            "presencial preguntar aleatoriamente a dos integrantes del equipo"
+        ],
+        "timespent": "8400",
+        "alpha": 100
+    },
+    {
+        "id": "75337",
+        "project": "GH",
+        "summary": [
+            "induccin"
+        ],
+        "timespent": "5400"
+    },
+    {
+        "id": "73849",
+        "project": "GH",
+        "summary": [
+            "revisar informacin de cargos"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "70913",
+        "project": "GH",
+        "summary": [
+            "induccin amrodriguez"
+        ],
+        "timespent": "4500"
+    },
+    {
+        "id": "70202",
+        "project": "GH",
+        "summary": [
+            "medicin general de indicadores"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "70167",
+        "project": "GH",
+        "summary": [
+            "validacin y revisin de indicadores a cargo de ymmartinez"
+        ],
+        "timespent": "4500"
+    },
+    {
+        "id": "70166",
+        "project": "GH",
+        "summary": [
+            "revisin de fuentes de datos para indicadores a cargo de emoreno"
+        ],
+        "timespent": "60"
+    },
+    {
+        "id": "70159",
+        "project": "GH",
+        "summary": [
+            "validacin y revisin indicadores de infraestructura"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "69189",
+        "project": "GH",
+        "summary": [
+            "induccin chicos del sena"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "67472",
+        "project": "GH",
+        "summary": [
+            "poltica de vestuario"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "66823",
+        "project": "GH",
+        "summary": [
+            "taller de liderazgo sesin"
+        ],
+        "timespent": "9000"
+    },
+    {
+        "id": "66475",
+        "project": "GH",
+        "summary": [
+            "servicio al cliente soporte"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "64784",
+        "project": "GH",
+        "summary": [
+            "induccin aux infratec"
+        ],
+        "timespent": "3000"
+    },
+    {
+        "id": "64463",
+        "project": "GH",
+        "summary": [
+            "gerente de proyecto vs",
+            "gestor de proyecto"
+        ],
+        "timespent": "5400"
+    },
+    {
+        "id": "63420",
+        "project": "GH",
+        "summary": [
+            "proceso y rea de gestin humana"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "63419",
+        "project": "GH",
+        "summary": [
+            "revisin de organigrama versin final"
+        ],
+        "timespent": "1860"
+    },
+    {
+        "id": "62702",
+        "project": "GH",
+        "summary": [
+            "organigrama"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "62510",
+        "project": "GH",
+        "summary": [
+            "trabajo en equipo"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "62499",
+        "project": "GH",
+        "summary": [
+            "promover capacitaciones en liderazgo negociacin gestion de proyectos y habilidades gerenciales"
+        ],
+        "timespent": "5400"
+    },
+    {
+        "id": "62497",
+        "project": "GH",
+        "summary": [
+            "validar coherencia de reas y cargos definidos"
+        ],
+        "timespent": "15600"
+    },
+    {
+        "id": "61935",
+        "project": "GH",
+        "summary": [
+            "induccin a gte comercial"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "61934",
+        "project": "GH",
+        "summary": [
+            "gestin del desempeo grados"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "60173",
+        "project": "GH",
+        "summary": [
+            "buscar un software gratis para nmina"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "60170",
+        "project": "GH",
+        "summary": [
+            "prevencin de riesgos fsicos en itc"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "60117",
+        "project": "GH",
+        "summary": [
+            "estructura organizacional"
+        ],
+        "timespent": "53100"
+    },
+    {
+        "id": "59614",
+        "project": "GH",
+        "summary": [
+            "plan de induccin"
+        ],
+        "timespent": "15300"
+    },
+    {
+        "id": "59611",
+        "project": "GH",
+        "summary": [
+            "validar rea de recursos humanos"
+        ],
+        "timespent": "9000"
+    },
+    {
+        "id": "59110",
+        "project": "GH",
+        "summary": [
+            "hacer informe de resultados desempeo"
+        ],
+        "timespent": "52200"
+    },
+    {
+        "id": "57504",
+        "project": "GH",
+        "summary": [
+            "taller de liderazgo dirigido por compensar"
+        ],
+        "timespent": "60"
+    },
+    {
+        "id": "57501",
+        "project": "GH",
+        "summary": [
+            "plan general de recursos humanos"
+        ],
+        "timespent": "12600"
+    },
+    {
+        "id": "55618",
+        "project": "GH",
+        "summary": [
+            "gestin del desempeo"
+        ],
+        "timespent": "30600"
+    },
+    {
+        "id": "54949",
+        "project": "GH",
+        "summary": [
+            "publicacin de actitud de servicio"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "54237",
+        "project": "GH",
+        "summary": [
+            "taller servicio al cliente"
+        ],
+        "timespent": "24480"
+    },
+    {
+        "id": "54236",
+        "project": "GH",
+        "summary": [
+            "pendientes con recurso humano"
+        ],
+        "timespent": "28860"
+    },
+    {
+        "id": "52847",
+        "project": "GH",
+        "summary": [
+            "estudios de seguridad al momento de la vinculacin del personal certificados de procuradura y contralora antecedentes penales etc"
+        ],
+        "timespent": "60"
+    },
+    {
+        "id": "52636",
+        "project": "GH",
+        "summary": [
+            "grupo web en itc"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "52145",
+        "project": "GH",
+        "summary": [
+            "formalizar documento de programa de induccin"
+        ],
+        "timespent": "12660"
+    },
+    {
+        "id": "51613",
+        "project": "GH",
+        "summary": [
+            "colaboracin a recursos humanos automatizando info"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "51611",
+        "project": "GH",
+        "summary": [
+            "como hacer retroalimentaciones de desempeo"
+        ],
+        "timespent": "29400"
+    },
+    {
+        "id": "51608",
+        "project": "GH",
+        "summary": [
+            "revisar tema de prima"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "51278",
+        "project": "GH",
+        "summary": [
+            "lineamientos de desempeo"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "50765",
+        "project": "GH",
+        "summary": [
+            "publicacin saro en la intranet"
+        ],
+        "timespent": "12600"
+    },
+    {
+        "id": "50589",
+        "project": "GH",
+        "summary": [
+            "actualizar presentacin general de la empresa"
+        ],
+        "timespent": "21660"
+    },
+    {
+        "id": "50586",
+        "project": "GH",
+        "summary": [
+            "reu temas de producto"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "50280",
+        "project": "GH",
+        "summary": [
+            "consolidacin de informacin de evaluaciones de desempeo"
+        ],
+        "timespent": "58200"
+    },
+    {
+        "id": "49532",
+        "project": "GH",
+        "summary": [
+            "programa de induccin"
+        ],
+        "timespent": "9660"
+    },
+    {
+        "id": "49414",
+        "project": "GH",
+        "summary": [
+            "aclarar el rol del rea de relacionamiento"
+        ],
+        "timespent": "8400"
+    },
+    {
+        "id": "48961",
+        "project": "GH",
+        "summary": [
+            "retomar trabajo con consultores externos"
+        ],
+        "timespent": "9000"
+    },
+    {
+        "id": "48760",
+        "project": "GH",
+        "summary": [
+            "validacin rea financiera sesin"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "48385",
+        "project": "GH",
+        "summary": [
+            "propuesta para definicin area rrhh"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "48006",
+        "project": "GH",
+        "summary": [
+            "reunin con lderes"
+        ],
+        "timespent": "36000"
+    },
+    {
+        "id": "47481",
+        "project": "GH",
+        "summary": [
+            "evaluacin de desempeo"
+        ],
+        "timespent": "39000"
+    },
+    {
+        "id": "47309",
+        "project": "GH",
+        "summary": [
+            "retomar actividades con consultora ext"
+        ],
+        "timespent": "18060"
+    },
+    {
+        "id": "47303",
+        "project": "GH",
+        "summary": [
+            "estructura del rea financiera"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "45917",
+        "project": "GH",
+        "summary": [
+            "actualizacin intranet"
+        ],
+        "timespent": "32460"
+    },
+    {
+        "id": "45912",
+        "project": "GH",
+        "summary": [
+            "formulario actualizacin de gestin humana"
+        ],
+        "timespent": "19800"
+    },
+    {
+        "id": "45578",
+        "project": "GH",
+        "summary": [
+            "programa de induccin"
+        ],
+        "timespent": "22800"
+    },
+    {
+        "id": "45536",
+        "project": "GH",
+        "summary": [
+            "validar rea de infraestructura"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "45522",
+        "project": "GH",
+        "summary": [
+            "proponer y validar cargos consultor junior senior y profesional"
+        ],
+        "timespent": "33000"
+    },
+    {
+        "id": "45207",
+        "project": "GH",
+        "summary": [
+            "ajustar evaluacin de desempeo de acuerdo a observaciones"
+        ],
+        "timespent": "3660"
+    },
+    {
+        "id": "44414",
+        "project": "GH",
+        "summary": [
+            "validacin de rea presidencia"
+        ],
+        "timespent": "16200"
+    },
+    {
+        "id": "44413",
+        "project": "GH",
+        "summary": [
+            "presentacion y anlisis rea de recurso humano"
+        ],
+        "timespent": "39600"
+    },
+    {
+        "id": "44400",
+        "project": "GH",
+        "summary": [
+            "reunin definicin de rea financiero"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "44344",
+        "project": "GH",
+        "summary": [
+            "apoyo recursos humanos"
+        ],
+        "timespent": "66660"
+    },
+    {
+        "id": "44047",
+        "project": "GH",
+        "summary": [
+            "redefinir rea de presidencia"
+        ],
+        "timespent": "5400"
+    },
+    {
+        "id": "44041",
+        "project": "GH",
+        "summary": [
+            "organizacion capetas intranet"
+        ],
+        "timespent": "24360"
+    },
+    {
+        "id": "43406",
+        "project": "GH",
+        "summary": [
+            "anlisis rea de recursos humanos"
+        ],
+        "timespent": "41400"
+    },
+    {
+        "id": "43402",
+        "project": "GH",
+        "summary": [
+            "bsqueda para medios que promuevan el servicio al cliente"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "43030",
+        "project": "GH",
+        "summary": [
+            "revisin modelo intranet"
+        ],
+        "timespent": "1860"
+    },
+    {
+        "id": "43029",
+        "project": "GH",
+        "summary": [
+            "recopilar informacin pagina web"
+        ],
+        "timespent": "3660"
+    },
+    {
+        "id": "43006",
+        "project": "GH",
+        "summary": [
+            "organizar y actualizar estructura org"
+        ],
+        "timespent": "5400"
+    },
+    {
+        "id": "42737",
+        "project": "GH",
+        "summary": [
+            "actualizar organigramas"
+        ],
+        "timespent": "5460"
+    },
+    {
+        "id": "42174",
+        "project": "GH",
+        "summary": [
+            "configuracin directorio intranet"
+        ],
+        "timespent": "50400"
+    },
+    {
+        "id": "42095",
+        "project": "GH",
+        "summary": [
+            "reunin de revisin del trabajo realizado y hta azendoo"
+        ],
+        "timespent": "1200"
+    },
+    {
+        "id": "42092",
+        "project": "GH",
+        "summary": [
+            "definicin de actividades para rea financiera/administrativa"
+        ],
+        "timespent": "9900"
+    },
+    {
+        "id": "42090",
+        "project": "GH",
+        "summary": [
+            "bsqueda o elaboracin del tema de la intraneth"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "42027",
+        "project": "GH",
+        "summary": [
+            "pruebas de gestor de informacin para pgina web"
+        ],
+        "timespent": "12000"
+    },
+    {
+        "id": "42011",
+        "project": "GH",
+        "summary": [
+            "reunin soporte de exel"
+        ],
+        "timespent": "60"
+    },
+    {
+        "id": "41744",
+        "project": "GH",
+        "summary": [
+            "configuracin de directorio intranet"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "40811",
+        "project": "GH",
+        "summary": [
+            "intranet directorio"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "39752",
+        "project": "GH",
+        "summary": [
+            "inicio de estudios exel"
+        ],
+        "timespent": "10860"
+    },
+    {
+        "id": "39749",
+        "project": "GH",
+        "summary": [
+            "informe sobre pagina itc"
+        ],
+        "timespent": "11700"
+    },
+    {
+        "id": "39022",
+        "project": "GH",
+        "summary": [
+            "continuar pruebas de dot project"
+        ],
+        "timespent": "8100"
+    },
+    {
+        "id": "39008",
+        "project": "GH",
+        "summary": [
+            "consulta necesidades y sugerencias sobre exel"
+        ],
+        "timespent": "60"
+    },
+    {
+        "id": "39003",
+        "project": "GH",
+        "summary": [
+            "revisin intranet"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "38541",
+        "project": "GH",
+        "summary": [
+            "instalacin de plugin lifeary"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "37999",
+        "project": "GH",
+        "summary": [
+            "programacin intranet modelo"
+        ],
+        "timespent": "75600"
+    },
+    {
+        "id": "37993",
+        "project": "GH",
+        "summary": [
+            "disear nueva intranet"
+        ],
+        "timespent": "385200"
+    },
+    {
+        "id": "37991",
+        "project": "GH",
+        "summary": [
+            "instalacin liferay"
+        ],
+        "timespent": "75600"
+    },
+    {
+        "id": "37987",
+        "project": "GH",
+        "summary": [
+            "seguimiento azendoo"
+        ],
+        "timespent": "12660"
+    },
+    {
+        "id": "37854",
+        "project": "GH",
+        "summary": [
+            "proponer una organizacin de carpetas de la intranet"
+        ],
+        "timespent": "15360"
+    },
+    {
+        "id": "37717",
+        "project": "GH",
+        "summary": [
+            "actualizacin de intranet"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "37716",
+        "project": "GH",
+        "summary": [
+            "instalacin jira"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "37621",
+        "project": "GH",
+        "summary": [
+            "reunin de horarios de trabajo"
+        ],
+        "timespent": "9000"
+    },
+    {
+        "id": "37484",
+        "project": "GH",
+        "summary": [
+            "documentacion intranet"
+        ],
+        "timespent": "31500"
+    },
+    {
+        "id": "37055",
+        "project": "GH",
+        "summary": [
+            "actualizacin intranet"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "37054",
+        "project": "GH",
+        "summary": [
+            "actualizacin de informacin intranet"
+        ],
+        "timespent": "32400"
+    },
+    {
+        "id": "36638",
+        "project": "GH",
+        "summary": [
+            "prueba de codigo menu intranet"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "36637",
+        "project": "GH",
+        "summary": [
+            "prueba de cdigo men intranet"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "36509",
+        "project": "GH",
+        "summary": [
+            "tareas diversas intranet"
+        ],
+        "timespent": "19800"
+    },
+    {
+        "id": "36243",
+        "project": "GH",
+        "summary": [
+            "directorio informativo"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "36240",
+        "project": "GH",
+        "summary": [
+            "men servicios insercin de codigo"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "36236",
+        "project": "GH",
+        "summary": [
+            "men productos insercin de codigo"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "35870",
+        "project": "GH",
+        "summary": [
+            "tema de consultora"
+        ],
+        "timespent": "4680"
+    },
+    {
+        "id": "35594",
+        "project": "GH",
+        "summary": [
+            "validacin rea de desarrollo"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "35514",
+        "project": "GH",
+        "summary": [
+            "cambios de la interfaz intranet"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "35510",
+        "project": "GH",
+        "summary": [
+            "cambios y ingreso de informacin intranet"
+        ],
+        "timespent": "41400"
+    },
+    {
+        "id": "35507",
+        "project": "GH",
+        "summary": [
+            "implantacin final de cdigo intranet"
+        ],
+        "timespent": "50400"
+    },
+    {
+        "id": "35088",
+        "project": "GH",
+        "summary": [
+            "revisin y ajustes intranet"
+        ],
+        "timespent": "13500"
+    },
+    {
+        "id": "34881",
+        "project": "GH",
+        "summary": [
+            "observacin problema jira"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "34833",
+        "project": "GH",
+        "summary": [
+            "insercin de codigo"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "34399",
+        "project": "GH",
+        "summary": [
+            "bsqueda de plantillas de prueba para intranet itc"
+        ],
+        "timespent": "19800"
+    },
+    {
+        "id": "34368",
+        "project": "GH",
+        "summary": [
+            "inicio de intranet,copilacion de cdigo interfaz"
+        ],
+        "timespent": "54000"
+    },
+    {
+        "id": "34367",
+        "project": "GH",
+        "summary": [
+            "instalacin de complementos para liferay intranet"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "34346",
+        "project": "GH",
+        "summary": [
+            "validacin de encuesta de satisfaccin clientes"
+        ],
+        "timespent": "10200"
+    },
+    {
+        "id": "33784",
+        "project": "GH",
+        "summary": [
+            "introduccin practicante"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "33073",
+        "project": "GH",
+        "summary": [
+            "reunin de temas que afectan a relacionamiento"
+        ],
+        "timespent": "5400"
+    },
+    {
+        "id": "33072",
+        "project": "GH",
+        "summary": [
+            "validacin de rea de consultora"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "32812",
+        "project": "GH",
+        "summary": [
+            "revisar valores y rasgos culturales planteados y estructura salarial"
+        ],
+        "timespent": "17400"
+    },
+    {
+        "id": "32805",
+        "project": "GH",
+        "summary": [
+            "revisin de temas varios con ymmartinez"
+        ],
+        "timespent": "9000"
+    },
+    {
+        "id": "32497",
+        "project": "GH",
+        "summary": [
+            "revisar tema de encuesta de satisfaccin y la antigua de soporte"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "32489",
+        "project": "GH",
+        "summary": [
+            "anlisis del presupuesto de ingresos"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "32119",
+        "project": "GH",
+        "summary": [
+            "gestiones diversas con direccin de producto"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "32041",
+        "project": "GH",
+        "summary": [
+            "anlisis del rea de relacionamiento"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "31102",
+        "project": "GH",
+        "summary": [
+            "validacin de rea de soporte"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "31101",
+        "project": "GH",
+        "summary": [
+            "revisar como van las definiciones de cargos"
+        ],
+        "timespent": "1200"
+    },
+    {
+        "id": "30806",
+        "project": "GH",
+        "summary": [
+            "desarrollo rfc y jira"
+        ],
+        "timespent": "11760"
+    },
+    {
+        "id": "30417",
+        "project": "GH",
+        "summary": [
+            "creacin y edicin de pgina en html"
+        ],
+        "timespent": "27960"
+    },
+    {
+        "id": "30405",
+        "project": "GH",
+        "summary": [
+            "indicadores de reas"
+        ],
+        "timespent": "5400"
+    },
+    {
+        "id": "30184",
+        "project": "GH",
+        "summary": [
+            "consultora rfc y jira"
+        ],
+        "timespent": "10260"
+    },
+    {
+        "id": "29983",
+        "project": "GH",
+        "summary": [
+            "coordinacin charla con grados"
+        ],
+        "timespent": "5400"
+    },
+    {
+        "id": "29386",
+        "project": "GH",
+        "summary": [
+            "retomar el tema de reas y cargos"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "28908",
+        "project": "GH",
+        "summary": [
+            "revisar que podemos avanzar y avanzar en indicadores de las reas"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "28818",
+        "project": "GH",
+        "summary": [
+            "hacer manual de"
+        ],
+        "timespent": "6060"
+    },
+    {
+        "id": "28321",
+        "project": "GH",
+        "summary": [
+            "validacin de rea de relacionamiento"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "28320",
+        "project": "GH",
+        "summary": [
+            "validar rea de operacin internacional"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "28319",
+        "project": "GH",
+        "summary": [
+            "revisar indicadores del rea de consultora"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "28042",
+        "project": "GH",
+        "summary": [
+            "hacer ms amigable la intranet"
+        ],
+        "timespent": "123360"
+    },
+    {
+        "id": "27393",
+        "project": "GH",
+        "summary": [
+            "revisin y seguimiento a definiciones recientes en cuanto a reas y cargos"
+        ],
+        "timespent": "1860"
+    },
+    {
+        "id": "27390",
+        "project": "GH",
+        "summary": [
+            "reuniones de validacin de reas soporte y direccin de producto"
+        ],
+        "timespent": "18060"
+    },
+    {
+        "id": "27067",
+        "project": "GH",
+        "summary": [
+            "revisar con rd la estructura y definicin de reas"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "26467",
+        "project": "GH",
+        "summary": [
+            "diligenciar prfil de cargo"
+        ],
+        "timespent": "2700"
+    },
+    {
+        "id": "25916",
+        "project": "GH",
+        "summary": [
+            "sesin para definiciones con relacionamiento"
+        ],
+        "timespent": "9900"
+    },
+    {
+        "id": "25912",
+        "project": "GH",
+        "summary": [
+            "revisar con cada grupo lo que se presenta en comit"
+        ],
+        "timespent": "12900"
+    },
+    {
+        "id": "25706",
+        "project": "GH",
+        "summary": [
+            "organizar lo de los comites"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "25704",
+        "project": "GH",
+        "summary": [
+            "planeacin y reunin para continuar con los perfiles de cargo"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "25329",
+        "project": "GH",
+        "summary": [
+            "reunin con grados para desempeo"
+        ],
+        "timespent": "5400"
+    },
+    {
+        "id": "25134",
+        "project": "GH",
+        "summary": [
+            "relacionamiento y asignaciones"
+        ],
+        "timespent": "2700"
+    },
+    {
+        "id": "23814",
+        "project": "GH",
+        "summary": [
+            "presentacin a la empresa de temas estratgicos estructura etc"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "23468",
+        "project": "GH",
+        "summary": [
+            "comit de mejora"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "23209",
+        "project": "GH",
+        "summary": [
+            "realizar prueba de programas de seguimiento a proyectos"
+        ],
+        "timespent": "7560"
+    },
+    {
+        "id": "17329",
+        "project": "GH",
+        "summary": [
+            "procesos de gestin humana"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "15555",
+        "project": "GH",
+        "summary": [
+            "definir como y donde se guardar la informacin de indicadores"
+        ],
+        "timespent": "59700"
+    },
+    {
+        "id": "16801",
+        "project": "GH",
+        "summary": [
+            "revisin final del rea de relacionamiento"
+        ],
+        "timespent": "19800"
+    },
+    {
+        "id": "16011",
+        "project": "GH",
+        "summary": [
+            "revisar resultados de encuesta de satisfaccin clientes"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "15557",
+        "project": "GH",
+        "summary": [
+            "herramienta para lecciones aprendidas wiki"
+        ],
+        "timespent": "23160"
+    },
+    {
+        "id": "18836",
+        "project": "GH",
+        "summary": [
+            "desarollo indicadores y jira"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "16012",
+        "project": "GH",
+        "summary": [
+            "replanear terminacin de definiciones de reas y cargos"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "17168",
+        "project": "GH",
+        "summary": [
+            "definicin de seguimientos propuesta y registro"
+        ],
+        "timespent": "19500"
+    },
+    {
+        "id": "18598",
+        "project": "GH",
+        "summary": [
+            "entender el trabajo llevado con los directivos"
+        ],
+        "timespent": "19800"
+    },
+    {
+        "id": "18266",
+        "project": "GH",
+        "summary": [
+            "seguimiento a acuerdos en rrhh financiero e infratec"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "18624",
+        "project": "GH",
+        "summary": [
+            "gestionar cierre de compromisos de wunderlist"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "17616",
+        "project": "GH",
+        "summary": [
+            "gestin con presidente y directores para los acuerdos de trabajo"
+        ],
+        "timespent": "12600"
+    },
+    {
+        "id": "17945",
+        "project": "GH",
+        "summary": [
+            "redaccin correo de agraria y gestin con relacionamiento"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "17946",
+        "project": "GH",
+        "summary": [
+            "evaluacin de prcticante"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "18261",
+        "project": "GH",
+        "summary": [
+            "analisis preliminar de informacin recogida de relacionamiento"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "17943",
+        "project": "GH",
+        "summary": [
+            "sesin acuerdos de trabajo directivos"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "21628",
+        "project": "GH",
+        "summary": [
+            "reunin con claudia para retomar proyecto"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "17130",
+        "project": "GH",
+        "summary": [
+            "reunin acuerdos de trabajo yjira administracin consultora"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "17746",
+        "project": "GH",
+        "summary": [
+            "reunin de acuerdos de trabajo con consultora"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "18602",
+        "project": "GH",
+        "summary": [
+            "revisar como va inversiones y tomar medidas en conjunto"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "17223",
+        "project": "GH",
+        "summary": [
+            "modificaciones publicaciones acuerdos y frases"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "17944",
+        "project": "GH",
+        "summary": [
+            "revisar como aplicar los acuerdos de trabajo en soporte"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "17132",
+        "project": "GH",
+        "summary": [
+            "hacer publicaciones frases de cambio y modificaciones a acuerdos"
+        ],
+        "timespent": "5700"
+    },
+    {
+        "id": "18015",
+        "project": "GH",
+        "summary": [
+            "sesin de acuerdos de trabajo para lderes de soporte"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "19592",
+        "project": "GH",
+        "summary": [
+            "hacer informe del estado de cumplimiento de los acuerdos"
+        ],
+        "timespent": "39660"
+    },
+    {
+        "id": "18013",
+        "project": "GH",
+        "summary": [
+            "sesin acuerdos de trabajo a nivel directivo"
+        ],
+        "timespent": "12600"
+    },
+    {
+        "id": "16798",
+        "project": "GH",
+        "summary": [
+            "seguimiento a planeacin y seguimiento de inversiones"
+        ],
+        "timespent": "6900"
+    },
+    {
+        "id": "17747",
+        "project": "GH",
+        "summary": [
+            "analizar tema de perfiles de cargos"
+        ],
+        "timespent": "36000"
+    },
+    {
+        "id": "20833",
+        "project": "GH",
+        "summary": [
+            "proponer objetivos de cargos"
+        ],
+        "timespent": "9060"
+    },
+    {
+        "id": "20832",
+        "project": "GH",
+        "summary": [
+            "actualizar de acuerdo a lo hablado y la propuesta en glyfi"
+        ],
+        "timespent": "5400"
+    },
+    {
+        "id": "19589",
+        "project": "GH",
+        "summary": [
+            "revisar tema de las"
+        ],
+        "timespent": "12600"
+    },
+    {
+        "id": "18601",
+        "project": "GH",
+        "summary": [
+            "proponer la forma de la estructura organizacional definicin de cargos y como comunicar"
+        ],
+        "timespent": "53160"
+    },
+    {
+        "id": "19587",
+        "project": "GH",
+        "summary": [
+            "validar tema de estructura organizacional con directivos"
+        ],
+        "timespent": "84600"
+    }
+]

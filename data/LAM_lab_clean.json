@@ -1,0 +1,983 @@
+[
+    {
+        "id": "10186",
+        "project": "IDE",
+        "summary": [
+            "set up continuous integration for propelleride"
+        ],
+        "description": [
+            "it's difficult to reliably deliver new builds without having this available"
+        ],
+        "timespent": "78000",
+        "alpha": 98
+    },
+    {
+        "id": "11002",
+        "project": "IDE",
+        "summary": [
+            "add versioning system"
+        ],
+        "description": [
+            "propelleride uses git now so let's use it",
+            "versions should no longer be hardcoded into the project tree and instead use git to determine the correct tag",
+            "this will be more flexible and accurate in the long term"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "10303",
+        "project": "IDE",
+        "summary": [
+            "string-embedded special characters highlight incorrectly"
+        ],
+        "description": [
+            "some special characters aren't rendered correctly by the spin highlighter when embedded in strings",
+            "when an apostrophe is embedded in a string the editor colors the apostrophe and all characters to the right as if the line was a comment image some special characters that are also operators render as operators when embedded in strings also"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "10148",
+        "project": "IDE",
+        "summary": [
+            "propeller ide hangs if included object not found"
+        ],
+        "description": [
+            "propelleride will hang if it attempts to open an object that includes another object that it cant find",
+            "attempts to reopen the application will fail until the global config file is deleted",
+            "i had a file from a different folder i moved it to a new one and renamed it to just so happens that this file referenced another object called overworld.spin which i had not moved over to the new directory because i planned to remove it from the file",
+            "this caused propelleride to hang completely apparently because its attempting for the file to include itself as an object in itself",
+            "changing the name of overworld.spin fixed the problem",
+            "moving overworld.spin to the directory also fixed the problem",
+            "it seems that file names are not for object inclusions they should be though because file systems are"
+        ],
+        "timespent": "9000",
+        "alpha": 99
+    },
+    {
+        "id": "12754",
+        "project": "SDK",
+        "summary": [
+            "finalize lameaudio api"
+        ],
+        "description": [
+            "it needs to be well established that the lameaudio api is satisfactory before any effort to document it is under way"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "11415",
+        "project": "PROPMAN",
+        "summary": [
+            "implement initial propellermanager"
+        ],
+        "description": [
+            "propellermanager is a library api that allows propeller hardware to be shared among multiple software components safely and consistently without interference"
+        ],
+        "timespent": "111600",
+        "alpha": 100
+    },
+    {
+        "id": "12100",
+        "project": "PACK",
+        "summary": [
+            "use correct file permissions for debian packaging"
+        ],
+        "description": [
+            "lintian checks fail while installing propelleride package on ubuntu",
+            "files that should be owned by would be set to owner when installing the package",
+            "this could cause the system to become unbootable",
+            "i receive the following error"
+        ],
+        "timespent": "16200",
+        "alpha": 100
+    },
+    {
+        "id": "13007",
+        "project": "IDE",
+        "summary": [
+            "dyld class notificationreceiver is implemented in both and one of the two will be used",
+            "which one is undefined"
+        ],
+        "description": [
+            "propelleride fails to run on macs that have homebrew installed"
+        ],
+        "timespent": "12600",
+        "alpha": 100
+    },
+    {
+        "id": "11200",
+        "project": "IDE",
+        "summary": [
+            "add interface"
+        ],
+        "description": [
+            "use qcommandlineparser class to implement interface"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "11102",
+        "project": "IDE",
+        "summary": [
+            "add theme support"
+        ],
+        "description": [
+            "committed an experimental implementation for themes in propelleride",
+            "it was awesome so i decided to go to town on it integrating it with the rest of the editor",
+            "theme support goes with improving separation of concerns between editor support so by cleaning up the code base it's a feature you get for free",
+            "and boy is it awesome"
+        ],
+        "timespent": "37800",
+        "alpha": 100
+    },
+    {
+        "id": "11101",
+        "project": "IDE",
+        "summary": [
+            "refactor preferences dialog"
+        ],
+        "description": [
+            "the preferences dialog is a mess and unmaintainable in its current state",
+            "through the process of cleaning the code it will be a pleasant consequent that it will also be possible to theme propelleride which will be very nice",
+            "this will establish the direction taken for the terminal as well"
+        ],
+        "timespent": "61500",
+        "alpha": 100
+    },
+    {
+        "id": "10904",
+        "project": "IDE",
+        "summary": [
+            "tabblockshift function can sometimes add a tab to an extra line of text"
+        ],
+        "description": [
+            "under certain circumstances typing tab when a block of text is selected in the source editor will indent the selected text as well as an additional line below the selected text",
+            "steps to reproduce from phil pilgrim on the parallax forums position the cursor ahead of the first character of line hold down shift and hit to select that line and however many more you want",
+            "hit tab",
+            "the lines selected and the line that follows will get indented",
+            "now try the same thing in the basic stamp editor and you will see how supposed to work",
+            "in the propelleride project the file editor.cpp contains the following method int this method needs to check the location of the cursor to make sure that it remains on the last line of the intended selection and not in front of the first character of the next line"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "10903",
+        "project": "IDE",
+        "summary": [
+            "not able to display propeller datasheet or manual from help menu on"
+        ],
+        "description": [
+            "selecting propeller datasheet or propeller manual from the help menu has no effect",
+            "i expect that the pdf documents should be opened in the preview app on mac s x but no action takes place"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10804",
+        "project": "IDE",
+        "summary": [
+            "method browser doesn't show last character of methods with local variables"
+        ],
+        "description": [
+            "the method browser display the last character of a public or private name if it has local variables the last character before the vertical bar this includes methods that take parameters as well the closing parentheses will be chopped off in this methods without local variables are displayed correctly"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "10802",
+        "project": "IDE",
+        "summary": [
+            "automate propelleride release process"
+        ],
+        "description": [
+            "with this many platforms making new releases will take way too long to make by hand especially if we intend to iterate on them continuously",
+            "this issue entails creating a python application that will automate the process on all platforms"
+        ],
+        "timespent": "16800",
+        "alpha": 100
+    },
+    {
+        "id": "10801",
+        "project": "IDE",
+        "summary": [
+            "build all projects with qmake"
+        ],
+        "description": [
+            "qmake is a generic build system and does a lot of things to manage portability of an application like setting up the build environment generating installation targets handling path issues command differences etc",
+            "on different platforms so it will make life easier in the long run than supporting the build through makefiles"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "10800",
+        "project": "IDE",
+        "summary": [
+            "doesn't build outside of msys"
+        ],
+        "description": [
+            "the current loader uses extremely obsolete apis and does not build on a more modern toolchain"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10609",
+        "project": "IDE",
+        "summary": [
+            "refactor serial terminal"
+        ],
+        "description": [
+            "currently propelleride provides it's own serial functionality by including the qextserialport library source in the project",
+            "however qt provides a complete serial api itself so why not use it and make the project easier for us to maintain what's more many of the sought after features of propelleride seem to already be available in apps like the ability to render graphics and plots from serial output",
+            "the code base appears stale and unmaintained but with some work could be brought forward to the api and integrated into propelleride"
+        ],
+        "timespent": "25200",
+        "alpha": 100
+    },
+    {
+        "id": "10420",
+        "project": "IDE",
+        "summary": [
+            "add indent guides to editor widget"
+        ],
+        "description": [
+            "propeller tool has had this feature for a long time and it really needs to be implemented in propelleride as well"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10419",
+        "project": "IDE",
+        "summary": [
+            "implement projectviewer"
+        ],
+        "description": [
+            "projects are very difficult to follow in the sidebar",
+            "instead of having two separate windows i am proposing creating a single tree view that shows included project files and a collapsible listing of available functions within that file",
+            "for fun let's also include con blocks in addition to since this is also part of the global interface",
+            "this will make the file browser much easier to follow and make better use of limited screen real estate"
+        ],
+        "timespent": "104400",
+        "alpha": 100
+    },
+    {
+        "id": "10415",
+        "project": "IDE",
+        "summary": [
+            "add mac os x installer package build scripts"
+        ],
+        "description": [
+            "create mac os x product packages of propelleride builds",
+            "optionally the packages for installation within mac os gatekeeper policies allowing users to install as an identified developer this will also ease possible inclusion of the propelleride in app store at some future point",
+            "simpleide sources include scripts that accomplish mac os x packaging and can be modified easily for propelleride i wrote"
+        ],
+        "timespent": "16200",
+        "alpha": 100
+    },
+    {
+        "id": "10400",
+        "project": "IDE",
+        "summary": [
+            "block highlighter improperly detects words that contain underscores"
+        ],
+        "description": [
+            "a word beginning with obj is enough for the highlighter to detect a new block when only obj by itself should be a valid block",
+            "this example will not highlight",
+            "this example will highlight",
+            "see attached image",
+            "this happens with all blocks not just obj"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "10309",
+        "project": "IDE",
+        "summary": [
+            "deploy windows cross-compiling toolchain"
+        ],
+        "description": [
+            "this will allow us to build for windows without leaving the development machine which will make windows builds easier to maintain"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "10305",
+        "project": "IDE",
+        "summary": [
+            "automate windows build"
+        ],
+        "description": [
+            "automated windows installation of propeller ide has already been demonstrated using inno setup but it has not been incorporated into the build system"
+        ],
+        "timespent": "34800",
+        "alpha": 100
+    },
+    {
+        "id": "10304",
+        "project": "IDE",
+        "summary": [
+            "add links to propeller manual pdf and data sheet pdf"
+        ],
+        "description": [
+            "adding a button that opens the pdf propeller manuals would be useful towards ensuring documentation is always on hand",
+            "eventually this will be superseded by"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "10173",
+        "project": "IDE",
+        "summary": [
+            "expose keyboard shortcuts in edit menu"
+        ],
+        "description": [
+            "many keyboard shortcuts are implemented for editing that propelleride currently assumes the user is aware of",
+            "these need to be exposed in the edit menu",
+            "suggested layout"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "10170",
+        "project": "IDE",
+        "summary": [
+            "clean up debian packaging script"
+        ],
+        "description": [
+            "the packaging script must be manually run to work correctly",
+            "this needs to be automated"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "14129",
+        "project": "STDLIB",
+        "summary": [
+            "create commandparser object"
+        ],
+        "timespent": "39600"
+    },
+    {
+        "id": "14110",
+        "project": "STDLIB",
+        "summary": [
+            "add string library"
+        ],
+        "timespent": "44100"
+    },
+    {
+        "id": "13406",
+        "project": "SDK",
+        "summary": [
+            "create screencapture tool"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "12802",
+        "project": "SDK",
+        "summary": [
+            "automate sdk release process"
+        ],
+        "timespent": "7500"
+    },
+    {
+        "id": "12753",
+        "project": "SDK",
+        "summary": [
+            "consolidate confluence spaces"
+        ],
+        "timespent": "7800"
+    },
+    {
+        "id": "12749",
+        "project": "SDK",
+        "summary": [
+            "implement"
+        ],
+        "timespent": "28200"
+    },
+    {
+        "id": "12748",
+        "project": "SDK",
+        "summary": [
+            "fix adsr filter for lameaudio"
+        ],
+        "timespent": "27000"
+    },
+    {
+        "id": "12737",
+        "project": "SDK",
+        "summary": [
+            "document core apis"
+        ],
+        "timespent": "15000"
+    },
+    {
+        "id": "14102",
+        "project": "PROPMAN",
+        "summary": [
+            "propellerimage reporting incorrect program code size"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "13805",
+        "project": "PROPMAN",
+        "summary": [
+            "add parallel loader capability"
+        ],
+        "timespent": "38700"
+    },
+    {
+        "id": "13802",
+        "project": "PROPMAN",
+        "summary": [
+            "create fancy logo"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "13500",
+        "project": "PROPMAN",
+        "summary": [
+            "buffer device reads so that multiple sessions can consume them"
+        ],
+        "timespent": "27000"
+    },
+    {
+        "id": "13403",
+        "project": "PROPMAN",
+        "summary": [
+            "auto ports inside propellermanager based on open sessions"
+        ],
+        "timespent": "11700"
+    },
+    {
+        "id": "13400",
+        "project": "PROPMAN",
+        "summary": [
+            "develop propellermanager controller"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "13201",
+        "project": "PROPMAN",
+        "summary": [
+            "failed to write value failure to assert raspberry pi gpio reset on raspbian jessie"
+        ],
+        "timespent": "5400"
+    },
+    {
+        "id": "13102",
+        "project": "PROPMAN",
+        "summary": [
+            "download completes even though board was disconnected"
+        ],
+        "timespent": "22200"
+    },
+    {
+        "id": "13101",
+        "project": "PROPMAN",
+        "summary": [
+            "download failed the parameter is incorrect on windows"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "12800",
+        "project": "PROPMAN",
+        "summary": [
+            "add copy paste support to propterm"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "12704",
+        "project": "PROPMAN",
+        "summary": [
+            "integrate propellermanager into serial terminal"
+        ],
+        "timespent": "6300"
+    },
+    {
+        "id": "12702",
+        "project": "PROPMAN",
+        "summary": [
+            "finalize propellermanager api"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "14008",
+        "project": "PACK",
+        "summary": [
+            "add support for qmake custom subdirs directory project.subdir"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "12901",
+        "project": "PACK",
+        "summary": [
+            "support cross-compilation to windows"
+        ],
+        "timespent": "5400"
+    },
+    {
+        "id": "13008",
+        "project": "PACK",
+        "summary": [
+            "mac packthing doesn't deploy qt frameworks in bundle"
+        ],
+        "timespent": "7500"
+    },
+    {
+        "id": "13006",
+        "project": "PACK",
+        "summary": [
+            "refactor packthing to support more targets"
+        ],
+        "timespent": "11400"
+    },
+    {
+        "id": "13005",
+        "project": "PACK",
+        "summary": [
+            "improve informational message printouts"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "13004",
+        "project": "PACK",
+        "summary": [
+            "switch from json to yaml packfile"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "13002",
+        "project": "PACK",
+        "summary": [
+            "add more flexible interface"
+        ],
+        "timespent": "8400"
+    },
+    {
+        "id": "13001",
+        "project": "PACK",
+        "summary": [
+            "add self-extracting archive packaging"
+        ],
+        "timespent": "15600"
+    },
+    {
+        "id": "14124",
+        "project": "IDE",
+        "summary": [
+            "goes to of document"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "14122",
+        "project": "IDE",
+        "summary": [
+            "use single format for collection of highlighter rules"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "14120",
+        "project": "IDE",
+        "summary": [
+            "reduce total number of recoloring updating calls when switching tabs"
+        ],
+        "timespent": "8100"
+    },
+    {
+        "id": "14116",
+        "project": "IDE",
+        "summary": [
+            "should be find previous shortcut"
+        ],
+        "timespent": "900"
+    },
+    {
+        "id": "14100",
+        "project": "IDE",
+        "summary": [
+            "saved theme settings are overridden by defaults on startup"
+        ],
+        "timespent": "5400"
+    },
+    {
+        "id": "14010",
+        "project": "IDE",
+        "summary": [
+            "recolor themes for readability"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "14007",
+        "project": "IDE",
+        "summary": [
+            "align backspace on whitespace with tabstop"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "14006",
+        "project": "IDE",
+        "summary": [
+            "strings block comment and line comment highlighting interfere with each other"
+        ],
+        "timespent": "15300"
+    },
+    {
+        "id": "14005",
+        "project": "IDE",
+        "summary": [
+            "multiple strings on the same line do not highlight correctly"
+        ],
+        "timespent": "2700"
+    },
+    {
+        "id": "14002",
+        "project": "IDE",
+        "summary": [
+            "add support for backspace in propterm"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "14000",
+        "project": "IDE",
+        "summary": [
+            "cursor does not stay aligned with text in memory map"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "13402",
+        "project": "IDE",
+        "summary": [
+            "use last directory when opening file dialog"
+        ],
+        "timespent": "900"
+    },
+    {
+        "id": "13307",
+        "project": "IDE",
+        "summary": [
+            "add terminal lights to serial widget"
+        ],
+        "timespent": "5400"
+    },
+    {
+        "id": "13306",
+        "project": "IDE",
+        "summary": [
+            "add separate text input box to serial terminal"
+        ],
+        "timespent": "6300"
+    },
+    {
+        "id": "13301",
+        "project": "IDE",
+        "summary": [
+            "embed serial terminal into propelleride"
+        ],
+        "timespent": "27600"
+    },
+    {
+        "id": "13105",
+        "project": "IDE",
+        "summary": [
+            "quaternary operator doesn't always highlight correctly"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "12703",
+        "project": "IDE",
+        "summary": [
+            "integrate propellermanager into buildmanager"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "12900",
+        "project": "IDE",
+        "summary": [
+            "automate raspberry pi releases"
+        ],
+        "timespent": "53100"
+    },
+    {
+        "id": "12722",
+        "project": "IDE",
+        "summary": [
+            "replace handwritten preferences dialog with generated version"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "12721",
+        "project": "IDE",
+        "summary": [
+            "replace highlight-based background colors with colors"
+        ],
+        "timespent": "13500"
+    },
+    {
+        "id": "11411",
+        "project": "IDE",
+        "summary": [
+            "improve usability of finder widget"
+        ],
+        "timespent": "5400"
+    },
+    {
+        "id": "10702",
+        "project": "IDE",
+        "summary": [
+            "add nice branding to propelleride"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "10600",
+        "project": "IDE",
+        "summary": [
+            "pull archiver file list from project view"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "10307",
+        "project": "IDE",
+        "summary": [
+            "revise dialog"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "10306",
+        "project": "IDE",
+        "summary": [
+            "match functions keys to propeller tool behavior"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "10301",
+        "project": "IDE",
+        "summary": [
+            "implement memorymap"
+        ],
+        "timespent": "61200"
+    },
+    {
+        "id": "10184",
+        "project": "IDE",
+        "summary": [
+            "document development environment setup procedures"
+        ],
+        "timespent": "3000"
+    },
+    {
+        "id": "10183",
+        "project": "IDE",
+        "summary": [
+            "properly structure external dependencies"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "10169",
+        "project": "IDE",
+        "summary": [
+            "create makefile"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "10168",
+        "project": "IDE",
+        "summary": [
+            "refactor build system"
+        ],
+        "timespent": "19200"
+    },
+    {
+        "id": "10147",
+        "project": "IDE",
+        "summary": [
+            "propelleride will open and edit unicode files but will successfully save them as ascii destroying the files"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "10146",
+        "project": "IDE",
+        "summary": [
+            "propelleride saves code to the wrong files if theyre within the editor"
+        ],
+        "timespent": "10800"
+    },
+    {
+        "id": "14201",
+        "project": "DEVSITE",
+        "summary": [
+            "support multiple categories"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "14200",
+        "project": "DEVSITE",
+        "summary": [
+            "add readme override"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "13803",
+        "project": "BADGE",
+        "summary": [
+            "blank inappropriately resets board after checking version"
+        ],
+        "timespent": "6900"
+    },
+    {
+        "id": "13700",
+        "project": "BADGE",
+        "summary": [
+            "blank fails when no firmware loaded at all"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "13611",
+        "project": "BADGE",
+        "summary": [
+            "develop hackergang gang programmer tool"
+        ],
+        "timespent": "58200"
+    },
+    {
+        "id": "13609",
+        "project": "BADGE",
+        "summary": [
+            "configure then refresh results in invalid ping"
+        ],
+        "timespent": "4500"
+    },
+    {
+        "id": "13607",
+        "project": "BADGE",
+        "summary": [
+            "add separate contact wipe button"
+        ],
+        "timespent": "2700"
+    },
+    {
+        "id": "13606",
+        "project": "BADGE",
+        "summary": [
+            "add csv contact export"
+        ],
+        "timespent": "2700"
+    },
+    {
+        "id": "13604",
+        "project": "BADGE",
+        "summary": [
+            "occasional detection misses when refreshing"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "13603",
+        "project": "BADGE",
+        "summary": [
+            "load any firmware as long as the protocol version matches"
+        ],
+        "timespent": "4200"
+    },
+    {
+        "id": "13602",
+        "project": "BADGE",
+        "summary": [
+            "improve contact viewer"
+        ],
+        "timespent": "13800"
+    },
+    {
+        "id": "13600",
+        "project": "BADGE",
+        "summary": [
+            "stubborn progress bar hangs around badgehacker"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "13507",
+        "project": "BADGE",
+        "summary": [
+            "improve board detection logic"
+        ],
+        "timespent": "15000"
+    },
+    {
+        "id": "13505",
+        "project": "BADGE",
+        "summary": [
+            "spin binary with updates"
+        ],
+        "timespent": "2700"
+    },
+    {
+        "id": "13504",
+        "project": "BADGE",
+        "summary": [
+            "improve interface speed"
+        ],
+        "timespent": "39600"
+    },
+    {
+        "id": "13502",
+        "project": "BADGE",
+        "summary": [
+            "create first draft of application"
+        ],
+        "timespent": "19500"
+    },
+    {
+        "id": "13405",
+        "project": "BADGE",
+        "summary": [
+            "create initial user interface concept"
+        ],
+        "timespent": "6900"
+    }
+]

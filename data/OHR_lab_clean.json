@@ -1,0 +1,802 @@
+[
+    {
+        "id": "14034",
+        "project": "SPECRM",
+        "summary": [
+            "relax unique name rule in locatable"
+        ],
+        "description": [
+            "currently locatable.name values are specified to be unique across sibling locatable instances elements/clusters under a cluster also in the demographic model",
+            "this doesn't correspond well with numerous real world situations"
+        ],
+        "timespent": "3600",
+        "alpha": 98
+    },
+    {
+        "id": "11722",
+        "project": "AWB",
+        "summary": [
+            "remove terminologies_available from archetype ontology"
+        ],
+        "description": [
+            "the terminologies_available statement from the ontology is superfluous since it can be generated correctly from the and constraint_bindings sections"
+        ],
+        "timespent": "14400",
+        "alpha": 98
+    },
+    {
+        "id": "23550",
+        "project": "SPECITS",
+        "summary": [
+            "rest api documentation has a layout glitch"
+        ],
+        "description": [
+            "i got a new high-resolution display x diagonal and the ehr and definitions tabs have bad layout i will attach a"
+        ],
+        "timespent": "2700",
+        "alpha": 99
+    },
+    {
+        "id": "23535",
+        "project": "SPECITS",
+        "summary": [
+            "cleanup query endpoint"
+        ],
+        "description": [
+            "rest api query endpoint query has few content related issues inconsistencies blueprint-standard related issues some obsolete content and some typos"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "23494",
+        "project": "SPECITS",
+        "summary": [
+            "improve rest api crosslinks"
+        ],
+        "description": [
+            "rest specs should have a better crosslinks so that navigation between different pages are more user friendly",
+            "also version numbers and types should be reviewed",
+            "original request jake smolka i'm a bit confused with the versioning of the rest api",
+            "on is listed and links to a document but clicking on ehr in the middle shows me a one see on the github project there are also only two official releases with the newest being so what's the policy here and i was also looking for some kind of change log",
+            "if there's no real yet that would explain why i couldn't find a log but is it planned to document the changes of releases"
+        ],
+        "timespent": "57600",
+        "alpha": 99
+    },
+    {
+        "id": "11723",
+        "project": "AWB",
+        "summary": [
+            "rename template_component archetype category to"
+        ],
+        "description": [
+            "the template_component category is not very indicative of the purpose of this kind of archetype rename to"
+        ],
+        "timespent": "28800",
+        "alpha": 99
+    },
+    {
+        "id": "11661",
+        "project": "AWB",
+        "summary": [
+            "add properties view with inheritance to class tool"
+        ],
+        "description": [
+            "add a view to class tool that shows a class's properties with their inheritance",
+            "make each class clickable"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "14027",
+        "project": "SPECRM",
+        "summary": [
+            "corrections to architecture overview specification"
+        ],
+        "description": [
+            "see"
+        ],
+        "timespent": "300",
+        "alpha": 100
+    },
+    {
+        "id": "14024",
+        "project": "SPECRM",
+        "summary": [
+            "ehr extract im typographical errors"
+        ],
+        "description": [
+            "see"
+        ],
+        "timespent": "300",
+        "alpha": 100
+    },
+    {
+        "id": "10932",
+        "project": "SPECRM",
+        "summary": [
+            "upgrade to release of ehr im"
+        ],
+        "description": [
+            "various changes are required to the ehr extract to be properly compliant to the release reference model as follows",
+            "versions an extract form of the rm class versioned_object is needed in the extract corresponding to the changed definitions of the classes versioned_object and version in the rm",
+            "the x variants are classes",
+            "folders there are two requirements for folders in extracts",
+            "the first is that the extract may be required to faithfully carry the folder structure from an openehr system including its previous versions just as for compositions elsewhere",
+            "the other is that users might want to create folders local to the extract itself for the parts of a discharge only the second of these requirements is currently addressed"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "23575",
+        "project": "SPECITS",
+        "summary": [
+            "add support for unprocessable entity"
+        ],
+        "description": [
+            "add http status code unprocessable entity to indicate that composition content is cannot be validated as underlying template is missing see also i think i agree with this the unprocessable entity status code means the server understands the content type of the request entity hence a media type status code is inappropriate and the syntax of the request entity is correct thus a bad request status code is inappropriate but was unable to process the contained instructions",
+            "and goes in the same direction as your proposal sebastian.iancu sebastian iancu months ago thanks pablo.pazos i guess such change we should introduce in currently is also used for these kind of errors that i think should be would it be than a breaking change"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "23574",
+        "project": "SPECITS",
+        "summary": [
+            "fix few other query related issues"
+        ],
+        "description": [
+            "what is the semantics of having values for query_parameters in the stored query definiton what would be expected behavior when offset and fetch are added",
+            "i guess it would make more sense to just provide a plain aql query as text including the parameters in the query statement",
+            "i can only see consistency between query endpoints and definition endpoints as reasons to do it this way as described in the spec",
+            "is it intentional that the path does not contain definition like for the templates what is the expected behavior when there is a stored query with query_parameters but the client does not provide values for all parameters in my opinon the server should give an error message that parameters cannot be replaced in a query i agree if any query or stored has variables in the query xxx and no parameters are provided it should result in a error",
+            "jake smolka i fail to see the specific use case of the header when posting a stored query",
+            "why is it specified there i understand how works when checking for a previous version of a composition when updating it",
+            "but here i see how referencing via uuid makes sense especially when also the for referencing and the uuid contains no version information because the version already is a path variable",
+            "also from the client perspective i see a semantical connection from uuid to specific query so that saying if this not already exists makes sense",
+            "am i completely off track here and as birger just pointed out the list stored queries endpoint additionally return uuids at all too",
+            "sebastian iancu sorry but i cannot recall now the exact reason we had that header and discussion around the subject",
+            "it was perhaps related to versioning of stored queries updating existing queries or to register store the query only if perhaps erik.sundvall remembers a bit better"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "23553",
+        "project": "SPECITS",
+        "summary": [
+            "correct text or fix various typos of rest apis"
+        ],
+        "description": [
+            "has various typos or small text issue reported via specpr or github",
+            "this is an umbrella ticket for all those corrections needs to be done",
+            "on github see"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "23534",
+        "project": "SPECITS",
+        "summary": [
+            "align rest api look feel other openehr specifications"
+        ],
+        "description": [
+            "rest specs should be consistent with other openehr specifications",
+            "followings should be updated or synced names headings page styling colors fonts etc various page sections copyright etc"
+        ],
+        "timespent": "129600",
+        "alpha": 100
+    },
+    {
+        "id": "23493",
+        "project": "SPECITS",
+        "summary": [
+            "add change log information on"
+        ],
+        "description": [
+            "rest specs should be consistent with other openehr specs therefore rest api change log should also appear on a visible place in these specs"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "11452",
+        "project": "AWBPR",
+        "summary": [
+            "dependency conflicts during install startup on mac os x snow leopard"
+        ],
+        "description": [
+            "a freshly installed adl workbench start on my machine and gives the following error launching adl workbench dyld library not loaded referenced from reason image not found saved crash report for version to suspecting that the awb needs an older libpng i downgraded to by downloading installing and then activating it using sudo port activate libpng but that then gives the following error launching adl workbench dyld library not loaded referenced from reason image not found saved crash report for version to i suspect an older version of or other artifacts was used when compiling the adl workbench",
+            "running port installed on my system reports the following ports are currently installed active if so could you either compile and release an adl workbench with updated dependencies or specify exactly what versions of etc that are needed to get the awb running other hints and solutions are welcome",
+            "adl beta is not yet available as choice under affects in jira"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "12527",
+        "project": "AWB",
+        "summary": [
+            "git repo web integration"
+        ],
+        "description": [
+            "enable tool to connect directly to github bitbucket etc git repos when user specifies just the uri"
+        ],
+        "timespent": "432000",
+        "alpha": 100
+    },
+    {
+        "id": "12516",
+        "project": "AWB",
+        "summary": [
+            "compiler bug fixes"
+        ],
+        "description": [
+            "various fixes in flattening don't remove object nodes with existence remove junk occurrences from legacy archetypes during parsing fix terminology flattening so that term definitions for say and don't cause removal of def of even though may not be used directly in the specialised archetype",
+            "correct various flattening errors found in cimi archetypes correct logic of validity checking on occurrences of proxy references"
+        ],
+        "timespent": "576000",
+        "alpha": 100
+    },
+    {
+        "id": "12515",
+        "project": "AWB",
+        "summary": [
+            "usability improvements silently sticky preferences"
+        ],
+        "description": [
+            "currently when the user is moving between archetypes the definition or error view is always shown as is the differential view",
+            "users have expressed a need for their last chosen view on an archetype to be retained across archetypes"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "12514",
+        "project": "AWB",
+        "summary": [
+            "change construct to always use node id"
+        ],
+        "description": [
+            "currently the construct doesn't use a node id and under the new node identification rules the archetype id was being used as the id",
+            "however this special case creates too many problems and would be better dealt with by the use of node ids for these nodes as well"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "12513",
+        "project": "AWB",
+        "summary": [
+            "use process manager class to control external editors"
+        ],
+        "description": [
+            "currently if the external editor is launched to edit an archetype or bmm schema the awb doesn't track the status of the process and therefore cannot know whether the file was changed or not",
+            "if external processes are launched using the process class this can be fixed so that external editing is made a synchronous activity"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "12512",
+        "project": "AWB",
+        "summary": [
+            "make archetype repositories from physical source"
+        ],
+        "description": [
+            "currently the awb user hass to manually create a repository profile definition for each archetype repository",
+            "this is and every user creates a different alias for the same repositories coming from a github the idea is to include special files in the repositories that provide the definitional so that the archetype collections or libraries in each repository can be defined once and read in by the tool"
+        ],
+        "timespent": "230400",
+        "alpha": 100
+    },
+    {
+        "id": "12511",
+        "project": "AWB",
+        "summary": [
+            "add enumerated types to bmm"
+        ],
+        "description": [
+            "currently enumerated types in uml models are not representable in bmm"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "12315",
+        "project": "AWB",
+        "summary": [
+            "implement namespaced identifiers"
+        ],
+        "description": [
+            "implement the id described in the openehr knowledge artefact identification spec"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "12314",
+        "project": "AWB",
+        "summary": [
+            "convert identification system to codes system ad per wiki"
+        ],
+        "description": [
+            "see"
+        ],
+        "timespent": "432000",
+        "alpha": 100
+    },
+    {
+        "id": "12214",
+        "project": "AWB",
+        "summary": [
+            "merge and refactor atomic c types"
+        ],
+        "description": [
+            "major refactoring of primitive types according to latest adl draft"
+        ],
+        "timespent": "288000",
+        "alpha": 100
+    },
+    {
+        "id": "12213",
+        "project": "AWB",
+        "summary": [
+            "finalise conversion initialisation level"
+        ],
+        "description": [
+            "complete conversion of code"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "12211",
+        "project": "AWB",
+        "summary": [
+            "support tuple constraints"
+        ],
+        "description": [
+            "support constraints of the following form matches ordinal matches symbol value matches see"
+        ],
+        "timespent": "432000",
+        "alpha": 100
+    },
+    {
+        "id": "11802",
+        "project": "AWB",
+        "summary": [
+            "correct windows installer problems"
+        ],
+        "description": [
+            "correct the display of tooltips on windows"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "11800",
+        "project": "AWB",
+        "summary": [
+            "ui bug fixes from beta"
+        ],
+        "description": [
+            "not all tree widgets are in the modern style this needs to be changed visualisation of inheritance could be improved add rm attribute classification make tool sensitive to reference archetypes"
+        ],
+        "timespent": "90000",
+        "alpha": 100
+    },
+    {
+        "id": "11770",
+        "project": "AWB",
+        "summary": [
+            "rewrite definition visualiser"
+        ],
+        "description": [
+            "the definition visualiser is not intuitive and needs to be more it also needs to be more amenable to editing functionality that will be added later on"
+        ],
+        "timespent": "172800",
+        "alpha": 100
+    },
+    {
+        "id": "11721",
+        "project": "AWB",
+        "summary": [
+            "serialisation enhancements yaml json batch output"
+        ],
+        "description": [
+            "add yaml output capability",
+            "improve json output fix lfs etc",
+            "add batch output for all serialisation"
+        ],
+        "timespent": "172800",
+        "alpha": 100
+    },
+    {
+        "id": "11670",
+        "project": "AWB",
+        "summary": [
+            "convert bmm schemas to p format"
+        ],
+        "description": [
+            "convert the bmm schema files to a simplified persistence model based on p form of the bmm classes",
+            "this makes the files easier to understand and edit by hand"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "11666",
+        "project": "AWB",
+        "summary": [
+            "add ancestors and descendants views to class tool"
+        ],
+        "description": [
+            "add ancestors and descendants views to class tool showing classes in a tree with clickable class icons"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "11665",
+        "project": "AWB",
+        "summary": [
+            "add statistics view on catalogue and archetype tool level"
+        ],
+        "description": [
+            "add statistics view on catalogue and archetype tool level that indicates total number of times reference classes used in archetypes average max min occurrences of rm classes in archetypes total and average use of bindings in archetypes"
+        ],
+        "timespent": "172800",
+        "alpha": 100
+    },
+    {
+        "id": "11664",
+        "project": "AWB",
+        "summary": [
+            "make selection history modal"
+        ],
+        "description": [
+            "enable the selection history on all tools and make it modal so that the back and forth buttons on the main tool select appropriate class or archetype depending on what visual context the user is currently in",
+            "for example if in the property view of the class tool then a history will be kept of classes selected there and the buttons will enable to user to cycle through this history"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "11663",
+        "project": "AWB",
+        "summary": [
+            "general ui improvements"
+        ],
+        "description": [
+            "general small improvements to the ui"
+        ],
+        "timespent": "172800",
+        "alpha": 100
+    },
+    {
+        "id": "11662",
+        "project": "AWB",
+        "summary": [
+            "add rm schema viewing tool"
+        ],
+        "description": [
+            "add a too that enables individual viewing of rm schema the new tool would appear in the same tabbed tool docking pane area as the archetype tool and clas tool"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "11616",
+        "project": "AWB",
+        "summary": [
+            "json opt generator"
+        ],
+        "description": [
+            "add a json mode to the current opt generator"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "11610",
+        "project": "AWB",
+        "summary": [
+            "add rm visualiser to awb"
+        ],
+        "description": [
+            "add a facility to awb for visualising rm schemas as trees with packages and classes shown and classes viewable in the class tool"
+        ],
+        "timespent": "172800",
+        "alpha": 100
+    },
+    {
+        "id": "11560",
+        "project": "AWB",
+        "summary": [
+            "convert awb gui from eiffelbuild generated to coded docking structure"
+        ],
+        "description": [
+            "the current gui is generated by eiffelbuild",
+            "to be more flexible particularly for editing purposes it needs to be converted to a docking basis whereby multiple archetype tools can and most other elements such as the archetype/template explorer error feedback etc are also tools in the docking layout"
+        ],
+        "timespent": "259200",
+        "alpha": 100
+    },
+    {
+        "id": "11540",
+        "project": "AWB",
+        "summary": [
+            "rewrite visualisation code"
+        ],
+        "description": [
+            "the current code in the class is organic to say the least",
+            "it needs to be converted to a the main motivation is to make the code more maintainable in preparation for adding editing capability"
+        ],
+        "timespent": "43200",
+        "alpha": 100
+    },
+    {
+        "id": "11530",
+        "project": "AWB",
+        "summary": [
+            "upgrade to eiffelstudio"
+        ],
+        "description": [
+            "to migrate to building with eiffelstudio the following steps need to be performed not necessarily in this order for each class that we have overridden in our cluster compare and implementations",
+            "copy any such changes to our override of the class",
+            "fix the compiler errors and warnings arising from the upgrade",
+            "update install eiffelstudio on the cruisecontrol server"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "11461",
+        "project": "AWB",
+        "summary": [
+            "refactor bmm and provide standalone for java wrapping"
+        ],
+        "description": [
+            "the current bmm basic needs some refactoring to clean it up",
+            "we then need a standalone build of it that illustrates its minimum configuration so that it can be wrapped by java and other languages"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "11422",
+        "project": "AWB",
+        "summary": [
+            "improve ui look and feel"
+        ],
+        "description": [
+            "the current ui is somewhat unintuitive and could be improved by judicious of tabs menus and the addition of some icons"
+        ],
+        "timespent": "54000",
+        "alpha": 100
+    },
+    {
+        "id": "11421",
+        "project": "AWB",
+        "summary": [
+            "refactor flat/differential controls in ui"
+        ],
+        "description": [
+            "currently the flat and differential views are selected using tabs in a notebook which obscures the semantics of the other notebook tabs which should all provide a view of something in either differential or flat form"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "11420",
+        "project": "AWB",
+        "summary": [
+            "rewrite repository profile dialog to be more intuitive"
+        ],
+        "description": [
+            "the current repository profile dialog does not follow typical windows precepts for manipulating a list of items each of which can be renamed and has its own configurable elements"
+        ],
+        "timespent": "111600",
+        "alpha": 100
+    },
+    {
+        "id": "11411",
+        "project": "AWB",
+        "summary": [
+            "add search by archetype id to ui"
+        ],
+        "description": [
+            "it would be convenient if the ui had a simple facility to search for archtypes based on partial id typed in by the user"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "11410",
+        "project": "AWB",
+        "summary": [
+            "implement adl annotations"
+        ],
+        "description": [
+            "implement the annotations section in an archetype as described in the current adl draft"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "11401",
+        "project": "AWB",
+        "summary": [
+            "implement operational template opt"
+        ],
+        "description": [
+            "add capability to generate opt output in adl and xml"
+        ],
+        "timespent": "216000",
+        "alpha": 100
+    },
+    {
+        "id": "11400",
+        "project": "AWB",
+        "summary": [
+            "support rm schema inclusions"
+        ],
+        "description": [
+            "rm schemas used in awb should be able to support schema inclusion so that a final schema can be defined in terms of parts that other schemas can also use"
+        ],
+        "timespent": "201600",
+        "alpha": 100
+    },
+    {
+        "id": "11371",
+        "project": "AWB",
+        "summary": [
+            "separate out rm schemas configuration"
+        ],
+        "description": [
+            "currently rm schemas for the awb are configured in the options dialog",
+            "this needs to be separated out so that more options editing schema can be added"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "11350",
+        "project": "AWB",
+        "summary": [
+            "project documentation update beta"
+        ],
+        "description": [
+            "update to project documentation including online help pages design documentation etc"
+        ],
+        "timespent": "64800",
+        "alpha": 100
+    },
+    {
+        "id": "11331",
+        "project": "AWB",
+        "summary": [
+            "add proper language handling to archetypes"
+        ],
+        "description": [
+            "currently language in archetypes is treated as if it is just a string and is informally assumed to be an code",
+            "however some archetypes have been created with region specific languages like which are not processed properly",
+            "for example if current_language is set to pt a language archetype was not being serialised properly"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "11330",
+        "project": "AWB",
+        "summary": [
+            "add regression testing facility for test archetypes"
+        ],
+        "description": [
+            "a facility is needed for regression testing of the test archetypes enabling the effects of software changes to easily be seen"
+        ],
+        "timespent": "97200",
+        "alpha": 100
+    },
+    {
+        "id": "11320",
+        "project": "AWB",
+        "summary": [
+            "move application error messages to files on a basis"
+        ],
+        "description": [
+            "the error messages are currently inside the class in each application",
+            "this is not sustainable since each app has duplicated copies of some or all of the messages used by other apps"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "11310",
+        "project": "AWB",
+        "summary": [
+            "refactoring for improving low coupling between components"
+        ],
+        "description": [
+            "various aspects of the openehr code base used by the awb and related tools need to be better structured including the classes application root classes"
+        ],
+        "timespent": "183600",
+        "alpha": 100
+    },
+    {
+        "id": "11308",
+        "project": "AWB",
+        "summary": [
+            "implement dadl archetype representation"
+        ],
+        "description": [
+            "this representation treats the whole archetype as a dadl file a pure object serialisation",
+            "this would be useful for persisting compiled archetypes as potentially for generating signatures",
+            "some specific issues currently ontology section expresses terms with attribute names description xxxx text yyyy but the actual structures used in the archetype_ontology class in the aom are hash tables",
+            "if the ontology is converted to the form description xxx text yyy then it will be automatically procesible into and out of object form by a generic object conversion facility already implemented in the eiffel worlbench using the"
+        ],
+        "timespent": "374400",
+        "alpha": 100
+    },
+    {
+        "id": "11306",
+        "project": "AWB",
+        "summary": [
+            "support icons in archetype node map"
+        ],
+        "description": [
+            "as the attached figure in the adl workbench all the icons are the same maybe it is better that icons similar to template designer show category the icon related composition cluster it is useful in the long list categories like entry observation",
+            "to be properly generic the icons need to be the same",
+            "however it would be useful to have a mode where you can introduce a set of icons that go with any reference model",
+            "it would have to be in the form of a logical table of or some equivalent",
+            "this would allow icons for any reference model to be brought in and used any classes without icons could be displayed using the default generic icons currently in use"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "11298",
+        "project": "AWB",
+        "summary": [
+            "integrate openehr terminology into awb"
+        ],
+        "description": [
+            "the java project format of the terminology should be used"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "11297",
+        "project": "AWB",
+        "summary": [
+            "implement context menu in explorer trees"
+        ],
+        "description": [
+            "it would be nice to be able to on an archetype in the repository tree and have a context menu pop up",
+            "possible options would be parse edit save rebuild some rethinking of parse and rebuild might be in order however",
+            "maybe parse should be called build there might be a context menu for folders too",
+            "the edit and save as options would be inapplicable but options to build rebuild and export to html would make sense"
+        ],
+        "timespent": "288000",
+        "alpha": 100
+    },
+    {
+        "id": "11291",
+        "project": "AWB",
+        "summary": [
+            "implement template opt xml output"
+        ],
+        "description": [
+            "implement the xml serialisation from a flattened template"
+        ],
+        "timespent": "342000",
+        "alpha": 100
+    }
+]

@@ -1,0 +1,28 @@
+[
+    {
+        "id": "11011",
+        "project": "GOCF",
+        "summary": [
+            "define vehicle side rvi services for ocf demo"
+        ],
+        "description": [
+            "give services and apis to sanjeev so he can continue integrating the apps"
+        ],
+        "timespent": "29040",
+        "alpha": 100
+    },
+    {
+        "id": "11003",
+        "project": "GOCF",
+        "summary": [
+            "rvi local node in gateway"
+        ],
+        "description": [
+            "need to create an rvi local node that is able to talk to rvi peer node running on gdp or vehicle",
+            "the services required are location hvac control and parameters for heating ventilating and air conditioning",
+            "these services and their json bodies must be presented via the http interface to the gateway"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    }
+]

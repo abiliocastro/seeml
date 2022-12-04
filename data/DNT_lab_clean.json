@@ -1,0 +1,142 @@
+[
+    {
+        "id": "55121",
+        "project": "DNN",
+        "summary": [
+            "evoqcontent targetframework not set in httpruntime in web.config"
+        ],
+        "description": [
+            "targetframework not set in httpruntime in web.config verified this fails both for new installs and for upgrades"
+        ],
+        "timespent": "26100",
+        "alpha": 99
+    },
+    {
+        "id": "51793",
+        "project": "DNN",
+        "summary": [
+            "core messaging attachments"
+        ],
+        "description": [
+            "the core messaging api allows for attachments but does not provide a way to actually include them in outgoing emails",
+            "they are stored as links for users of the site only when they return and go to the messaging center",
+            "it would great if the api included an optional argument to actually send attachments out with emails",
+            "alternatively/additionally a in the email outgoing back to the site would also be desirable",
+            "this way the attachment doesn't necessarily have to be attached"
+        ],
+        "timespent": "9300",
+        "alpha": 99
+    },
+    {
+        "id": "54149",
+        "project": "DNN",
+        "summary": [
+            "evoqcontent pictures shown in edit mode are missing after page is published"
+        ],
+        "description": [
+            "issue description pictures shown in edit mode are missing after page is published steps set up a ee site create a page in site menu add one html module with a sentence as content upgrade to in ie as cm create a page in site menu add pictures as shown in the video modify the width of the first two content layouts publish the page modify and publish again try a few times actual results when in edit mode the page shows all the pictures after publish only one picture is displayed video is attached below expected results all pictures should be displayed after publishing the page"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "51696",
+        "project": "DNN",
+        "summary": [
+            "evoqcontent dam unc folder provider folder remains in dam after it was deleted in the remote server"
+        ],
+        "description": [
+            "steps create a page put in page menu delete the default html module and add dam module create unc folder and upload a few files through os windows explorer and set up appropriate permission add unc folder provider in dam create a unc folder under dam root select the unc folder and click sync this folder subfolders delete a subfolder through os windows explorer select unc parent folder and click sync this folder subfolder expected result and files under it are no longer visible in dam actual result still exists on dam even though it is deleted on remote server",
+            "note this problem i tested in and it is not happening there"
+        ],
+        "timespent": "29400",
+        "alpha": 100
+    },
+    {
+        "id": "50146",
+        "project": "DNN",
+        "summary": [
+            "expired master page shall be still visible to users who have edit permissions"
+        ],
+        "description": [
+            "cloned from it is fixed in platform but obviously more work to do in content engage",
+            "with updated steps log in as host create a new page test set up the start time and end time for this page",
+            "need to make it expired register a new user and put it in translator role",
+            "assign the new page test to allow translator to edit and add content",
+            "create a personalized page and add a rule for user translator and publish it",
+            "log out host and log in as before the page expired and the page shall be visible for and editable",
+            "wait till the page expired and visit the page again",
+            "result the page still editable but display you do not have access to view this page within the website",
+            "expected for any user has edit permission on the master page the page shall always visible and editable even it is expired"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "46677",
+        "project": "DNN",
+        "summary": [
+            "evoqcontent si content staging module displays object reference error"
+        ],
+        "description": [
+            "content staging module displays object reference not set to an instance of an object error steps to reproduce setup content staging connect sites enter production portal credentials in content staging module expected result no error actual result object reference not set to an instance of an object error is displayed",
+            "however content staging still works"
+        ],
+        "timespent": "3480",
+        "alpha": 100
+    },
+    {
+        "id": "52689",
+        "project": "DNN",
+        "summary": [
+            "evoqcontent do not start workflow in addtab method"
+        ],
+        "description": [
+            "in platform tab workflow was implemented and the addtab method was changed to start workflow if workflow was enabled on page creation",
+            "we have detected issues with this approach as the page version is created only when you have modules on the page",
+            "so we can have scenario where you try to complete a tab workflow with no pending to be published version",
+            "this scenario was already handled in evoq but making things complex",
+            "it was a workaround instead the right solution",
+            "the goal of the task is remove the code that start the workflow on tab creation",
+            "and let that the workflow mechanism is fired by the page change tracking system add move delete modules note for qa this change does not impact platform behavior as tab workflow is not enabled"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "52502",
+        "project": "DNN",
+        "summary": [
+            "evoqcontent page versioning negative contentitemid errors"
+        ],
+        "description": [
+            "after migrating to content when you try to edit a page you can find errors with the message the argument contentitemid cannot be negative see attached image to see errors in the ui this is due to current page has not associated a content item element or contained modules have not a content item",
+            "the common scenario to find these errors is when the original dnn version is earlier to since in that version content items were introduced and existing elements were upgraded gradually on demand",
+            "therefore it is still probably to find existing entities tabs or modules without an associated content item"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "50200",
+        "project": "DNN",
+        "summary": [
+            "extract site log into a separate module"
+        ],
+        "description": [
+            "card the site log is used to log system activity",
+            "since it was first introduced newer and better logging options have been added to the platform",
+            "all site log apis and associated database schema and sprocs should be removed from the core platform and included in the sitelog module",
+            "conversation as part of extracting this module upgrade logic should be added to the platform to remove any scheduled tasks and stored procedures related to this feature",
+            "the sitelog module should also be removed from the appropriate extensions tables",
+            "the sitelog table will remain untouched to avoid any potential data loss",
+            "the site log module should be moved to and registered in the forge",
+            "confirmation there should be no site or host settings referencing sitelog settings",
+            "sitelog related settings should be deprecated in portal and host classes but can be completely removed in cases where the class only exists to support sitelog",
+            "new installs and upgrades alike should not have this module under extensions or the admin pages available post also as part of this the extracted module should live in a new github repository here note this will introduce a known breaking change for anyone who might call the sitelog apis",
+            "it will also remove a feature that might be in use on some websites"
+        ],
+        "timespent": "1500",
+        "alpha": 100
+    }
+]

@@ -1,0 +1,3625 @@
+[
+    {
+        "id": "19315",
+        "project": "KYLO",
+        "summary": [
+            "add a default value for in the java code"
+        ],
+        "description": [
+            "add the default value for this property in the java code example caused by java.lang.illegalargumentexception could not resolve placeholder in value at"
+        ],
+        "timespent": "3600",
+        "alpha": 98
+    },
+    {
+        "id": "18766",
+        "project": "KYLO",
+        "summary": [
+            "unable to save feed properties"
+        ],
+        "description": [
+            "after trying to save some feed properties admin properties it errors out",
+            "error toresponse caught throwable com.thinkbiganalytics.metadata.modeshape.noactivesessionexception there is no active jcr session method"
+        ],
+        "timespent": "1800",
+        "alpha": 98
+    },
+    {
+        "id": "18756",
+        "project": "KYLO",
+        "summary": [
+            "start now on feed details screen fails with http"
+        ],
+        "description": [
+            "emits these log events when bug is encountered noformat error messagebodywriter not found for media generictype=class error occurred when processing a response created from an already mapped exception",
+            "error servlet.service for servlet servletcontainer in context with path threw exception http internal server error with root cause org.glassfish.jersey.message.internal.messagebodyprovidernotfoundexception messagebodywriter not found for media generictype=class at"
+        ],
+        "timespent": "5400",
+        "alpha": 98
+    },
+    {
+        "id": "18548",
+        "project": "KYLO",
+        "summary": [
+            "improve documentation for kylo spark shell"
+        ],
+        "description": [
+            "add executor-memory and to add and spark.properties to add logging configuration changes to spark modes document"
+        ],
+        "timespent": "3600",
+        "alpha": 98
+    },
+    {
+        "id": "19042",
+        "project": "KYLO",
+        "summary": [
+            "feed import validation for user properties causes npe"
+        ],
+        "description": [
+            "the required property for userfield can return a the feedimporter uses a filter f f.isrequired causing npe if value is returned as null"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "18991",
+        "project": "KYLO",
+        "summary": [
+            "feed lineage typescript error for feeds using other feeds"
+        ],
+        "description": [
+            "this code in the refers to this.usedbyfeedid this at this point is the not the object"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "18978",
+        "project": "KYLO",
+        "summary": [
+            "rpm installation error accessing categories menu"
+        ],
+        "description": [
+            "steps to reproduce download kylo hdp sandbox and start image",
+            "no issues with any menu here check out the latest code from git and build rpm",
+            "install rpm is sandbox bring up all apps login and go to categories menu",
+            "error occurs",
+            "see the attached stacktrace.txt"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "18930",
+        "project": "KYLO",
+        "summary": [
+            "tdch template create teradata table processor and reserved word column names"
+        ],
+        "description": [
+            "teradata has reserved words such as title which fail when ingesting data into teradata in the create teradata table processor",
+            "the sql syntax should quote the field names so it passes and creates/inserts the data"
+        ],
+        "timespent": "18000",
+        "alpha": 99
+    },
+    {
+        "id": "18874",
+        "project": "KYLO",
+        "summary": [
+            "feed create sample values can cause oom"
+        ],
+        "description": [
+            "sample values don't need to be persisted back to the server in modeshape",
+            "a large data sample can cause oom issues when saving the feed"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "18873",
+        "project": "KYLO",
+        "summary": [
+            "update unit tests for tdchexporthivetoteradata processor to not use filesystem-based resources"
+        ],
+        "description": [
+            "update the processor unit tests to not use filesystem-based resources",
+            "this includes tests for hive dependencies and teradata connector jars"
+        ],
+        "timespent": "39600",
+        "alpha": 99
+    },
+    {
+        "id": "18750",
+        "project": "KYLO",
+        "summary": [
+            "maven build order issue"
+        ],
+        "description": [
+            "in the core module depends upon nifi-provenance modules which currently live in the integrations module",
+            "this is a problem since integrations is built after core'",
+            "the and need to move out of integrations to a module in core'",
+            "this is why the builds sometimes complete and sometimes dont due to the modules existing in maven for the first time or not"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "18741",
+        "project": "KYLO",
+        "summary": [
+            "data wrangler feeds with textfile target format fail to run"
+        ],
+        "description": [
+            "additional steps to repro using hdp sandbox create a data transformation feed join concets.venues and concerts.events choose textfile as target format tail the set the timer for minutes finish creating the feed",
+            "error will appear in logs when validator step is reached"
+        ],
+        "timespent": "21600",
+        "alpha": 99
+    },
+    {
+        "id": "18626",
+        "project": "KYLO",
+        "summary": [
+            "user impersonation support different username cases"
+        ],
+        "description": [
+            "in some cases the usernames on the cluster side might be mixed cases lower case or upper case compared to how they exist in the source system add a field to the application.properties file that specified which of the cases it should be",
+            "update the code that sets the proxy user for user impersonation",
+            "update the create method of the refreshabledatasource class to reflect the setting",
+            "if proxyuser propertyprefix.equals hive.datasource username principal url principal"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "18617",
+        "project": "KYLO",
+        "summary": [
+            "login issues when upgrading to"
+        ],
+        "description": [
+            "i have seen different instances where an upgrade to resulted in not being able to login",
+            "in order to login on both boxes i needed to delete the contents in the groups.properties file and make it an empty file"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "18594",
+        "project": "KYLO",
+        "summary": [
+            "initializefeed processor is inefficient"
+        ],
+        "description": [
+            "testing a high rate feed showed initializefeed as a performance the processor should support the ability to control throughput vs",
+            "latency see nifi's updateattribute for patterns working with multiple flowfiles more"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "18555",
+        "project": "KYLO",
+        "summary": [
+            "data transformation a function column without an alias is invalid and fails hive table create"
+        ],
+        "description": [
+            "create a new data transformation feed add a new column with a function notice the ui gives it a nice alias go to next table step notice the name of the new column isnt but rather its this will fail hive on the table create",
+            "it should be named the same as the display i.e"
+        ],
+        "timespent": "10800",
+        "alpha": 99
+    },
+    {
+        "id": "18493",
+        "project": "KYLO",
+        "summary": [
+            "refactor feed properties to no longer use the extensible types"
+        ],
+        "description": [
+            "this is essentially the same issue as but relates to globally-defined feed properties",
+            "the solution will be the same approach as what is being done for globally-defined category properties for"
+        ],
+        "timespent": "10800",
+        "alpha": 99
+    },
+    {
+        "id": "18487",
+        "project": "KYLO",
+        "summary": [
+            "access control of prior feed versions are frozen as of the state when the version was created"
+        ],
+        "description": [
+            "when a new version of a feed is created in modeshape the access control to that feed's node tree is frozen as of the state it was in at that point in time",
+            "if a is later granted access to that feed it only affects the current feed version",
+            "therefore the user will not be able to view the prior version since it still has the older access control state",
+            "i don't believe there is a way to change that frozen state",
+            "the easiest fix i can think of right now is when viewing a feed's version history if permission check for read access to the current feed version succeeds then a separate query would be made for the feed's prior versions in a privileged service mode that bypasses the access control restrictions",
+            "we may also want to consider having access to a feed's history as a new kind of permission that can be granted"
+        ],
+        "timespent": "14400",
+        "alpha": 99
+    },
+    {
+        "id": "18477",
+        "project": "KYLO",
+        "summary": [
+            "upgrade instructions for kylo sandbox"
+        ],
+        "description": [
+            "some additional steps are required when upgrading the kylo sandbox to add logout and locales to httpd.conf change proxypreservehost to off in restart httpd go to login to kylo"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "18417",
+        "project": "KYLO",
+        "summary": [
+            "add ena driver for instances"
+        ],
+        "description": [
+            "as a user i would like to launch the kylo sandbox ami's using instances instead of instances",
+            "install the ena driver as part of the base ami build",
+            "this requires a restart of the ami and running the aws cli to enable ena",
+            "the steps are documented here",
+            "we should do this at the base centos ami and rebuild the base ami's so we only have to do this once"
+        ],
+        "timespent": "21600",
+        "alpha": 99
+    },
+    {
+        "id": "18112",
+        "project": "KYLO",
+        "summary": [
+            "date standardizer bad data can cause exception which may abort spark job"
+        ],
+        "description": [
+            "verify that bad data causes a warning but won't fail the entire cleansing job",
+            "in general all standardizers need to be possibly this can be handled in an outer loop vs",
+            "each standardizer"
+        ],
+        "timespent": "28800",
+        "alpha": 99
+    },
+    {
+        "id": "17500",
+        "project": "KYLO",
+        "summary": [
+            "kylo with ad enabled does not allows to delete group"
+        ],
+        "description": [
+            "i am logged in with a user who has all permission in kylo i am trying to delete another group from kylo but throws below exception",
+            "warn exception while execution a transactional operation rolling back com.thinkbiganalytics.metadata.modeshape.metadatarepositoryexception javax.jcr.accessdeniedexception permission denied to perform actions read access control content on path method at"
+        ],
+        "timespent": "5400",
+        "alpha": 99
+    },
+    {
+        "id": "13822",
+        "project": "KYLO",
+        "summary": [
+            "granting feed details permissions grants permanent category access"
+        ],
+        "description": [
+            "a user being added either directly or through one or more groups as a member of a role with feed edit or detail access permission granted will implicitly be granted category access even if there is no role assignment granting this access explicitly",
+            "this was a requirement due to our metadata model dependencies",
+            "the problem is that there is not an easy way to determine when this category access can be revoked when the feed's access is revoked as there may be other feeds the user still has access to under that category",
+            "we should either figure out a way to revoke these category access rights when necessary have a way to show the user that these access right exists",
+            "i don't know how high the priority of this should be"
+        ],
+        "timespent": "64800",
+        "alpha": 99
+    },
+    {
+        "id": "13802",
+        "project": "KYLO",
+        "summary": [
+            "referentialintegrityexception when deleting a feed"
+        ],
+        "description": [
+            "cannot remove some nodes because they are still strongly referred by existing nodes looking for a reproducible case",
+            "if this can't be fixed in day then it may need to be removed to the backlog"
+        ],
+        "timespent": "12600",
+        "alpha": 99
+    },
+    {
+        "id": "19178",
+        "project": "KYLOBM",
+        "summary": [
+            "setup two node hdp clusters in aws with kylo and nifi on separate edge nodes"
+        ],
+        "description": [
+            "setup two hdp clusters in aws with kylo and nifi on separate edge nodes",
+            "copy test dataset from to nifi node to dropzone directory which will be used by the feed"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "19560",
+        "project": "KYLO",
+        "summary": [
+            "properly identify form changes in feed"
+        ],
+        "description": [
+            "form is marked as changed even when there are no changes and asks to accept the changes",
+            "the popup should come up only if anything actually changed"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "19512",
+        "project": "KYLO",
+        "summary": [
+            "feed target add column issue"
+        ],
+        "description": [
+            "the feed target page uses virtual scroll",
+            "the add column button is intended to add a new editable column at the bottom of the columns list scroll the user to that column and allow them to edit it",
+            "i couldnt get this to work and get the column to show up",
+            "it may just need an additional changedetectorref and manually calling if that doesnt work we can try to move that new column to a separate card below the tables list or a dialog",
+            "first attempt the initial solution and if that doesnt work lets discuss ui options"
+        ],
+        "timespent": "61200",
+        "alpha": 100
+    },
+    {
+        "id": "19506",
+        "project": "KYLO",
+        "summary": [
+            "add in the advanced options to the source page"
+        ],
+        "description": [
+            "the advanced options showing the serde needs to be added to the source page relates to"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "19505",
+        "project": "KYLO",
+        "summary": [
+            "add in the merge strategy and target format section to the feed stepper in the target page"
+        ],
+        "description": [
+            "the merge strategy needs a new card in the target page the target format needs a new card in the target page see screenshots"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "19450",
+        "project": "KYLO",
+        "summary": [
+            "feed target table partitions work"
+        ],
+        "description": [
+            "the feed target has table partitions but it needs to be validated to work correctly"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "19448",
+        "project": "KYLO",
+        "summary": [
+            "drag and drop lists needed for feed standardizers and validators"
+        ],
+        "description": [
+            "we need to add a dnd component and apply it to the component for the feed target standardizers and validators i tried getting the component installed but couldnt get it to recognize the angular moudle"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "19444",
+        "project": "KYLO",
+        "summary": [
+            "rtd for repository changes"
+        ],
+        "description": [
+            "update release notes and documentation with repository changes"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "19393",
+        "project": "KYLO",
+        "summary": [
+            "ui demo feedback"
+        ],
+        "description": [
+            "display login notification when template updates are available",
+            "add callback to dismiss notification",
+            "align buttons to right on list templates page",
+            "add space between title and filter"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "19334",
+        "project": "KYLO",
+        "summary": [
+            "change new template repository notification from toast to top right notification panel"
+        ],
+        "description": [
+            "we dont want to notify everyone with a toast message every time someone logs in and there are template updates",
+            "lets move that notification up to the top right notification bell icon menu relates"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "19330",
+        "project": "KYLO",
+        "summary": [
+            "capture change log comment when publishing template to repository"
+        ],
+        "description": [
+            "allow user to type in comment as to what changed when they publish the template",
+            "should we also capture this in jcr when they update a template if we do this then we have a rolling history of everything that has changed",
+            "this history could be exported and added to the metadata in the template export in the publish json",
+            "display these change log entries and date to the user so they know when and what got changed with the repository template and can make an educated decision about if they should import the template or not",
+            "feel fee to break this into or jiras if you want capture change description in jcr export change desc logs with template export populate repository json with change desc show date and change desc to user in ui"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "19326",
+        "project": "KYLO",
+        "summary": [
+            "autogenerate metadata for templates in repository"
+        ],
+        "description": [
+            "json metadata is manually created for templates in samples directory",
+            "as a next step generate this metadata on the very first request that comes to this repository"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "19312",
+        "project": "KYLO",
+        "summary": [
+            "registered template shows update available after template publish"
+        ],
+        "description": [
+            "after publishing a template the same template shows as update available in registered templates view",
+            "expected template has been just published to repository update available should not be shown as it is already the latest version"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "19311",
+        "project": "KYLO",
+        "summary": [
+            "empty repositories dropdown during publish template"
+        ],
+        "description": [
+            "following are the changes needed repositories are not available when trying to publish template",
+            "empty dropdown shows up",
+            "remove menu from template info and move the buttons in a row",
+            "button styling new icon"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "19290",
+        "project": "KYLO",
+        "summary": [
+            "migrate feed lineage diagram to new feed stepper"
+        ],
+        "description": [
+            "port over feed lineage to component and add a step to view it in the new feed stepper"
+        ],
+        "timespent": "115200",
+        "alpha": 100
+    },
+    {
+        "id": "19276",
+        "project": "KYLO",
+        "summary": [
+            "migrate precondition schedule dialog to"
+        ],
+        "description": [
+            "migrate precondition schedule dialog to wire it into the new component"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "19264",
+        "project": "KYLO",
+        "summary": [
+            "display notification when a template update is available in repository"
+        ],
+        "description": [
+            "display notification when a template update is available in repository",
+            "check checksum of file and compare with available versions"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "19262",
+        "project": "KYLO",
+        "summary": [
+            "repository templates don't show up in sandbox"
+        ],
+        "description": [
+            "repository templates are not displayed in sandbox when you go to admin repository",
+            "it works fine in ide"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "19234",
+        "project": "KYLO",
+        "summary": [
+            "expose the xml valuetag option in the xml parser"
+        ],
+        "description": [
+            "the spark xml library differs between and with tags and prefixes the option valuetag differs between the two",
+            "valuetag the tag used for the value when there are attributes in the element having no child",
+            "default is value",
+            "valuetag the tag used for the value when there are attributes in the element having no child",
+            "default is value",
+            "spark the valuetag option needs to be supplied and added to the parser just as we do for the attributeprefix option default the option to value so it matches"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "19222",
+        "project": "KYLO",
+        "summary": [
+            "unable to edit data transformation feed"
+        ],
+        "description": [
+            "create xml ingest or data transformation feed edit the feed and click edit transformations or edit query the feed stepper appears but doesnt remember any of the feed detail settings or the script"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "19206",
+        "project": "KYLO",
+        "summary": [
+            "remove from feed profile page"
+        ],
+        "description": [
+            "after creating a sample feed using and uploading the file i can see as one of the columns on the profile page for that run"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "19196",
+        "project": "KYLO",
+        "summary": [
+            "data source without icon breaks visual query and data sources pages"
+        ],
+        "description": [
+            "you can create a data source without an icon but it breaks the visual query and data sources pages",
+            "navigating to those pages causes them not to load"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "19142",
+        "project": "KYLO",
+        "summary": [
+            "pagination for list templates page"
+        ],
+        "description": [
+            "the number of templates may grow as there will be multiple repositories and pagination will be needed"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "19140",
+        "project": "KYLO",
+        "summary": [
+            "integrated list view of templates"
+        ],
+        "description": [
+            "there will be one integrated view for templates from all repositories",
+            "there will be an icon to show if a template is coming from a default or user repository"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "19139",
+        "project": "KYLO",
+        "summary": [
+            "multiple repositories for kylo"
+        ],
+        "description": [
+            "allow kylo to have different repositories for their custom templates",
+            "each can be either read only or writeable initially provide repositoryconifguration via json file core repository attributes name readonly description name scotts file location type filesystem readonly true name local file location type filesystem readonly false readonly prevents kylo from publishing to this location initially support filesystem support git filesystem extension example filesystem readonly filesystem write git write"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "19138",
+        "project": "KYLO",
+        "summary": [
+            "default repository"
+        ],
+        "description": [
+            "add a default repository pointing to sample templates folder users cannot write to this repository"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "19129",
+        "project": "KYLO",
+        "summary": [
+            "links don't work after clicking add new template button"
+        ],
+        "description": [
+            "in admin templates clicking to import new template takes directly to select template stepper and then all links become unresponsive",
+            "expected clicking should take to the registration methods screen"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "19105",
+        "project": "KYLO",
+        "summary": [
+            "backend changes for download template"
+        ],
+        "description": [
+            "add rest controller",
+            "add service api"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "19104",
+        "project": "KYLO",
+        "summary": [
+            "add download link in ui"
+        ],
+        "description": [
+            "add download link in ui"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "19061",
+        "project": "KYLO",
+        "summary": [
+            "publish template to marketplace"
+        ],
+        "description": [
+            "publish template to marketplace",
+            "rest apis for publish template",
+            "ui for publish template"
+        ],
+        "timespent": "75600",
+        "alpha": 100
+    },
+    {
+        "id": "19060",
+        "project": "KYLO",
+        "summary": [
+            "create angular component for import marketplace template"
+        ],
+        "description": [
+            "we are now using the angularjs import template component for marketplace import template",
+            "these two should be separate"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "19031",
+        "project": "KYLO",
+        "summary": [
+            "filebased marketplace provider"
+        ],
+        "description": [
+            "filebased marketplace provider"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "19028",
+        "project": "KYLO",
+        "summary": [
+            "rest api for filebasedmarketplace"
+        ],
+        "description": [
+            "design rest apis to manage templates that can be imported",
+            "implement marketplace rest endpoints listtemplates installtemplate tests download publish uninstall to be covered as part of other stories"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "19027",
+        "project": "KYLO",
+        "summary": [
+            "ui changes"
+        ],
+        "description": [
+            "design and implement ui to add marketplace"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "19016",
+        "project": "KYLO",
+        "summary": [
+            "feed properties alignment"
+        ],
+        "description": [
+            "user supplied feed properties should align to the left see screenshot"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "19015",
+        "project": "KYLO",
+        "summary": [
+            "ability to retain filename when using upload function in"
+        ],
+        "description": [
+            "we have a use case with our client that when someone uploads a file they include in the file name different key attributes that are used for processing the data down the line",
+            "we need a way to kylos built in functionality where it will rename the file according to the file filter regex provided when setting up the feed",
+            "our request is to give us an option to make this functionality optional so if we want we can provide files then have those files moved to the drop zone and keep the file name"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "19001",
+        "project": "KYLO",
+        "summary": [
+            "rpg feeds and templates dont export their connecting templates"
+        ],
+        "description": [
+            "rpg feeds and templates dont export their connecting templates"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18990",
+        "project": "KYLO",
+        "summary": [
+            "fix jsonfeed integration test"
+        ],
+        "description": [
+            "jsonfeedit is failing",
+            "fix it"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "18984",
+        "project": "KYLO",
+        "summary": [
+            "sla assessments not viewable for specific sla"
+        ],
+        "description": [
+            "create some feeds with sla and assessments click on sla click on assessments link the page will spin",
+            "there is a js error for the method needs to be converted to a typescript lambda"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18981",
+        "project": "KYLO",
+        "summary": [
+            "fix close label in about dialog box"
+        ],
+        "description": [
+            "change label from close to close"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "18977",
+        "project": "KYLO",
+        "summary": [
+            "start now changed run schedule didnt preserve original schedule"
+        ],
+        "description": [
+            "create a feed with a cron schedule disable the feed start now",
+            "it changes the schedule to timer after its complete it never resets the schedule back to the cron expression"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18976",
+        "project": "KYLO",
+        "summary": [
+            "start now sometimes doesnt work"
+        ],
+        "description": [
+            "issues exist with start now sometimes doesnt work and is unable to find the correct input processor",
+            "the logs dont indicate what went wrong the rest endpoint returns text but the response runtime exception mapper returns json",
+            "this causes the underlying log exception to be hidden"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18973",
+        "project": "KYLO",
+        "summary": [
+            "data wrangler local file upload needs to work with sample size"
+        ],
+        "description": [
+            "local file upload needs to work with sample size currently it doesnt respect this option"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "18971",
+        "project": "KYLO",
+        "summary": [
+            "add spark csv parser for wrangler file uploads"
+        ],
+        "description": [
+            "add spark csv parser for wrangler file uploads"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "18964",
+        "project": "KYLO",
+        "summary": [
+            "savepoint processor performance issues"
+        ],
+        "description": [
+            "the setsavepoint processor can generate thousands of and also sometimes doesnt replay the failed event leaving stale items in the queue"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "18958",
+        "project": "KYLO",
+        "summary": [
+            "registered template caches property metadata when nifi template changes"
+        ],
+        "description": [
+            "create a new template in nifi with some input processors register it in kylo update the template in nifi and move the input processor to be a downstream processor or vice versa save the template again in nifi go to kylo and select the template",
+            "it will not show the processors correctly and double them up as input and non input"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "18953",
+        "project": "KYLO",
+        "summary": [
+            "add streaming ingest feed example"
+        ],
+        "description": [
+            "add streaming ingest feed example"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "18952",
+        "project": "KYLO",
+        "summary": [
+            "recreate demo feeds to use advanced ingest"
+        ],
+        "description": [
+            "recreate demo feeds to use advanced ingest"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "18946",
+        "project": "KYLO",
+        "summary": [
+            "define feed table needs to save state for file parsers"
+        ],
+        "description": [
+            "define feed table needs to save state for file parsers create new data ingest feed upload sample file go to next step go back notice the sample file schema parser is all reset"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "18945",
+        "project": "KYLO",
+        "summary": [
+            "import template ui marks selected options as unselected upon import completion"
+        ],
+        "description": [
+            "this issue was found when importing a template with remote process group support",
+            "create a reusable template with remote process group support",
+            "import it via kylo ui stating yes for a overwrite b create reusable flow c remote process group aware upon import option a and c are marked off",
+            "this conflicts with options chosen at start of import",
+            "attached screenshot"
+        ],
+        "timespent": "600",
+        "alpha": 100
+    },
+    {
+        "id": "18943",
+        "project": "KYLO",
+        "summary": [
+            "ability for data wrangler to transform local files"
+        ],
+        "description": [
+            "add the ability for users to upload local files and transform them using the data wrangler"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "18935",
+        "project": "KYLO",
+        "summary": [
+            "simplify feed creation options for teradata ingest"
+        ],
+        "description": [
+            "use defaults for teradata ingest options when creating feed",
+            "hide them during feed creation process",
+            "document how a template designer could expose additional options if needed"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "18933",
+        "project": "KYLO",
+        "summary": [
+            "unable to create feed with remote process groups"
+        ],
+        "description": [
+            "register a template having a remote process group as a reusable flow in kylo create a feed in kylo off a feed template that should connect to the reusable flow from step feed creation throws this error kylo ui error invalid items were found",
+            "please review and fix these items",
+            "invalid remote process group",
+            "unable set find valid remote input port for please ensure you have a remote input port matching this name services log info unable to remove the versioned processgroup info initialized cache to look up availability of history data reindexing feeds info returning cached nifi template info merging properties for template info returning cached nifi template info creating the feed info returning cached nifi template info updating remote process group port connection for info updating connectionentity revision clientid null version lastmodifier null id null uri null position null permissions null bulletins null component id parentgroupid null position null source id type processor groupid name null running null transmitting null exists null comments null destination id type groupid name null running null transmitting null exists null comments null name null labelindex null zindex null selectedrelationships success availablerelationships null backpressureobjectthreshold null backpressuredatasizethreshold null flowfileexpiration null prioritizers null bends null status null bends null labelindex null zindex null sourceid null sourcegroupid null sourcetype null destinationid null destinationgroupid null destinationtype null error invalid remote process were found",
+            "info removed the versioned processgroup info aligning feed flows in nifi info time align feed process groups",
+            "elapsedtime ms info time save feed flow in nifi",
+            "elapsedtime ms error failed to process request"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "18928",
+        "project": "KYLO",
+        "summary": [
+            "data wrangler sometimes throws mdtooltip error in the console"
+        ],
+        "description": [
+            "data wrangler sometimes throws mdtooltip error in the console see screenshot"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "18927",
+        "project": "KYLO",
+        "summary": [
+            "datasource page form validation doesnt work"
+        ],
+        "description": [
+            "datasource page form validation doesnt work the angular controller doesnt have the right form",
+            "form validation doesnt properly validate unique names"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "18897",
+        "project": "KYLO",
+        "summary": [
+            "qa testing"
+        ],
+        "description": [
+            "qa testing"
+        ],
+        "timespent": "72000",
+        "alpha": 100
+    },
+    {
+        "id": "18893",
+        "project": "KYLO",
+        "summary": [
+            "catalog integration with amazon"
+        ],
+        "description": [
+            "verify listing of buckets and files in amazon"
+        ],
+        "timespent": "30600",
+        "alpha": 100
+    },
+    {
+        "id": "18885",
+        "project": "KYLO",
+        "summary": [
+            "create hdp virtual box image"
+        ],
+        "description": [
+            "create hdp virtual box image test the kylo snapshot works before the release"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18884",
+        "project": "KYLO",
+        "summary": [
+            "create hdp aws sandbox"
+        ],
+        "description": [
+            "create hdp aws sandbox test the kylo snapshot works before the release"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "18883",
+        "project": "KYLO",
+        "summary": [
+            "create cloudera virtual box image"
+        ],
+        "description": [
+            "create cloudera virtual box image test the kylo snapshot works before the release"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "18882",
+        "project": "KYLO",
+        "summary": [
+            "create cloudera aws sandbox"
+        ],
+        "description": [
+            "create cloudera aws sandbox test the kylo snapshot works before the release"
+        ],
+        "timespent": "9000",
+        "alpha": 100
+    },
+    {
+        "id": "18881",
+        "project": "KYLO",
+        "summary": [
+            "add ports to virtual box"
+        ],
+        "description": [
+            "add ports kylo and nifi debug ports to the port forwards for the virtual box images"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18880",
+        "project": "KYLO",
+        "summary": [
+            "remove java from hdp sandbox"
+        ],
+        "description": [
+            "install java as the system java for the hdp sandbox",
+            "there may be performance issues and might need to tune the different services"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "18879",
+        "project": "KYLO",
+        "summary": [
+            "install hbase and kafka in base images"
+        ],
+        "description": [
+            "install hbase and kafka in base images",
+            "this is required for the streaming template"
+        ],
+        "timespent": "68400",
+        "alpha": 100
+    },
+    {
+        "id": "18860",
+        "project": "KYLO",
+        "summary": [
+            "template is imported with incorrect controller service"
+        ],
+        "description": [
+            "import a template with a processor referring controller service of type a say dbcpconnectionpool import a second template with another processor referring to controller service of type a",
+            "expected processor is configured to use actual and processors are both configured to use"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "18856",
+        "project": "KYLO",
+        "summary": [
+            "data wrangler filters not working"
+        ],
+        "description": [
+            "data wrangler filters appear to be on client side only and dont round trip back to the server",
+            "this creates very strange behavior in the wrangler after you apply a filter and scroll this needs to be changed so the filters are applied and go back to the server"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "18849",
+        "project": "KYLO",
+        "summary": [
+            "kylo services in linux environments can take too long to start in some environments"
+        ],
+        "description": [
+            "due to the issue covered in the stack overflow post with secure random generator in linux environments the tomcat used by spark shell may on some combinations take too long to start",
+            "typically may get stuck around one of the following log messages though the message has no bearing on the issue it is just the timing of the in spark shell case you may see in a message that indicates that the spark shell client was killed after some long period of time",
+            "this occurs in visual query after choosing the table for wrangling and going to the wrangler screen",
+            "kylo will give a generic error message and you may see a response from the transform rest endpoint if examining the application with chrome tools or firebug",
+            "in production environments one should follow the steps in the stack overflow post below",
+            "in the kylo sandbox we will need to edit the files and change to"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18833",
+        "project": "KYLO",
+        "summary": [
+            "custom select inputs in feed details are not renderd correctly"
+        ],
+        "description": [
+            "register template make a property editable as select and type in some custome values create the feed",
+            "edit it and its not rendered correctly see screenshot"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "18832",
+        "project": "KYLO",
+        "summary": [
+            "save point retry buttons not showing up in job details"
+        ],
+        "description": [
+            "savepoint trigger and fail buttons dont appear in job details"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "18830",
+        "project": "KYLO",
+        "summary": [
+            "deselecting template property doesnt save"
+        ],
+        "description": [
+            "register template select some properties as user editable verify they show up on the screen for feed creation update template and deselect usereditable fields verify they dont show up in feed creation they appear to still show up"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18827",
+        "project": "KYLO",
+        "summary": [
+            "property resolver not resolving properties"
+        ],
+        "description": [
+            "when creating new data transformation feeds i noticed that it is not replacing the expression with the value in the application.properties file",
+            "the same issue is also happening for a new property i added",
+            "it looks like it worked for the data ingest template though"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "18825",
+        "project": "KYLO",
+        "summary": [
+            "upgrade from with sla failures"
+        ],
+        "description": [
+            "info recording principal types for acls for version info finished upgrade through info moving user properties into feed details so that they can be versioned with the rest of the feed",
+            "target kylo version info updating template feed references info add start feed permission to roles info refactoring feed sla relationship management warn exception while execution a transactional operation rolling back com.thinkbiganalytics.metadata.modeshape.metadatarepositoryexception javax.jcr.nodetype.invalidnodetypedefinitionexception cannot unregister type because it is currently being used on at least one node caused by javax.jcr.nodetype.invalidnodetypedefinitionexception cannot unregister type because it is currently being used on at least one node more info is closing down",
+            "warn the web application root appears to have started a thread named hikari housekeeper pool but has failed to stop it",
+            "this is very likely to create a memory leak",
+            "stack trace of thread"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18823",
+        "project": "KYLO",
+        "summary": [
+            "setup kylo dev env locally"
+        ],
+        "description": [
+            "checkout code setup intellij with kylo debug env",
+            "setup sandbox"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "18821",
+        "project": "KYLO",
+        "summary": [
+            "invalid variable in transformation template"
+        ],
+        "description": [
+            "the remove hdfs folders processor has an invalid property in the transformation template",
+            "change to be then export and test the template"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18820",
+        "project": "KYLO",
+        "summary": [
+            "add nifi support"
+        ],
+        "description": [
+            "add support for nifi update installation scripts test template import feed creation and feed run",
+            "edit feeds"
+        ],
+        "timespent": "19800",
+        "alpha": 100
+    },
+    {
+        "id": "18819",
+        "project": "KYLO",
+        "summary": [
+            "unable to delete a group"
+        ],
+        "description": [
+            "create a group delete it",
+            "the page doesnt respond",
+            "there is a js screenshot"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18812",
+        "project": "KYLO",
+        "summary": [
+            "test install and upgrade"
+        ],
+        "description": [
+            "test the rpm installation and upgrade",
+            "test upgrading from and"
+        ],
+        "timespent": "39600",
+        "alpha": 100
+    },
+    {
+        "id": "18801",
+        "project": "KYLO",
+        "summary": [
+            "preliminary evaluation herd a data governance tool"
+        ],
+        "description": [
+            "quick evaluation of"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "18793",
+        "project": "KYLO",
+        "summary": [
+            "document remote process group usage"
+        ],
+        "description": [
+            "document remote process group usage"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "18783",
+        "project": "KYLO",
+        "summary": [
+            "catalog api for listing and upload files for datasets"
+        ],
+        "description": [
+            "java api for listing files java api for uploading files rest api for listing files rest api for uploading files"
+        ],
+        "timespent": "72000",
+        "alpha": 100
+    },
+    {
+        "id": "18780",
+        "project": "KYLO",
+        "summary": [
+            "unable to create or edit sla"
+        ],
+        "description": [
+            "create a new sla doesnt include sla condition drop down options",
+            "for existing slas you cant edit them click on the sla the loading bar just goes and the page is never painted"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "18768",
+        "project": "KYLO",
+        "summary": [
+            "feed properties admin properties cannot be deleted"
+        ],
+        "description": [
+            "create a feed property try to delete it the property page will paint successfully and say you removed it go away and back to the properties page",
+            "the property will still exist"
+        ],
+        "timespent": "9000",
+        "alpha": 100
+    },
+    {
+        "id": "18767",
+        "project": "KYLO",
+        "summary": [
+            "choosing to modify transformation after saving a visual query returns user to wrangler with history erased"
+        ],
+        "description": [
+            "go to visual query choose a table proceed to step perform one or more transformations proceed to step download results using any format click modify your transformation note that history has been erased",
+            "expected history to be preserved when returning to wrangler"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "18763",
+        "project": "KYLO",
+        "summary": [
+            "unsupported data type vectorudt"
+        ],
+        "description": [
+            "using the vectorassembler in spark produces the error"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "18751",
+        "project": "KYLO",
+        "summary": [
+            "user cannot edit details after failing to save a datasource"
+        ],
+        "description": [
+            "datasource with the following fields note no user or password yields error but then gives user a saved datasource page with empty fields user cannot navigate back to the edit page to make corrections",
+            "expected user would remain on edit page so can correct faulty fields"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "18748",
+        "project": "KYLO",
+        "summary": [
+            "property and it's effects are undocumented part of datasource ui"
+        ],
+        "description": [
+            "the intent of the add property button is not clear",
+            "help text may be needed",
+            "properties on this screen are passed to disparity between terms property and options is misleading",
+            "spark has not done a great job of documenting them either",
+            "in at least one output format type csv the properties can be found here"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "18747",
+        "project": "KYLO",
+        "summary": [
+            "warn users with dialog if target textfile format is chosen"
+        ],
+        "description": [
+            "when a user chooses textfile as the target it uses the under the covers",
+            "per documentation of the serde it rewrites the ddl of the target table and makes it all string data types",
+            "this then makes kylo metadata out of sync with the hive table and also presents false information back to the user",
+            "keep the textfile using the opencsv serde",
+            "if chosen warn the user with a dialog saying the data types will be changed"
+        ],
+        "timespent": "1200",
+        "alpha": 100
+    },
+    {
+        "id": "18736",
+        "project": "KYLO",
+        "summary": [
+            "postgres column length too short"
+        ],
+        "description": [
+            "the table in postgres has a length of and it should be"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "18733",
+        "project": "KYLO",
+        "summary": [
+            "the first time kylo loads categories list in feeds page never returns"
+        ],
+        "description": [
+            "start kylo go to feeds to create a new feed the categories auto complete never comes back see screenshot you can get it to work by going to categories and then going back to create a new feed"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18732",
+        "project": "KYLO",
+        "summary": [
+            "angular text shows on the feed details feed summary when nifi not connected"
+        ],
+        "description": [
+            "when nifi is not up and you access the feed details page the reindexing text is cryptic with angular code instead of real text",
+            "see screenshot"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18721",
+        "project": "KYLO",
+        "summary": [
+            "remote process group register template not enabled"
+        ],
+        "description": [
+            "after importing a reusable flow and creating some remote input ports they are not initially enabled on the root nifi canvas",
+            "the need to be enabled during the import process"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "18720",
+        "project": "KYLO",
+        "summary": [
+            "remote process group unable to update remoteprocessgroup targeturis"
+        ],
+        "description": [
+            "create a template with a remote process group register it allow users to edit targeturis or simply modify the target uri create a feed on it the targeturi is never updated",
+            "this appears to have been fixed in nifi related issue it appears nifi doesnt let you change the remote process group target uri even on templates",
+            "we may need to do the following target uri is changed from template version gather remote processgroup info remove remote processgroup and create the new remoteprocessgroup with the updated targeturi(targeturis and make the connection"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "18716",
+        "project": "KYLO",
+        "summary": [
+            "add additional tests for tdch processor"
+        ],
+        "description": [
+            "add some additional unit tests to cover common export scenarios"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "18715",
+        "project": "KYLO",
+        "summary": [
+            "configure proxy to forward traffic to node ports"
+        ],
+        "description": [
+            "configure proxy to forward traffic to node ports in kubernetes"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "18714",
+        "project": "KYLO",
+        "summary": [
+            "modify automated tests to use docker environment"
+        ],
+        "description": [
+            "modify automated tests to use docker environment"
+        ],
+        "timespent": "64800",
+        "alpha": 100
+    },
+    {
+        "id": "18713",
+        "project": "KYLO",
+        "summary": [
+            "deploy first docker based deployment for automated test with nifi and mariadb"
+        ],
+        "description": [
+            "spin up kubernetes node with ansible in jenkins",
+            "install the nifi and mariadb combination"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "18712",
+        "project": "KYLO",
+        "summary": [
+            "stand up kubernetes instance"
+        ],
+        "description": [
+            "stand up kubernetes instance"
+        ],
+        "timespent": "50400",
+        "alpha": 100
+    },
+    {
+        "id": "18708",
+        "project": "KYLO",
+        "summary": [
+            "common ui for browsing files and tables"
+        ],
+        "description": [
+            "ui work initial backend work"
+        ],
+        "timespent": "32400",
+        "alpha": 100
+    },
+    {
+        "id": "18706",
+        "project": "KYLO",
+        "summary": [
+            "ui for uploading files for wrangling and ingestion"
+        ],
+        "description": [
+            "drag drop file folder select upload progress"
+        ],
+        "timespent": "52200",
+        "alpha": 100
+    },
+    {
+        "id": "18703",
+        "project": "KYLO",
+        "summary": [
+            "enhance executesparkjob processor spark app parameter configuration"
+        ],
+        "description": [
+            "as we add the support for combining the functionality of multiple spark apps into a single executesparkjob processor to share a single spark supplying all of the arguments required by each of the apps would become more complex if we only support a singe arguments field on the processor",
+            "currently we would have to supply a union of all arguments in that field which besides being hard to maintain may cause conflicts between the apps",
+            "one solution is to simply force a designer to create a new facade spark app with its own argument list that calls the other apps to combine the functionality",
+            "this is cumbersome and can be a deployment headache",
+            "perhaps a better solution would be to allow additional optional properties to be added to the executesparkjob processor that allows the designer to indicate the chain of apps that should be run in the one context and to specify the arguments needed by each configured app"
+        ],
+        "timespent": "72000",
+        "alpha": 100
+    },
+    {
+        "id": "18702",
+        "project": "KYLO",
+        "summary": [
+            "initializefeed processor should test for outbound relationship"
+        ],
+        "description": [
+            "currently there is a separate property that must be set in order to indicate that the relationship should be followed when the feed is being this extra property is redundant since merely having a connected relationship is a good enough indication that relationship should be followed"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "18700",
+        "project": "KYLO",
+        "summary": [
+            "setup private dockerhub repos for automated testing"
+        ],
+        "description": [
+            "create private repositories in docker hub for the automated testing environment"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "18697",
+        "project": "KYLO",
+        "summary": [
+            "feeds table doesnt sort correctly"
+        ],
+        "description": [
+            "feeds table gives js errors when sorting",
+            "data isnt sorted by last modified date"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18686",
+        "project": "KYLO",
+        "summary": [
+            "need ability to prevent column comments from being stored in hive"
+        ],
+        "description": [
+            "current when kylo pull metadata in during schema discovery from the data source or alation it pulls in the column comments or long description if it is available",
+            "we have a client that needs a configuration setting in order to disable this feature so that column comments are not written to the target hive table that is created as part of schema discovery in the data ingest template"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18680",
+        "project": "KYLO",
+        "summary": [
+            "npe when reading null time values from jdbc tables"
+        ],
+        "description": [
+            "a nullpointerexception is logged from gettabledata when reading from a time column that contains a null value"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "18679",
+        "project": "KYLO",
+        "summary": [
+            "generate timing metrics for loading data into teradata using spark"
+        ],
+        "description": [
+            "outside of nifi and just in the or create a hive table that has a lot of data or maybe a few varations with small med large datasets create a teradata table with the right types run spark code to select from hive and insert into teradata with timing metrics"
+        ],
+        "timespent": "100800",
+        "alpha": 100
+    },
+    {
+        "id": "18666",
+        "project": "KYLO",
+        "summary": [
+            "edit feed details typescript error"
+        ],
+        "description": [
+            "edit feed details error",
+            "typescript is not working right with the"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18660",
+        "project": "KYLO",
+        "summary": [
+            "refactor profiler functionality to allow it to be called using an shared context"
+        ],
+        "description": [
+            "the existing profiler app will still be available but should also be callable as a function from another app",
+            "this is necessary to support combining profiling and merging into a single spark job"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18659",
+        "project": "KYLO",
+        "summary": [
+            "refactor validate and split functionality to allow it to be called using an shared context"
+        ],
+        "description": [
+            "the existing app will still be available but should also be callable as a function from another app",
+            "this is necessary to support combining profiling and merging into a single spark job"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "18658",
+        "project": "KYLO",
+        "summary": [
+            "merge table should be rewritten to use spark"
+        ],
+        "description": [
+            "this will be preliminary to combining the merge table behavior into a single spark job along with and profiling"
+        ],
+        "timespent": "140400",
+        "alpha": 100
+    },
+    {
+        "id": "18657",
+        "project": "KYLO",
+        "summary": [
+            "support long values in wrangler"
+        ],
+        "description": [
+            "using a timestamp long as the hwm so the first attempt failed because scala like the long literal without an l i figure out a way to specify a long literal in the visual query editor",
+            "it like literals like nor did it like they both get the error str is null i eventually worked around this by just appending the l when doing the replace operation"
+        ],
+        "timespent": "27000",
+        "alpha": 100
+    },
+    {
+        "id": "18643",
+        "project": "KYLO",
+        "summary": [
+            "feed fails to create due to browser autofill for sensitive fields"
+        ],
+        "description": [
+            "on the streaming hbase template we support optional fields such as username/password for certain protocols see chrome for example will autofill these fields and they cannot be completely unset once filled",
+            "the feed is created with a value",
+            "note that nifi there is a distinction between and empty so this could be part of the problem",
+            "the quick fix may be to set autofill false on the html fields however we may also need to set empty field to empty for nifi vs",
+            "an empty string",
+            "the latter would allow the user to unset an optional field that was accidentally filled",
+            "screen shot at"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "18635",
+        "project": "KYLO",
+        "summary": [
+            "pivot template shows html escaped quotes in data wrangler function editor"
+        ],
+        "description": [
+            "pivot template shows html escaped quotes quot enclosing second function parameter"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "18633",
+        "project": "KYLO",
+        "summary": [
+            "filter window in wrangler has unnecessary scrollbar"
+        ],
+        "description": [
+            "filter window has a scroll bar that should not be there",
+            "increase window by few pixels should fix it"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "18630",
+        "project": "KYLO",
+        "summary": [
+            "click into profile twice and top values will be empty on second viewing"
+        ],
+        "description": [
+            "repro steps create a transformation feed click profile button notice top values click close click profile button work around go back to build step and return before clicking profile"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "18629",
+        "project": "KYLO",
+        "summary": [
+            "uicomponentsservice.ts#getprocessortemplates repeatedly calls the rest endpoint until its populated"
+        ],
+        "description": [
+            "uicomponentsservice.ts getprocessortemplates calls the rest enpoint to get the processor templates over and over until the cache is built",
+            "this should just be called once"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18627",
+        "project": "KYLO",
+        "summary": [
+            "profiler spark job doesn't close the sparkcontext"
+        ],
+        "description": [
+            "when profiler spark job is finished sparkcontext is not closed so the resources used by it are not cleaned"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "18622",
+        "project": "KYLO",
+        "summary": [
+            "kylo spark apps validate profiler java compiler version mismatch"
+        ],
+        "description": [
+            "the kylo profiler app references the module and adds it to the shaded jar",
+            "this module is compiled against java whereas the rest of the jar code is compiled against java all spark project references needed to be java compliant update the project and any others that the spark jobs reference to be java compliant"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "18618",
+        "project": "KYLO",
+        "summary": [
+            "nifi cache is not reset if reusable_templates or temporary template group is removed"
+        ],
+        "description": [
+            "import feed with reusable template in nifi delete the reusable_template process group and the temporary process group in nifi only re import the feed",
+            "it will error out because the cache is holding on to the reference id that got deleted"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "18615",
+        "project": "KYLO",
+        "summary": [
+            "transformation plugins are not able to populate the datasource list"
+        ],
+        "description": [
+            "plugins that used to be able to populate the datasource for data transformation feeds doesnt work now",
+            "possibly something to do with the build query step starting fresh with no datasources"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "18613",
+        "project": "KYLO",
+        "summary": [
+            "wrong ddl for creating just profile table pr"
+        ],
+        "description": [
+            "when using registerfeedtables processor for creating just a profile table type profile the created table has the same columns as feed table instead of the expected columns for storing profiling data"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18606",
+        "project": "KYLO",
+        "summary": [
+            "streaming feeds always set to initial and stopped"
+        ],
+        "description": [
+            "create streaming feed start it ops manager will always have it at initial and stopped this is a regression in"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "18599",
+        "project": "KYLO",
+        "summary": [
+            "remove process"
+        ],
+        "description": [
+            "make managed mode the default"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "18598",
+        "project": "KYLO",
+        "summary": [
+            "any to any design"
+        ],
+        "description": [
+            "break this down after some meetings"
+        ],
+        "timespent": "144000",
+        "alpha": 100
+    },
+    {
+        "id": "18596",
+        "project": "KYLO",
+        "summary": [
+            "initializefeed should support a route"
+        ],
+        "description": [
+            "as a template designer user would like to be able to trigger a route",
+            "this could be used for performing schema changes for example or fixing issues with the original feed creation"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "18595",
+        "project": "KYLO",
+        "summary": [
+            "initializefeed processor should pass content to initialize relationship"
+        ],
+        "description": [
+            "currently initializefeed does not pass the contents of the flowfile only the attributes through the initialize relationship",
+            "as a template designer user would like to use the payload during the initialization process",
+            "for example i parse the json content to derive a schema in order to create an initial table"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18593",
+        "project": "KYLO",
+        "summary": [
+            "unable to delete feed"
+        ],
+        "description": [
+            "create a standard ingest feed kylo hadoop use as the source file",
+            "disable it",
+            "delete it",
+            "notice error",
+            "see screen shot",
+            "notice stack track from"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "18590",
+        "project": "KYLO",
+        "summary": [
+            "ensure all kylo text files use lf line endings in the repository"
+        ],
+        "description": [
+            "this will involve creating a gitattributes at the kylo root directory containing minimally this should cause git to convert the line endings to either crlf or lf depending on the native environment",
+            "if necessary we can also add additional settings per file type ts text but this may not be necessary",
+            "after updating the gitignore in the root directory all other gitignore files in sub directories should be removed",
+            "then one last conversion and checking should be performed for any file missed in the repository still using crlf"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "18586",
+        "project": "KYLO",
+        "summary": [
+            "expression injection not working on starting processors"
+        ],
+        "description": [
+            "use of variables in initial processor is not injecting create template put expression on first processor",
+            "for example create feed notice expression not resolved"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18585",
+        "project": "KYLO",
+        "summary": [
+            "template not selectable in detailed table ui mode"
+        ],
+        "description": [
+            "the detailed view does not allow you to select a template",
+            "templates switch from default to detailed table view click on a template"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "18584",
+        "project": "KYLO",
+        "summary": [
+            "preview column width should be dynamic and resizable"
+        ],
+        "description": [
+            "we need to be able to resize columns to display full text",
+            "see screenshot which clips text"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "18582",
+        "project": "KYLO",
+        "summary": [
+            "run cloudera single node in kubernetes"
+        ],
+        "description": [
+            "configure the single node cloudera docker container to run in kubernetes for local dev and automated tested"
+        ],
+        "timespent": "82800",
+        "alpha": 100
+    },
+    {
+        "id": "18581",
+        "project": "KYLO",
+        "summary": [
+            "configure single node in kubernetes"
+        ],
+        "description": [
+            "configure a single node deployment for both the and docker containers for local dev and automated testing"
+        ],
+        "timespent": "32400",
+        "alpha": 100
+    },
+    {
+        "id": "18580",
+        "project": "KYLO",
+        "summary": [
+            "run nifi single node in kubernetes"
+        ],
+        "description": [
+            "configure a single node nifi instance to run in kubernetes for local dev and automated testing"
+        ],
+        "timespent": "64800",
+        "alpha": 100
+    },
+    {
+        "id": "18579",
+        "project": "KYLO",
+        "summary": [
+            "run elasticsearch singe node in kubernetes"
+        ],
+        "description": [
+            "configure a single node elasticsearch docker container for local dev and automated testing"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "18578",
+        "project": "KYLO",
+        "summary": [
+            "run activemq single node in kubernetes"
+        ],
+        "description": [
+            "configure the activemq container to run as a single node in kubernetes for local dev and automated testing"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "18577",
+        "project": "KYLO",
+        "summary": [
+            "run mariadb single node in kubernetes"
+        ],
+        "description": [
+            "for local dev and automated testing configure a single node mariadb docker container to run in kubernetes"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "18572",
+        "project": "KYLO",
+        "summary": [
+            "upgrade spring and spring boot"
+        ],
+        "description": [
+            "upgrade spring boot to upgrade the spring framework to the latest version supported by spring boot",
+            "there will likely be other libraries that need to be upgraded as well"
+        ],
+        "timespent": "39600",
+        "alpha": 100
+    },
+    {
+        "id": "18568",
+        "project": "KYLO",
+        "summary": [
+            "tables cannot be previewed in the catalog based upon different databases"
+        ],
+        "description": [
+            "teradata tables and postgres tables dont render within the catalog preview and catalog query tabs",
+            "this is because each database has different syntax that works when querying records",
+            "ideas to fix this create a new factory that generates the proper select with limit based upon the database type databasetype databasetype.frommetadata(conn create new rest endpoints a with queryparam(limit will generate the correct preview select from above and run it and return the results b this will just return the correct sql for the preview sql and return it modify the preview tab to call the new modify the query tab to fill in the query in the editor with the example error thrown for teradata preview and query tabs is below",
+            "teradata doesnt support limit clause error toresponse caught throwable org.springframework.jdbc.badsqlgrammarexception statementcallback bad sql grammar select from limit nested exception is teradata database terajdbc error sqlstate syntax error expected something between the word and the limit keyword"
+        ],
+        "timespent": "39600",
+        "alpha": 100
+    },
+    {
+        "id": "18567",
+        "project": "KYLO",
+        "summary": [
+            "teradata catalog doesnt show"
+        ],
+        "description": [
+            "teradata datasources dont show schemas and tables",
+            "the reason is teradata doesnt support catalogs but it does support schemas",
+            "the dbschemaparser needs to check the database metadata to see if it supports schemas or catalogs and then make the appropriate call to get the list",
+            "currently it is only going into listcatalogs it should do something like"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18561",
+        "project": "KYLO",
+        "summary": [
+            "kylo ui doesnt load the template correctly after its updated in nifi"
+        ],
+        "description": [
+            "work with an existing template that has been registered in kylo update it in nifi and resave it with the same name click on the template in kylo the select list will be though it loads the template successfully",
+            "change the drop down to be the correct template kylo will not retain any of the registered properties"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "18560",
+        "project": "KYLO",
+        "summary": [
+            "catalog preview doesn't sanitize xml"
+        ],
+        "description": [
+            "summary when previewing xml in the catalog the xml tags are not visible",
+            "only the xml text is visible",
+            "steps to reproduce create a hive table similar to data go to the catalog page in kylo and find the table",
+            "preview the table",
+            "expected results you should see actual results you only see mydata"
+        ],
+        "timespent": "7320",
+        "alpha": 100
+    },
+    {
+        "id": "18559",
+        "project": "KYLO",
+        "summary": [
+            "gettabledata edit doesnt populate the correct incremental field"
+        ],
+        "description": [
+            "create a feed with incremental field on a table with multiple date columns read only view shows the correct field edit it and it shows the first field in the list not the selected field for this feed"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "18550",
+        "project": "KYLO",
+        "summary": [
+            "update spark mode doc with settings"
+        ],
+        "description": [
+            "when confiiguring spark shell for managed mode i noticed the property changes were not in there",
+            "they are in the user impersonation doc",
+            "we should also put the instructions in the managed mode doc since folks may not want to enable impersonation and may never see those instructions"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "18547",
+        "project": "KYLO",
+        "summary": [
+            "cannot view csv table created in visual query"
+        ],
+        "description": [
+            "steps to reproduce go to visual query create a transformation save to a hive table in csv format try to view table in the catalog page expected results the same schema and data from visual query actual results only a single column and no data spark complains that the csv format is not compatible with hive",
+            "this message should be displayed in the kylo ui"
+        ],
+        "timespent": "72000",
+        "alpha": 100
+    },
+    {
+        "id": "18542",
+        "project": "KYLO",
+        "summary": [
+            "date standardizer fails when converting an instant in time zone offset transition"
+        ],
+        "description": [
+            "in timezone asia/novosibirsk the time is invalid because it is in a time zone offset transition period",
+            "the standardizer cannot convert that date on a system in that timezone when it should be able to in some cases",
+            "standardize the format with a output format of in this case an incoming date of is clearly meant to represent the date in question and should be convertible to hive date format in other cases converting from format for example to format datetime or datetime_nomillis should not be attempted because you could only do so by adding time to account for the clock change",
+            "in this case we should not standardize bad data",
+            "steps to reproduce launch kylo sandbox ami set timezone via timedatectl asia/novosibirsk and reboot instance",
+            "create a feed for userdata sample data with a standardizer to convert from format to create a sample data file from first few rows of and change a row birthdate to be copy the file to the dropzone",
+            "wait for the feed to complete the run on the input file",
+            "note that the row will be invalid in the profile view",
+            "expected result row should be valid"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "18541",
+        "project": "KYLO",
+        "summary": [
+            "provide a start now button to the feed details"
+        ],
+        "description": [
+            "we need a way in the kylo ui to trigger the start of a feed using the new rest api from"
+        ],
+        "timespent": "16200",
+        "alpha": 100
+    },
+    {
+        "id": "18536",
+        "project": "KYLO",
+        "summary": [
+            "explore running docker containers in minikube"
+        ],
+        "description": [
+            "install and test running the kylo containers in mini kube over docker compose",
+            "see if it would be better for clustering vs using swarm and also memory management"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "18535",
+        "project": "KYLO",
+        "summary": [
+            "develop tdch import into teradata template"
+        ],
+        "description": [
+            "develop tdch import into teradata template this would be after the merge processor from hive into teradata"
+        ],
+        "timespent": "32400",
+        "alpha": 100
+    },
+    {
+        "id": "18532",
+        "project": "KYLO",
+        "summary": [
+            "rollback nifi to in the demo sandboxes"
+        ],
+        "description": [
+            "we are having issues with nifi and the new security filter",
+            "we can get it working either through apache or with direct connection to port but not both",
+            "change the version to and rebuild the sandboxes"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "18530",
+        "project": "KYLO",
+        "summary": [
+            "kylo aws sandbox for fails to start ambari services for instance type"
+        ],
+        "description": [
+            "the ami sandbox images fail to start ambari services on first launch of an instance type",
+            "this may be first noticed in nifi's standard ingest template one time registration section with a processor failing to talk to hdfs",
+            "modifications to support for the amis require rebuilding the base images and work around go to ambari and manually start all services after launch",
+            "further inspection shows problems with the network adapter as it looks like the mac address is not updated in"
+        ],
+        "timespent": "9000",
+        "alpha": 100
+    },
+    {
+        "id": "18526",
+        "project": "KYLO",
+        "summary": [
+            "virtual catalog data ingest spark app"
+        ],
+        "description": [
+            "source args table or format options path destination args table or format options path source reader destination writer examples reading from data sources and writing to hdfs for data ingest"
+        ],
+        "timespent": "30600",
+        "alpha": 100
+    },
+    {
+        "id": "18522",
+        "project": "KYLO",
+        "summary": [
+            "virtual catalog spark api"
+        ],
+        "description": [
+            "implement dynamic tables api hive format unit tests"
+        ],
+        "timespent": "72000",
+        "alpha": 100
+    },
+    {
+        "id": "18519",
+        "project": "KYLO",
+        "summary": [
+            "backup plugin folder on removal of kylo rpm"
+        ],
+        "description": [
+            "backup plugin folder on removal of kylo rpm"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18513",
+        "project": "KYLO",
+        "summary": [
+            "table fields do not appear first time for data transformation feed"
+        ],
+        "description": [
+            "when creating a data transformation feed the table step displays there are fields but the field list is blank",
+            "going back to the previous step and forward again fixes the issue"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "18510",
+        "project": "KYLO",
+        "summary": [
+            "for a database ingest feed changing a datatype results in js error"
+        ],
+        "description": [
+            "changing a data type results in an error see screenshot"
+        ],
+        "timespent": "2700",
+        "alpha": 100
+    },
+    {
+        "id": "18509",
+        "project": "KYLO",
+        "summary": [
+            "database table schema doesnt appear after selecting table"
+        ],
+        "description": [
+            "create a new database ingestion feed select table continue to next table step the dont show up for a while",
+            "this can happen if it takes a while to describe the schema for the selected"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "18508",
+        "project": "KYLO",
+        "summary": [
+            "table partitions select list is empty"
+        ],
+        "description": [
+            "create a new database feed after the schema is analyzed select table partitions the column select list for defining a new table partition is empty"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18507",
+        "project": "KYLO",
+        "summary": [
+            "data transformation template creates profile table in wrong location"
+        ],
+        "description": [
+            "should use property"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "18503",
+        "project": "KYLO",
+        "summary": [
+            "create kylo demo boxes"
+        ],
+        "description": [
+            "since we have a few bug fixes wait and rebuild all the demo sandboxes for"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "18502",
+        "project": "KYLO",
+        "summary": [
+            "move current sym link for validate and profile processors"
+        ],
+        "description": [
+            "we should move the current part of the path to the nifi default home variable in the validate and profile spark processors",
+            "in some cases folks do not have the current sym link in the same order"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "18494",
+        "project": "KYLO",
+        "summary": [
+            "uncomment keystore property to avoid confusion"
+        ],
+        "description": [
+            "in the application.properties file this line was commented out when removing passwords from config files",
+            "this is causing confusion with folks enabling ssl because its not obvious it should be uncommented",
+            "since its referencing another variable i am going to uncomment this by default"
+        ],
+        "timespent": "300",
+        "alpha": 100
+    },
+    {
+        "id": "18491",
+        "project": "KYLO",
+        "summary": [
+            "kylo upgrade should not require nifi to be up"
+        ],
+        "description": [
+            "this is to avoid having the upgrader being dependent upon nifi being up"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "18490",
+        "project": "KYLO",
+        "summary": [
+            "ldap auth broken"
+        ],
+        "description": [
+            "ldap auth is broken due to the char change",
+            "put it back to string"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18489",
+        "project": "KYLO",
+        "summary": [
+            "search plugin native client broken for elasticsearch"
+        ],
+        "description": [
+            "the search plugin based on native transport client for elasticsearch throws exception upon startup of kylo services"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "18484",
+        "project": "KYLO",
+        "summary": [
+            "clicking on table in feed summary breaks"
+        ],
+        "description": [
+            "click on a feed to get to the details click on the table link on the right screen shot attached where clicking on the table it will present an error invalid uuid string"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "18483",
+        "project": "KYLO",
+        "summary": [
+            "document ui plugins for feed and template links"
+        ],
+        "description": [
+            "document ui plugins for feed and template links"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "18482",
+        "project": "KYLO",
+        "summary": [
+            "allow for ui plugins to create links for both feed and template details pages"
+        ],
+        "description": [
+            "allow ui plugins to register actions and pages with links for both feeds and templates on their respective details pages",
+            "see screenshot"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "18481",
+        "project": "KYLO",
+        "summary": [
+            "set hostname for nifi in"
+        ],
+        "description": [
+            "when running nifi in you get an error connecting to it in the browser due to a security header check in the hostheaderhandler file in nifi",
+            "create a startup script that gets the current hostname and sets it in the property"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "18480",
+        "project": "KYLO",
+        "summary": [
+            "kylo index feed service nifi version throwing exception with elasticsearch"
+        ],
+        "description": [
+            "an error has been reported when using index feed service older version with elasticsearch see the screenshot attached screen shot at"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "18479",
+        "project": "KYLO",
+        "summary": [
+            "functional permissions for projects should be removed from kylo core"
+        ],
+        "description": [
+            "originally the concept of a project was going to be a first class concept in kylo",
+            "the notion is that it would be a container for templates feeds and notebooks etc",
+            "that design decision was reverted and projects should only be part of the notebooks plugin",
+            "this ticket is complete when the functional permissions have been moved from kylo core to jupyter plugin"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "18474",
+        "project": "KYLO",
+        "summary": [
+            "hivemetastoreservice postgres double where clause issue"
+        ],
+        "description": [
+            "the hivemetastoreservice line has a second where clause that should be an and fix and test against an environment with postgres"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18473",
+        "project": "KYLO",
+        "summary": [
+            "frontend design for virtual catalog"
+        ],
+        "description": [
+            "is there documentation on this design ticket is done but since there are no requirements not sure what that means"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "18463",
+        "project": "KYLO",
+        "summary": [
+            "editing a feed with remoteprocessgroup"
+        ],
+        "description": [
+            "editing a feed using a template with a remoteprocessgroup should allow the user to edit the remoteprocessgroup connection properties if one option would be to convert the remoteprocessgroup properties into kylo nifiproperty object so the ui could just render it lik any other processor properties"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "18461",
+        "project": "KYLO",
+        "summary": [
+            "remoteprocess group templates need the input ports at the root nifi flow level"
+        ],
+        "description": [
+            "kylo needs to create the reusable template instance and also create the input port on the parent nifi flow canvas and connect it into the template instance",
+            "kylo may need to store this metadata about the or obtain it from nifi"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "18460",
+        "project": "KYLO",
+        "summary": [
+            "research docker automated test execution"
+        ],
+        "description": [
+            "research the best way to run our docker images in aws for automated tests triggered by jenkins",
+            "should we stand up a coreos box and manage it ourselves or leverage some of the aws offerings"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "18459",
+        "project": "KYLO",
+        "summary": [
+            "register template ask users if template should be exposed as remoteprocessgroup"
+        ],
+        "description": [
+            "register template reusable with input port needs to ask if the template should partake in remote process group"
+        ],
+        "timespent": "36000",
+        "alpha": 100
+    },
+    {
+        "id": "18458",
+        "project": "KYLO",
+        "summary": [
+            "expose provenance event writing as rest endpoint"
+        ],
+        "description": [
+            "party apps code need ability to write provenance data about a given and add steps to a given job",
+            "allow users to do this via a rest endpoint enabling additional integration capbilities"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "18437",
+        "project": "KYLO",
+        "summary": [
+            "the kylo parent pom should have a developers section"
+        ],
+        "description": [
+            "it is fairly standard practive the open source projects identify the main contributors in a developers section of the pom",
+            "see"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18436",
+        "project": "KYLO",
+        "summary": [
+            "add hdf folder in nifi setup folder to rpm"
+        ],
+        "description": [
+            "i added a couple of utility scripts in to make it easy to generate folder with all the kylo artifacts so you can simply copy a tar file to each hdf node",
+            "it looks like its not getting included during build though",
+            "update the tar install module to include it"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "18435",
+        "project": "KYLO",
+        "summary": [
+            "update setup wizard and offline tar script to use nifi"
+        ],
+        "description": [
+            "now that we support nifi we should change the default in the setup wizard to use we should also tell the offline tar file to download"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18415",
+        "project": "KYLO",
+        "summary": [
+            "create hdp sandbox ova"
+        ],
+        "description": [
+            "create hdp sandbox ova"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "18414",
+        "project": "KYLO",
+        "summary": [
+            "create cloudera sandbox ova"
+        ],
+        "description": [
+            "create cloudera sandbox ova"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "18413",
+        "project": "KYLO",
+        "summary": [
+            "create cloudera sandbox ami"
+        ],
+        "description": [
+            "create cloudera sandbox ami"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "18412",
+        "project": "KYLO",
+        "summary": [
+            "create hdp sandbox ami"
+        ],
+        "description": [
+            "create hdp sandbox ami"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "18411",
+        "project": "KYLO",
+        "summary": [
+            "setup cloudera config files on and nifi"
+        ],
+        "description": [
+            "for a feed to run successfully in the spark shell and nifi container we need to copy the and file over from the cloudera instance",
+            "these files should be referenced outside of the container so that we can swap out the config based on what hadoop distribution we are using"
+        ],
+        "timespent": "12600",
+        "alpha": 100
+    },
+    {
+        "id": "18410",
+        "project": "KYLO",
+        "summary": [
+            "create elasticsearch indexes on first startup"
+        ],
+        "description": [
+            "when the elasticsearch container is first started run the script to install the kylo indexes",
+            "this is currently done as part of the installation but es needs to be running for this to work"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "18409",
+        "project": "KYLO",
+        "summary": [
+            "install spark in the kylo containers"
+        ],
+        "description": [
+            "install spark in the and cloudera containers"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "18362",
+        "project": "KYLO",
+        "summary": [
+            "wrangler outlier and missing value handling"
+        ],
+        "description": [
+            "wrangler enhancements to provide various techniques for dealing with outliers and missing value handling",
+            "see article missing values distribution outlier detection"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "18298",
+        "project": "KYLO",
+        "summary": [
+            "api code example for writing provenance for remote steps"
+        ],
+        "description": [
+            "useful for integrating existing etl jobs into kylo integration points java api with access to the restful api for intregrations without the serialized provenance-model jar examples integrating with external java app spark streaming rest endpoint"
+        ],
+        "timespent": "100800",
+        "alpha": 100
+    },
+    {
+        "id": "18271",
+        "project": "KYLO",
+        "summary": [
+            "adding an invalid index hides existing valid indexes"
+        ],
+        "description": [
+            "description modeshape does not validate the node type when adding a new index",
+            "if a user adds an invalid index in the jcr indexes admin page then kylo and modeshape accept it but will cause errors when kylo is restarted",
+            "after the restart then kylo no longer shows any indexes on the jcr indexes page",
+            "steps to reproduce go to and select jcr indexes tab",
+            "create a new index using the node type click register index",
+            "expected result an error is displayed saying that the node type does not exist",
+            "actual result the index is added to modeshape",
+            "when kylo is restarted then the following error is logged java.lang.illegalargumentexception internationalization field errorindexing in class parameter supplied but parameters required error while indexing in workspace error while indexing not creating index test because of unknown nodetype httpthinkbiganalytics.commetadata}sdf in workspace"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "18270",
+        "project": "KYLO",
+        "summary": [
+            "include when using"
+        ],
+        "description": [
+            "hive jdbc requires the to connect to a kerberized server",
+            "without this jar then the connection may fail with noclassdeffounderror"
+        ],
+        "timespent": "9900",
+        "alpha": 100
+    },
+    {
+        "id": "18240",
+        "project": "KYLO",
+        "summary": [
+            "unsupported property in loadhighwatermark processor"
+        ],
+        "description": [
+            "unsupported property max yield count strategy appears in loadhighwatermark processor which makes it invalid when enabled"
+        ],
+        "timespent": "300",
+        "alpha": 100
+    },
+    {
+        "id": "18225",
+        "project": "KYLO",
+        "summary": [
+            "feed names in operations"
+        ],
+        "description": [
+            "currently jobs and dashboard windows in operations list feeds using their system name",
+            "would it be possible to use the user defined names for both category feed instead of system names system name together with description could be displayed in a tooltip when hovering over the feed name"
+        ],
+        "timespent": "21900",
+        "alpha": 100
+    },
+    {
+        "id": "18213",
+        "project": "KYLO",
+        "summary": [
+            "issue on duplicate data in the same file in case of dedupe and merge"
+        ],
+        "description": [
+            "as reported by fabian if there is a file with an internal duplicate with the modality dedupe and merge there is not the information for vanessa on hive",
+            "this happens because in the function generatemergenonpartitionquerywithdedupe in file tablemergesyncsupport.java there is the control having this check avoid the correct insert of data because for vanessa the count is this bug can be solved by add a group by for the second part of the query union all select selectsql"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "18175",
+        "project": "KYLO",
+        "summary": [
+            "custom import sqoop jvm options"
+        ],
+        "description": [
+            "allow specifying custom sqoop jvm options for processors to allow more flexibility"
+        ],
+        "timespent": "10800",
+        "alpha": 100
+    },
+    {
+        "id": "18123",
+        "project": "KYLO",
+        "summary": [
+            "data overwrite in mergetable processor"
+        ],
+        "description": [
+            "when using dedupe merge strategy on partitioned table it can happen that when flow files containing new data for same partition of a same feed are run at the same time in mergetable processor the one which is processed last will overwrite new data added by the one which finished first",
+            "scenario create feed with dedupe and merge strategy and at least one partition run initial ingestion with some data initdata which will go to partition x prepare files and to be ingested separately for the same feed should be big enough to make mergetable processor run for a while should contain data for partition x stop mergetable processor in flow until there are flow files for both input files in its queue start mergetable processor once ingestion is done the final count of rows in master table will be wrong instead of initdata it will be either initdata or initdata depending on which flow file finished last",
+            "possible solution add option to mergetable processor to block running flow files for the same feed can be based on merge strategy or setting"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "18117",
+        "project": "KYLO",
+        "summary": [
+            "error message in ui should be better currently has unknown id value null"
+        ],
+        "description": [
+            "when user have privileges to create a template while importing the feed the error message in the bottom left corner reads an error occurred attempting to access unknown id value null see attached screenshot",
+            "here is the stacktrace"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "18113",
+        "project": "KYLO",
+        "summary": [
+            "javascript error in console when changing partitions while cloning a feed"
+        ],
+        "description": [
+            "following javascript error occurs when changing partitions while cloning a feed with existing partitions",
+            "this error doesn't seem to cause harm partitions can be changed and user can proceed to next screen when cloning the feed",
+            "typeerror cannot read property setvalidity of undefined at function as each eval at compile at eval"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "18104",
+        "project": "KYLO",
+        "summary": [
+            "datevalidator parse date error"
+        ],
+        "description": [
+            "some dates not parse for time zone when is used"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "18018",
+        "project": "KYLO",
+        "summary": [
+            "disable required/sensitive checkbox if property is required/sensitive in processor"
+        ],
+        "description": [
+            "the required and sensitive checkboxes for properties are only valid if the processor does not already declare the property as required or sensitive",
+            "allowing the user to possibly override these is misleading",
+            "steps to reproduce edit a template",
+            "select a property that is required by the processor but do not mark it as required in kylo",
+            "save the template",
+            "expected results the template saves successfully even though the property has to be required",
+            "for simplicity the checkbox should be checked and disabled to indicate the state to the user",
+            "actual results the checkbox can be unchecked and the template saves successfully",
+            "there is no indication that this is not a valid state"
+        ],
+        "timespent": "50400",
+        "alpha": 100
+    },
+    {
+        "id": "18012",
+        "project": "KYLO",
+        "summary": [
+            "auto schema detection error for sample file csv"
+        ],
+        "description": [
+            "miss detection for sample files which is csv format",
+            "for example file has only header values",
+            "one column after uploading this file kylo set table schema like below screen capture",
+            "kylo schema one column"
+        ],
+        "timespent": "16200",
+        "alpha": 100
+    },
+    {
+        "id": "17959",
+        "project": "KYLO",
+        "summary": [
+            "the modeshape type feedsla should be defined explicitly in the cnd schema"
+        ],
+        "description": [
+            "currently the type feedsla which defines the relationship between an sla and one or more feeds is created programatically if not present when modeshape starts up",
+            "this is different from how all other metadata types are defined",
+            "this type can easily be defined in our cnd file modeshape schema since it is only created once if it already exist",
+            "this programmatic creation obscures where the type comes from and may interfere with our ability to upgrade types in the future"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "17897",
+        "project": "KYLO",
+        "summary": [
+            "kylo rest call won't overwrite the nifi template with"
+        ],
+        "description": [
+            "call kylo rest call with overwrite and pass a valid feed",
+            "expected the import will use the new feed in kylo and overwrite both the flow and template in nifi current the import will register the new meta in kylo and the old nifi template if the name matches leading to a corrupt nifi flow",
+            "example call"
+        ],
+        "timespent": "300",
+        "alpha": 100
+    },
+    {
+        "id": "17839",
+        "project": "KYLO",
+        "summary": [
+            "editing a transform feed to change column names is inconsistent with its hive table"
+        ],
+        "description": [
+            "create a transform feed run it edit the feed and change a column name",
+            "i edited a column name that i had added to make one of the existing columns to be uppercase",
+            "save the feed",
+            "the feed saves with the updated column names",
+            "however the underlying hive table is created with the column names as of run of the feed",
+            "this is an inconsistency between the feed and its table"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "17808",
+        "project": "KYLO",
+        "summary": [
+            "startup warning jdbc connection to reset not identical to originally prepared connection"
+        ],
+        "description": [
+            "at statup we see this in the logs now warn jdbc connection to reset not identical to originally prepared connection please make sure to use connection release mode the default and to run against hibernate or switch hibernatejpadialect's prepareconnection flag to false with a breakpoint in that hibernatejpadialect class i see it initiating from the postconstruct of the kyloupgradeservice postconstruct public void init kyloversion current versionprovider.getcurrentversion see screenshots for more details"
+        ],
+        "timespent": "9000",
+        "alpha": 100
+    },
+    {
+        "id": "16710",
+        "project": "KYLO",
+        "summary": [
+            "research possiblity of registering other custom datasources and use in wrangler and feeds"
+        ],
+        "description": [
+            "we support custom data sources that create jdbc controller services",
+            "can we extend this to allow users to make other data sources such as hdfs folder location buckets and then use them in feeds or in the wrangler we need to discuss how this would be modeled and integrated"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "16003",
+        "project": "KYLO",
+        "summary": [
+            "support remote process group as a kylo template for"
+        ],
+        "description": [
+            "kylo doesn't have any guide for load balancing on clustered nifi",
+            "supporting remote process group is a best way because it is the most common way",
+            "but kylo currently doesn't allow configuring remote process group from the kylo ui it is necessary to configure remote process group as a kylo template including node url and input port name",
+            "this is very useful to ingest large separated data for example getfile getftp etc",
+            "related tasks note only reusable templates can partake in remote process groups register template reusable with input port needs to ask if the template should partake in remote process group if yes kylo needs to create the template instance and also create the input port on the parent nifi flow canvas and connect it into the template instance",
+            "kylo may need to store this metadata about the or obtain it from nifi register template with remoteprocessgroup kylo needs to ask the user for the and then scan those locations via a rest call to find any available input ports on the parent nifi flow canvas and present the user the ability to wire them together with the remote group kylo may need to maintain state about this remote process group connection information in addition to it being buried inside the feedmetadata processors json",
+            "editing a feed using a template with a remoteprocessgroup should allow the user to edit the remoteprocessgroup connection properties if one option would be to convert the remoteprocessgroup properties into kylo nifiproperty object so the ui could just render it lik any other processor properties"
+        ],
+        "timespent": "115200",
+        "alpha": 100
+    },
+    {
+        "id": "15603",
+        "project": "KYLO",
+        "summary": [
+            "jaas loginmodule flag property should be consistent in all kylo auth configs"
+        ],
+        "description": [
+            "these flags control the rules by which multiple loginmodules may be combined to control login",
+            "right now the configuration properties for the loginmodules provided by kylo are not named consistently nor do all loginmodules support their configuration",
+            "this should be cleaned up"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "14108",
+        "project": "KYLO",
+        "summary": [
+            "refactor categories to no longer use the extensible types"
+        ],
+        "description": [
+            "the current implementation of categories is using the extensible type mechanism to add user properties the to category instances",
+            "this has complicated things since entity access control has been added to kylo because modeshape is to require admin privileges to change the type system and users are allowed to add user properties",
+            "categories should be refactored to use something similar to our current custom property support to manage user properties instead of creating new category subtypes that define these properties"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "14107",
+        "project": "KYLO",
+        "summary": [
+            "functional and entity access checks for templates"
+        ],
+        "description": [
+            "these should require at least edittemplate permissions and maybe an entity access check maybe required admintemplates permission to templates it currently allows any template even those without any roles assigned to be"
+        ],
+        "timespent": "5400",
+        "alpha": 100
+    },
+    {
+        "id": "13821",
+        "project": "KYLO",
+        "summary": [
+            "removing oneself from and admin role prevents role membership changes"
+        ],
+        "description": [
+            "attempting to change role memberships in a way that revokes permission change rights for that user making the change causes the membership change to fail",
+            "this is not that unexpected as revoking one's own right to change permissions prevents one from doing so",
+            "the error though is obscure",
+            "we need to decide what is the best action in this case"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "12836",
+        "project": "KYLO",
+        "summary": [
+            "database is a reserved word in hive",
+            "creating feeds in a category database will fail"
+        ],
+        "description": [
+            "database is a reserved word in hive",
+            "creating feeds in a category database will fail either escape the database or prevent the category from being called database"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "12806",
+        "project": "KYLO",
+        "summary": [
+            "ldap authentication fails when userdnpatterns contains a comma"
+        ],
+        "description": [
+            "in my application.properties file i set then i set a breakpoint at i can see it being called correctly from kylo with but then spring calls it again with it has the latter value when called from ldaploginmodule so ends up trying to authenticate as and instead of the expected"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10112",
+        "project": "KYLO",
+        "summary": [
+            "create docker compose file for dev environment"
+        ],
+        "description": [
+            "as a developer i want to be able to run the kylo stack using docker containers on my mac",
+            "create a docker compose file to spin up the containers created in and tune it to run on the mac without over consuming resources",
+            "this will be an alternative to using the virtual box sandbox for local development",
+            "the acceptance criteria will be that you can define in the file how much memory each container can use to ensure the total is in sync with what you are allowing with docker"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10093",
+        "project": "KYLO",
+        "summary": [
+            "add rest endpoint to manually trigger a feed"
+        ],
+        "description": [
+            "allow feeds with a triggerfeed to manually trigger the flow",
+            "migrate from"
+        ],
+        "timespent": "50400",
+        "alpha": 100
+    },
+    {
+        "id": "10045",
+        "project": "KYLO",
+        "summary": [
+            "no trimming of leading and trailing spaces in execute spark set spark home dir property"
+        ],
+        "description": [
+            "any leading or trailing for spark home dir property in execute spark job is data ingest feed leads to error steps to recreate add a extra space in the start of spark home property save the settings run a data ingest feed follow the same for trailing spaces",
+            "migrate from"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "10008",
+        "project": "KYLO",
+        "summary": [
+            "property descriptions should be used as placeholder text"
+        ],
+        "description": [
+            "the description for custom properties can be used as the placeholder text",
+            "steps to reproduce add a new property under feed properties for a category",
+            "ensure that it has a description",
+            "create a new feed under that category and stop at the properties step",
+            "expected results the description for the property should be displayed somewhere",
+            "actual results the description for the property is not used",
+            "migrate from"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "19182",
+        "project": "KYLO",
+        "summary": [
+            "unit tests"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "19121",
+        "project": "KYLO",
+        "summary": [
+            "implement demo feedback"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "18988",
+        "project": "KYLO",
+        "summary": [
+            "high water mark not released when there is a comms failure to"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "18982",
+        "project": "KYLO",
+        "summary": [
+            "cache dataframe in temp table for kylo spark shell queries"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "18951",
+        "project": "KYLO",
+        "summary": [
+            "catalog connector and datasource rest apis"
+        ],
+        "timespent": "64800"
+    },
+    {
+        "id": "18932",
+        "project": "KYLO",
+        "summary": [
+            "refactor validate profiler to ensure shared rdds"
+        ],
+        "timespent": "43200"
+    },
+    {
+        "id": "18931",
+        "project": "KYLO",
+        "summary": [
+            "refactor merge to ensure shared rdds"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "18896",
+        "project": "KYLO",
+        "summary": [
+            "catalog plugin api for browsing file systems"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "18868",
+        "project": "KYLO",
+        "summary": [
+            "document using tdch kylo template"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "18857",
+        "project": "KYLO",
+        "summary": [
+            "catalog api"
+        ],
+        "timespent": "47010"
+    },
+    {
+        "id": "18811",
+        "project": "KYLO",
+        "summary": [
+            "move tdch processor export hive to teradata to kylo codebase"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "18810",
+        "project": "KYLO",
+        "summary": [
+            "investigate joint spark performance"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "18807",
+        "project": "KYLO",
+        "summary": [
+            "analyse changes to kylo metadata repo and ensure search works"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "18806",
+        "project": "KYLO",
+        "summary": [
+            "test the extended template via some flows"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "18803",
+        "project": "KYLO",
+        "summary": [
+            "provide support for merge to teradata"
+        ],
+        "timespent": "43200"
+    },
+    {
+        "id": "18802",
+        "project": "KYLO",
+        "summary": [
+            "extend template to allow exporting to teradata via tdch"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "18764",
+        "project": "KYLO",
+        "summary": [
+            "setup jenkins to build kylo snapshot images"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "18709",
+        "project": "KYLO",
+        "summary": [
+            "create explore page"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "18705",
+        "project": "KYLO",
+        "summary": [
+            "rest api for uploading files for wrangling and ingestion"
+        ],
+        "timespent": "21600"
+    },
+    {
+        "id": "18699",
+        "project": "KYLO",
+        "summary": [
+            "get performance metrics for higher volume million for hive to teradata using tdch"
+        ],
+        "timespent": "93600"
+    },
+    {
+        "id": "18698",
+        "project": "KYLO",
+        "summary": [
+            "gather some performance stats for hive to teradata export using tdch"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "18661",
+        "project": "KYLO",
+        "summary": [
+            "merge and profiling should be combined into a single spark job"
+        ],
+        "timespent": "72000"
+    },
+    {
+        "id": "18655",
+        "project": "KYLO",
+        "summary": [
+            "cannot edit table schema and data policies of existing feed"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "18654",
+        "project": "KYLO",
+        "summary": [
+            "valid and invalid profile tables do not show any data"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "18571",
+        "project": "KYLO",
+        "summary": [
+            "role descriptions no longer being desplayed in the ui"
+        ],
+        "timespent": "1800"
+    },
+    {
+        "id": "18538",
+        "project": "KYLO",
+        "summary": [
+            "implement validations in processor to align with tdch supported options"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "18531",
+        "project": "KYLO",
+        "summary": [
+            "do not package jars into config inspector app"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "18525",
+        "project": "KYLO",
+        "summary": [
+            "dynamic loading of filesystem jars for virtual catalog"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "18524",
+        "project": "KYLO",
+        "summary": [
+            "dynamic loading of jdbc jars for virtual catalog"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "18523",
+        "project": "KYLO",
+        "summary": [
+            "dynamic loading of data source jars for virtual catalog"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "18517",
+        "project": "KYLO",
+        "summary": [
+            "deletion of category in kylo should remove its indexed metadata"
+        ],
+        "timespent": "7200"
+    },
+    {
+        "id": "18498",
+        "project": "KYLO",
+        "summary": [
+            "integration test search on feed properties"
+        ],
+        "timespent": "25200"
+    },
+    {
+        "id": "18497",
+        "project": "KYLO",
+        "summary": [
+            "integration test search on category properties"
+        ],
+        "timespent": "18000"
+    },
+    {
+        "id": "18495",
+        "project": "KYLO",
+        "summary": [
+            "npe when registering spark shell client"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "18471",
+        "project": "KYLO",
+        "summary": [
+            "design backend for virtual catalog"
+        ],
+        "timespent": "34200"
+    },
+    {
+        "id": "18469",
+        "project": "KYLO",
+        "summary": [
+            "add to rpm"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "18457",
+        "project": "KYLO",
+        "summary": [
+            "implement processor to export from hive to teradata using tdch"
+        ],
+        "timespent": "86400"
+    },
+    {
+        "id": "18456",
+        "project": "KYLO",
+        "summary": [
+            "development initial develop a processor to export from hive to teradata using tdch"
+        ],
+        "timespent": "36000"
+    },
+    {
+        "id": "18454",
+        "project": "KYLO",
+        "summary": [
+            "test using various scenarios hive to teradata exports"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "18453",
+        "project": "KYLO",
+        "summary": [
+            "design processor to export from hive to teradata using tdch"
+        ],
+        "timespent": "43200"
+    },
+    {
+        "id": "18452",
+        "project": "KYLO",
+        "summary": [
+            "merge feature/covalent into master"
+        ],
+        "timespent": "900"
+    },
+    {
+        "id": "18451",
+        "project": "KYLO",
+        "summary": [
+            "merge into feature/covalent branch"
+        ],
+        "timespent": "35100"
+    },
+    {
+        "id": "18450",
+        "project": "KYLO",
+        "summary": [
+            "install tdch and verify operation"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "18449",
+        "project": "KYLO",
+        "summary": [
+            "go through tdch documentation"
+        ],
+        "timespent": "57600"
+    },
+    {
+        "id": "18448",
+        "project": "KYLO",
+        "summary": [
+            "setup teradata instance"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "18447",
+        "project": "KYLO",
+        "summary": [
+            "update guides"
+        ],
+        "timespent": "30"
+    },
+    {
+        "id": "18446",
+        "project": "KYLO",
+        "summary": [
+            "test setting and searching properties categories feeds via kylo ui"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "18445",
+        "project": "KYLO",
+        "summary": [
+            "implement any changes needed in kylo to retrieve and show search results on feed properties"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "18444",
+        "project": "KYLO",
+        "summary": [
+            "implement any changes needed in kylo to retrieve and show search results on category properties"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "18443",
+        "project": "KYLO",
+        "summary": [
+            "implement indexing of feed properties"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "18442",
+        "project": "KYLO",
+        "summary": [
+            "implement indexing of category properties"
+        ],
+        "timespent": "39600"
+    },
+    {
+        "id": "18441",
+        "project": "KYLO",
+        "summary": [
+            "design for indexing and search on feed properties"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "18440",
+        "project": "KYLO",
+        "summary": [
+            "design for indexing and search on category properties"
+        ],
+        "timespent": "14400"
+    },
+    {
+        "id": "17878",
+        "project": "KYLO",
+        "summary": [
+            "integration tests for avro"
+        ],
+        "timespent": "50400"
+    },
+    {
+        "id": "17877",
+        "project": "KYLO",
+        "summary": [
+            "integration tests for json"
+        ],
+        "timespent": "86400"
+    }
+]

@@ -1,0 +1,345 @@
+[
+    {
+        "id": "10260",
+        "project": "DP",
+        "summary": [
+            "should node controller and network listener be linked"
+        ],
+        "description": [
+            "if the forkio thread running handleincomingmessages terminates nothing happens to the thread in isn't this wrong the node is now cut off from the outside world and there's no means to start handleincomingmessages or is there some magic in the network.transport layer that handles this i can't see anything obvious"
+        ],
+        "timespent": "3600",
+        "alpha": 98
+    },
+    {
+        "id": "12804",
+        "project": "DPP",
+        "summary": [
+            "duplicate childkeys in childspecs passed to supervisor.run not being handled correctly"
+        ],
+        "description": [
+            "supervisor.startnewchild will fail correctly with failureduplicatechild when passed a duplicate childkey",
+            "however when duplicate childkeys are passed to supervisor.run in childspec no error is reported",
+            "it seems all specs are started as children with the duplicates replacing the already running child of the same key in"
+        ],
+        "timespent": "900",
+        "alpha": 99
+    },
+    {
+        "id": "11902",
+        "project": "DPP",
+        "summary": [
+            "have two supervisor.childspec constructors one for remotechild current one and one for localchild"
+        ],
+        "description": [
+            "hello there is there any plans to at some point have support for monitoring local process execution i'm using the supervisor api on applications and have found that closures are somewhat overkill in this scenario",
+            "i'm thinking of experimenting with the api and try to add it myself if i've any progress on this would you be open to merge it cheers",
+            "roman"
+        ],
+        "timespent": "57600",
+        "alpha": 99
+    },
+    {
+        "id": "11901",
+        "project": "DPP",
+        "summary": [
+            "terminatechildresult type not being exported on supervisor api"
+        ],
+        "description": [
+            "is there any particular reason why this record is not being exported i'm trying to use supervisor.terminatechild function and wrap the result with some other info can't compile because the type terminatechildresult is not being exported as in development branch of"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "10071",
+        "project": "DPP",
+        "summary": [
+            "channel vs process based genserver"
+        ],
+        "description": [
+            "i don't know if a full split is necessary or even a good idea but for handleinfo and in particular in order to deal with messages sent to the process by monitors we cannot be entirely oriented around typed channels"
+        ],
+        "timespent": "3600",
+        "alpha": 99
+    },
+    {
+        "id": "11101",
+        "project": "DP",
+        "summary": [
+            "race condition in local monitoring when using call"
+        ],
+        "description": [
+            "running the attached file with the version of distributed-process from hackage demonstrates a race condition wherein the recursive call invocation fails due to the worker process exiting prematurely",
+            "if distributed-process is installed from source however based on a revision at or later than local send skips the transport layer then the problem desists",
+            "unfortunately this example is using dpp's async api and i've not had time to boil it down to pure distributed-process yet"
+        ],
+        "timespent": "432000",
+        "alpha": 99
+    },
+    {
+        "id": "11000",
+        "project": "DP",
+        "summary": [
+            "bump binary version to include"
+        ],
+        "description": [
+            "i'm finding some packages that require the latest version of binary and are thus incompatible with"
+        ],
+        "timespent": "2700",
+        "alpha": 99
+    },
+    {
+        "id": "10201",
+        "project": "CH",
+        "summary": [
+            "meta package to install all the other packages"
+        ],
+        "description": [
+            "i had some issues where cabal had installed more than one version of these packages and apps were compiled using a mix of versions",
+            "wondering if having a meta package no code that includes the other ones will help managing this",
+            "i had to do something like this to get out of the cabal mess sh list grep e distributed e network-transport xargs t i pkg unregister pkg force and then reinstall the packages",
+            "maybe the following is already a good way shell cabal install distributed-process-simplelocalnet"
+        ],
+        "timespent": "57600",
+        "alpha": 99
+    },
+    {
+        "id": "11900",
+        "project": "NTTCP",
+        "summary": [
+            "cannot reconnect after connection is severed"
+        ],
+        "description": [
+            "the tcp transport seems to be unable to handle a situation where a tcp connection to a peer is abruptly terminated no closing message is this can be replicated with the tutorial server at and a slightly modified tutorial client available at the close function is moved to after the replicatem call making the client this more closely models my situation where the client connects to the server and then they both chat for a while instead of the client immediately terminating",
+            "replicating the bug requires a host machine running the server and ideally a vm on which to run the client",
+            "start the server as normal and then start the client on the vm once the client hangs waiting on the final message from the server abruptly reset the vm using reset button a kill of kvm whatever is once the vm comes up again tutorial-client will be unable to complete the connect call to the server",
+            "adding a bunch of debug output to i get the following output from tutorial-client apiconnect resetifbroken complete creating connection to findremoteendpoint modifying mvar findremoteendpoint done modifying mvar isnew is true found remote endpoint isnew is true calling sockettoendpoint creating connection to findremoteendpoint modifying mvar findremoteendpoint done modifying mvar isnew is false getting snapshot got snapshot remoteendpointinit waiting on resolved sockettoendpoint returned connection requests crossed done with mvar done trying to close socket didaccept is false done with setupremoteendpoint at that point the client hangs",
+            "i see that it thinks connection requests are crossing so somehow the server needs to understand that its old connection to the client is dead but i see how to do that",
+            "i tried modifying the server so that it sends ping messages to all connected clients once the client machine is reset the pings start failing with broken socket errors but the connection crossed event still happens",
+            "hoping somebody more knowledgeable in this library can fix this because not sure where to go from here"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "12700",
+        "project": "DPSLN",
+        "summary": [
+            "findpeers documentation uses msec"
+        ],
+        "description": [
+            "the timeout on findpeers seems empirically to be counted in microseconds but the haddock says msec"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "12301",
+        "project": "DPSLN",
+        "summary": [
+            "remote worker nodes do not get passed to master"
+        ],
+        "description": [
+            "when i am running the raspberry pi and other examples only workers on my local machine get passed to the master function",
+            "however findpeers backend successfully shows the remote worker nodes before the worker process gets spawned",
+            "here is a link to the raspberry pi example i mentioned i have tried several examples and no remote workers are visible",
+            "i can successfully connect to the port across the network so i do not believe it is a network configuration issue",
+            "i am using the same compiled binary running on both of my macbooks"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "12201",
+        "project": "DPP",
+        "summary": [
+            "managedprocess.shutdown on supervisor module"
+        ],
+        "description": [
+            "it would be nice to the shutdown function from managedprocess on the supervisor i spent too much time trying to cleanly kill a supervisor the only way you can do that is if you know supervisor is implemented in terms of managedprocess an internal"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "11200",
+        "project": "DPP",
+        "summary": [
+            "priority queue based managed process"
+        ],
+        "description": [
+            "supervisors might like to prioritise internal signals over external client requests especially child initialisation failures and monitor notifications for example"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "11100",
+        "project": "DPP",
+        "summary": [
+            "managedprocess call should not use async"
+        ],
+        "description": [
+            "async is not free from overheads and considering the use cases for call these are probably unwarranted",
+            "instead we can use the monitorref that the caller spawns to wait for the result as an end to end tag",
+            "this will require some fairly minimal changes to the server side of the protocol",
+            "in addition we should keep the existing async based support for those situations in which it is useful",
+            "the new behaviour should still return an async record but populate it with code that uses the receivers mailbox directly",
+            "it might be possible to avoid rewriting the client module and just provide this other async implementation"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10501",
+        "project": "DPP",
+        "summary": [
+            "managedprocess api consistency"
+        ],
+        "description": [
+            "at the moment the apis for managedprocess reverse the order of the state and arguments which is a bit silly"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "10065",
+        "project": "DPP",
+        "summary": [
+            "supervision trees"
+        ],
+        "description": [
+            "policy control sibling management neighbours shutdown per branch per process exit policy transient temp perm etc restart intensity limits alternating restart policies exit type based global etc backoff/timeout in response to restart limits how do we define the startup procedure what type does a start spec have how can we cleanly represent error signals in a generic way"
+        ],
+        "timespent": "576000",
+        "alpha": 100
+    },
+    {
+        "id": "12500",
+        "project": "DP",
+        "summary": [
+            "incorrect stm version in cabal"
+        ],
+        "description": [
+            "the cabal specifies the for stm with stm but imports tqueue which is only available since this results in this compilation-error with module does not export tqueue cabal error some packages failed to install failed during the building phase",
+            "the exception was exitfailure"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "11600",
+        "project": "DP",
+        "summary": [
+            "provide an api for working with internal system events"
+        ],
+        "description": [
+            "we currently have hooks that the node controller calls for interesting events so that tracing can take place if great but going to need to listen for some of those events in order to implement see and probably going to be a set of requirements coming from the layer too see i suspect some refactoring will be required here taking the current tracing support and injecting a more general mechanism there so that we push the events onto a control plane and they get handled in several ways",
+            "this might obviate the need for the existing ignore events when tracing is disabled switches",
+            "also need some performance profiling to make sure we screw things up",
+            "initial thoughts are to stick to the current approach but replace the weakref cqueue currently using the tracer process mailbox with either an stm.tqueue or control another approach might be to have a rwlock of some sort and send all events to a system process using a private reference to its cqueue as before and let that proceess forward events to handlers as required"
+        ],
+        "timespent": "432000",
+        "alpha": 100
+    },
+    {
+        "id": "10269",
+        "project": "DP",
+        "summary": [
+            "label spawned processes using labelthread"
+        ],
+        "description": [
+            "this ought to make debugging easier if the executable is compiled with debugging support"
+        ],
+        "timespent": "900",
+        "alpha": 100
+    },
+    {
+        "id": "10259",
+        "project": "DP",
+        "summary": [
+            "don't expose everything some modules should be private"
+        ],
+        "description": [
+            "hardly urgent but at some point we should begin to hide things"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10206",
+        "project": "DP",
+        "summary": [
+            "tracing support"
+        ],
+        "description": [
+            "erlang has tracing built in to the runtime system which is very lightweight and has little runtime performance impact on the traced process",
+            "traces can be set up to match processes all named/registered etc and flags turned on to trace calls to specific traces are sent to one or more tracer processes and these typically either throw the trace data straight on to a socket to reduce impact on the traced system or print to a file descriptor",
+            "i'm not sure how much of this makes sense for cloud haskell but it would be good to see if we can come up with some corollary mechanism that allows us to trace processes simply and efficiently",
+            "i don't think the typical traceevent style would be useful here but if the message queue for a process could be transparently used to forward messages to an additional tracer process or process group then that would be useful"
+        ],
+        "timespent": "352800",
+        "alpha": 100
+    },
+    {
+        "id": "11400",
+        "project": "CHWEB",
+        "summary": [
+            "link to haskell platform on getting started tutorial is borked"
+        ],
+        "description": [
+            "the first textual link to the haskell platform is this the href field has this i suspect one should prepend either or"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "11002",
+        "project": "RANKNDYN",
+        "summary": [
+            "bump binary version to include"
+        ],
+        "timespent": "900"
+    },
+    {
+        "id": "11005",
+        "project": "NT",
+        "summary": [
+            "bump binary version to include"
+        ],
+        "timespent": "900"
+    },
+    {
+        "id": "11001",
+        "project": "DS",
+        "summary": [
+            "bump binary version to include"
+        ],
+        "timespent": "900"
+    },
+    {
+        "id": "12604",
+        "project": "DPP",
+        "summary": [
+            "supervisor shouldn't decrement active stats when restarts succeed"
+        ],
+        "timespent": "3600"
+    },
+    {
+        "id": "12602",
+        "project": "DPP",
+        "summary": [
+            "supervisor should accomodate managed process handles as well as pids"
+        ],
+        "timespent": "28800"
+    },
+    {
+        "id": "10901",
+        "project": "DP",
+        "summary": [
+            "nsend should use local communication channels"
+        ],
+        "timespent": "1200"
+    }
+]

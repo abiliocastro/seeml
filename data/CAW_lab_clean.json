@@ -1,0 +1,102 @@
+[
+    {
+        "id": "32159",
+        "project": "CW",
+        "summary": [
+            "domains on rv.cw not working correctly after data manipulation"
+        ],
+        "description": [
+            "issue back in we added all the sbs sites to the rv.com site but we ran into data issues",
+            "the main issue was that campingworldofmarion.com had www",
+            "prefixed in the data",
+            "due to time constraints and fear that the tom johnson sbs work we just hard coded if domain campingworldofmarion.com webdomain www",
+            "domain however this was changed recently to campingworldofmarion.com in the data from this rendered the switch to tom johnson on to break as the query could not find this is the query that is being run right now to get the website info website whereraw(sprintf webdomain and isdeleted=false first what to fix we need to change the query to look where name domain or name www.domain test feverishly",
+            "this is a big change that switches the domains we need to make sure they all work correctly"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "32058",
+        "project": "CWBACK",
+        "summary": [
+            "laravel db credentials parse from env var hk config var"
+        ],
+        "description": [
+            "explanation vid branch from you should have read access to the hk app campingworldrvsales-national to see the current config settings and should have full access to any hk apps of your own of course for changing and testing config settings db credentials are set in the top of the app and used throughout the code",
+            "it is set in an array in that is global in scope app object currently these db credentials are set from a set of corresponding env vars that are manually maintained in the evn and in the hk config settings",
+            "problem hk periodically changes the credentials for whatever reason maintenance moving dbs to a different location host changed db server problems etc",
+            "solution utilize an hk generated env var that contains the current credentials that are updated anytime hk makes a change",
+            "this hk generated config var is a long string that contains the entire credentials for a specific db and must be parsed into their respective array elements in laravel in case it is ever needed we also want to be able to continue to manually specify the db credentials in the vars or use the hk credentials base on yet a different var",
+            "new var needed if true then parse and use the hk generated vars otherwise use the manual vars create a function to set these that can be called in so we avoid chopping database.php with a bunch of new logic there are db credential references in database.php but may have to hk db config vars",
+            "this new function will need to account for having a single hk db config var or several",
+            "because of this we may need to reference which db credentials are used by referencing the hk config var",
+            "example so we could use this existing var to get which credentials to parse in could do this where dbcredentials custom function not written yet returns an array of parsed credentials as well as manual credentials schema and any other statics like charset also needs to return manual config vars if instead of this"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "16601",
+        "project": "CAN",
+        "summary": [
+            "general jira sprints"
+        ],
+        "description": [
+            "enable sprints and related features enable time tracking set up sprint related gadgets tracking reporting document in wiki how to use time estimates logging"
+        ],
+        "timespent": "14400",
+        "alpha": 100
+    },
+    {
+        "id": "16315",
+        "project": "CAN",
+        "summary": [
+            "national thor private label page on site map name change"
+        ],
+        "description": [
+            "right now on staging the thor private label page is listed as thor freedom showroom we need to change it to be thor freedom elite showroom"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "16106",
+        "project": "CAN",
+        "summary": [
+            "fix bug refactor pricing"
+        ],
+        "description": [
+            "discuss this first with gary to determine how this will be architected",
+            "the bug is that for used/consignment units where only one price should ever be displayed there will be list discount and sale price displayed if list price and web specials price are not the same even when this is the case only the web specials price should display"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "16010",
+        "project": "CAN",
+        "summary": [
+            "fix the title of the national pages"
+        ],
+        "description": [
+            "make it rv camper sales camping world do the same for any other page towing guide landing pages service pages etc after the pipe put camping world"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "32093",
+        "project": "ALL",
+        "summary": [
+            "toyhauler option not working on fifth wheel all floor plan"
+        ],
+        "description": [
+            "if all floor plans is selected on fifth wheel toy hauler one of the inclusive floorpans being picked up in the search",
+            "if toy hauler is selected as a floorpan it is picked up in the search",
+            "this has some tricky configs please see me for direction g"
+        ],
+        "timespent": "4500",
+        "alpha": 100
+    }
+]

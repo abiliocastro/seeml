@@ -1,0 +1,227 @@
+[
+    {
+        "id": "11256",
+        "project": "SXG",
+        "summary": [
+            "filter mapping in sid import"
+        ],
+        "description": [
+            "in sid the datatype used for filter is filter and it should be translated to primitive.filter when doing the import"
+        ],
+        "timespent": "60",
+        "alpha": 99
+    },
+    {
+        "id": "12300",
+        "project": "JOS",
+        "summary": [
+            "remove or hide non characters in description"
+        ],
+        "description": [
+            "while building sid the build is failing in soapspecpackage while transforming the xsd",
+            "the error is error build error info failed to transform input file c sid sid_soapspecpackage arget generated-sources src main wsdl invalid byte of sequence",
+            "i tried to look in the xsd file but i don't see which character might be wrong",
+            "i am attaching the file from the soapspec package project and from the project as well as the project",
+            "the rest can be found at xsd"
+        ],
+        "timespent": "86400",
+        "alpha": 99
+    },
+    {
+        "id": "11218",
+        "project": "JOS",
+        "summary": [
+            "support of array of uri"
+        ],
+        "description": [
+            "when an attribute is of type primitive.uri and multiplicity is what is generated is something like name reference type primitives:arrayofanyuri minoccurs maxoccurs however when opening the xsd under eclipse and going to source view eclipse flags the following problem cannot resolve the name primitives:arrayofanyuri to type definition component",
+            "thanks and regards"
+        ],
+        "timespent": "28800",
+        "alpha": 99
+    },
+    {
+        "id": "11255",
+        "project": "SXG",
+        "summary": [
+            "replace by string"
+        ],
+        "description": [
+            "in the import screen where the project and the model are selected the last line is showing select type for unknowns",
+            "in this list should also be replaced by string",
+            "when importing a string should be used even if the uml model contain"
+        ],
+        "timespent": "21600",
+        "alpha": 100
+    },
+    {
+        "id": "11253",
+        "project": "SXG",
+        "summary": [
+            "wrong resource link"
+        ],
+        "description": [
+            "using the latest generator in all associations pointing to a resource sid the type generated is which is wrong",
+            "it should be there are such associations in problem"
+        ],
+        "timespent": "57600",
+        "alpha": 100
+    },
+    {
+        "id": "11254",
+        "project": "SXG",
+        "summary": [
+            "faster generation of xsd for sid"
+        ],
+        "description": [
+            "today the generation of the xsd for sid is taking a very long time due to model closure",
+            "as the sid is self contained except for the common model a way to generate faster the sid by not doing model closure might be nice"
+        ],
+        "timespent": "115200",
+        "alpha": 100
+    },
+    {
+        "id": "11400",
+        "project": "JOS",
+        "summary": [
+            "use josif behind a proxy"
+        ],
+        "description": [
+            "some users of josif use a proxy configuration to acces internet",
+            "some elements are well managed with the maven proxy configuration",
+            "other cases for example when a generator or uses external url uses of external xsds it cannot be accessed because of a missconfiguration problem in its context",
+            "it is needed to include a context with proxy definition"
+        ],
+        "timespent": "172800",
+        "alpha": 100
+    },
+    {
+        "id": "11222",
+        "project": "JOS",
+        "summary": [
+            "document external xsd implementation in soap generator"
+        ],
+        "description": [
+            "document in the wiki the implementation of external xsd as a mapping rule for soap generator"
+        ],
+        "timespent": "28800",
+        "alpha": 100
+    },
+    {
+        "id": "11215",
+        "project": "JOS",
+        "summary": [
+            "new packages of common models are not generated with a common prefix"
+        ],
+        "description": [
+            "while generating sid for the packages in the common model the soap generator is generating dep files so i have dep files generated in the step the corresponding common files are added but the dep ones are still there",
+            "it looks like the soap generator does not recognize those files as being common files",
+            "soap generator should have a way to know which abes are part of the common model"
+        ],
+        "timespent": "172800",
+        "alpha": 100
+    },
+    {
+        "id": "11223",
+        "project": "JOS",
+        "summary": [
+            "add support for tipdatatransfer in soap generator"
+        ],
+        "description": [
+            "this might require having a specific template project"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "11204",
+        "project": "JOS",
+        "summary": [
+            "update doc generator for imported external xsd's"
+        ],
+        "description": [
+            "if external object in core project then add to entity description external entity name space prefix description repeat for objects in operations"
+        ],
+        "timespent": "172800",
+        "alpha": 100
+    },
+    {
+        "id": "11201",
+        "project": "JOS",
+        "summary": [
+            "update soap generator to import external xsd's"
+        ],
+        "description": [
+            "need to be ported in trunk regression tests should be ok for soap generator but expect impact for doc generator"
+        ],
+        "timespent": "1728120",
+        "alpha": 100
+    },
+    {
+        "id": "11206",
+        "project": "JOS",
+        "summary": [
+            "solve bug from tigerstripe"
+        ],
+        "description": [
+            "resolution of bug"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "11211",
+        "project": "JOS",
+        "summary": [
+            "merge of inventory projects with the version"
+        ],
+        "description": [
+            "merge the projecs in the version and trunk it has a first version of to develop the inventory interface over a stable version"
+        ],
+        "timespent": "172800",
+        "alpha": 100
+    },
+    {
+        "id": "11227",
+        "project": "JOS",
+        "summary": [
+            "customer management api dependecies missed"
+        ],
+        "description": [
+            "in the development of customer management api there are two dependencies included",
+            "one is the common framework dependency file and other the module created from the dependency project",
+            "when that files contains the same package it seems that tigersstripe takes on memory only the first package and then some elements are missed in soap generator process"
+        ],
+        "timespent": "115200",
+        "alpha": 100
+    },
+    {
+        "id": "11172",
+        "project": "DTS",
+        "summary": [
+            "missing resourcefulfillmentstate in nrb"
+        ],
+        "description": [
+            "in sid resourcefulfillmentstate has been moved to nrb abe",
+            "nrb abe is part of common model but this enum is missing and would need to be added"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "11266",
+        "project": "UVT",
+        "summary": [
+            "ram ri ctk will be deployed build and tested using ubuntu os environment"
+        ],
+        "timespent": "576000"
+    },
+    {
+        "id": "11281",
+        "project": "EI",
+        "summary": [
+            "update inventory in branch plus soap"
+        ],
+        "timespent": "57600"
+    }
+]

@@ -1,0 +1,427 @@
+[
+    {
+        "id": "10222",
+        "project": "FIFO",
+        "summary": [
+            "auto ssl certificate creation in use by default on ui install"
+        ],
+        "description": [
+            "when installing ui auto cert generation should occur and port should automatically redirect to https for ui in default nginx configuration",
+            "e.g in attached file as per arekinath"
+        ],
+        "timespent": "18000",
+        "alpha": 98
+    },
+    {
+        "id": "10541",
+        "project": "FIFO",
+        "summary": [
+            "new color for the icon when locking a machine"
+        ],
+        "description": [
+            "whenever i lock a machine using the padlock button in the ui i tend to forget that i've locked it",
+            "this could be avoided by making the button red or in some other way make it more distinguishable that a vm is locked"
+        ],
+        "timespent": "1800",
+        "alpha": 99
+    },
+    {
+        "id": "10329",
+        "project": "FIFO",
+        "summary": [
+            "deletion of machines that can't be provisioned"
+        ],
+        "description": [
+            "when machines are provisioned and the provisioning fails for some reason you should be able to delete that machine",
+            "now there isn't a button present to do this"
+        ],
+        "timespent": "900",
+        "alpha": 99
+    },
+    {
+        "id": "10412",
+        "project": "FIFO",
+        "summary": [
+            "new version alert on the about page"
+        ],
+        "description": [
+            "an alert showing on the alert page when there's a new version of a fifo component available"
+        ],
+        "timespent": "7200",
+        "alpha": 99
+    },
+    {
+        "id": "23600",
+        "project": "FIFO",
+        "summary": [
+            "dataset import dos not work"
+        ],
+        "description": [
+            "when selecting a dataset to import and clicking import it fails with a respective failure popup in the ui and the following message in howl error log"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "21102",
+        "project": "FIFO",
+        "summary": [
+            "bsd jail support"
+        ],
+        "description": [
+            "disclaimer my bsd knowledge approaches zero",
+            "i probably would get around the basics with some googling but i've never actively used it",
+            "from my understanding bsd jails share a lot in common with solaris zones it would be good to explore how far the overlap is and what tools exist",
+            "for omnios i think this might be comparable as the vmadm tool isn't present there either the approach to mimic the very basic zone creation to emulate the behaviour of vmadm",
+            "this also introduced the logic of handling commands in different os types starting a zone and stopping a vm work differently in so the abstraction layer exists already first step is mapping the basics vmadm ive taken a short look at the iocage manuals and think for to start its best to just use dummy datasets and with full jails and perhaps clones as a second step to see if we can get that working well enough",
+            "from my understanding things map iocage list jails iocage start starts a jail iocage stop stops a jail iocage restart restarts a jail iocage get gets details what im still a bit unclear of and the manual pages didnt get into very much or i missed it is the whole process of creating/configuring a jail what options are available and how to create a new zone with them basically the equivalent of vmadm create f file in smartos or zoneconf in from the manual i gather they might be described in more details in the man pages"
+        ],
+        "timespent": "16818360",
+        "alpha": 100
+    },
+    {
+        "id": "13841",
+        "project": "FIFO",
+        "summary": [
+            "networks main view"
+        ],
+        "description": [
+            "needs content and styling"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "13705",
+        "project": "FIFO",
+        "summary": [
+            "lx login"
+        ],
+        "description": [
+            "how to login in lx branded zones"
+        ],
+        "timespent": "10860",
+        "alpha": 100
+    },
+    {
+        "id": "12309",
+        "project": "FIFO",
+        "summary": [
+            "seperate accounting logs into a different storage"
+        ],
+        "description": [
+            "put accounting log into time sliced org related data chunks"
+        ],
+        "timespent": "120",
+        "alpha": 100
+    },
+    {
+        "id": "12304",
+        "project": "FIFO",
+        "summary": [
+            "cerberus"
+        ],
+        "description": [
+            "jingles is going to be updated completely with cljs and om"
+        ],
+        "timespent": "37800",
+        "alpha": 100
+    },
+    {
+        "id": "10110",
+        "project": "FIFO",
+        "summary": [
+            "set a to go with an ip address pool"
+        ],
+        "description": [
+            "it would be nice to be able to set a for an ip address pool that will then get stuck onto any nics that are created in that pool",
+            "this is much easier to deal with than bridging vlans onto etherstubs so that they can have proper associated"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10206",
+        "project": "FIFO",
+        "summary": [
+            "vm list needs to scroll independently of screen tabs"
+        ],
+        "description": [
+            "it would be better if when scrolling the right pane vm list that the left hand buttons remain in fixed position",
+            "this would make for a cleaner easier to use interface"
+        ],
+        "timespent": "60",
+        "alpha": 100
+    },
+    {
+        "id": "10208",
+        "project": "FIFO",
+        "summary": [
+            "dashboard and status screens have scroll bars and cut off content"
+        ],
+        "description": [
+            "both dashboard and status screen have scroll bars and do not resize down with content to show it clearly"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "10201",
+        "project": "FIFO",
+        "summary": [
+            "matchers"
+        ],
+        "description": [
+            "it needs to be possible to create matchers for packages"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10009",
+        "project": "FIFO",
+        "summary": [
+            "smartos version cehck"
+        ],
+        "description": [
+            "fifo should check against the smartos version and have a set of knowing to work versions to or be directly tied to one version"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "10109",
+        "project": "FIFO",
+        "summary": [
+            "cloud overview"
+        ],
+        "description": [
+            "there should be a call that gives information about the current cloud status run over all hypervisors check for resources and alerts etc"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10200",
+        "project": "FIFO",
+        "summary": [
+            "add matchers on packages"
+        ],
+        "description": [
+            "sniffle needs to be able to match on packages as well"
+        ],
+        "timespent": "18000",
+        "alpha": 100
+    },
+    {
+        "id": "10301",
+        "project": "FIFO",
+        "summary": [
+            "on vm creation ui screen does not show vm paramaters correctly until you force a page refresh"
+        ],
+        "description": [
+            "when creating a new vm ui does not update correctly only way to show information correctly is to click on another tab in the ui and then back to the virtual machine tab as shown by the attached screenshots"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10305",
+        "project": "FIFO",
+        "summary": [
+            "newly created users have no password"
+        ],
+        "description": [
+            "it seems setting a password during user creation does not work propperly",
+            "also there needs to be a confirmation field"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10113",
+        "project": "FIFO",
+        "summary": [
+            "refresh of returns to login screen"
+        ],
+        "description": [
+            "refreshing the using the browser refresh button always returns you to the login screen",
+            "it would be nice to keep state in some fashion that survives such a refresh and returns you to the screen you were on",
+            "some people are in the bad habit of pressing a lot on lists while waiting for"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10114",
+        "project": "FIFO",
+        "summary": [
+            "new network dialog should make it clear that name"
+        ],
+        "description": [
+            "currently not really clear the first time you create a network that the name field is also i think changing the placeholder text would be enough to clarify it for new users"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "10207",
+        "project": "FIFO",
+        "summary": [
+            "no prompt or warning given for vm deletion"
+        ],
+        "description": [
+            "at the moment there is no visual representation that vm link are clickable",
+            "no change in status on mouse over or change mouse pointer to reflect that its clickable",
+            "this is confusing and very dangerous",
+            "it makes users think clicking on them has no effect and most importantly clicking on the x will immediately destroy the vm without prompt or warning",
+            "some sanity and basic feedback system is urgently needed"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10215",
+        "project": "FIFO",
+        "summary": [
+            "undefined quota"
+        ],
+        "description": [
+            "some zones show undefined quota"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10947",
+        "project": "FIFO",
+        "summary": [
+            "doc update to new images"
+        ],
+        "description": [
+            "the images in the documentation are all showing the new ui by the time dev goes into release we should have then replaced with the new images so people don't get confused",
+            "doubly where the workflow has changed"
+        ],
+        "timespent": "72000",
+        "alpha": 100
+    },
+    {
+        "id": "10437",
+        "project": "FIFO",
+        "summary": [
+            "shutting down/disconnecting a hypervisor node breaks fifo"
+        ],
+        "description": [
+            "shutting down or disconnecting from the network one hypervisor nodes renders fifo unoperative"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10401",
+        "project": "FIFO",
+        "summary": [
+            "during network creation"
+        ],
+        "description": [
+            "on a fresh install of fifo on our smartos box whenever i try to create a network so i can start creating vms this message appears there was an error creating your network",
+            "see the javascript console",
+            "the js console log shows a gateway response from the server when wiggle tries to hit here is the status of services running on the box svcs epmd snarl sniffle howl wiggle nginx haproxy state stime fmri online any ideas"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "10400",
+        "project": "FIFO",
+        "summary": [
+            "problem creating vm using firefox"
+        ],
+        "description": [
+            "firefox ubuntu when i create a new vm in other words when i push the create button a window appears telling me there was an error creating your vm",
+            "see the javascript console",
+            "using firebug extension i can see networkerror unsupported media type and create vm error object status data object location application/json true resource package dataset in location"
+        ],
+        "timespent": "1800",
+        "alpha": 100
+    },
+    {
+        "id": "10219",
+        "project": "FIFO",
+        "summary": [
+            "inconsistent ordering of vms on list page"
+        ],
+        "description": [
+            "one of the minor weirdnesses of riak and a lot of other distributed stores is that data comes back in any old order it likes",
+            "this is evident in the vm list page at the moment where the list rearranges itself every time you click into it",
+            "i think it would be nicer for users to be able to have a consistent order in this list so that if they are doing something that involves visiting this page repeatedly they don't have to everything carefully to make sure they click the right vm",
+            "just a quick sort before display would be enough"
+        ],
+        "timespent": "120",
+        "alpha": 100
+    },
+    {
+        "id": "10218",
+        "project": "FIFO",
+        "summary": [
+            "create a package or network with character in name"
+        ],
+        "description": [
+            "any attempt to create a package or network with characters in the name fails it seems to be just pushing the string into the url and the parsing in erlang is failing since it sees a url with an extra part on the"
+        ],
+        "timespent": "14700",
+        "alpha": 100
+    },
+    {
+        "id": "10202",
+        "project": "FIFO",
+        "summary": [
+            "hypervisor metadata"
+        ],
+        "description": [
+            "it needs to be possible to add metadata to servers those is important to match against"
+        ],
+        "timespent": "7200",
+        "alpha": 100
+    },
+    {
+        "id": "10007",
+        "project": "FIFO",
+        "summary": [
+            "zone console support"
+        ],
+        "description": [
+            "there should be a console to connect to zones"
+        ],
+        "timespent": "86400",
+        "alpha": 100
+    },
+    {
+        "id": "10006",
+        "project": "FIFO",
+        "summary": [
+            "ssh keys"
+        ],
+        "description": [
+            "option to edit the self populated public key and private key field blocks for people who want to still be able to paste in their own generated ones"
+        ],
+        "timespent": "3600",
+        "alpha": 100
+    },
+    {
+        "id": "13613",
+        "project": "FIFO",
+        "summary": [
+            "api docs hypervisors"
+        ],
+        "timespent": "1080"
+    },
+    {
+        "id": "11760",
+        "project": "FIFO",
+        "summary": [
+            "ssh key lookup and authentication needs to be handled via"
+        ],
+        "timespent": "28800"
+    }
+]
